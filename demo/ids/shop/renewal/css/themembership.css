@@ -313,7 +313,7 @@ ol.num_list>li{text-indent:-19px;padding-left:19px; line-height: 1.6;}
 .top_overview .description {margin-top:1.5em;padding-top:1.5em;border-top: 1px solid #D0B7A5;}
 .top_overview .description p {font-size:14px;margin-bottom:1em;}
 .top_overview .description + p {margin-top:2em;font-size:13px;letter-spacing:-0.025em;}
-.top_overview button.profile {position:absolute;right:34px;bottom:-25px;}
+.top_overview button.profile {position:absolute;right:34px;bottom:15px;}
 .top_overview .status_box {display:flex;margin-top:60px;margin-bottom:45px;justify-content:center;align-items: center;}
 .top_overview .status_box > li {display:block;flex:1 0 auto;padding:0 30px;align-items: center;flex-wrap:wrap;border-left:1px solid #D0B7A5;}
 .top_overview .status_box > li:first-child {border-left:none;}

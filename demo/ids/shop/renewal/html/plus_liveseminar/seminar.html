@@ -1,7 +1,164 @@
-<!--#include virtual="/publish/shop/renewal/html/include/common_seminar.html" -->
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <title>theSHOP</title>
+    <link rel="stylesheet" href="../../js/libs/jquery-ui.css">
+    <link rel="stylesheet" href="../../js/libs/owl.carousel.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <link rel="stylesheet" href="../../css/layout_shopplus.css">
+    <link rel="stylesheet" href="../../css/shopplus.css">
+    <link rel="stylesheet" href="../../css/seminar.css">
+    <!--[if lt IE 9]>
+    <script src="../../js/libs/html5shiv.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../js/libs/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../js/libs/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.bpopup.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/fn-tag-fakeselect.js"></script>
+    <script type="text/javascript" src="../../js/ui.js"></script>
+</head>
 <body class="shopplus plus_seminar"><!-- 배너 있는 경우 클래스 bnr_on부여 -->
     <!-- header [s] -->
-    <!--#include virtual="/publish/shop/renewal/html/include/header_seminar.html" -->
+    <nav id="Index">
+    <a href="#content">본문 바로가기</a>
+    <a href="#header">주메뉴 바로가기</a>
+    <a href="#footer">사이트 정보 바로가기</a>
+</nav>
+<header id="header">
+    <div class="header_inner">
+        <h1 class="link_logo logo_shopplus"><a href="#" class="ico_seminar">the SHOP+</a></h1>
+        <h2 class="tit">라이브 세미나</h2>
+        <div class="header_search">
+            <a href="#none" class="btn_toggle"><span class="ico_seminar">검색창 열기/닫기</span></a>
+            <div class="search_enter">
+                <div class="search_enter_inner">
+                    <select class="select" style="width:80px">
+                        <option>전체</option>
+                        <option>강의제목</option>
+                        <option>강사명</option>
+                    </select>
+                    <input type="text" title="검색어 입력">
+                    <button type="submit" class="btn_search">검색</button>
+                </div>
+                <button type="button" class="btn_close">닫기</button>
+            </div>
+        </div>
+        <div class="seminar_menu">
+            <a href="#none" class="btn_allmenu"><span class="ico_seminar inner_btn">전체메뉴</span></a>
+            <div class="wrap_menu">
+                <div class="inner_menu">
+                    <div class="menu_util">
+                        <div class="box_util">
+                            <a href="#none" class="btn_nick">닉네임</a>
+                            <div class="layer_util">
+                                <div class="info_nick">
+                                    <strong class="tit_nick">한헌영님</strong>
+                                    <button type="button" class="btn_edit">수정</button>
+                                </div>
+                                <a href="#none" class="txt_point"><!-- 2018-11-05 링크로 수정 -->
+                                    플러스 포인트
+                                    <span class="num_point"><span class="txt_num">100,000</span>점</span>
+                                </a>
+                                <a href="#pointConvert" class="btn_convert">포인트 전환하기</a>
+                                <ul class="list_my">
+                                    <li>
+                                        <a href="#none" class="link_my">
+                                            신청 세미나
+                                            <span class="num_seminar"><span class="txt_num">10</span>건</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="link_my">
+                                            관심 세미나
+                                            <span class="num_seminar"><span class="txt_num">6</span>건</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="link_my">
+                                            설문 참여
+                                            <span class="num_seminar"><span class="txt_num">3</span>건</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="list_quick">
+                                    <li><a href="/publish/shop/renewal/html/plus_liveseminar/faq.html" class="btn_quick">이용 안내</a></li>
+                                    <li><a href="/publish/shop/renewal/html/plus_liveseminar/faq.html" class="btn_quick"><span class="txt_num">1:1</span> 문의</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#none" class="btn_type4 btn_apply">듣고싶은 세미나 신청</a>
+                    </div>
+                    <ul class="list_3depth">
+                        <li><a href="./seminar.html">세미나</a></li>
+                        <li><a href="./myseminar.html">나의 수강내역</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                        <li class="menu_type2"><a href="./faq.html">이용안내</a></li>
+                        <li class="menu_type2"><a href="./faq.html">1:1문의</a></li>
+                    </ul>
+                </div>
+                <a href="#none" class="btn_close"><span class="ico_seminar ico_close">닫기</span></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- 닉네임 등록 [s] -->
+<div id="popNickEdit" style="display:none">
+    <div class="pop_layer pop_type1">
+        <strong class="tit_popup">닉네임 등록</strong>
+        <div class="pop_wrap">
+            <form action="#none">
+                <fieldset>
+                    <legend>닉네임 등록 폼</legend>
+                    <div class="wrap_inp">
+                        <input type="text" name="nickName" id="nickName" value="세미나굿" maxlength="10">
+                        <div class="txt_length"><strong class="length_count">0</strong>/10</div>
+                    </div>
+                    <ul class="list_info">
+                        <li>최대 한글 10자까지 가능합니다.</li>
+                        <li>닉네임은 라이브세미나 입장 시 참석자평과<br>질문/답변 시 사용됩니다.(더샵 내 커뮤니티 활동시 사용)</li>
+                        <li>별도 지정하지 않으실 경우<br>회원님의 성합이 자동으로 지정됩니다.</li>
+                    </ul>
+                    <div class="btn_wrap">
+                        <button type="submit" class="btn_type1">확인</button>
+                    </div>
+                </fieldset>
+            </form>
+            <button type="button" class="btn_comm btn_close">닫기</button>
+        </div>
+    </div>
+</div>
+<!-- 닉네임 등록 [e] -->
+
+<!-- 듣고싶은 세미나 신청 [s] -->
+<div id="popSeminarApply" style="display:none">
+    <div class="pop_layer pop_type1">
+        <strong class="tit_popup">듣고싶은 세미나 신청</strong>
+        <div class="pop_wrap">
+            <p class="txt_seminar">듣고 싶은 세미나가 있어도 바쁘셔서 못들으셨나요?<br>이젠, 원하시는 세미나를 LIVE로 들으세요.</p>
+            <form action="#none">
+                <fieldset>
+                    <legend>세미나 신청 폼</legend>
+                    <strong class="tit_seminar"><label for="seminarApply">1. 신청희망 세미나</label></strong>
+                    <input type="text" name="seminarApply" id="seminarApply" maxlength="30" placeholder="30자 이내로 등록하세요.">
+                    <strong class="tit_seminar"><label for="applyInfo">2. 신청내용(진행희망날짜, 신청이유, 희망강사 등 신청내용을 적어주세요.)</label></strong>
+                    <textarea name="applyInfo" id="applyInfo" maxlength="1000" placeholder="1,000자 이내로 등록하세요."></textarea>
+                    <div class="btn_wrap">
+                        <button type="submit" class="btn_type1">세미나 신청완료</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <button type="button" class="btn_comm btn_close">닫기</button>
+    </div>
+</div>
+<!-- 듣고싶은 세미나 신청 [e] -->
     <!-- header [e] -->
     <section id="container">
         <div id="content" class="cont_seminar">

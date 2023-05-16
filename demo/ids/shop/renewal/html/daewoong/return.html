@@ -29,18 +29,495 @@
         <a href="#footer">사이트 정보 바로가기</a>
     </nav>
     <!-- header [s] -->
-    <!--#include virtual="/publish/shop/renewal/html/include/header_daewoong.html" -->
+    <header id="header">
+	<div class="header_inner">
+		<h1 class="link_logo logo_dw"><span class="ico_dw">대웅 전용관</span></h1>
+		<div class="header_search">
+			<div class="search_enter">
+				<div class="search_enter_inner">
+					<select class="select" style="width:80px">
+						<option>상품명</option>
+						<option>보험코드</option>
+						<option>상품코드</option>
+						<option>제조사</option>
+						<option>포함성분</option>
+					</select>
+					<input type="text" title="검색어 입력" value="[기획10+1]무조무알파에어로솔☞">
+					<button type="submit" class="btn_search">검색</button>
+				</div>
+			</div>
+		</div>
+		<div class="header_bnr">
+			<div class="owl-carousel">
+				<div class="item"><a href="#"><img src="../../images/temp/h_bnr_img1.jpg" alt="대웅제약 OTC전용관 주문하기1" /></a></div>
+				<div class="item"><a href="#"><img src="../../images/temp/h_bnr_img1.jpg" alt="대웅제약 OTC전용관 주문하기2" /></a></div>
+				<div class="item"><a href="#"><img src="../../images/temp/h_bnr_img1.jpg" alt="대웅제약 OTC전용관 주문하기3" /></a></div>
+			</div>
+		</div>
+	</div>
+	<nav id="gnb">
+		<ul>
+			<!-- 선택된 메뉴에는 li에 on class 추가해주세요 -->
+			<li class="gnb_buy"><a href="./main.html"><span class="gnb_comm">자주구매</span></a></li>
+			<li class="gnb_etc"><a href="./etc.html"><span class="gnb_comm">ETC</span></a></li>
+			<li class="gnb_otc"><a href="./otc.html"><span class="gnb_comm">OTC/기타</span></a></li><!-- 2020-07-09 수정 -->
+			<li class="gnb_subscribe"><a href="./subscribe.html"><span class="gnb_comm">정기배송서비스</span></a></li>
+			<li class="gnb_return"><a href="./return.html"><span class="gnb_comm">반품신청</span></a></li>
+		</ul>
+	</nav>
+	<div class="util_menu">
+	<ul>
+		<li><a href="#">로그아웃</a></li>
+		<li><a href="#">장바구니</a></li>
+		<li><a href="#">주문내역/배송현황</a></li>
+		<li><a href="#" class="btn_shop">더샵 바로가기 <span class="btn_comm btn_go"></span></a></li>
+	</ul>
+</div>
+</header>
+
+<script type="text/javascript">
+	$(function(){
+		shopUI.navigation();
+		// header 상단 배너
+		$('.header_bnr .owl-carousel, .search_popular .owl-carousel').owlCarousel({
+			items: 1,
+			autoplay: true,
+			loop: true,
+			nav: false,
+			dots: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true
+		});
+	});
+</script>
+
     <!-- header [e] -->
     <!-- container [s] -->
     <section id="container">
         <!-- 상단 상태 바 [s] -->
-        <!--#include virtual="/publish/shop/renewal/html/include/status_daewoong.html" -->
+        <section id="status">
+	<div class="status_wrap contents_wrap">
+		<div class="status_column monthly_order">
+			<div class="column_header">
+				<div class="month">4월</div>
+				<div class="txt_cell"><span class="ico_dw order_price">주문금액</span></div>
+				<div class="txt_cell"><span class="ico_dw return_price">반품금액</span></div>
+			</div>
+			<div class="column_body">
+				<table class="statement">
+					<colgroup>
+						<col width="30"><!-- 2020-07-09 수정 -->
+						<col width="35"><!-- 2020-07-09 수정 -->
+						<col width="35"><!-- 2020-07-09 수정 -->
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>ETC</th>
+							<td>982,020,320원</td>
+							<td>320,320원</td>
+						</tr>
+						<tr>
+							<th>OTC/기타</th><!-- 2020-07-09 텍스트 수정 -->
+							<td>2,020,320원</td>
+							<td>1,320,320원</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="status_column minus_balance">
+			<div class="column_header">
+				<div class="txt_cell"><span class="ico_dw minus">마이너스 잔고</span></div>
+				<div class="btn_cell"><a href="balance_popup.html" class="btn_type4 btn_balance">잔고이동</a></div>
+			</div>
+			<div class="column_body">
+				<table class="statement">
+					<colgroup>
+						<col width="10">
+						<col width="30">
+						<col width="30">
+						<col width="30">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>ETC</th>
+							<td>-92,020,320원</td>
+							<th>우루사</th>
+							<td>320,320원</td>
+						</tr>
+						<tr>
+							<th>OTC</th>
+							<td>320,320원</td>
+							<th>대웅바이오</th>
+							<td>-83,320,320원</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="status_column my_benefit">
+			<div class="column_header">
+				<div class="txt_cell"><span class="ico_dw benefit">마이너스 잔고</span></div>
+				<div class="btn_cell"><a href="#none" class="btn_type6 btn_grade">등급확인</a></div>
+			</div>
+			<div class="column_body">
+				<table class="statement">
+					<colgroup>
+						<col width="40">
+						<col width="60">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>마일리지</th>
+							<td>332,020,320원</td>
+						</tr>
+						<tr>
+							<th>포인트</th>
+							<td>220,320원</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn_box">
+					<a href="http://www.shop.co.kr/front/theshop/event/familyZone/familyzone_main" class="btn_type4">사용하기</a>
+					<a href="#none" class="btn_type4 btn_point_convert">포인트전환</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 2021-06-10 삭제 <div class="status_wrap">
+		<button type="button" class="toggle_btn"></button>
+	</div> -->
+</section>
+<!-- 등급 확인 레이어 팝업 [s] -->
+<div id="popFamilyMileage" style="display:none">
+	<div class="pop_layer pop_type1" style="width:610px;">
+		<strong class="tit_popup">패밀리존</strong>
+		<div class="pop_wrap">
+			<div class="family_info">
+				<div class="grade_img">
+					<span class="ico_familyzone ico_normal" id="nowGradeImg"></span>
+					<!--
+					<span class="ico_familyzone ico_diamond"></span>
+					<span class="ico_familyzone ico_vip"></span>
+					<span class="ico_familyzone ico_platinum"></span>
+					<span class="ico_familyzone ico_gold"></span>
+					<span class="ico_familyzone ico_silver"></span>
+					<span class="ico_familyzone ico_family"></span>
+					<span class="ico_familyzone ico_bronze"></span>
+					-->
+					<a href="#none" class="btn_type4 btn_standard">등급기준 상세보기<span class="btn_comm ico_arr"></span></a>
+				</div>
+				<div class="info_grade">
+					<strong class="tit_grade"><span class="emph_color2" id="now_quarter1">2분기</span> 등급 :  <span class="emph_color" id="gradeNM1"></span></strong>
+					<p class="txt_date">(등급산정기간 : <strong class="emph_color2" id="now_prevQuarter">2020년 1분기</strong>)</p>
+					<em class="ico_familyzone ico_tip">TIP</em>
+					<ul class="list_info">
+						<li id="li_normal">분기 내 <span class="emph_color" id="now_quarter_order_amt">0</span>원을 추가 구매하시면 <span class="emph_color2" id="gradeNM2"></span>등급이 유지됩니다.</li>
+						<li id="li_vip">분기 내 <span class="emph_color" id="next_quarter_order_amt">9,000,000</span>원을 추가 구매하시면 <span class="emph_color2" id="familyzone_grade_area1">패밀리<a href="/front/theshop/event/familyZone/familyzone_main" class="btn_view">등급</a></span>으로 상향됩니다. </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="btn_comm btn_close">닫기</button>
+	</div>
+</div>
+<!-- 등급 확인 레이어 팝업 [e] -->
+<!-- 패밀리존 등급 기준 상세 안내 [s] -->
+<div id="gradeDetail" style="display:none">
+	<div class="pop_layer pop_type1" style="width:850px;">
+		<strong class="tit_popup">패밀리존 등급 기준 상세 안내</strong>
+		<div class="pop_wrap">
+			<strong class="tit_sub">패밀리존 등급 기준</strong>
+			<p class="txt_grade">분기별 누적매출, 주문건수, 로그인횟수, 이벤트 참여율, 공급사 매출 비중분석을 통해 최종적으로 확정됩니다.</p>
+			<div class="box_grade">
+				<ul class="list_grade">
+					<li>
+						<div class="inner_item">
+							<span class="ico_familyzone ico_vip">VIP</span>
+							<div class="info_graph info_vip">
+								<strong class="txt_num">30,000</strong>
+								<strong>만원</strong>이상<br>
+								구매고객
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inner_item">
+							<span class="ico_familyzone ico_diamond">diamond</span>
+							<div class="info_graph info_diamond">
+								<strong class="txt_num">30,000<br>~15,000</strong>
+								<strong>만원</strong>미만<br>
+								구매고객
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inner_item">
+							<span class="ico_familyzone ico_platinum">platinum</span>
+							<div class="info_graph info_platinum">
+								<strong class="txt_num">15,000<br>~15,000</strong>
+								<strong>만원</strong>미만<br>
+								구매고객
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inner_item">
+							<span class="ico_familyzone ico_gold">gold</span>
+							<div class="info_graph info_gold">
+								<strong class="txt_num">6,000<br>~9,000</strong>
+								<strong>만원</strong>미만<br>
+								구매고객
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inner_item">
+							<span class="ico_familyzone ico_silver">silver</span>
+							<div class="info_graph info_silver">
+								<strong class="txt_num">3,000<br>~6,000</strong>
+								<strong>만원</strong>미만<br>
+								구매고객
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inner_item">
+							<span class="ico_familyzone ico_bronze">bronze</span>
+							<div class="info_graph info_bronze">
+								<strong class="txt_num">1,500<br>~3,000</strong>
+								<strong>만원</strong>미만<br>
+								구매고객
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inner_item">
+							<span class="ico_familyzone ico_family">family</span>
+							<div class="info_graph info_family">
+								<strong class="txt_num">900~1,500</strong>
+								<strong>만원</strong>미만<br>
+								구매고객
+							</div>
+						</div>
+					</li>
+				</ul>
+				<p class="txt_info"><strong>등급별 더샵 마일리지 적립 기준</strong> (18.04.01 변경) </p>
+				<p class="txt_caution">＊각 등급별로 매분기 시작 시 마일리지를 지급합니다. ＊ 지급된 마일리지는 패밀리존 혜택 사용 시 차감됩니다.</p>
+			</div>
+			<strong class="tit_sub">등급별 마일리지 안내</strong>
+			<table class="tbl_type2">
+				<caption>등급별 마일리지 안내 리스트</caption>
+				<colgroup>
+					<col style="width:12.5%">
+					<col style="width:12.5%">
+					<col style="width:12.5%">
+					<col style="width:12.5%">
+					<col style="width:12.5%">
+					<col style="width:12.5%">
+					<col style="width:12.5%">
+					<col style="width:12.5%">
+				</colgroup>
+				<tbody>
+				<tr>
+					<th scope="col">등급</th>
+					<td><span class="ico_familyzone ico_vip">VIP</span></td>
+					<td><span class="ico_familyzone ico_diamond">diamond</span></td>
+					<td><span class="ico_familyzone ico_platinum">platinum</span></td>
+					<td><span class="ico_familyzone ico_gold">gold</span></td>
+					<td><span class="ico_familyzone ico_silver">silver</span></td>
+					<td><span class="ico_familyzone ico_bronze">bronze</span></td>
+					<td><span class="ico_familyzone ico_family">family</span></td>
+				</tr>
+				<tr>
+					<th scope="row">마일리지</th>
+					<td>1,500,000점</td>
+					<td>600,000점</td>
+					<td>300,000점</td>
+					<td>180,000점</td>
+					<td>80,000점</td>
+					<td>36,000점</td>
+					<td>15,000점</td>
+				</tr>
+				</tbody>
+			</table>
+			<strong class="tit_sub">더샵마일리지 혜택은?</strong>
+			<ul class="list_benefit">
+				<li>
+					<span class="ico_familyzone ico_benefit1"></span>
+					<strong class="tit_benefit">좀더 쉽고 빠르게</strong>
+					복잡한 혜택은 이제 그만,<br>쉽고 편하게 교환하고 사용하자
+				</li>
+				<li>
+					<span class="ico_familyzone ico_benefit2"></span>
+					<strong class="tit_benefit">내게 필요한 혜택만 골라서</strong>
+					원하는 혜택만 골라서 마일리지로<br>교환하여 사용할 수 있으니까 알차게
+				</li>
+				<li>
+					<span class="ico_familyzone ico_benefit3"></span>
+					<strong class="tit_benefit">누적 사용해서 좀더 큰 혜택으로</strong>
+					적은 금액이라도 쌓이고 쌓여서<br>좀더 큰 혜택으로 가져갈 수 있으니까
+				</li>
+			</ul>
+		</div>
+		<button type="button" class="btn_comm btn_close">닫기</button>
+	</div>
+</div>
+<!-- 패밀리존 등급 기준 상세 안내 [e] -->
+<!-- 2020-06-19 대웅 잔고 이동 레이어 팝업 [s] -->
+<div id="balancePopup" style="display:none">
+	<div class="pop_layer pop_type1">
+		<strong class="tit_popup">대웅 잔고 이동</strong>
+		<div class="popup_body">
+			<div class="table_wrap">
+				<table>
+					<caption>대웅제약 마이너스 잔고현황</caption>
+					<colgroup>
+						<col width="33">
+						<col width="33">
+						<col width="34">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>일반의약품<span class="legend_tag otc">OTC</span></th>
+							<th>전문의약품<span class="legend_tag etc">ETC</span></th>
+							<th>우루사제품군<span class="legend_tag ursa">우루사</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="table_wrap">
+				<table>
+					<caption>대웅바이오 마이너스 잔고현황</caption>
+					<colgroup>
+						<col width="33">
+						<col width="67">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>바이오전문의약품</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>0</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="legend">
+					<li><span class="legend_tag otc">OTC</span>일반의약품, 건기식군 </li>
+					<li><span class="legend_tag etc">ETC</span>처방, 전문의약품, 포사 제품군</li>
+					<li><span class="legend_tag ursa">우루사</span>우루사제품군(복합우루사, 대웅우루사, 알파우루사) </li>
+				</ul>
+			</div>
+			<div class="field_wrap">
+				<div class="field_box">
+					<p class="field_tit">선택 가능 제품군</p>
+					<select style="width:156px" name="sapCode1" id="sapCode1" onchange="onChgsapCode1(this.value);">
+						<option value="">선택</option>
+						<option value="DW01">대웅제약 일반의약품</option>
+						<option value="DW03">대웅제약 전문의약품</option>
+						<option value="DW02">대웅제약 우루사제품군</option>
+						<option value="DB01">대웅바이오 전문의약품</option>
+					</select>
+				</div>
+				<div class="field_box">
+					<p class="field_tit">이동 대상 제품군</p>
+					<select style="width:156px" name="sapCode2" id="sapCode2">
+						<option value="">선택</option>
+					</select>
+				</div>
+				<div class="field_box">
+					<p class="field_tit">금액</p>
+					<input type="text" class="input" name="transAmt" maxlength="12">원
+				</div>
+			</div>
+			<div class="button_wrap">
+				<button type="button" class="confirm_btn">적용하기</button>
+				<button type="button" class="cancel_btn fnc_close">적용취소</button>
+			</div>
+		</div>
+		<div class="popup_footer">
+			<strong>* 잔고이동방법</strong>
+			<ul class="flow">
+				<li>잔고이동버튼 클릭</li>
+				<li>선택기능제품군 선택</li>
+				<li>잔고이동대상제품군 선택</li>
+				<li>금액입력</li>
+				<li>적용하기 클릭</li>
+			</ul>
+		</div>
+		<button type="button" class="btn_comm btn_close fnc_close">닫기</button>
+	</div>
+    
+</div>
+<!-- 2020-06-19 대웅 잔고 이동 레이어 팝업 [e] -->
+
+<script type="text/javascript">
+	$(function(){
+		// status bar toggle 2020-06-30 수정
+		$("#status").on("click", ".toggle_btn", function(e) {
+			e.preventDefault();
+			$(e.delegateTarget).toggleClass('open');
+			var style = $(e.delegateTarget).hasClass('open') ? "margin-top:"+$("#status").outerHeight()+"px" : ""
+			$('.quick_menu .quick_menu_inner:first-child').attr('style', style);
+		});
+		// 잔고이동 팝업 스크립트 수정
+		$("#status .btn_balance").click(function(e){
+			// javasciprt:window.open(this.href,'balancePop','width=630px,height=600,scrollbars=yes'); return false
+			e.preventDefault();
+			var modalLayer = null;
+			modalLayer = shopUI.modalLayer($("#balancePopup"), {
+				closeClass: "fnc_close"
+			});
+		});
+		// 포인트 전환하기 팝업
+		$("body").on("click", "#status .btn_point_convert", function(e) {
+			e.preventDefault();
+			var modalLayer = null;
+			modalLayer = shopUI.modalLayer($("#pointConvert"), {
+				closeClass: "btn_close"
+			});
+			// 모달레이어 close 이벤트 추가
+			$("body").on("click", "#pointConvert .btn_cancel", function() {
+				// modalLayer.close();
+				$(".btn_close").click();
+			});
+		});
+		// 등급 확인 팝업
+		$("body").on("click", "#status .btn_grade", function(e) {
+			e.preventDefault();
+			var modalLayer = null;
+			modalLayer = shopUI.modalLayer($("#popFamilyMileage"), {
+				closeClass: "btn_close"
+			});
+		});
+		// 등급기준 상세보기 팝업
+		$("body").on("click", "#popFamilyMileage .btn_standard", function(e) {
+			e.preventDefault();
+			var modalLayer = null;
+			modalLayer = shopUI.modalLayer($("#gradeDetail"), {
+				closeClass: "btn_close"
+			});
+		});
+	});
+</script>
+
         <!-- 상단 상태 바 [e] -->
 
         <div id="content" class="cont_dw_list return_layout">
             <ul class="tab_menu tab_type2">
-                <li class="on"><a href="/publish/shop/renewal/html/daewoong/return.html">반품신청</a></li>
-                <li><a href="/publish/shop/renewal/html/daewoong/return_status.html">반품진행현황</a></li>
+                <li class="on"><a href="./return.html">반품신청</a></li>
+                <li><a href="./return_status.html">반품진행현황</a></li>
             </ul>
             <p class="tit">반품신청</p>
             <div class="condition_wrap">
@@ -460,7 +937,39 @@
             <!-- 2020-06-23 장바구니 영역 추가 [e] -->
         </div>
         <!-- 우측 퀵메뉴[s] -->
-        <!--#include virtual="/publish/shop/renewal/html/include/quick_menu_vip.html" -->
+        <div class="quick_menu">
+	<div class="quick_menu_inner">
+		<strong>의약품</strong>
+		<p class="txt_quick txt_bold">보덕메디팜</p>
+	</div>
+	<div class="quick_menu_inner">
+		<strong>부외품</strong>
+		<p class="txt_quick txt_bold">이팜</p>
+	</div>
+	<div class="quick_menu_inner">
+		<strong>나의 혜택</strong>
+		<p class="txt_quick">예치금<br><span class="txt_num">2,154,351</span>원</p>
+		<p class="txt_quick">마일리지<br><span class="txt_num">2,154,351</span>원</p>
+	</div>
+	<a href="#" class="btn_top2"><span class="btn_comm">TOP</span></a><!-- 2018-12-11 수정 -->
+</div>
+<script type="text/javascript">
+	$(function () {
+		var floatPosition = parseInt($(".quick_menu").css('top'));
+		$(window).scroll(function() {
+			var scrollTop = $(window).scrollTop();
+			var newPosition = scrollTop + floatPosition + "px";
+			$(".quick_menu").stop().animate({
+				"top" : newPosition
+			}, 500)
+		});
+		/* 2018-12-11 수정 */
+		$(".quick_menu .btn_top2").on("click", function(e){
+			e.preventDefault();
+			$("html, body").animate({scrollTop: 0});
+		});
+	});
+</script>
         <!-- 우측 퀵메뉴[e] -->
         <!-- 우측 하단 문자 서비스 영역 [s] -->
         <!--#include virtual="/publish/shop/renewal/html/daewoong/_consult_area.html" -->

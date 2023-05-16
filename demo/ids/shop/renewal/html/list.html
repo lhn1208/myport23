@@ -5,55 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>더샵 약국몰 리스트</title>
+    <script type="text/javascript" src="../js/libs/jquery-1.12.1.min.js"></script>
     <style>
         *{margin: 0; padding: 0;}
         body{background-color: #000; color: #fff;}
         table caption{font-size:0;line-height:0;visibility:hidden}
-        .wrap{width: 80%; margin: 0 auto;}
+        .progress-container {position: fixed; top:0; width: 100%; height: 6px; background: rgba(255,255,255,.8); z-index: 80;}
+        .progress-bar {height: 6px; background: #fd6006; width: 0%; transition:all .3s ease;}
+        section h2{padding:40px 20px; color: #111; font-size: 38px;}
+        .wrap{width: 80%; margin: 0 auto 4rem;}
         .wrap h1{margin: 2rem 0;}
         .table_wrap{margin-bottom:1.25rem; padding: 1.25rem; color: #000; border: 1px solid #fd6006; background-color: #fff;}
         .table_wrap h2{margin-bottom: 1rem; color: #fd6006;}
         .table_wrap table{width: 100%; border-spacing:0; border-collapse: collapse;}
+        .table_wrap table thead th{background-color: #fd6006; color: #fff; border-left: 1px solid #fff; border-bottom: 1px solid #fff;}
         .table_wrap table th, .table_wrap table td{padding: .2rem .6rem; border-top: 1px solid #fd6006; border-left: 1px solid #fd6006; border-bottom: 1px solid #fd6006;}
         .table_wrap table th:first-child, .table_wrap table td:first-child{border-left: none;}
         .table_wrap a{color: #000;}
     </style>
 </head>
 <body>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
     <div class="wrap">
-        <h1>더샵 약국몰 리스트</h1>
+        <h1>더샵 약국 쇼핑몰 리스트</h1>
         <!--메인 [S]-->
         <div class="table_wrap">
             <h2>메인</h2>
             <table>
                 <caption>메인 목록 테이블</caption>
                 <colgroup>
-                    <col width="15%">
+                    <col width="30%">
                     <col width="*">
-                    <col width="24%">
                 </colgroup>
                 <thead>
                     <tr>
                         <th scope="col">목록</th>
-                        <th scope="col">link</th>
-                        <th scope="col">비고</th>
+                        <th scope="col">Link</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th>메인</th>
+                        <th scope="row">메인</th>
                         <td><a href="./main/main_curation.html" target="_blank">./main/main_curation.html</a></td>
-                        <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <th>로그인</th>
+                        <th scope="row">로그인</th>
                         <td><a href="./main/login.html" target="_blank">./main/login.html</a></td>
-                        <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <th>회원가입</th>
-                        <td><a href="./main/join.html" target="_blank">./main/join.html</a></td>
-                        <td>&nbsp;</td>
+                        <th scope="row">회원가입</th>
+                        <td><a href="./join/join_step1.html" target="_blank">./join/join_step1.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">회원 정보 입력</th>
+                        <td><a href="./join/join_step2.html" target="_blank">./join/join_step2.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">회원 가입 완료</th>
+                        <td><a href="./join/join_step3_pharm.html" target="_blank">./join/join_step3_pharm.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">개인정보 취급방침</th>
+                        <td><a href="./footer_menu/terms.html" target="_blank">./footer_menu/terms.html</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -65,96 +80,409 @@
             <table>
                 <caption>마이페이지 목록 테이블</caption>
                 <colgroup>
-                    <col width="24%">
+                    <col width="30%">
                     <col width="*">
-                    <col width="24%">
                 </colgroup>
                 <thead>
                     <tr>
                         <th scope="col">목록</th>
-                        <th scope="col">link</th>
-                        <th scope="col">비고</th>
+                        <th scope="col">Link</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th>마이페이지</th>
+                        <th scope="row">마이페이지</th>
                         <td><a href="./mypage/grain.html" target="_blank">./mypage/grain.html</a></td>
-                        <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <th>회원 탈퇴</th>
+                        <th scope="row">회원 탈퇴</th>
                         <td><a href="./mypage/quit_membership.html" target="_blank">./mypage/quit_membership.html</a></td>
-                        <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <th>예치금 환불 신청</th>
+                        <th scope="row">예치금 환불 신청</th>
                         <td><a href="./mypage/refund.html" target="_blank">./mypage/refund.html</a></td>
-                        <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <th>예치금 환불 계좌 등록 팝업</th>
+                        <th scope="row">예치금 환불 계좌 등록 팝업</th>
                         <td><a href="./mypage/refund_pop_register.html" target="_blank">./mypage/refund_pop_register.html</a></td>
-                        <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <th>폐업 신청</th>
+                        <th scope="row">폐업 신청</th>
                         <td><a href="./mypage/quit_business.html" target="_blank">./mypage/quit_business.html</a></td>
-                        <td>&nbsp;</td>
                     </tr>
-                
                 </tbody>
             </table>
         </div>
          <!--마이페이지 [E]-->
-        <!--The 멤버십 [S]-->
+        <!--상품 [S]-->
         <div class="table_wrap">
-            <h2>The 멤버십</h2>
+            <h2>상품</h2>
             <table>
-                <caption>The 멤버십 목록 테이블</caption>
+                <caption>상품 목록 테이블</caption>
                 <colgroup>
-                    <col width="24%">
+                    <col width="30%">
                     <col width="*">
-                    <col width="24%">
                 </colgroup>
                 <thead>
                     <tr>
                         <th scope="col">목록</th>
-                        <th scope="col">link</th>
-                        <th scope="col">비고</th>
+                        <th scope="col">Link</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th>멤버십 소개</th>
+                        <th scope="row">상품 리스트</th>
+                        <td><a href="./products/result.html" target="_blank">./products/result.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">스페셜 상품</th>
+                        <td><a href="./products/special_prod.html" target="_blank">./products/special_prod.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">베스트 상품</th>
+                        <td><a href="./products/best50.html" target="_blank">./products/best50.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">장바구니</th>
+                        <td><a href="./cart/cart.html" target="_blank">./cart/cart.html</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+         <!--상품 [E]-->
+         <!--The 멤버십 [S]-->
+        <div class="table_wrap">
+            <h2>더 멤버십</h2>
+            <table>
+                <caption>The 멤버십 목록 테이블</caption>
+                <colgroup>
+                    <col width="20%">
+                    <col width="10%">
+                    <col width="*">
+                </colgroup>
+                <thead>
+                    <tr>
+                       <th scope="col" colspan="2">목록</th>
+                      <th scope="col" rowspan="2">Link</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Depth1</th>
+                        <th scope="col">Depth2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" colspan="2">멤버십 소개</th>
                         <td><a href="./membership/benefit.html" target="_blank">./membership/benefit.html</a></td>
-                        <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <th>회원 탈퇴</th>
-                        <td><a href="./mypage/quit_membership.html" target="_blank">./mypage/quit_membership.html</a></td>
-                        <td>&nbsp;</td>
+                        <th scope="row" colspan="2">빅 데이터 맞춤 상품</th>
+                        <td><a href="./membership/bigdata.html" target="_blank">./membership/bigdata.html</a></td>
                     </tr>
                     <tr>
-                        <th>예치금 환불 신청</th>
-                        <td><a href="./mypage/refund.html" target="_blank">./mypage/refund.html</a></td>
-                        <td>&nbsp;</td>
+                        <th scope="row">약사 참여 공간</th>
+                        <th scope="row">&nbsp;</th>
+                        <td><a href="./membership/bamboo.html" target="_blank">./membership/bamboo.html</a></td>
                     </tr>
                     <tr>
-                        <th>예치금 환불 계좌 등록 팝업</th>
-                        <td><a href="./mypage/refund_pop_register.html" target="_blank">./mypage/refund_pop_register.html</a></td>
-                        <td>&nbsp;</td>
+                        <th scope="row">&nbsp;</th>
+                        <th scope="row">등록</th>
+                        <td><a href="./membership/bamboo_write.html" target="_blank">./membership/bamboo_write.html</a></td>
                     </tr>
                     <tr>
-                        <th>폐업 신청</th>
-                        <td><a href="./mypage/quit_business.html" target="_blank">./mypage/quit_business.html</a></td>
-                        <td>&nbsp;</td>
+                        <th scope="row">&nbsp;</th>
+                        <th scope="row">게시판</th>
+                        <td><a href="./membership/bamboo_view.html" target="_blank">./membership/bamboo_view.html</a></td>
                     </tr>
-                
+                    <tr>
+                        <th scope="row" colspan="2">주거래 도매 약정</th>
+                        <td><a href="./membership/contract.html" target="_blank">./membership/contract.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">약사 건강 검진</th>
+                        <td><a href="./membership/check.html" target="_blank">./membership/check.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">운동 소개 영상</th>
+                        <th scope="row">&nbsp;</th>
+                        <td><a href="./membership/exercise.html" target="_blank">./membership/exercise.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">&nbsp;</th>
+                        <th scope="row">등록</th>
+                        <td><a href="./membership/exercise_write.html" target="_blank">./membership/exercise_write.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">모바일 쿠폰 발송서비스</th>
+                        <td><a href="./membership/giftishow.html" target="_blank">./membership/giftishow.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">운동 센터 소개</th>
+                        <td><a href="./membership/heal_core.html" target="_blank">./membership/heal_core.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">힐리언스 선마을 소개</th>
+                        <td><a href="./membership/healience.html" target="_blank">./membership/healience.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">온라인 문의 게시판</th>
+                        <td><a href="./membership/online_secretary.html" target="_blank">./membership/online_secretary.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">The 미디어 홍보 페이지</th>
+                        <td><a href="./membership/media.html" target="_blank">./membership/media.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">설문 조사</th>
+                        <td><a href="./membership/survey.html" target="_blank">./membership/survey.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">제휴 서비스</th>
+                        <td><a href="./membership/themeet.html" target="_blank">./membership/themeet.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">이용권 구매</th>
+                        <td><a href="./membership/theticket.html" target="_blank">./membership/theticket.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">제로샵 소개</th>
+                        <td><a href="./membership/zeroshop.html" target="_blank">./membership/zeroshop.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">복약지도</th>
+                        <th scope="row">&nbsp;</th>
+                        <td><a href="./membership/guidance.html" target="_blank">./membership/guidance.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">&nbsp;</th>
+                        <th scope="row">작성</th>
+                        <td><a href="./membership/guidance_write.html" target="_blank">./membership/guidance_write.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">&nbsp;</th>
+                        <th scope="row">my 복약지도</th>
+                        <td><a href="./membership/guidance_mypage.html" target="_blank">./membership/guidance_mypage.html</a></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
          <!--The 멤버십 [E]-->
+        <!--더 샵 플러스 [S]-->
+        <div class="table_wrap">
+            <h2>더 샵 플러스</h2>
+            <table>
+                <caption>더 샵 플러스 목록 테이블</caption>
+                <colgroup>
+                    <col width="20%">
+                    <col width="10%">
+                    <col width="*">
+                </colgroup>
+                <thead>
+                    <thead>
+                        <tr>
+                           <th scope="col" colspan="2">목록</th>
+                          <th scope="col" rowspan="2">Link</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Depth1</th>
+                            <th scope="col">Depth2</th>
+                        </tr>
+                    </thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">지식 공유</th>
+                        <th scope="row">&nbsp;</th>
+                        <td><a href="./plus_knowledge/main.html" target="_blank">./plus_knowledge/main.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">&nbsp;</th>
+                        <th scope="row">내 답변</th>
+                        <td><a href="./plus_knowledge/my_answer.html" target="_blank">./plus_knowledge/my_answer.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">&nbsp;</th>
+                        <th scope="row">질문 하기</th>
+                        <td><a href="./plus_knowledge/write.html" target="_blank">./plus_knowledge/write.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">지식 공유</th>
+                        <th scope="row">&nbsp;</th>
+                        <td><a href="./plus_knowledge/counsel_list.html" target="_blank">./plus_knowledge/counsel_list.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">&nbsp;</th>
+                        <th scope="row">작성</th>
+                        <td><a href="./plus_knowledge/counsel_write.html" target="_blank">./plus_knowledge/counsel_write.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">마이 페이지</th>
+                        <td><a href="./plus_mypage/main.html" target="_blank">./plus_mypage/main.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">빅 데이터 센터</th>
+                        <td><a href="./plus_bigdata/commercial_analysis.html" target="_blank">./plus_bigdata/commercial_analysis.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">라이브 세미나</th>
+                        <td><a href="./plus_liveseminar/detail.html" target="_blank">./plus_liveseminar/detail.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">상품 주문</th>
+                        <td><a href="./ez3pl/main.html" target="_blank">./ez3pl/main.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">가격 비교 서비스</th>
+                        <td><a href="./ez3pl/compare.html" target="_blank">./ez3pl/compare.html</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+         <!--더 샵 플러스 [E]-->
+        <!--대웅 전용관 [S]-->
+        <div class="table_wrap">
+            <h2>대웅 전용관</h2>
+            <table>
+                <caption>대웅 전용관 목록 테이블</caption>
+                <colgroup>
+                    <col width="30%">
+                    <col width="*">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">목록</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">상품 리스트</th>
+                        <td><a href="./daewoong/main.html" target="_blank">./daewoong/main.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">ETC</th>
+                        <td><a href="./daewoong/etc.html" target="_blank">./daewoong/etc.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">OTC</th>
+                        <td><a href="./daewoong/otc.html" target="_blank">./daewoong/otc.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">정기배송 서비스</th>
+                        <td><a href="./daewoong/subscribe.html" target="_blank">./daewoong/subscribe.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">반품 신청</th>
+                        <td><a href="./daewoong/return.html" target="_blank">./daewoong/return.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">여행 라이프</th>
+                        <td><a href="./daewoong/travelLife.html" target="_blank">./daewoong/travelLife.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">마케팅 동의</th>
+                        <td><a href="./daewoong/marketing_agree.html" target="_blank">./daewoong/marketing_agree.html</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+         <!--대웅 전용관 [E]-->
+         <!--VIP 전용관 [S]-->
+        <div class="table_wrap">
+            <h2>VIP 전용관</h2>
+            <table>
+                <caption>VIP 전용관 목록 테이블</caption>
+                <colgroup>
+                    <col width="30%">
+                    <col width="*">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">목록</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">VIP 전용관 소개</th>
+                        <td><a href="./vip/apply.html" target="_blank">./vip/apply.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">마이페이지</th>
+                        <td><a href="./vip/mypage.html" target="_blank">./vip/mypage.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">주문 내역</th>
+                        <td><a href="./vip/history.html" target="_blank">./vip/history.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">관심 상품</th>
+                        <td><a href="./vip/interest.html" target="_blank">./vip/interest.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">낱알 반품</th>
+                        <td><a href="./vip/return.html" target="_blank">./vip/return.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">검색 결과</th>
+                        <td><a href="./vip/search.html" target="_blank">./vip/search.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">고객 만족 센터</th>
+                        <td><a href="./vip/customer.html" target="_blank">./vip/customer.html</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+         <!--VIP 전용관 [E]-->
+        <!--서비스 [S]-->
+        <div class="table_wrap">
+            <h2>서비스</h2>
+            <table>
+                <caption>서비스 목록 테이블</caption>
+                <colgroup>
+                    <col width="30%">
+                    <col width="*">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">목록</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">부가 서비스</th>
+                        <td><a href="./additi_service/additi_service.html" target="_blank">./additi_service/additi_service.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">제휴 카드</th>
+                        <td><a href="./benefit_card/benefit_card.html" target="_blank">./benefit_card/benefit_card.html</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">마일리지 사용</th>
+                        <td><a href="./familyzone/mileage_tip.html" target="_blank">./familyzone/mileage_tip.html</a></td>
+                    </tr>
+            
+                </tbody>
+            </table>
+        </div>
+         <!--서비스 [E]-->
     </div>
+    <script>
+        function progressBar(){
+            var wins = $(this).scrollTop();
+            var hei = $('.wrap').outerHeight(); //전체 페이지 높이
+            var hei2 = $(window).outerHeight(); //윈도우의 높이
+            var height = hei - hei2;
+            var bar = (wins / height) * 100;
+            $('#myBar').css('width', bar + '%');
+         }
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                progressBar();
+            });
+        });
+    </script>
 </body>
 </html>

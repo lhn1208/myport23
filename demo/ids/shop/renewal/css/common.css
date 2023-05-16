@@ -202,7 +202,7 @@ a:hover .btn_menu,
 .datepicker_day li {float:left;margin-right:3px;}
 .datepicker_day button {display:block;min-width:28px;height:27px;padding:0 5px;font-size:11px;color:#888;border:1px solid #d5d5d5;background-color:#f0f1f1;}
 /* 수량조절 */
-.ctl_prod{display:inline-block;position:relative;width:58px;padding-right:13px;vertical-align:middle;box-sizing:border-box}
+.ctl_prod{display:inline-block;position:relative;width:52px;padding-right:13px;vertical-align:middle;box-sizing:border-box}
 .ctl_prod .inp_num{display:block;width:46px;height:25px;padding:0;border:1px solid #d8d8d8;font-family:Verdana;text-align:center}
 .ctl_prod button{position:absolute;top:0;right:0;width:13px;height:13px}
 .ctl_prod .btn_minus{top:12px}
