@@ -1,4 +1,23 @@
-<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>theSHOP</title>
+	<link rel="stylesheet" href="../../js/libs/jquery-ui.css">
+	<link rel="stylesheet" href="../../js/libs/owl.carousel.css">
+	<link rel="stylesheet" href="../../css/fonts.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<!--[if lt IE 9]>
+	<script src="../../js/libs/html5shiv.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="../../js/libs/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery-ui.js"></script>
+	<script type="text/javascript" src="../../js/libs/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.bpopup.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/fn-tag-fakeselect.js"></script>
+	<script type="text/javascript" src="../../js/ui.js"></script>
     <link rel="stylesheet" href="../../css/layout_vip.css">
     <link rel="stylesheet" href="../../css/vip.css">
 </head>
@@ -45,7 +64,63 @@
     <!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
 
     <!-- footer [s] -->
-    <!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+    <footer id="footer">
+		<div class="footer_cont">
+			<div class="footer_inner">
+				<ul class="footer_menu">
+					<li><a href="../footer_menu/introduce.html">이용안내</a></li>
+					<li><a href="../footer_menu/terms.html">개인정보취급방침</a></li>
+					<li><a href="../footer_menu/terms.html">이용약관</a></li>
+					<li><a href="../footer_menu/terms.html">이메일 무단수집 거부</a></li>
+					<li><a href="../footer_menu/location.html">찾아오시는 길</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_cont">
+			<div class="footer_inner">
+				<p class="ico_comm ico_footer_logo">theSHOP</p>
+				<address class="txt_address">
+					(주)엠서클<span class="txt_bar">|</span>서울특별시 강남구 봉은사로 644(삼성동)<span class="txt_bar">|</span>대표자: 김명석<br>
+					사업자등록번호: 120-86-10499<span class="txt_bar">|</span>통신판매업신고: 2009-서울강남-00290 <a href="#" class="btn_type4 btn_business_info">사업자정보확인<span class="ico_comm ico_link"></span></a>
+					<span class="txt_copyright">Copyright <strong>&copy; Mcircle</strong> Corp. All rights reserved.</span>
+				</address>
+				<div class="customer_center">
+					<strong>더샵문의</strong>
+					<p class="txt_tel"><span class="txt_tit">Tel</span> 080-550-8113</p>
+					<a href="mailto:theshopadmin@mcircle.biz">theshopadmin@mcircle.biz</a>
+					<p>상담가능시간 : 08:30 ~ 18:00<br>(토·일요일/공휴일 휴무, 점심시간 12:00-13:00)</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- 공통 팝업[s] -->
+	<div id="modalType1" style="position:absolute;display:none;">
+		<div class="pop_layer pop_type1">
+			<strong class="tit_popup"></strong>
+			<div class="pop_wrap">
+				<p class="desc_popup"><span class="desc_inner"></span></p>
+				<div class="btn_wrap">
+					<button type="button" class="btn_type1 btn_confirm">확인</button>
+				</div>
+				<button type="button" class="btn_comm btn_close">닫기</button>
+			</div>
+		</div>
+	</div>
+	<div id="modalType2" style="position:absolute;display:none;">
+		<div class="pop_layer pop_type1">
+			<strong class="tit_popup"></strong>
+			<div class="pop_wrap">
+				<p class="desc_popup"><span class="desc_inner"></span></p>
+				<div class="btn_wrap">
+					<button type="button" class="btn_type1 btn_confirm">확인</button>
+					<button type="button" class="btn_type2 btn_cancel">취소</button>
+				</div>
+				<button type="button" class="btn_comm btn_close" title="닫기">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- 공통 팝업[e] -->
     <!-- footer [e] -->
 
     <div id="popCouponChange" style="display:none">
