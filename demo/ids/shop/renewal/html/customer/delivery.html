@@ -1,0 +1,1641 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/content.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+	<section id="container">
+		<div id="content" class="cont_top_customer">
+			<div class="sub_cont_head">
+				<h2 class="sub_tit">배송안내</h2>
+			</div>
+			<ul class="tab_menu tab_type3">
+				<li class="on"><a href="#tabCharge" class="link_all">배송정책 안내</a></li><!-- 2021-07-05 탭 수정 -->				
+				<li><a href="#tabTime">배송시간 안내</a></li>
+				<li><a href="#tabCourier">배송업체 안내</a></li>
+				<!-- 2021-07-05 탭 추가 -->
+				<li><a href="#tabMinCharge">업체별 최소 금액 안내</a></li>
+			</ul>
+			<div class="tab_cont">
+				<div id="tabCharge">
+					<h3 class="screen_hide">배송정책 안내</h3><!-- 2021-07-05 수정 -->
+					<div class="info_charge">
+						<strong class="tit_charge">the SHOP 배송정책</strong>
+						<div class="wrap_ico"><span class="ico_comm ico_charge1"></span></div>
+						<ul class="list_charge">
+							<li>theSHOP 배송은 전국 어디서나 가능하며 <em class="emph_g">무료 배송</em>입니다.</li>
+							<li>대웅제약/대웅바이오 제품은 구매금액 관계없이 <em class="emph_g">무료 배송</em>입니다.</li>
+							<li>도매업체 및 부외품업체 <em class="emph_g">단독 구매시 최소 주문 금액</em>이 설정됩니다.</li>
+							<li>해당 지역 "거점 도매"로 지정된 도매업체의 제품을 대웅제약/대웅바이오 제품과 함께 구매시 최소 주문 금액이 없이 <em class="emph_g">무료 배송</em>됩니다.
+								<br><img src="../../images/img_order_guide.jpg"><!--2022-11-10 추가-->
+							</li>
+							<li>공급업체별 주문마감시간이 상이 하므로 <em class="emph_g">배송시간안내를 참고</em>하셔서 주문하시기 바랍니다.</li>
+							<li>마트 매장내(계산대안쪽) 위치한 약국의 경우 마트규정 및 택배사 사정에 따라 <em class="emph_g">마트내 검품장에서 수령 가능</em> 합니다.</li>
+						</ul>
+						<strong class="tit_charge">배송 지연 상황</strong>
+						<div class="wrap_ico"><span class="ico_comm ico_charge2"></span></div>
+						<ul class="list_charge">
+							<li>공휴일, 일요일, 물류업체가 <em class="emph_g">휴무</em>일 경우</li>
+							<li><em class="emph_g">도서산간지역</em>에 해당하는 경우</li>
+							<li>도로사정이나 기상상황(폭설, 폭우, 태풍 등), 기타의 <em class="emph_g">예기치 못한 상황</em> 발생할 경우</li>
+						</ul>
+						<strong class="tit_charge">묶음배송안내</strong>
+						<div class="box_bundle">
+							<strong class="tit_charge">묶음배송이란?</strong>
+							<p class="desc_bundle">한 공급업체에 대해 주문마감 시간 내에 결제한 주문 건이 있을 경우, 해당 업체 주문건에 한해 최소주문금액과<br>
+							무관하게 배송비 부담없이 추가 주문이 가능한 서비스</p>
+						</div>
+						<p class="txt_caution">※ 단, 카드결제 및 예치금 결제시에만 묶음배송이 가능합니다.(공동구매주문 및 무통장입금, 실시간 계좌이체 시 불가)</p>
+						<div class="wrap_bundle">
+							<div class="f_l">
+								<strong class="tit_charge">묶음배송 가능업체</strong>
+								<ul>
+									<li><em class="emph_g">도매업체</em> 대전지오영, 미드팜, 백광의약품, 보덕메디팜, 복산나이스팜,<br>
+									서울지오팜, 인천약품, 티제이팜, 한신약품,서울약사신협, 원주백제약품,<br>
+									대구백제약품, 광주백제약품, 부산백제약품, 창원백제약품, 전주백제약품,<br>
+									제이케이팜, 세화약품, 유진약품</li>
+									<li><em class="emph_g">부외품/화장품/동물약품 업체</em> 전 업체</li>
+								</ul>
+							</div>
+							<div class="f_l">
+								<strong class="tit_charge">묶음배송 불가능업체</strong>
+								<ul>
+									<li><em class="emph_g">도매업체</em> 지오영, 경남청십자약품, 태전약품</li>
+									<li><em class="emph_g">부외품/화장품/동물약품 업체</em> 큐브릿지</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 2021-07-05 업체별 최소금액 테이블 #tabMinCharge로 이동 -->
+				</div>
+				<div id="tabTime" style="display:none">
+					<h3 class="screen_hide">배송시간 안내</h3>
+					<ul class="tab_menu tab_type1">
+						<!-- 2021-07-05 탭 수정 -->
+						<li class="on"><a href="#deliveryTime1">대웅그룹사</a></li>
+						<li><a href="#deliveryTime2">거점도매상</a></li>
+						<li><a href="#deliveryTime3">도매업체</a></li>
+						<li><a href="#deliveryTime4">부외품/화장품/동물약품업체</a></li>
+					</ul>
+					<div class="tab_cont_time">
+						<div id="deliveryTime1">
+							<!-- 2021-07-05 탭 내용 변경 [s] -->
+							<h4 class="title">예외품목</h4>
+							<div class="info_charge">
+								<p>하기 품목들은 모두 택배(용마로지스)를 통해 배송됩니다.</p>
+								<p class="title">▶ 한올바이오 품목</p>
+								<ul class="list_charge">
+									<li>배송지역 : 전국 모두</li>
+									<li class="flex"><span>주문시간 / 배송시간 : </span> <span>(평일) 월요일 14:00 ~ 목요일 14:00 / 익일 이내 <br>(주말) 금요일 14:00 ~ 월요일 14:00 / 차주 화요일 이내</span></li>
+								</ul>
+								<hr>
+								<p class="title">▶ 각 거점업체 재고 부족 품목, 항정의약품(디에타민)</p>
+								<ul class="list_charge">
+									<li>배송지역 : 전국 모두</li>
+									<li class="flex"><span>주문시간 / 배송시간 : </span> <span>(평일) 월요일 14:00 ~ 목요일 14:00 / 익일 이내<br>(주말) 금요일 14:00 ~ 월요일 14:00 / 차주 화요일 이내</span></li>
+								</ul>
+								<p class="title">▶ 냉장 품목(새살연고, 이지에프, 피블라스트)</p>
+								<ul class="list_charge">
+									<li>배송지역 : 전국 모두</li>
+									<li class="flex"><span>주문시간 / 배송시간 : </span> <span>(평일,주말) 목요일 14:00 ~ 월요일 14:00 / 차주 화요일 이내</span></li>
+								</ul>
+							</div>
+							<div class="sub_cont_head">
+								<h4 class="title">대웅그룹사 지역·거점별 배송시간</h4>
+								<ul class="list">
+									<li>선택박스 또는 지도를 클릭하여 각 지역·거점별 배송시간을 확인해보세요!</li>
+									<li>※ 해당 지역 "거점 도매"로 지정된 도매업체의 제품을 대웅제약/대웅바이오 제품과 함께 구매시 최소 주문 금액이 없이 무료 배송됩니다.</li>
+								</ul>
+							</div>
+							<!--#include virtual="/publish/shop/renewal/html/customer/_map.html" -->
+							<!-- 2021-07-05 탭 내용 변경 [e] -->
+						</div>
+						<div id="deliveryTime2" style="display:none">
+							<h4 class="screen_hide">거점도매상</h4>
+							<div class="sub_cont_head">
+								<ul class="list">
+									<li>도서산간 및 제주도 지역의 경우 배송예정일 보다 2~3일 배송지연 될 수 있습니다.</li>
+									<li>해당 지역 "거점 도매"로 지정된 도매업체의 제품을 대웅제약/대웅바이오 제품과 함께 구매시 최소 주문 금액이 없이 무료 배송됩니다.
+										<br><img src="../../images/img_order_guide.jpg"><!--2022-11-10 추가-->
+									</li>
+								</ul>
+								<div class="f_r">
+									<div class="cont_search">
+										<input type="text" style="width:190px;" title="검색어 입력">
+										<button type="button" class="btn_search"><span class="btn_comm">검색</span></button>
+									</div>
+								</div>
+							</div>
+							<table class="tbl_type3">
+								<caption>업체명, 지역, 연락처, 배송지역 안내</caption>
+								<colgroup>
+									<col width="100px">
+									<col width="80px">
+									<col width="88px">
+									<col>
+									<col width="283px">
+									<col width="283px">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">구분</th>
+										<th scope="col">업체명</th>
+										<th scope="col">지역</th>
+										<th scope="col">연락처</th>
+										<th scope="col">1일 2배송 지역</th>
+										<th scope="col">1일 1배송 지역</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" rowspan="8">거점도매상</th>
+										<td class="txt_center">오산</td>
+										<td class="txt_center">수도권<br>한강이북<br>경기 제주</td>
+										<td class="txt_center">031-370-4062<br>031-370-4002</td>
+										<td class="align_top">
+											1. 서울특별시<br>
+											(양천구,서대문구,은평구,마포구,광진구,성동구,성북구,강북구,중랑구,동대문구,노원구,도봉구,중구,용산구,종로구)<br>
+											2. 경기 부천시,김포시,고양시,의정부,구리시,남양주시<br>
+											3. 인천광역시 전지역<br>
+											단, 강화군, 인천도서지역(영종도,영흥도,대부도 제외)<br>
+											4. 제주도 제주시
+										</td>
+										<td class="align_top">
+											1. 경기 동두천시,양주시 파주시,연천군,포천군,가평군,양평군<br>
+											2. 인천 강화군<br>
+											3. 인천 도서지역(용마로지스택배) : 영종도, 영흥도, 대부도 (인천 중구 운서동,중산동) 오후5시까지 주문시 익일 배송 단 금요일 오후5시~일요일 오후 5시까지 주문은 화요일 배송<br>
+											4. 제주도 서귀포시<br>
+											* 제주지역 (용마로지스) : 전일 오후5시~당일 오후5시까지 들어온 주문에 한해 제주시 근교는익일 배송되며, 그 외의 외곽지역은 익익일 배송. 단, 금요일 오후5시~일요일 오후 5시까지 주문은 화요일 배송
+										</td>
+									</tr>
+									<tr>
+										<td class="txt_center">서울<br>지오팜</td>
+										<td class="txt_center">수도권<br>한강이남</td>
+										<td class="txt_center">032-510-8224</td>
+										<td class="align_top">
+											1. 서울특별시 한강 이남 전 지역<br>
+											(강서구, 관악구, 구로구, 금천구, 동작구, 서초구, 영등포구, 강남구, 송파구, 강동구)<br>
+											2. 경기도 한강 이남 1일1배송 지역을 제외한 전 지역<br>
+											(과천시, 광명시, 광주시, 성남시, 수원시, 시흥시, 안산시, 안양시, 오산시, 용인시, 하남시, 의왕시, 군포시, 화성시 동탄동, 병점동, 반월동, 평택시 송탄지역)
+										</td>
+										<td class="align_top">
+											1. 경기도 이천시, 여주시, 안성시<br>
+											2. 화성 일부지역<br>
+											(석우동,송산동,안녕동,봉담읍,정남면,태안읍,팔탄면등)<br>
+											3. 평택시(송탄지역 외)
+										</td>
+									</tr>
+									<tr>
+										<td class="txt_center">지오팜</td>
+										<td class="txt_center">대구,경북</td>
+										<td class="txt_center">053-638-0081</td>
+										<td class="align_top">
+											1. 대구시 전 지역<br>
+											2. 경상북도 문경시, 상주시, 영주시, 안동시, 울진군 북면, 울진읍, 죽변면, 경주 양남, 감포읍, 외동읍, 춘양, 청송, 영양 및 군 단위 이하 지역을 제외한 전 지역
+										</td>
+										<td class="align_top">
+											경상북도 문경시, 상주시, 영주시, 안동시 및 군 단위 이하 지역<br>
+											*경북 일부지역(용매택배): 울진군 북면, 울진읍, 죽변면, 경주 양남, 감포읍, 외동읍, 춘양, 청송, 영양 (7지역) 오후5시까지 주문시 익일배송<br>
+											단 금요일 오후5시~일요일 오후5시까지 주문은 화요일 배송
+										</td>
+									</tr>
+									<tr>
+										<td class="txt_center">대전<br>지오영</td>
+										<td class="txt_center">대전,충청</td>
+										<td class="txt_center">042-536-7029</td>
+										<td class="align_top">
+											1. 대전광역시 전 지역<br>
+											2. 충남 일부지역 :계룡시, 공주시, 논산시, 천안시, 연기군<br>
+											3. 충북 일부지역 :청주시 영동군, 옥천군
+										</td>
+										<td class="align_top">
+											1. 충남 일부지역 :서산시, 아산시, 보령시 당진군, 서천군, 예산군, 청양군, 태안군, 홍성군, 금산군, 부여군<br>
+											2. 충북 일부지역 :충주시, 청원군, 괴산군, 보은군, 음성군, 증평군, 진천군<br>
+											* 제천시, 단양군 2013.3.1일자로 원주백제 관할로 변경<br>
+											전라남도 나주시, 목포시, 순천시를 제외한 전 지역,순창
+										</td>
+									</tr>
+									<tr>
+										<td class="txt_center">유진약품</td>
+										<td class="txt_center">광주,전남</td>
+										<td class="txt_center">062-528-6550</td>
+										<td class="align_top">
+											1. 광주광역시 전 지역<br>
+											2. 전라남도 나주시, 목포시, 순천시
+										</td>
+										<td class="align_top">
+											*전남 섬지역(우체국택배):고흥군 봉래면, 완도군 금일읍, 노화읍, 약산면, 소안면,신안군 압해면, 진도군 조도면<br>
+											오후 5시까지 주문시 익일배송<br>
+											단 금요일 오후5시~일요일 오후5시까지 주문은 화요일 배송
+										</td>
+									</tr>
+									<tr>
+										<td class="txt_center">원주<br>백제약품</td>
+										<td class="txt_center">강원</td>
+										<td class="txt_center">033-810-0146</td>
+										<td class="align_top">
+											1. 강원도 춘천시, 원주시, 강릉시<br>
+											2. 충북 제천시, 단양군<br>
+											*토요일 배송없음<br>
+											1)금요일 오후1시까지 주문시 당일배송<br>
+											2)금요일 오후1시~월요일 오전10시까지 주문시 월요일 오후배송
+										</td>
+										<td class="align_top">
+											강원도 춘천시, 원주시, 강릉시를 제외한 전 지역<br>
+											*양구,인제,태백,영월 당일 11시주문건 당일배송<br>
+											*토요일 배송없음<br>
+											1)금요일 오전11시까지 주문시 당일배송<br>
+											2)금요일 오전11시~일요일 저녁8시까지 주문시 월요일 오후배송 *강원도 지역 (대신택배) : 철원, 화천<br>
+											오후5시까지 주문시 익일 배송<br>
+											단 금요일 오후5시~일요일 오후 5시까지 주문은 화요일 배송
+										</td>
+									</tr>
+									<tr>
+										<td class="txt_center">전주<br>백제약품</td>
+										<td class="txt_center">전주,전북</td>
+										<td class="txt_center">063-212-7000</td>
+										<td class="align_top">전라북도 전주시,군산시,익산시,김제시, 정읍시 지역</td>
+										<td class="align_top">부안,고창(1일1배송이지만 현재 1일2배송하고있음)<br>무주(1일1배송)</td>
+									</tr>
+									<tr>
+										<td class="txt_center">복산<br>나이스팜</td>
+										<td class="txt_center">부산</td>
+										<td class="txt_center">051-667-1662</td>
+										<td class="align_top">
+											1.부산시 전 지역<br>
+											2.울산시 전 지역<br>
+											3.양산시 전 지역</td>
+										<td class="align_top">&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div id="deliveryTime3" style="display:none">
+							<div class="sub_cont_head">
+								<!-- 2021-07-05 수정 -->
+								<h4 class="title">업체별 배송시간</h4>
+								<ul class="list">
+									<li>※ 도서산간 및 제주도 지역의 경우 배송예정일 보다 2 ~ 3일 배송지연 될 수 있습니다.</li>
+									<li>※ 공휴일/일요일은 모든 공급업체 및 물류업체 휴무입니다.</li>
+								</ul>
+								<div class="f_r">
+									<div class="cont_search">
+										<input type="text" style="width:190px;" title="검색어 입력">
+										<button type="button" class="btn_search"><span class="btn_comm">검색</span></button>
+									</div>
+								</div>
+							</div>
+							<table class="tbl_type3">
+								<caption>도매업체명, 지역, 주문시간, 배송시간 안내</caption>
+								<colgroup>
+									<col style="width:13%">
+									<col>
+									<col style="width:25%">
+									<col style="width:30%">
+									<col style="width:15%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">구분</th>
+										<th scope="col">업체명</th>
+										<th scope="col">지역</th>
+										<th scope="col">주문시간</th>
+										<th scope="col">배송시간</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- 1일 3배송 업체[s] -->
+									<tr>
+										<th scope="row" rowspan="103">1일 3배송 업체</th>
+										<td rowspan="9" class="txt_center">보덕메디팜</td>
+										<td rowspan="4" class="txt_center">서울 전 지역 1일 3배송</td>
+										<td class="txt_center">전일 17:00 ~ 당일 10:00</td>
+										<td class="txt_center">당일 17:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 10:00 ~ 14:00</td>
+										<td class="txt_center">당일 20:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 14:00 ~ 17:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 17:00 ~ 월요일 10:00</td>
+										<td class="txt_center">월요일 17:00</td>
+									</tr>
+									
+									<tr>
+										<td rowspan="3" class="txt_center">경기/인천 지역 (일부지역 제외) 1일2배송</td>
+										<td class="txt_center">전일 17:00 ~ 당일 10:00</td>
+										<td class="txt_center">당일 17:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 10:00 ~ 17:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 17:00 ~ 월요일 10:00</td>
+										<td class="txt_center">월요일 17:00</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">전국 지역 (서울/경기/인천 일부지역 제외) 익일 배송</td>
+										<td class="txt_center">전일 17:00 ~ 당일 17:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 17:00 ~ 월요일 17:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="11">태전약품</td>
+										<td rowspan="3" class="txt_center">전주 1일 3배송</td>
+										<td class="txt_center">전일 15:00 ~ 당일 8:00</td>
+										<td class="txt_center">당일 오전</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 8:00 ~ 12:00</td>
+										<td class="txt_center">당일 오후</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 12:00 ~ 15:00</td>
+										<td class="txt_center">당일 늦은오후</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">익산 1일 2배송</td>
+										<td class="txt_center">전일 17:00 ~ 당일 11:00</td>
+										<td class="txt_center">당일 오후</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 11:00 ~ 17:00</td>
+										<td class="txt_center">익일 오전</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">군산 1일 2배송</td>
+										<td class="txt_center">전일 17:00 ~ 당일 12:00</td>
+										<td class="txt_center">당일 오후</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 12:00 ~ 17:00</td>
+										<td class="txt_center">익일 오전</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">정읍/김제/부안/고창/남원 1일 2배송</td>
+										<td class="txt_center">전일 16:00 ~ 당일 12:00</td>
+										<td class="txt_center">당일 오후</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 12:00 ~ 16:00</td>
+										<td class="txt_center">익일 오전</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">삼례 1일 2배송</td>
+										<td class="txt_center">전일 13:00 ~ 당일 8:30</td>
+										<td class="txt_center">당일 오전</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 8:30 ~ 13:00</td>
+										<td class="txt_center">당일 오후</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="10">광주백제약품</td>
+										<td rowspan="5" class="txt_center">광주전지역 1일 3배송</td>
+										<td class="txt_center">전일 15:00 ~ 당일 08:00</td>
+										<td class="txt_center">당일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 08:00 ~ 11:00</td>
+										<td class="txt_center">당일 16:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 11:00 ~ 15:00</td>
+										<td class="txt_center">당일 19:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 15:00 ~ 금요일 19:00</td>
+										<td class="txt_center">토요일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 19:00 ~ 월요일 08:00</td>
+										<td class="txt_center">월요일 12:00</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">전남 여수, 순천, 담양, 장성, 목포, 무안, 함평, 나주, 화순 1일 2배송</td>
+										<td class="txt_center">전일 18:00 ~ 당일 11:00</td>
+										<td class="txt_center">당일 17:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 11:00 ~ 18:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td rowspan="1" class="txt_center">전남 구례, 곡성, 광양, 석곡, 창평(담양), 남평, 대촌 1일 1배송</td>
+										<td class="txt_center">전일 18:00 ~ 당일18:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td rowspan="1" class="txt_center">전남 강진, 장흥, 보성, 벌교, 녹동, 해남, 진도, 완도, 영암(독천, 신북) 1일 1배송</td>
+										<td class="txt_center">전일 11:00 ~ 당일 11:00</td>
+										<td class="txt_center">당일 17:00</td>
+									</tr>
+									<tr>
+										<td rowspan="1" class="txt_center">전남 택배배송 지역 1일 1배송</td>
+										<td class="txt_center">전일 16:00 ~ 당일 16:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="9">원주백제약품</td>
+										<td rowspan="3" class="txt_center">원주 (문막읍 제외)</td>
+										<td class="txt_center">전일 17:00 ~ 당일 09:00</td>
+										<td class="txt_center">당일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 09:00 ~ 당일 13:00</td>
+										<td class="txt_center">당일 17:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 13:00 ~ 당일 17:00</td>
+										<td class="txt_center">당일 20:00</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">춘천, 영월</td>
+										<td class="txt_center">전일 13:00 ~ 당일08:00</td>
+										<td class="txt_center">당일 13:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 08:00 ~ 당일 13:00</td>
+										<td class="txt_center">당일 20:00</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">삼척, 양양, 동해, 강릉, 속초, 문막읍</td>
+										<td class="txt_center">전일 17:00 ~ 당일 09:00</td>
+										<td class="txt_center">당일 20:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 09:00 ~ 당일 17:00</td>
+										<td class="txt_center">익일 13:00</td>
+									</tr>
+									<tr>
+										<td rowspan="1" class="txt_center">평창, 태백, 홍천, 정선, 인제, 양구, 고성, 횡성</td>
+										<td class="txt_center">전일 09:00 ~ 당일 09:00</td>
+										<td class="txt_center">당일 20:00</td>
+									</tr>
+									<tr>
+										<td rowspan="1" class="txt_center">강원도 일부지역</td>
+										<td class="txt_center">전일 16:00 ~ 당일 16:00</td>
+										<td class="txt_center">익일배송</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="19">전주백제약품</td>
+										<td rowspan="5" class="txt_center">전주</td>
+										<td class="txt_center">전일 16:00 ~ 당일 09:00</td>
+										<td class="txt_center">당일 12시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 09:00 ~ 당일12:00</td>
+										<td class="txt_center">당일 15시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 12:00 ~ 당일 16:00</td>
+										<td class="txt_center">당일 19시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 16:00 ~ 금요일 19:00</td>
+										<td class="txt_center">토요일 12시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 19:00 ~ 월요일 09:00</td>
+										<td class="txt_center">월요일 12시</td>
+									</tr>
+									<tr>
+										<td rowspan="5" class="txt_center">군산, 남원, 임실 정읍, 고창, 김제, 부안</td>
+										<td class="txt_center">전일 19:00 ~ 당일 14:00</td>
+										<td class="txt_center">당일 18시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 14:00 ~ 당일 19:00</td>
+										<td class="txt_center">익일 14시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 금요일 19:00</td>
+										<td class="txt_center">토요일 12시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 19:00 ~ 월요일 09:00</td>
+										<td class="txt_center">월요일 14시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">월요일 09:00 ~ 월요일 14:00</td>
+										<td class="txt_center">월요일 18시</td>
+									</tr>
+									<tr>
+										<td rowspan="4" class="txt_center">익산</td>
+										<td class="txt_center">전일 19:00 ~ 당일 13:00</td>
+										<td class="txt_center">당일 18시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 13:00 ~ 당일 19:00</td>
+										<td class="txt_center">익일 13시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 19:00 ~ 월요일 09:00</td>
+										<td class="txt_center">월요일 13시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">월요일 09:00 ~ 월요일 13:00</td>
+										<td class="txt_center">월요일 18시</td>
+									</tr>
+									<tr>
+										<td rowspan="3" class="txt_center">진안, 장수</td>
+										<td class="txt_center">전일 19:00 ~ 당일 19:00</td>
+										<td class="txt_center">익일 14시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 19:00 ~ 월요일 09:00</td>
+										<td class="txt_center">월요일 14시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">월요일 09:00 ~ 월요일 19:00</td>
+										<td class="txt_center">화요일 14시</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">이외 전북지역 (택배지역)</td>
+										<td class="txt_center">전일 14:00 ~ 당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="32">영남통합 물류센터 (부산/창원/ 대구백제약품)</td>
+										<td rowspan="4" class="txt_center">부산</td>
+										<td class="txt_center">전일 19:00 ~ 당일 10:00</td>
+										<td class="txt_center">당일 18:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 10:00 ~ 당일 13:00</td>
+										<td class="txt_center">당일 20:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 13:00 ~ 당일 19:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 19:00 ~ 월요일 10:00</td>
+										<td class="txt_center">월요일 18:00</td>
+									</tr>
+									<tr>
+										<td rowspan="3" class="txt_center">울산</td>
+										<td class="txt_center">전일 19:00 ~ 당일 13:00</td>
+										<td class="txt_center">당일 20:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 13:00 ~ 당일 19:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 19:00 ~ 월요일 13:00</td>
+										<td class="txt_center">월요일 20:00</td>
+									</tr>
+									<tr>
+										<td rowspan="4" class="txt_center">양산</td>
+										<td class="txt_center">전일 19:00 ~ 당일 12:00</td>
+										<td class="txt_center">당일 18:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 12:00 ~ 당일 14:00</td>
+										<td class="txt_center">당일 20:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 14:00 ~ 당일 19:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 19:00 ~ 월요일 12:00</td>
+										<td class="txt_center">월요일 18:00</td>
+									</tr>
+									<tr>
+										<td rowspan="3" class="txt_center">밀양, 산청군, 함양군 외 일부지역</td>
+										<td class="txt_center">전일 19:00 ~ 당일 12:00</td>
+										<td class="txt_center">당일 20:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 12:00 ~ 당일 19:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 19:00 ~ 월요일 12:00</td>
+										<td class="txt_center">월요일 20:00</td>
+									</tr>
+
+									<tr>
+										<td rowspan="4" class="txt_center">마산, 창원</td>
+										<td class="txt_center">전일 19:00 ~ 당일 12:00</td>
+										<td class="txt_center">당일 18:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 12:00 ~ 당일 15:00</td>
+										<td class="txt_center">당일 20:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 15:00 ~ 당일 19:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 19:00 ~ 월요일 12:00</td>
+										<td class="txt_center">월요일 18:00</td>
+									</tr>
+									<tr>
+										<td rowspan="3" class="txt_center">통영, 거제, 고성군</td>
+										<td class="txt_center">전일 19:00 ~ 당일 12:00</td>
+										<td class="txt_center">당일 20:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 12:00 ~ 당일 19:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 19:00 ~ 월요일 12:00</td>
+										<td class="txt_center">월요일 20:00</td>
+									</tr>
+									<tr>
+										<td rowspan="4" class="txt_center">김해</td>
+										<td class="txt_center">전일 19:00 ~ 당일 12:00</td>
+										<td class="txt_center">당일 18:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 12:00 ~ 당일 14:00</td>
+										<td class="txt_center">당일 20:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 14:00 ~ 당일 19:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 19:00 ~ 월요일 12:00</td>
+										<td class="txt_center">월요일 18:00</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">영천, 안동, 김천, 경주</td>
+										<td class="txt_center">전일 19:00 ~ 당일 19:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 19:00 ~ 월요일 19:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td rowspan="3" class="txt_center">경북, 대구, 포항</td>
+										<td class="txt_center">전일 19:00 ~ 당일 12:00</td>
+										<td class="txt_center">당일 20:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 12:00 ~ 당일 19:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 19:00 ~ 월요일 12:00</td>
+										<td class="txt_center">월요일 20:00</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">부산, 울산, 대구 경남, 경북 일부지역 (택배지역)</td>
+										<td class="txt_center">전일 15:00 ~ 당일 15:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 15:00 ~ 월요일 15:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="13">유진약품</td>
+										<td rowspan="5" class="txt_center">광주광역시</td>
+										<td class="txt_center">전일 18:00 ~ 당일 10:00</td>
+										<td class="txt_center">당일 17:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 10:00 ~ 당일 14:00</td>
+										<td class="txt_center">당일 20:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 14:00 ~ 당일 18:00</td>
+										<td class="txt_center">익일 13:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 금요일 18:00</td>
+										<td class="txt_center">토요일 13:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 18:00 ~ 월요일 10:00</td>
+										<td class="txt_center">월요일 17:00</td>
+									</tr>
+									<tr>
+										<td rowspan="4" class="txt_center">전남 강진, 곡성, 나주, 목포, 전북 군산, 김제, 부안, 순창 외</td>
+										<td class="txt_center">전일 18:00 ~ 당일 10:00</td>
+										<td class="txt_center">당일 17:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 10:00 ~ 당일 18:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 10:00 ~ 금요일 18:00</td>
+										<td class="txt_center">토요일 13:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 18:00 ~ 월요일 10:00</td>
+										<td class="txt_center">월요일 17:00</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">전남 고흥, 광양, 구례, 보성, 완도, 진도, 해남, 전북 고창, 임실</td>
+										<td class="txt_center">전일 10:00 ~ 당일 10:00</td>
+										<td class="txt_center">당일 20:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 22:00 ~ 월요일 10:00</td>
+										<td class="txt_center">월요일 20:00</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">전국지역(광주, 전남, 전북 일부제외)</td>
+										<td class="txt_center">전일 14:00 ~ 당일 14:00</td>
+										<td class="txt_center">익일배송</td>
+									</tr>
+										<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<!-- 1일 3배송 업체[e] -->
+									<!-- 1일 2배송 업체[s] -->
+									<tr>
+										<th scope="row" rowspan="53">1일 2배송 업체</th>
+										<td class="txt_center" rowspan="5">백광의약품
+										</td><td rowspan="3" class="txt_center">서울/경기/인천 지역 (일부지역 제외) 1일2배송</td>
+										<td class="txt_center">전일 14:00 ~ 당일 10:00</td>
+										<td class="txt_center">당일 19:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 10:00 ~ 14:00</td>
+										<td class="txt_center">익일 19:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 10:00</td>
+										<td class="txt_center">월요일 19:00</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">전국 지역 (서울/경기/인천일부지역 제외) 익일 배송</td>
+										<td class="txt_center">전일 14:00 ~ 당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="5">복산나이스 (경남지점)
+										</td><td rowspan="3" class="txt_center">경남지역</td>
+										<td class="txt_center">전일 18:00 ~ 당일 12:00</td>
+										<td class="txt_center">당일 18:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 12:00 ~ 18:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 12:00 ~ 월요일 12:00</td>
+										<td class="txt_center">월요일</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">경남 합천군,거창군, 하동군,남해군, 함양군,산청군, 의령군</td>
+										<td class="txt_center">전일 14:00 ~ 당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="7">서울지오팜<br><a href="#" class="btn_type1">배송안내<br>자세히보기</a></td>
+										<td rowspan="3" class="txt_center">서울 한강이남/경기도 이남지역(일부지역제외)1일 2배송</td>
+										<td class="txt_center">전일 20:00 ~ 당일 10:00</td>
+										<td class="txt_center">당일 18:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 10:00 ~ 당일 20:00 (금요일 20:00까지 주문시 토요일 배송)</td>
+										<td class="txt_center">익일 13:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 20:00 ~ 월요일 10:00</td>
+										<td class="txt_center">월요일 18:00</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">경기도 안성,이천,여주,평택,화성(2배송제외),용인 양지,원삼,백암 1일 1배송</td>
+										<td class="txt_center">전일 20:00 ~ 당일 20:00 (금요일 20:00까지 주문시 토요일 배송)</td>
+										<td class="txt_center">익일 18:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 20:00 ~ 월요일 20:00</td>
+										<td class="txt_center">화요일 18:00</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">택배배송지역 
+										익일 배송</td>
+										<td class="txt_center">전일 16:00 ~ 당일 16:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 16:00 ~ 월요일 16:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="5">백제약품
+										</td><td rowspan="3" class="txt_center">서울/경기/인천 지역 (일부지역 제외) 1일2배송</td>
+										<td class="txt_center">전일 14:00 ~ 당일 10:00</td>
+										<td class="txt_center">당일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 10:00 ~ 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 10:00 ~ 월요일 10:00</td>
+										<td class="txt_center">월요일</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">전국 지역 (서울/경기/인천일부지역 제외) 익일 배송</td>
+										<td class="txt_center">전일 14:00 ~ 당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="5">인천약품<br><a href="#" class="btn_type1">배송안내<br>자세히보기</a></td>
+										<td rowspan="3" class="txt_center">서울/경기/인천지역 (일부지역 제외) 1일2배송</td>
+										<td class="txt_center">전일 15:00 ~ 당일 9:00</td>
+										<td class="txt_center">당일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 9:00 ~ 15:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 15:00 ~ 월요일 9:00</td>
+										<td class="txt_center">월요일</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">전국 지역 (서울/경기/인천일부지역 제외)익일 배송</td>
+										<td class="txt_center">전일 15:00 ~ 당일 15:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 15:00 ~ 월요일 15:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="6">티제이팜</td>
+										<td rowspan="4" class="txt_center">서울 전 지역 1일 2배송</td>
+										<td class="txt_center">당일 09:00~ 당일 17:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">전일 17:00~ 당일 09:00</td>
+										<td class="txt_center">당일 19:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 09:00~ 금요일 17:00</td>
+										<td class="txt_center">토요일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 17:00~월요일 09:00</td>
+										<td class="txt_center">월요일 19:00</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">서울 외 전국지역</td>
+										<td class="txt_center">전일 14:00 ~ 당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00~월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="5">지오팜
+										</td><td class="txt_center" rowspan="3">대구, 경북 일부지역</td>
+										<td class="txt_center">전일 20:00 ~ 당일 10:00</td>
+										<td class="txt_center">당일 18시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 10:00 ~ 당일 20:00</td>
+										<td class="txt_center">익일 12시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 10:00 ~ 18:00</td>
+										<td class="txt_center">토요일 12시</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="2">경북 일부지역 (택배지역)</td>
+										<td class="txt_center">전일 16:00 당일 16:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 16:00 ~ 월요일 16:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="5">세화약품<br><a href="#" class="btn_type1">배송안내<br>자세히보기</a></td>
+										<td rowspan="3" class="txt_center">부산 지역 (일부지역 제외)</td>
+										<td class="txt_center">전일 18:00 ~ 당일 12:00</td>
+										<td class="txt_center">당일 18:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 12:00 ~ 당일 18:00</td>
+										<td class="txt_center">익일 12:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 18:00 ~ 월요일 12:00</td>
+										<td class="txt_center">월요일 18:00</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">전국 지역(익일 배송) (부산일부지역 제외)</td>
+										<td class="txt_center">전일 14:00 ~ 당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="5">세화헬스케어<br><a href="#" class="btn_type1">배송안내<br>자세히보기</a></td>
+										<td rowspan="3" class="txt_center">서울/경기/인천지역 (일부지역 제외) 1일2배송</td>
+										<td class="txt_center">전일 16:00 ~당일 10:00</td>
+										<td class="txt_center">당일 18:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 10:00 ~ 당일 16:00</td>
+										<td class="txt_center">익일 13:00</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 16:00 ~ 월요일 10:00</td>
+										<td class="txt_center">월요일 18:00</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">전국 지역 익일배송 (서울/경기/인천지역일부지역 제외)</td>
+										<td class="txt_center">전일 14:00 ~ 당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+											<td class="txt_center" rowspan="5">복산나이스 (서울지점)
+										</td><td rowspan="3" class="txt_center">서울/경기/인천 (일부지역 제외)</td>
+										<td class="txt_center">전일 17:00 ~ 당일 10:00</td>
+										<td class="txt_center">당일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 10:00 ~ 당일 17:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 17:00 ~ 월요일 10:00</td>
+										<td class="txt_center">월요일</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">전국 지역(익일 배송) 서울/경기/인천 (일부지역 제외)</td>
+										<td class="txt_center">전일 14:00 ~ 당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<!-- 1일 2배송 업체[e] -->
+									<!-- 익일배송 업체[s] -->
+									<tr>
+										<th scope="row" rowspan="26">익일배송 업체</th>
+										<td class="txt_center" rowspan="4">대전지오영</td>
+										<td rowspan="2" class="txt_center">대전/충남북일부지역 <br>(자차배송)</td>
+										<td class="txt_center">전일 17:00 ~당일 17:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 17:00 ~ 월요일 17:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">택배배송지역</td>
+										<td class="txt_center">전일 14:00 ~당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="8">복산나이스<br>(부산)</td>
+										<td rowspan="2" class="txt_center">전국지역<br>(경남제외)</td>
+										<td class="txt_center">전일 14:00 ~당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td rowspan="3" class="txt_center">부산지역</td>
+										<td class="txt_center">전일 18:00 ~ 당일 12:00</td>
+										<td class="txt_center">당일 18시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 12:00 ~ 당일 18:00</td>
+										<td class="txt_center">익일 13시</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 18:00 ~ 월요일 12:00</td>
+										<td class="txt_center">월요일 18시</td>
+									</tr>
+									<tr>
+										<td rowspan="3" class="txt_center">울산지역</td>
+										<td class="txt_center">전일 18:00 ~ 당일 18:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">목요일 18:00 ~ 금요일 18:00</td>
+										<td class="txt_center">월요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">목요일 18:00 ~ 금요일 18:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="2">청십자약품</td>
+										<td rowspan="2" class="txt_center">택배배송지역</td>
+										<td class="txt_center">전일 14:00 ~당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="4">한신약품<br><a href="#" class="btn_type1">배송안내<br>자세히보기</a></td>
+										<td rowspan="2" class="txt_center">서울/경기<br>일부지역</td>
+										<td class="txt_center">전일 17:00 ~ 당일 17:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 17:00 ~ 월요일 17:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">전국 지역<br>(서울/경기일부지역 제외)<br>익일 배송</td>
+										<td class="txt_center">전일 14:00 ~당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="2">서울약사신협</td>
+										<td rowspan="2" class="txt_center">택배배송지역</td>
+										<td class="txt_center">전일 14:00 ~ 당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+
+									<tr>
+										<td class="txt_center" rowspan="2">미드팜</td>
+										<td rowspan="2" class="txt_center">택배배송지역</td>
+										<td class="txt_center">전일 14:00 ~당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>            
+									<tr>
+										<td class="txt_center" rowspan="2">제이케이팜</td>
+										<td rowspan="2" class="txt_center">택배배송지역</td>
+										<td class="txt_center">전일 14:00 ~ 당일 14:00 </td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일14:00 </td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td class="txt_center" rowspan="2">안국약품</td>
+										<td rowspan="2" class="txt_center">택배배송지역</td>
+										<td class="txt_center">전일 11:00 ~ 당일 11:00 </td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 11:00 ~ 월요일11:00 </td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<!-- 익일배송 업체[e] -->
+								</tbody>
+							</table>
+						</div>
+						<div id="deliveryTime4" style="display:none">
+							<div class="sub_cont_head">
+								<!-- 2021-07-05 수정 -->
+								<h4 class="title">업체별 배송시간</h4>
+								<ul class="list">
+									<li>※ 도서산간 및 제주도 지역의 경우 배송예정일 보다 2 ~ 3일 배송지연 될 수 있습니다.</li>
+									<li>※ 공휴일/일요일은 모든 공급업체 및 물류업체 휴무입니다.</li>
+								</ul>
+								<div class="f_r">
+									<div class="cont_search">
+										<input type="text" style="width:190px;" title="검색어 입력">
+										<button type="button" class="btn_search"><span class="btn_comm">검색</span></button>
+									</div>
+								</div>
+							</div>
+							<table class="tbl_type3">
+								<caption>부외품/화장품/동물약품 업체명, 지역, 주문시간, 배송시간 안내</caption>
+								<colgroup>
+									<col style="width:13%">
+									<col>
+									<col style="width:20%">
+									<col style="width:30%">
+									<col style="width:15%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">구분</th>
+										<th scope="col">업체명</th>
+										<th scope="col">지역</th>
+										<th scope="col">주문시간</th>
+										<th scope="col">배송시간</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" rowspan="15">부외품/화장품/동물약품 업체</th>
+										<td rowspan="2" class="txt_center">부외품/화장품/동물약품</td>
+										<td rowspan="2" class="txt_center">전국지역</td>
+										<td class="txt_center">전일 14:00 ~ 당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">한국바이오인더스트리(주), 케이앤유, 메디안스</td>
+										<td rowspan="2" class="txt_center">전국지역</td>
+										<td class="txt_center">전일 12:00 ~ 당일 12:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 12:00 ~ 월요일 12:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">웰빙메디칼</td>
+										<td rowspan="2" class="txt_center">전국지역</td>
+										<td class="txt_center">전일 13:00 ~ 당일 13:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 13:00 ~ 월요일 13:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">일신엠케이, 한국PMO, 유진비앤피, 더팜</td>
+										<td rowspan="2" class="txt_center">전국지역</td>
+										<td class="txt_center">전일 15:00 ~ 당일 15:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 15:00 ~ 월요일 15:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">엠지메디텍, 씨앤케이 코스메디칼</td>
+										<td rowspan="2" class="txt_center">전국지역</td>
+										<td class="txt_center">전일 16:00 ~ 당일 16:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 16:00 ~ 월요일 16:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+									<tr>
+										<td rowspan="5" class="txt_center">아신팜</td>
+										<td rowspan="3" class="txt_center">서울지역 1일2배송</td>
+										<td class="txt_center">전일 14:00 ~ 당일 10:00</td>
+										<td class="txt_center">당일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">당일 10:00 ~ 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 10:00</td>
+										<td class="txt_center">월요일</td>
+									</tr>
+									<tr>
+										<td rowspan="2" class="txt_center">전국 지역 (서울 제외)</td>
+										<td class="txt_center">전일 14:00 ~ 당일 14:00</td>
+										<td class="txt_center">익일</td>
+									</tr>
+									<tr>
+										<td class="txt_center">금요일 14:00 ~ 월요일 14:00</td>
+										<td class="txt_center">화요일</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div id="tabCourier" style="display:none">
+					<h3 class="screen_hide">배송업체 안내</h3>
+					<ul class="list_type2">
+						<!-- 2021-07-05 삭제 <li><a href="#courier1">제약사</a></li> -->
+						<li><a href="#courier2">도매상</a></li>
+						<li><a href="#courier3">부외품업체</a></li>
+						<li><a href="#courier4">화장품업체</a></li>
+						<li><a href="#courier5">동물약품 업체</a></li>
+					</ul>
+					<div class="sub_cont_head">
+						<p class="txt">※ 공휴일/일요일은 모든 공급업체 및 물류업체 휴무입니다.</p>
+						<div class="f_r">
+							<div class="cont_search">
+								<input type="text" style="width:190px;" title="검색어 입력">
+								<button type="button" class="btn_search"><span class="btn_comm">검색</span></button>
+							</div>
+						</div>
+					</div>
+					<table class="tbl_type3">
+						<caption>구분, 업체, 배송요일, 전화번호, 업체명</caption>
+						<colgroup>
+							<col style="width:15%">
+							<col style="width:20%">
+							<col style="width:15%">
+							<col style="width:15%">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">구분</th>
+								<th scope="col">업체</th>
+								<th scope="col">배송요일</th>
+								<th scope="col">전화번호</th>
+								<th scope="col">업체명</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- 2021-07-05 삭제 <tr>
+								<th scope="row" id="courier1">제약사</th>
+								<td class="txt_center">theSHOP 고객센터</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">080-550-8990</td>
+								<td>대웅제약, 대웅바이오</td>
+							</tr> -->
+							<tr>
+								<th scope="row" rowspan="11" id="courier2">도매업체</th>
+								<td class="txt_center">스마일로지스</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">1544-8871</td>
+								<td>백제약품</td>
+							</tr>
+							<tr>
+								<td class="txt_center">일양팜로지스</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">1600-7282</td>
+								<td>보덕메디팜, 한신약품, 인천약품, 세화헬스케어, 티제이팜</td>
+							</tr>
+							<tr>
+								<td class="txt_center">용마로지스</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">031-281-4361</td>
+								<td>대구지오팜, 대전지오영, 서울지오팜, 지오영, 세화약품, 보덕메디팜, 한신약품, 인천약품, 세화헬스케어, 복산나이스팜, 복산나이스팜(서울지점), 복산나이스팜(경남지점), 유진약품</td>
+							</tr>
+							<tr>
+								<td class="txt_center">고려택배</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">031-240-2400</td>
+								<td>서울약사신협, 티제이팜, 안국약품</td>
+							</tr>
+							<tr>
+								<td class="txt_center">KGB택배</td>
+								<td class="txt_center">월 ~ 금</td>
+								<td class="txt_center">1577-4577</td>
+								<td>미드팜</td>
+							</tr>
+							<tr>
+								<td class="txt_center">로젠택배</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">1588-9968</td>
+								<td>광주백제약품, 대구백제약품, 청심자약품, 경남청십자약품, 부산백제약품, 창원백제약품, 전주백제약품</td>
+							</tr>
+							<tr>
+								<td class="txt_center">대신택배</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">043-222-4582</td>
+								<td>원주백제약품</td>
+							</tr>
+							<tr>
+								<td class="txt_center">일양팜로지스(지방CJ)</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">1600-7282</td>
+								<td>백광의약품</td>
+							</tr>
+							<tr>
+								<td class="txt_center">CJ대한통운</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">1588-1255</td>
+								<td>제이케이팜</td>
+							</tr>
+							<tr>
+								<td class="txt_center">천지천</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">02-581-2307</td>
+								<td>복산나이스(서울지점)</td>
+							</tr>
+							<tr>
+								<td class="txt_center">고려택배</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">031-240-2400</td>
+								<td>서울약사신협, 티제이팜</td>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="10" id="courier3">부외품업체</th>
+								<td class="txt_center">CJ 대한통운</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">1588-1255</td>
+								<td>CY바이오솔루션즈, MDWell, 성대약품, 하이팜텍, 세원피앤씨, 시셀코리아, 에스비앤에프, 우리아기좋은날, 우리팜, 천지인팜, 제이스피엔티, 재이스타일, 마이디코리아, 디씨팜, 팜코리아, 조은제이엔피, 대성생활건강, 팜스웰, 유니코리아, 제이웰팜, 하우동천, 에프엠코리아, 제일헬스케어, 탑헬스케어, 백단케어</td>
+							</tr>
+							<tr>
+								<td class="txt_center">KGB택배</td>
+								<td class="txt_center">월 ~ 금</td>
+								<td class="txt_center">1577-4577</td>
+								<td>은성메디케어, 조은제이엔피</td>
+							</tr>
+							<tr>
+								<td class="txt_center">로젠택배</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">1588-9988</td>
+								<td>유진비앤피, 팜플러스, 해외개발, 큐엘케어, 메디미플러스</td>
+							</tr>
+							<tr>
+								<td class="txt_center">용마로지스</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">031-281-4361</td>
+								<td>아신팜, 엠지메디텍, 종수약품</td>
+							</tr>
+							<tr>
+								<td class="txt_center">우체국택배</td>
+								<td class="txt_center">월 ~ 금</td>
+								<td class="txt_center">1588-1300</td>
+								<td>닥터씨앤씨, 메디코어, 케이엔유</td>
+							</tr>
+							<tr>
+								<td class="txt_center">한진택배</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">1588-0011</td>
+								<td>이노서브, 헬스투데이, 일신엠케이, 지케이팜, 이팜, 헬스인팜</td>
+							</tr>
+							<tr>
+								<td class="txt_center">현대택배</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">1588-2121</td>
+								<td>비타민하우스, 오베론 코스메틱, 한국약봉투, 맥스케어</td>
+							</tr>
+							<tr>
+								<td class="txt_center">KG로지스</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">1588-0123</td>
+								<td>LJ메디칼, 펄헬스케어, 한미바이오, 웰빙메디칼</td>
+							</tr>
+							<tr>
+								<td class="txt_center">CJ 대한통운</td>
+								<td class="txt_center" rowspan="2">월 ~ 토</td>
+								<td class="txt_center">1588-1255</td>
+								<td rowspan="2">금보메디넷</td>
+							</tr>
+							<tr>
+								<td class="txt_center">용마로지스</td>
+								<td class="txt_center">031-281-4361</td>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="3" id="courier4">화장품업체</th>
+								<td class="txt_center">CJ 대한통운</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">1588-1255</td>
+								<td>비오비앙, 한국바이오인더스트리, 메디안스</td>
+							</tr>
+							<tr>
+								<td class="txt_center">로젠택배</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">1588-9988</td>
+								<td>세컨포뮬러, 일신엠케이, 더팜, 씨앤케이코스메디칼</td>
+							</tr>
+							<tr>
+								<td class="txt_center">한진택배</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">1588-0011</td>
+								<td>데이셀코스메틱</td>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="2" id="courier5">동물약품업체</th>
+								<td class="txt_center">CJ 대한통운</td>
+								<td class="txt_center">월 ~ 토</td>
+								<td class="txt_center">1588-1255</td>
+								<td>한국PMO</td>
+							</tr>
+							<tr>
+								<td class="txt_center">우체국택배</td>
+								<td class="txt_center">월 ~ 금</td>
+								<td class="txt_center">1588-1300</td>
+								<td>JK애니멀팜</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- 2021-07-05 탭 추가 -->
+				<div id="tabMinCharge" style="display:none">
+					<h3 class="screen_hide">배송정책 안내</h3>
+					<ul class="list_type2">
+						<li><a href="#deliveryCharge1">도매상</a></li>
+						<li><a href="#deliveryCharge2">부외품업체</a></li>
+						<li><a href="#deliveryCharge3">화장품업체</a></li>
+						<li><a href="#deliveryCharge4">동물약품 업체</a></li>
+					</ul>
+					<div class="sub_cont_head">
+						<ul class="list">
+							<li>※ 공휴일/일요일은 모든 공급업체 및 물류업체 휴무입니다.</li>
+							<li>※ 도매/ 부외품/ 화장품/ 동물약품 업체 : 단독 구매시 <em class="emph_color">최소주문금액</em> 미만 주문 불가</li>
+						</ul>
+						<div class="f_r">
+							<div class="cont_search">
+								<input type="text" style="width:190px;" title="검색어 입력">
+								<button type="button" class="btn_search"><span class="btn_comm">검색</span></button>
+							</div>
+						</div>
+					</div>
+					<table class="tbl_type3">
+						<caption>업체별 최소주문금액 안내</caption>
+						<colgroup>
+							<col style="width:100px">
+							<col style="width:134px">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">구분</th>
+								<th scope="col">최소주문금액</th>
+								<th scope="col">업체명</th>
+							</tr>
+						</thead>
+						<tbody id="searchTbody01">
+							<tr>
+								<th scope="row" rowspan="6" id="deliveryCharge1">도매</th>
+								<td class="txt_center">5만원</td>
+								<td>대전지오영, 미드팜, 다올약품</td>
+							</tr>
+							<tr>
+								<td class="txt_center">10만원</td>
+								<td>광주백제약품, 지오영(경남), 대구백제약품 , 세화헬스케어, 백광의약품, 백제약품, 보덕메디팜, 복산나이스팜, 서울약사신협, 서울지오팜(용마택배지역 20만원), 인천약품, 지오영(영남), 태전약품, 티제이팜, 한신약품, 광주백제약품, 대구백제약품, 부산백제약품, 복산나이스팜 서울지점, 복산나이스팜 경남지점, 창원백제약품, 전주백제약품, 지오영, 세화약품, 대구지오팜(대구,경북 이외 지역 20만원), 유진약품, 안국약품, 백제약품 동부지점, 대전백제약품, 제주백제약품, 헬스팜, 대전지오팜, 경동사(대구), 경동사(대전), 경동사(부산), 경동사(서울), 경동사(수원), 광주지오팜, 서울약업, 케이에이치팜</td>
+							</tr>
+							<tr>
+								<td class="txt_center">20만원</td>
+								<td>신창약품</td>
+							</tr>
+							<tr>
+								<td class="txt_center">제주도 20만원</td>
+								<td>백제약품, 복산나이스팜, 세화헬스케어, 인천약품, 서울약사신협, 복산나이스팜 서울지점</td>
+							</tr>
+							<tr>
+								<td class="txt_center">제주도 30만원</td>
+								<td>미드팜, 서울지오팜</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="txt_left emph_color">(단, 해당 지역 "거점 도매" 지정 도매 제품을 대웅과 함께 구매시 최소 주문 금액 없이 상시 무료 배송)</td>
+							</tr>
+							<tr>
+								<!-- 2020-12-21 수정 -->
+								<th scope="row" rowspan="11" id="deliveryCharge2">부외품</th>
+								<td class="txt_center">2만원</td>
+								<td>휴먼큐어, 헬스케어 </td>
+							</tr>
+							<tr>
+								<td class="txt_center">3만원</td>
+								<td>이노서브(제주도지역 7만원), 해외개발, 인트리홀딩스, STH이솔루션, 수암바이오, 디엔컴퍼니</td>
+							</tr>
+							<tr>
+								<td class="txt_center">4만원</td>
+								<td>헬스투데이</td>
+							</tr>
+							<tr>
+								<td class="txt_center">5만원</td>
+								<td>CY바이오솔루션즈, MDwell, 금보메디넷, 대성메디케어, 제이엠디, 성대약품, 하이팜텍, 세원피앤씨, 아신팜, 엠지메디텍, 우리아기좋은날, 유진비앤피, 은성메디케어, 이팜, 제이스피앤티, 제일헬스케어, 종수약품, 지케이팜, 천지인팜, 팜스웰, 팜플러스, 한국약봉투, 한미바이오, 헬스인팜, 재이스타일, 펄헬스케어, 탑헬스케어, 팜코리아, 조은제이앤피, 제이웰팜, 질경이(제주도지역 7만원), 에프엠코리아, 메디미플러스, 케이엔유, 알피코프, 마이디코리아, 뉴트리원(이팜), 건강두배로, LJ헬스케어, 유니템아이, 베이비피아, 케어핏, 세이폴, 케이디상사, 닥터헬퍼, 엔제이팜, 운수트레이드, 유케이, 월드비젼팜, 서원메디칼, 엘케이팜, 제이엠, 웰킵스, 대지인팜, 용주상사, 화의, 파마인넷, 메디코어 </td>
+							</tr>
+							<tr>
+								<td class="txt_center">6만원</td>
+								<td>네임 </td>
+							</tr>
+							<tr>
+								<td class="txt_center">10만원</td>
+								<td>웰빙메디칼, 한산피앤지</td>
+							</tr>
+							<tr>
+								<td class="txt_center">제주도 7만원</td>
+								<td>대지인팜</td>
+							</tr>
+							<tr>
+								<td class="txt_center">제주도 8만원</td>
+								<td>케어핏</td>
+							</tr>
+							<tr>
+								<td class="txt_center">제주도 10만원</td>
+								<td>금보메디넷, 대성메디케어, 세원피앤씨, 유진비엔피, 은성메디케어, 이노서브, 이팜, 제이스피앤티, 제일헬스케어, 종수약품, 한미바이오, 팜스웰, 헬스투데이, 제이웰팜, 천지인팜, 뉴트리원(이팜), 건강두배로, 유니템아이, 세이폴, 탑헬스케어, 케이디상사, 닥터헬퍼, 웰킵스, 용주상사</td>
+							</tr>
+							<tr>
+								<td class="txt_center">제주도 30만원</td>
+								<td>MDwell</td><!-- 2020-12-21 수정 -->
+							</tr>
+							<!-- 2020-12-21 추가 -->
+							<tr>
+								<td class="txt_center">제주도 40만원</td>
+								<td>웰빙메디칼</td>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="3" id="deliveryCharge3">화장품</th>
+								<td class="txt_center">3만원</td>
+								<td>씨앤케이코스메디칼, 메디안스</td>
+							</tr>
+							<tr>
+								<td class="txt_center">5만원</td>
+								<td>데이셀코스메틱, 한국바이오인더스트리</td>
+							</tr>
+							<tr>
+								<td class="txt_center">10만원</td>
+								<td>에스비앤에프, 더드림에이치앤비</td>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="2" id="deliveryCharge4">동물약품</th>
+								<td class="txt_center">5만원</td>
+								<td>한국PMO, JK애니멀팜, 펫비즈, 하나벳</td>
+							</tr>
+							<tr>
+								<td class="txt_center">제주도 10만원</td>
+								<td>한국PMO, 디씨팜</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+	</section>
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+
+	<script type="text/javascript">
+		$(function(){
+			// 배송안내 탭
+			shopUI.tab({
+				"tabs" : $(".tab_type3 li"),
+				"contWrap" : $(".tab_cont > div")
+			});
+			// 배송시간안내 탭
+			shopUI.tab({
+				"tabs" : $("#tabTime .tab_type1 li"),
+				"contWrap" : $(".tab_cont_time > div")
+			});
+			// 배송비안내 스크롤 이동
+			$(".cont_top_customer .list_type2 li").on("click", function(e){
+				var linkCont = $($(this).find("a").attr("href"));
+				var linkContOffset = linkCont.offset().top - 33;
+				$("html, body").stop().animate({'scrollTop': linkContOffset + 'px'}, 700);
+				e.preventDefault();
+			});
+		});
+	</script>
+</body>
+</html>

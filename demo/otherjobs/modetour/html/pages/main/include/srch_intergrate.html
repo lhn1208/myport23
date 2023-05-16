@@ -1,0 +1,385 @@
+<!-- 여행 맞춤 검색 -->
+<div class="search-integrate pop-layer" id="searchIntegrate">
+	<div class="pop-tit blind">
+		<div class="head">여행 통합 검색</div>
+		<div class="close"><span class="blind">닫기</span></div>
+	</div>
+	<div class="pop-con">
+		<div class="srch-move">
+			<a href="#" class="back"><span class="blind">이전으로</span></a>
+			<input type="search" class="ipt-srch" value="방콕" placeholder="검색어를 입력해주세요.">
+			<button type="button" class="btn-srch"><span class="blind">검색</span></button>
+			<button type="button" class="btn-erase" onclick="$(this).siblings('.ipt-srch').val('');return false;"><span class="blind">검색어삭제</span></button>
+		</div>
+		<div class="item-tab ui-tabs-menu">
+			<li><a href="#item1" class="current">여행상품 <span>10</span></a></li>
+			<li><a href="#item2">기획상품 <span>9</span></a></li>
+			<li><a href="#item3">할인항공권 <span>20</span></a></li>
+		</div>
+		<div class="ui-tabs-contents-wrap">
+			<!-- 1.여행상품 탭내용-->
+			<div class="ui-tab-content" id="item1">
+				<div class="range-area">
+					<span class="num">총 7개</span>
+					<div class="sec-sort">
+						<a href="#" class="btn-change"><span class="blind">보기방식 전환</span></a>
+						<a href="#" class="btn-popular">인기순</a>
+						<a href="#" class="btn-filter">필터</a>
+						<div class="pop-popular">
+							<a href="#" class="screen"></a>
+							<ul class="popular-wrap">
+								<li><a href="#" class="on">인기순</a></li>
+								<li><a href="#">낮은 가격순</a></li>
+								<li><a href="#">높은 가격순</a></li>
+								<li><a href="#">출도착 빠른순</a></li>
+								<li><a href="#">출도착 느린순</a></li>
+							</ul>
+						</div>
+						<div class="pop-filter">
+							<a href="#" class="screen"></a>
+							<div class="filter-wrap">
+								<ul class="option-tab ui-tabs-menu">
+									<li><a href="#cate1" class="current">카테고리</a></li>
+									<li><a href="#cate2">출발지</a></li>
+									<li><a href="#cate3">여행기간</a></li>
+									<li><a href="#cate4">가격</a></li>
+								</ul>
+								<div class="ui-tabs-contents-wrap">
+									<!-- 카테고리 -->
+									<div class="option-detail ui-tab-content" id="cate1">
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="aa" name="a">
+											<label for="aa" class="label">패키지</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="bb" name="a" checked>
+											<label for="bb" class="label">자유여행/에어텔</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="cc" name="a">
+											<label for="cc" class="label">허니문</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="dd" name="a">
+											<label for="dd" class="label">프리미엄</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="ee" name="a">
+											<label for="ee" class="label">단독여행</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="ff" name="a">
+											<label for="ff" class="label">골프여행</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="gg" name="a">
+											<label for="gg" class="label">크루즈</label>
+										</div>
+									</div>
+									<!-- //카테고리 -->
+									<!-- 출발지 -->
+									<div class="option-detail ui-tab-content" id="cate2">
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="aa-2" name="b" checked>
+											<label for="aa-2" class="label">인천/김포 출발</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="bb-2" name="b">
+											<label for="bb-2" class="label">부산출발</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="cc-2" name="b">
+											<label for="cc-2" class="label">대구출발</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="dd-2" name="b">
+											<label for="dd-2" class="label">무안출발</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="ee-2" name="b">
+											<label for="ee-2" class="label">청주출발</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="ff-2" name="b">
+											<label for="ff-2" class="label">제주출발</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="gg-2" name="b">
+											<label for="gg-2" class="label">양양출발</label>
+										</div>
+									</div>
+									<!-- //출발지 -->
+									<!-- 여행기간 -->
+									<div class="option-detail  ui-tab-content" id="cate3">
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="aa-3" name="c">
+											<label for="aa-3" class="label">3일 이하</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="bb-3" name="c" checked>
+											<label for="bb-3" class="label">4일</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="cc-3" name="c">
+											<label for="cc-3" class="label">5일</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="dd-3" name="c">
+											<label for="dd-3" class="label">6일</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="ee-3" name="c">
+											<label for="ee-3" class="label">7일</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="ff-3" name="c">
+											<label for="ff-3" class="label">8일</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="gg-3" name="c">
+											<label for="gg-3" class="label">9일</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="hh-3" name="c">
+											<label for="hh-3" class="label">10일 이상</label>
+										</div>
+									</div>
+									<!-- //여행기간 -->
+									<!-- 가격 -->
+									<div class="option-detail ui-tab-content" id="cate4">
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="aa-4" name="d">
+											<label for="aa-4" class="label">50만원 이하</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="bb-4" name="d" checked>
+											<label for="bb-4" class="label">50~80만원</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="cc-4" name="d">
+											<label for="cc-4" class="label">80~100만원</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="dd-4" name="d">
+											<label for="dd-4" class="label">100~150만원</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="ee-4" name="d">
+											<label for="ee-4" class="label">150~200만원</label>
+										</div>
+										<div class="chk-wrap">
+											<input type="radio" class="blind" id="ff-4" name="d">
+											<label for="ff-4" class="label">200만원 이상</label>
+										</div>
+									</div>
+									<!-- //가격 -->
+								</div>
+								
+								<div class="word-area">
+									<a href="#" class="btn-remove">자유/에어텔</a>
+									<a href="#" class="btn-remove">인천출발</a>
+									<a href="#" class="btn-remove">4일</a>
+									<a href="#" class="btn-remove">50~80만원</a>
+								</div>
+								<div class="btn-area">
+									<button type="button">적용</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="srch-result">
+					<div class="word-area">
+						<a href="#" class="btn-remove">자유/에어텔</a>
+						<a href="#" class="btn-remove">인천출발</a>
+						<a href="#" class="btn-remove">4일</a>
+						<a href="#" class="btn-remove">50~80만원</a>
+					</div>
+					<ul class="lst-pack view-list"><!-- .view-list 추가시 리스트형, .view-thumb 추가시 섬네일형 -->
+						<li>
+							<a href="#">
+								<p class="img" style="background-image:url('//img.modetour.com/ModeMobile/2019/common/img/@temp_srch_img1.jpg')"></p>
+								<p class="code">상품코드 ATP110</p>
+								<div class="desc">
+									<p class="price">2,009,000원 ~</p>
+									<p class="title">[방콕 에어텔] ONLY 초특급 4일 (팁싸마이맛집)</p>
+								</div>
+								<div class="info">
+									<div class="icons">
+										<span class="tag departure">인천출발</span>
+										<span class="tag pack">패키지</span>
+										<span class="tag self">자유여행</span>
+										<span class="tag honey">허니문</span>
+										<span class="tag primium">프리미엄</span>
+										<span class="tag golf">골프여행</span>
+										<span class="tag cruise">크루즈</span>
+									</div>
+									<div class="price2">2,009,000원 부터</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="img" style="background-image:url('//img.modetour.com/ModeMobile/2019/common/img/@temp_srch_img2.jpg')"></p>
+								<p class="code">상품코드 ATP110</p>
+								<div class="desc">
+									<p class="price">2,009,000원 ~</p>
+									<p class="title">최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄</p>
+								</div>
+								<div class="info">
+									<div class="icons">
+										<span class="tag departure">인천출발</span>
+										<span class="tag self">자유여행</span>
+									</div>
+									<div class="price2">2,009,000원 부터</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="img" style="background-image:url('//img.modetour.com/ModeMobile/2019/common/img/@temp_srch_img3.jpg')"></p>
+								<p class="code">상품코드 ATP110</p>
+								<div class="desc">
+									<p class="price">2,009,000원 ~</p>
+									<p class="title">[방콕 에어텔] ONLY 초특급 4일 (팁싸마이맛집)</p>
+								</div>
+								<div class="info">
+									<div class="icons">
+										<span class="tag departure">인천출발</span>
+										<span class="tag honey">허니문</span>
+									</div>
+									<div class="price2">2,009,000원 부터</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="img" style="background-image:url('//img.modetour.com/ModeMobile/2019/common/img/@temp_srch_img4.jpg')"></p>
+								<p class="code">상품코드 ATP110</p>
+								<div class="desc">
+									<p class="price">2,009,000원 ~</p>
+									<p class="title">최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄</p>
+								</div>
+								<div class="info">
+									<div class="icons">
+										<span class="tag departure">인천출발</span>
+										<span class="tag primium">프리미엄</span>
+									</div>
+									<div class="price2">2,009,000원 부터</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="img" style="background-image:url('//img.modetour.com/ModeMobile/2019/common/img/@temp_srch_img1.jpg')"></p>
+								<p class="code">상품코드 ATP110</p>
+								<div class="desc">
+									<p class="price">2,009,000원 ~</p>
+									<p class="title">[방콕 에어텔] ONLY 초특급 4일 (팁싸마이맛집)</p>
+								</div>
+								<div class="info">
+									<div class="icons">
+										<span class="tag departure">인천출발</span>
+										<span class="tag golf">골프여행</span>
+									</div>
+									<div class="price2">2,009,000원 부터</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="img" style="background-image:url('//img.modetour.com/ModeMobile/2019/common/img/@temp_srch_img2.jpg')"></p>
+								<p class="code">상품코드 ATP110</p>
+								<div class="desc">
+									<p class="price">2,009,000원 ~</p>
+									<p class="title">최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄</p>
+								</div>
+								<div class="info">
+									<div class="icons">
+										<span class="tag departure">인천출발</span>
+										<span class="tag cruise">크루즈</span>
+									</div>
+									<div class="price2">2,009,000원 부터</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //1.여행상품 탭내용 -->			
+			<!-- 2.기획상품 탭내용 -->
+			<div class="ui-tab-content" id="item2">
+				<div class="srch-result">
+					<ul class="lst-special">
+						<li>
+							<a href="#">
+								<p class="img"><img src="//img.modetour.com/ModeMobile/2019/common/img/@temp_srch_img5.jpg" alt="방콕 제주항공"></p>
+								<div class="desc">
+									<p class="title">대한항공 타고 방콕 가자!</p>
+									<p class="period">2030.02.08까지</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="img"><img src="//img.modetour.com/ModeMobile/2019/common/img/@temp_srch_img5.jpg" alt="방콕 제주항공"></p>
+								<div class="desc">
+									<p class="title">대한항공 타고 방콕 가자!대한항공 타고 방콕 가자!대한항공 타고 방콕 가자!대한항공 타고 방콕 가자!대한항공 타고 방콕 가자!대한항공 타고 방콕 가자!대한항공 타고 방콕 가자!대한항공 타고 방콕 가자!대한항공 타고 방콕 가자!</p>
+									<p class="period">2030.02.08까지</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //2.기획상품 탭내용 -->
+			<!-- 3.할인항공권 탭내용 -->
+			<div class="ui-tab-content" id="item3">
+				<div class="range-area">
+					<span class="num">총 7개</span>
+					<span class="calendar">2019.06.05~</span>
+					<div class="sec-sort">
+						<a href="#" class="btn-popular">예약마감 제외</a>
+						<div class="pop-popular">
+							<span class="screen"></span>
+							<ul class="popular-wrap">
+								<li><a href="#" class="on">전체</a></li>
+								<li><a href="#">예약마감 제외</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="srch-result">
+					<ul class="lst-discount">
+						<li>
+							<a href="#">
+								<p class="air"><img src="//img.modetour.co.kr/air/ci/2P.gif" alt=" "> 제주항공</p>
+								<p class="title">인천 ↔ 방콕</p>
+								<p class="date">2019-06-05 20:40  ㅡ  2019.06.09 09:20</p>
+								<div class="info">
+									<span class="tag">좌석 1석</span>
+									<span class="price">509,000원</span>
+								</div>
+								<p class="txt-tax">(유류/제세공과금 포함)</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="air"><img src="//img.modetour.co.kr/air/ci/ae.gif" alt=" "> 스카이마크항공</p>
+								<p class="title">인천인천인천인천인천인천인천인천인천 → 방콕방콕방콕방콕방콕방콕방콕</p>
+								<p class="date">2019-06-05 20:40  ㅡ  2019.06.09 09:20</p>
+								<div class="info">
+									<span class="tag">좌석 100석</span>
+									<span class="price">509,000원</span>
+								</div>
+								<p class="txt-tax">(유류/제세공과금 포함)</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //3.할인항공권 탭내용 -->
+		</div>
+
+	</div>
+</div>

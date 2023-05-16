@@ -1,0 +1,494 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+<link rel="stylesheet" href="../../css/fonts.css"><!-- 2020-07-14 fonts CSS 추가 -->
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/layout.css">
+<link rel="stylesheet" href="../../css/content.css">
+<link rel="stylesheet" href="../../css/separate_popup.css"><!-- 2020-07-14 레이어팝업 CSS 추가 -->
+</head>
+<body>
+<nav id="Index">
+    <a href="#content">본문 바로가기</a>
+    <a href="#header">주메뉴 바로가기</a>
+    <a href="#footer">사이트 정보 바로가기</a>
+</nav>
+<!-- header [s] -->
+<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+<!-- header [e] -->
+
+<!-- container [s] -->
+<section id="container">
+    <div id="content" class="cont_event">
+        <div class="sub_cont_head">
+            <h2 class="sub_tit">이벤트</h2>
+        </div>
+        <ul class="tab_menu tab_type3">
+            <li class="on"><a href="list.html" class="link_all"><span class="btn_comm"></span>전체 이벤트</a></li>
+            <li><a href="list.html">더샵 이벤트</a></li>
+            <li><a href="list.html">업체 이벤트</a></li>
+            <li><a href="list.html">종료된 이벤트</a></li>
+            <li><a href="list.html">이벤트 당첨자 발표</a></li>
+        </ul>
+        <div class="event_view">
+        <!-- 2020-07-14 경매 이벤트 [s] -->
+            <!-- 2020-08-13 style  전부 수정 [s] -->
+            <style>
+                .wrap_ev_auction .sprite {background:url(auction_img/img_ev_auction.png) no-repeat;}
+                .wrap_ev_auction .text_field {background:#fff;border:none;border-left:3px solid #adbbca;border-bottom:3px solid #adbbca;line-height:1;font-family:'NanumSquareEB';color:#002d80;text-align:right;letter-spacing:-0.02em;}
+                .wrap_ev_auction .text_field[readonly] {background:#cccccc;}
+                .wrap_ev_auction ul.dot {font-family:'NanumSquareR';font-size:17px;line-height:30px;letter-spacing:-0.025em;}
+                .wrap_ev_auction ul.dot li:before {content:'\00b7';display:inline-block;margin-right:5px;}
+                .wrap_ev_auction .auction_header {position:relative;min-height:992px;background:url(./auction_img/bg_auction_1.jpg) no-repeat 0 0 #002d7f;}
+                .wrap_ev_auction .auction_header:after {content:'';display:block;position:absolute;right:0;bottom:112px;width:208px;height:239px;background:url(auction_img/img_ev_auction.png) no-repeat -200px -170px;}
+                .wrap_ev_auction .auction_list {position:absolute;left:50%;bottom:0;width:580px;height:auto;margin-left:-290px;font-size:0;}
+                .wrap_ev_auction .auction_list li {display:table;float:left;overflow:hidden;position:relative;width:270px;height:180px;margin:20px 10px 0 10px;background:#e6e6e6;}
+                .wrap_ev_auction .auction_list li:after {content:'';display:block;position:absolute;left:0;right:0;top:120px;bottom:0;background:#abc9ff;}
+                .wrap_ev_auction .auction_list .dimmed {position:absolute;left:0;right:0;top:0;bottom:0;z-index:2;background:rgba(38,45,61,0.85);}
+                .wrap_ev_auction .auction_list .dimmed .img_txt {display:block;position:absolute;left:50%;top:50%;text-indent:-9999em;font-size:0;}
+                .wrap_ev_auction .auction_list .dimmed .success {width:142px;height:142px;margin:-71px 0 0 -71px;background:url(auction_img/img_success_bid.png) no-repeat;background-size:100% auto;}
+                .wrap_ev_auction .auction_list .dimmed .coming_soon {width:114px;height:55px;margin:-27px 0 0 -57px;background:url(auction_img/img_comingsoon.png) no-repeat;background-size:100% auto;}
+                /* 2020-08-27 CSS 수정 */
+                .wrap_ev_auction .auction_list .badge {position:absolute;left:0;top:0;z-index:2;width:auto;min-width:135px;box-sizing:border-box;padding:9px 15px;font-family:Verdana;font-size:18px;background:#3779f2;border-radius:0 0 8px 0;line-height:1;color:#002d80;letter-spacing:-0.05em;}
+                .wrap_ev_auction .auction_list .date {margin-left:10px;color:#fff;}
+                .wrap_ev_auction .auction_list .time {display:inline-block;margin-top:1px;margin-left:10px;color:#fff;font-size:16px;vertical-align:top;}/* 2020-08-27 CSS 추가 */
+                .wrap_ev_auction .auction_list .prd_img {display:table-cell;position:relative;z-index:1;vertical-align:middle;}
+                .wrap_ev_auction .auction_list .prd_img img {margin-top:35px;}
+                .wrap_ev_auction .how_to {position:relative;height:383px;padding-top:73px;background:url(./auction_img/bg_auction_2.jpg) no-repeat 0 0;box-sizing:border-box;}
+                .wrap_ev_auction .how_to .auction_tit {width:347px;height:54px;margin:0 auto;font-size:0;line-height:1;text-indent:-9999em;}
+                .wrap_ev_auction .how_to .how_to_list {display:table;position:relative;top:153px;height:80px;margin:0 auto;font-size:0;}
+                .wrap_ev_auction .how_to li {display:table-cell;width:194px;padding-left:18px;padding-right:18px;box-sizing:border-box;font-family:'NanumSquareB';font-size:17px;line-height:28px;text-align:center;vertical-align:middle;}
+                .wrap_ev_auction .how_to .yellow {color:#f87b00;}
+                .wrap_ev_auction .how_to .yellow_box {padding:5px;background:#ff8e1f;color:#fff;border-radius:3px;}
+                .wrap_ev_auction .how_to .number {font-family:Verdana;}
+                .wrap_ev_auction .auction_body {position:relative;padding-bottom:144px;background:url(./auction_img/bg_auction_5.jpg) no-repeat 50% 100% #dbe6fa;box-sizing:border-box;}
+                .wrap_ev_auction .auction_body .dimmed {position:absolute;left:0;right:0;top:426px;bottom:0;z-index:2;background:rgba(38,45,61,0.85);}
+                .wrap_ev_auction .auction_body .dimmed .img_txt {display:block;position:absolute;left:50%;top:315px;text-indent:-9999em;font-size:0;}
+                .wrap_ev_auction .auction_body .dimmed .success {width:348px;height:348px;margin:-174px 0 0 -174px;background:url(auction_img/img_success_bid.png) no-repeat;background-size:100% auto;}
+                .wrap_ev_auction .auction_body .dimmed .coming_soon {width:319px;height:151px;margin:-75px 0 0 -159px;background:url(auction_img/img_comingsoon.png) no-repeat;background-size:100% auto;}
+                .wrap_ev_auction .auction_info_wrap {position:relative;min-height:1119px;height:auto;padding-top:86px;padding-bottom:130px;background:url(./auction_img/bg_auction_3.jpg) no-repeat 50% 100% #dbe6fa;box-sizing:border-box;}/* 2020-09-09 수정 */
+                .wrap_ev_auction .auction_info_wrap:before {content:'';display:block;position:absolute;left:0;right:0;top:0;height:640px;background:url(auction_img/bg_auction_3_1.jpg) no-repeat 0 100% #fff;}/* 2020-09-09 추가 */
+                .wrap_ev_auction .auction_info_wrap > * {position:relative;z-index:1;}/* 2020-09-09 추가 */
+                .wrap_ev_auction .auction_info_wrap .auction_title {font-size:50px;font-family:'NanumSquareR';color:#262d3d;line-height:53px;}
+                .wrap_ev_auction .auction_info_wrap .auction_title .number {display:inline-block;width:68px;height:53px;background:#262d3d;color:#ffe555;font-family:'NanumSquareL';}
+                .wrap_ev_auction .auction_info_wrap .auction_title em {font-style:italic;}
+                .wrap_ev_auction .auction_info_wrap .prd_img_wrap {display:table;position:relative;width:100%;height:410px;}
+                .wrap_ev_auction .auction_info_wrap .sale_tag {position:absolute;top:47px;right:225px;width:169px;height:168px;padding:38px 0;background-position:0 -170px;color:#fff;font-family:'NanumSquareB';font-size:27px;line-height:1;box-sizing:border-box;}
+                .wrap_ev_auction .auction_info_wrap .sale_tag .number {display:block;margin-bottom:6px;font-family:Verdana;font-size:54px;line-height:1;letter-spacing:-0.05em;}
+                .wrap_ev_auction .auction_info_wrap .sale_tag sup {font-size:23px;}
+                .wrap_ev_auction .auction_info_wrap .prd_img {display:table-cell;vertical-align:bottom;}
+                .wrap_ev_auction .auction_info_wrap .prd_detail {margin-top:31px;margin-bottom:55px;}
+                .wrap_ev_auction .auction_info_wrap .link_detail {display:inline-block;padding:11px 13px 10px 13px;line-height:1;font-family:'NanumSquareB';color:#ffffff;font-size:17px;background:#276be9;border-radius:8px;border:1px solid #fff;-webkit-box-shadow: 0px 2px 3px rgba(33, 59, 107, 0.3);-moz-box-shadow: 0px 2px 3px rgba(33, 59, 107, 0.3);box-shadow: 0px 2px 3px rgba(33, 59, 107, 0.3);}
+                .wrap_ev_auction .auction_info .info_title {padding:0 30px;font-size:0;line-height:56px;}/* 2020-09-09 수정 */
+                .wrap_ev_auction .auction_info .info_title > * {display:block;vertical-align:middle;}
+                .wrap_ev_auction .auction_info .prd_name {font-family:'NanumSquareEB';font-size:42px;letter-spacing:-0.025em;color:#002d80;}
+                .wrap_ev_auction .auction_info .winner_number {margin-top:5px;color:#667aa6;font-family:'NanumSquareB';font-size:24px;}
+                .wrap_ev_auction .auction_info .text_field {width:84px;height:45px;margin:0 10px;font-size:27px;}
+                .wrap_ev_auction .auction_info ul {width:400px;margin:20px auto 0 auto;font-size:0;}
+                .wrap_ev_auction .auction_info li {padding:7px 0;border-top:1px solid #262d3d;line-height:1;}
+                .wrap_ev_auction .auction_info li > * {display:inline-block;line-height:35px;}
+                .wrap_ev_auction .auction_info li:first-child {border-top:none;}
+                .wrap_ev_auction .auction_info strong {width:150px;padding:0 15px;text-align:right;box-sizing:border-box;font-family:'NanumSquareB';font-size:26px;letter-spacing:-0.025em;color:#262d3d;}
+                .wrap_ev_auction .auction_info .before_price .price {width:240px;padding:0 15px;font-family:'NanumSquareEB';color:#595e6a;text-align:right;font-size:26px;letter-spacing:-0.025em;text-decoration:line-through;box-sizing:border-box;}
+                .wrap_ev_auction .auction_info .bid .price {width:240px;padding:0 15px;text-align:right;box-sizing:border-box;font-size:26px;color:#ff5656;font-family:'NanumSquareR';}
+                .wrap_ev_auction .auction_info .bid .number {font-family:Verdana;font-size:35px;letter-spacing:-0.05em;}
+                .wrap_ev_auction .auction_form {height:635px;background:url(./auction_img/bg_auction_4.jpg) repeat;font-family:'NanumSquareB';color:#fff;}
+                .wrap_ev_auction .auction_form .auction_tit {width:455px;height:63px;margin:0 auto 65px auto;background-position:0 -80px;font-size:0;text-indent:-9999em;}
+                .wrap_ev_auction .auction_form form {width:753px;margin:0 auto;padding:0 50px;box-sizing:border-box;}
+                .wrap_ev_auction .auction_form .bid_highest {font-family:'NanumSquareR';font-size:23px;line-height:50px;}
+                .wrap_ev_auction .auction_form .bid_highest input {width:180px;height:50px;margin:0 5px 0 10px;font-family:'NanumSquareEB';font-size:30px;}
+                .wrap_ev_auction .auction_form .bid_highest button {margin-left:10px;}
+                .wrap_ev_auction .auction_form .btn_rounded {padding:15px 27px;background:#0050e4;line-height:25px;font-family:'NanumSquareB';font-size:23px;color:#fff;border-radius:27px;}
+                .wrap_ev_auction .auction_form .bid_field {font-family:'NanumSquareR';font-size:25px;line-height:1;}
+                .wrap_ev_auction .auction_form .bid_field label {font-family:'NanumSquareB';}
+                .wrap_ev_auction .auction_form .bid_field input {width:230px;height:56px;margin:0 5px 0 10px;font-size:35px;}
+                .wrap_ev_auction .auction_form .bid_field button {margin-left:20px;padding-left:45px;padding-right:45px;}
+                .wrap_ev_auction .payment_table {margin-top:63px;margin-bottom:50px;border-top:2px solid #fff;border-bottom:2px solid #fff;}
+                .wrap_ev_auction .payment_table th,
+                .wrap_ev_auction .payment_table td {padding:20px 17px;border-left:1px solid #fff;line-height:1;color:#fff;}
+                .wrap_ev_auction .payment_table th {border-bottom:1px solid #fff;font-size:20px;font-family:'NanumSquareB';font-weight:normal;}
+                .wrap_ev_auction .payment_table td {font-family:'NanumSquareR';font-size:18px;letter-spacing:-0.025em;}
+                .wrap_ev_auction .payment_table th:first-child,
+                .wrap_ev_auction .payment_table td:first-child {text-align:left;border-left:none;}
+                .wrap_ev_auction .payment_table .radio_wrap {margin-right:25px;}
+                .wrap_ev_auction .payment_table .radio_wrap:last-child {margin-right:0;}
+                .wrap_ev_auction .payment_table input[type="radio"] {margin-right:10px;}
+                .wrap_ev_auction .payment_table .select {float:none;background-color:#002363;border-color:#003fb3}
+                .wrap_ev_auction .auction_desc {width:753px;margin:60px auto 0 auto;padding:0 50px;box-sizing:border-box;text-align:left;}
+                .wrap_ev_auction .auction_desc li {font-size:15px;line-height:29px;}
+                .wrap_ev_auction .auction_desc em {color:#ff8754;}
+                .wrap_ev_auction .auction_form .btn_rounded.orange {background: -webkit-gradient(linear, left top, right top, from(#ed831b), to(#ff5755));background: -webkit-linear-gradient(top, #ed831b, #ff5755);background: -moz-linear-gradient(top, #ed831b, #ff5755);background: -o-linear-gradient(top, #ed831b, #ff5755);background: -ms-linear-gradient(top, #ed831b, #ff5755);background: linear-gradient(top, #ed831b, #ff5755);background-color:#ff5755;}
+                .wrap_ev_auction .auction_footer {padding:50px 90px;color:#262d3d;text-align:left;}
+                .wrap_ev_auction .auction_footer .tit {font-family:'NanumSquareB';font-size:24px;line-height:38px;letter-spacing:0.01em;}
+                /* 2020-09-03 수정 */
+                #popProdDetail {width:950px;}
+                #popProdDetail .tit_detail:after {display:none;}
+                #popProdDetail .tit_ev_detail {display:inline-block;position:relative;padding-left:25px;margin-bottom:8px;font-family:'NanumSquareR';font-size:21px;color:#5e6167;}
+                #popProdDetail .tit_ev_detail:before {content:'';display:block;position:absolute;left:12px;top:0.5em;width:4px;height:4px;background:#ff2400;border-radius:50%;}
+                #popProdDetail .box_detail {height:500px;}
+            </style>
+            <!-- 2020-08-13 style  전부 수정 [e] -->
+            <div class="wrap_ev_auction">
+                <div class="auction_header">
+                    <div class="screen_out">the Shop 경매 이벤트! 고민하는 순간 기회는 Bye Bye~</div>
+                    <ul class="auction_list">
+                        <li>
+                            <div class="badge">OPEN<span class="date">07.03</span><span class="time">오전 11:00</span></div><!-- 2020-08-27 time 추가 -->
+                            <div class="prd_img"><img src="auction_img/img_prd_small.png" alt="제품 이미지"></div>
+                            <div class="dimmed"><!-- 낙찰완료 / 커밍순인 경우만 사용하고 필요 없을 땐 삭제합니다 -->
+                                <span class="img_txt success">낙찰완료</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="badge">OPEN<span class="date">07.03</span><span class="time">오후 22:00</span></div><!-- 2020-08-27 time 추가 -->
+                            <div class="prd_img"><img src="auction_img/img_prd_small.png" alt="제품 이미지"></div>
+                        </li>
+                        <li>
+                            <div class="badge">OPEN<span class="date">07.03</span><span class="time">오전 10:00</span></div><!-- 2020-08-27 time 추가 -->
+                            <div class="prd_img"><img src="auction_img/img_prd_small.png" alt="제품 이미지"></div>
+                        </li>
+                        <li>
+                            <div class="badge"><span class="date"></span></div>
+                            <div class="prd_img"></div>
+                            <div class="dimmed"><!-- 낙찰완료 / 커밍순인 경우만 사용하고 필요 없을 땐 삭제합니다 -->
+                                <span class="img_txt coming_soon">Coming Soon!</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="auction_body">
+                    <div class="how_to">
+                        <p class="auction_tit sprite">경매 참여 방법!</p>
+                        <ul class="how_to_list">
+                            <li><span class="yellow_box">경매 입찰</span></li>
+                            <li><span class="yellow_box">결제정보 입력</span></li>
+                            <li><span class="yellow">최고가 낙찰시</span><br><span class="yellow_box">자동결제</span><br><span class="date"><span class="number">7/3</span> 오전7시</span></li>
+                            <li><br><span class="yellow_box">상품배송</span><br><span class="date number">7/7</span></li>
+                        </ul>
+                    </div>
+                    <div class="auction_info_wrap">
+                        <p class="auction_title"><span class="number">07</span>월 <span class="number">02</span>일, 오전 <span class="number">11</span>시 오픈<em>!</em></p>
+                        <div class="prd_img_wrap">
+                            <div class="sale_tag sprite"><span class="number">90<sup>%</sup></span>할인</div>
+                            <div class="prd_img"><img src="auction_img/img_prd_large.png" alt="제품 이미지"></div>
+                        </div>
+                        <div class="prd_detail">
+                            <a href="#" class="link_detail">자세히 보기</a>
+                        </div>
+                        <div class="auction_info">
+                            <div class="info_title">
+                                <div class="prd_name">더샵단독★힐리언스 2인 패키지 (1박(조/석식)+마스크팩2매+카페이용권2매)+꽃꿀1개</div>
+                                <div class="winner_number">( 당첨자수<input type="text" class="text_field" value="00" readonly>명 )</div><!-- 2020-08-13 수정 -->
+                            </div>
+                            <ul>
+                                <li class="before_price"><strong>정상가</strong><div class="price"><span class="number">100,000</span>원</div></li>
+                                <li class="bid"><strong>경매시작가</strong><div class="price"><span class="number">1,000</span>원</div></li>
+                                <li class="bid"><strong>최고입찰가</strong><div class="price"><span class="number">28,240,000</span>원</div></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="auction_form">
+                        <form action="#">
+                            <fieldset>
+                                <legend>경매 시작합니다!</legend>
+                                <p class="auction_tit sprite">경매 참여 방법!</p>
+                                <p class="bid_highest">현재 최고 입찰가 <input type="text" class="text_field" readonly value="2,333,000">원 <button type="button" class="btn_rounded">입찰가 확인</button></p>
+                                <table class="payment_table">
+                                    <caption>결제수단 표</caption>
+                                    <colgroup>
+                                        <col style="width:auto;">
+                                        <col style="width:168px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="row">결제수단 선택</th>
+                                            <th scope="row">할부선택</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <label class="radio_wrap"><input type="radio" name="paymentCard"><span class="radio_txt">삼성 간편결제</span></label>
+                                                <label class="radio_wrap"><input type="radio" name="paymentCard"><span class="radio_txt">신한 간편결제</span></label>
+                                                <label class="radio_wrap"><input type="radio" name="paymentCard"><span class="radio_txt">현대 간편결제</span></label>
+                                            </td>
+                                            <td>
+                                                <select style="width:124px;">
+                                                    <option value="">일시불</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="bid_field"><label for="bidPriceField">입찰가</label> <input type="text" class="text_field" id="bidPriceField" value="40,000">원 <button type="button" class="btn_rounded orange">입찰하기</button></p>
+                            </fieldset>
+                        </form>
+                        <ul class="auction_desc dot">
+                            <li>최종 결제금액이 5만원 미만일 경우, 일시불로 결제됩니다.</li>
+                            <li>실제 결제는 [최고 입찰가 낙찰완료] 시 실 결제가 진행되며, 이벤트 종료 후 익일 오전7시에 자동결제 됩니다.</li>
+                            <li><em>결제 후 취소/반품 불가합니다.</em></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="auction_footer">
+                    <p class="tit">유의사항</p>
+                    <ul class="dot">
+                        <li>이벤트 종료 전 최고가 입찰시 이벤트는 조기 종료되며, 최고 입찰 고객이 최종 낙찰 됩니다.</li>
+                        <li>본 이벤트는 더샵에서만 진행하는 한시적 행사로 당사 사정에 의해 변경 또는 조기종료 될 수 있습니다.</li>
+                        <li>최고 입찰가 결제시 낙찰 완료 되며, 등록하신 결제수단(삼성/신한/현대)으로  익일 오전 7시에 결제 완료 됩니다.</li>
+                        <li>낙찰 완료 시 낙찰된 금액으로 세금계산서 발행 됩니다.</li>
+                        <li>낙찰 완료 시 배송은 약국으로 7일이내 배송됩니다. (배송사 사정으로 지연될 수 있음)</li>
+                        <li>결제 후 변심으로 인한 취소/반품/환불은 불가합니다.</li>
+                        <li>추가 문의 사항은 고객센터 080-550-8990으로 연락주시기 바랍니다.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 상품 상세 팝업 [s] -->
+            <div class="pop_layer pop_layer_etc pop_cart_prod" id="popProdDetail" style="display:none;">
+                <!-- 2020-09-03 제목 상품명 노출 -->
+                <strong class="tit_popup">상품명</strong>
+                <div class="pop_wrap">
+                    <!-- 2020-09-03 삭제
+                    <div class="page_location" id="goods-ctg-result"></div>
+                    <div class="box_info">
+                        <strong class="tit_prod" id="id-goods-nm">피블라스트스프레이(트라페르민)</strong>
+                        <div class="thumb_prod">
+                            <a href="#none" class="link_expand">
+                                <span class="wrap_thumb" id="id-goods-thumb-img">
+                                    <img src="http://img.shop.co.kr/upload/product/ADMIN/201007/81457_01_L.GIF" alt="">
+                                </span>
+                            </a>
+                            <a href="#none" class="link_expand link_expand2"><span class="ico_etc ico_expand">이미지 확대</span></a>
+                        </div>
+                        <div class="info_prod">
+                            <ul class="list_info">
+                                <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">상품코드</strong><span class="txt_info" id="id-goods-code">SBUC0080N</span></div></li>
+                                <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">제조사</strong><span class="txt_info" id="id-mafc-nm">대웅제약</span></div></li>
+                                <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">보험코드</strong><span class="txt_info" id="id-policy-cd">0000000000</span></div></li>
+                                <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">원산지</strong><span class="txt_info" id="id-macf-nm">대한민국</span></div></li>
+                                <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">규격</strong><span class="txt_info" id="id-goods-stnd">300 mg</span></div></li>
+                                <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">단위</strong><span class="txt_info" id="id-goods-unit">60C</span></div></li>
+                            </ul>
+                            <ul class="list_info list_price">
+                                <li><div class="inner"><strong class="tit_price">판매가</strong> <strong class="txt_num" id="id-last-price">99,921,950</strong> 원</div></li>
+                                <li id="id-goods-dcAmt"><div class="inner"><strong class="tit_info">비용할인</strong><span class="txt_info"><strong class="emph_color">30%</strong> : 999,600원</span></div></li>
+                                <li id="id-cart-etc"><div class="inner"><strong class="tit_info">구분 : </strong><span class="txt_info">전문의약품</span></div></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <strong class="tit_ev_detail">상품 상세설명</strong><!-- 2020-09-03 수정 -->
+                    <div class="box_detail" id="id-goods-desc">
+                        <p style="margin: 0px"><strong>효능효과</strong></p>
+                        <p style="margin: 0px">욕창, 화상으로 인한 궤양, 하지궤양</p><br><br>
+                        <p style="margin: 0px"><strong>주요성분</strong></p>
+                        <p style="margin: 0px">트라페르민(숙주:대장균 B주(ATCC 23848), 벡터:pTsF-9Δgal)&nbsp; 500마이크로그램</p><br>
+                        <p style="margin: 0px"><strong>성상</strong></p>
+                        <p style="margin: 0px">백색의 덩어리 또는 분말이 들어 있는 바이알로 첨부용제로 녹였을 때 무색투명한 외용액제</p><br>
+                        <p style="margin: 0px"><strong>사용방법</strong></p>
+                        <p style="margin: 0px">첨부용해액 1㎖당 트라페르민으로서 100㎍을 사용시에 용해하고, 궤양면을 깨끗이 닦은 후 전용 분무기로 1일 1회(5번 분무, 트라페르민으로서 30㎍) 적용 1) 궤양의 최대경이 6㎝를 넘지 않는 경우&nbsp;&nbsp; ; 궤양면으로부터 약 5㎝거리에서 5번 분무 2) 궤양의 최대경이 6㎝를 넘는 경우&nbsp;&nbsp; ; 약제가 동일 궤양면에 5번 분무되도록 궤양면으로부터 약 5㎝의 거리를 두고 같은 방법으로 조작을 반복한다.</p>
+                    </div>
+                    <div class="btn_wrap">
+                        <button type="button" class="btn_type1 btn_cancel2 fnc_close">닫기</button>
+                    </div>
+                </div>
+                <button type="button" class="btn_comm btn_close2 fnc_close">닫기</button>
+            </div>
+            <!-- 상품 상세 팝업 [e] -->
+            <!-- 상품 확대보기 팝업 [s] -->
+            <div class="pop_layer pop_layer_etc pop_cart_prod" id="popProdExpand" style="display:none;">
+                <strong class="tit_popup">상품 이미지 확대보기</strong>
+                <div class="pop_wrap">
+                    <div class="page_location" id="goods-ctg-result"></div>
+                    <div class="box_info">
+                        <strong class="tit_prod" id="id-goods-nm1"></strong>
+                        <div class="wrap_thumb" id="goods-detail-pop-img">
+                            <img src="http://img.shop.co.kr/upload/product/ADMIN/201007/81457_01_L.GIF" alt="">
+                        </div>
+                        <!-- 이미지 없는경우
+                        <div class="wrap_thumb">
+                            <img src="images/img_thumb_b.gif" alt="">
+                        </div>
+                        -->
+                        <div class="info_prod">
+                            <ul class="list_info" id="id-goods-detail-pop">
+                                <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">상품코드</strong><span class="txt_info">FBSL5001</span></div></li>
+                                <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">보험코드</strong><span class="txt_info"></span></div></li>
+                                <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">규격</strong><span class="txt_info">500μg</span></div></li>
+                                <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">단위</strong><span class="txt_info">1바이알</span></div></li>
+                                <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">제조사</strong><span class="txt_info">대웅제약</span></div></li>
+                            </ul>
+                            <ul class="list_thumb">
+                                <li class="on" id="goods-detail-pop-img0">
+                                    <a href="#none"><img src="http://img.shop.co.kr/upload/product/ADMIN/201007/81457_01_L.GIF" alt=""></a>
+                                </li>
+                                <li id="goods-detail-pop-img1"></li>
+                                <li id="goods-detail-pop-img2"></li>
+                            </ul>
+                        </div>
+                        <p class="txt_caution"><span class="ico_etc ico_caution"></span>본 이미지는 실제 상품이미지와 다를 수 있습니다. 더샵 상품 이미지는 더샵 이외에서 사용할 수 없습니다.</p>
+                    </div>
+                    <div class="btn_wrap">
+                        <button type="button" class="btn_type1 btn_cancel2 fnc_close">닫기</button>
+                    </div>
+                </div>
+                <button type="button" class="btn_comm btn_close2 fnc_close">닫기</button>
+            </div>
+            <!-- 상품 확대보기 팝업 [e] -->
+            <script>
+                // 제품 상세 모달 레이어
+                $('body').on("click", ".link_detail", function() {
+                    var modalLayer = null;
+                    modalLayer = shopUI.modalLayer($("#popProdDetail"), {
+                        closeClass: "fnc_close"
+                    });
+                });
+                // 제품 상세 이미지 모달 레이어
+                $('body').on("click", ".link_detail_img", function() {
+                    var modalLayer = null;
+                    modalLayer = shopUI.modalLayer($("#popProdImgDetail"), {
+                        closeClass: "btn_close"
+                    });
+                });
+            </script>
+        <!-- 2020-07-14 경매 이벤트 [e]] -->
+        
+        <!-- 확인용 샘플입니다. -->
+        <p style="font-size:20px;font-weight:bold;">- dimmed 적용 버전 -</p>
+        <div class="wrap_ev_auction">
+            <div class="auction_header">
+                <div class="screen_out">the Shop 경매 이벤트! 고민하는 순간 기회는 Bye Bye~</div>
+                <ul class="auction_list">
+                    <li>
+                        <div class="badge">OPEN<span class="date">07.03</span></div>
+                        <div class="prd_img"><img src="auction_img/img_prd_small.png" alt="제품 이미지"></div>
+                        <div class="dimmed"><!-- 낙찰완료 / 커밍순인 경우만 사용하고 필요 없을 땐 삭제합니다 -->
+                            <span class="img_txt success">낙찰완료</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="badge">OPEN<span class="date">07.03</span></div>
+                        <div class="prd_img"><img src="auction_img/img_prd_small.png" alt="제품 이미지"></div>
+                    </li>
+                    <li>
+                        <div class="badge">OPEN<span class="date">07.03</span></div>
+                        <div class="prd_img"><img src="auction_img/img_prd_small.png" alt="제품 이미지"></div>
+                    </li>
+                    <li>
+                        <div class="badge"><span class="date"></span></div>
+                        <div class="prd_img"></div>
+                        <div class="dimmed"><!-- 낙찰완료 / 커밍순인 경우만 사용하고 필요 없을 땐 삭제합니다 -->
+                            <span class="img_txt coming_soon">Coming Soon!</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="auction_body">
+                <div class="how_to">
+                    <p class="auction_tit sprite">경매 참여 방법!</p>
+                    <ul class="how_to_list">
+                        <li><span class="yellow_box">경매 입찰</span></li>
+                        <li><span class="yellow_box">결제정보 입력</span></li>
+                        <li><span class="yellow">최고가 낙찰시</span><br><span class="yellow_box">자동결제</span><br><span class="date"><span class="number">7/3</span> 오전7시</span></li>
+                        <li><br><span class="yellow_box">상품배송</span><br><span class="date number">7/7</span></li>
+                    </ul>
+                </div>
+                <div class="auction_info_wrap">
+                    <p class="auction_title"><span class="number">07</span>월 <span class="number">02</span>일, 오전 <span class="number">11</span>시 오픈<em>!</em></p>
+                    <div class="prd_img_wrap">
+                        <div class="sale_tag sprite"><span class="number">90<sup>%</sup></span>할인</div>
+                        <div class="prd_img"><img src="auction_img/img_prd_large.png" alt="제품 이미지"></div>
+                    </div>
+                    <div class="prd_detail">
+                        <a href="#" class="link_detail">자세히 보기</a>
+                    </div>
+                    <div class="auction_info">
+                        <div class="info_title">
+                            <div class="prd_name">DNC 패키지</div>
+                            <div class="winner_number"><input type="text" class="text_field" value="00" readonly>명</div>
+                        </div>
+                        <ul>
+                            <li class="before_price"><strong>정상가</strong><div class="price"><span class="number">100,000</span>원</div></li>
+                            <li class="bid"><strong>경매시작가</strong><div class="price"><span class="number">1,000</span>원</div></li>
+                            <li class="bid"><strong>최고입찰가</strong><div class="price"><span class="number">28,240,000</span>원</div></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="auction_form">
+                    <form action="#">
+                        <fieldset>
+                            <legend>경매 시작합니다!</legend>
+                            <p class="auction_tit sprite">경매 참여 방법!</p>
+                            <p class="bid_highest">현재 최고 입찰가 <input type="text" class="text_field" readonly value="2,333,000">원 <button type="button" class="btn_rounded">입찰가 확인</button></p>
+                            <table class="payment_table">
+                                <caption>결제수단 표</caption>
+                                <colgroup>
+                                    <col style="width:auto;">
+                                    <col style="width:168px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="row">결제수단 선택</th>
+                                        <th scope="row">할부선택</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label class="radio_wrap"><input type="radio" name="paymentCard"><span class="radio_txt">삼성 간편결제</span></label>
+                                            <label class="radio_wrap"><input type="radio" name="paymentCard"><span class="radio_txt">신한 간편결제</span></label>
+                                            <label class="radio_wrap"><input type="radio" name="paymentCard"><span class="radio_txt">현대 간편결제</span></label>
+                                        </td>
+                                        <td>
+                                            <select style="width:124px;">
+                                                <option value="">일시불</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="bid_field"><label for="bidPriceField">입찰가</label> <input type="text" class="text_field" id="bidPriceField" value="40,000">원 <button type="button" class="btn_rounded orange">입찰하기</button></p>
+                        </fieldset>
+                    </form>
+                    <ul class="auction_desc dot">
+                        <li>최종 결제금액이 5만원 미만일 경우, 일시불로 결제됩니다.</li>
+                        <li>실제 결제는 [최고 입찰가 낙찰완료] 시 실 결제가 진행되며, 이벤트 종료 후 익일 오전7시에 자동결제 됩니다.</li>
+                        <li><em>결제 후 취소/반품 불가합니다.</em></li>
+                    </ul>
+                </div>
+                <!-- 낙찰완료 / 커밍순인 경우만 사용하고 필요 없을 땐 삭제합니다 -->
+                <!-- 낙찰완료인 경우 success 마크업만 사용, coming soon인 경우 coming_soon 마크업만 사용합니다. -->
+                <div class="dimmed">
+                    <span class="img_txt success">낙찰완료</span>
+                    <!-- <span class="img_txt coming_soon">Coming Soon!</span> -->
+                </div>
+            </div>
+            <div class="auction_footer">
+                <p class="tit">유의사항</p>
+                <ul class="dot">
+                    <li>이벤트 종료 전 최고가 입찰시 이벤트는 조기 종료되며, 최고 입찰 고객이 최종 낙찰 됩니다.</li>
+                    <li>본 이벤트는 더샵에서만 진행하는 한시적 행사로 당사 사정에 의해 변경 또는 조기종료 될 수 있습니다.</li>
+                    <li>최고 입찰가 결제시 낙찰 완료 되며, 등록하신 결제수단(삼성/신한/현대)으로  익일 오전 7시에 결제 완료 됩니다.</li>
+                    <li>낙찰 완료 시 낙찰된 금액으로 세금계산서 발행 됩니다.</li>
+                    <li>낙찰 완료 시 배송은 약국으로 7일이내 배송됩니다. (배송사 사정으로 지연될 수 있음)</li>
+                    <li>결제 후 변심으로 인한 취소/반품/환불은 불가합니다.</li>
+                    <li>추가 문의 사항은 고객센터 080-550-8990으로 연락주시기 바랍니다.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 확인용 샘플입니다. -->
+        </div>
+        <div class="btn_wrap">
+            <a href="customer.html" class="btn_type1">목록보기</a>
+        </div>
+    </div>
+    <!-- 우측 퀵메뉴[s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+    <!-- 우측 퀵메뉴[e] -->
+</section>
+<!-- container [e] -->
+
+<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+<!-- footer [s] -->
+<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+<!-- footer [e] -->
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+		<!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<div class="cont_head">
+					<h2 class="tit_cate">정기배송 신청</h2>
+				</div>
+				<form>
+					<fieldset>
+						<legend class="screen_out">구매하기 폼</legend>
+						<!-- 구매하기[s] -->
+						<div class="cont_order">
+							<div class="subscription_info">
+								<p>
+									<strong><span class="ico_oshop ico_delivery"></span> 정기배송 출발일</strong>
+									<span class="txt_date">2/14(금)</span> 출발 예정
+								</p>
+							</div>
+
+							<!-- 주문 상품[s] -->
+							<div class="box_order">
+								<h3 class="tit">주문 상세리스트</h3>
+								<button class="btn_order_close" type="button">리스트 닫기 <span class="ico_oshop ico_open">닫기</span></button>
+
+								<!-- 공급업체[s] -->
+								<div class="box_type1">
+									<h3><a href="#" class="link_prod_more">인앤코리아</a></h3>
+									<!-- 상품[s] -->
+									<div class="box_prod">
+										<div class="cont_body">
+											<a href="#none" class="link_item">
+												<img src="https://www.0shop.kr/zeroshop/data/lime/goods/big/RP_INEN/RP_INEN_077030503-1.jpg" alt="" width="100" height="100">
+											</a>
+											<div class="prod_name">
+												<span class="lab_vote">카카오톡 어피치 방구분사 13ml카카오톡 어피치 방구분사 13ml카카오톡 어피치 방구분사 13ml</span>
+												<p class="prod_option">옵션: 옵션명이 나타나는 영역입니당</p>
+												<span class="txt_num txt_subscript_discount"><span class="ico_oshop">할인</span>3%</span>
+												<p class="prod_price">
+													<span class="txt_price"><strong class="txt_num">10,230</strong>원</span>
+													<span class="txt_bar">|</span>
+													수량 : 100개
+												</p>
+											</div>
+										</div>
+									</div>
+									<!-- 상품[e] -->
+									<!-- 상품[s] -->
+									<div class="box_prod">
+										<div class="cont_body">
+											<a href="#none" class="link_item">
+												<img src="https://www.0shop.kr/zeroshop/data/lime/goods/big/RP_INEN/RP_INEN_077030503-1.jpg" alt="" width="100" height="100">
+											</a>
+											<div class="prod_name">
+												<span class="lab_vote">카카오톡 어피치</span>
+												<p class="prod_option">옵션: 옵션명이 나타나는 영역입니당</p>
+												<span class="txt_num txt_subscript_discount"><span class="ico_oshop">할인</span>3%</span>
+												<p class="prod_price">
+													<span class="txt_price"><strong class="txt_num">10,230</strong>원</span>
+													<span class="txt_bar">|</span>
+													수량 : 100개
+												</p>
+											</div>
+										</div>
+									</div>
+									<!-- 상품[e] -->
+								</div>
+								<!-- 공급업체[e] -->
+								<!-- 공급업체[s] -->
+								<div class="box_type1">
+									<h3><a href="#" class="link_prod_more">공급업체2</a></h3>
+									<!-- 상품[s] -->
+									<div class="box_prod">
+										<div class="cont_body">
+											<a href="#none" class="link_item">
+												<img src="https://www.0shop.kr/zeroshop/data/lime/goods/big/RP_INEN/RP_INEN_077030503-1.jpg" alt="" width="100" height="100">
+											</a>
+											<div class="prod_name">
+												<span class="lab_vote">카카오톡 어피치 방구분사 13ml카카오톡 어피치 방구분사 13ml카카오톡 어피치 방구분사 13ml</span>
+												<p class="prod_option">옵션: 옵션명이 나타나는 영역입니당</p>
+												<span class="txt_num txt_subscript_discount"><span class="ico_oshop">할인</span>3%</span>
+												<p class="prod_price">
+													<span class="txt_price"><strong class="txt_num">10,230</strong>원</span>
+													<span class="txt_bar">|</span>
+													수량 : 100개
+												</p>
+											</div>
+										</div>
+									</div>
+									<!-- 상품[e] -->
+								</div>
+								<!-- 공급업체[e] -->
+							</div>
+							<!-- 주문 상품[e] -->
+
+							<!-- 배송지입력[s] -->
+							<div class="box_type1 box_order">
+								<h3 class="tit">배송지입력</h3>
+								<div class="wrap_table">
+									<table class="tbl_type1 tbl_address">
+										<caption class="screen_out">배송지입력 테이블</caption>
+										<tbody>
+											<tr>
+												<td colspan="2">
+													<ul class="tab_type2">
+														<li class="on"><a href="#none" class="link_tab">기본배송지</a></li> <!-- 선택된 탭에 on 추가 -->
+														<li class=""><a href="#none" class="link_tab">새로입력</a></li>
+														<li class=""><a href="#none" class="link_tab">주소록</a></li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="recipient">받으실 분</label></th>
+												<td><div class="frame_inp"><input type="text" id="recipient" class="inp_oshop"></div></td>
+											</tr>
+											<tr>
+												<th scope="col"><label for="receive_tell">전화번호</label></th>
+												<td><div class="frame_inp"><input type="text" id="receive_tell" class="inp_oshop"></div></td>
+											</tr>
+											<tr>
+												<th scope="col"><label for="receive_phone">핸드폰</label></th>
+												<td><div class="frame_inp"><input type="text" id="receive_phone" class="inp_oshop"></div></td>
+											</tr>
+											<tr>
+												<th scope="row">받으실 곳</th>
+												<td class="td_address">
+													<div class="frame_inp"><input type="text" class="inp_oshop"></div>
+													<a href="#none" class="btn_type1 link_address">주소검색</a>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="td_code" style="display:none">
+													<div id="zipCode_view2" style="display: block; border: 1px solid; width: 100%; height: 466px; margin: 5px 0px; position: relative;">다음 우편번호 서비스 안내 iframe</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="col"><span class="screen_out">상세주소</span></th>
+												<td><div class="frame_inp"><input type="text" class="inp_oshop" value="서울 강남구 삼성동"></div></td>
+											</tr>
+											<tr>
+												<th scope="col"><span class="screen_out">상세주소</span></th>
+												<td><div class="frame_inp"><input type="text" class="inp_oshop" value="163-1"></div></td>
+											</tr>
+											<tr>
+												<th scope="col"><label for="receive_memo">배송요청사항</label></th>
+												<td><div class="frame_inp"><input type="text" id="receive_memo" class="inp_oshop"></div></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- 배송지입력[e] -->
+
+							<!-- 정기배송 신청일 :  2020-03-23 수정[s] -->
+							<div class="box_type1 box_order box_calendar">
+								<h3 class="tit">정기배송 신청일</h3>
+								<div class="wrap_table">
+									<table class="tbl_type1">
+										<caption class="screen_out">정기배송 신청일 테이블</caption>
+										<colgroup>
+											<col style="width:110px">
+											<col>
+										</colgroup>
+										<tr>
+											<th scope="row"><label for="date_calendar">정기배송 신청일</label></th>
+											<td><div class="frame_inp"><input type="text" id="date_calendar" class="inp_oshop"><span class="ico_oshop ico_calendar"></span></div></td>
+										</tr>
+									</table>
+									<div class="calendar_box">
+										<div class="calendar_head">
+											<strong class="calendar_tit"><span class="txt_num">2020</span>.<span class="txt_num">03</span></strong>
+											<button type="button" class="btn_month btn_month_prev" disabled><span class="ico_oshop">이전 달</span></button>
+											<button type="button" class="btn_month btn_month_next"><span class="ico_oshop">다음 달</span></button>
+										</div>
+										<table class="calendar_body">
+											<caption>달력</caption>
+											<thead>
+												<tr>
+													<th scope="col">일</th>
+													<th scope="col">월</th>
+													<th scope="col">화</th>
+													<th scope="col">수</th>
+													<th scope="col">목</th>
+													<th scope="col">금</th>
+													<th scope="col">토</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>2</td>
+													<td>3</td>
+													<td>4</td>
+													<td>5</td>
+													<td>6</td>
+													<td>7</td>
+												</tr>
+												<tr>
+													<td>8</td>
+													<td>9</td>
+													<td>10</td>
+													<td>11</td>
+													<td>12</td>
+													<td>13</td>
+													<td>14</td>
+												</tr>
+												<tr>
+													<td>15</td>
+													<td>16</td>
+													<td>17</td>
+													<td>18</td>
+													<td>19</td>
+													<td class="today"><a href="#none">20</a></td>
+													<td><a href="#none">21</a></td>
+												</tr>
+												<tr>
+													<td><a href="#none">22</a></td>
+													<td><a href="#none">23</a></td>
+													<td><a href="#none">24</a></td>
+													<td><a href="#none">25</a></td>
+													<td class="select"><a href="#none">26</a></td>
+													<td><a href="#none">27</a></td>
+													<td><a href="#none">28</a></td>
+												</tr>
+												<tr>
+													<td><a href="#none">29</a></td>
+													<td><a href="#none">30</a></td>
+													<td><a href="#none">31</a></td>
+													<td>1</td>
+													<td>2</td>
+													<td>3</td>
+													<td>4</td>
+												</tr>
+											</tbody>
+										</table>
+										<div class="btn_wrap">
+											<button type="button" class="btn_type7">취소</button>
+											<button type="submit" class="btn_type2">선택</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 정기배송 신청일 :  2020-03-23 수정[e] -->
+
+							<!-- 총 결제금액 [s] -->
+							<div class="box_type1 box_total">
+								<h3 class="tit_price">총 결제금액</h3>
+								<div class="info_price order_price">
+									<p>총 주문금액<strong class="price"><span class="txt_num">10,230</span>원</strong></p>
+								</div>
+								<div class="info_price">
+									<p>정기배송 할인금액<strong class="price">-<span class="txt_num">20,500</span>원</strong></p>
+								</div>
+								<div class="info_price info_total_price">
+									<p>최종 결제금액<strong class="price"><span class="txt_num">9,010,230</span>원</strong></p>
+								</div>
+								<p class="txt_info txt_delivery"><span class="ico_txt">무료</span> 정기배송 상품은 모두 무료 배송</p>
+							</div>
+							<!-- 총 결제금액 [e] -->
+
+							<!-- 결제수단 선택 [s] -->
+							<div class="box_type1 box_order">
+								<h3 class="tit">정기배송 결제 정보</h3>
+								<div class="frame_radio">
+									<div class="radio_oshop">
+										<input type="radio" id="pay3" name="pay" class="inp_vote">
+										<label for="pay3" class="lab_vote">
+											<span class="ico_oshop ico_rdo"></span>
+											<span class="txt_rdo"><span class="ico_oshop ico_naverpay"></span>네이버페이</span>
+										</label>
+									</div>
+								</div>
+								<div class="pay_attention payment_attention"><!-- 2019-12-30 class 추가 -->
+									<p>네이버페이는 최고 100원 이상 결제 가능합니다.</p>
+								</div>
+								<div class="frame_radio">
+									<div class="radio_oshop">
+										<input type="radio" id="pay5" name="pay" class="inp_vote">
+										<label for="pay5" class="lab_vote">
+											<span class="ico_oshop ico_rdo"></span>
+											<span class="txt_rdo"><span class="ico_oshop ico_payco">페이코</span></span>
+										</label>
+									</div>
+								</div>
+								<!-- 2019-12-30 페이코 추가[s] -->
+								<div class="pay_attention payment_attention">
+									<ul>
+										<li>PAYCO는 온/오프라인 쇼핑은 물론 송금, 멤버십 적립까지 가능한 통합 서비스입니다.</li>
+										<li><span class="fc_orange">휴대폰과 카드 명의자가 동일해야 결제 가능</span>하며, 결제금액 제한은 없습니다. (지원카드: 모든 국내 신용/체크카드)</li>
+									</ul>
+								</div>
+								<!-- 2019-12-30 페이코 추가[e] -->
+							</div>
+							<!-- 결제수단 선택 [e] -->
+
+							<!-- 구매동의 [s] -->
+							<div class="box_type1 box_order box_agree">
+								<div class="frame_check">
+									<div class="check_oshop">
+										<input type="checkbox" class="inp_vote" id="orderAgree">
+										<label for="orderAgree" class="lab_vote">
+											<span class="ico_oshop ico_chk"></span>
+											<strong class="">구매 및 결제 대행 서비스 이용약관 등에 모두 동의합니다.</strong>
+										</label>
+									</div>
+									<a href="#none" class="btn_agree"><span class="ico_oshop ico_open"></span></a>
+									<div class="pay_attention pay_agree">
+										<ul>
+											<li>구매조건 확인 및 결제진행 동의</li>
+											<li>개인정보 수집, 이용 및 제 3자 정보제공 동의</li>
+											<li>위 두가지 내용 외 이용약관상세내용 해당 영역에 들어갑니다.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="btn_order">
+									<a href="order_subscription_complete.html" class="btn_type10"><span class="ico_oshop ico_card"></span>정기배송 신청</a>
+								</div>
+							</div>
+							<!-- 구매동의 [e] -->
+						</div>
+						<!-- 구매하기[e] -->
+					</fieldset>
+				</form>
+				<script>
+				$(function() {
+					$(".link_address").click(function() {
+						$(this).parents(".td_address").parents().next().children(".td_code").toggle();
+					});
+
+					// 정기결제 캘린더 2020-03-23 추가
+					$(function(){
+						$("#date_calendar, .ico_calendar").on("click", function(){
+							$(this).parents(".tbl_type1").siblings(".calendar_box").addClass("open");
+						});
+						$(".calendar_box .calendar_body a").on("click", function(){
+							$(".calendar_box .calendar_body td").removeClass("select");
+							$(this).parent("td").addClass("select");
+						});
+					});
+					$(".calendar_box .btn_type7").on("click", function(){
+						$(this).parent().parent().removeClass("open");
+					});
+
+
+					//결제수단 선택
+					var payment = $(".box_order input[name='pay']");
+					payment.click(function(){
+						payment.parent().parent().removeClass("open");
+						$(this).parent().parent().addClass("open");
+					});
+					// 구매동의
+					$(".box_agree .btn_agree").click(function(){
+						$(this).parent(".frame_check").toggleClass("open");
+					});
+					// 주문상세 리스트 toggle
+					$(".btn_order_close").click(function(){
+						if($(this).hasClass("btn_all")){
+							$(this).siblings(".box_type1").slideDown();
+							$(this).removeClass("btn_all").html('리스트 닫기 <span class="ico_oshop ico_open">닫기</span>');
+						} else {
+							$(this).siblings(".box_type1").slideUp();
+							$(this).addClass("btn_all").html('전체보기 <span class="ico_oshop ico_open">닫기</span>');
+						}
+					});
+				})
+				</script>
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a>
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+
+</body>
+</html>

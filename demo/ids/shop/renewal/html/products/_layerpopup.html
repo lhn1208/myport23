@@ -1,0 +1,598 @@
+<!-- POP 이미지 팝업 [s] -->
+<div class="layer_type1 pop_layer layer_pop" id="popProdPopImg" style="display: none;">
+    <div class="inner_layer">
+        <strong class="tit_layer"><span class="screen_out">POP 보기</span></strong>
+        <div class="body_layer" id="layerPop">
+            <div class="print_img"><button type="button" class="btn_print">인쇄하기<span class="ico_dw"></span></button>
+            </div>
+            <div id="layerPopImgDiv" value="526715"><img
+                    src="http://img.shop.co.kr/upload/board/info/print/M=-tgUMDbc_20160520160546592000.jpg"
+                    alt="POP 이미지" id="layerPopImg" style="max-height: 740px; max-width: 700px;"></div>
+            <div class="view_img">
+                <button type="button" class="ico_dw btn_prev" style="display: none;" value="1">이전</button>
+                <button type="button" class="ico_dw btn_next" style="display: inline-block;" value="2">다음</button>
+            </div>
+        </div>
+        <a href="#none" class="ico_dw btn_close">닫기</a>
+    </div>
+</div>
+<!-- POP 이미지 팝업 [e] -->
+<!-- 판매 팁 팝업 [s] -->
+<div class="layer_type1 pop_layer layer_tip" id="popProdtipImg" style="display: none;">
+    <div class="inner_layer">
+        <strong class="tit_layer"><span class="screen_out">판매팁 보기</span></strong>
+        <div class="body_layer" id="layerTip">
+            <div class="print_img"><button type="button" class="btn_print">인쇄하기<span class="ico_dw"></span></button>
+            </div>
+            <div id="printTip">
+                <div><img alt="" src="http://img.shop.co.kr/editor/attach//vWwSjyRjUB_20180207172131427000.jpg"
+                        width="640" height="1694"></div>
+            </div>
+        </div>
+        <a href="#none" class="ico_dw btn_close">닫기</a>
+    </div>
+</div>
+<!-- 판매 팁 팝업 [e] -->
+
+<!-- 장바구니 수량 확인 팝업 [s] -->
+<div id="popCartQuantity" class="pop_center" style="display:none;">
+    <div class="pop_layer pop_type1">
+		<strong class="tit_popup">장바구니 수량 확인</strong>
+		<div class="pop_wrap">
+			<p class="title">장바구니에 해당 상품이 담겨져 있습니다. <br>장바구니에 담을 수량을 확인해주세요.</p>
+
+            <table class="tbl_type2">
+                <colgroup>
+                    <col>
+                    <col style="width:15.5%;">
+                    <col style="width:15.5%;">
+                    <col style="width:15.5%;">
+                    <col style="width:95px;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">옵션</th>
+                        <th scope="col">기존 수량</th>
+                        <th scope="col">추가 수량</th>
+                        <th class="em" scope="col">최종 수량</th>
+                        <th scope="col">확인</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><strong>기존 수량에 더하여</strong> 장바구니에 담기</td>
+                        <td class="num">2,111</td>
+                        <td class="num">33,111</td>
+                        <td class="num em"><strong>9</strong></td>
+                        <td><a href="#" class="btn_type4">장바구니 담기</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><strong>현재 구매수량</strong>으로 장바구니에 담기</td>
+                        <td class="num">33</td>
+                        <td class="num">123</td>
+                        <td class="num em"><strong>59</strong></td>
+                        <td><a href="#" class="btn_type4">장바구니 담기</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">기존 장바구니 <br><strong>수량 유지하기</strong></td>
+                        <td class="num">1</td>
+                        <td class="num">1</td>
+                        <td class="num em"><strong>9</strong></td>
+                        <td><a href="#" class="btn_type4">확인</a></td>
+                    </tr>
+                </tbody>
+            </table>
+		</div>
+		<button type="button" class="btn_comm btn_close fn_close">닫기</button>
+	</div>
+</div>
+<!-- 장바구니 수량 확인 팝업 [e] -->
+
+<!-- 재입고 요청 팝업 [s] -->
+<div id="popRequestRestock" class="pop_center" style="display:none;">
+    <div class="pop_layer pop_type1">
+		<strong class="tit_popup">재입고 요청</strong>
+		<div class="pop_wrap">
+			<p class="title">[선택 공급사명]의 [상품명]에 대한 재입고 요청을 신청합니다. <br>재입고 시 알림을 받으시려면 아래 내용을 입력해주세요.</p>
+
+            <form action="#" class="request_wrap">
+                <fieldset>
+                    <legend>재입고 요청 폼</legend>
+                    <div class="field">
+                        <label>
+                            <span class="label">입고 요청 수량</span>
+                            <input type="text" name="" placeholder="필요하신 수량을 입력해주세요.">
+                        </label>
+                    </div>
+                    <div class="field">
+                        <!-- 2021-06-17 알림 영역 수정 -->
+                        <label class="field">
+                            <input type="checkbox" name="" data-related-disabled="#restockAlertPhone"><span class="mark"></span>
+                            <strong>재입고 시 알림 수령</strong>
+                        </label>
+                        <input type="text" name="" id="restockAlertPhone" disabled placeholder="-을 제외한 숫자로만 입력해주세요.">
+                        <p class="desc">* 입력하신 정보는 재입고 알림에만 사용되며 타 용도로는 사용되지 않습니다.</p>
+                    </div>
+                </fieldset>
+                <div class="button_wrap">
+                    <button type="button" class="btn_type1">저장</button>
+                </div>
+            </form>
+		</div>
+		<button type="button" class="btn_comm btn_close fn_close">닫기</button>
+	</div>
+</div>
+<!-- 재입고 요청 팝업 [e] -->
+
+<!-- 2021-07-20 즐겨찾기 팝업 [s] -->
+<div id="popBookmarkList" class="pop_center" style="display:none;">
+    <div class="pop_layer pop_type1">
+		<strong class="tit_popup">즐겨찾기 그룹 설정</strong>
+		<div class="pop_wrap">
+            <form action="#">
+                <div class="accordin_box search_select">
+                    <button type="button" class="btn_accordion" aria-expanded="false">상품을 저장할 즐겨찾기 그룹을 설정해주세요.</button>
+                    <div class="accordion_body">
+                        <fieldset>
+                            <legend>즐겨찾기 그룹 설정</legend>
+                            <a href="#" class="btn_add_group">그룹추가</a>
+                            <label class="ico_input">
+                                <input type="text" placeholder="그룹명을 입력하세요">
+                            </label>
+                            <div class="option_list">
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">즐겨찾기 그룹명</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">예제 즐겨찾기</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">상품 그룹 테스트</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">그룹 테스트</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">그룹 테스트 1</span>
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="selectOptions"><span class="text">그룹 테스트 2</span>
+                                </label>
+                                <!-- 즐겨찾기 그룹이 있는 경우 empty의 display:none 삭제 -->
+                                <div class="empty" style="display:none;">설정되어있는 즐겨찾기 그룹이 존재하지 않습니다.</div>
+                            </div>
+                        </fieldset>
+                        <div class="button_wrap">
+                            <button type="button" class="btn_type1 btn_submit">저장</button>
+                            <button type="button" class="btn_type2 fn_close">취소</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form action="#" class="add_group inner_modal">
+                <fieldset>
+                    <legend>즐겨찾기 그룹 추가</legend>
+                    <label for="groupName" class="text_label">추가하실 즐겨찾기 그룹명을 입력해주세요</label>
+                    <p class="row">
+                        <input type="text" name="" id="groupName"><button type="submit" class="btn_type6">확인</button>
+                    </p>
+                    <button type="button" class="btn_comm btn_close">닫기</button>
+                </fieldset>
+            </form>
+
+            <div class="inner_modal alert">
+                <p class="message"><em>선택한그룹명</em>에 <br>[선택공급사]의 [선택된상품명]이 담겼습니다.</p>
+                <div class="button_wrap">
+                    <button type="submit" class="btn_type6 fn_close">확인</button>
+                </div>
+            </div>
+		</div>
+		<button type="button" class="btn_comm btn_close fn_close">닫기</button>
+
+        
+        <script>
+            var keyuptimer;
+            $("#popBookmarkList").on({
+                click:function(e){
+                    e.currentTarget.setAttribute('aria-expanded', true);
+                    e.delegateTarget.querySelector('input[type="text"]').focus();
+                }
+            }, '.btn_accordion');
+            $("#popBookmarkList").on({
+                click:function(e){
+                    e.preventDefault();
+                    var target = e.delegateTarget.querySelector('.inner_modal.add_group');
+                    target.style.display = 'block';
+                    target.querySelector('input[type="text"]').focus();
+                }
+            }, '.btn_add_group');
+            $("#popBookmarkList").on({
+                click:function(e){
+                    e.preventDefault();
+                    var target = e.delegateTarget.querySelector('.inner_modal.alert');
+                    target.style.display = 'block';
+                    target.querySelector('button').focus();
+                }
+            }, '.btn_submit');
+            $("#popBookmarkList").on({
+                'keyup change':function(e){
+                    clearTimeout(keyuptimer);
+                        keyuptimer = setTimeout(function(){
+                        var rxp = new RegExp(e.currentTarget.value, 'i');
+                        var list = e.delegateTarget.querySelectorAll('.option_list .option');
+                        var emptyCheck = 0;
+                        for(var i=0;i<list.length;i++){
+                            if(rxp.test(list[i].innerHTML)){
+                                list[i].style.display = 'block';
+                                emptyCheck++;
+                            }else {
+                                list[i].style.display = 'none';
+                            }
+                        }
+                        e.delegateTarget.querySelector('.option_list .empty').style.display = emptyCheck == 0?'block' : 'none';
+                    }, 250);
+                }
+            }, ".search_select input[type='text']");
+            $("#popBookmarkList .option_list").on({
+                change:function(e){
+                    var scrollBottom = e.delegateTarget.scrollTop + e.delegateTarget.offsetHeight;
+                    var nodeOffset = {
+                        top: e.currentTarget.offsetTop - e.currentTarget.parentNode.offsetTop,
+                        bottom:e.currentTarget.offsetTop - e.currentTarget.parentNode.offsetTop + e.currentTarget.offsetHeight
+                    }
+
+                    if(scrollBottom < nodeOffset.bottom){
+                        e.delegateTarget.scrollTop = e.delegateTarget.scrollTop + (nodeOffset.bottom - scrollBottom);
+                    }else if(e.delegateTarget.scrollTop > nodeOffset.top){
+                        e.delegateTarget.scrollTop = nodeOffset.top;
+                    }
+                }
+            }, '.option');
+            $('.inner_modal').on({
+                click:function(e){
+                    e.preventDefault();
+                    e.delegateTarget.style.display = 'none';
+                    $(e.delegateTarget).closest('.pop_layer').find('.btn_add_group').focus();
+                }
+            }, '.btn_close');
+        </script>
+	</div>
+</div>
+<!-- 2021-07-20 즐겨찾기 팝업 [e] -->
+
+<!-- 이벤트 리스트 팝업 [s] -->
+<div id="popEventList" class="pop_center" style="width:544px;display:none;">
+    <div class="pop_layer pop_type1">
+		<strong class="tit_popup"><em>[헬스인팜]</em> 진행 이벤트</strong>
+		<div class="pop_wrap">
+			<ul class="event_list">
+                <li>
+                    <p class="subject">우루사 낱알반품 이벤트를 진행중입니다!</p>
+                    <a href="#" class="btn_quick">이벤트 상품보기</a>
+                </li>
+                <li>
+                    <p class="subject">(FDA승인)빨아쓰는 나노구리황사마스크 입점완료 !!</p>
+                    <a href="#" class="btn_accordion" aria-expanded="false">자세히 보기</a>
+                    <div class="details">
+                        <!-- 이벤트 정보 표기 -->
+                        <div class="info">
+                            제품명: 헬스데이 소독용에탄올(삼현제약)
+                            <br>
+                            <br> 
+                            <br>
+                            <br>효능/효과
+                            <br>
+                            <br>1. 손 및 피부의 소독
+                            <br>
+                            <br>2. 수술부위 피부의 소독
+                            <br>
+                            <br>3. 의료용구의 소독
+                            <br>
+                            <br> 
+                            <br>
+                            <br>사용법
+                            <br>
+                            <br>- 안전캡 사용(뚜껑을 누른상태에서 반시계 방향으로 돌려서 여십시오)
+                            <br>
+                            <br> 
+                            <br>
+                            <br>저장방법
+                            <br>
+                            <br>- 기밀용기에 넣어 화기를 피하여 보존한다
+                            <br>
+                        </div>
+                        <a href="#" class="btn_quick">이벤트 상품보기</a>
+                    </div>
+                </li>
+                <li>
+                    <p class="subject">(FDA승인)빨아쓰는 나노구리황사마스크 입점완료 !!</p>
+                    <a href="#" class="btn_accordion" aria-expanded="false">자세히 보기</a>
+                    <div class="details">
+                        <!-- 이벤트 정보 표기 -->
+                        <div class="info">
+                            제품명: 헬스데이 소독용에탄올(삼현제약)
+                            <br>
+                            <br> 
+                            <br>
+                            <br>효능/효과
+                            <br>
+                            <br>1. 손 및 피부의 소독
+                            <br>
+                            <br>2. 수술부위 피부의 소독
+                            <br>
+                            <br>3. 의료용구의 소독
+                            <br>
+                            <br> 
+                            <br>
+                            <br>사용법
+                            <br>
+                            <br>- 안전캡 사용(뚜껑을 누른상태에서 반시계 방향으로 돌려서 여십시오)
+                            <br>
+                            <br> 
+                            <br>
+                            <br>저장방법
+                            <br>
+                            <br>- 기밀용기에 넣어 화기를 피하여 보존한다
+                            <br>
+                        </div>
+                        <a href="#" class="btn_quick">이벤트 상품보기</a>
+                    </div>
+                </li>
+                <li>
+                    <p class="subject">우루사 낱알반품 이벤트를 진행중입니다!</p>
+                    <a href="#" class="btn_quick">이벤트 상품보기</a>
+                </li>
+                <li>
+                    <p class="subject">우루사 낱알반품 이벤트를 진행중입니다!</p>
+                    <a href="#" class="btn_quick">이벤트 상품보기</a>
+                </li>
+            </ul>
+            <div class="button_wrap">
+                <button type="button" class="btn_type2">닫기</button>
+            </div>
+		</div>
+		<button type="button" class="btn_comm btn_close fn_close">닫기</button>
+	</div>
+</div>
+<!-- 이벤트 리스트 팝업 [e] -->
+
+<!-- 2021-07-13 제품 상세 이미지 팝업 [s] -->
+<div id="popProdDetailImg" class="pop_center" style="width:641px;display:none;">
+    <div class="prod_detail_img">
+        <div class="summary">
+            <h1 class="name">삼성 Neo QLED 8K Smart TV 189cm KQ75QNA800FXKR (스탠드/벽걸이형 선택)</h1>
+            <ul>
+                <li><strong>제조사</strong>대웅제약</li>
+                <li><strong>규격</strong>2테스트</li>
+                <li><strong>단위</strong>100P(20P*5EA)</li>
+            </ul>
+        </div>
+        <div class="thumbnail_wrap">
+            <div class="thumbnail">
+                <img src="https://img.shop.co.kr/upload/product/ADMIN/201605/286256_01_L.jpg" alt="">
+            </div>
+            <ul class="thumbnail_list">
+                <li class="active">
+                    <a href="#">
+                        <img src="https://img.shop.co.kr/upload/product/ADMIN/201605/286256_01_L.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://img.shop.co.kr/upload/product/ADMIN/202105/32471789_01_L.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://img.shop.co.kr/upload/product/SELLER/202007/21543419_01_L.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="btn_close">닫기</button>
+    </div>
+</div>
+<!-- 2021-07-13 제품 상세 이미지 팝업 [e] -->
+
+<script type="text/javascript">
+    $(function () {
+        // POP 이미지 모달 레이어
+        $('body').on("click", ".link_pop", function () {
+            var modalLayer = null;
+            modalLayer = shopUI.modalLayer($("#popProdPopImg"), {
+                closeClass: "btn_close"
+            });
+        });
+        // 판매 팁 모달 레이어
+        $('body').on("click", ".link_tip", function () {
+            var modalLayer = null;
+            modalLayer = shopUI.modalLayer($("#popProdtipImg"), {
+                closeClass: "btn_close"
+            });
+        });
+        // 장바구니 수량 확인 모달 레이어
+        $('body').on("click", ".check_quantity", function () {
+            var modalLayer = null;
+            modalLayer = shopUI.modalLayer($("#popCartQuantity"), {
+                closeClass: "btn_close"
+            });
+        });
+        // 재입고 요청 모달 레이어
+        $('body').on("click", ".request_restock", function () {
+            var modalLayer = null;
+            modalLayer = shopUI.modalLayer($("#popRequestRestock"), {
+                closeClass: "btn_close"
+            });
+        });
+        // 이벤트 모달 레이어
+        $('body').on("click", ".event_list", function () {
+            var modalLayer = null;
+            modalLayer = shopUI.modalLayer($("#popEventList"), {
+                closeClass: "btn_close"
+            });
+        });
+        // 2021-07-20 즐겨찾기 모달 레이어
+        $('body').on("click", ".btn_bookmark", function () {
+            var modalLayer = null;
+            modalLayer = shopUI.modalLayer($("#popBookmarkList"), {
+                closeClass: "fn_close",
+                onClose:function(e){
+                    this.find('.inner_modal').hide();
+                    this.find('.btn_accordion').attr('aria-expanded',false);
+                    
+                    var forms = this[0].querySelectorAll('form');
+                    for(var i=0;i<forms.length;i++){
+                        forms[i].reset();
+                    }
+                    this.find('.ico_input input').trigger('change');
+                }
+            });
+        });
+        // 2021-07-13 제품 상세 이미지 팝업
+        $('body').on("click", ".img_pop", function () {
+            var modalLayer = null;
+            modalLayer = shopUI.modalLayer($("#popProdDetailImg"), {
+                closeClass: "btn_close",
+                modal:false,
+                follow: [false, true]
+            });
+        });
+        $('#popProdDetailImg').draggable();
+        // 2021-07-13 제품 상세 이미지 팝업
+        $('.thumbnail_wrap').on({
+            click:function(e){
+                e.preventDefault();
+                var url = e.currentTarget.getAttribute('href');
+                if(url == "#") url = e.currentTarget.querySelector('img').getAttribute('src');
+                e.delegateTarget.querySelector('.thumbnail img').setAttribute('src', url);
+
+                $(e.currentTarget).parent().addClass('active').siblings().removeClass('active');
+            }
+        },'.thumbnail_list a');
+
+        // 2021-06-23 이벤트 모달 스크립트 수정
+        $('.event_list').on({
+            click:function(e){
+                e.preventDefault();
+                var siblings = $(e.currentTarget).parent().siblings()
+                $(e.currentTarget).parent().toggleClass('active');
+                $(e.currentTarget).next().stop().slideToggle(function(){
+                    $(e.currentTarget).attr('aria-expanded', function(index, attr){
+                        return attr == 'true' ? 'false' : 'true';
+                    });
+                });
+                siblings.removeClass('active').find('.btn_accordion').attr('aria-expanded',false);
+                siblings.find('.details').removeAttr('style');
+            }
+        }, '.btn_accordion');
+
+        // 2021-06-29 체크박스 연동 텍스트박스 스크립트 ui.js로 이동
+        // $('input[data-related-disabled]').on({
+        //     click:function(e){
+        //         var target = document.querySelector(e.currentTarget.getAttribute('data-related-disabled'));
+        //         target.disabled = !e.currentTarget.checked;
+        //         target.focus();
+        //     }
+        // });
+    });
+</script>

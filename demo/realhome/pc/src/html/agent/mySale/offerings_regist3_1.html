@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <include src="../../include/folder_include/set_css.html"></include>
+    <include src="../../include/folder_include/set_js.html"></include>
+    <title>realhouse</title>
+</head>
+<body>
+<!--header-->
+<header class="sub_header">
+    <h1 class="logo"><a href="#"><img src="../../../../images/common/agent_logo.png" alt="리얼하우스 로고"></a></h1>
+    <div class="header_inner">
+        <button class="btn_close"><span class="blind">닫기</span></button>
+        <h2 class="header_tit">매물 등록/수정</h2>
+    </div>   
+</header>
+<!--//header-->    
+<div class="header_section fixed">
+    <div class="header_inner">
+        <div class="process_idx">
+            <em>1</em>
+            <em>2</em>
+            <em class="on">3</em><span>매물 상세정보</span>
+        </div>
+        <div class="btn_process">
+            <button class="btn green">임시저장</button>
+            <button class="btn btn_prev">이전</button>
+            <button class="btn off">확인</button>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div id=sub_container class="sub_container">          
+        <div class="container_inner">     
+            <div class="new_request">
+                <!--매물 정보-->
+                <div class="content_section">
+                    <div class="content_head3">
+                        <h2 class="tit">매물 정보</h2>
+                        <span class="right_area"><span class="txt_red">*</span>필수 사항</span>
+                    </div>
+                    <div class="request_entry">
+                        <div class="table_style3">                       
+                            <table class="table" summary="해당 동,엘레베이터,건물 층,난방 구조,해당 층,해당 호수,주차,전용 면적,공급 면적,안내 테이블 입니다.">
+                                <caption>매물 정보</caption>
+                                <colgroup>  
+                                    <col width="14%">
+                                    <col width="*">
+                                    <col width="14%">
+                                    <col width="36%">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="pd_style">
+                                        <th>해당 동<span class="txt_red">*</span></th>
+                                        <td>
+                                            <label for="target_dong">
+                                                <input type="text" id="target_dong" class="border sale_input" placeholder="예) 102, 가, A, 1"> 동
+                                            </label>
+                                            <input type="checkbox" id="dong_chk" class="checkbox"><label for="dong_chk"><span class="chk_set"></span>동 없음</label>
+                                        </td>                   
+                                        <th>엘레베이터<span class="txt_red">*</span></th>
+                                        <td>
+                                            <input id="offer_type1_1" type="radio" name="elevator" class="radio_btn">
+                                            <label for="offer_type1_1"><span class="btn_radio">있음</span></label>
+                                            <input id="offer_type1_2" type="radio" name="elevator" class="radio_btn">
+                                            <label for="offer_type1_2"><span class="btn_radio">없음</span></label>
+                                        </td>             
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <th>건물 층<span class="txt_red">*</span></th>
+                                        <td>
+                                            <div class="select_area select_w170">
+                                                <a href="#" class="select_top">선택</a>
+                                                <div class="select_list">
+                                                    <a href="#">1층</a>
+                                                    <a href="#">2층</a>
+                                                    <a href="#">3층</a>
+                                                    <a href="#">4층</a>
+                                                    <a href="#">5층</a>
+                                                    <a href="#">6층</a>
+                                                    <a href="#">7층</a>
+                                                    <a href="#">8층</a>
+                                                    <a href="#">9층</a>
+                                                    <a href="#">10층</a>
+                                                </div>
+                                            </div>
+                                        </td>  
+                                        <th>난방 구조<span class="txt_red">*</span></th>
+                                        <td>
+                                            <div class="select_area select_w170">
+                                                <a href="#" class="select_top">선택</a>
+                                                <div class="select_list">
+                                                    <a href="#">중앙난방</a>
+                                                    <a href="#">지역난방</a>
+                                                    <a href="#">개별난방</a>
+                                                    <a href="#">없음</a>
+                                                </div>
+                                            </div>
+                                        </td>  
+                                    </tr>  
+                                    <tr class="pd_style">
+                                        <th>해당 층<span class="txt_red">*</span></th>
+                                        <td>
+                                            <div class="select_area select_w170">
+                                                <a href="#" class="select_top">선택</a>
+                                                <div class="select_list">
+                                                    <a href="#">반지하</a>
+                                                    <a href="#">옥탑</a>
+                                                    <a href="#">1층</a>
+                                                    <a href="#">2층</a>
+                                                    <a href="#">3층</a>
+                                                    <a href="#">4층</a>
+                                                    <a href="#">5층</a>
+                                                    <a href="#">6층</a>
+                                                </div>
+                                            </div>
+                                        </td>  
+                                        <th>해당 호수<span class="txt_red">*</span></th>
+                                        <td>
+                                            <label for="target_num">
+                                                <input type="text" id="target_num" class="border sale_input" placeholder="예) 102, B01"> 호
+                                            </label>
+                                        </td>  
+                                    </tr>    
+                                    <tr>
+                                        <th>주차<span class="txt_red">*</span></th>
+                                        <td colspan="3">
+                                            <input id="offer_type2_1" type="radio" name="parking" class="radio_btn">
+                                            <label for="offer_type2_1"><span class="btn_radio">있음</span></label>
+                                            <input id="offer_type2_2" type="radio" name="parking" class="radio_btn">
+                                            <label for="offer_type2_2"><span class="btn_radio">없음</span></label>
+                                            <input id="offer_type2_3" type="radio" name="parking" class="radio_btn">
+                                            <label for="offer_type2_3"><span class="btn_radio">가능(유료)</span></label>
+                                            <label for="extra_money">
+                                                <input type="text" id="extra_money" class="border money_input" placeholder=""> 만원
+                                            </label>
+                                        </td>   
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <th>전용면적<span class="txt_red">*</span></th>
+                                        <td colspan="3">
+                                            <label for="area_type1">
+                                                <input type="text" id="area_type1" class="border sale_input"> ㎡
+                                            </label>
+                                            <label for="area_type2">
+                                                <input type="text" id="area_type2" class="border sale_input"> 평
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <th>공급면적<span class="txt_red">*</span></th>
+                                        <td colspan="3">
+                                            <label for="area_type1">
+                                                <input type="text" id="area_type1" class="border sale_input"> ㎡
+                                            </label>
+                                            <label for="area_type2">
+                                                <input type="text" id="area_type2" class="border sale_input"> 평
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <th>안내</th>
+                                        <td class="info" colspan="3">
+                                            ※  동, 층, 호수 등의 정보를 정확히 입력하십시오. (고객이나 매수측 중개사가 방문 후 신고하면 매물종료 처리될 수 있습니다.)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--//매물 정보-->
+                <!--금액 정보-->
+                <div class="content_section">
+                    <div class="content_head3">
+                        <h2 class="tit">금액 정보</h2>
+                    </div>
+                    <div class="request_entry">
+                        <div class="table_style3">                       
+                            <table class="table" summary="임대 구분,융자금,관리비,관리비 포함 테이블 입니다.">
+                                <caption>금액 정보</caption>
+                                <colgroup>  
+                                    <col width="14%">
+                                    <col width="*">
+                                    <col width="14%">
+                                    <col width="33%">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="pd_style">
+                                        <th>임대 구분<span class="txt_red">*</span></th>
+                                        <td colspan="3" class="position">
+                                            <input id="rent_type1" type="radio" name="rent_type" class="radio_btn" checked>
+                                            <label for="rent_type1"><span class="btn_radio">전세</span></label>
+                                            <input id="rent_type2" type="radio" name="rent_type" class="radio_btn">
+                                            <label for="rent_type2"><span class="btn_radio">월세</span></label>
+                                            <input id="rent_type2" type="radio" name="rent_type" class="radio_btn">
+                                            <label for="rent_type2"><span class="btn_radio">단기임대</span></label>
+                                            <div class="right_area">※ 거래구분 2종류 선택 가능(전세/단기임대 불가)   ※ 월세 금액조절은 총 3개</div>
+                                        </td>                   
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <th>융자금<span class="txt_red">*</span></th>
+                                        <td colspan="3">
+                                            <div class="select_area select_w170">
+                                                <a href="#" class="select_top">선택</a>
+                                                <div class="select_list">
+                                                    <a href="#">반지하</a>
+                                                    <a href="#">옥탑</a>
+                                                    <a href="#">1층</a>
+                                                    <a href="#">2층</a>
+                                                    <a href="#">3층</a>
+                                                    <a href="#">4층</a>
+                                                    <a href="#">5층</a>
+                                                    <a href="#">6층</a>
+                                                </div>
+                                            </div>
+                                        </td>  
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <th>관리비<span class="txt_red">*</span></th>
+                                        <td>
+                                            <input id="maintenance1" type="radio" name="maintenance" class="radio_btn" checked>
+                                            <label for="maintenance1"><span class="btn_radio">없음</span></label>
+                                            <input id="maintenance2" type="radio" name="maintenance" class="radio_btn">
+                                            <label for="maintenance2"><span class="btn_radio">있음</span></label>
+                                            <label for="extra_money">
+                                                <input type="text" id="extra_money" class="border money_input" placeholder=""> 만원
+                                            </label>
+                                        </td>  
+                                        <th>관리비 포함</th>
+                                        <td class="maintenance_chk">
+                                            <input type="checkbox" id="maintenance_include1" class="checkbox" disabled><label for="maintenance_include1"><span class="chk_set"></span>전기세</label>
+                                            <input type="checkbox" id="maintenance_include2" class="checkbox" disabled><label for="maintenance_include2"><span class="chk_set"></span>가스</label>
+                                            <input type="checkbox" id="maintenance_include3" class="checkbox" disabled><label for="maintenance_include3"><span class="chk_set"></span>수도</label>
+                                            <input type="checkbox" id="maintenance_include4" class="checkbox" disabled><label for="maintenance_include4"><span class="chk_set"></span>인터넷</label>
+                                            <input type="checkbox" id="maintenance_include5" class="checkbox" disabled><label for="maintenance_include5"><span class="chk_set"></span>TV</label>
+                                        </td>
+                                    </tr>    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--//금액 정보-->
+                <!--기본 정보-->
+                <div class="content_section">
+                    <div class="content_head3">
+                        <h2 class="tit">기본 정보</h2>
+                    </div>
+                    <div class="request_entry">
+                        <div class="table_style3">                       
+                            <table class="table" summary="방 개수,욕실 수,방향,현관구조,반려동물,전세자금대출,입주 가능일,옵션,매물 특징 테이블 입니다.">
+                                <caption>기본 정보</caption>
+                                <colgroup>  
+                                    <col width="14%">
+                                    <col width="*">
+                                    <col width="14%">
+                                    <col width="33%">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="pd_style">
+                                        <th>방 개수<span class="txt_red select_w170">*</span></th>
+                                        <td>
+                                            <div class="select_area select_w170">
+                                                <a href="#" class="select_top">선택</a>
+                                                <div class="select_list">
+                                                    <a href="#">원룸(개방형)</a>
+                                                    <a href="#">원룸(단독형)</a>
+                                                    <a href="#">2룸</a>
+                                                    <a href="#">3룸</a>
+                                                    <a href="#">4룸</a>
+                                                    <a href="#">5룸</a>
+                                                    <a href="#">6룸</a>
+                                                    <a href="#">7룸</a>
+                                                    <a href="#">8룸</a>
+                                                    <a href="#">9룸</a>
+                                                    <a href="#">10룸</a>
+                                                </div>
+                                            </div>
+                                        </td>      
+                                        <th>욕실 수<span class="txt_red">*</span></th>
+                                        <td>
+                                            <div class="select_area select_w170">
+                                                <a href="#" class="select_top">선택</a>
+                                                <div class="select_list">
+                                                    <a href="#">1개</a>
+                                                    <a href="#">2개</a>
+                                                    <a href="#">3개</a>
+                                                    <a href="#">4개</a>
+                                                    <a href="#">5개</a>
+                                                    <a href="#">6개</a>
+                                                </div>
+                                            </div>
+                                        </td>               
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <th>방향<span class="txt_red">*</span></th>
+                                        <td>
+                                            <div class="select_area select_w170ㄴ">
+                                                <a href="#" class="select_top">선택</a>
+                                                <div class="select_list">
+                                                    <a href="#">동향</a>
+                                                    <a href="#">서향</a>
+                                                    <a href="#">남향</a>
+                                                    <a href="#">북향</a>
+                                                    <a href="#">남동향</a>
+                                                    <a href="#">남서향</a>
+                                                    <a href="#">북동향</a>
+                                                    <a href="#">북서향</a>
+                                                    <a href="#">확인필요</a>
+                                                </div>
+                                            </div>
+                                        </td>     
+                                        <th>현관구조<span class="txt_red">*</span></th>
+                                        <td>
+                                            <input id="entrance_type1" type="radio" name="entrance_type" class="radio_btn" checked>
+                                            <label for="entrance_type1"><span class="btn_radio">복도식</span></label>
+                                            <input id="entrance_type2" type="radio" name="entrance_type" class="radio_btn">
+                                            <label for="entrance_type2"><span class="btn_radio">계단식</span></label>
+                                        </td>  
+                                    </tr>   
+                                    <tr class="pd_style">
+                                        <th>반려동물<span class="txt_red">*</span></th>
+                                        <td>
+                                            <input id="pet_yn1" type="radio" name="pet_yn" class="radio_btn" checked>
+                                            <label for="pet_yn1"><span class="btn_radio">불가능</span></label>
+                                            <input id="pet_yn2" type="radio" name="pet_yn" class="radio_btn">
+                                            <label for="pet_yn2"><span class="btn_radio">가능</span></label>
+                                        </td>     
+                                        <th>전세자금대출<span class="txt_red">*</span></th>
+                                        <td>
+                                            <input id="loan_yn1" type="radio" name="loan_yn" class="radio_btn" checked>
+                                            <label for="loan_yn1"><span class="btn_radio">불가능</span></label>
+                                            <input id="loan_yn2" type="radio" name="loan_yn" class="radio_btn">
+                                            <label for="loan_yn2"><span class="btn_radio">가능</span></label>
+                                        </td>  
+                                    </tr>    
+                                    <tr class="pd_style">
+                                        <th>입주 가능일<span class="txt_red">*</span></th>
+                                        <td colspan="3">
+                                            <input id="move_time1" type="radio" name="move_time" class="radio_btn" checked>
+                                            <label for="move_time1"><span class="btn_radio">즉시 입주</span></label>
+                                            <input id="move_time2" type="radio" name="move_time" class="radio_btn">
+                                            <label for="move_time2"><span class="btn_radio">날짜 협의</span></label>
+                                            <input id="move_time3" type="radio" name="move_time" class="radio_btn">
+                                            <label for="move_time3"><span class="btn_radio">날짜 선택</span></label>
+                                            <div class="move_time_date">
+                                                <span class="date">2018.06.09부터</span>
+                                                <input type="checkbox" id="move_time_chk1" class="checkbox"><label for="move_time_chk1"><span class="chk_set"></span>날짜 협의가능</label>
+                                                <input type="checkbox" id="move_time_chk2" class="checkbox"><label for="move_time_chk2"><span class="chk_set"></span>즉시 입주가능</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <th>옵션</th>
+                                        <td colspan="3">
+                                            <div class="click_ev">
+                                                <button class="btn_type1">에어컨</button>
+                                                <button class="btn_type1">냉장고</button>
+                                                <button class="btn_type1">세탁기</button>
+                                                <button class="btn_type1">가스레인지</button>
+                                                <button class="btn_type1">인덕션</button>
+                                                <button class="btn_type1">싱크대</button>
+                                                <button class="btn_type1">침대</button>
+                                                <button class="btn_type1">책상</button>
+                                                <button class="btn_type1">옷장</button>
+                                                <button class="btn_type1">전자도어락</button>
+                                                <button class="btn_type1">TV</button>
+                                                <button class="btn_type1">비데</button>
+                                                <button class="btn_type1">신발장</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <th>매물 특징</th>
+                                        <td colspan="3">
+                                            <div class="click_ev">
+                                                <button class="btn_type1">급매</button>
+                                                <button class="btn_type1">세안고</button>
+                                                <button class="btn_type1">역세권</button>
+                                                <button class="btn_type1">대로면</button>
+                                                <br><button class="btn_type1">확장형</button>
+                                                <button class="btn_type1">고급빌라</button>
+                                                <button class="btn_type1">펜트하우스</button>
+                                                <br><button class="btn_type1">마당</button>
+                                                <button class="btn_type1">잔디</button>
+                                                <button class="btn_type1">풀장</button>
+                                                <button class="btn_type1">테라스</button>
+                                                <button class="btn_type1">베란다/발코니</button>
+                                                <br><button class="btn_type1">신축</button>
+                                                <button class="btn_type1">도배/장판</button>
+                                                <button class="btn_type1">도배</button>
+                                                <button class="btn_type1">장판교체</button>
+                                                <br><button class="btn_type1">올수리</button>
+                                                <button class="btn_type1">욕실수리</button>
+                                                <button class="btn_type1">주방교체</button>
+                                                <button class="btn_type1">보일러교체</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--//기본 정보-->
+                <!--사진 등록-->
+                <div class="content_section">
+                    <div class="content_head3">
+                        <h2 class="tit">사진 등록</h2>
+                    </div>
+                    <div class="request_entry">
+                        <div class="table_style3">                       
+                            <table class="table" summary="매물 설명,비공개 메모 테이블 입니다.">
+                                <caption>사진 등록</caption>
+                                <colgroup>  
+                                    <col width="14%">
+                                    <col width="*">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>안내</th>
+                                        <td class="info">
+                                            <ul>
+                                                <li>※ 사진은 최대 15장을 권장합니다.</li>
+                                                <li>※ 사진을 5장 이상 등록하시면 <span class="txt_red2">매물 리스트에서 상단에 노출되어 빠르게 거래가 가능</span>합니다.</li>
+                                                <li>※ 사진을 5장 이상 등록하지 않은 경우 매물 리스트에서 <span class="txt_red2">사진 등록매물 아래쪽에 위치</span>해 거래가 늦어질 수 있습니다.</li>
+                                                <li>※ <span class="txt_red2">사진 등록 후 1시간 동안 해당 사진을 수정/삭제할 수 있으며 1시간 이후에는 삭제는 불가하며 추가만 가능</span>합니다.
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <th>사진선택</th>
+                                        <td>
+                                            <div class="position">
+                                                <div class="filebox"> 
+                                                    <label for="file_upload">파일 첨부</label> 
+                                                    <input type="file" id="file_upload" multiple> 
+                                                </div>
+                                                <span class="upload_desc"> ※ 사진 선택을 클릭 후, 여러 장의 사진을 선택해 등록하실 수 있습니다.</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="offer_picture no_items">
+                            ※ 워터마크, 상호, 전화번호, 주소 등의 불필요한 정보가 있는 경우 삭제처리 및 평점이 감점됩니다.
+                        </div>
+                    </div>
+                </div>
+                <!--//사진 등록-->
+            </div>
+        </div>           
+    </div>
+</div>
+<include src="../../include/footer.html"></include>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!-- 2022-10-04 전체 수정 -->
+<div class="layer_board_wrap" id="popGradeBoard">
+    <div class="layer_board grade_board">
+        <button class="btn_close">닫기</button>
+        <h1 class="title"><em>The멤버십</em> 나의 혜택 현황 보기</h1>
+        <div class="flex_wrap">
+            <div class="tb_member_wrap">
+                <div class="box_wrap tb_member">
+                    <div class="top_tit">적립 서비스</div>
+                    <table>
+                        <colgroup>
+                            <col style="width:33.3%">
+                            <col style="width:33.3%">
+                            <col style="width:33.3%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <!-- <th scope="col"><span class="grade">The 고마움</span></th> -->
+                                <!-- <th scope="col"><span class="grade type2">The 소중함</span></th> -->
+                                <!-- <th scope="col"><span class="grade type5">The 행복함</span></th> -->
+                                <!-- <th scope="col"><span class="grade type3">The 특별함</span></th> -->
+                                <!-- <th scope="col"><span class="grade type4">The 함께함</span></th> -->
+                                <th scope="col"><span class="grade type6">The 영원함</span></th>
+                                <th scope="col">최대 적립 가능한<br>마일리지</th>
+                                <th scope="col">획득한<br>마일리지</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><a href="https://www.shop.co.kr/front/themembership/together/together_main"><span class="menu">같이 짓는 더#</span></a></th>
+                                <td>40,000 점</td>
+                                <td>40,000 점</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="https://www.shop.co.kr/front/themembership/survey/survey_main"><span class="menu">전지적 약사시점</span></a></th>
+                                <td>70,000 점</td>
+                                <td>70,000 점</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="https://www.shop.co.kr/front/themembership/themedia/themedia_main"><span class="menu">The미디어</span></a></th>
+                                <td>150,000 점</td>
+                                <td>140,000 점</td>
+                            </tr>
+                            <tr class="orange">
+                                <th scope="row"><a href="https://www.shop.co.kr/front/themembership/mdcinGuide/mdcinGuide_list"><span class="menu">같이 쓰는 복약지도</span></a></th>
+                                <td>200,000 점</td>
+                                <td class="disabled">등급 미달성</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>마일리지 획득현황</th>
+                                <td>460,000점</td>
+                                <td>460,000점</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>      
+                <div class="box_wrap tb_member">
+                    <div class="top_tit">지원 서비스</div>
+                    <table>
+                        <colgroup>
+                            <col style="width:33.3%">
+                            <col style="width:33.3%">
+                            <col style="width:33.3%">
+                        </colgroup>
+                        <tbody>
+                            <tr class="disabled">
+                                <th scope="row"><span class="menu btn">소모품 지원 서비스</span></th>
+                                <td>30,000원 상당</td>
+                                <td class="btn">미신청</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                  
+            </div>
+            <div class="drt_service_area">
+                <div class="box_wrap drt_service">
+                    <div class="top_tit">할인 서비스</div>
+                    <a href="https://www.shop.co.kr/front/themembership/zeroshop/zeroshop_main">제로샵</a>
+                    <a href="https://www.shop.co.kr/front/themembership/theticket/theticket_main">The티켓</a>
+                    <a href="https://www.shop.co.kr/front/themembership/themeet/themeet_main">The만나</a>
+                    <a href="https://www.shop.co.kr/front/themembership/themarket/themarket_renew_notice">The마켓</a>
+                </div>
+                <div class="box_wrap drt_service">
+                    <div class="top_tit">콘텐츠 서비스</div>
+                    <a href="https://www.shop.co.kr/front/themembership/exercise/exercise_main">슬기로운 약사생활</a>
+                    <a href="https://www.shop.co.kr/front/themembership/thebig/thebig_main">The빅</a>
+                    <a href="https://www.shop.co.kr/front/themembership/onlineSecretary/onlineSecretary_main">The비서</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="total_area">
+            <span class="total">획득한 총 혜택 280,000<span>/520,000</span></span>
+        </div> -->
+        <button class="btn_confirm">확인</button>
+    </div>
+</div>
+
+<div class="layer_board_wrap" id="popSuppCunsum">
+    <div class="layer_board supply_consum">
+        <button class="btn_close">닫기</button>
+        <img src="../../images/membership/img_pop_consum.jpg">
+        <div class="form_area">
+            <input type="radio" id="radio1" name="quiz" class="quize_radio"><label for="radio1">The고마움</label>
+            <input type="radio" id="radio2" name="quiz" class="quize_radio"><label for="radio2">The소중함</label>
+            <input type="radio" id="radio3" name="quiz" class="quize_radio"><label for="radio3">The행복함</label>
+            <input type="radio" id="radio4" name="quiz" class="quize_radio"><label for="radio4">The특별함</label>
+        </div>
+        <button class="btn">정답 제출 버튼</button>
+    </div>
+</div>
+<script>
+   //더 멤버십 나의 혜택현황 보기
+   $('.membership .btn_benefit_board').click(function(){
+        $('#popGradeBoard').css('display','block');
+   })
+   $('#popGradeBoard .btn_confirm').click(function(){
+        $('#popGradeBoard').css('display','none');
+   })
+   //약국 소모품 지원
+   $('.grade_membership  .grade_table .btn_cumsum').click(function(){
+        $('#popSuppCunsum').css('display','block');
+   })
+   /*2022-10-07 수정*/
+   $('.layer_board_wrap .btn_close').click(function(){
+     $(this).parents('.layer_board_wrap').css('display','none');
+   })
+
+    
+</script>

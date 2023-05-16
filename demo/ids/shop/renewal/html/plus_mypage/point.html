@@ -1,0 +1,344 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout_shopplus.css">
+	<link rel="stylesheet" href="../../css/shopplus.css">
+</head>
+<body class="shopplus">
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<header id="header">
+		<div class="header_inner">
+			<h1 class="link_logo logo_shopplus"><a href="#" class="ico_comm">the SHOP+</a></h1>
+			<h2 class="tit">마이페이지</h2>
+			<div class="header_search">
+				<div class="search_enter">
+					<div class="search_enter_inner">
+						<select class="select" style="width:80px">
+							<option>전체</option>
+							<option>지식Q&amp;A</option>
+							<option>복약지도</option>
+							<option>경영노하우</option>
+						</select>
+						<input type="text" title="검색어 입력">
+						<button type="submit" class="btn_search">검색</button>
+					</div>
+				</div>
+			</div>
+			<ul class="list_3depth">
+				<li><a href="main.html">주문/배송조회</a></li>
+				<li class="on"><a href="point.html">포인트 이용내역</a></li>
+				<li><a href="#">충전하기</a></li>
+				<li><a href="alarm_setting.html">서비스 알림 설정</a></li>
+			</ul>
+		</div>
+	</header>
+	<section id="container" class="cont_top_bnr" style="background-color:#f3f4f8;"><!-- sub 상단 배너 있을때 class="cont_top_bnr" 추가 -->
+		<!-- 2018-03-22 제거
+		<div class="sub_top_bnr sub_mypage">
+			<div class="inner">
+				<strong class="tit">마이페이지</strong>
+				<img class="bg_img" src="../../images/bg_mypage.jpg" alt="더샵플러스를 통해 주문/배송건 및 포인트 이용내역을 조회할 수 있습니다.">
+			</div>
+		</div>
+		-->
+		<div id="content">
+			<div class="sub_cont mypage_cont">
+				<div class="sub_cont_head">
+					<h3 class="sub_tit">포인트 이용내역</h3>
+				</div>
+				<!-- 2018-03-22 탭메뉴 추가 [s] -->
+				<ul class="tab_menu tab_type3">
+					<li class="on"><a href="#tabPlus">더샵플러스 이용내역 조회</a></li>
+					<li><a href="#tabPoint">포인트몰 이용내역 조회</a></li>
+				</ul>
+				<!-- 2018-03-22 탭메뉴 추가 [e] -->
+				<div class="plus_box mypage_point_box">
+					<div class="tab_cont"><!-- 2018-03-19 수정(tab_cont와, tabPlus / tabPoint 추가로 감싸줌) -->
+						<div id="tabPlus">
+							<div class="f_l point_usable">
+								<h4 class="stit">사용 가능 포인트</h4>
+								<div class="cont_area">
+									<div class="exclusive_point">
+										<strong class="sum_point">적립 (사용가능) 포인트 <em class="txt_num">5,000 P</em></strong>
+										<!-- <p>약국 경영, 쇼핑 전용 <em class="txt_num">3,000 P</em></p> 2018-03-19 삭제 -->
+										<p class="txt_point">라이브세미나, 엔터테인먼트 전용 <em class="txt_num">3,000 P</em></p><!-- 2018-03-19 수정 -->
+									</div>
+									<strong class="sum_point">소멸예정 포인트 (익월 말일 기준) <em class="txt_num">5,000 P</em></strong>
+								</div>
+								<div class="btn_wrap">
+									<button type="button" class="btn_type5 btn_point_convert">포인트 전환하기</button>
+									<button type="button" class="btn_type4 btn_point_info">포인트 이용방법 안내</button>
+								</div>
+							</div>
+							<div class="f_r">
+								<h4 class="stit">포인트 쿠폰 등록하기</h4>
+								<div class="cont_area">
+									<p>온라인(이메일,SMS) 또는 오프라인에서 지급받으신 쿠폰 번호를 입력하시면 포인트를 적립해 드립니다.</p>
+									<div class="point_coupon">
+										<input type="text" title="쿠폰번호" style="width:84px;">
+										<span class="txt_bar">-</span>
+										<input type="text" title="쿠폰번호" style="width:84px;">
+										<span class="txt_bar">-</span>
+										<input type="text" title="쿠폰번호" style="width:84px;">
+										<span class="txt_bar">-</span>
+										<input type="text" title="쿠폰번호" style="width:84px;">
+										<p class="txt_info"><span>*</span> 16자리 번호를 입력해 주셔야 합니다.</p>
+										<button type="submit" class="btn_type1">쿠폰 등록하기</button>
+									</div>
+								</div>
+								<div class="btn_wrap">
+									<button type="button" class="btn_type4 btn_point_coupon_info">포인트 쿠폰 이용방법 안내</button>
+								</div>
+							</div>
+							<div class="point_use">
+								<h4 class="stit">포인트 이용내역</h4>
+								<div class="search_box">
+									<table class="tbl_type2">
+										<caption>포인트 이용내역 검색</caption>
+										<colgroup>
+											<col style="width:100px">
+											<col style="width:150px">
+											<col style="width:80px">
+											<col>
+										</colgroup>
+										<tr>
+											<th scope="row">조회기간</th>
+											<td colspan="3">
+												<div class="datepicker_view">
+													<input type="text" class="inp_txt">
+													<span class="txt_bar">ㅡ</span>
+													<input type="text" class="inp_txt">
+												</div>
+												<ul class="datepicker_day">
+													<li><button type="button">오늘</button></li>
+													<li><button type="button">15일</button></li>
+													<li><button type="button">1개월</button></li>
+													<li><button type="button">3개월</button></li>
+													<li><button type="button">6개월</button></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">조건</th>
+											<td>
+												<select class="select" style="width:136px">
+													<option>전체</option>
+													<option>적립</option>
+												</select>
+											</td>
+											<th scope="row">서비스</th>
+											<td>
+												<select class="select" style="width:136px">
+													<option>전체</option>
+													<option>약국경영, 쇼핑 전용</option>
+													<option>라이브세미나 전용</option>
+												</select>
+												<input type="text" id="prod_name" style="width:213px;" title="서비스 검색어"> <button type="submit" class="btn_search"><span class="btn_comm">검색</span></button>
+											</td>
+										</tr>
+									</table>
+									<p class="txt_info"><span>*</span> 조회 기간은 최대 6개월 단위로 설정하실 수 있으며, 포인트 이용일로부터 최대 5년간 조회 가능합니다.</p>
+								</div>
+								<table class="tbl_type1">
+									<caption>포인트 이용내역 리스트</caption>
+									<colgroup>
+										<col style="width:20%">
+										<col style="width:18%">
+										<col style="width:8%">
+										<col style="width:12%">
+										<col>
+										<col style="width:18%">
+									</colgroup>
+									<thead>
+									<tr>
+										<th scope="col">날자</th>
+										<th scope="col">서비스</th>
+										<th scope="col">구분</th>
+										<th scope="col">포인트 금액</th>
+										<th scope="col">내용</th>
+										<th scope="col">포인트유효기간</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>2016-11-14(월) 16:27:00</td>
+										<td>약국경영, 쇼핑 전용</td>
+										<td>차감</td>
+										<td>3,000P</td>
+										<td class="txt_left">영화 컨텐츠 결제</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>2016-11-14(월) 16:27:00</td>
+										<td>라이브세미나 전용</td>
+										<td>적립</td>
+										<td>3,000P</td>
+										<td class="txt_left">라이브세미나 강의 포인트 사용 결제</td>
+										<td>2017-09-01</td>
+									</tr>
+									<tr>
+										<td>2016-11-14(월) 16:27:00</td>
+										<td>약국경영, 쇼핑 전용</td>
+										<td>차감</td>
+										<td>3,000P</td>
+										<td class="txt_left">영화 컨텐츠 결제</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>2016-11-14(월) 16:27:00</td>
+										<td>라이브세미나 전용</td>
+										<td>적립</td>
+										<td>3,000P</td>
+										<td class="txt_left">라이브세미나 강의 포인트 사용 결제</td>
+										<td>2017-09-01</td>
+									</tr>
+									<tr>
+										<td>2016-11-14(월) 16:27:00</td>
+										<td>약국경영, 쇼핑 전용</td>
+										<td>차감</td>
+										<td>3,000P</td>
+										<td class="txt_left">영화 컨텐츠 결제</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>2016-11-14(월) 16:27:00</td>
+										<td>라이브세미나 전용</td>
+										<td>적립</td>
+										<td>500P</td>
+										<td class="txt_left">라이브세미나 강의 포인트 사용 결제</td>
+										<td>2017-09-01</td>
+									</tr>
+									</tbody>
+								</table>
+								<div class="paging_nav">
+									<a href="#" class="btn_prev">이전</a>
+									<a href="#">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<span>6</span>
+									<a href="#">7</a>
+									<a href="#">8</a>
+									<a href="#">9</a>
+									<a href="#">10</a>
+									<a href="#" class="btn_next">다음</a>
+								</div>
+							</div>
+						</div>
+						<div id="tabPoint" style="display:none">
+							이제너두
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+	
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer_plus.html" -->
+	<!-- footer [e] -->
+	
+	<div id="popPointInfo" style="display:none;">
+		<div class="pop_layer pop_type1" style="width:610px;">
+			<strong class="tit_popup">포인트 이용방법 안내</strong>
+			<div class="pop_wrap">
+				<strong class="stit_popup">더샵플러스 포인트 및 적립방법</strong>
+				<!-- 2021-11-29 내용 수정 -->
+				<div class="info_box">
+					<p>더샵 내 다양한 이벤트 활동을 통해 적립되는 포인트를 회원의 니즈에 따라 <em>더샵플러스포인트</em>로 전환한 포인트를 말합니다. 적립 포인트는 회원이 더샵플러스 서비스에서만 사용할 수 있는 포인트로 더샵플러스 내에서 자유롭게 사용하실 수 있습니다.</p>
+					<p>단, 해당 포인트는 현금성 포인트가 아니며, 현금으로 인출이 불가합니다.</p>
+				</div>
+				<strong class="stit_popup">더샵플러스 주요사용처</strong>
+				<!-- 2021-11-29 내용 수정 -->
+				<div class="point_shop_box">
+					<p class="txt_info">더샵 플러스 내 포인트몰, 엔터테인먼트 등에서 자유롭게 사용 가능 하며, <br>더샵은 여러 업체와의 제휴를 통해 더샵플러스포인트의 사용처가 다양해질 수 있도록 하겠습니다.</p>
+				</div>
+				<strong class="stit_popup">유효기간 및 소멸</strong>
+				<!-- 2021-11-29 내용 수정 -->
+				<ol class="txt_info">
+					<li>포인트의 유효기간은 적립일로부터 90일이며 먼저 적립된 포인트부터 일 단위로 자동 소멸됩니다.</li>
+					<li>단, 21년 9월 1일 이전 발급된 더샵플러스포인트의 경우 21년 12월 31일 일괄 소멸이 원칙이나, 해당 약관이 반영되는 22년 1월 3일 기준 재적립 된 것으로 인식하여 적립일로부터 90일 사용 가능하며, 소멸예정일은 22년 4월 2일 입니다.</li>
+					<li>프로모션 등 마케팅 활동에 참여하여 획득한 포인트의 유효기간은 일반 포인트와 다를 수 있으며 해당 마케팅 활동 참여 시 안내 된 기준에 따릅니다.</li>
+					<li>당사의 사정에 의해 더샵플러스포인트의 유효기간이 변경될 수 있으며, 제휴처와의 계약종료에 따라 해당 업체에서의 사용이 제한될 수 있습니다.</li>
+				</ol>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	
+	<div id="popPointCouponInfo" style="display:none;">
+		<div class="pop_layer pop_type1" style="width:610px;">
+			<strong class="tit_popup">포인트 쿠폰 이용방법 안내</strong>
+			<div class="pop_wrap">
+				<ul class="txt_info">
+					<li><em class="txt_num">1</em> 포인트 쿠폰에 적혀 있는 16자리 숫자를 입력하면, 해당 쿠폰에 있는 포인트 금액을 적립할 수 있습니다.</li>
+					<li><em class="txt_num">2</em> 금액이 적립되면 ‘마이페이지>포인트 이용내역’ 하단 리스트에 <em>‘포인트 쿠폰’으로 표기</em>가 되어 적립금액과 함께 확인이 가능합니다.</li>
+				</ul>
+				<p>좀더 서비스에 대해 궁금하신게 있으신가요?</p>
+				<a href="#" class="btn_type1">질문하러 가기</a>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		$(function(){
+			// 모달 레이어
+			$("body").on("click", ".btn_knowledge_info", function(e) {
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popKnowledgeInfo"), {
+					closeClass: "btn_close"
+				});
+				e.preventDefault();
+			});
+			$("body").on("click", ".btn_point_info", function(e) {
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popPointInfo"), {
+					closeClass: "btn_close"
+				});
+				e.preventDefault();
+			});
+			$("body").on("click", ".btn_point_coupon_info", function(e) {
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popPointCouponInfo"), {
+					closeClass: "btn_close"
+				});
+				e.preventDefault();
+			});
+
+			// 포인트 전환하기 팝업
+			$("body").on("click", ".mypage_point_box .btn_point_convert", function(e) {
+				e.preventDefault();
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#pointConvert"), {
+					closeClass: "btn_close"
+				});
+				// 모달레이어 close 이벤트 추가
+				$("body").on("click", "#pointConvert .btn_cancel", function() {
+					// modalLayer.close();
+					$(".btn_close").click();
+				});
+			});
+			$("body").on("click", "#pointConvert .btn_convert", function(e) {
+				e.preventDefault();
+				shopUI.modalLayerComm({
+					"type": "2",
+					"title": "더샵 마일리지 포인트 전환",
+					"description": "마일리지 <em>3,000점이 차감</em>됩니다.<br>더샵플러스 포인트로 교환하시겠습니까?"
+				});
+			});
+			// 이용내역 조회 탭 2018-03-19 추가
+			shopUI.tab({
+				"tabs" : $(".tab_type3 li"),
+				"contWrap" : $(".tab_cont > div")
+			});
+
+		});
+	</script>
+</body>
+</html>

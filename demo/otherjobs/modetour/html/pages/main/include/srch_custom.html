@@ -1,0 +1,177 @@
+<!-- 여행 맞춤 검색 -->
+<div class="search-custom pop-layer">
+	<a href="#" class="screen"></a>
+	<div class="pop-wrap">
+		<div class="pop-tit">
+			<div class="head">여행 맞춤 검색</div>
+			<a href="#" class="close"><span class="blind">닫기</span></a>
+		</div>
+		<div class="pop-con">
+			<div class="sel-box recent">
+				<a href="#" class="btn-recent">최근 검색</a>
+				<div class="lst-recent-wrap">
+					<a href="#" class="btn-recent-back">검색 화면으로</a>
+					<ul class="lst-recent">
+						<li>
+							<a href="#" class="link">
+								<div class="departure">인천/김포 출발</div>
+								<div class="destination">
+									<span class="loca">동남아/대만</span>
+									<span class="item">패키지</span>
+								</div>
+								<div class="option">
+									<span>2019.09.01</span>
+									<span>4일</span>
+									<span>80~100만원</span>
+								</div>
+							</a>
+							<a href="#" class="btn-remove" onclick="$(this).closest('li').remove();return false;"><span class="blind">삭제</span></a>
+						</li>
+						<li>
+							<a href="#" class="link">
+								<div class="departure">부산 출발</div>
+								<div class="destination">
+									<span class="loca">동남아/대만</span>
+									<span class="item">패키지</span>
+								</div>
+								<div class="option">
+									<span>2019.09.01</span>
+									<span>4일</span>
+									<span>80~100만원</span>
+								</div>
+							</a>
+							<a href="#" class="btn-remove" onclick="$(this).closest('li').remove();return false;"><span class="blind">삭제</span></a>
+						</li>
+						<li>
+							<a href="#" class="link">
+								<div class="departure">인천/김포 출발</div>
+								<div class="destination">
+									<span class="loca">중국/홍콩</span>
+									<span class="item">패키지+(자유혼합)</span>
+								</div>
+								<div class="option">
+									<span>2019.09.01</span>
+									<span>4일</span>
+									<span>80~100만원</span>
+								</div>
+							</a>
+							<a href="#" class="btn-remove" onclick="$(this).closest('li').remove();return false;"><span class="blind">삭제</span></a>
+						</li>
+						<li>
+							<a href="#" class="link">
+								<div class="departure">인천/김포 출발</div>
+								<div class="destination">
+									<span class="loca">중국/홍콩</span>
+									<span class="item">패키지+(자유혼합)</span>
+								</div>
+								<div class="option">
+									<span>2019.09.01</span>
+									<span>4일</span>
+									<span>80~100만원</span>
+								</div>
+							</a>
+							<a href="#" class="btn-remove" onclick="$(this).closest('li').remove();return false;"><span class="blind">삭제</span></a>
+						</li>
+						<li>
+							<a href="#" class="link">
+								<div class="departure">인천/김포 출발</div>
+								<div class="destination">
+									<span class="loca">중국/홍콩</span>
+									<span class="item">패키지+(자유혼합)</span>
+								</div>
+								<div class="option">
+									<span>2019.09.01</span>
+									<span>4일</span>
+									<span>80~100만원</span>
+								</div>
+							</a>
+							<a href="#" class="btn-remove" onclick="$(this).closest('li').remove();return false;"><span class="blind">삭제</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="sel-box">			
+				<div class="sel-box-inner">
+					<p class="qust">출발지는 어디인가요?</p>
+					<div class="select-wrap">
+						<select class="select" title="출발지 선택" id="" name="">
+							<option value="인천/김포 출발">인천/김포 출발</option>
+							<option value="부산출발">부산출발</option>
+							<option value="대구출발">대구출발</option>
+							<option value="무안출발">무안출발</option>
+							<option value="청주출발">청주출발</option>
+							<option value="제주출발">제주출발</option>
+							<option value="양양출발">양양출발</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="sel-box search">
+				<div class="sel-box-inner">
+					<p class="qust">여행 가실 지역은 어디인가요?</p>
+					<div class="input-wrap">
+						<input type="search" class="input" title="국가 및 도시를 입력" placeholder="국가 및 도시를 입력해주세요">
+						<button type="submit" class="btn-srch"><span class="blind">검색</span></button>					
+					</div>
+					<div class="popular">
+						<p class="tit">인기 도시</p>
+						<div class="swiper-container">
+							<ul class="swiper-wrapper lst-city">
+								<li class="swiper-slide"><a href="#"># 세부</a></li>
+								<li class="swiper-slide"><a href="#"># 방콕</a></li>
+								<li class="swiper-slide"><a href="#"># 괌</a></li>
+								<li class="swiper-slide"><a href="#"># 사이판</a></li>
+								<li class="swiper-slide"><a href="#"># 코타키나발루</a></li>
+								<li class="swiper-slide"><a href="#"># 하와이</a></li>
+							</ul>
+						</div>
+					</div>					
+					<div class="lst-result-wrap">
+						<ul class="lst-result">
+							<li><a href="#"><span>유럽</span><span>그리스</span></a></li>
+							<li><a href="#"><span>유럽</span><span>그리스</span><span>산토리니1</span></a></li>
+							<li><a href="#"><span>유럽</span><span>그리스</span><span>산토리니산토리니2</span></a></li>
+							<li><a href="#"><span>유럽</span><span>그리스</span><span>산토리니산토리니산토리니3</span></a></li>
+							<li><a href="#"><span>유럽</span><span>그리스</span><span>산토리니산토리니산토리니산토리니4</span></a></li>
+							<li><a href="#"><span>유럽</span><span>그리스</span><span>아테네</span></a></li>
+							<li><a href="#"><span>유럽</span><span>독일</span></a></li>
+							<li><a href="#"><span>유럽</span><span>독일</span><span>프</span></a></li>
+							<li><a href="#"><span>유럽</span><span>독일</span><span>프랑</span></a></li>
+							<li><a href="#"><span>유럽</span><span>독일</span><span>프랑크</span></a></li>
+							<li><a href="#"><span>유럽</span><span>독일</span><span>프랑크푸</span></a></li>
+							<li><a href="#"><span>유럽</span><span>독일</span><span>프랑크푸르</span></a></li>
+							<li><a href="#"><span>유럽</span><span>독일</span><span>프랑크푸르트</span></a></li>
+						</ul>
+					</div> 
+				</div>
+			</div>
+			<div class="sel-box">
+				<div class="sel-box-inner">
+					<p class="qust">여행 컨셉을 선택해주세요.</p>
+					<div class="select-wrap">
+						<select class="select" title="여행컨셉 선택" id="" name="">
+							<option value="패키지">패키지</option>
+							<option value="자유여행/에어텔">자유여행/에어텔</option>
+							<option value="패키지+(자유혼합)">패키지+(자유혼합)</option>
+							<option value="허니문">허니문</option>
+							<option value="프리미엄">프리미엄</option>
+							<option value="단체여행">단체여행</option>
+							<option value="골프여행">골프여행</option>
+							<option value="크루즈">크루즈</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="sel-box">
+				<div class="sel-box-inner">
+					<p class="qust">언제 출발하시나요?</p>
+					<input type="date" class="calendar" title="날짜선택" name="" value="2019-09-01" min="2019-09-01" max="2019-10-01">
+				</div>
+			</div>
+			<div class="btn-send">
+				<a href="#searchIntegrate" class="pop-open">적용</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //여행 맞춤 검색 -->

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>리멤버드</title>
+        <script src="../js/jquery-3.6.min.js"></script>
+        <script src="../js/swiper.min.js"></script>
+        <script src="../js/ui.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+<body>
+    <!--gnb-->
+    <div id="remember_gnb" class="remember_gnb sub_gnb">
+        <div class="gnb_inner">
+          <h1 class="logo"><a href="#">리멤버드</a></h1>
+          <nav class="gnb">
+            <ul>
+              <li><a href="#">리멤버드</a></li>
+              <li><a href="#">서비스소개</a></li>
+              <li><a href="#">부고</a></li>
+              <li><a href="#">추모관</a></li>
+              <li><a href="#">조문보</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+          <div class="right">
+            <div class="gnb_search_form">
+              <form>
+                <fieldset>
+                  <legend>고인명검색</legend>
+                  <input type="text" class="search_input" placeholder="고인명검색">
+                </fieldset>
+                <a href="#" class="ico_sch">검색</a>
+              </form>
+            </div>
+            <div class="log_info">
+              <!-- <a href="#">로그인</a> -->
+             <a href="#">로그아웃</a>
+           </div>     
+            <a href="#" class="member">마이페이지</a>                 
+            <a href="#" class="menu">메뉴</a>
+          </div>
+        </div>
+    </div>
+    <!--//gnb-->    
+    <div class="content_wrap">
+        <div class="content_inner">
+            <h2 class="content_title">마이<span class="block">페이지</span></h2>
+            <div class="mypage_content">
+                <div class="tab_area">
+                    <a href="#" class="on">회원설정</a>
+                    <a href="#">부고</a>
+                    <a href="#">추모관</a>
+                </div>
+                <div class="member_form">
+                    <div class="member_info">
+                        <form>
+                            <fieldset>
+                                <legend>기본정보</legend>
+                                <ul>
+                                    <li>
+                                        <label for="email" class="input_tit">이메일</label>
+                                        <input type="text" id="email" class="input type">
+                                    </li>
+                                    <li>
+                                        <span class="input_tit">비밀번호</span>
+                                        <button class="base_button">비밀번호 변경</button>
+                                    </li>
+                                    <li>
+                                        <label for="name" class="input_tit">이름</label>
+                                        <input type="text" id="name" class="input">
+                                    </li>
+                                    <li>
+                                        <label for="hp_num" class="input_tit">핸드폰번호</label>
+                                        <input type="text" id="hp_num" class="input">
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="member_info">
+                        <form>
+                            <fieldset>
+                                <legend>추가정보</legend>
+                                <ul>
+                                    <li>
+                                        <label for="address" class="input_tit">주소</label>
+                                        <input type="text" id="address" class="input">
+                                    </li>
+                                    <li>
+                                        <label for="user_type" class="input_tit">사용자 타입</label>
+                                        <input type="text" id="user_type" class="input type">
+                                    </li>
+                                    <li>
+                                        <label for="login_type" class="input_tit">로그인 타입</label>
+                                        <input type="text" id="login_type" class="input type">
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="base_button_wrap"><button class="base_button save">저장</button></div>
+            </div>
+        </div>
+    </div>
+    <!--right banner-->
+    <div class="right_banner">
+        <a href="#">문의</a>
+        <a href="#" class="kakao">KAKAO</a>
+      </div>
+      <!--//right banner-->
+      <!--footer-->
+      <footer id="remember_footer" class="remember_footer">
+        <div class="footer_inner">
+          <ul class="term_list">
+            <li><a href="#">이용약관</a><i class="bar"></i></li>
+            <li><a href="#">개인정보처리방침</a></li>
+          </ul>
+          <div class="compay_info">
+            <address>서울시 강남구 봉은사로 114길 12, 7층</address> <i class="bar"></i>대표 서종원 <span class="mb_block">사업자 등록번호 120-86-10499</span> <i class="bar none_type"></i><span class="mb_block">통신판매업신고 2009-서울강남-00290 </span>
+            <span class="customer">고객센터<i class="bar mb_none"></i>tel.02-550-8700 <span class="fax">fax.02-563-8398</span><i class="bar mb_none"></i> <span class="email">Email.tslee0710@mcircle.biz</span><i class="bar none_type"></i><span class="mb_block">상담가능시간  오전 9:00 - 오후 6:00</span></span>
+          </div>
+          <span class="footer_logo"><img src="../images/footer_logo.png"></span>
+          <div class="ico_wrap">
+            <a href="#"><img src="../images/footer_ico1.png"></a>
+            <a href="#"><img src="../images/footer_ico2.png"></a>
+          </div>
+        </div>     
+      </footer>
+      <!--//footer-->
+    
+</body>
+</html>

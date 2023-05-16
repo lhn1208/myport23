@@ -1,0 +1,82 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/content.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+	<section id="container">
+		<div id="content" class="cont_quit">
+			<h2 class="title">폐업 신청<sub>theSHOP 토탈헬스케어 쇼핑몰</sub></h2>
+            <ul class="description_box">
+                <li>ⓘ 폐업을 신청하실 경우 회원 탈퇴와 동일한 방법으로 진행하고 있습니다</li>
+                <li>ⓘ 회원 폐업에 앞서 유의사항을 확인하시고 진행하시기 바랍니다. <br>회원 폐업은 담당자의 확인 후 고객센터에서 안내 드릴 예정이며, 최종 결과에 대해서는 휴대폰 문자 메시지로 안내 드립니다.</li>
+                <li>Ⓘ 소비자보호에 관한 법률에 의거하여 하기 정보는 일정 기간동안 보관합니다. <br>: 계약 또는 청약철회 등에 관한 기록(5년), 대금결제 및 재화 등의 공급에 관한 기록(5년), 소비자 불만 또는 분쟁처리에 관한 기록(3년)<br>탈퇴 신청 후 회원 정보 삭제 까지는 1~2 영업일이 소요될 수 있습니다</li>
+            </ul>
+            <h3 class="title">폐업 전 확인해주세요!</h3>
+            <ul class="quit_caution">
+                <li>
+                    <h4 class="title">TheSHOP 아이디 <strong>재사용 안내</strong></h4>
+                    <p>  회원 탈퇴 후 재 가입 시 동일 아이디를 사용하고자 하는 약사님은 <br> 탈퇴 전, 고객센터로 연락주시기 바랍니다</p>
+                </li>
+                <li>
+                    <h4 class="title"><strong>마이너스 잔고</strong> 정산 안내</h4>
+                    <p> 회원 탈퇴 시, 마이너스 잔고가 처리되지 않을 경우 탈퇴 승인이 불가능합니다 <br> 고객센터를 통해 마이너스 잔고 상황에 대해 협의 해주시기 바랍니다</p>
+                </li>
+                <li>
+                    <h4 class="title">TheSHOP <strong>예치금 환불 안내</strong></h4>
+                    <p> 회원 탈퇴 후에는 예치금 환불이 불가능합니다<br> 고객센터를 통해 예치금 환불 후 진행해 주시기 바랍니다</p>
+                </li>
+                <li>
+                    <h4 class="title"><strong>쿠폰, 포인트 소멸</strong> 안내</h4>
+                    <p> 회원 탈퇴 시, 지급된 쿠폰, 포인트의 경우 소멸 됩니다<br> 신중히 선택하신 후 결정하여 주시기 바랍니다</p>
+                </li>
+            </ul>
+            <div class="button_area">
+                <button type="button" class="btn_bottom btn_type1">폐업 신청하기</button>
+            </div>
+		</div>
+	</section>
+
+    <!-- 폐업 레이어 팝업 -->
+    <div id="popQuitLayer">
+		<div class="pop_layer" style="width:560px">
+			<div class="pop_wrap">
+				<p class="title">회원 폐업 신청</p>
+                <p class="desc">OOO 약사님<br>국세청 폐업으로 조회됩니다. 페업 신청 부탁드립니다</p>
+                <ul class="description_box">
+                    <li>ⓘ 폐업을 신청하실 경우 회원 탈퇴와 동일한 방법으로 진행하고 있습니다</li>
+                    <li>ⓘ TheSHOP은 폐업 후 재 가입시 기존에 사용한 아이디로 사용하실 수 있으며<br>아이디 재사용을 원하실 경우 고객센터로 연락주시기 바랍니다
+                        <p class="left">“아이디 재 사용을 하실 지라도</p>
+                        <p class="right">그 전에 사용한 사업자의 데이터는 복구할 수 없습니다”</p>
+                    </li>
+                    <li>ⓘ 소비자보호에 관한 법률에 의거하여 하기 정보는 일정 기간동안 보관<br>: 계약 또는 청약철회 등에 관한 기록(5년), 대금결제 및 재화 <br>등의 공급에 관한 기록(5년), 소비자 불만 또는 분쟁처리에 관한 기록(3년)<br><br>탈퇴 신청 후 회원 정보 삭제 까지는 1~2 영업일이 소요될 수 있습니다</li>
+                </ul>
+				<div class="button_area">
+					<a href="#none" class="btn_type1">폐업신청 하러가기</a>
+				</div>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+
+    <script>
+        var modalLayer = shopUI.modalLayer($("#popQuitLayer"), {
+            closeClass: "btn_close"
+        });
+    </script>
+	<!-- container [e] -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+</body>
+</html>

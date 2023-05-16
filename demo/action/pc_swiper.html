@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="http://js.modetour.com/jQuery/ver/2.1.0.min.js"></script>
+	<!--swiper-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+	<title>pc swiper</title>
+	<style type="text/css">
+		*{margin: 0; padding:0;}
+		.swiper_wrap{overflow: hidden; margin:40px 0;}
+        .swiper_wrap .comment{font-size: 18px; padding:20px;}
+        .swiper_wrap .event_wrap{min-width: 1100px; margin:0 auto;}
+        button{display: inline-block; border:none; background:transparent;}
+        img{max-width: 100%;;}
+		
+		.swiper1.event_wrap{font-family: "Noto Sans KR","Apple SD Gothic Neo",Arial,sans-serif; position: relative; min-width: 800px; margin:0 auto;text-align: center;}
+		.swiper1.event_wrap .cont1 {position: relative; height: 2073px;  background: url("http://img.modetour.com/promotion20/201223/pc/bg_promotion.jpg") no-repeat center 0;} 
+		.swiper1.event_wrap .cont1 .img_promotion{position: absolute; top:0px; left: 50%; margin-left: -400px; height: 2073px;} 
+		.swiper1.event_wrap .cont1 .swiper-container {padding-top: 820px;}
+		.swiper1.event_wrap .cont1 .swiper-wrapper{height: auto; margin-bottom: 230px;}
+		.swiper1.event_wrap .cont1 .swiper-slide{position: relative; width: 730px; }
+		.swiper1.event_wrap .cont1 .swiper-slide::before{position: absolute; top:0; left: 150px; width:59%; height: 792px;  background-color: #000; opacity: .7; content: "";}
+		.swiper1.event_wrap .cont1 .swiper-slide-active::before{background-color: transparent;}
+		.swiper1.event_wrap .cont1 .swiper-slide .shadow{position: absolute; bottom:0; left: 150px; width:59%; height: 100%; box-shadow:0px 20px 30px 0 rgba(0,0,0,0.2);}
+		.swiper1.event_wrap .cont1 .swiper-slide-active .shadow{display: none;}
+		.swiper1.event_wrap .cont1 .swiper-pagination{bottom:0;}
+		.swiper1.event_wrap .cont1 .swiper-pagination .swiper-pagination-bullet{width:104px; height: 26px; border-radius: 30px; opacity: 1; background-color: #b9b9a7;}
+		.swiper1.event_wrap .cont1 .swiper-pagination .swiper-pagination-bullet-active{background-color: #005dcf;}
+	</style>
+	<script type="text/javascript">
+		(function($){							
+			$(document).ready(function(){
+				//스와이퍼
+				var swiper = new Swiper('.slide', {
+					slidesPerView: 'auto',
+					centeredSlides: true,
+					spaceBetween: 30,
+					loop: true,
+					autoplay: {
+						delay: 3000,
+						   disableOnInteraction: false,
+					},
+					pagination: {
+						el: '.swiper-pagination',
+						clickable: true,
+					},
+					//simulateTouch : false,
+				});
+				$(window).scroll(function(){
+					fix();
+					menuOn()
+				});
+			});
+		})(jQuery);
+	</script>
+</head>
+<body>
+	<div class="swiper_wrap">
+		<div class="event_wrap swiper1">
+			<!-- cont1 -->
+			<div class="cont1 section" id="campain">
+				<div class="img_promotion"><img src="http://img.modetour.com/promotion20/201223/pc/img_promotion.jpg" alt=""></div>
+				<div class="swiper_wrap">
+					<div class="swiper-container slide">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="shadow"></div>
+								<img src="http://img.modetour.com/promotion20/201223/pc/roll_img1.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<div class="shadow"></div>
+								<img src="http://img.modetour.com/promotion20/201223/pc/roll_img2.jpg" alt="">
+							</div>
+							<div class="swiper-slide">		
+								<div class="shadow"></div>							
+								<img src="http://img.modetour.com/promotion20/201223/pc/roll_img3.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<div class="shadow"></div>
+								<img src="http://img.modetour.com/promotion20/201223/pc/roll_img4.jpg" alt="">
+							</div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<!-- //cont1 -->
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+

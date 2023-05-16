@@ -1,0 +1,709 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+<link rel="stylesheet" href="../../css/layout.css">
+<link rel="stylesheet" href="../../css/content.css">
+</head>
+<body>
+    <nav id="Index">
+        <a href="#content">본문 바로가기</a>
+        <a href="#header">주메뉴 바로가기</a>
+        <a href="#footer">사이트 정보 바로가기</a>
+    </nav>
+    <!-- header [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+    <!-- header [e] -->
+
+    <!-- container [s] -->
+    <section id="container">
+        <div id="content" class="cont_event cont_special">
+            <!-- 타임세일 배너 2021-07-14 추가[s] -->
+            <div class="bnr_special bnr_time">
+                <h2 class="screen_hide">낮에는 9:00 ~ 18:00, 밤에는 9:00 ~ 18:00</h2>
+                <p class="time_box">
+                    <em class="screen_out">남은시간 count down</em>
+                    <span class="txt_num">11</span><span class="screen_out">시</span>
+                    <span class="txt_num">21</span><span class="screen_out">분</span>
+                    <span class="txt_num time_seconds">00</span><span class="screen_out">초</span>
+                </p>
+            </div>
+            <!-- 타임세일 배너 2021-07-14 추가[e] -->
+
+            <!-- 땡처리특가 배너 2021-07-14 추가[s] -->
+            <div class="bnr_special bnr_deal">
+                <h2 class="screen_hide">유통기한임박 할인상품 땡처리 특가!</h2>
+                <p class="term_box"><em class="special_tit">기간</em> <span class="txt_num">2019.03.18 ~ 2019.03.24</span></p>
+                <p class="screen_out">땡처리특가 품목은 교환/반품이 불가 하오니 유의하시기 바랍니다.</p>
+            </div>
+            <!-- 땡처리특가 배너 2021-07-14 추가[e] -->
+
+            <!-- 2021-07-14 땡처리 특가 탭 [s] -->
+            <ul class="tab_menu tab_type_deal">
+				<li><a href="list.html">재고 땡처리 상품보기</a></li>
+				<li><a href="list.html">유통기한 임박 상품보기</a></li>
+			</ul>
+            <!-- 2021-07-14 땡처리 특가 탭 [e] -->
+
+            <!-- 정렬 및 검색[s] -->
+            <div class="util_func">
+                <strong class="screen_out">정렬타입 선택 리스트</strong>
+                <ul class="list_sort">
+                    <li class="on"><button type="button" class="btn_sort">상품명순</button></li>
+                    <li class=""><button type="button" class="btn_sort">공급사</button></li>
+                    <li class=""><button type="button" class="btn_sort">높은할인율</button></li>
+                    <li class=""><button type="button" class="btn_sort">낮은가격</button></li>
+                    <li class=""><button type="button" class="btn_sort">높은가격</button></li>
+                </ul>
+                <div class="f_r">
+                    <select class="select" style="width:110px" title="상품구분 선택">
+                        <option>상품구분 선택</option>
+                        <option>일반/비급여</option>
+                        <option>건강식품</option>
+                        <option>의약외식품</option>
+                        <option>화장품</option>
+                    </select>
+                    <select class="select" style="width:110px" title="공급사 선택">
+                        <option>공급사 선택</option>
+                        <option>가나다</option>
+                        <option>대성메디케어</option>
+                        <option>천지인팜</option>
+                    </select>
+                    <div class="wrap_search">
+                        <input type="text" title="검색어 입력" class="inp_txt" placeholder="검색할 품목을 입력하세요." style="width:228px">
+                        <button type="submit" class="btn_search"><span class="btn_comm">검색</span></button>
+                    </div>
+                    <button type="button" class="btn_list_reset"><span class="btn_comm">리스트 초기화</span></button>
+                </div>
+            </div>
+            <!-- 정렬 및 검색[e] -->
+
+            <!-- 상품 리스트[s] -->
+            <div class="prod_data">
+                <table class="tbl_type6 tbl_hover"><!-- 2020-04-06 class 수정 -->
+                    <caption>특가상품 리스트</caption>
+                    <colgroup>
+                        <col style="width:3%"><!-- checkbox -->
+                        <col style="width:10%"><!-- 공급사 -->
+                        <col style="width:70px"><!-- 이미지 -->
+                        <col><!-- 상품정보 -->
+                        <col style="width:8%"><!-- 재고 -->
+                        <col style="width:14%"><!-- 가격 -->
+                        <col style="width:68px"><!-- 수량 -->
+                        <col style="width:105px"><!-- button -->
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col"><span class="screen_hide">checkbox</span></th>
+                            <th scope="col">공급사</th>
+                            <th scope="col">이미지</th>
+                            <th scope="col">상품정보</th>
+                            <th scope="col">재고</th>
+                            <th scope="col">가격</th>
+                            <th scope="col">수량</th>
+                            <th scope="col"><span class="screen_hide">etc</span></th>
+                        </tr>
+                    </thead>
+                    <!-- 리스트 있을때[s] -->
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodChk" id="prodChk1" class="inp_chk">
+                                    <label for="prodChk1" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>대성메디케어</td>
+                            <td><img src="http://img.shop.co.kr/upload/product/SELLER/201809/568994_01_L.jpg" alt=""></td>
+                            <td class="txt_left">
+                                <!-- 2020-04-06 추가[s] -->
+                                <div class="wrap_tag">
+                                    <span class="ico_tag ico_tag1"><span class="btn_comm"></span>최저가 보상</span>
+                                    <span class="ico_tag ico_tag2"><span class="btn_comm"></span>예약</span>
+                                    <span class="ico_tag ico_tag3"><span class="btn_comm"></span>땡처리</span>
+                                    <span class="ico_tag ico_tag4"><span class="btn_comm"></span>특가</span>
+                                    <span class="ico_tag ico_tag5"><span class="btn_comm"></span>타임</span>
+                                    <span class="ico_prd_tag repurchase">재구매율 <strong>100</strong>%</span><!-- 2020-08-14 재구매 아이콘 태그 추가-->
+                                </div>
+                                <!-- 2020-04-06 추가[e] -->
+                                <a href="#none" class="link_prod">NEW 덴탈프로 치간칫솔(I자형) 4호 M<span>10개입</span><span>1EA</span><span>덴탈프로</span></a>
+                            </td>
+                            <td>5,671개</td>
+                            <td class="cell_price">
+                                <span class="before_price">판매가 : <span class="txt_num">4,200</span>원</span>
+                                <strong class="txt_price"><span class="txt_num">3,850</span>원</strong>
+                            </td>
+                            <td>
+                                <div class="ctl_prod">
+                                    <input type="text" title="상품 수량" class="inp_num" value="9999">
+                                    <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                    <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="button" class="btn_type1">담기</button>
+                                <button type="button" class="btn_type10">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodChk" id="prodChk2" class="inp_chk">
+                                    <label for="prodChk2" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>이팜</td>
+                            <td><img src="http://img.shop.co.kr/upload/product/SELLER/201710/547254_01_L.jpg" alt=""></td>
+                            <td class="txt_left">
+                                <!-- 2020-04-06 추가[s] -->
+                                <div class="wrap_tag">
+                                    <span class="ico_tag ico_tag3"><span class="btn_comm"></span>땡처리</span>
+                                </div>
+                                <!-- 2020-04-06 추가[e] -->
+                                <a href="#none" class="link_prod">(KC인증)고바야시 하루 손난로 핫팩(2017년형) <span>유통기한 : 2020.08.31(반품불가)</span><span>제조사: 고바야시</span><span>규격/단위: 5EA</span><span>행사기간 : 2020.04.06 ~ 2020.04.12</span></a>
+                            </td>
+                            <td>6,321개</td>
+                            <td class="cell_price">
+                                <span class="before_price">정상가 : <span class="txt_num">5,000</span>원</span>
+                                <strong class="txt_price"><span class="txt_num">99,999,500</span>원</strong>
+                            </td>
+                            <td>
+                                <div class="ctl_prod">
+                                    <input type="text" title="상품 수량" class="inp_num" value="9999">
+                                    <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                    <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="button" class="btn_type1">담기</button>
+                                <button type="button" class="btn_type10">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodChk" id="prodChk3" class="inp_chk">
+                                    <label for="prodChk3" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>건강두배로</td>
+                            <td><img src="http://img.shop.co.kr/upload/product/SELLER/201310/468716_01_L.jpg" alt=""></td>
+                            <td class="txt_left">
+                                <!-- 2020-04-06 추가[s] -->
+                                <div class="wrap_tag">
+                                    <span class="ico_tag ico_tag5"><span class="btn_comm"></span>타임</span>
+                                </div>
+                                <!-- 2020-04-06 추가[e] -->
+                                <a href="#none" class="link_prod">(2+1기획)케어센스엔(N)측정지(스트립) + 케어센스엔(N) 혈당측정기<span>단위: SET</span><span>제조사: 아이센스</span><span>공급업체 2</span></a>
+                            </td>
+                            <td>5,597개</td>
+                            <td class="cell_price">
+                                <span class="before_price">판매가 : <span class="txt_num">4,200</span>원</span>
+                                <strong class="txt_price"><span class="txt_num">3,850</span>원</strong>
+                            </td>
+                            <td>
+                                <div class="ctl_prod">
+                                    <input type="text" title="상품 수량" class="inp_num" value="9999">
+                                    <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                    <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="button" class="btn_type1">담기</button>
+                                <button type="button" class="btn_type10">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodChk" id="prodChk4" class="inp_chk">
+                                    <label for="prodChk4" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>천지인팜</td>
+                            <td><img src="http://img.shop.co.kr/upload/product/SELLER/201912/11726581_01_L.jpg" alt=""></td>
+                            <td class="txt_left">
+                                <!-- 2020-04-06 추가[s] -->
+                                <div class="wrap_tag">
+                                    <span class="ico_tag ico_tag4"><span class="btn_comm"></span>특가</span>
+                                </div>
+                                <!-- 2020-04-06 추가[e] -->
+                                <a href="#none" class="link_prod">NEW 숨쉬는 고탄력 미라클 밴드 세트 (혼합)<span>단위: 14매*20EA</span><span>투일</span></a>
+                            </td>
+                            <td>293개</td>
+                            <td class="cell_price">
+                                <span class="before_price">판매가 : <span class="txt_num">12,000</span>원</span>
+                                <strong class="txt_price"><span class="txt_num">10,000</span>원</strong></td>
+                            <td>
+                                <div class="ctl_prod">
+                                    <input type="text" title="상품 수량" class="inp_num" value="9999">
+                                    <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                    <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="button" class="btn_type1">담기</button>
+                                <button type="button" class="btn_type10">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodChk" id="prodChk5" class="inp_chk">
+                                    <label for="prodChk5" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>웰빙메디칼</td>
+                            <td><img src="http://img.shop.co.kr/upload/product/SELLER/201811/582117_01_L.jpg" alt=""></td>
+                            <td class="txt_left">
+                                <!-- 2020-04-06 추가[s] -->
+                                <div class="wrap_tag">
+                                    <span class="ico_tag ico_tag4"><span class="btn_comm"></span>특가</span>
+                                </div>
+                                <!-- 2020-04-06 추가[e] -->
+                                <a href="#none" class="link_prod">NEW 시크릿 쥬쥬 맛있는 키즈비타민 세트(복숭아/건강기능식품)<span>1400mg</span><span>40T*8EA</span><span>뉴팜</span></a>
+                            </td>
+                            <td>9,343개</td>
+                            <td class="cell_price">
+                                <span class="before_price">판매가 : <span class="txt_num">12,610</span>원</span>
+                                <strong class="txt_price"><span class="txt_num">10,100</span>원</strong>
+                            </td>
+                            <td>
+                                <div class="ctl_prod">
+                                    <input type="text" title="상품 수량" class="inp_num" value="9999">
+                                    <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                    <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="button" class="btn_type1">담기</button>
+                                <button type="button" class="btn_type10">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodChk" id="prodChk6" class="inp_chk">
+                                    <label for="prodChk6" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td><td>건강두배로</td>
+                            <td><img src="http://img.shop.co.kr/upload/product/SELLER/201811/582117_01_L.jpg" alt=""></td>
+                            <td class="txt_left">
+                                <!-- 2020-04-06 추가[s] -->
+                                <div class="wrap_tag">
+                                    <span class="ico_tag ico_tag4"><span class="btn_comm"></span>특가</span>
+                                </div>
+                                <!-- 2020-04-06 추가[e] -->
+                                <a href="#none" class="link_prod">NEW 시크릿 쥬쥬 맛있는 키즈비타민 세트(복숭아/건강기능식품)<span>1400mg</span><span>40T*8EA</span><span>뉴팜</span></a>
+                            </td>
+                            <td>500개</td>
+                            <td class="cell_price">
+                                <span class="before_price">판매가 : <span class="txt_num">12,800</span>원</span>
+                                <strong class="txt_price"><span class="txt_num">11,800</span>원</strong>
+                            </td>
+                            <td>
+                                <div class="ctl_prod">
+                                    <input type="text" title="상품 수량" class="inp_num" value="9999">
+                                    <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                    <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="button" class="btn_type1">담기</button>
+                                <button type="button" class="btn_type10">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodChk" id="prodChk7" class="inp_chk">
+                                    <label for="prodChk7" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>탑헬스케어</td>
+                            <td><img src="http://img.shop.co.kr/upload/product/SELLER/201811/582117_01_L.jpg" alt=""></td>
+                            <td class="txt_left">
+                                <!-- 2020-04-06 추가[s] -->
+                                <div class="wrap_tag">
+                                    <span class="ico_tag ico_tag4"><span class="btn_comm"></span>특가</span>
+                                </div>
+                                <!-- 2020-04-06 추가[e] -->
+                                <a href="#none" class="link_prod">NEW 시크릿 쥬쥬 맛있는 키즈비타민 세트(복숭아/건강기능식품)<span>1400mg</span><span>40T*8EA</span><span>뉴팜</span></a>
+                            </td>
+                            <td>737개</td>
+                            <td class="cell_price">
+                                <span class="before_price">판매가 : <span class="txt_num">10,610</span>원</span>
+                                <strong class="txt_price"><span class="txt_num">9,990</span>원</strong>
+                            </td>
+                            <td>
+                                <div class="ctl_prod">
+                                    <input type="text" title="상품 수량" class="inp_num" value="9999">
+                                    <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                    <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="button" class="btn_type1">담기</button>
+                                <button type="button" class="btn_type10">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodChk" id="prodChk8" class="inp_chk">
+                                    <label for="prodChk8" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>이팜</td>
+                            <td><img src="http://img.shop.co.kr/upload/product/SELLER/201611/537438_01_L.jpg" alt=""></td>
+                            <td class="txt_left">
+                                <!-- 2020-04-06 추가[s] -->
+                                <div class="wrap_tag">
+                                    <span class="ico_tag ico_tag4"><span class="btn_comm"></span>특가</span>
+                                </div>
+                                <!-- 2020-04-06 추가[e] -->
+                                <a href="#none" class="link_prod">NEW 웰빙헬스 고운발 풋크림(튜브형)<span>120g</span><span>1EA</span><span>웰빙헬스팜</span></a>
+                            </td>
+                            <td>4,296개</td>
+                            <td class="cell_price">
+                                <span class="before_price">판매가 : <span class="txt_num">4,004</span>원</span>
+                                <strong class="txt_price"><span class="txt_num">3,987</span>원</strong>
+                            </td>
+                            <td>
+                                <div class="ctl_prod">
+                                    <input type="text" title="상품 수량" class="inp_num" value="9999">
+                                    <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                    <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="button" class="btn_type1">담기</button>
+                                <button type="button" class="btn_type10">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodChk" id="prodChk9" class="inp_chk">
+                                    <label for="prodChk9" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>대성메디케어</td>
+                            <td><img src="http://img.shop.co.kr/upload/product/SELLER/201611/537438_01_L.jpg" alt=""></td>
+                            <td class="txt_left">
+                                <!-- 2020-04-06 추가[s] -->
+                                <div class="wrap_tag">
+                                    <span class="ico_tag ico_tag4"><span class="btn_comm"></span>특가</span>
+                                </div>
+                                <!-- 2020-04-06 추가[e] -->
+                                <a href="#none" class="link_prod">NEW 웰빙헬스 고운발 풋크림(튜브형)<span>120g</span><span>1EA</span><span>웰빙헬스팜</span></a>
+                            </td>
+                            <td>5,589개</td>
+                            <td class="cell_price">
+                                <span class="before_price">판매가 : <span class="txt_num">4,500</span>원</span>
+                                <strong class="txt_price"><span class="txt_num">3,987</span>원</strong>
+                            </td>
+                            <td>
+                                <div class="ctl_prod">
+                                    <input type="text" title="상품 수량" class="inp_num" value="9999">
+                                    <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                    <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="button" class="btn_type1">담기</button>
+                                <button type="button" class="btn_type10">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodChk" id="prodChk10" class="inp_chk">
+                                    <label for="prodChk10" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>이팜</td>
+                            <td><img src="http://img.shop.co.kr/upload/product/SELLER/201907/5269791_01_L.jpg" alt=""></td>
+                            <td class="txt_left">
+                                <!-- 2020-04-06 추가[s] -->
+                                <div class="wrap_tag">
+                                    <span class="ico_tag ico_tag4"><span class="btn_comm"></span>특가</span>
+                                </div>
+                                <!-- 2020-04-06 추가[e] -->
+                                <a href="#none" class="link_prod">New 씨스팡 뉴질랜드 초록입홍합 100% 3500골드<span>단위: 3.5g*30포</span><span>극동에치팜</span></a>
+                            </td>
+                            <td>5,548개</td>
+                            <td class="cell_price">
+                                <span class="before_price">판매가 : <span class="txt_num">23,000</span>원</span>
+                                <strong class="txt_price"><span class="txt_num">22,900</span>원</strong>
+                            </td>
+                            <td>
+                                <div class="ctl_prod">
+                                    <input type="text" title="상품 수량" class="inp_num" value="9999">
+                                    <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                    <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="button" class="btn_type1">담기</button>
+                                <button type="button" class="btn_type10">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodChk" id="prodChk11" class="inp_chk">
+                                    <label for="prodChk11" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>웰빙메디칼</td>
+                            <td><img src="http://img.shop.co.kr/upload/product/SELLER/201902/606163_01_L.jpg" alt=""></td>
+                            <td class="txt_left">
+                                <!-- 2020-04-06 추가[s] -->
+                                <div class="wrap_tag">
+                                    <span class="ico_tag ico_tag4"><span class="btn_comm"></span>특가</span>
+                                </div>
+                                <!-- 2020-04-06 추가[e] -->
+                                <a href="#none" class="link_prod">대일 닥터파인 펜니들 325<span>32G*5mm </span><span>100pcs</span><span>메덱셀</span></a>
+                            </td>
+                            <td>9,812개</td>
+                            <td class="cell_price">
+                                <span class="before_price">판매가 : <span class="txt_num">11,100</span>원</span>
+                                <strong class="txt_price"><span class="txt_num">11,000</span>원</strong>
+                            </td>
+                            <td>
+                                <div class="ctl_prod">
+                                    <input type="text" title="상품 수량" class="inp_num" value="9999">
+                                    <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                    <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="button" class="btn_type1">담기</button>
+                                <button type="button" class="btn_type10">보기</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!-- 리스트 있을때[e] -->
+
+                    <!-- 리스트 없을때[s] -->
+                    <tbody>
+                        <tr class="data_none">
+                            <td colspan="8"><strong class="tit_none"><span class="ico_comm"></span>조회된 상품 내역이 없습니다.</strong></td>
+                        </tr>
+                    </tbody>
+                    <!-- 리스트 있을때[e] -->
+                </table>
+                <button type="button" class="btn_more">더보기<span class="ico_arr"></span></button>
+                <div class="box_result">
+                    <div class="result_tit">
+                        <strong class="tit_sum">선택품목 <span class="txt_price"><span class="txt_num">13</span>개</span></strong>
+                        <span class="ico_comm ico_equals">=</span>
+                        <strong class="tit_total">선택금액합계 <span class="txt_price"><span class="txt_num">11,265,000</span>원</span></strong>
+                    </div>
+                    <div class="result_btn">
+                        <button type="button" class="btn_type1">장바구니 담기</button>
+                        <button type="button" class="btn_type2">장바구니 보기</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 상품 리스트[e] -->
+
+            <!-- 2021-07-13 cart_box 추가 -->
+            <!--#include virtual="/publish/shop/renewal/html/include/cart_box.html" -->
+        </div>
+        <!-- 우측 퀵메뉴[s] -->
+        <!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+        <!-- 우측 퀵메뉴[e] -->
+    </section>
+    <!-- container [e] -->
+
+    <!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+    <!-- footer [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+    <!-- footer [e] -->
+
+
+    <!-- 상품 상세 팝업 : 공통 [s] 2020-04-06 추가 -->
+    <div id="popProdDetail" style="display:none">
+        <div class="pop_layer pop_prod" style="width:646px">
+            <strong class="tit_popup">상품 상세보기</strong>
+            <div class="pop_wrap">
+                <div class="page_location">의약외상품 <span class="emph_color">&gt;</span> 유소아용품 <span class="emph_color">&gt;</span> <strong> 토마스와친구들 에디슨젓가락 케이스세트(오른손용/제임스)</strong></div>
+                <div class="box_info">
+                    <strong class="tit_prod">토마스와친구들 에디슨젓가락 케이스세트(오른손용/제임스)</strong>
+                    <div class="thumb_prod">
+                        <a href="#none" class="link_expand ">
+                            <span class="wrap_thumb"><img src="http://img.shop.co.kr/upload/product/SELLER/201202/417874_01_L.jpg" alt=""></span>
+                            <!--<span class="wrap_thumb"><img src="../../images/cart/img_thumb_s.gif" alt=""></span> 이미지 없을 때 -->
+                        </a>
+                        <a href="#none" class="link_expand link_expand2">이미지 확대 <span class="ico_comm ico_expand"></span></a>
+                    </div>
+                    <div class="info_prod">
+                        <ul class="list_info">
+                            <li><strong class="tit_info">상품코드</strong><span class="txt_info">SBUC0080N</span></li>
+                            <li><strong class="tit_info">제조사</strong><span class="txt_info">대웅제약</span></li>
+                            <li><strong class="tit_info">보험코드</strong><span class="txt_info">0000000000</span></li>
+                            <li><strong class="tit_info">원산지</strong><span class="txt_info">대한민국</span></li>
+                            <li><strong class="tit_info">규격</strong><span class="txt_info">300 mg</span></li>
+                            <li><strong class="tit_info">기타</strong><span class="txt_info">0</span></li>
+                            <li><strong class="tit_info">단위</strong><span class="txt_info">60C</span></li>
+                        </ul>
+                        <ul class="list_info list_price">
+                            <li><strong class="tit_price">판매가</strong> <strong class="txt_num">99,921,950</strong> 원</li>
+                            <li><strong class="tit_info">비용할인</strong><span class="txt_info"><strong class="emph_color">30%</strong> : 999,600원</span></li>
+                            <li><strong class="tit_info">제휴카드 적립 1%</strong><span class="txt_info">70000점</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <strong class="tit_detail">상품 상세설명</strong>
+                <div class="box_detail">
+                    <p style="margin: 0px">제품명: NEW 시크릿 쥬쥬 맛있는 키즈비타민 세트(복숭아/건강기능식품)</p><br>
+                    <p style="margin: 0px">규격: 1,400mg*40정* 8EA</p><br>
+                    <p style="margin: 0px">원재료및 함량: 비타민C,아세로라 추출분말,비타민C,아세로라 추출분말,비타민C,아세로라 추출분말,비타민C,아세로라 추출분말,비타민C,아세로라 추출분말,비타민C,아세로라 추출분말,정제포도당,무수결정포도당,자일리톨,식물성크림혼합분말,합성향료,(복숭아향)복숭아농축액분말,구연산,스테아린산마그네슘,혼합유산균,효소처리 스테비아,초유분말,과일혼합분말,원재료및 함량: 비타민C,아세로라 추출분말,정제포도당,무수결정포도당,자일리톨,식물성크림혼합분말,합성향료,(복숭아향)복숭아농축액분말,구연산,스테아린산마그네슘,혼합유산균,효소처리 스테비아,초유분말,과일혼합분말,원재료및 함량: 비타민C,아세로라 추출분말,정제포도당,무수결정포도당,자일리톨,식물성크림혼합분말,합성향료,(복숭아향)복숭아농축액분말,구연산,스테아린산마그네슘,혼합유산균,효소처리 스테비아,초유분말,과일혼합분말,원재료및 함량: 비타민C,아세로라 추출분말,정제포도당,무수결정포도당,자일리톨,식물성크림혼합분말,합성향료,(복숭아향)복숭아농축액분말,구연산,스테아린산마그네슘,혼합유산균,효소처리 스테비아,초유분말,과일혼합분말,원재료및 함량: 비타민C,아세로라 추출분말,정제포도당,무수결정포도당,자일리톨,식물성크림혼합분말,합성향료,(복숭아향)복숭아농축액분말,구연산,스테아린산마그네슘,혼합유산균,효소처리 스테비아,초유분말,과일혼합분말,</p>
+                    <p style="margin: 0px">판토텐산칼슘,니코틴산아미드,비타민B1염산염,비타민B2,비타민B6염산염</p>
+                </div>
+                <div class="btn_wrap">
+                    <button type="button" class="btn_type1 btn_cancel">닫기</button>
+                </div>
+            </div>
+            <button type="button" class="btn_comm btn_close">닫기</button>
+        </div>
+    </div>
+    <!-- 상품 상세 팝업 : 공통 [e] 2020-04-06 추가 -->
+
+    <!-- 상품 이미지 확대 팝업 : 공통 [s] 2020-04-06 추가 -->
+    <div id="popProdExpand" style="display:none">
+        <div class="pop_layer pop_prod" style="width:756px">
+            <strong class="tit_popup">상품 이미지 확대보기</strong>
+            <div class="pop_wrap">
+                <div class="page_location">의약외상품 <span class="emph_color">&gt;</span> 유소아용품 <span class="emph_color">&gt;</span> <strong> 토마스와친구들 에디슨젓가락 케이스세트(오른손용/제임스)</strong></div>
+                <div class="box_info">
+                    <strong class="tit_prod">토마스와친구들 에디슨젓가락 케이스세트(오른손용/제임스)</strong>
+                    <div class="wrap_thumb">
+                        <img src="http://img.shop.co.kr/upload/product/SELLER/201202/417874_01_L.jpg" alt="">
+                        <img src="http://img.shop.co.kr/upload/product/SELLER/201202/417874_02_L.jpg"  alt="">
+                    </div>
+                    <!-- 이미지 없는경우
+                    <div class="wrap_thumb">
+                        <img src="../../images/cart/img_thumb_b.gif" alt="">
+                    </div>
+                    -->
+                    <div class="info_prod">
+                        <ul class="list_info">
+                            <li><strong class="tit_info">상품코드</strong><span class="txt_info">SBUC0080N</span></li>
+                            <li><strong class="tit_info">보험코드</strong><span class="txt_info">0000000000</span></li>
+                            <li><strong class="tit_info">규격</strong><span class="txt_info">300 mg</span></li>
+                            <li><strong class="tit_info">단위</strong><span class="txt_info">60C</span></li>
+                            <li><strong class="tit_info">제조사</strong><span class="txt_info">대웅제약</span></li>
+                        </ul>
+                        <ul class="list_thumb">
+                            <li class="on"><a href="#none"><img src="http://img.shop.co.kr/upload/product/SELLER/201202/417874_01_L.jpg" alt=""></a></li>
+                            <li><a href="#none"><img src="http://img.shop.co.kr/upload/product/SELLER/201202/417874_02_L.jpg" alt=""></a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p class="txt_caution"><span class="ico_comm ico_caution"></span>본 이미지는 실제 상품이미지와 다를 수 있습니다. 더샵 상품 이미지는 더샵 이외에서 사용할 수 없습니다.</p>
+                </div>
+                <div class="btn_wrap">
+                    <button type="button" class="btn_type1 btn_cancel">닫기</button>
+                </div>
+            </div>
+            <button type="button" class="btn_comm btn_close">닫기</button>
+        </div>
+    </div>
+    <!-- 상품 이미지 확대 팝업 : 공통 [e] 2020-04-06 추가 -->
+
+    <script type="text/javascript">
+        $(function(){
+            // 리스트 하단 fixed
+            shopUI.scrollFix();
+            /* 더보기 클릭시 스크롤 체크가 필요한 경우, ajax append 후에 shopUI.scrollCheck($(window).height()); */
+
+            // 정렬 선택버튼
+            $(".list_sort button").on("click",function () {
+                $(this).parent().addClass("on").siblings().removeClass("on")
+            });
+
+            // 특가 시간 (초만 움직이게)
+            setInterval(function(){
+                var today = new Date();
+                var secTime = today.getSeconds();
+                if (String(secTime).length <= 1){
+                    secTime = "0" + secTime;
+                    $(".time_seconds").text(secTime);
+                } else {
+                    $(".time_seconds").text(secTime);
+                }
+            },1000);
+
+            // 팝업 스크립트 2020-04-06 추가
+            function popHeight() {
+                var winHeight = $(window).height();
+                $(".pop_wrap").css("max-height", winHeight-53);
+            }
+            // 상품 상세 팝업
+            $("body").on("click", ".cont_special .link_prod", function(e) {
+                e.preventDefault();
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popProdDetail"), {
+                    closeClass: "btn_close",
+                    onOpen: function(){
+                        popHeight();
+                    }
+                });
+                // 모달레이어 close 이벤트 추가
+                $("body").on("click", "#popProdDetail .btn_cancel", function() {
+                    $("#popProdDetail .btn_close").click();
+                });
+            });
+            // 상품 이지미 확대보기 팝업
+            $("body").on("click", ".pop_prod .link_expand ", function(e) {
+                e.preventDefault();
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popProdExpand"), {
+                    closeClass: "btn_close",
+                    onOpen: function(){
+                        $("#popProdExpand .wrap_thumb img").each(function (index) {
+                            $(this).addClass("img_thumb"+index)
+                        });
+                        $(".list_thumb a").each(function (index) {
+                            $(this).on("mouseover", function () {
+                                $(this).parent().addClass("on").siblings().removeClass("on");
+                                $("#popProdExpand .wrap_thumb > .img_thumb"+[index]).css("display","block").siblings().css("display","none");
+                                $(this).on("click", function (e) {
+                                    e.preventDefault()
+                                })
+                            })
+                        })
+                    }
+                });
+                // 모달레이어 close 이벤트 추가
+                $("body").on("click", "#popProdExpand .btn_cancel", function() {
+                    $("#popProdExpand .btn_close").click();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

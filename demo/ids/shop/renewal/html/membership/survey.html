@@ -1,0 +1,750 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+    <!-- membership 전용 css 추가 -->
+	<link rel="stylesheet" href="../../css/themembership.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+    <section id="content" class="membership">
+        <div class="top_overview">
+            <div class="accordion_box">
+                <button type="button" class="accordion_header" aria-expanded="true">
+                    <span class="ico_membership ico_survey"></span>
+                    The 함께함, 특별함, 소중함 고객님을 위한 <strong>전지적 약사 시점</strong>
+                    <span class="ico_anchor"></span>
+                </button>
+                <div class="accordion_body">
+                    <ul>
+                        <li>TheSHOP은 약사님께서 응답하신 내용을 기준으로 보다 나은 서비스를 제공하기 위해서 계속해서 노력하겠습니다.</li>
+                        <li>시간을 내어 설문조사에 참여해주신 감사의 의미로 응답하신 약사님들께 <em>20,000마일리지</em>를 제공해드립니다.</li>
+                        <li>또한, 응답하지 않으신 약사님들께서도 약국에서 빈번하게 소모되는 약국 소모품을 최저가로 구매하실 수 있는 기회를 제공합니다.</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="status_box">
+                <!-- 2021-08-23 수정 -->
+                <li>
+                    <div class="row">
+                        <div class="label"><strong>홍길동</strong>님 <br>누적 설문 응답 수</div>
+                        <div class="number">36</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="label">전지적약사시점<br>분기획득 마일리지</div>
+                        <div class="number">62,036</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="label">사용가능한 <br>마일리지</div>
+                        <div class="number">10,060</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="survey">
+            <h2 class="title">N분기 <strong>설문조사</strong></h2>
+            <ul class="survey_list">
+                <li class="survey_box accordion_box">
+                    <button type="button" class="accordion_header" aria-expanded="false">
+                        <!-- 설문조사 정보 (제목 및 날짜) -->
+                        <h3 class="title">이번 리뉴얼 결과는 어떠신가요?</h3>
+                        <ul class="summary">
+                            <li>응답기간 <span class="date">2021.00.00 - 2021.00.00</span></li>
+                            <li>설문문항 4개</li>
+                        </ul>
+                        <!-- 설문조사 상태 (설문응답 중) -->
+                        <div class="state">
+                            <span class="ico_membership ico_survey_em"></span>
+                            설문응답
+                        </div>
+                    </button>
+                    <div class="accordion_body">
+                        <!-- 설문조사 설명란 -->
+                        <div class="description">
+                            <p>안녕하세요. <br>항상 theSHOP을 이용해 주셔서 감사합니다.<br><br>"진료과별 상품 기획전"과 관련된 간단한 설문을 진행하고자 하오니, 약사님의 소중한 의견 부탁 드리겠습니다.<br>설문은 6월 15일부터 21일까지 일주일 동안 진행되며, 기획전 내 구매 여부와 상관없이 모두 참여 가능하시니 많은 참여 부탁 드립니다.<br><br>※ 참여해주신 모든 약사님들께 부외품 3,000원 쿠폰을 100% 지급해드립니다!<br>(부외품 쿠폰은 6월 22일부터 일괄 지급 됩니다.)</p>
+                        </div>
+                        <!-- 설문조사 폼 -->
+                        <form class="survey_form">
+                            <!-- 2021-08-27 fieldset / legend로 폼 그루핑 변경 -->
+                            <fieldset>
+                                <legend class="survey_title">아래 내용에 대한 설문 타이틀이 들어갑니다.</legend>
+                                <ul class="question_list">
+                                    <li>
+                                        <p class="question">이번 리뉴얼 결과는 어떠신가요?</p>
+                                        <ul class="field_list inline">
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    매우 부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    보통
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    긍정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    매우 긍정
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p class="question">이번 리뉴얼 결과는 어떠신가요?</p>
+                                        <ul class="field_list inline">
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    매우 부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    보통
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    긍정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    매우 긍정
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p class="question">이번 리뉴얼 결과의 어떤점이 편리하다고 생각하시나요?</p>
+                                        <ul class="field_list">
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    그들은 새 있는 그들은 소리다
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    얼음과 것은 고행을 길을 부패를 장식하는 새가 피다
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    피어나기 그것을 열락의 방지하는 꽃이 기쁘며, 무엇이 것이다
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    기타
+                                                    <input type="text" name="radioText" placeholder="구체적으로 적어주세요">
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <label class="question" for="SurveyTextarea">주관식 30바이트 투 100바이트</label>
+                                        <ul class="field_list">
+                                            <li>
+                                                <textarea name="" id="SurveyTextarea"></textarea>
+                                                <p class="limit_byte">최소 :30 (Byte), 최대 : <input type="text" name="queAnswerLimitSize_1_3" id="queAnswerLimitSize_1_3" value="0" size="6" class="input" disabled="disabled"> / 100 (Byte)</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="survey_title">아래 내용에 대한 설문 타이틀이 들어갑니다. 2</legend>
+                                <ul class="question_list">
+                                    <li>
+                                        <p class="question">이번 리뉴얼 결과는 어떠신가요?</p>
+                                        <ul class="field_list inline">
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    매우 부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    보통
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    긍정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    매우 긍정
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p class="question">이번 리뉴얼 결과는 어떠신가요?</p>
+                                        <ul class="field_list inline">
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    매우 부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    보통
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    긍정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    매우 긍정
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p class="question">이번 리뉴얼 결과의 어떤점이 편리하다고 생각하시나요?</p>
+                                        <ul class="field_list">
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    그들은 새 있는 그들은 소리다
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    얼음과 것은 고행을 길을 부패를 장식하는 새가 피다
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    피어나기 그것을 열락의 방지하는 꽃이 기쁘며, 무엇이 것이다
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    기타
+                                                    <input type="text" name="radioText" placeholder="구체적으로 적어주세요">
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <label class="question" for="SurveyTextarea">주관식 30바이트 투 100바이트</label>
+                                        <ul class="field_list">
+                                            <li>
+                                                <textarea name="" id="SurveyTextarea"></textarea>
+                                                <p class="limit_byte">최소 :30 (Byte), 최대 : <input type="text" name="queAnswerLimitSize_1_3" id="queAnswerLimitSize_1_3" value="0" size="6" class="input" disabled="disabled"> / 100 (Byte)</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <button type="submit" class="submit">제출하기</button>
+                        </form>
+                    </div>
+                </li>
+                <li class="survey_box accordion_box">
+                    <button type="button" class="accordion_header" aria-expanded="false">
+                        <!-- 설문조사 정보 (제목 및 날짜) -->
+                        <h3 class="title">이번 리뉴얼 결과는 어떠신가요?</h3>
+                        <ul class="summary">
+                            <li>응답기간 <span class="date">2021.00.00 - 2021.00.00</span></li>
+                            <li>설문문항 4개</li>
+                        </ul>
+                        <!-- 설문조사 상태 (설문응답 중) -->
+                        <div class="state">
+                            <span class="ico_membership ico_survey_em"></span>
+                            설문응답
+                        </div>
+                    </button>
+                    <div class="accordion_body">
+                        <!-- 설문조사 설명란 -->
+                        <div class="description">
+                            <p>안녕하세요. <br>항상 theSHOP을 이용해 주셔서 감사합니다.<br><br>"진료과별 상품 기획전"과 관련된 간단한 설문을 진행하고자 하오니, 약사님의 소중한 의견 부탁 드리겠습니다.<br>설문은 6월 15일부터 21일까지 일주일 동안 진행되며, 기획전 내 구매 여부와 상관없이 모두 참여 가능하시니 많은 참여 부탁 드립니다.<br><br>※ 참여해주신 모든 약사님들께 부외품 3,000원 쿠폰을 100% 지급해드립니다!<br>(부외품 쿠폰은 6월 22일부터 일괄 지급 됩니다.)</p>
+                        </div>
+                        <!-- 설문조사 폼 -->
+                        <form class="survey_form">
+                            <!-- 2021-08-27 fieldset / legend로 폼 그루핑 변경 -->
+                            <fieldset>
+                                <legend class="survey_title">아래 내용에 대한 설문 타이틀이 들어갑니다.</legend>
+                                <ul class="question_list">
+                                    <li>
+                                        <p class="question">이번 리뉴얼 결과는 어떠신가요?</p>
+                                        <ul class="field_list inline">
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    매우 부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    보통
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    긍정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    매우 긍정
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p class="question">이번 리뉴얼 결과는 어떠신가요?</p>
+                                        <ul class="field_list inline">
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    매우 부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    보통
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    긍정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    매우 긍정
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p class="question">이번 리뉴얼 결과의 어떤점이 편리하다고 생각하시나요?</p>
+                                        <ul class="field_list">
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    그들은 새 있는 그들은 소리다
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    얼음과 것은 고행을 길을 부패를 장식하는 새가 피다
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    피어나기 그것을 열락의 방지하는 꽃이 기쁘며, 무엇이 것이다
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    기타
+                                                    <input type="text" name="radioText" placeholder="구체적으로 적어주세요">
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <label class="question" for="SurveyTextarea">주관식 30바이트 투 100바이트</label>
+                                        <ul class="field_list">
+                                            <li>
+                                                <textarea name="" id="SurveyTextarea"></textarea>
+                                                <p class="limit_byte">최소 :30 (Byte), 최대 : <input type="text" name="queAnswerLimitSize_1_3" id="queAnswerLimitSize_1_3" value="0" size="6" class="input" disabled="disabled"> / 100 (Byte)</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="survey_title">아래 내용에 대한 설문 타이틀이 들어갑니다. 2</legend>
+                                <ul class="question_list">
+                                    <li>
+                                        <p class="question">이번 리뉴얼 결과는 어떠신가요?</p>
+                                        <ul class="field_list inline">
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    매우 부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    보통
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    긍정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio1">
+                                                    매우 긍정
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p class="question">이번 리뉴얼 결과는 어떠신가요?</p>
+                                        <ul class="field_list inline">
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    매우 부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    부정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    보통
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    긍정
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="checkbox" name="checkbox1">
+                                                    매우 긍정
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p class="question">이번 리뉴얼 결과의 어떤점이 편리하다고 생각하시나요?</p>
+                                        <ul class="field_list">
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    그들은 새 있는 그들은 소리다
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    얼음과 것은 고행을 길을 부패를 장식하는 새가 피다
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    피어나기 그것을 열락의 방지하는 꽃이 기쁘며, 무엇이 것이다
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="field">
+                                                    <input type="radio" name="radio2">
+                                                    기타
+                                                    <input type="text" name="radioText" placeholder="구체적으로 적어주세요">
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <label class="question" for="SurveyTextarea">주관식 30바이트 투 100바이트</label>
+                                        <ul class="field_list">
+                                            <li>
+                                                <textarea name="" id="SurveyTextarea"></textarea>
+                                                <p class="limit_byte">최소 :30 (Byte), 최대 : <input type="text" name="queAnswerLimitSize_1_3" id="queAnswerLimitSize_1_3" value="0" size="6" class="input" disabled="disabled"> / 100 (Byte)</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <button type="submit" class="submit">제출하기</button>
+                        </form>
+                    </div>
+                </li>
+                <li class="survey_box">
+                    <!-- 설문조사 종료 / 응모완료된 경우 -->
+                    <div class="accordion_header">
+                        <!-- 설문조사 정보 (제목 및 날짜) -->
+                        <h3 class="title">어드민에서 설정한 설문조사 제목이 들어갑니다.</h3>
+                        <ul class="summary">
+                            <li>응답기간 <span class="date">2021.00.00 - 2021.00.00</span></li>
+                            <li>설문문항 2개</li>
+                        </ul>
+                        <!-- 설문조사 상태 (설문응답 중) -->
+                        <div class="state disabled">
+                            응답완료
+                        </div>
+                    </div>
+                </li>
+                <li class="survey_box">
+                    <!-- 설문조사 종료 / 응모완료된 경우 -->
+                    <div class="accordion_header">
+                        <!-- 설문조사 정보 (제목 및 날짜) -->
+                        <h3 class="title">어드민에서 설정한 설문조사 제목이 들어갑니다.</h3>
+                        <ul class="summary">
+                            <li>응답기간 <span class="date">2021.00.00 - 2021.00.00</span></li>
+                            <li>설문문항 2개</li>
+                        </ul>
+                        <!-- 설문조사 상태 (설문응답 중) -->
+                        <div class="state disabled">
+                            응답완료
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="products">
+            <h2 class="title">최저가 소모품 모아보기</h2>
+            <label class="search_box">
+                <input type="text" name="" placeholder="검색할 품목을 입력하세요.">
+                <span class="ico_membership ico_search"></span>
+            </label>
+
+            <!-- 2021-09-07 상품 없는 경우 -->
+            <div class="empty">상품이 존재하지 않습니다.</div>
+
+            <ul class="product_list">
+                <li class="product_box">
+                    <a href="#" class="thumbnails">
+                        <img src="https://via.placeholder.com/120/dddddd/808080" alt="">
+                    </a>
+                    <div class="summary">
+                        <a href="#" class="name">긴마개 안말랑이투약병(PE) - <em>멤버십전용</em></a>
+                        <p class="ea">12cc  100EA</p>
+                        <p class="price">11,693원 <span class="discount">시중가대비 34%</span></p>
+                        <!-- 2021-09-07 품절 추가 / 클래스 변경 -->
+                        <p class="utils">
+                            <span class="btn_type4 btn_soldout">품절</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="product_box">
+                    <a href="#" class="thumbnails">
+                        <img src="https://via.placeholder.com/120/dddddd/808080" alt="">
+                    </a>
+                    <div class="summary">
+                        <a href="#" class="name">긴마개 안말랑이투약병(PE) - <em>멤버십전용</em></a>
+                        <p class="ea">12cc  100EA</p>
+                        <p class="price">11,693원 <span class="discount">시중가대비 34%</span></p>
+                        <!-- 2021-09-07 클래스 및 구조 변경 -->
+                        <div class="utils">
+                            <div class="stock">재고: <strong>99,999</strong>개</div>
+                            <div class="ctl_prod">
+                                <input type="text" title="상품 수량" class="inp_num" value="1">
+                                <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                            </div>
+                            <a href="#" class="btn_type4">담기</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_box">
+                    <a href="#" class="thumbnails">
+                        <img src="https://via.placeholder.com/120/dddddd/808080" alt="">
+                    </a>
+                    <div class="summary">
+                        <a href="#" class="name">긴마개 안말랑이투약병(PE) - <em>멤버십전용</em></a>
+                        <p class="ea">12cc  100EA</p>
+                        <p class="price">11,693원 <span class="discount">시중가대비 34%</span></p>
+                        <!-- 2021-09-07 클래스 및 구조 변경 -->
+                        <div class="utils">
+                            <div class="stock">재고: <strong>99,999</strong>개</div>
+                            <div class="ctl_prod">
+                                <input type="text" title="상품 수량" class="inp_num" value="1">
+                                <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                            </div>
+                            <a href="#" class="btn_type4">담기</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_box">
+                    <a href="#" class="thumbnails">
+                        <img src="https://via.placeholder.com/120/dddddd/808080" alt="">
+                    </a>
+                    <div class="summary">
+                        <a href="#" class="name">긴마개 안말랑이투약병(PE) - <em>멤버십전용</em></a>
+                        <p class="ea">12cc  100EA</p>
+                        <p class="price">11,693원 <span class="discount">시중가대비 34%</span></p>
+                        <!-- 2021-09-07 클래스 및 구조 변경 -->
+                        <div class="utils">
+                            <div class="stock">재고: <strong>99,999</strong>개</div>
+                            <div class="ctl_prod">
+                                <input type="text" title="상품 수량" class="inp_num" value="1">
+                                <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                            </div>
+                            <a href="#" class="btn_type4">담기</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_box">
+                    <a href="#" class="thumbnails">
+                        <img src="https://via.placeholder.com/120/dddddd/808080" alt="">
+                    </a>
+                    <div class="summary">
+                        <a href="#" class="name">긴마개 안말랑이투약병(PE) - <em>멤버십전용</em></a>
+                        <p class="ea">12cc  100EA</p>
+                        <p class="price">11,693원 <span class="discount">시중가대비 34%</span></p>
+                        <!-- 2021-09-07 클래스 및 구조 변경 -->
+                        <div class="utils">
+                            <div class="stock">재고: <strong>99,999</strong>개</div>
+                            <div class="ctl_prod">
+                                <input type="text" title="상품 수량" class="inp_num" value="1">
+                                <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                            </div>
+                            <a href="#" class="btn_type4">담기</a>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+            
+            <div class="more">
+                <button type="button">더보기<span class="ico_plus"></span></button>
+            </div>
+            <!-- 제품 리스트 -->
+        </div>
+		<!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+
+        <script>
+            // 2021-09-07 수정
+            $('.accordion_box').on({
+                click:function(e){
+                    if($(e.delegateTarget).is('li')){
+                        $(e.delegateTarget).siblings().find('.accordion_body').removeAttr('style');
+                        $(e.delegateTarget).siblings().find('.accordion_header').attr('aria-expanded',false);
+
+                        var currentTop = $(e.currentTarget).offset().top,
+                            scrollTop = $('html, body').scrollTop();
+                        if(currentTop < scrollTop) {
+                            $('html, body').animate({
+                                scrollTop: currentTop - 38
+                            });
+                        };
+                    }
+                    
+                    $(e.currentTarget).next().slideToggle(function(){
+                        $(e.currentTarget).attr('aria-expanded',function(i, a){
+                            return a == 'true' ? false : true;
+                        });
+                    });
+                }
+            }, 'button.accordion_header');
+        </script>
+	</section>
+    <!--#include virtual="/publish/shop/renewal/html/membership/_survey_popup.html" -->
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+</body>
+</html>

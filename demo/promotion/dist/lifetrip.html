@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html class="ie7 no-js" lang="ko-KR"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8 no-js" lang="ko-KR"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9 no-js" lang="ko-KR"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="ko"> <!--<![endif]-->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>문서 제목</title>
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/Include/css/Modetour/common.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/Event/Plan/Css/PC/promotion.css" />
+	<script src="https://js.modetour.com/jquery/ver/1.8.3.min.js"></script>
+	<script src="https://js.modetour.com/jquery/plugin/easing.js"></script>
+
+<!-- [시작]: 여기서부터시작 -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+<style type="text/css">
+  .event_wrap {position: relative; min-width:800px; margin:0 auto; }
+  .event_wrap img{vertical-align: middle;}
+  .event_wrap a{background: url('https://img.modetour.com/promotion/11024/empty.png');}
+  .event_wrap .main_slider{text-align: center;}
+  .event_wrap .main_slider .main_img1{background: url('https://img.modetour.com/promotion/10540/bg01.jpg') center 0 no-repeat;}
+  .event_wrap .main_slider .main_img2{background: url('https://img.modetour.com/promotion/10540/bg02.jpg') center 0 no-repeat;}
+  .event_wrap .main_slider .main_img3{background: url('https://img.modetour.com/promotion/10540/bg03.jpg') center 0 no-repeat;}
+
+  .event_wrap .cont .tit{padding-top: 80px; padding-bottom: 35px; text-align: center;}
+  .event_wrap .cont .swiper-container{position: relative; padding-bottom: 119px;}
+  .event_wrap .cont .swiper-slide{width: 385px; height: 290px;}
+  .event_wrap .cont .swiper-slide img{width: 100%;}
+  .event_wrap .cont .swiper-wrapper{height: auto;}
+
+  .event_wrap .cont .swiper-pagination{bottom: 47px;}
+  .event_wrap .cont .swiper-pagination .swiper-pagination-bullet{opacity: 1; border-radius: 0 0; background: url('https://img.modetour.com/promotion/10540/pager.png') no-repeat; width: 18px; height: 18px;}
+  .event_wrap .cont .swiper-pagination .swiper-pagination-bullet-active{background-position-x: -18px;}
+  .event_wrap .con1{background: url('https://img.modetour.com/promotion/10540/con1_bg.jpg') center 0 no-repeat;}
+  .event_wrap .con2{background: url('https://img.modetour.com/promotion/10540/con2_bg.jpg') center 0 no-repeat;}
+  .event_wrap .con3{background: url('https://img.modetour.com/promotion/10540/con3_bg.jpg') center 0 no-repeat;}
+  .event_wrap .con4{background: url('https://img.modetour.com/promotion/10540/con4_bg.jpg') center 0 no-repeat;}
+  .event_wrap .con5{background: url('https://img.modetour.com/promotion/10540/con5_bg.jpg') center 0 no-repeat;}
+</style>
+<script type="text/javascript">
+  (function ($) {
+    $(document).ready(function () {
+      var swiper = new Swiper(".main_slider", {
+          slidesPerView: 1,
+          effect: "fade",
+          speed: 1000,
+          loop: 'ture',
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+        });
+        $(window).load(function () {
+            $('.main_slider').css('visibility', 'visible').animate({ opacity: 1 });
+        });
+      var swiper = new Swiper('.cont .swiper-container', {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+						el: '.swiper-pagination',
+						clickable: true,
+				},
+      });
+      setTimeout(function(){ swiper.params.autoplay = 200; swiper.startAutoplay(); }, 200);
+
+    });
+  })(jQuery);
+</script>
+</head>
+<div class="eventContentWrapper">
+  <!-- html 코딩 파일을 추가합니다.
+        .eventContentWrapper class는 임의로 정의 해둔 내용입니다.
+    -->
+    <div class="event_wrap">
+        <div class="swiper-container main_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide main_img1"><img src="https://img.modetour.com/promotion/10540/bg_in01.jpg" alt=""></div>
+            <div class="swiper-slide main_img2"><img src="https://img.modetour.com/promotion/10540/bg_in02.jpg" alt=""></div>
+            <div class="swiper-slide main_img3"><img src="https://img.modetour.com/promotion/10540/bg_in03.jpg" alt=""></div>
+          </div>
+        </div>
+      <div class="cont con1">
+        <div class="tit"><img src="https://img.modetour.com/promotion/10540/con1_tit.png" alt=""></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con1_img1.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con1_img2.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con1_img3.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con1_img4.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con1_img5.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con1_img6.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con1_img7.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con1_img8.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con1_img9.png" alt=""></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+      </div>
+      <div class="cont con2">
+        <div class="tit"><img src="https://img.modetour.com/promotion/10540/con2_tit.png" alt=""></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con2_img1.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con2_img2.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con2_img3.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con2_img4.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con2_img5.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con2_img6.png" alt=""></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+      </div>
+      <div class="cont con3">
+        <div class="tit"><img src="https://img.modetour.com/promotion/10540/con3_tit.png" alt=""></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con3_img1.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con3_img2.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con3_img3.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con3_img4.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con3_img5.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con3_img6.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con3_img7.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con3_img8.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con3_img9.png" alt=""></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+      </div>
+      <div class="cont con4">
+        <div class="tit"><img src="https://img.modetour.com/promotion/10540/con4_tit.png" alt=""></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con4_img1.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con4_img2.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con4_img3.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con4_img4.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con4_img5.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con4_img6.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con4_img7.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con4_img8.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con4_img9.png" alt=""></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+      </div>
+      <div class="cont con5">
+        <div class="tit"><img src="https://img.modetour.com/promotion/10540/con5_tit.png" alt=""></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con5_img1.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con5_img2.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con5_img3.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con5_img4.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con5_img5.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con5_img6.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con5_img7.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con5_img8.png" alt=""></div>
+              <div class="swiper-slide"><img src="https://img.modetour.com/promotion/10540/con5_img9.png" alt=""></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+      </div>
+    </div>
+</div>
+<!-- [끝]: 여기까지 -->

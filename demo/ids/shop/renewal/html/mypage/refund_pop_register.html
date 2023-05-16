@@ -1,0 +1,393 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/mypage.css"><!-- 2018-06-18 추가 -->
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+	<section id="container">
+
+		<div id="content" class="cont_mypage">
+			<div id="snb">
+				<div id="mypage_snb">
+					<div class="myshop_info">
+						<p class="guest_name"><strong><font color="black">테스트선</font></strong><img src="http://img.shop.co.kr/images/renew/mypage/myinfo_txt.gif" align="absmiddle"></p>
+						<dl>
+							<dt>06월 구매요약</dt>
+							<dd class="none">구매횟수<strong>0건</strong></dd>
+							<dd>구매금액<strong>-110,000</strong></dd>
+						</dl>
+						<dl>
+							<dt>매출현황</dt>
+							<dd>[분기 매출현황]</dd>
+							<dd class="none style1">4월~06월 누적금액</dd>
+							<dd class="none style1"></dd>
+							<span style="color:#ff0000;width:130px;text-align:right">746,939원</span>
+							<dd>[전월 매출현황]</dd>
+							<dd class="none style1">05월 매출금액</dd>
+							<dd class="none style1"></dd>
+							<span style="color:#ff0000;width:130px;text-align:right">625,338원</span>
+						</dl>
+						<dl>
+							<dt>마이너스 잔고</dt>
+							<dd class="none">[대웅제약]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://img.shop.co.kr/images/renew/mypage/jango_bt.gif" style="cursor:pointer" onclick="openWindow('/popup/mypage/minusAmtTransferPop.do', 'transferWin', '490', '500');"></dd>
+							<dd><em>OTC</em><span id="spanOtc">-400,559</span></dd>
+							<dd><em>ETC</em><span id="spanEtc">-766,990</span></dd>
+							<dd><em>우루사</em><span id="spanFsm">-979,501</span></dd>
+							<dd class="none">[대웅바이오]&nbsp;&nbsp;&nbsp;<img src="http://img.shop.co.kr/images/renew/mypage/jango_bt.gif" style="cursor:pointer" onclick="openWindow('/popup/mypage/minusAmtTransferPop.do', 'transferWin', '490', '500');"></dd>
+							<dd><em>ETC</em><span id="spanEtcBio">-1,000</span></dd>
+							<dd class="none">[한올바이오파마]
+							</dd>
+						</dl>
+						<dl>
+							<dt>부외품</dt>
+							<dd class="none style1">전월 부외품 구매금액</dd>
+							<span style="color:#ff0000;width:130px;text-align:right">1,000원</span>
+							<dd class="none style1">당월 부외품 구매금액</dd>
+							<span style="color:#ff0000;width:130px;text-align:right">0원</span>
+							<span style="color:#ff0000;width:130px;text-align:right"><a href="#none" class="btn_grade"><img src="http://img.shop.co.kr/images/renew/mypage/grade_btn.gif" width="88" height="16" align="absmiddle"></a></span>
+							<dd class="none style1">더샵마일리지</dd>
+							<span style="color:#ff0000;width:130px;text-align:right" id="leftTspMileage">412,532점</span>
+							<span style="color:#ff0000;width:130px;text-align:right">
+							<a href="/mypage/theshopMileage.do"><img src="http://img.shop.co.kr/images/renew/mypage/tspmileage/btn_mileage_go.gif" style="cursor:pointer"></a>
+							</span>
+						</dl>
+
+
+						<div id="gradeViewLayer" style="z-index:9999;left:170px; top:150px;width:500px;border:0px #000000 solid;background-color:#ffffff;position:absolute; display:none">
+							<table width="400px" border="0" cellpadding="0" cellspacing="0">
+								<tbody><tr>
+									<td>
+
+										<img src="http://img.shop.co.kr/images/renew/mypage/grade_desc_3.png">
+
+									</td>
+								</tr>
+								<tr>
+									<td align="center"><a href="#none"><img src="http://img.shop.co.kr/images/renew/mypage/grade_close.gif"></a></td>
+								</tr>
+								</tbody></table>
+						</div>
+
+
+
+						<p><img src="http://img.shop.co.kr/images/renew/mypage/bg_mypagebox_bottom.gif" alt="" title=""></p>
+					</div>
+					<div class="myshop_box">
+						<h2 class="first"><img src="http://img.shop.co.kr/images/renew/mypage/tit_return0.gif" alt="나의쇼핑내역" title=""></h2>
+						<ul>
+							<li><a href="/mypage/tradeOrderList.do">주문조회</a></li>
+							<li><a href="/mypage/tradeDlvryList.do">배송조회</a></li>
+							<li><a href="/mypage/tradeCancelList.do">주문취소내역</a></li>
+							<li><a href="/mypage/tradeOrderHistList.do">공급사별 주문조회</a></li>
+							<li><a href="/mypage/payOrderList.do">결제수단별 주문내역</a></li>
+							<li><a href="/mypage/goodsGpOrderList.do">공구신청내역</a></li>
+							<li><a href="/mypage/orderReBuyList.do">주문상품재구매</a></li>
+							<li><a href="javascript:sapCheckAlert(1)">대웅제약 거래원장</a></li>
+							<li><a href="javascript:sapCheckAlert(3)">대웅바이오거래원장</a></li>
+							<li><a href="/mypage/eTaxBillList.do">전자세금계산서</a></li>
+							<li><a href="/mypage/dwEtaxBillList.do">대웅제약 세금계산서</a></li>
+							<li><a href="/mypage/integrationTaxBillList.do">부외품 세금계산서</a></li>
+						</ul>
+						<h2><img src="http://img.shop.co.kr/images/renew/mypage/tit_return1.gif" alt="나의반품내역" title=""></h2>
+						<ul>
+							<li><a href="javascript:sapCheckAlert(2)">대웅제약 반품</a></li>
+							<li><a href="javascript:sapCheckAlert(4)">대웅바이오 반품</a></li>
+							<li><a href="javascript:sapCheckAlert(5)">한올바이오파마 반품</a></li>
+							<li><a href="#" onclick="goSellerReturn();return false;">도매/부외품 반품</a></li>
+						</ul>
+						<h2><img src="http://img.shop.co.kr/images/renew/mypage/left_title_medical.gif" alt="약가인하" title=""></h2>
+						<ul>
+							<!-- <li><a href="/mypage/medifeecut/dw/goodsReturnRequest.do">대웅제약 약가인하</a></li> -->
+							<!-- <li><a href="/mypage/medifeecut/bio/goodsReturnRequest.do">대웅바이오 약가인하</a></li> -->
+							<li><a href="/mypage/medifeecut/mediFeeCutGoods.do">약가인하</a></li>
+						</ul>
+						<h2><img src="http://img.shop.co.kr/images/renew/mypage/tit_return2.gif" alt="나의혜택관리" title=""></h2>
+						<ul>
+							<li><a href="/mypage/reserveAmt/reserveAmtDetailList.do">예치금</a></li>
+							<li><a href="/mypage/theshopMileage.do">더샵마일리지</a></li>
+							<li><a href="/mypage/mileage/mileageList.do">마일리지</a></li>
+							<li><a href="/mypage/coupon/couponList.do">쿠폰함</a></li>
+						</ul>
+						<h2><img src="http://img.shop.co.kr/images/renew/mypage/tit_return3.gif" alt="나의관심내역" title=""></h2>
+						<ul>
+							<li><a href="/mypage/monoGoodsList.do?dwYn=Y">대웅거점상품</a></li>
+							<li><a href="/mypage/monoGoodsList.do?dwYn=N">도매거점상품</a></li>
+							<li><a href="/mypage/userwishgoods/userWishGoodsList.do">관심상품</a></li>
+							<li><a href="/mypage/preorder/preOrderList.do">주문예약</a></li>
+							<li><a href="/mypage/repurchaseMain.do">즐겨찾기 상품꾸러미</a></li>
+						</ul>
+						<h2><img src="http://img.shop.co.kr/images/renew/mypage/tit_return4.gif" alt="나의정보관리" title=""></h2>
+						<ul>
+							<li><a href="#" onclick="goCustomPage('/bbs/customer/vocGetForm.do');">상담정보</a></li>
+							<li><a href="#" onclick="goCustomPage('/mypage/bbs/customer/winEventList.do');">이벤트 당첨 내역</a></li>
+							<li><a href="/mypage/member/modify.do">회원정보수정</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Banner 시작 -->
+				<ul class="left_banner">
+					<li><img src="http://img.shop.co.kr/images/renew/shop/products_banner0.jpg" alt="더샵 친절 고객센터" title=""></li>
+					<!--	<li><a href="/bbs/customer/qaFormNew.do" onfocus="blur()"><img src="http://img.shop.co.kr/images/renew/shop/products_banner2.jpg" alt="고객문의 Q&A" title="" /></a></li>-->
+					<li><a href="/bbs/customer/vocForm.do?bbsCd=61&amp;prvCd=900" onfocus="blur()"><img src="http://img.shop.co.kr/images/renew/shop/products_banner2.jpg" alt="고객문의 Q&amp;A" title=""></a></li>
+					<li><a href="/bbs/customer/faqList.do?prvCd=100" onfocus="blur()"><img src="http://img.shop.co.kr/images/renew/shop/products_banner3.jpg" alt="자주묻는질문FAQ" title=""></a></li>
+					<li><a href="/bbs/customer/popList.do" onfocus="blur()"><img src="http://img.shop.co.kr/images/renew/shop/products_banner4.jpg" alt="POP자료실" title=""></a></li>
+				</ul>
+				<!-- Banner 끝 -->
+			</div>
+			<div id="cnt">
+				<div class="cnt_box">
+					<div class="refund">
+						<div class="mypage_section">
+							<div class="wrap_tit">
+								<strong class="mypage_title">환불 신청관리</strong>
+							</div>
+							<div class="list_info_wrap">
+								<p class="top_txt">★ 예치금, 마이너스 잔고 환불 요청 시 아래 내용을 확인해주세요.</p>
+								<ul class="list_info">
+									<li><span class="ico_txt_num txt_num">1</span>더샵(대웅제약 외 관계사)과의 거래 종료 시 신청할 수 있습니다.</li>
+									<li><span class="ico_txt_num txt_num">2</span>환불 신청 전 조회된 예치금 및 마이너스 잔고는 실제 환불 금액과 다를 수 있습니다.</li>
+									<li><span class="ico_txt_num txt_num">3</span>예치금, 마이너스 잔고 환불은 해당 신청일 기준으로 익월 첫 번째 수요일에 입금됩니다(미정)
+										<br>ex) 2022년 4월 21일 신청 시 2022년 5월 4일(수) 입금</li>
+								</ul>
+							</div>
+						</div>
+						<div class="mypage_section">
+							<div class="wrap_tit">
+								<strong class="mypage_title">예치금 및 잔고현황</strong>
+							</div>
+							<table class="table_type1">
+								<caption>예치금 및 잔고현황</caption>
+								<colgroup>
+									<col width="25%">
+									<col width="25%">
+									<col width="25%">
+									<col width="25%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">공급사명</th>
+										<th scope="col">구분</th>
+										<th scope="col">현재금액</th>
+										<th scope="col">합계</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td rowspan="3"><strong>대웅제약</strong></td>
+										<td>ETC 잔고</td>
+										<td><strong>10,000원</strong></td>
+										<td rowspan="3"><strong class="total">20,000원</strong></td>
+									</tr>
+									<tr>
+										<td>OTC 잔고</td>
+										<td><strong>10,000원</strong></td>
+									</tr>
+									<tr>
+										<td>우루사 잔고</td>
+										<td><strong>-</strong></td>
+									</tr>
+									<tr>
+										<td><strong>대웅바이오</strong></td>
+										<td>ETC 잔고</td>
+										<td><strong>10,000원</strong></td>
+										<td><strong class="total">10,000원</strong></td>
+									</tr>
+									<tr>
+										<td><strong>더샵</strong></td>
+										<td>예치금</td>
+										<td><strong>10,000원</strong></td>
+										<td><strong class="total">10,000원</strong></td>
+									</tr>
+								</tbody>
+							</table>
+							<button type="submit" class="btn_type1 btn_apply">환불 신청</button>
+						</div>
+						<div class="mypage_section">
+							<div class="wrap_tit rfn_dtl">
+								<strong class="mypage_title">환불신청 내역</strong>
+								<p class="title_sub">리스트에 노출되는 처리일과 실 환불일은 서로 다르니, 참고 바랍니다.</p>
+							</div>
+							<table class="table_type2">
+								<caption>환불신청 내역</caption>
+								<colgroup>
+									<col width="18%">
+									<col width="17%">
+									<col width="17%">
+									<col width="19%">
+									<col width="8%">
+									<col width="*">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">환불신청일시</th>
+										<th scope="col">은행명</th>
+										<th scope="col">계좌번호</th>
+										<th scope="col">예금주</th>
+										<th scope="col">처리 상태</th>
+										<th scope="col">처리일</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2022-05-25 14:25</td>
+										<td>우리은행</td>
+										<td>0000-000-0000000</td>
+										<td>테스트선</td>
+										<td>신청</td>
+										<td>-</td>
+									</tr>
+									<tr class="bg_style">
+										<td>2022-05-25 14:25</td>
+										<td>하나은행</td>
+										<td>0000-000-0000000</td>
+										<td>약국-테스트선</td>
+										<td>신청</td>
+										<td>2022-05-25</td>
+									</tr>
+									<tr>
+										<td colspan="6" class="align_left"><i class="ico_bk"></i><strong>반려사유 : </strong>입력하신 계좌주명과 더샵회원명이 일치하지 않아 반려되었습니다. </td>
+									</tr>
+									<tr>
+										<td>2022-05-25 14:25</td>
+										<td>우리은행</td>
+										<td>0000-000-0000000</td>
+										<td>테스트선</td>
+										<td>신청</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td>2022-05-25 14:25</td>
+										<td>하나은행</td>
+										<td>0000-000-0000000</td>
+										<td>약국-테스트선</td>
+										<td>신청</td>
+										<td>2022-05-25</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="paging_nav">
+								<a href="#" class="btn_prev">이전</a>
+								<span>1</span>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<a href="#">5</a>
+								<a href="#" class="btn_next">다음</a>
+							</div>
+						</div>
+						<div class="rfn_dtl_none">
+							환불신청내역이 존재하지 않습니다.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+	</section>
+
+	<!-- 환불 계좌 등록 레이어 팝업 -->
+    <div id="popRfnAcn" class="pop_layer_wrap"> 
+		<div class="pop_layer" style="width:718px">
+			<div class="pop_wrap">
+				<p class="title">환불 계좌 등록</p>
+				<div class="pop_body">
+					<ul class="rfn_desc">
+						<li>· 환불 받을 정보를 입력합니다.</li>
+						<li>· 입력하신 정보는 입금계좌 확인 및 환불처리에만 사용되며, 다른 용도에는 사용되지 않습니다.</li>
+					</ul>
+					<div class="rfn_acn_info">
+						<div class="row">
+							<strong class="rfn_tit"><label for="bank_select">1. 은행을 선택해주세요.</label></strong>
+							<div class="f_right">
+								<select id="bank_select" class="rfn_box">
+									<option value="selected">은행 선택하기</option>
+									<option>우리은행</option>
+									<option>국민은행</option>
+									<option>신한은행</option>
+									<option>신한은행</option>
+									<option>신한은행</option>
+									<option>신한은행</option>
+									<option>신한은행</option>
+									<option>신한은행</option>
+									<option>신한은행</option>
+									<option>신한은행</option>
+									<option>신한은행</option>
+									<option>신한은행</option>
+									<option>신한은행</option>
+									<option>신한은행</option>
+									<option>신한은행</option>
+									<option>신한은행</option>
+									<option>신한은행</option>
+									<option>신한은행</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<strong class="rfn_tit"><label for="acc_input">2. 계좌번호를 입력해주세요.</label></strong>
+							<div class="f_right">
+								<input type="text" id="acc_input" class="rfn_box rfn_select" placeholder="-를 제외한 계좌번호를 입력해주세요.">
+							</div>
+						</div>
+						<div class="row">
+							<strong class="rfn_tit">3. 환불 받을 계좌의 명의 구분을 <br>선택해주세요.</strong>
+							<div class="f_right">
+								<button class="yellow">개인명의</button>
+								<button>사업자명의</button>
+							</div>
+						</div>
+						<div class="row">
+							<strong class="rfn_tit"><label for="deposit_nm">4. 예금주 성명을 입력하세요.</label></strong>
+							<div class="f_right">
+								<input type="text" id="deposit_nm" class="rfn_box" placeholder="통장에 기입된 예금주 성명과 동일하게 입력하세요.">
+							</div>
+						</div>
+						<div class="row">
+							<strong class="rfn_tit"><label for="birth">5. 생년월일 6자리를 입력해주세요.</label></strong>
+							<div class="f_right">
+								<input type="text" id="birth" class="rfn_box" placeholder="예) 800123">
+							</div>
+						</div>
+						<div class="row">
+							<strong class="rfn_tit"><label for="company_num">5. 사업자번호 10자리를 입력해주세요.</label></strong>
+							<div class="f_right">
+								<input type="text" id="company_num" class="rfn_box" placeholder="-를 제외한 계좌번호를 입력해주세요.">
+							</div>
+						</div>
+					</div>
+					<button class="btn_type1 btn_auth">계좌인증하기</button>
+					<button class="btn_type1 btn_auth disabled">계좌인증하기</button>
+				</div>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+
+    <script>
+        var modalLayer = shopUI.modalLayer($("#popRfnAcn"), {
+            closeClass: "btn_close"
+        });
+    </script>
+
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+
+
+</body>
+</html>

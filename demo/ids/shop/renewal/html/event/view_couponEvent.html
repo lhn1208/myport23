@@ -1,0 +1,125 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+<link rel="stylesheet" href="../../css/fonts.css">
+<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/layout.css">
+<link rel="stylesheet" href="../../css/content.css">
+</head>
+<body>
+<nav id="Index">
+    <a href="#content">본문 바로가기</a>
+    <a href="#header">주메뉴 바로가기</a>
+    <a href="#footer">사이트 정보 바로가기</a>
+</nav>
+<!-- header [s] -->
+<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+<!-- header [e] -->
+
+<!-- container [s] -->
+<section id="container">
+    <div id="content" class="cont_event">
+        <div class="sub_cont_head">
+            <h2 class="sub_tit">이벤트</h2>
+        </div>
+        <ul class="tab_menu tab_type3">
+            <li class="on"><a href="list.html" class="link_all"><span class="btn_comm"></span>전체 이벤트</a></li>
+            <li><a href="list.html">더샵 이벤트</a></li>
+            <li><a href="list.html">업체 이벤트</a></li>
+            <li><a href="list.html">종료된 이벤트</a></li>
+            <li><a href="list.html">이벤트 당첨자 발표</a></li>
+        </ul>
+        <div class="event_view">
+        <!-- 2020-09-04 쿠폰 이벤트 [s] -->
+            <link rel="stylesheet" href="../../css/spoqa_fonts.css">
+            <style>
+                .ev_coupon_wrap {position:relative;overflow:hidden;background:url(coupon_event/img_coupon_ev_bg_mid.jpg) repeat-y 0 0;}
+                .ev_coupon_wrap:before,
+                .ev_coupon_wrap:after {content:'';display:block;position:absolute;left:0;width:100%;}
+                .ev_coupon_wrap:before {top:0;background:url(coupon_event/img_coupon_ev_bg_top.jpg) no-repeat 0 0;height:294px;}
+                .ev_coupon_wrap:after {bottom:0;background:url(coupon_event/img_coupon_ev_bg_bottom.jpg) no-repeat 0 0;height:100px;}
+                .ev_coupon_wrap .ev_coupon_list {position:relative;z-index:1;margin-top:-20px;padding-bottom:110px;font-size:0;text-align:center;}
+                .ev_coupon_wrap .coupon {display:inline-block;width:406px;padding:40px 18px 0 18px;vertical-align:top;box-sizing:border-box;}
+                .ev_coupon_wrap .coupon_box {position:relative;box-sizing:border-box;width:370px;height:190px;padding:35px 0;background:url(coupon_event/ico_coupon.png) no-repeat 0 0;color:#ffffff;}
+                .ev_coupon_wrap .coupon_name {margin-bottom:10px;font-family:'NanumSquareB';font-size:20px;line-height:1;}
+                .ev_coupon_wrap .coupon_price {margin-bottom:16px;font-family:'SpoqaHanSans';font-size:44px;font-weight:bold;line-height:1;}
+                .ev_coupon_wrap .coupon_price .number {font-family:Verdana;font-size:55px;}
+                .ev_coupon_wrap .coupon_expire {font-family:'SpoqaHanSans';font-size:14px;letter-spacing:0.01em;}
+                .ev_coupon_wrap .badge {position:absolute;display:block;right:15px;top:-20px;width:89px;height:89px;box-sizing:border-box;padding-top:25px;background:url(coupon_event/ico_coupon.png) -300px -210px no-repeat;font-size:12px;font-family:'SpoqaHanSans';line-height:18px;}
+                .ev_coupon_wrap .badge strong {display:block;font-size:18px;}
+                .ev_coupon_wrap .ev_coupon_btn {display:block;width:286px;height:62px;margin:18px auto;background:url(coupon_event/ico_coupon.png) 0 -210px no-repeat;}
+                .ev_coupon_wrap .ev_description {font-family:'SpoqaHanSans';font-size:17px;color:#635649;line-height:27px;letter-spacing:0.01em;}
+            </style>
+            <div class="ev_coupon">
+                <div class="ev_keyvisual">
+                    <img src="coupon_event/img_coupon_ev.jpg" alt="선착순 할인쿠폰! 오늘만 다운로드 받을 수 있는 선착순 쿠폰! 쿠폰 받기를 클릭해주세요!">
+                </div>
+                <div class="ev_coupon_wrap">
+                    <ul class="ev_coupon_list">
+                        <li class="coupon">
+                            <div class="coupon_box">
+                                <div class="badge">한정<strong>100장</strong></div>
+                                <p class="coupon_name">부외품 할인쿠폰</p>
+                                <p class="coupon_price"><span class="number">3,000</span>원</p>
+                                <p class="coupon_expire">사용기간 - 2020.08.31까지</p>
+                            </div>
+                            <a href="#" class="ev_coupon_btn"><span class="screen_out">쿠폰받기</span></a>
+                            <p class="ev_description"><strong>3만원 이상</strong> 구매 시 사용 가능</p>
+                        </li>
+                        <li class="coupon">
+                            <div class="coupon_box">
+                                <p class="coupon_name">부외품 할인쿠폰</p>
+                                <p class="coupon_price"><span class="number">5,000</span>원</p>
+                                <p class="coupon_expire">사용기간 - 2020.08.31까지</p>
+                            </div>
+                            <a href="#" class="ev_coupon_btn"><span class="screen_out">쿠폰받기</span></a>
+                            <p class="ev_description">ID당 1장 발급<br><strong>5만원 이상</strong> 구매 시 사용 가능</p>
+                        </li>
+                        <li class="coupon">
+                            <div class="coupon_box">
+                                <p class="coupon_name">부외품 할인쿠폰</p>
+                                <p class="coupon_price"><span class="number">5,000</span>원</p>
+                                <p class="coupon_expire">사용기간 - 2020.08.31까지</p>
+                            </div>
+                            <a href="#" class="ev_coupon_btn"><span class="screen_out">쿠폰받기</span></a>
+                            <p class="ev_description">ID당 1장 발급<br><strong>5만원 이상</strong> 구매 시 사용 가능</p>
+                        </li>
+                        <li class="coupon">
+                            <div class="coupon_box">
+                                <div class="badge">한정<strong>8장</strong></div>
+                                <p class="coupon_name">부외품 할인쿠폰</p>
+                                <p class="coupon_price"><span class="number">13,000</span>원</p>
+                                <p class="coupon_expire">사용기간 - 2020.08.31까지</p>
+                            </div>
+                            <a href="#" class="ev_coupon_btn"><span class="screen_out">쿠폰받기</span></a>
+                            <p class="ev_description">ID당 1장 발급<br><strong>3만원 이상</strong> 구매 시 사용 가능</p>
+                        </li>
+                        <li class="coupon">
+                            <div class="coupon_box">
+                                <p class="coupon_name">부외품 할인쿠폰</p>
+                                <p class="coupon_price"><span class="number">5,000</span>원</p>
+                                <p class="coupon_expire">사용기간 - 2020.08.31까지</p>
+                            </div>
+                            <a href="#" class="ev_coupon_btn"><span class="screen_out">쿠폰받기</span></a>
+                            <p class="ev_description">ID당 1장 발급<br><strong>5만원 이상</strong> 구매 시 사용 가능</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <!-- 2020-09-04 쿠폰 이벤트 [e]] -->
+        </div>
+        <div class="btn_wrap">
+            <a href="customer.html" class="btn_type1">목록보기</a>
+        </div>
+    </div>
+    <!-- 우측 퀵메뉴[s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+    <!-- 우측 퀵메뉴[e] -->
+</section>
+<!-- container [e] -->
+
+<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+<!-- footer [s] -->
+<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+<!-- footer [e] -->
+</body>
+</html>

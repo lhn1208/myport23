@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<title>Modetour International</title>
+	<!--[if lt IE 9]>
+		<script language="javascript" type="text/javascript" src="../../js/html5shiv-printshiv.js"></script>
+	<![endif]-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="../../css/ch/style.css" rel="stylesheet">	
+	<script src="https://js.modetour.com/jquery/ver/1.8.3.min.js"></script>
+	<script src="../../js/ch/common.js"></script>
+	<script src="../../js/ch/sub.js"></script>
+	<script src="../../js/plugin/cycle2.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var Browser={chk:navigator.userAgent}
+			Browser={ie8 : Browser.chk.indexOf('MSIE 8.0') != -1, ie9 : Browser.chk.indexOf('MSIE 9.0') != -1}
+			 var  scT = 0, sctPrev = 0;
+		      function bgEvent(){
+		       	var $pattTop=$('.pattern_top');
+		       	var pattH;
+		       	var $sec;
+		        scT = $(window).scrollTop();		         
+		          $pattTop.each(function(index){
+		          	$sec=$(this).parents('section').offset().top;	
+		          	pattH=$sec + $pattTop.outerHeight();
+		          	var $moveT=$(this).css("marginTop").replace('px','');
+		              if(($(window).height() - ($(this).offset().top - $(window).scrollTop())) > 0 &&  scT < pattH ){
+		                  if(scT > sctPrev)
+		                  	$(this).each(function(){$(this).delay(200).css({"marginTop" :  $moveT*1-10});});
+		                  else if(scT < sctPrev)
+		                  	$(this).each(function(){$(this).delay(200).css({"marginTop" :  $moveT*1+10});});
+		              }
+		          });
+	      		sctPrev = scT;
+		     }	
+			$(window).scroll(function(){
+				if(!(Browser.ie8) && !(Browser.ie9)){
+					bgEvent();
+				}
+			});
+		})
+	</script>
+</head>
+<body>	
+<!--wrap-->
+<div class="wrap">
+	<header id="header">
+		
+		<!--navi-->
+		<nav class="navi" id="navi">
+			<header class="navi_header">
+				<a href="#" id="close" class=close><span class="blind">close</span></a>
+			</header>
+			<div class="navi_inner">
+				<ul class="menu">
+					<li><a href="../mice/mice_main.html">MICE</a>
+						<ul class="sub_menu">
+							<li><a href="../mice/meeting.html">国际会议</a></li>
+							<li><a href="../mice/insentour.html">奖励旅游</a></li>
+							<li><a href="../mice/event.html">活动</a></li>
+						</ul>
+					</li>
+					<li><a href="../theme/theme_main.html">主题旅游</a>
+						<ul class="sub_menu">
+							<li><a href="../theme/theme_medical.html">医疗观光</a></li>
+							<li><a href="../theme/theme_korea.html">韩流观光</a></li>
+							<li><a href="../theme/theme_wedding.html">婚纱旅游</a></li>
+						</ul>
+					</li>
+					<li class="pack_menu"><a href="../package/pack_main01.html">团体游</a>
+						<ul class="sub_menu">
+							<li><a  href="../package/pack_main01.html">一般团体游</a>
+								<ul class="sub_menu">
+									<li><a href="../package/basic_beauty.html">- K-Beauty5日游</a></li>
+									<li><a href="../package/basic_well.html">- 首尔健康之旅</a></li>
+									<li><a href="../package/basic.html">- 首尔 3晚4天 (普通型)</a></li>
+									<li><a href="../package/basic_luxury.html">- 首尔 3晚4天 (品质型)</a></li>
+									<li><a href="../package/basic_seoul_outside.html">- 尔近郊 4晚5天</a></li>
+									<li><a href="../package/basic_outside_seorak.html">- 首尔+江原道(雪岳山) 5晚6天</a></li>
+									<li><a href="../package/basic_jeju.html">- 济州 3晚4天</a></li>									
+									<li><a href="../package/basic_seoul_jeju.html">- 首尔+济州 4晚5天</a></li>
+									<li><a href="../package/basic_busan_kyeong.html">- 釜山+庆州 4晚5天</a></li>
+									<li><a href="../package/basic_busan_daegu.html">- 釜山+大邱 3晚4天</a></li>
+								</ul>
+							</li>
+							<li class="type"><a  href="../package/pack_main02.html">1DAY투어</a>
+								<ul class="sub_menu">
+									<li><a href="../package/day1_tour_a.html">- 首尔市区旅游 A</a></li>
+									<li><a href="../package/day1_tour_b.html">- 首尔市区旅游 B</a></li>
+									<li><a href="../package/day1_tour_c.html">- 首尔市区旅游 C</a></li>
+									<li><a href="../package/day1_tour_d.html">- 首尔市区旅游 D</a></li>
+									<li><a href="../package/day1_tour_namisland.html">- 南怡岛 1日游</a></li>
+									<li><a href="../package/day1_tour_night.html">- 首尔夜景游</a></li>
+									<li><a href="../package/day1_tour_food.html">- 饮食体验+ 鹭梁津水产市场</a></li>
+									<li><a href="../package/day1_tour_ski_jjim.html">- 滑雪+汗蒸幕体验 1日游</a></li>
+								</ul>
+							</li>
+							<li><a  href="../package/pack_main03.html">韩朝非军事区观光</a>
+								<ul class="sub_menu">
+									<li><a href="../package/dmz_tour01.html">- DMZ安保观光</a></li>
+									<li><a href="../package/dmz_tour02.html">- DMZ 安保观光 +坡州奥特莱斯</a></li>
+								</ul>
+							</li>
+							<li><a  href="../package/pack_main04.html">外国人主题观光</a>
+								<ul class="sub_menu">
+									<li><a href="../package/ex_theme_village.html">- 杨平外婆家村农村体验</a></li>
+									<li><a href="../package/ex_theme_ridding.html" class="font_letter_type01">- 济州幻想之路&amp;1100高地骑行游</a></li>
+									<li><a href="../package/ex_theme_cherrybloss.html">- 樱花小镇 (季节性）</a></li>
+									<li class="last"><a href="../package/ex_theme_ski.html">- 滑雪+冰雪王国华川山鳟鱼庆典<br>(季节性)</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="pack_menu"><a href="../corp/corp_intro.html">公司介绍</a>
+						<ul class="sub_menu depth2">
+							<li><a  href="../corp/corp_intro.html">公司信息</a></li>
+							<li><a  href="../corp/corp_history.html">公司沿革</a></li>
+							<li><a  href="../corp/ceo_greeting.html">代表理事致詞</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="navi_intro_area">
+					<ul class="navi_intro">
+						<li>
+							<a href="../history_event/history_event.html">
+								<p class="link_tit">Best of Best</p>
+								<div class="link_btn_area">
+									<button class="link_btn"></button>
+								</div>
+							</a>
+						</li>
+						<li><a href="../reserve/reserve_list.html"><p class="link_tit">门票预订</p>
+								<div class="link_btn_area">
+									<button class="link_btn"></button>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="inq_area">
+					
+					<ul class="inquiry">
+						<li>平日<span class="green">09:00~18:00</span></li>
+						<li><div class="inq_tit pkg">· 团体游</div> 
+							 <div class="inq_cont"><sapn class="green tel">02-3788-4841</sapn><br><span class="email">gumong1221@modetourint.com</span></div>
+						</li>
+						<li><div class="inq_tit">· Mice,<br>主题旅游</div>
+							<div class="inq_cont"><span class="tel">02-3788-4807</span><br><span class="email">lucyhan@modetourint.com</span></div>
+						</li>
+					</ul>
+					<div class="inq_btn"><a href="../inquiry.html" class="btn">立即咨询</a></div>
+				</div>
+				
+			</div>
+			<footer class="navi_footer">
+				<div class="container">
+					<div class="foo_content">
+						
+						<a href="../terms/use_terms.html" target="_blank">利用条款</a>
+						<a href="../terms/privacy_terms.html" target="_blank" class="point">个人信息处理方针</a>
+					</div>
+					<address>
+						首尔市 中区 乙支路 16 总统酒店 (旧：白南大厦) 6层601号 (邮 04533) 
+						<br>营业执照号码 : 104-86-15264  |  代表理事 : 孫湖權
+						<br>COPYRIGHT(C)2018 MODETOUR INTERNATIONAL. ALL RIGHT RESERVED.
+					</address>
+				</div>
+			</footer>
+		</nav>
+		<!--//navi-->
+		<div class="menu_wrap"></div>
+		<div class="navi_open" id="navOpen">
+			<button class="btn"><span class="blind">menu</span></button>
+		</div>	
+		<!--visual-->
+		<div class="sub_visual theme_tour">
+			<h1 class="logo"><a href="../main.html" ><img src="https://img.modetour.com/modewebagent/2018/modeinter/common/logo.png" alt="Modetour International"></a></h1>
+			<!--global-->
+		<div class="global_area">
+			<a href="#" class="global white">CHI</a>
+			<ul class="global_lst">
+				<li><a href="../../page/main.html">KOR</a></li>
+				<li><a href="../../page_en/main.html">ENG</a></li>
+			</ul>
+		</div>
+		<!--//global-->
+			<dl class="txt_visual">
+				<dt>主题旅游</dt>
+				<dd>通过文化、音乐、<br>体验等多种内容提供多种体验。</dd>
+			</dl>
+		</div>
+		<!--//visual-->
+		<span class="visual_bg type"></span>
+		<div class="top_menu">
+			<div class="inner">
+			<ul class="menu_lst">
+				<li class="home"><a href="../main.html"><i class="bg"></i><span class="blind">home</span></a></li>
+				<li><button>主题旅游</button>
+					<ul class="sub_list">
+						<li><a href="../mice/mice_main.html">MICE</a></li>
+						<li><a href="../package/pack_main01.html">团体游</a></li>
+						<li><a href="theme_main.html">主题旅游</a></li>
+						<li><a href="../history_event/history_event.html">Best of Best</a></li>
+						<li><a href="../corp/corp_intro.html">公司介绍</a></li>
+					</ul>
+				</li>			
+			</ul>
+			</div>
+		</div>		
+	</header>	
+	<!--container-->
+	<div class="container" id="container">
+		<!--quick-->
+		<div class="quick_menu">
+			<ul class="quick_list">
+				<li class="on"><a href="#">医疗观光</a></li>
+				<li><a href="#">韩流观光</a></li>
+				<li><a href="#">婚纱观光</a></li>
+			</ul>
+		</div>
+		<!--//quick-->			
+		<section class="theme_cont first_box">
+			<div class="inner">
+				<div class="tit_area">
+					<h2 class="tit">医疗观光</h2>
+					<div class="txt pd_b66">
+						<p>百岁时代! 包含健康体检的治愈旅游,<br>缓解压力
+					</div>
+				</div>
+				<div class="items_area">
+					<img src="https://img.modetour.com/modewebagent/2018/modeinter/sub/theme/theme_medical01.jpg" alt="" style="margin-right: 559px;">
+					<img src="https://img.modetour.com/modewebagent/2018/modeinter/sub/theme/theme_medical02.jpg" alt="" style="position: absolute; top:0; right: -9px;">
+					<img src="https://img.modetour.com/modewebagent/2018/modeinter/sub/theme/theme_medical03.jpg" alt="">
+					<img src="https://img.modetour.com/modewebagent/2018/modeinter/sub/theme/theme_medical04.jpg" alt="">
+					<div class="link medical">
+						<a href="theme_medical.html">
+							<p class="link_txt">通过健康体检专家提供医疗咨询, <br>适当的治疗方法。</p>
+							<div class="btn_area"><button class="btn">点击详见</button></div>
+						</a>
+					</div>
+				</div>
+				<span class="pattern_top theme01"></span>
+			</div>
+		</section>		
+		<section class="theme_cont deco_bar">
+			<div class="inner">
+				<div class="tit_area">
+					<h2 class="tit">韩流观光</h2>
+					<div class="txt pd_b66">体验韩国传统文化及K-POP等，<br>能够感受到更加了解韩国。</div>
+				</div>
+				<div class="items_area">
+					<img src="https://img.modetour.com/modewebagent/2018/modeinter/sub/theme/theme_korea01.jpg" alt="">
+					<img src="https://img.modetour.com/modewebagent/2018/modeinter/sub/theme/theme_korea02.jpg" alt="">
+					<img src="https://img.modetour.com/modewebagent/2018/modeinter/sub/theme/theme_korea03.jpg" alt="">
+					<img src="https://img.modetour.com/modewebagent/2018/modeinter/sub/theme/theme_korea04.jpg" alt="" style="position: absolute; left: -18px; bottom: 0;">	
+					<div class="link korea">
+						<a href="theme_korea.html">
+							<p class="link_txt">提供韩国传统文化体验及<br>k-pop等定制服务</p>
+							<div class="btn_area"><button class="btn">点击详见</button></div>
+						</a>
+					</div>
+					<img src="https://img.modetour.com/modewebagent/2018/modeinter/sub/theme/theme_korea06.jpg" alt="">					
+				</div>
+				<span class="pattern_top theme02"></span>
+				<span class="pattern_top theme03"></span>
+			</div>
+		</section>		
+		<section class="theme_cont deco_bar">
+			<div class="inner">
+				<div class="tit_area">
+					<h2 class="tit">婚纱观光</h2>
+					<div class="txt pd_b66">从迷你婚纱到韩国的传统服装,<br>为您留下难忘的回忆。</div>
+				</div>
+				<div class="items_area">
+					<img src="https://img.modetour.com/modewebagent/2018/modeinter/sub/theme/theme_wedding01.jpg" alt="">
+					<img src="https://img.modetour.com/modewebagent/2018/modeinter/sub/theme/theme_wedding02.jpg" alt="">
+					<img src="https://img.modetour.com/modewebagent/2018/modeinter/sub/theme/theme_wedding03.png" alt="" style="position: absolute; top:-19px; right: 0;">
+					<div class="link wedding">
+						<a href="theme_wedding.html">
+							<p class="link_txt">人生只有一次，<br>留个给您难忘的回忆！</p>
+							<div class="btn_area"><button class="btn">点击详见</button></div>
+						</a>
+					</div>
+					<img src="https://img.modetour.com/modewebagent/2018/modeinter/sub/theme/theme_wedding05.jpg" alt="">					
+					<img src="https://img.modetour.com/modewebagent/2018/modeinter/sub/theme/theme_wedding06.jpg" alt="">					
+				</div>
+				<span class="pattern_top theme04"></span>
+				<span class="pattern_top theme05"></span>
+			</div>
+		</section>		
+	</div>
+	<!--//container-->
+	<!--Top버튼-->
+	<a href="#" class="btn_top"><span>TOP</span></a>
+	<!--//Top버튼-->
+</div>
+<!--//wrap-->	
+<!--footer-->
+<footer id="footer">	
+	<div class="inquiry_section">
+		<div class="inner">
+			<div class="reserv_inq">
+				<strong class="tit">预约咨询</strong>
+				<ul class="inq_info">
+					<li><span class="inq_tit">· 团体游</span><span class="tel">02-3788-4841</span><span class="email">gumong1221@modetourint.com</span></li>
+					<li><span class="inq_tit">· MICE,主题旅游</span><span class="tel">02-3788-4807</span><span class="email">lucyhan@modetourint.com</span></li>
+				</ul>
+			</div>
+			<div class="inq_time">
+				<strong class="tit">工作时间</strong>
+				<span class="time">平日 9:00~18:00</span>
+				<div class="inq_btn foo_inq"><a href="../inquiry.html" class="btn">立即咨询</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_inner">
+		<h1 class="logo"><a href="../main.html"><img src="https://img.modetour.com/modewebagent/2018/modeinter/common/logo.png" alt="Modetour International"></a></h1>
+		<div class="foo_section">
+			<div class="foo_content">
+				<a href="../corp/corp_intro.html" target="_blank">公司介绍</a>
+				
+				<a href="../terms/use_terms.html" target="_blank">利用条款</a>
+			<address>
+				首尔市 中区 乙支路 16 总统酒店 (旧：白南大厦) 6层601号 (邮 04533) 
+				<br>营业执照号码 : 104-86-15264  |  代表理事 : 孫湖權
+				<br>COPYRIGHT(C)2018 MODETOUR INTERNATIONAL. ALL RIGHT RESERVED.
+			</address>
+			<div class="foo_btn_area">
+				<button class="btn">集团官网</button>
+				<div class="family_form">
+					<ul class="family_list">
+						<li><a href="https://www.modetour.com/" target="_blank">MODETOUR</a></li>
+						<li><a href="https://jm.modetour.com/Premium/default.aspx" target="_blank">JM SPECIAL</a></li>
+						<li><a href="https://www.dramatour.co.kr/default/" target="_blank">TOUR 娱乐公司</a></li>
+						<li><a href="https://www.cruise.co.kr/" target="_blank">邮轮</a></li>
+						
+						<li><a href="https://www.jeonbuk.go.kr/index.jeonbuk" target="_blank">全罗北道</a></li>
+						<li><a href="https://www.bookingm.com/" target="_blank">Booking M</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--//footer-->
+</body>
+</html>
+
+
+

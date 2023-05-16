@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <include src="../../include/folder_include/set_css.html"></include>
+    <include src="../../include/folder_include/set_js.html"></include>
+    <title>realhouse</title>
+</head>
+<body class="scroll_hidden">
+<!--header-->
+<include src="../../include/header.html"></include>
+<div class="header_section">
+    <div class="search_header">
+        <div class="tit">설정</div>
+        <a href="#" class="locate_links">
+            <dl class="locate">
+                <dt class="city">서울시</dt>
+                <dd class="city_sub">송파구</dd>
+                <dd class="city_sub">잠실동</dd>
+            </dl>
+        </a>
+        <div class="select_filter_area">
+            <div class="select_filter">
+                <a href="#" class="select_top"><span class="deal_type">월세</span> <i class="bar"></i> <span class="offer_type">아파트, 오피스텔</span></a>
+            </div>
+            <div class="select_filter">
+                <a href="#" class="select_top">금액</a>
+            </div>
+            <div class="select_filter">
+                <a href="#" class="select_top">면적</a>
+            </div>
+            <div class="select_filter active">
+                <a href="#" class="select_top">필터</a>
+            </div>
+        </div>
+        <a href="#" class="reset">초기화</a>
+    </div>
+</div>
+<!--//header-->
+<div class="wrapper type">
+    <div class="search_cover active"></div>
+    <!--필터-->
+    <div class="layer_filter active">
+        <div class="filter_area">
+            <div class="filter">
+                <div class="content_head">
+                    <h2 class="tit">방 구조</h2>
+                </div>
+                <ul class="filter_chk_list">
+                    <li>
+                        <input id="room_type1" type="checkbox" class="checkbox" checked>
+                        <label for="room_type1"><span class="chk_set"></span>전체</label>
+                    </li>
+                    <li>
+                        <input id="room_type2" type="checkbox" class="checkbox">
+                        <label for="room_type2"><span class="chk_set"></span>원룸(개방형)</label>
+                    </li>
+                    <li>
+                        <input id="room_type3" type="checkbox" class="checkbox">
+                        <label for="room_type3"><span class="chk_set"></span>원룸(분리형)</label>
+                    </li>
+                    <li>
+                        <input id="room_type4" type="checkbox" class="checkbox">
+                        <label for="room_type4"><span class="chk_set"></span>2룸</label>
+                    </li>
+                    <li>
+                        <input id="room_type5" type="checkbox" class="checkbox">
+                        <label for="room_type5"><span class="chk_set"></span>3룸</label>
+                    </li>
+                    <li>
+                        <input id="room_type6" type="checkbox" class="checkbox">
+                        <label for="room_type6"><span class="chk_set"></span>4룸</label>
+                    </li>
+                    <li>
+                        <input id="room_type7" type="checkbox" class="checkbox">
+                        <label for="room_type7"><span class="chk_set"></span>5룸 이상</label>
+                    </li>
+                    <li>
+                        <input id="room_type8" type="checkbox" class="checkbox">
+                        <label for="room_type8"><span class="chk_set"></span>복층</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter">
+                <div class="content_head">
+                    <h2 class="tit">층 구분</h2>
+                </div>
+                <ul class="filter_chk_list">
+                    <li>
+                        <input id="stair_type1" type="checkbox" class="checkbox" checked>
+                        <label for="stair_type1"><span class="chk_set"></span>전체</label>
+                    </li>
+                    <li>
+                        <input id="stair_type2" type="checkbox" class="checkbox">
+                        <label for="stair_type2"><span class="chk_set"></span>1층</label>
+                    </li>
+                    <li>
+                        <input id="stair_type3" type="checkbox" class="checkbox">
+                        <label for="stair_type3"><span class="chk_set"></span>2층</label>
+                    </li>
+                    <li>
+                        <input id="stair_type4" type="checkbox" class="checkbox">
+                        <label for="stair_type4"><span class="chk_set"></span>3~5층</label>
+                    </li>
+                    <li>
+                        <input id="stair_type5" type="checkbox" class="checkbox">
+                        <label for="stair_type5"><span class="chk_set"></span>6~10층</label>
+                    </li>
+                    <li>
+                        <input id="stair_type6" type="checkbox" class="checkbox">
+                        <label for="stair_type6"><span class="chk_set"></span>6~11층 이상</label>
+                    </li>
+                    <li>
+                        <input id="stair_type7" type="checkbox" class="checkbox">
+                        <label for="stair_type7"><span class="chk_set"></span>반지하</label>
+                    </li>
+                    <li>
+                        <input id="stair_type8" type="checkbox" class="checkbox">
+                        <label for="stair_type8"><span class="chk_set"></span>옥탑</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter">
+                <div class="content_head">
+                    <h2 class="tit">건축연도</h2>
+                </div>
+                <ul class="filter_chk_list">
+                    <li>
+                        <input id="build_type1" type="checkbox" class="checkbox" checked>
+                        <label for="build_type1"><span class="chk_set"></span>전체</label>
+                    </li>
+                    <li>
+                        <input id="build_type2" type="checkbox" class="checkbox">
+                        <label for="build_type2"><span class="chk_set"></span>~1년</label>
+                    </li>
+                    <li>
+                        <input id="build_type3" type="checkbox" class="checkbox">
+                        <label for="build_type3"><span class="chk_set"></span>1~3년</label>
+                    </li>
+                    <li>
+                        <input id="build_type4" type="checkbox" class="checkbox">
+                        <label for="build_type4"><span class="chk_set"></span>3~5년</label>
+                    </li>
+                    <li>
+                        <input id="build_type5" type="checkbox" class="checkbox">
+                        <label for="build_type5"><span class="chk_set"></span>5~10년</label>
+                    </li>
+                    <li>
+                        <input id="build_type6" type="checkbox" class="checkbox">
+                        <label for="build_type6"><span class="chk_set"></span>10~20년</label>
+                    </li>
+                    <li>
+                        <input id="build_type7" type="checkbox" class="checkbox">
+                        <label for="build_type7"><span class="chk_set"></span>20~30년</label>
+                    </li>
+                    <li>
+                        <input id="build_type8" type="checkbox" class="checkbox">
+                        <label for="build_type8"><span class="chk_set"></span>30년 이상</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter">
+                <div class="content_head">
+                    <h2 class="tit">옵션</h2>
+                </div>
+                <ul class="filter_chk_list">
+                    <li>
+                        <input id="filter_option1" type="checkbox" class="checkbox">
+                        <label for="filter_option1"><span class="chk_set"></span>급매</label>
+                    </li>
+                    <li>
+                        <input id="filter_option2" type="checkbox" class="checkbox">
+                        <label for="filter_option2"><span class="chk_set"></span>세안고</label>
+                    </li>
+                    <li>
+                        <input id="filter_option3" type="checkbox" class="checkbox">
+                        <label for="filter_option3"><span class="chk_set"></span>엘리베이터</label>
+                    </li>
+                    <li>
+                        <input id="filter_option4" type="checkbox" class="checkbox">
+                        <label for="filter_option4"><span class="chk_set"></span>주차</label>
+                    </li>
+                    <li>
+                        <input id="filter_option5" type="checkbox" class="checkbox">
+                        <label for="filter_option5"><span class="chk_set"></span>반려동물</label>
+                    </li>
+                    <li>
+                        <input id="filter_option6" type="checkbox" class="checkbox">
+                        <label for="filter_option6"><span class="chk_set"></span>전세자금대출</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_head">
+            <h2 class="tit">내부시설 옵션</h2>
+        </div>
+        <div class="inner_option">
+            <div class="click_ev">
+                <button class="btn_type1">에어컨</button>
+                <button class="btn_type1 on">냉장고</button>
+                <button class="btn_type1">세탁기</button>
+                <button class="btn_type1">가스레인지</button>
+                <button class="btn_type1">인덕션</button>
+                <button class="btn_type1">싱크대</button>
+                <button class="btn_type1">침대</button>
+                <button class="btn_type1">책상</button>
+                <button class="btn_type1">옷장</button>
+                <button class="btn_type1">TV</button>
+                <button class="btn_type1">비데</button>
+                <button class="btn_type1">신발장</button>
+                <button class="btn_type1">전자도어락</button>
+            </div>
+        </div>
+        <div class="filter_reset_area">
+            <button class="btn_reset">초기화</button>
+        </div>
+    </div>
+    <!--//필터-->
+    <div id=sub_container>
+        <div class="offer_wrap" >
+            <!--right:전체매물-->
+            <aside class="all_offer search_offer">
+                <header class="header">전체매물(21)</header>
+                <div class="items_area">
+                    <ul class="items_list">
+                        <li class="target">
+                            <a href="#">
+                                <span class="img_area">
+                                    <span class="seen">SEEN</span>
+                                    <img src="../../../../images/sub/offering_item_img.jpg">
+                                </span>
+                                <div class="item_info">
+                                    <i class="favor_ico"></i>
+                                    <strong class="tit">매매 3억5000</strong>
+                                    <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                    <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
+                                    <p class="locate">잠실주공1단지 104동잠실 </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               <span class="img_area"><img src="../../../../images/sub/offering_item_img.jpg"></span>
+                                <div class="item_info">
+                                    <i class="favor_ico pick"></i>
+                                    <strong class="tit">전세/월세 3억5000</strong>
+                                    <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                    <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
+                                    <p class="locate">잠실주공1단지 104동잠실 </p>
+                                </div>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="#">
+                                <span class="img_area"><img src="../../../../images/sub/offering_item_img.jpg"></span>
+                                <div class="item_info">
+                                    <i class="favor_ico"></i>
+                                    <strong class="tit">단기임대 50/50</strong>
+                                    <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                    <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
+                                    <p class="locate">잠실주공1단지 104동잠실 </p>
+                                </div>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="#">
+                                <span class="img_area"><img src="../../../../images/sub/offering_item_img.jpg"></span>
+                                <div class="item_info">
+                                    <i class="favor_ico"></i>
+                                    <strong class="tit">월세 5000/50</strong>
+                                    <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                    <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
+                                    <p class="locate">잠실주공1단지 104동잠실 </p>
+                                </div>
+                            </a>
+                        </li> 
+                        <li>
+                            <div class="item_head">사진 미등록 <span class="desc">※ 사진 5개 미만 매물</span></div>
+                            <a href="#">
+                                <span class="img_area"><img src="../../../../images/sub/offering_item_img.jpg"></span>
+                                <div class="item_info">
+                                    <i class="favor_ico"></i>
+                                    <strong class="tit">월세 5000/50</strong>
+                                    <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                    <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
+                                    <p class="locate">잠실주공1단지 104동잠실 </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="">
+                            <div class="item_head">사진 미등록 <span class="desc">※ 사진 5개 미만 매물</span></div>
+                            <a href="#">
+                                <div class="item_info no_img">
+                                    <i class="favor_ico"></i>
+                                    <strong class="tit">월세 5000/50</strong>
+                                    <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                    <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span><span>장판교체</span><span>풀장</span><span>올수리</span></p>
+                                    <p class="locate">잠실주공1단지 104동잠실 </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul> 
+                </div>                
+            </aside>
+            <!--//전체매물-->
+            <!--매물상세-->
+            <div class="offer_detail_wrap">
+                <div class="offer_detail">
+                    <div class="offer_detail_inner">
+                        <div class="offer_main">
+                            <ul class="view_list">
+                                <li class="main"><a href="#"><img src="../../../../images/sub/offering_main_img.jpg"></a></li>
+                                <li><a href="#"><img src="../../../../images/sub/offering_img1.jpg"></a></li>
+                                <li>                                
+                                    <a href="#">
+                                            <div class="cover"><span class="cnt">15개</span> 사진 전체보기</div>
+                                        <img src="../../../../images/sub/offering_img2.jpg">
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--사진이 없을때-->
+                            <!-- <ul class="view_list no_img">
+                                <li class="main">NO PHOTO</li>
+                                <li>NO PHOTO</li>
+                                <li>NO PHOTO</li>
+                            </ul> -->
+                            <!--//사진이 없을때-->
+                            <div class="offer_mark">
+                                <dl>
+                                    <dt>월세보증금/월세</dt>
+                                    <dd>1억1000/50<span>만원</span></dd>
+                                </dl>
+                                <dl>
+                                    <dt>전용면적</dt>
+                                    <dd>33.9㎡(10)</dd>
+                                </dl>
+                                <dl>
+                                    <dt>방수/욕실수</dt>
+                                    <dd>원룸(개방형)/1개</dd>
+                                </dl>
+                            </div>
+                            <div class="info_area">
+                                <div class="info_head">
+                                    <div class="left">
+                                        <em class="type">아파트</em>
+                                        잠실주공1단지 102동
+                                        <span class="icon_type1">급매</span>
+                                    </div>
+                                    <div class="right">
+                                        <a href="#" class="visit">방문요청 방법</a>
+                                        <div class="btn_area">
+                                            <button class="btn">방문요청</button>
+                                            <button class="btn type">관심등록</button>
+                                            <!-- 관심등록 했을경우-->
+                                            <button class="btn type on">관심등록</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--매물 테이블-->
+                                <div class="table_style2">
+                                    <table class="table">
+                                        <colgroup>
+                                            <col width="15%">
+                                            <col width="35%">
+                                            <col width="15%">
+                                            <col width="35%">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>해당층/건물층</th>
+                                                <td>6/15층</td>
+                                                <th>준공월</th>
+                                                <td>2002.09(15년)</td>
+                                            </tr>
+                                            <tr>
+                                                <th>융자금</th>
+                                                <td>시세 30% 미만</td>
+                                                <th>관리비</th>
+                                                <td>10만원(TV, 전기, 수도)</td>
+                                            </tr>
+                                            <tr>
+                                                <th>엘리베이터</th>
+                                                <td>있음</td>
+                                                <th>주차</th>
+                                                <td>가능(무료)</td>
+                                            </tr>
+                                            <tr>
+                                                <th>입주 예정일</th>
+                                                <td>즉시입주</td>
+                                                <th>난방구조</th>
+                                                <td>중앙난방</td>
+                                            </tr>
+                                            <tr>
+                                                <th>전세자금대출</th>
+                                                <td>즉시입주</td>
+                                                <th>반려동물</th>
+                                                <td>불가</td>
+                                            </tr>
+                                            <tr>
+                                            <th>옵션</th> 
+                                            <td colspan="3">세탁기, 냉장고, 가스레인지, 비데</td>
+                                            </tr>
+                                            <tr>
+                                                <th>특징</th> 
+                                                <td colspan="3">
+                                                    <span class="icon_type2 green">복층</span>
+                                                    <span class="icon_type2">도배</span>
+                                                    <span class="icon_type2">대로변</span>
+                                                    <span class="icon_type2">신축</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//매물 테이블-->
+                            </div>
+                        </div>
+                        <!--매물정보-->
+                        <div class="offer_info">
+                            <div class="content_head2">
+                                <h2 class="tit">매물정보</h2>
+                            </div>
+                            <!--매물 테이블-->
+                            <div class="table_style2">
+                                <table class="table">
+                                    <colgroup>
+                                        <col width="15%">
+                                        <col width="35%">
+                                        <col width="15%">
+                                        <col width="35%">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>매물 유형</th>
+                                            <td>공동주택 / 아파트</td>
+                                            <th>매물 용도</th>
+                                            <td>주거용</td>
+                                        </tr>
+                                        <tr>
+                                            <th>해당 동</th>
+                                            <td>102동</td>
+                                            <th>전용/공급면적</th>
+                                            <td>84.9㎡(25.7)/111.1㎡(33.6)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>총 동수</th>
+                                            <td>3동</td>
+                                            <th>현관구조</th>
+                                            <td>계단식</td>
+                                        </tr>
+                                        <tr>
+                                            <th>총 세대수</th>
+                                            <td>계단식</td>
+                                            <th>방향</th>
+                                            <td>남향</td>
+                                        </tr>
+                                        <tr>
+                                            <th>총 주차수</th>
+                                            <td>300대(세대당 1대)</td>
+                                            <th>소재지</th>
+                                            <td>서울시 송파구 잠실동</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--//매물 테이블-->
+                        </div>
+                        <!--//매물정보-->
+                        <!--매물설명-->
+                        <div class="offer_explain">
+                            <div class="content_head2">
+                                <h2 class="tit">매물설명</h2>
+                            </div>
+                            <div class="explain_area box_wrap">
+                                공인중개사가 작성한 설명이 나타납니다. 
+                                <br>공인중개사가 작성한 설명이 나타납니다. 
+                                <br>공인중개사가 작성한 설명이 나타납니다. 
+                                <br>공인중개사가 작성한 설명이 나타납니다. 
+                            </div>
+                        </div>
+                        <!--//매물설명-->
+                        <!--위치-->
+                        <div class="offer_locate">
+                            <div class="content_head2">
+                                <h2 class="tit">위치</h2>
+                            </div>
+                            <div class="locate_box">
+                                <div class="locate_header">
+                                    서울시 송파구 잠실동(잠실주공1단지)
+                                </div>
+                                <div class="map">                              
+                                    <span class="ico_area">30m</span>
+                                    <div class="btn_map_area"><button class="btn_map road_view">로드뷰</button></div>
+                                    <!--지도 샘플이미지-->
+                                    <img src="../../../../images/sub/sample/searchhose_map.jpg">
+                                    <!--//지도 샘플이미지-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--//위치-->
+
+                        <!--위치-->
+                        <div class="offer_locate">
+                            <div class="content_head2">
+                                <h2 class="tit">위치</h2>
+                            </div>
+                            <div class="locate_box">
+                                <div class="locate_header">
+                                    서울시 송파구 잠실동(잠실주공1단지)
+                                </div>
+                                <div class="map">                              
+                                    <div class="btn_map_area"><button class="btn_map">지도</button></div>
+                                    <!--로드뷰 샘플이미지-->
+                                    <img src="../../../../images/sub/sample/img_road_view.jpg">
+                                    <!--//로드뷰 샘플이미지-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--//위치-->
+                    </div>
+                </div>
+            </div>
+            <!--//매물상세-->
+        </div>
+    </div>
+</div>
+</body>
+</html>

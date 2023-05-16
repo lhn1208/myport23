@@ -1,0 +1,1344 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/content.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+	<section id="container">
+		<div id="content" class="cont_additi">
+			<div class="sub_cont_head">
+				<h2 class="sub_tit">부가서비스</h2>
+			</div>
+			<ul class="tab_menu tab_type3">
+				<li class="on"><a href="#tabInsure">보험약가 정보 </a></li>
+				<li><a href="#tabTrend">판매가동향</a></li>
+				<li><a href="#tabPop">POP자료실</a></li>
+			</ul>
+			<div class="tab_cont">
+				<div id="tabInsure" style="">
+					<div class="sub_cont_head">
+						<h3 class="sstit">보험약가 정보</h3>
+						<p class="sub_txt">의약품 보험코드에 따른 정보를 공유합니다.</p>
+					</div>
+					<div class="search_additi">
+						<table class="tbl_info">
+							<caption>약품명, 보험코드, 제조사, 주성분코드 검색</caption>
+							<colgroup>
+								<col style="width:67px">
+								<col style="width:433px">
+								<col style="width:97px">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="medicineName">약품명</label></th>
+									<td>
+										<input type="text" name="medicineName" id="medicineName" class="inp_txt">
+									</td>
+									<th scope="row"><label for="insureCode">보험코드</label></th>
+									<td>
+										<input type="text" name="insureCode" id="insureCode" class="inp_txt">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="manufacture">제조사</label></th>
+									<td>
+										<input type="text" name="manufacture" id="manufacture" class="inp_txt">
+									</td>
+									<th scope="row"><label for="mainCode">주성분코드</label></th>
+									<td>
+										<input type="text" name="mainCode" id="mainCode" class="inp_txt">
+										<button type="submit" class="btn_search"><span class="btn_comm">검색</span></button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="insure_data">
+						<!-- 보험약가 내역이 없을때[s] -->
+						<p class="txt_none txt_none2"><span class="ico_comm"></span>보험약가 내역이 없습니다.</p><!-- 2018-01-10 수정 -->
+						<!-- 보험약가 내역이 없을때[e] -->
+						<div class="f_l">
+							<h4 class="tit_info">상품리스트</h4>
+							<table class="tbl_type1">
+								<caption>보험코드, 제조사, 약품명, 상한금액 안내</caption>
+								<colgroup>
+									<col style="width:22%">
+									<col style="width:15%">
+									<col style="width:40%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">보험코드</th>
+										<th scope="col">제조사</th>
+										<th scope="col">약품명</th>
+										<th scope="col">상한금액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="on">
+										<td class="txt_num">641602040</td>
+										<td>(주)한국파비스제약</td>
+										<td class="txt_left">우루사정 100미리그램(우르소게옥시콜산)</td>
+										<td><span class="txt_cash">9,500</span>원</td>
+									</tr>
+									<tr>
+										<td class="txt_num">641602040</td>
+										<td>대웅제약</td>
+										<td class="txt_left">우루사정 100미리그램(우르소게옥시콜산)</td>
+										<td><span class="txt_cash">0</span>원</td>
+									</tr>
+									<tr>
+										<td class="txt_num">641602040</td>
+										<td>대웅제약</td>
+										<td class="txt_left">우루사정 100미리그램(우르소게옥시콜산)</td>
+										<td><span class="txt_cash">552,500</span>원</td>
+									</tr>
+									<tr>
+										<td class="txt_num">641602040</td>
+										<td>대웅제약</td>
+										<td class="txt_left">우루사정 100미리그램(우르소게옥시콜산)</td>
+										<td><span class="txt_cash">4,900,500</span>원</td>
+									</tr>
+									<tr>
+										<td class="txt_num">641602040</td>
+										<td>대웅제약</td>
+										<td class="txt_left">우루사정 100미리그램(우르소게옥시콜산)</td>
+										<td><span class="txt_cash">99,999</span>원</td>
+									</tr>
+									<tr>
+										<td class="txt_num">641602040</td>
+										<td>대웅제약</td>
+										<td class="txt_left">우루사정 100미리그램(우르소게옥시콜산)</td>
+										<td><span class="txt_cash">9,500</span>원</td>
+									</tr>
+									<tr>
+										<td class="txt_num">641602040</td>
+										<td>대웅제약</td>
+										<td class="txt_left">우루사정 100미리그램(우르소게옥시콜산)</td>
+										<td><span class="txt_cash">9,500</span>원</td>
+									</tr>
+									<tr>
+										<td class="txt_num">641602040</td>
+										<td>대웅제약</td>
+										<td class="txt_left">우루사정 100미리그램(우르소게옥시콜산)</td>
+										<td><span class="txt_cash">9,500</span>원</td>
+									</tr>
+									<tr>
+										<td class="txt_num">641602040</td>
+										<td>대웅제약</td>
+										<td class="txt_left">우루사정 100미리그램(우르소게옥시콜산)</td>
+										<td><span class="txt_cash">9,500</span>원</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="paging_nav">
+								<a href="#none" class="btn_prev">이전</a>
+								<a href="#none">1</a>
+								<a href="#none">2</a>
+								<a href="#none">3</a>
+								<a href="#none">4</a>
+								<a href="#none">5</a>
+								<span>6</span>
+								<a href="#none">7</a>
+								<a href="#none">8</a>
+								<a href="#none">9</a>
+								<a href="#none">10</a>
+								<a href="#none" class="btn_next">다음</a>
+							</div>
+						</div>
+						<div class="f_r">
+							<h4 class="tit_info">상품정보</h4>
+							<table class="tbl_type5">
+								<caption>상품 상세정보 안내</caption>
+								<colgroup>
+									<col style="width:116px">
+									<col style="width:107px">
+									<col style="width:116px">
+									<col style="width:107px">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" colspan="4">우루사정 100미리그램 (우르소데옥시콜산)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">급여부분</th>
+										<td>급여</td>
+										<th scope="row">급여부분</th>
+										<td>일반</td>
+									</tr>
+									<tr>
+										<th scope="row">규격단위</th>
+										<td>1/정</td>
+										<th scope="row">규격단위</th>
+										<td>내복</td>
+									</tr>
+									<tr>
+										<th scope="row">약품분류</th>
+										<td colspan="3">391</td>
+									</tr>
+									<tr>
+										<th scope="row">주성분코드</th>
+										<td colspan="3"><div class="wrap_code">246501ATB <a href="#none" class="btn_type6">동일성분</a></div></td>
+									</tr>
+
+									<tr>
+										<th scope="row">약품동등<br>구분</th>
+										<td>의약품 동등</td>
+										<th scope="row">퇴장방지<br>구분</th>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">대체여부</th>
+										<td></td>
+										<th scope="row">퇴장방지<br>구분</th>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">연령금기</th>
+										<td></td>
+										<th scope="row">고시일자</th>
+										<td>2012-02-29</td>
+									</tr>
+								</tbody>
+							</table>
+							<h4 class="tit_info">보험 약가 변경내역</h4>
+							<table class="tbl_type1">
+								<caption>보험코드, 적용일자, 급여구분, 금액 안내</caption>
+								<thead>
+									<tr>
+										<th scope="col">보험코드</th>
+										<th scope="col">적용일자</th>
+										<th scope="col">급여구분</th>
+										<th scope="col">금액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="txt_num">641602040</td>
+										<td class="txt_num">2012-02-29</td>
+										<td>급여</td>
+										<td><span class="txt_cash">105</span>원</td>
+									</tr>
+									<tr>
+										<td class="txt_num">641602040</td>
+										<td class="txt_num">2012-02-29</td>
+										<td>급여</td>
+										<td><span class="txt_cash">92</span>원</td>
+									</tr>
+								</tbody>
+							</table>
+							<h4 class="tit_info">성분리스트</h4>
+							<p class="txt_default">ciprofloxacin HCl(as ciprofloxacin) 250mg</p><!-- 내역 있을 떄 -->
+							<p class="txt_none"><span class="ico_comm"></span>내역이 없습니다.</p><!-- 내역 없을 떄 -->
+						</div>
+					</div>
+				</div>
+				<div id="tabTrend" style="display:none">
+					<div class="sub_cont_head">
+						<h3 class="sstit">판매가동향</h3>
+						<p class="sub_desc">판매가동향 서비스는 가격 Trend에 대한 정보를 제공해 드립니다.<br>
+					회원님께서 판매하고 계신 상품의 가격을 등록해 주시면 등록하신 상품에 대한 타 회원님들의 판매가 정보를 제공 받으실 수 있습니다.</p>
+					</div>
+					<h4 class="tit_info">가장 많은 참여<span class="txt_best">BEST 10</span></h4>
+					<div class="slider_g">
+						<div class="owl-carousel">
+							<div class="item">
+								<a href="#none" class="info_item">
+									<img src="../../images/temp/img_prod.jpg" alt="" />
+									<span class="txt_product">엠오이칼 캔디(레몬/무가당) 40g</span>
+								</a>
+								<a href="#none" class="info_item">
+									<img src="../../images/temp/img_prod.jpg" alt="" />
+									<span class="txt_product">엠오이칼 캔디(레몬/무가당) 40g</span>
+								</a>
+								<a href="#none" class="info_item">
+									<img src="../../images/temp/img_prod.jpg" alt="" />
+									<span class="txt_product">엠오이칼 캔디(레몬/무가당) 40g</span>
+								</a>
+								<a href="#none" class="info_item">
+									<img src="../../images/temp/img_prod.jpg" alt="" />
+									<span class="txt_product">엠오이칼 캔디(레몬/무가당) 40g</span>
+								</a>
+								<a href="#none" class="info_item">
+									<img src="../../images/temp/img_prod.jpg" alt="" />
+									<span class="txt_product">엠오이칼 캔디(레몬/무가당) 40g</span>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#none" class="info_item">
+									<img src="../../images/temp/img_prod1.jpg" alt="" />
+									<span class="txt_product">(1+2기획)메디첵 오토코딩 혈당기1대+혈당측정지2개 세트</span>
+								</a>
+								<a href="#none" class="info_item">
+									<img src="../../images/temp/img_prod1.jpg" alt="" />
+									<span class="txt_product">(1+2기획)메디첵 오토코딩 혈당기1대+혈당측정지2개 세트</span>
+								</a>
+								<a href="#none" class="info_item">
+									<img src="../../images/temp/img_prod1.jpg" alt="" />
+									<span class="txt_product">(1+2기획)메디첵 오토코딩 혈당기1대+혈당측정지2개 세트</span>
+								</a>
+								<a href="#none" class="info_item">
+									<img src="../../images/temp/img_prod1.jpg" alt="" />
+									<span class="txt_product">(1+2기획)메디첵 오토코딩 혈당기1대+혈당측정지2개 세트</span>
+								</a>
+								<a href="#none" class="info_item">
+									<img src="../../images/temp/img_prod1.jpg" alt="" />
+									<span class="txt_product">(1+2기획)메디첵 오토코딩 혈당기1대+혈당측정지2개 세트</span>
+								</a>
+							</div>
+						</div>
+						<p class="prod_pagination"></p>
+					</div>
+					<h4 class="screen_out">상품정보</h4>
+					<div class="head_info">
+						<strong class="tit_util">총 등록 판매가 수 : <span class="txt_num emph_color">6,260</span>건</strong>
+						<span class="txt_bar"></span>
+						<strong class="tit_util">나의 등록 판매가 수 : <span class="txt_num emph_color">2</span>건</strong>
+						<a href="#none" class="btn_type6 btn_view">나의 등록항목 보기</a><!-- 2018-01-09 수정 -->
+						<a href="#none" class="btn_type6 btn_regist">판매가동향 상품등록하기</a><!-- 2018-01-09 추가 -->
+					</div>
+					<div class="search_additi">
+						<table class="tbl_info">
+							<caption>상품명, 제조사 검색</caption>
+							<colgroup>
+								<col style="width:67px">
+								<col style="width:433px">
+								<col style="width:97px">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="goodsName">상품명</label></th>
+									<td><input type="text" name="goodsName" id="goodsName" class="inp_txt"></td>
+									<th scope="row"><label for="manufacturer">제조사</label></th>
+									<td>
+										<input type="text" name="manufacturer" id="manufacturer" class="inp_txt">
+										<button type="submit" class="btn_search"><span class="btn_comm">검색</span></button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="trend_data">
+						<div class="wrap_select">
+							<select class="select" style="width:105px;">
+								<option selected="">최근등록일순</option>
+								<option>가나다순</option>
+								<option>참여자수많은순</option>
+							</select>
+						</div>
+						<table class="tbl_slide">
+							<caption>상품 판매가 동향 안내</caption>
+							<colgroup>
+								<col style="width:80px">
+								<col>
+								<col style="width:80px">
+								<col style="width:90px">
+								<col style="width:130px">
+								<col style="width:85px">
+								<col style="width:80px">
+								<col style="width:110px">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">이미지</th>
+									<th scope="col">상품명</th>
+									<th scope="col">규격</th>
+									<th scope="col">단위</th>
+									<th scope="col">제조사</th>
+									<th scope="col">평균판매가</th>
+									<th scope="col">참여자수</th>
+									<th scope="col">최근등록일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<!-- 검색결과 없을 때 -->
+								<tr>
+									<td colspan="8">
+										<p class="txt_none"><span class="ico_comm"></span>검색결과가 없습니다.</p>
+									</td>
+								</tr>
+								<!-- //검색결과 없을 때 -->
+								<tr class="cell_list">
+									<td><span class="wrap_thumb"><img src="../../images/temp/img_trend.jpg" alt=""></span></td>
+									<td class="txt_left">이안립케어 립모이스춰라이저(2017년형)</td>
+									<td>14.888g</td>
+									<td>6P</td>
+									<td>한국존슨앤드존슨</td>
+									<td>비공개</td>
+									<td class="txt_num">12</td>
+									<td class="txt_year">2016-07-23</td>
+								</tr>
+								<tr class="cell_view">
+									<td colspan="8">
+										<div class="view_cont">
+											<!-- 등록하기 전 -->
+											<dl class="price_regist">
+												<dt>판매가 등록</dt>
+												<dd>
+													<label for="priceApply" class="lab_g">우리약국의 소비자 판매가 등록하기</label>
+													<div class="wrap_inp">
+														<div class="box_inp">
+															<input type="text" name="priceApply" id="priceApply" class="inp_txt">
+															<span class="txt_won">원</span>
+														</div>
+														<button type="submit" class="btn_type6 btn_regist">등록하기</button>
+													</div>
+													<p class="desc_g"><span class="txt_star">*</span> 판매가를 등록해주시면 다른 회원님들과 판매가를 공유하고 확인할 수 있습니다. </p>
+												</dd>
+												<dt>등록 시 주의 사항</dt>
+												<dd>
+													<ul class="list_caution">
+														<li>1. 상품의 규격, 단위를 확인하시고 현재 고객님의 약국에서 판매되고 있는 가격을 정확히 입력해 주십시오.</li>
+														<li>2. 등록 가격의 유효기간은 3개월입니다. 3개월 이내 등록하신 이력이 없으면 다시 입력해 주십시오.</li>
+														<li>3. 가격, 규격, 단위를 허위로 기재하셔서, 다른 고객님들로부터 삭제 요청을 받는 경우 등록하신 가격은 임의로 삭제 처리될 수 있습니다.</li>
+														<li>4. 정확한 가격 정보를 입력하셔서 건전한 정보 공유의 장을 만들어 주십시오.</li>
+														<li>5. 등록하신 판매가는 수정은 가능하나 삭제가 불가능하오니 신중하게 입력해 주십시오.</li>
+													</ul>
+												</dd>
+											</dl>
+											<!-- //등록하기 전 -->
+										</div>
+									</td>
+								</tr>
+								<tr class="cell_list">
+									<td><span class="wrap_thumb"><img src="../../images/temp/img_trend.jpg" alt=""></span></td>
+									<td class="txt_left">이안립케어 립모이스춰라이저(2017년형)</td>
+									<td>14.888g</td>
+									<td>1EA+1EA</td>
+									<td>대웅제약</td>
+									<td>비공개</td>
+									<td class="txt_num">12</td>
+									<td class="txt_year">2016-07-23</td>
+								</tr>
+								<tr class="cell_view">
+									<td colspan="8">
+										<div class="view_cont">
+											<!-- 등록하기 후 -->
+											<div class="price_detail">
+												<div class="head_info">
+													<strong class="tit_util">나의 등록 판매가<span class="emph_color"><span class="txt_num">6,800</span>원</span></strong>
+													<a href="#none" class="btn_type7 btn_del">삭제하기</a>
+													<a href="#none" class="btn_type6 btn_order">해당상품 주문하기</a>
+												</div>
+												<div class="data_summary">
+													<strong class="tit_g">판매가 요약</strong>
+													<table class="tbl_summary">
+														<caption>판매가 요약 안내</caption>
+														<colgroup>
+															<col>
+															<col style="width:143px">
+															<col style="width:143px">
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col">최저 판매가</th>
+																<th scope="col">최고 판매가</th>
+																<th scope="col">평균 판매가</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td><span class="txt_num">6,500</span>원</td>
+																<td><span class="txt_num">8,000</span>원</td>
+																<td><span class="txt_num">7,000</span>원</td>
+															</tr>
+															<tr>
+																<td colspan="3" class="td_average">
+																	<div class="info_average">
+																		<strong class="tit_txt">최근 3개월 평균 판매가</strong>
+																		<span class="emph_color"><span class="txt_num">777,000</span>원</span>
+																	</div>
+																	<div class="info_average">
+																		<strong class="tit_txt">누적 평균 판매가</strong>
+																		<span class="emph_color"><span class="txt_num">777,000</span>원</span>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												<div class="data_graph">
+													<strong class="tit_g">가격 분포</strong>
+													<div class="box_graph">
+														<img src="../../images/temp/graph_trend.jpg" alt="">
+													</div>
+												</div>
+												<div class="data_period">
+													<div class="inp_area">
+														<strong class="tit_date">등록기간</strong>
+														<div class="datepicker_view">
+															<input type="text" class="inp_txt" title="시작 기간선택">
+															<span class="txt_bar">ㅡ</span>
+															<input type="text" class="inp_txt" title="끝 기간선택">
+														</div>
+														<div class="wrap_radio">
+															<input type="radio" name="typeSelect" id="priceType" checked="checked">
+															<label for="priceType">가격별</label>
+															<input type="radio" name="typeSelect" id="areaType">
+															<label for="areaType">지역별</label>
+														</div>
+														<div class="wrap_search">
+															<input type="text" title="검색어 입력" class="inp_txt">
+															<button type="submit" class="btn_search"><span class="btn_comm">검색</span></button>
+														</div>
+													</div>
+													<div class="tbl_area">
+														<div class="tbl_scroll_wrap tbl_left">
+															<div>
+																<table class="tbl_type1">
+																	<caption>판매가, 참여수 검색결과</caption>
+																	<colgroup>
+																		<col style="width:50%">
+																		<col style="width:50%">
+																	</colgroup>
+																	<thead>
+																		<tr>
+																			<th scope="col">판매가</th>
+																			<th scope="col">참여수</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td><span class="txt_num">6,500</span>원</td>
+																			<td><span class="txt_num">1</span>명</td>
+																		</tr>
+																		<tr class="txt_emph">
+																			<td><span class="txt_num">6,500</span>원</td>
+																			<td><span class="txt_num">1</span>명</td>
+																		</tr>
+																		<tr>
+																			<td><span class="txt_num">6,500</span>원</td>
+																			<td><span class="txt_num">1</span>명</td>
+																		</tr>
+																		<tr>
+																			<td><span class="txt_num">6,500</span>원</td>
+																			<td><span class="txt_num">1</span>명</td>
+																		</tr>
+																		<tr>
+																			<td><span class="txt_num">6,500</span>원</td>
+																			<td><span class="txt_num">1</span>명</td>
+																		</tr>
+																		<tr>
+																			<td><span class="txt_num">6,500</span>원</td>
+																			<td><span class="txt_num">1</span>명</td>
+																		</tr>
+																		<tr>
+																			<td><span class="txt_num">6,500</span>원</td>
+																			<td><span class="txt_num">1</span>명</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+														<div class="tbl_scroll_wrap tbl_right">
+															<div>
+																<table class="tbl_type1">
+																	<colgroup>
+																		<col>
+																		<col style="width:15%">
+																		<col style="width:20%">
+																		<col style="width:25%">
+																	</colgroup>
+																	<thead>
+																		<tr>
+																			<th scope="col">지역</th>
+																			<th scope="col">판매가</th>
+																			<th scope="col">등록일</th>
+																			<th scope="col">신고(삭제요청)</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td class="txt_left">경북 고령군</td>
+																			<td><span class="txt_num">6,500</span>원</td>
+																			<td class="txt_num">2017-06-18</td>
+																			<td><a href="#none" class="btn_type6 btn_del">삭제요청</a></td>
+																		</tr>
+																		<tr>
+																			<td class="txt_left">서울특별시 강남구삼성동</td>
+																			<td><span class="txt_num">6,500</span>원</td>
+																			<td class="txt_num">2017-06-18</td>
+																			<td></td>
+																		</tr>
+																		<tr>
+																			<td class="txt_left">경북 고령군</td>
+																			<td><span class="txt_num">6,500</span>원</td>
+																			<td class="txt_num">2017-06-18</td>
+																			<td><a href="#none" class="btn_type6 btn_del">삭제요청</a></td>
+																		</tr>
+																		<tr>
+																			<td class="txt_left">서울특별시 강남구삼성동</td>
+																			<td><span class="txt_num">6,500</span>원</td>
+																			<td class="txt_num">2017-06-18</td>
+																			<td><a href="#none" class="btn_type6 btn_del">삭제요청</a></td>
+																		</tr>
+																		<tr>
+																			<td class="txt_left">경북 고령군</td>
+																			<td><span class="txt_num">6,500</span>원</td>
+																			<td class="txt_num">2017-06-18</td>
+																			<td><a href="#none" class="btn_type6 btn_del">삭제요청</a></td>
+																		</tr>
+																		<tr>
+																			<td class="txt_left">서울특별시 강남구삼성동 서울특별시 강남구삼성동서울특별시 강남구삼성동서울특별시 강남구삼성동</td>
+																			<td><span class="txt_num">6,500</span>원</td>
+																			<td class="txt_num">2017-06-18</td>
+																			<td><a href="#none" class="btn_type6 btn_del">삭제요청</a></td>
+																		</tr>
+																		<tr>
+																			<td class="txt_left">경북 고령군</td>
+																			<td><span class="txt_num">6,500</span>원</td>
+																			<td class="txt_num">2017-06-18</td>
+																			<td><a href="#none" class="btn_type6 btn_del">삭제요청</a></td>
+																		</tr>
+																		<tr>
+																			<td class="txt_left">서울특별시 강남구삼성동</td>
+																			<td><span class="txt_num">6,500</span>원</td>
+																			<td class="txt_num">2017-06-18</td>
+																			<td><a href="#none" class="btn_type6 btn_del">삭제요청</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- //등록하기 후 -->
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="paging_nav">
+							<a href="#none" class="btn_prev">이전</a>
+							<a href="#none">1</a>
+							<a href="#none">2</a>
+							<a href="#none">3</a>
+							<a href="#none">4</a>
+							<a href="#none">5</a>
+							<span>6</span>
+							<a href="#none">7</a>
+							<a href="#none">8</a>
+							<a href="#none">9</a>
+							<a href="#none">10</a>
+							<a href="#none" class="btn_next">다음</a>
+						</div>
+					</div>
+				</div>
+				<div id="tabPop" style="display:none">
+					<div class="sub_cont_head">
+						<h3 class="sstit">POP자료실</h3>
+						<p class="sub_txt">약국에 필요한 POP 자료를 다운받으세요.</p>
+					</div>
+					<ul class="tab_menu tab_type1">
+						<li><a href="#">임팩타민</a></li>
+						<li><a href="#">우루사</a></li>
+						<li class="on"><a href="#">대웅 주요품목</a></li>
+						<li><a href="#">기타</a></li>
+						<li><a href="#">손글씨POP</a></li>
+					</ul>
+					<div class="tab_pop_data">
+						<div id="tabPopList1">
+							<h4 class="screen_out">임팩타민</h4>
+							<ul class="list_type1">
+								<li class="on"><a href="#">락피더스</a></li>
+								<li><a href="#">메가본</a></li>
+								<li><a href="#">베아제</a></li>
+								<li><a href="#">씨콜드</a></li>
+								<li><a href="#">이지덤</a></li>
+								<li><a href="#">이지엔</a></li>
+								<li><a href="#">코큐텐</a></li>
+							</ul>
+							<div class="wrap_search">
+								<select class="select" style="width:85px;">
+									<option>전체</option>
+									<option>POP</option>
+									<option>기사BD</option>
+									<option>리플렛</option>
+									<option>포스터</option>
+								</select>
+								<input type="text" title="검색어 입력" class="inp_txt">
+								<button type="submit" class="btn_search"><span class="btn_comm">검색</span></button>
+							</div>
+							<div class="tab_pop_data2">
+								<div id="tabProductList1">
+									<strong class="screen_out">락피더스</strong>
+									<ul class="list_product">
+										<li>
+											<span class="wrap_thumb"><img src="http://img.shop.co.kr/upload/board/info/print/wNhRmu2XG1_20160502154432998001.jpg" class="img_thumb" alt=""></span>
+											<strong class="tit_product">고함량 비타민 임팩타민 실버 고함량</strong>
+											<div class="wrap_btn">
+												<a href="#none" class="btn_view">크게보기</a>
+												<a href="#none" class="btn_down">다운받기</a>
+												<a href="#none" class="btn_original">원본요청</a>
+											</div>
+										</li>
+										<li>
+											<span class="wrap_thumb"><img src="http://img.shop.co.kr/upload/board/info/print/C1tMjlE5gZ_20160518164859298001.jpg" class="img_thumb" alt=""></span>
+											<strong class="tit_product">고함량 비타민 임팩타민 실버 고함량 비타민 임팩타민 실버</strong>
+											<div class="wrap_btn">
+												<a href="#none" class="btn_view">크게보기</a>
+												<a href="#none" class="btn_down">다운받기</a>
+												<a href="#none" class="btn_original">원본요청</a>
+											</div>
+										</li>
+										<li>
+											<span class="wrap_thumb"><img src="http://img.shop.co.kr/upload/board/info/print/NEyqrumdJs_20160520163106027001.jpg" class="img_thumb" alt=""></span>
+											<strong class="tit_product">고함량 비타민 임팩타민 실버 고함량 비타민 임팩타민 실버</strong>
+											<div class="wrap_btn">
+												<a href="#none" class="btn_view">크게보기</a>
+												<a href="#none" class="btn_down">다운받기</a>
+												<a href="#none" class="btn_original">원본요청</a>
+											</div>
+										</li>
+										<li>
+											<span class="wrap_thumb"><img src="../../images/temp/thumb_pop_list.jpg" class="img_thumb" alt=""></span>
+											<strong class="tit_product">고함량 비타민 임팩타민 실버 고함량 비타민 임팩타민 실버</strong>
+											<div class="wrap_btn">
+												<a href="#none" class="btn_view">크게보기</a>
+												<a href="#none" class="btn_down">다운받기</a>
+												<a href="#none" class="btn_original">원본요청</a>
+											</div>
+										</li>
+										<li>
+											<span class="wrap_thumb"><img src="../../images/temp/thumb_pop_list.jpg" class="img_thumb" alt=""></span>
+											<strong class="tit_product">고함량 비타민 임팩타민 실버 고함량 비타민 임팩타민 실버</strong>
+											<div class="wrap_btn">
+												<a href="#none" class="btn_view">크게보기</a>
+												<a href="#none" class="btn_down">다운받기</a>
+												<a href="#none" class="btn_original">원본요청</a>
+											</div>
+										</li>
+										<li>
+											<span class="wrap_thumb"><img src="../../images/temp/thumb_pop_list.jpg" class="img_thumb" alt=""></span>
+											<strong class="tit_product">고함량 비타민 임팩타민 실버 고함량 비타민 임팩타민 실버</strong>
+											<div class="wrap_btn">
+												<a href="#none" class="btn_view">크게보기</a>
+												<a href="#none" class="btn_down">다운받기</a>
+												<a href="#none" class="btn_original">원본요청</a>
+											</div>
+										</li>
+									</ul>
+									<div class="paging_nav">
+										<a href="#none" class="btn_prev">이전</a>
+										<a href="#none">1</a>
+										<a href="#none">2</a>
+										<a href="#none">3</a>
+										<a href="#none">4</a>
+										<a href="#none">5</a>
+										<span>6</span>
+										<a href="#none">7</a>
+										<a href="#none">8</a>
+										<a href="#none">9</a>
+										<a href="#none">10</a>
+										<a href="#none" class="btn_next">다음</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+	</section>
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+
+	<div id="popMyList" style="display:none">
+		<div class="pop_layer pop_type1" style="width:910px">
+			<strong class="tit_popup">나의 등록항목 보기</strong>
+			<div class="pop_wrap">
+				<table class="tbl_type1">
+					<caption>등록항목 안내</caption>
+					<colgroup>
+						<col style="width:80px">
+						<col>
+						<col style="width:70px">
+						<col style="width:70px">
+						<col style="width:110px">
+						<col style="width:80px">
+						<col style="width:88px">
+						<col style="width:80px">
+						<col style="width:90px">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">이미지</th>
+							<th scope="col">상품명</th>
+							<th scope="col">규격</th>
+							<th scope="col">단위</th>
+							<th scope="col">제조사</th>
+							<th scope="col">등록판매가</th>
+							<th scope="col">평균판매가</th>
+							<th scope="col">참여일자</th>
+							<th scope="col">삭제여부</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="wrap_thumb"><img src="../../images/temp/img_trend.jpg" alt=""></span></td>
+							<td class="txt_left">이안립케어<br>립모이스춰라이저(2017년형)</td>
+							<td>50ml</td>
+							<td>1EA+1EA</td>
+							<td>미도화장품</td>
+							<td class="txt_emph">2,300</td>
+							<td class="txt_bold">2,100</td>
+							<td class="txt_year">2016-07-23</td>
+							<td><a href="#none" class="btn_type7 btn_del">삭제</a></td>
+						</tr>
+						<tr>
+							<td><span class="wrap_thumb"><img src="../../images/temp/img_trend.jpg" alt=""></span></td>
+							<td class="txt_left">이안립케어<br>립모이스춰라이저(2017년형)</td>
+							<td>14.888g</td>
+							<td>1BOX</td>
+							<td>영일제약</td>
+							<td class="txt_emph">2,300</td>
+							<td class="txt_bold">2,100</td>
+							<td class="txt_year">2016-07-23</td>
+							<td><a href="#none" class="btn_type7 btn_del">삭제</a></td>
+						</tr>
+						<tr>
+							<td><span class="wrap_thumb"><img src="../../images/temp/img_trend.jpg" alt=""></span></td>
+							<td class="txt_left">이안립케어<br>립모이스춰라이저(2017년형)</td>
+							<td>14.888g</td>
+							<td>1EA</td>
+							<td>(주)한국파비스제약</td>
+							<td class="txt_emph">2,300</td>
+							<td class="txt_bold">2,100</td>
+							<td class="txt_year">2016-07-23</td>
+							<td><a href="#none" class="btn_type7 btn_del">삭제</a></td>
+						</tr>
+						<tr>
+							<td><span class="wrap_thumb"><img src="../../images/temp/img_trend.jpg" alt=""></span></td>
+							<td class="txt_left">이안립케어<br>립모이스춰라이저(2017년형)</td>
+							<td>14.888g</td>
+							<td>1EA</td>
+							<td>한국노바티스</td>
+							<td class="txt_emph">2,300</td>
+							<td class="txt_bold">2,100</td>
+							<td class="txt_year">2016-07-23</td>
+							<td><a href="#none" class="btn_type7 btn_del">삭제</a></td>
+						</tr>
+						<tr>
+							<td><span class="wrap_thumb"><img src="../../images/temp/img_trend.jpg" alt=""></span></td>
+							<td class="txt_left">이안립케어<br>립모이스춰라이저(2017년형)</td>
+							<td>14.888g</td>
+							<td>1EA</td>
+							<td>한국노바티스</td>
+							<td class="txt_emph">2,300</td>
+							<td class="txt_bold">2,100</td>
+							<td class="txt_year">2016-07-23</td>
+							<td><a href="#none" class="btn_type7 btn_del">삭제</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="paging_nav">
+					<a href="#none" class="btn_prev">이전</a>
+					<a href="#none">1</a>
+					<a href="#none">2</a>
+					<a href="#none">3</a>
+					<a href="#none">4</a>
+					<a href="#none">5</a>
+					<span>6</span>
+					<a href="#none">7</a>
+					<a href="#none">8</a>
+					<a href="#none">9</a>
+					<a href="#none">10</a>
+					<a href="#none" class="btn_next">다음</a>
+				</div>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- 2018-01-09 추가 -->
+	<div id="popTrendProduct" style="display:none">
+		<div class="pop_layer pop_type1" style="width:848px">
+			<strong class="tit_popup">판매가 동향 신규 상품 등록</strong>
+			<div class="pop_wrap">
+				<div class="sub_cont_head">
+					<p class="txt">* 판매가 동향에 등록되지 않은 미등록 상품만 검색 되어집니다.</p>
+					<div class="f_r">
+						<select class="select" style="width:85px;">
+							<option selected="">전체</option>
+							<option>상품명</option>
+							<option>제조사</option>
+						</select>
+						<div class="cont_search">
+							<input type="text" style="width:190px;" title="검색어 입력">
+							<button type="button" class="btn_search"><span class="btn_comm">검색</span></button>
+						</div>
+					</div>
+				</div>
+				<table class="tbl_type1">
+					<caption>등록 상품 검색</caption>
+					<colgroup>
+						<col style="width:80px">
+						<col>
+						<col style="width:125px">
+						<col style="width:125px">
+						<col style="width:230px">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">이미지</th>
+							<th scope="col">상품명</th>
+							<th scope="col">규격</th>
+							<th scope="col">단위</th>
+							<th scope="col">제조사</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="cell_list">
+							<td><span class="wrap_thumb"><img src="http://img.shop.co.kr/upload/product/medical/mid/20100107/8806470001811.gif" alt=""></span></td>
+							<td class="txt_left">엑스칠플러스연고</td>
+							<td>50ml</td>
+							<td>1EA+1EA</td>
+							<td>퍼슨(구성광제약)</td>
+						</tr>
+						<tr class="cell_view">
+							<td colspan="5">
+								<div class="view_cont">
+									<dl class="price_regist">
+										<dt>판매가 등록</dt>
+										<dd>
+											<label for="priceApply_1" class="lab_g">우리약국의 소비자 판매가 등록하기</label>
+											<div class="wrap_inp">
+												<div class="box_inp">
+													<input type="text" name="priceApply_1" id="priceApply_1" class="inp_txt">
+													<span class="txt_won">원</span>
+												</div>
+												<button type="submit" class="btn_type6 btn_regist">등록하기</button>
+											</div>
+											<p class="desc_g"><span class="txt_star">*</span> 판매가를 등록해주시면 다른 회원님들과 판매가를 공유하고 확인할 수 있습니다. </p>
+										</dd>
+										<dt>등록 시 주의 사항</dt>
+										<dd>
+											<ul class="list_caution">
+												<li>1. 상품의 규격, 단위를 확인하시고 현재 고객님의 약국에서 판매되고 있는 가격을 정확히 입력해 주십시오.</li>
+												<li>2. 등록 가격의 유효기간은 3개월입니다. 3개월 이내 등록하신 이력이 없으면 다시 입력해 주십시오.</li>
+												<li>3. 가격, 규격, 단위를 허위로 기재하셔서, 다른 고객님들로부터 삭제 요청을 받는 경우 등록하신 가격은 임의로 삭제 처리될 수 있습니다.</li>
+												<li>4. 정확한 가격 정보를 입력하셔서 건전한 정보 공유의 장을 만들어 주십시오.</li>
+												<li>5. 등록하신 판매가는 수정은 가능하나 삭제가 불가능하오니 신중하게 입력해 주십시오.</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</td>
+						</tr>
+						<tr class="cell_list">
+							<td><span class="wrap_thumb"><img src="http://img.shop.co.kr/upload/product/SELLER/201106/267765_01_M.jpg" alt=""></span></td>
+							<td class="txt_left">마툴키(바퀴, 개미)</td>
+							<td>50ml</td>
+							<td>1EA+1EA</td>
+							<td>퍼슨(구성광제약)</td>
+						</tr>
+						<tr class="cell_view">
+							<td colspan="5">
+								<div class="view_cont">
+									<dl class="price_regist">
+										<dt>판매가 등록</dt>
+										<dd>
+											<label for="priceApply_2" class="lab_g">우리약국의 소비자 판매가 등록하기</label>
+											<div class="wrap_inp">
+												<div class="box_inp">
+													<input type="text" name="priceApply_2" id="priceApply_2" class="inp_txt">
+													<span class="txt_won">원</span>
+												</div>
+												<button type="submit" class="btn_type6 btn_regist">등록하기</button>
+											</div>
+											<p class="desc_g"><span class="txt_star">*</span> 판매가를 등록해주시면 다른 회원님들과 판매가를 공유하고 확인할 수 있습니다. </p>
+										</dd>
+										<dt>등록 시 주의 사항</dt>
+										<dd>
+											<ul class="list_caution">
+												<li>1. 상품의 규격, 단위를 확인하시고 현재 고객님의 약국에서 판매되고 있는 가격을 정확히 입력해 주십시오.</li>
+												<li>2. 등록 가격의 유효기간은 3개월입니다. 3개월 이내 등록하신 이력이 없으면 다시 입력해 주십시오.</li>
+												<li>3. 가격, 규격, 단위를 허위로 기재하셔서, 다른 고객님들로부터 삭제 요청을 받는 경우 등록하신 가격은 임의로 삭제 처리될 수 있습니다.</li>
+												<li>4. 정확한 가격 정보를 입력하셔서 건전한 정보 공유의 장을 만들어 주십시오.</li>
+												<li>5. 등록하신 판매가는 수정은 가능하나 삭제가 불가능하오니 신중하게 입력해 주십시오.</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</td>
+						</tr>
+						<tr class="cell_list">
+							<td><span class="wrap_thumb"><img src="http://img.shop.co.kr/upload/product/ADMIN/201105/73796_01_M.jpg" alt=""></span></td>
+							<td class="txt_left">살사라진정(방풍통성산건조엑스-에프)</td>
+							<td>50ml</td>
+							<td>1EA+1EA</td>
+							<td>퍼슨(구성광제약)</td>
+						</tr>
+						<tr class="cell_view">
+							<td colspan="5">
+								<div class="view_cont">
+									<dl class="price_regist">
+										<dt>판매가 등록</dt>
+										<dd>
+											<label for="priceApply_3" class="lab_g">우리약국의 소비자 판매가 등록하기</label>
+											<div class="wrap_inp">
+												<div class="box_inp">
+													<input type="text" name="priceApply_3" id="priceApply_3" class="inp_txt">
+													<span class="txt_won">원</span>
+												</div>
+												<button type="submit" class="btn_type6 btn_regist">등록하기</button>
+											</div>
+											<p class="desc_g"><span class="txt_star">*</span> 판매가를 등록해주시면 다른 회원님들과 판매가를 공유하고 확인할 수 있습니다. </p>
+										</dd>
+										<dt>등록 시 주의 사항</dt>
+										<dd>
+											<ul class="list_caution">
+												<li>1. 상품의 규격, 단위를 확인하시고 현재 고객님의 약국에서 판매되고 있는 가격을 정확히 입력해 주십시오.</li>
+												<li>2. 등록 가격의 유효기간은 3개월입니다. 3개월 이내 등록하신 이력이 없으면 다시 입력해 주십시오.</li>
+												<li>3. 가격, 규격, 단위를 허위로 기재하셔서, 다른 고객님들로부터 삭제 요청을 받는 경우 등록하신 가격은 임의로 삭제 처리될 수 있습니다.</li>
+												<li>4. 정확한 가격 정보를 입력하셔서 건전한 정보 공유의 장을 만들어 주십시오.</li>
+												<li>5. 등록하신 판매가는 수정은 가능하나 삭제가 불가능하오니 신중하게 입력해 주십시오.</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</td>
+						</tr>
+						<tr class="cell_list">
+							<td><span class="wrap_thumb"><img src="http://img.shop.co.kr/upload/product/medical/mid/20100102/8806535004511.gif" alt=""></span></td>
+							<td class="txt_left">부스코판당의정(브롬화부틸스코폴라민)</td>
+							<td>50ml</td>
+							<td>1EA+1EA</td>
+							<td>(주)보람씨앤에치</td>
+						</tr>
+						<tr class="cell_view">
+							<td colspan="5">
+								<div class="view_cont">
+									<dl class="price_regist">
+										<dt>판매가 등록</dt>
+										<dd>
+											<label for="priceApply_4" class="lab_g">우리약국의 소비자 판매가 등록하기</label>
+											<div class="wrap_inp">
+												<div class="box_inp">
+													<input type="text" name="priceApply_4" id="priceApply_4" class="inp_txt">
+													<span class="txt_won">원</span>
+												</div>
+												<button type="submit" class="btn_type6 btn_regist">등록하기</button>
+											</div>
+											<p class="desc_g"><span class="txt_star">*</span> 판매가를 등록해주시면 다른 회원님들과 판매가를 공유하고 확인할 수 있습니다. </p>
+										</dd>
+										<dt>등록 시 주의 사항</dt>
+										<dd>
+											<ul class="list_caution">
+												<li>1. 상품의 규격, 단위를 확인하시고 현재 고객님의 약국에서 판매되고 있는 가격을 정확히 입력해 주십시오.</li>
+												<li>2. 등록 가격의 유효기간은 3개월입니다. 3개월 이내 등록하신 이력이 없으면 다시 입력해 주십시오.</li>
+												<li>3. 가격, 규격, 단위를 허위로 기재하셔서, 다른 고객님들로부터 삭제 요청을 받는 경우 등록하신 가격은 임의로 삭제 처리될 수 있습니다.</li>
+												<li>4. 정확한 가격 정보를 입력하셔서 건전한 정보 공유의 장을 만들어 주십시오.</li>
+												<li>5. 등록하신 판매가는 수정은 가능하나 삭제가 불가능하오니 신중하게 입력해 주십시오.</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</td>
+						</tr>
+						<tr class="cell_list">
+							<td><span class="wrap_thumb"><img src="http://img.shop.co.kr/upload/product/SELLER/201706/544165_01_M.jpg" alt=""></span></td>
+							<td class="txt_left">나잘후레쉬 수동식 코세정기MS-300(원터치 에어밸브/핑크)</td>
+							<td>14.888g</td>
+							<td>1BOX</td>
+							<td>한국베링거인겔하임</td>
+						</tr>
+						<tr class="cell_view">
+							<td colspan="5">
+								<div class="view_cont">
+									<dl class="price_regist">
+										<dt>판매가 등록</dt>
+										<dd>
+											<label for="priceApply_5" class="lab_g">우리약국의 소비자 판매가 등록하기</label>
+											<div class="wrap_inp">
+												<div class="box_inp">
+													<input type="text" name="priceApply_5" id="priceApply_5" class="inp_txt">
+													<span class="txt_won">원</span>
+												</div>
+												<button type="submit" class="btn_type6 btn_regist">등록하기</button>
+											</div>
+											<p class="desc_g"><span class="txt_star">*</span> 판매가를 등록해주시면 다른 회원님들과 판매가를 공유하고 확인할 수 있습니다. </p>
+										</dd>
+										<dt>등록 시 주의 사항</dt>
+										<dd>
+											<ul class="list_caution">
+												<li>1. 상품의 규격, 단위를 확인하시고 현재 고객님의 약국에서 판매되고 있는 가격을 정확히 입력해 주십시오.</li>
+												<li>2. 등록 가격의 유효기간은 3개월입니다. 3개월 이내 등록하신 이력이 없으면 다시 입력해 주십시오.</li>
+												<li>3. 가격, 규격, 단위를 허위로 기재하셔서, 다른 고객님들로부터 삭제 요청을 받는 경우 등록하신 가격은 임의로 삭제 처리될 수 있습니다.</li>
+												<li>4. 정확한 가격 정보를 입력하셔서 건전한 정보 공유의 장을 만들어 주십시오.</li>
+												<li>5. 등록하신 판매가는 수정은 가능하나 삭제가 불가능하오니 신중하게 입력해 주십시오.</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn_wrap">
+					<a href="#" class="btn_type3 btn_list">목록</a>
+					<a href="#" class="btn_type1 btn_cancel">닫기</a>
+				</div>
+				<div class="paging_nav">
+						<a href="#none" class="btn_prev">이전</a>
+						<a href="#none">1</a>
+						<a href="#none">2</a>
+						<a href="#none">3</a>
+						<a href="#none">4</a>
+						<a href="#none">5</a>
+						<span>6</span>
+						<a href="#none">7</a>
+						<a href="#none">8</a>
+						<a href="#none">9</a>
+						<a href="#none">10</a>
+						<a href="#none" class="btn_next">다음</a>
+					</div>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- //2018-01-09 추가 -->
+	<div id="popDelRequest" style="display:none">
+		<div class="pop_layer pop_type1" style="width:500px">
+			<strong class="tit_popup">삭제요청</strong>
+			<div class="pop_wrap">
+				<strong class="tit_del">삭제요청 사유를 선택해주세요.</strong>
+				<ul class="list_del">
+					<li>
+						<input type="radio" name="delType" id="delType1" class="inp_radio" checked="checked">
+						<label for="delType1" class="lab_radio">규격/단위에 맞지 않은 판매가</label>
+					</li>
+					<li>
+						<input type="radio" name="delType" id="delType2" class="inp_radio">
+						<label for="delType2" class="lab_radio">잘못 입력한 판매가</label>
+					</li>
+					<li>
+						<input type="radio" name="delType" id="delType3" class="inp_radio">
+						<label for="delType3" class="lab_radio">허위가격</label>
+					</li>
+					<li>
+						<input type="radio" name="delType" id="delType4" class="inp_radio">
+						<label for="delType4" class="lab_radio">기타</label>
+					</li>
+				</ul>
+				<div class="btn_wrap">
+					<button type="submit" class="btn_type1 btn_confirm">확인</button>
+					<button type="button" class="btn_type2 btn_cancel">닫기</button>
+				</div>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<div id="popExpandView" style="display:none">
+		<div class="pop_layer pop_type1" style="width:836px">
+			<strong class="tit_popup">고함량비타민 임팩타민 파워 POP</strong>
+			<div class="pop_wrap">
+				<div class="head_info">
+					<div class="f_l">
+						<button type="button" class="btn_type8 btn_original">원본크기</button>
+						<button type="button" class="btn_type8 btn_resizing">화면맞춤</button>
+					</div>
+					<div class="f_r">
+						<a href="#none" class="btn_type3 btn_down">다운받기</a>
+						<button type="button" class="btn_type1 btn_print">인쇄하기</button>
+					</div>
+				</div>
+				<div class="view_area">
+					<div class="wrap_thumb">
+						<span class="inner_thumb"><img src="http://img.shop.co.kr/upload/board/info/print/pn9SrIsXDO_20131213104355307000.jpg" alt="상품 이미지"></span>
+					</div>
+				</div>
+				<div class="btn_wrap">
+					<button type="button" class="btn_type1 btn_cancel">팝업닫기</button>
+				</div>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(function(){
+			// 부가서비스 메뉴 탭
+			shopUI.tab({
+				"tabs" : $(".tab_type3 li"),
+				"contWrap" : $(".tab_cont > div")
+			});
+			// 보험약가 상품리스트 목록 클릭 시 on
+			$(".insure_data .f_l td").on("click", function(){
+				$(this).parent("tr").addClass("on").siblings().removeClass("on");
+				return false;
+			});
+			// 판매가동향 목록 슬라이드
+			$(".tbl_slide .cell_list td").on("click", function(e){ /* 2018-01-09 수정 */
+				var thisView = $(this).parent().next(".cell_view").find(".view_cont");
+				$(".trend_data .view_cont").slideUp();
+				$(this).parent("tr").removeClass("on");
+				if(! thisView.is(':visible')){
+					thisView.slideDown();
+					$(this).parent("tr").addClass("on").siblings().removeClass("on");
+				}
+				e.preventDefault();
+			});
+			//모달 레이어
+			$('body').on("click", ".head_info .btn_view", function() {
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popMyList"), {
+					closeClass: "btn_close"
+				});
+			});
+			$('body').on("click", ".price_regist .btn_regist", function() {
+				shopUI.modalLayerComm({
+					"type": "1",
+					"title": "판매가 등록",
+					"description": "등록된 평균판매가 대비<br>매우 낮거나 높은 금액으로 입력하셨습니다.<br>다시 확인 부탁드립니다.",
+					"confirmFunc" : function(){
+						$("#modalType1 .btn_close").click(); /* 2018-01-09 수정 */
+					}
+				});
+			});
+			$('body').on("click", ".data_period .btn_del", function() {
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popDelRequest"), {
+					closeClass: "btn_close"
+				});
+				$("body").on("click", "#popDelRequest .btn_cancel", function() {
+					$(".btn_close").click();
+				});
+				$("body").on("click", "#popDelRequest .btn_confirm", function() {
+					alert("삭제요청이 완료되었습니다.")
+				});
+			});
+			$('body').on("click", ".head_info .btn_del", function() {
+				shopUI.modalLayerComm({
+					"type": "1",
+					"title": "나의 등록 판매가",
+					"description": "삭제가 완료되었습니다."
+				});
+			});
+			$('body').on("click", "#popMyList .btn_del", function() {
+				shopUI.modalLayerComm({
+					"type": "2",
+					"title": "나의 등록항목 보기",
+					"description": "삭제하시겠습니까?",
+					"confirmFunc": function(){
+						alert("삭제가 완료되었습니다.");
+					}
+				});
+			});
+
+			/* 2018-01-09 추가 시작 */
+			$("body").on("click", ".head_info .btn_regist", function() {
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popTrendProduct"), {
+					closeClass: "btn_close"
+				});
+			});
+			$("#popTrendProduct .cell_list td").on("click", function() {
+				$("#popTrendProduct .pop_wrap").addClass("active");
+				$(this).parent().siblings().css("display","none");
+				$(this).parent().next(".cell_view").css("display","table-row");
+			});
+			$("#popTrendProduct .btn_list").on("click", function(e) {
+				$("#popTrendProduct .pop_wrap").removeClass("active");
+				$(this).parent().prev().find(".cell_view").css("display", "none").prev(".cell_list").css("display", "table-row");
+				e.preventDefault();
+			});
+			$("#popTrendProduct .btn_cancel").on("click", function(e) {
+				$(".btn_close").click();
+				e.preventDefault();
+			});
+			/* 2018-01-09 추가 끝 */
+
+			$('body').on("click", ".tab_pop_data2 .btn_view", function() {
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popExpandView"), {
+					closeClass: "btn_close",
+					onOpen: function(){
+						$("html, body").css("height", "100%");
+					}, 
+					onClose: function(){
+						$("html, body").css("height", "auto");
+					}
+				});
+				$("body").on("click", "#popExpandView .btn_cancel", function() {
+					$(".btn_close").click();
+				});
+			});
+			$('body').on("click", ".tab_pop_data2 .btn_original", function() {
+				shopUI.modalLayerComm({
+					"type": "2",
+					"title": "원본요청",
+					"description": "영업사원 담당자에게 원본 요청<br>sms를 발송하시겠습니까?",
+					"confirmFunc": function(){
+						alert("발송이 완료되었습니다.");
+					}
+				});
+			});
+			// 크게보기 버튼
+			$("#popExpandView .btn_original").on("click", function(){
+				var imgWidth = $("#popExpandView img").get(0).naturalWidth;
+				var imgHeight = $("#popExpandView img").get(0).naturalHeight;
+				$("#popExpandView img").width(imgWidth).height(imgHeight);
+			});
+			// 화면맞춤 버튼
+			$("#popExpandView .btn_resizing").on("click", function(){
+				$("#popExpandView img").css({
+					"width": "100%", // 2018-01-08 수정
+					"height": "auto"
+				});
+			});
+			// 인쇄하기 버튼
+			$("#popExpandView .btn_print").on("click", function(){
+				$("body").addClass("print_additi");
+				window.print();
+				$("body").removeClass("print_additi");
+			});
+			// 베스트 상품 롤링
+			var slider_g =  $(".slider_g .owl-carousel");
+			slider_g.on("initialized.owl.carousel", function(e){
+				var owlItems = e.item.index-1;
+				$(this).next(".prod_pagination").html("<strong>" + owlItems + "</strong>/" + e.item.count);
+			});
+			slider_g.on("changed.owl.carousel", function(e){
+				var owlItems = e.item.index - 1;
+				if (owlItems == 0){
+					owlItems = e.item.count
+				} else if (owlItems == -1){
+					owlItems = e.item.index + 1
+				}
+				$(this).next(".prod_pagination").html("<strong>" + owlItems + "</strong>/" + e.item.count);
+			});
+			slider_g.owlCarousel({
+				items: 1,
+				loop: true,
+				nav: true,
+				dots: false,
+				smartSpeed:0
+			});
+		});
+	</script>
+</body>
+</html>

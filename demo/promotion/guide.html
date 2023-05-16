@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>프로모션 주요 작업</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<style>
+		body{font-family: "Malgun Gothic","맑은 고딕","돋움","Dotum","sans-serif";}
+		*{margin:0; padding:0;}
+		.header{padding:20px 0; background:#e6e6e6;}
+		.header h1{margin-left: 15px; font-size: 20px; line-height: 20px; color: #000;}
+		.guid_board .tit{margin: 25px 0 10px 15px; color:#111; font-size: 18px;}
+		.table_box{margin:0 15px;}
+		.table_box .tb{margin:7px 0 30px; }
+		.tb{width: 100%; font-size: 14px; border-top:2px solid #333; border-spacing: 0; border-collapse: collapse;}
+		.tb th{padding:  10px; background-color: #f0f0f0; text-align: center; border-bottom: 1px solid #aaa; border-left:1px solid #aaa;}
+		.tb th:first-child{border-left: none;}
+		.tb tr:frist-child td{border-top:0;}
+		.tb td:first-child{border-left:none;}
+		.tb td{padding:10px; border-top: 1px solid #aaa; border-left:1px solid #aaa; border-bottom:1px solid #aaa;}
+		.tb .url a:hover{text-decoration: underline;}
+		.tb .demo_btn{color:#ed4949; text-decoration: none;}
+		.tb .demo_btn:hover {text-decoration: underline;}
+		.skill_btn{padding:8px; color: #ed4949; border-radius: 30px; border: 1px solid #ed4949; background-color: #fff; cursor: pointer;}
+		.skill_btn:hover{transition: all .5s; background-color: #ed4949; color: #fff;}
+
+		.dim{display: none; position: fixed; top:0; left: 0; bottom:0; right: 0; background:rgba(0,0,0,.6); z-index: 50;}
+		.dim.on{display: block;}
+		.layer{display: none; position: absolute; top:60px; left: 50%; margin-left: -400px; width: 800px; background:#fff; z-index: 52; border-radius: 30px;}
+		.layer.open{display: block;}
+		.layer .layer_inner{position: relative;}
+		/* .layer .layer_header{padding:5px 0; border-bottom: 1px solid #ccc; background-color: #fff;} */
+		.layer h2{display: inline-block; position: relative; padding:20px;}
+		.layer h2::after{display: block; width: 100%; height: 2px; margin-top: 10px; background-color: #ed4949; content: "";}
+		.layer .close{position: absolute; top:20px; right:20px; background:none; border:none; cursor: pointer;}
+		.layer .close::before{display: block; width: 38px; height: 38px; background:url("https://img.modetour.com/modemobile/2018/itinerary/sprite@2x_191014.png") no-repeat -376px -770px; content: "";}
+		.layer .layer_content{padding:40px; text-align: center;}
+		.layer .layer_content .row{width: 100%;}
+		.layer .layer_content .img_area{position: relative;}
+		.layer .layer_content .img_area.type:after{display: block; content: ""; clear: both;}
+		.layer .layer_content .img_area.type .img{float: left; width: 48%; margin:0 6px;}
+		.layer .layer_content .img{display: inline-block; width: 440px; min-height: 250px; overflow: hidden;}
+		.layer .layer_content .img.full{width: auto;}
+		.layer .layer_content .img img{width: 100%;} 
+		.layer .layer_content .txt_area{padding: 20px 0 40px;}
+		.layer .btn{display: inline-block; width: 100px; height: 40px; line-height: 40px; border:none; text-decoration: none; background:#ed4949; font-size: 14px; color: #fff; border-radius: 10px;}
+		/*animate*/
+		.s1 {animation-duration: 0.5s;}
+		.s2 {animation-duration: 1.5s;}
+		/* .s3 {animation-duration: 1.5s;} */
+		.s4 {animation-duration: 2s;}
+		.s5 {animation-duration: 2.5s;}
+		.s6 {animation-duration: 3s;}
+		.s7 {animation-duration: 3.5s;}
+		.s8 {animation-duration: 4s;}
+		.s9 {animation-duration: 4.5s;}
+		.s10 {animation-duration: 5s;}
+		.act{animation-fill-mode: both;}
+
+		@keyframes fadeInUp {
+			from {
+				opacity: 0;
+				transform: translate3d(0, 50px, 0);
+			}
+
+			to {
+				opacity: 1;
+				transform: none;
+			}
+		}
+		.fadeInUp {
+			animation-name: fadeInUp;
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+			//layer
+			$('.skill_btn').click(function(e){
+				e.preventDefault();
+				$('.dim').addClass('on');
+				$($(this).attr("href")).addClass('open');
+			})
+			var $layer=$('.layer');
+			var $layerClose= $layer.find('.close');
+			$layerClose.click(function(){
+				$('.dim').removeClass('on');
+				$('.layer').removeClass('open');
+			})
+			//layer animate
+			var $layerRow= $layer.find('.row');
+			var $layerBtn= $layer.find('.btn');
+			var btnOffset=$layerBtn.offset().top;
+			console.log('btnOffset-->'+btnOffset);
+			
+			$layerRow.addClass('fadeInUp');
+		});	
+	</script>
+</head>
+<body>
+	<div class="dim"></div>
+	<!--layer-->
+	<div class="layer_wrap">		
+		<!--휴일 기획전-->
+		<div id="pop_holiday" class="layer">
+			<div class="layer_inner">
+				<header class="layer_header">
+					<button class="close"></button>
+					<h2>주요기능</h2>
+				</header>
+				<div class="layer_content">
+					<div class="row s1">
+						<span class="img full"><img src="../../img/promotion/holiday1.JPG"></span>
+						<div class="txt_area">
+							Slick플러그인 적용한 자동 슬라이드 
+						</div>
+					</div>
+					<div class="row s2">
+						<span class="img full"><img src="../../img/promotion/holiday2.JPG"></span>
+						<div class="txt_area">
+							Swiper플러그인 적용한 프로그레스 슬라이드
+						</div>
+					</div>
+					<a href="./dist/pc_holiday.html" target="_blank" class="btn">DEMO보기</a>
+				</div>
+			</div>
+		</div>
+		<!--//휴일 기획전-->
+		<!--시그니처 기획전-->
+		<div id="pop_signature" class="layer">
+			<div class="layer_inner">
+				<header class="layer_header">
+					<button class="close"></button>
+					<h2>주요기능</h2>
+				</header>
+				<div class="layer_content">
+					<div class="row s1">
+						<span class="img"><img src="../../img/promotion/11520_signature_info.jpg"></span>
+						<div class="txt_area">
+							스크롤시 각 섹션에 닿았을때 해당 컨텐츠 나타나는 패럴랙스 기능 
+						</div>
+					</div>
+					<div class="row s2">
+						<span class="img"><img src="../../img/promotion/11520_signature_info2.JPG"></span>
+						<div class="txt_area">
+							Swiper플러그인 적용한 슬라이드 기능
+						</div>
+					</div>
+					<a href="./dist/11250_signature.html" target="_blank" class="btn">DEMO보기</a>
+				</div>
+			</div>
+		</div>
+		<!--//시그니처 기획전-->
+		<!--창사 기획전-->
+		<div id="pop_sepet" class="layer">
+			<div class="layer_inner">
+				<header class="layer_header">
+					<button class="close"></button>
+					<h2>주요기능</h2>
+				</header>
+				<div class="layer_content">
+					<div class="row s1">
+						<span class="img"><img src="../../img/promotion/sep1.JPG"></span>
+						<div class="txt_area">
+							마우스 오버시 애니메이션 효과
+						</div>
+					</div>
+					<div class="row s2">
+						<span class="img"><img src="../../img/promotion/sep2.JPG"></span>
+						<div class="txt_area">
+							Swiper플러그인 적용한 슬라이드 기능
+							<br>마우스 오버시 아이콘 회전 애니메이션 효과
+						</div>
+						<span class="img"><img src="../../img/promotion/sep3.JPG"></span>
+						<div class="txt_area">
+							마우스 오버시 플립 효과
+						</div>
+					</div>
+					<a href="./dist/seperate.html" target="_blank" class="btn">DEMO보기</a>
+				</div>
+			</div>
+		</div>
+		<!--//창사 기획전-->
+		<!--호텔 벨몬드 기획전-->
+		<div id="pop_belmond" class="layer">
+			<div class="layer_inner">
+				<header class="layer_header">
+					<button class="close"></button>
+					<h2>주요기능</h2>
+				</header>
+				<div class="layer_content">
+					<div class="row s1">
+						<span class="img"><img src="../../img/promotion/belmond1.JPG"></span>
+						<div class="txt_area">
+							Cycle플러그인 적용한 메인 슬라이드
+						</div>
+					</div>
+					<div class="row s2">
+						<span class="img"><img src="../../img/promotion/belmond2.jpg"></span>
+						<div class="txt_area">
+							Jquery와 CSS적용하여 마우스 오버시 애니메이션 효과
+						</div>
+						<span class="img full"><img src="../../img/promotion/belmond3.jpg"></span>
+						<div class="txt_area">
+							Swiper플러그인 적용한 슬라이드 기능
+						</div>
+					</div>
+					<a href="./dist/belmond.html" target="_blank" class="btn">DEMO보기</a>
+				</div>
+			</div>
+		</div>
+		<!--//호텔 벨몬드 기획전-->
+		<!--하와이 기획전-->
+		<div id="pop_hawai" class="layer">
+			<div class="layer_inner">
+				<header class="layer_header">
+					<button class="close"></button>
+					<h2>주요기능</h2>
+				</header>
+				<div class="layer_content">
+					<div class="row s1">
+						<span class="img"><img src="../../img/promotion/11564_hawai.PNG"></span>
+						<div class="txt_area">
+							Slick플러그인 적용하여 배경과 이미지가 연결되어 함께 슬라이드
+						</div>
+					</div>
+					<a href="./dist/11564_hawai.html" target="_blank" class="btn">DEMO보기</a>
+				</div>
+			</div>
+		</div>		
+		<!--//하와이 기획전-->
+		<!--사이판 기획전-->
+		<div id="pop_saipan" class="layer">
+			<div class="layer_inner">
+				<header class="layer_header">
+					<button class="close"></button>
+					<h2>주요기능</h2>
+				</header>
+				<div class="layer_content">
+					<div class="row s1">
+						<span class="img full"><img src="../../img/promotion/saipain.JPG"></span>
+						<div class="txt_area">
+							자동 슬라이드-슬라이드시 메인 이미지 확대 애니메이션 적용
+						</div>
+					</div>
+					<a href="./dist/saipan_back.html" target="_blank" class="btn">DEMO보기</a>
+				</div>
+			</div>
+		</div>		
+		<!--//사이판 기획전-->
+		<!--사이판 기획전-->
+		<div id="pop_hk" class="layer">
+			<div class="layer_inner">
+				<header class="layer_header">
+					<button class="close"></button>
+					<h2>주요기능</h2>
+				</header>
+				<div class="layer_content">
+					<div class="row s1">
+						<span class="img full"><img src="../../img/promotion/hk.JPG"></span>
+						<div class="txt_area">
+							배경 둥둥 떠다니는 애니메이션 적용
+						</div>
+					</div>
+					<a href="./dist/hk.html" target="_blank" class="btn">DEMO보기</a>
+				</div>
+			</div>
+		</div>		
+		<!--//사이판 기획전-->
+		<!--해외직구 기획전-->
+		<div id="pop_sell" class="layer">
+			<div class="layer_inner">
+				<header class="layer_header">
+					<button class="close"></button>
+					<h2>주요기능</h2>
+				</header>
+				<div class="layer_content">
+					<div class="row s1">
+						<span class="img"><img src="../../img/promotion/11561_sell.JPG"></span>
+						<div class="txt_area">
+							Swiper플러그인 적용한 스와이퍼, 스크롤시 탭 고정 기능
+						</div>
+					</div>
+					<a href="./dist/11561_sell.html" target="_blank" class="btn">DEMO보기</a>
+				</div>
+			</div>
+		</div>		
+		<!--//해외직구 기획전-->		
+		<!--여행박람회 기획전-->
+		<div id="pop_mart" class="layer">
+			<div class="layer_inner">
+				<header class="layer_header">
+					<button class="close"></button>
+					<h2>주요기능</h2>
+				</header>
+				<div class="layer_content">
+					<div class="row s1">
+						<div class="img_area type">
+							<span class="img"><img src="../../img/promotion/mart1.JPG"></span>
+							<span class="img"><img src="../../img/promotion/mart2.JPG"></span>
+						</div>
+					</div>
+					<div class="txt_area">
+						Swiper플러그인 적용한 슬라이드
+					</div>
+					<a href="./dist/mart.html" target="_blank" class="btn">DEMO보기</a>
+				</div>
+			</div>
+		</div>		
+		<!--//여행박람회 기획전-->
+		<!--시그니처_2019 기획전-->
+		<div id="pop_signature_2019" class="layer">
+			<div class="layer_inner">
+				<header class="layer_header">
+					<button class="close"></button>
+					<h2>주요기능</h2>
+				</header>
+				<div class="layer_content">
+					<div class="row s1">
+						<div class="img_area type">
+							<span class="img"><img src="../../img/promotion/10670_signature1.JPG"></span>
+							<span class="img"><img src="../../img/promotion/10670_signature2.JPG"></span>
+						</div>
+						<div class="txt_area">
+							Swiper플러그인 적용한 슬라이드 기능
+						</div>
+					</div>
+					<a href="./dist/10670_Signature.html" target="_blank" class="btn">DEMO보기</a>
+				</div>
+			</div>
+		</div>		
+		<!--//시그니처_2019 기획전-->
+		<!--안심패키지 기획전-->
+		<div id="pop_campain" class="layer">
+			<div class="layer_inner">
+				<header class="layer_header">
+					<button class="close"></button>
+					<h2>주요기능</h2>
+				</header>
+				<div class="layer_content">
+					<div class="row s1">
+						<span class="img full"><img src="../../img/promotion/11493_dream.PNG"></span>
+						<div class="txt_area">
+							Slick플러그인 적용한 슬라이드 
+						</div>
+					</div>
+					<a href="./dist/11493_campain.html" target="_blank" class="btn">DEMO보기</a>
+				</div>
+			</div>
+		</div>
+		<!--//안심패키지 기획전-->
+		<!--드림쿠폰 기획전-->
+		<div id="pop_dreamcoupon" class="layer">
+			<div class="layer_inner">
+				<header class="layer_header">
+					<button class="close"></button>
+					<h2>주요기능</h2>
+				</header>
+				<div class="layer_content">
+					<div class="row s1">
+						<span class="img full"><img src="../../img/promotion/dream_coupon.JPG"></span>
+						<div class="txt_area">
+							Swiper플러그인 적용한 슬라이드 
+						</div>
+					</div>
+					<a href="./dist/dream_coupon.html" target="_blank" class="btn">DEMO보기</a>
+				</div>
+			</div>
+		</div>
+		<!--//드림쿠폰 기획전-->
+		<!--컨셉투어 기획전-->
+		<div id="pop_concept" class="layer">
+			<div class="layer_inner">
+				<header class="layer_header">
+					<button class="close"></button>
+					<h2>주요기능</h2>
+				</header>
+				<div class="layer_content">
+					<div class="row s1">
+						<span class="img"><img src="../../img/promotion/concept.JPG"></span>
+						<div class="txt_area">
+							Slick플러그인 적용하여 배경과 이미지가 연결되어 함께 슬라이드
+						</div>
+					</div>
+					<a href="./dist/concept1.html" target="_blank" class="btn">DEMO보기</a>
+				</div>
+			</div>
+		</div>
+		<!--//컨셉투어 기획전-->
+	</div>
+	<!--//layer-->
+	<header class="header">
+		<h1>프로모션 주요 작업</h1>
+	</header>
+	<div class="guid_board">
+		<h2 class="tit">작업목록</h2>
+		<div class="table_box">
+			<table class="tb">
+				<colgroup>
+					<col width="20%">
+					<col width="20%">
+					<col width="20%">
+					<col width="*">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>기획전</th>
+						<th>주요기능</th>
+						<th>DEMO</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>추석 기획전</td>
+						<td><button class="skill_btn" href="#pop_holiday" target="_blank">주요기능 보기</button></td>
+						<td class="url"><a href="./dist/pc_holiday.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>시그니처 기획전</td>
+						<td><button class="skill_btn" href="#pop_signature" target="_blank">주요기능 보기</button></td>
+						<td class="url"><a href="./dist/11250_signature.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>창사 기획전</td>
+						<td><button class="skill_btn" href="#pop_sepet" target="_blank">주요기능 보기</button></td>
+						<td class="url"><a href="./dist/seperate.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>									
+					<tr>
+						<td>사이판 기획전</td>
+						<td><button class="skill_btn" href="#pop_saipan" target="_blank">주요기능 보기</button></td>
+						<td class="url"><a href="./dist/saipan_back.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>하와이 기획전</td>
+						<td><button class="skill_btn" href="#pop_hawai" target="_blank">주요기능 보기</button></td>
+						<td class="url"><a href="./dist/11564_hawai.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>홍콩/마카오 기획전</td>
+						<td><button class="skill_btn" href="#pop_hk" target="_blank">주요기능 보기</button></td>
+						<td class="url"><a href="./dist/hk.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>호텔 벨몬드 기획전</td>
+						<td><button class="skill_btn" href="#pop_belmond" target="_blank">주요기능 보기</button></td>
+						<td class="url"><a href="./dist/belmond.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>해외직구 기획전</td>
+						<td><button class="skill_btn" href="#pop_sell" target="_blank">주요기능 보기</button></td>
+						<td class="url"><a href="./dist/11561_sell.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>					
+					<tr>
+						<td>여행박람회</td>
+						<td><button class="skill_btn" href="#pop_mart" target="_blank">주요기능 보기</button></td>
+						<td class="url"><a href="./dist/mart.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>시그니처 기획전_2019</td>
+						<td><button class="skill_btn" href="#pop_signature_2019" target="_blank">주요기능 보기</button></td>
+						<td class="url"><a href="./dist/10670_Signature.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>컨셉투어 기획전</td>
+						<td><button class="skill_btn" href="#pop_concept" target="_blank">주요기능 보기</button></td>
+						<td class="url"><a href="./dist/concept1.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>안심 패키지</td>
+						<td><button class="skill_btn" href="#pop_campain" target="_blank">주요기능 보기</button></td>
+						<td class="url"><a href="./dist/11493_campain.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>					
+					<!-- <tr>
+						<td>드림 쿠폰</td>
+						<td><button class="skill_btn" href="#pop_dreamcoupon" target="_blank">주요기능 보기</button></td>
+						<td class="url"><a href="./dist/dream_coupon.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr> -->
+					<tr>
+						<td>지중해 기획전</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="./dist/lifetrip.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>시그니처 기획전_2019 풀버전</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="./dist/signature_full.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>트립페스타</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="./dist/tripfesta.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>인도네시아 기획전</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="./dist/11147_indonesia.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>배달의 민족</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="./dist/11161_deliver.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>치앙마이 기획전</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="./dist/10912_chiangmai.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>동남아시아 풀빌라&amp;스파</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="./dist/11240_poolVilla.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+					<tr>
+						<td>고궁의 밤</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="./dist/10765_palace.html" target="_blank" class="demo_btn">DEMO 바로가기</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

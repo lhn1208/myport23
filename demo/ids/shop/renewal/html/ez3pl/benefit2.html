@@ -1,0 +1,701 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+<link rel="stylesheet" href="../../css/layout_ez3pl.css">
+<link rel="stylesheet" href="../../css/ez3pl_only.css">
+<link rel="stylesheet" href="../../css/separate_popup.css">
+</head>
+
+<body class="layout_ez3pl">
+    <!-- VC전용관인 경우 클래스 layout_ez3pl부여  -->
+    <nav id="Index">
+        <a href="#content">본문 바로가기</a>
+        <a href="#header">주메뉴 바로가기</a>
+        <a href="#footer">사이트 정보 바로가기</a>
+    </nav>
+    <!-- header [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/header_ez3pl.html" -->
+    <!-- header [e] -->
+    <!--2022-03-07 popup[s]-->
+    <script>
+        $(document).ready(function () {
+            $('.popup_ez3pl .close').click(function(e){
+                e.preventDefault();
+                $('.popup_ez3pl').removeClass('on');                
+            })
+        });
+    </script>   
+    <div class="popup_ez3pl">
+        <div class="popup_ez3pl_inner">
+            <div class="pop_cont">
+                <img src="../../images/event/popup_sample.jpg" alt="">
+            </div>
+            <div class="bottom">
+                <a href="#" class="close">닫기</a>
+            </div>
+        </div>
+    </div>
+    <!--2022-03-07 popup[e]-->
+    <!-- container [s] -->
+    <section id="container">
+        <!-- 2020-12-29 혜택 페이지 [s] -->
+        <div id="content">
+            <div class="sub_cont_head">
+                <h2 class="sub_tit">더샵플러스 이용가이드</h2>
+            </div>
+            <ul class="tab_type3">
+                <li class="on"><a href="#shopplus1">자주 묻는 질문</a></li>
+                <li><a href="#shopplus2">더플러스 혜택</a></li>
+                <li><a href="#shopplus3">멤버십 혜택</a></li>
+            </ul>
+            <div class="benefit benefit1">
+                <div class="screen_out">
+                    <p>더샵플러스 전용관이 특별한 이유</p>
+                    <p>혜택 1 언택트 시대에도 안전한 새벽배송!</p>
+                    <p>전일 23시 전 주문하면 약국 오픈 전 문 앞에! 이동식택배함을 사용하여 약사님이 편리하게 이동하실 수 있고, 시건장치를 통해 분실 염려 없이 안전하게 배송해드립니다.</p>
+                    <p>하나만 사도 무료 배송 약국 재고 부담 없이 필요한 수량만큼 주문하세요!최소주문금액 없이 단 하나만 사도 무료배송 해드립니다.</p>
+                </div>
+            </div>
+            <div class="benefit benefit2">
+                <div class="screen_out">
+                    <p>혜택2 가격비교 없이 최저가 보장</p>
+                    <p>더 이상 가격비교하지 마세요. 약사님이 믿고 주문하실 수 있도록  최저가를 보장합니다.</p>
+                    <p>약사님이 구매하고자 하시는 더샵플러스전용관의 모든 품목이 최저가로 자동 반영됩니다.</p>
+                    <p>특별 마일리지 혜택까지!</p>
+                    <p>약사님께서 주문하시는 만큼 혜택을 돌려드려요!</p>
+                </div>
+                <a href="#">마일리지 사용하기</a>
+            </div>
+            <div class="benefit benefit3">
+                <div class="screen_out">
+                    <p>혜택3 반품도 쉬워져요!</p>
+                    <p>더샵플러스전용관에서 주문한 상품이라면 완통반품 100% 가능하며, 낱알반품도 급여 매출의 1% 한도 내에서 100% 가능합니다. (사입근거 필요)</p>
+                </div>
+            </div>
+            <div class="benefit benefit4">
+                <div class="screen_out">
+                    <p>혜택4 약국 운영은 더샵 전담 파트너가!</p>
+                    <p>약사님은 조제만 하세요~! 약국 운영 업무는 더샵이 책임지겠습니다. (약국 진열, POP, 청소 등)</p>
+                </div>
+            </div>
+            <div class="benefit benefit5">
+                <div class="screen_out">
+                    <p>혜택5 약국 경영 서비스 혜택까지!</p>
+                    <p>AI기반 상권분석을 통한 잘 팔리는 상품 추천 서비스 및 약국에 진열할 수 있는 판매 매대, 무인자판기 등 약국 경영에 도움이 되는 서비스를 받아보실 수 있습니다.</p>
+                </div>
+                <a href="#">상품 주문하기</a>
+            </div>
+        </div>
+        <!-- 2020-12-29 혜택 페이지 [e] -->
+    </section>
+    <!-- container [e] -->
+
+    <!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+    <!-- 2021-10-28 하단 버튼 추가 [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/ez3pl/_bottom_buttons.html" -->
+    <!-- 2021-10-28 하단 버튼 추가 [e] -->
+
+    <!-- footer [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+    <!-- footer [e] -->
+
+    <!-- 상품 상세 이미지 팝업 [s] -->
+    <div class="layer_type1 pop_layer layer_detail" id="popProdImgDetail" style="display: none;">
+        <div class="inner_layer">
+            <strong class="tit_layer"><span class="screen_out">상품상세 보기</span></strong>
+            <div class="body_layer" id="layerDetail">
+                <div class="print_img"><button type="button" class="btn_print">인쇄하기<span class="ico_dw"></span></button>
+                </div>
+                <div id="detailImg"><img src="http://img.shop.co.kr/upload/product/ADMIN/202004/jFFC2zClvW_20200410165327990001.jpg" width="100%" class="thumb_max"></div>
+            </div>
+            <a href="#none" class="ico_dw btn_close">닫기</a>
+        </div>
+    </div>
+    <!-- 상품 상세 이미지 팝업 [e] -->
+    <!-- POP 이미지 팝업 [s] -->
+    <div class="layer_type1 pop_layer layer_pop" id="popProdPopImg" style="display: none;">
+        <div class="inner_layer">
+            <strong class="tit_layer"><span class="screen_out">POP 보기</span></strong>
+            <div class="body_layer" id="layerPop">
+                <div class="print_img"><button type="button" class="btn_print">인쇄하기<span class="ico_dw"></span></button>
+                </div>
+                <div id="layerPopImgDiv" value="526715"><img src="http://img.shop.co.kr/upload/board/info/print/M=-tgUMDbc_20160520160546592000.jpg" alt="POP 이미지" id="layerPopImg" style="max-height: 740px; max-width: 700px;"></div>
+                <div class="view_img">
+                    <button type="button" class="ico_dw btn_prev" style="display: none;" value="1">이전</button>
+                    <button type="button" class="ico_dw btn_next" style="display: inline-block;" value="2">다음</button>
+                </div>
+            </div>
+            <a href="#none" class="ico_dw btn_close">닫기</a>
+        </div>
+    </div>
+    <!-- POP 이미지 팝업 [e] -->
+    <!-- 판매 팁 팝업 [s] -->
+    <div class="layer_type1 pop_layer layer_tip" id="popProdtipImg" style="display: none;">
+        <div class="inner_layer">
+            <strong class="tit_layer"><span class="screen_out">판매팁 보기</span></strong>
+            <div class="body_layer" id="layerTip">
+                <div class="print_img"><button type="button" class="btn_print">인쇄하기<span class="ico_dw"></span></button>
+                </div>
+                <div id="printTip">
+                    <div><img alt="" src="http://img.shop.co.kr/editor/attach//vWwSjyRjUB_20180207172131427000.jpg" width="640" height="1694"></div>
+                </div>
+            </div>
+            <a href="#none" class="ico_dw btn_close">닫기</a>
+        </div>
+    </div>
+    <!-- 판매 팁 팝업 [e] -->
+    <!-- 구매이력 팝업 [s] -->
+    <div class="pop_layer pop_layer_etc" id="popBuyInfo" style="display:none;">
+        <strong class="tit_popup">구매이력</strong>
+        <div class="pop_wrap">
+            <div class="top_info">
+                <p class="txt_buy"><span class="ico_etc"></span>구매이력은 최근 6개월에 대한 정보입니다.<br />상세정보는 마이페이지의 구매내역 조회에서
+                    확인하세요</p>
+                <span class="total_num"><strong>총 구매수량 <span class="txt_num" id="totalEtcOrderCnt">0</span></strong><span class="txt_"></span>개</span>
+            </div>
+            <div class="wrap_scroll">
+                <table class="tbl_type01">
+                    <caption class="screen_out">주문일자, 공급사, 수량, 구매단가 안내</caption>
+                    <colgroup>
+                        <col style="width:30%" />
+                        <col style="width:25%" />
+                        <col style="width:10%" />
+                        <col style="width:25%" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">주문일자</th>
+                            <th scope="col">공급사</th>
+                            <th scope="col">수량</th>
+                            <th scope="col">구매단가</th>
+                        </tr>
+                    </thead>
+                    <tbody id="get_etc_order_list">
+                        <tr>
+                            <td colspan="4">
+                                <p class="data_none"><span class="ico_etc"></span>구매이력이 없습니다.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn_wrap"><a href="#none" class="btn_type1 btn_cancel2 fnc_close">닫기</a></div>
+        </div>
+        <button type="button" class="btn_comm btn_close2 fnc_close">닫기</button>
+    </div>
+    <!-- 구매이력 팝업 [e] -->
+    <!-- 상품 상세 팝업 [s] -->
+    <div class="pop_layer pop_layer_etc pop_cart_prod" id="popProdDetail" style="display:none;">
+        <strong class="tit_popup">상품 상세보기</strong>
+        <div class="pop_wrap">
+            <div class="page_location" id="goods-ctg-result"></div>
+            <div class="box_info">
+                <strong class="tit_prod" id="id-goods-nm">피블라스트스프레이(트라페르민)</strong>
+                <div class="thumb_prod">
+                    <a href="#none" class="link_expand">
+                        <span class="wrap_thumb" id="id-goods-thumb-img">
+                            <img src="http://img.shop.co.kr/upload/product/ADMIN/201007/81457_01_L.GIF" alt="">
+                        </span>
+                    </a>
+                    <a href="#none" class="link_expand link_expand2"><span class="ico_etc ico_expand">이미지 확대</span></a>
+                </div>
+                <div class="info_prod">
+                    <ul class="list_info">
+                        <li>
+                            <div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">상품코드</strong><span class="txt_info" id="id-goods-code">SBUC0080N</span></div>
+                        </li>
+                        <li>
+                            <div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">제조사</strong><span class="txt_info" id="id-mafc-nm">대웅제약</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">보험코드</strong><span class="txt_info" id="id-policy-cd">0000000000</span></div>
+                        </li>
+                        <li>
+                            <div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">원산지</strong><span class="txt_info" id="id-macf-nm">대한민국</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">규격</strong><span class="txt_info" id="id-goods-stnd">300 mg</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">단위</strong><span class="txt_info" id="id-goods-unit">60C</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list_info list_price">
+                        <li>
+                            <div class="inner"><strong class="tit_price">판매가</strong> <strong class="txt_num" id="id-last-price">99,921,950</strong> 원</div>
+                        </li>
+                        <li id="id-goods-dcAmt">
+                            <div class="inner"><strong class="tit_info">비용할인</strong><span class="txt_info"><strong     class="emph_color">30%</strong> : 999,600원</span></div>
+                        </li>
+                        <li id="id-cart-etc">
+                            <div class="inner"><strong class="tit_info">구분 : </strong><span class="txt_info">전문의약품</span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <strong class="tit_etc tit_detail">상품 상세설명</strong>
+            <div class="box_detail" id="id-goods-desc">
+                <p style="margin: 0px"><strong>효능효과</strong></p>
+                <p style="margin: 0px">욕창, 화상으로 인한 궤양, 하지궤양</p><br><br>
+                <p style="margin: 0px"><strong>주요성분</strong></p>
+                <p style="margin: 0px">트라페르민(숙주:대장균 B주(ATCC 23848), 벡터:pTsF-9Δgal)&nbsp; 500마이크로그램</p><br>
+                <p style="margin: 0px"><strong>성상</strong></p>
+                <p style="margin: 0px">백색의 덩어리 또는 분말이 들어 있는 바이알로 첨부용제로 녹였을 때 무색투명한 외용액제</p><br>
+                <p style="margin: 0px"><strong>사용방법</strong></p>
+                <p style="margin: 0px">첨부용해액 1㎖당 트라페르민으로서 100㎍을 사용시에 용해하고, 궤양면을 깨끗이 닦은 후 전용 분무기로 1일 1회(5번 분무, 트라페르민으로서
+                    30㎍) 적용 1) 궤양의 최대경이 6㎝를 넘지 않는 경우&nbsp;&nbsp; ; 궤양면으로부터 약 5㎝거리에서 5번 분무 2) 궤양의 최대경이 6㎝를 넘는
+                    경우&nbsp;&nbsp; ; 약제가 동일 궤양면에 5번 분무되도록 궤양면으로부터 약 5㎝의 거리를 두고 같은 방법으로 조작을 반복한다.</p>
+            </div>
+            <div class="btn_wrap">
+                <button type="button" class="btn_type1 btn_cancel2 fnc_close">닫기</button>
+            </div>
+        </div>
+        <button type="button" class="btn_comm btn_close2 fnc_close">닫기</button>
+    </div>
+    <!-- 상품 상세 팝업 [e] -->
+    <!-- 상품 확대보기 팝업 [s] -->
+    <div class="pop_layer pop_layer_etc pop_cart_prod" id="popProdExpand" style="display:none;">
+        <strong class="tit_popup">상품 이미지 확대보기</strong>
+        <div class="pop_wrap">
+            <div class="page_location" id="goods-ctg-result"></div>
+            <div class="box_info">
+                <strong class="tit_prod" id="id-goods-nm1"></strong>
+                <div class="wrap_thumb" id="goods-detail-pop-img">
+                    <img src="http://img.shop.co.kr/upload/product/ADMIN/201007/81457_01_L.GIF" alt="">
+                </div>
+                <!-- 이미지 없는경우
+                <div class="wrap_thumb">
+                    <img src="images/img_thumb_b.gif" alt="">
+                </div>
+                -->
+                <div class="info_prod">
+                    <ul class="list_info" id="id-goods-detail-pop">
+                        <li>
+                            <div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">상품코드</strong><span class="txt_info">FBSL5001</span></div>
+                        </li>
+                        <li>
+                            <div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">보험코드</strong><span class="txt_info"></span></div>
+                        </li>
+                        <li>
+                            <div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">규격</strong><span class="txt_info">500μg</span></div>
+                        </li>
+                        <li>
+                            <div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">단위</strong><span class="txt_info">1바이알</span></div>
+                        </li>
+                        <li>
+                            <div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">제조사</strong><span class="txt_info">대웅제약</span></div>
+                        </li>
+                    </ul>
+                    <ul class="list_thumb">
+                        <li class="on" id="goods-detail-pop-img0">
+                            <a href="#none"><img src="http://img.shop.co.kr/upload/product/ADMIN/201007/81457_01_L.GIF"
+                                    alt=""></a>
+                        </li>
+                        <li id="goods-detail-pop-img1"></li>
+                        <li id="goods-detail-pop-img2"></li>
+                    </ul>
+                </div>
+                <p class="txt_caution"><span class="ico_etc ico_caution"></span>본 이미지는 실제 상품이미지와 다를 수 있습니다. 더샵 상품 이미지는
+                    더샵 이외에서 사용할 수 없습니다.</p>
+            </div>
+            <div class="btn_wrap">
+                <button type="button" class="btn_type1 btn_cancel2 fnc_close">닫기</button>
+            </div>
+        </div>
+        <button type="button" class="btn_comm btn_close2 fnc_close">닫기</button>
+    </div>
+    <!-- 상품 확대보기 팝업 [e] -->
+    <!-- 2021-06-29 상품 재입고 요청 팝업 수정 [s] -->
+    <div id="popProdRequest" class="pop_center" style="display:none">
+        <div class="pop_layer pop_type1">
+            <strong class="tit_popup">재입고 요청</strong>
+            <div class="pop_wrap">
+                <p class="title">[선택 공급사명]의 [상품명]에 대한 재입고 요청을 신청합니다. <br>재입고 시 알림을 받으시려면 아래 내용을 입력해주세요.</p>
+
+                <form action="#" class="request_wrap">
+                    <fieldset>
+                        <legend>재입고 요청 폼</legend>
+                        <div class="field">
+                            <label>
+                                <span class="label">입고 요청 수량</span>
+                                <input type="text" name="" placeholder="필요하신 수량을 입력해주세요.">
+                            </label>
+                        </div>
+                        <div class="field">
+                            <!-- 2021-06-17 알림 영역 수정 -->
+                            <label class="field">
+                                <input type="checkbox" name="" data-related-disabled="#restockAlertPhone"><span class="mark"></span>
+                                <strong>재입고 시 알림 수령</strong>
+                            </label>
+                            <input type="text" name="" id="restockAlertPhone" disabled placeholder="-을 제외한 숫자로만 입력해주세요.">
+                            <p class="desc">* 입력하신 정보는 재입고 알림에만 사용되며 타 용도로는 사용되지 않습니다.</p>
+                        </div>
+                    </fieldset>
+                    <div class="button_wrap">
+                        <button type="button" class="btn_type1">저장</button>
+                    </div>
+                </form>
+            </div>
+            <button type="button" class="btn_comm btn_close fn_close">닫기</button>
+        </div>
+    </div>
+    <!-- 2021-06-29 상품 재입고 요청 팝업 수정 [e] -->
+    <!-- 2020-12-08 가격 비교 팝업 [s] -->
+    <div id="popPriceCompare" style="display:none">
+        <div class="pop_layer pop_type1" style="width:360px">
+            <strong class="tit_popup"><em>NEW아로나민골드(PTP)</em>가격</strong>
+            <div class="pop_wrap">
+                <table class="prd_list_table">
+                    <colgroup>
+                        <col style="width:140px;">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="row">공급사</th>
+                            <th scope="row">단가</th>
+                        </tr>
+                    </thead>
+                </table>
+                <div class="table_wrap">
+                    <table class="prd_list_table">
+                        <colgroup>
+                            <col style="width:140px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>서울약사신협</td>
+                                <td class="price"><em>23,300원</em></td>
+                            </tr>
+                            <tr>
+                                <td>서울약업</td>
+                                <td class="price">23,300원</td>
+                            </tr>
+                            <tr>
+                                <td>한신약품</td>
+                                <td class="price">23,300원</td>
+                            </tr>
+                            <tr>
+                                <td>복산나이스팜(서울)</td>
+                                <td class="price">23,300원</td>
+                            </tr>
+                            <tr>
+                                <td>서울약사신협</td>
+                                <td class="price">23,300원</td>
+                            </tr>
+                            <tr>
+                                <td>서울약사신협</td>
+                                <td class="price">23,300원</td>
+                            </tr>
+                            <tr>
+                                <td>서울약사신협</td>
+                                <td class="price">23,300원</td>
+                            </tr>
+                            <tr>
+                                <td>서울약사신협</td>
+                                <td class="price">23,300원</td>
+                            </tr>
+                            <tr>
+                                <td>서울약사신협</td>
+                                <td class="price">23,300원</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn_wrap">
+                    <button type="button" class="btn_type1 btn_cancel fnc_close">닫기</button>
+                </div>
+            </div>
+            <button type="button" class="btn_comm btn_close fnc_close">닫기</button>
+        </div>
+    </div>
+    <!-- 2020-12-08 가격 비교 팝업 [e] -->
+
+    <!-- 2020-12-22 상품 추가 팝업 [s] -->
+    <div id="popAddProduct" style="display:none">
+        <div class="pop_layer pop_return" style="width:830px">
+            <strong class="tit_popup">상품 등록</strong>
+            <div class="pop_wrap">
+                <strong class="tit_info">상품 검색</strong>
+                <div class="box_search">
+                    <div class="inner_search">
+                        <form action="#none">
+                            <fieldset>
+                                <legend>상품 등록 내역 검색폼</legend>
+                                <div class="item_search">
+                                    <strong class="tit_search">상품조회</strong>
+                                    <select class="select" style="width:145px;">
+                                        <option>카테고리 전체</option>
+                                        <option>의약품(비급여/OTC)</option>
+                                        <option>의약외품</option>
+                                    </select>
+                                    <select class="select" style="width:120px;">
+                                        <option>상품 전체</option>
+                                        <option>상품명</option>
+                                        <option>상품마스터코드</option>
+                                        <option>자체코드</option>
+                                    </select>
+                                    <div class="wrap_search">
+                                        <input type="text" name="searchValRegist" id="searchValRegist" title="검색어 입력" class="inp_search">
+                                        <button type="button" class="btn_del"><span class="ico_comm">검색어 삭제</span></button>
+                                        <button type="submit" class="btn_search">검색</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <strong class="tit_info">상품 내역</strong>
+                <!-- 
+                <p class="sub_desc"><span class="emph_color">*</span> 낱알반품은 VIP전용관 협력도매상에서 구매하신 제품에 한하여 신청이 가능합니다.</p> -->
+                <table class="tbl_type1 tbl_hover">
+                    <caption>급여 상품 내역 상세 리스트</caption>
+                    <colgroup>
+                        <col style="width:8%">
+                        <col style="width:15%">
+                        <col>
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <div class="chk_g">
+                                    <input type="checkbox" name="registAllChk" id="registAllChk" class="inp_chk">
+                                    <label for="registAllChk" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">전체 선택</span>
+                                    </label>
+                                </div>
+                            </th>
+                            <th scope="col">구분</th>
+                            <th scope="col">상품명</th>
+                            <th scope="col">규격</th>
+                            <th scope="col">단위</th>
+                            <th scope="col">제조사</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="registChk" id="registChk" class="inp_chk">
+                                    <label for="registChk" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>비급여</td>
+                            <td class="txt_left"><label for="registChk">일이삼사오육칠팔구십</label></td>
+                            <td><span class="txt_num">-</span></td>
+                            <td>100정</td>
+                            <td>대웅제약</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="registChk" id="registChk2" class="inp_chk">
+                                    <label for="registChk2" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>비급여</td>
+                            <td class="txt_left"><label for="registChk2">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</label></td>
+                            <td><span class="txt_num">-</span></td>
+                            <td>100정</td>
+                            <td>대웅제약</td>
+                        </tr>
+                        <tr class="data_none">
+                            <td colspan="6"><strong class="tit_none"><span class="ico_comm"></span>등록 가능한 제품이 없습니다.</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="paging_nav">
+                    <a href="#none" class="btn_prev">이전</a>
+                    <a href="#none">1</a>
+                    <a href="#none">2</a>
+                    <a href="#none">3</a>
+                    <a href="#none">4</a>
+                    <a href="#none">5</a>
+                    <span>6</span>
+                    <a href="#none">7</a>
+                    <a href="#none">8</a>
+                    <a href="#none">9</a>
+                    <a href="#none">10</a>
+                    <a href="#none" class="btn_next">다음</a>
+                </div>
+                <div class="btn_wrap">
+                    <button type="submit" class="btn_type1">등록</button>
+                </div>
+            </div>
+            <button type="button" class="btn_comm btn_close">닫기</button>
+        </div>
+    </div>
+    <!-- 2020-12-22 상품 추가 팝업 [e] -->
+
+    <script type="text/javascript">
+        $(function () {
+            // visual banner carousel
+            $(".main_visual_wrap .owl-carousel").owlCarousel({
+                items: 1,
+                autoplay: true,
+                loop: true,
+                nav: true,
+                dots: false,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
+            });
+            // 수량 조절
+            function prodCtl() {
+                $('.btns_count button').on("click", function () {
+                    var inpNum = $(this).parents('.count_desc').find('.inp_count');
+                    var count_val = inpNum.val(); // min 1
+                    if ($(this).is('.btn_minus')) {
+                        if (count_val <= 1) {
+                            return;
+                        };
+                        inpNum.val(parseInt(count_val) - 1);
+                    } else if ($(this).is('.btn_plus')) {
+                        inpNum.val(parseInt(count_val) + 1);
+                    };
+                });
+            }
+            prodCtl();
+            // 자동 제품 체크 기능
+            $('.prd_item').on({
+                // input field에 focus out 되는 경우 자동 체크되는 스크립트 (필요에 따라 주석)
+                blur: function (e) {
+                    $(e.delegateTarget).find('input[type="checkbox"]').prop("checked", "checked");
+                },
+                click: function () {
+                    $(this).select();
+                },
+                focus: function (e) {
+                    $(this).select();
+                    $(this).keydown(function (key) {
+                        if (key.keyCode == 13) {
+                            $(e.delegateTarget).find('input[type="checkbox"]').prop("checked", function () {
+                                return !$(this).prop('checked');
+                            });
+                        }
+                    });
+                }
+            }, ".inp_count");
+            // 검색어 삭제기능
+            $(".wrap_search input[type='text']").keyup(function () {
+                var searchInput = $(this).val().length;
+                if (searchInput > 0) {
+                    $(this).next().show();
+                } else {
+                    $(this).next().hide();
+                }
+                $(".wrap_search .btn_del").click(function () {
+                    $(".wrap_search input").val("");
+                    $(this).hide();
+                });
+            });
+            // 제품 상세 모달 레이어
+            $('body').on("click", ".link_detail", function () {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popProdDetail"), {
+                    closeClass: "fnc_close"
+                });
+            });
+            // 제품 상세 이미지 모달 레이어
+            $('body').on("click", ".link_detail_img", function () {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popProdImgDetail"), {
+                    closeClass: "btn_close"
+                });
+            });
+            // 제품 입고 요청 모달 레이어
+            $('body').on("click", ".btn_request", function () {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popProdRequest"), {
+                    closeClass: "fnc_close"
+                });
+            });
+            // 구매 이력 모달 레이어
+            $('body').on("click", ".link_history", function () {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popBuyInfo"), {
+                    closeClass: "fnc_close"
+                });
+            });
+            // 2020-12-08 가격비교 레이어 추가
+            $('body').on("click", ".tag.lowest_price", function () {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popPriceCompare"), {
+                    closeClass: "fnc_close"
+                });
+            });
+            // POP 이미지 모달 레이어
+            $('body').on("click", ".link_pop", function () {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popProdPopImg"), {
+                    closeClass: "btn_close"
+                });
+            });
+            // 판매 팁 모달 레이어
+            $('body').on("click", ".link_tip", function () {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popProdtipImg"), {
+                    closeClass: "btn_close"
+                });
+            });
+            // 상품 추가 레이어 2020-12-22 추가
+            $('body').on("click", ".btn_product.add", function () {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popAddProduct"), {
+                    closeClass: "btn_close"
+                });
+            });
+            // 제품 이미지 확대보기
+            $(".link_expand").click(function (e) {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popProdExpand"), {
+                    closeClass: "fnc_close"
+                });
+                $("#popProdExpand .wrap_thumb img").each(function (index) {
+                    $(this).addClass("img_thumb"+index);
+                });
+                $(".list_thumb img").each(function (index) {
+                    $(this).parent().mouseover(function () {
+                        $(this).parent().addClass("on").siblings().removeClass("on");
+                        $("#popProdExpand .wrap_thumb > .img_thumb"+[index]).css("display","block").siblings().css("display","none");
+                        $(this).on("click", function (e) {
+                            e.preventDefault()
+                        })
+                    })
+                })
+                e.preventDefault();
+            });
+            // 정렬 선택버튼 2020-12-22 추가
+            $(".list_sort .btn_sort").on("click",function (e) {
+                e.preventDefault();
+                if(!$(this).parent().is('on')) {
+                    $(this).parent().addClass("on").siblings().removeClass("on");
+                    var descType = e.currentTarget.getAttribute('data-desc');
+                    $('.sort_often').hide();
+
+                    if(descType) {
+                        $('.prd_list_desc').addClass('active').find('.'+descType).show().siblings().hide();
+                        $('.'+descType).show();
+                    }else {
+                        $('.prd_list_desc').removeClass('active');
+                    }
+                }
+                
+            });
+            // 제품 리스트 하단 장바구니 영역 sticky fnc
+            shopUI.scrollFix();
+        });
+    </script>
+</body>
+
+</html>

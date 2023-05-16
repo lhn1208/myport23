@@ -1,0 +1,1177 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+<link rel="stylesheet" href="../../css/layout_ez3pl.css">
+<link rel="stylesheet" href="../../css/ez3pl_only.css">
+<link rel="stylesheet" href="../../css/separate_popup.css">
+</head>
+
+<body class="layout_ez3pl">
+    <!-- VC전용관인 경우 클래스 layout_ez3pl부여  -->
+    <nav id="Index">
+        <a href="#content">본문 바로가기</a>
+        <a href="#header">주메뉴 바로가기</a>
+        <a href="#footer">사이트 정보 바로가기</a>
+    </nav>
+    <!-- header [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/header_ez3pl.html" -->
+    <!-- header [e] -->
+    <!-- container [s] -->
+    <section id="container">
+        <div id="content" class="cont_ez3pl_list cont_return">
+            <div class="sub_cont_head">
+                <h2 class="sub_tit">낱알반품</h2>
+                <p class="sub_txt"><a href="#none" class="btn_caution"><span class="ico_comm ico_caution"></span><span class="emph_color">유의사항</span>을 확인해주세요!</a></p>
+            </div>
+            <div class="return_table">
+                <div class="column">
+                    <div class="cell">
+                        <p class="label">
+                            <strong>플러스전용관 낱알반품 한도 가이드</strong>
+                            <span class="sub"> <br> ① 낱알반품 한도는 적립월 기준 6개월간 사용 가능하며, <br>&nbsp;&nbsp;유효기간이 지나면 자동 소멸됩니다. <br><br>
+                            ② 낱알반품 한도는 반품완료 시점에 차감되어 <br>&nbsp;&nbsp;잔여 한도에 반영됩니다. <br><br>
+                            ③ 낱알반품 한도는 유효기간이 짧은 순으로 차감됩니다.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="cell">
+                        <p class="label"><strong>잔여 한도</strong><span class="sub">사용가능한 전체 잔여 한도</span></p>
+                        <p class="value em" id="remainLimitPrice" style="color:#ff6724;">-</p>
+                    </div>
+                    <div class="cell">
+                        <p class="label"><strong>금월 한도</strong><span class="sub">금월 적립된 한도 <br>(전월 ETC급여 매출의 1%)</span></p>
+                        <p class="value" id="thisMonthSaveAmt">-</p>
+                    </div>
+                    <div class="cell">
+                        <p class="label"><strong>소멸 예정 한도</strong><span class="sub">익월 1일 이월되지 않을 금액</span></p>
+                        <p class="value" id="thisMonthexpireAmt">-</p>
+                    </div>
+                    <div class="cell">
+                        <p class="label"><strong>신청 중인 금액</strong><span class="sub">금월 낱알반품 신청 중인 금액</span></p>
+                        <p class="value" id="reqPrice">-</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap_caution">
+                <strong class="tit_caution">유의사항</strong>
+                <ul class="list_caution">
+                    <li><span class="emph_color">*</span> 낱알반품은 더샵플러스전용관 공급사에서 구매하신 상품에 한하여 신청이 가능합니다.</li>
+                    <li><span class="emph_color">*</span> 낱알반품 한도는 매월 1일 전월 ETC급여 주문금액 기준&nbsp;<font color="red"><b>1%</b></font> 만큼 적립됩니다.</li>
+                    <li><span class="emph_color">*</span> <font color="red"><b>비보험(오남용,OTC) 및 향정, 생제, 마약, 액상, 과립, 겔, 패취, 분말(g), 시럽(ml), 현탁액(ml)</b></font> 제품의 경우 낱알반품이 불가합니다.<br>&nbsp;&nbsp;(신청시, 업체에서 반품을 거절할 수 있습니다.)</li>
+                    <li><span class="emph_color">*</span> 약가인하된 제품은 인하 후 기준가로 처리됩니다.</li>
+                    <li><span class="emph_color">*</span> 낱알반품은 해당 상품의 완통이 없을 시 불가합니다.</li>
+                    <li><span class="emph_color">*</span> 낱알반품은 ETC/OTC 품목 중 '급여' 보험코드가 있는 제품에 한하여 가능합니다.</li>
+                    <li><span class="emph_color">*</span> 낱알반품 신청시 해당 구매이력으로는 추가적인 완통 OR 낱알반품 불가합니다.</li>
+                    <li><span class="emph_color">*</span> 낱알반품 포인트는 반품완료 처리되는 시점에 차감됩니다.</li>
+                </ul>
+            </div>
+            <style>
+                .return {margin-top:5em;}
+                .return h2.title {margin-bottom:0.5em;}
+                .return .temp_box {display:flex;align-items:center;width:100%;height:250px;margin-bottom:2em;color:#404040;text-align:center;justify-content: center;font-size:18px;border:1px solid #d7d7d7;}
+                .return .normal > li {line-height:2.167em;}
+                .return .schedule {margin:2.5em 0;color:#404040;font-size:14px;}
+                .return_table {display:flex;padding:23px 0;color:#404040;border-top:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;letter-spacing:-0.01em;}
+                .return_table .column {display:flex;flex-grow:1;flex-wrap: wrap;box-sizing:border-box;position:relative;}
+                .return_table .column:first-child {flex-basis:320px;flex-shrink:0;max-width:320px;margin-right:24px;border-right:1px solid #d7d7d7;}
+                .return_table .column:not(:first-child):after {content:'';display:block;position:absolute;left:0;top:50%;right:0;border-bottom:1px solid #d7d7d7;}
+                .return_table .column:not(:first-child) .cell {max-width:50%;}
+                .return_table .column:not(:first-child) .cell:not(:nth-child(2n)) {padding-left:0;}
+                .return_table .cell {display:flex;padding:0 20px;flex-grow:1;flex-shrink:0;flex-basis: 50%;box-sizing:border-box;justify-content: space-between;}
+                .return_table .cell:nth-child(2n) {border-left:1px solid #d7d7d7;}
+                .return_table .cell:nth-child(n+3){margin-top:46px;}
+                .return_table .label {font-size:14px;}
+                .return_table .label .sub {display:block;margin-top:0.25em;font-size:11px;}
+                .return_table .value {font-weight:700;font-size:18px;font-family:'Lato',sans-serif;}
+                .return .accordion_box {margin-top:10px;}
+                .return .accordion_header {display:block;width:100%;padding:1em 25px;position:relative;font-size:18px;font-family:'NanumSquareB',sans-serif;text-align:left;color:#404040;border:1px solid rgba(204, 204, 204, 0.5);background:#fff;}
+                .return .accordion_header .ico_anchor {border:1px solid #D0B7A5;}
+                .return .accordion_header .ico_anchor:after,
+                .return .accordion_header .ico_anchor:before {background:#D0B7A5;}
+                .return .description {margin-top:4.5em;color:#404040;}
+            </style>
+            <ul class="tab_type3">
+                <li class="on"><a href="#tabReturnApply">낱알반품 신청</a></li>
+                <li><a href="#tabReturnCheck">낱알반품 신청 내역 조회</a></li>
+            </ul>
+            <!--2022-11-01 추가[S]-->
+            <div class="tab_cont grain_return">
+                <div id="tabReturnApply">
+                    <strong class="screen_out">낱알반품 신청</strong>										
+                    <div class="wrap_tit wrap_br">
+                        <strong class="tit_grain tit_choice">1. 반품 신청 할 상품 선택</strong>
+                        <p class="txt_info" id="returnPillPeriod"></p>
+                    </div>                    
+                    <table class="tbl_type1">
+                        <caption>반품 신청 할 상품 선택 안내</caption>
+                        <colgroup>
+                            <col style="width:33.3%">
+                            <col style="width:33.3%">
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">신청가능업체</th>
+                            <th scope="col">총 반품한도</th>
+                            <th scope="col">총 잔여한도</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="emph_color"><span class="txt_num" id="possibleSellerCnt">1</span>개 업체</td>
+                            <td class="emph_color"><span class="txt_num" id="totalReSalesAmt">4,656</span>원</td>
+                            <td class="emph_color"><span class="txt_num" id="totalAvailableAmt">4,656</span>원</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <strong class="tit_sub tit_chk">낱알 신청 품목 조회</strong>
+                        <fieldset>
+                            <legend>낱알 신청 품목 조회 입력폼</legend>
+                            <form id="returnPillOrderForm">
+                                <input type="hidden" id="sellerCd" name="sellerCd" value="12083">
+                                <div class="wrap_search">
+                                    <table class="tbl_search">
+                                        <caption>낱알 신청 품목 조회 안내</caption>
+                                        <colgroup>
+                                            <col style="width:71px">
+                                            <col style="width:519px">
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">주문일자</th>
+                                            <td>
+                                                <div class="info_search">
+                                                    <div class="wrap_inp">
+                                                        <input type="text" class="txt_datepicker hasDatepicker" style="width:90px;" id="startDt" name="startDt" readonly="readonly"><img class="ui-datepicker-trigger" src="https://img.shop.co.kr/images/renew/mypage/tspmileage/ico_calendar.gif" alt="달력" title="달력">
+                                                        <span class="txt_bar">ㅡ</span>
+                                                        <input type="text" class="txt_datepicker hasDatepicker" style="width:90px;" id="endDt" name="endDt" readonly="readonly"><img class="ui-datepicker-trigger" src="https://img.shop.co.kr/images/renew/mypage/tspmileage/ico_calendar.gif" alt="달력" title="달력">
+                                                    </div>
+                                                    <div class="wrap_btn">
+                                                        <button type="button" class="btn_month" id="btn_1month" value="1month" onclick="setSearchDate('1month', document.getElementById('startDt'), document.getElementById('endDt'));return false;">1개월</button>
+                                                        <button type="button" class="btn_month" value="6month" onclick="setSearchDate('6month', document.getElementById('startDt'), document.getElementById('endDt'));return false;">6개월</button>
+                                                        <button type="button" class="btn_month" value="1year_ago" onclick="setSearchDate('1year_ago', document.getElementById('startDt'), document.getElementById('endDt'));return false;">1년전</button>
+                                                        <button type="button" class="btn_month" value="2year_ago" onclick="setSearchDate('2year_ago', document.getElementById('startDt'), document.getElementById('endDt'));return false;">2년전</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label for="searchKey">검색내역</label></th>
+                                            <td>
+                                                <div class="info_search">
+                                                    <select style="width:112px;" id="searchKey" name="searchKey">
+                                                        <option value="goodsNm">상품명</option>
+                                                        <option value="insuranceCd">보험코드</option>
+                                                        <option value="mafcNm">제조사</option>
+                                                    </select>
+                                                    <div class="search_inp">
+                                                        <input type="text" name="searchVal" id="searchVal" title="검색어 입력">
+                                                        <button type="button" class="btn_search" id="orderListSearch">검색</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </form>
+                            <div class="view_data">
+                                <div class="wrap_scroll wrap_apply1">
+                                    <ul class="list_header">
+                                        <li class="tit_type1">공급사</li>
+                                        <li class="tit_type2">가용한도</li>
+                                    </ul>
+                                    <div class="inner_scroll">
+                                        <table class="tbl_type2">
+                                            <caption>공급사 선택</caption>
+                                            <colgroup>
+                                                <col style="width:50%">
+                                                <col style="width:50%">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">공급사</th>
+                                                <th scope="col">가용한도</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody id="returnPillAllUserList">
+                                                <tr id="tr_12083" onclick="clickSeller('12083');" class="on">		
+                                                    <td>엠서클_테스트(도매)</td>		
+                                                    <td>4,656<span class="ico_grain ico_arr"></span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="wrap_scroll wrap_apply2">
+                                    <ul class="list_header">
+                                        <li class="tit_type1"><input type="checkbox" id="grainAllCheck" title="전체선택"></li>
+                                        <li class="tit_type2">주문번호</li>
+                                        <li class="tit_type3">상품명/규격/제조사/보험코드</li>
+                                        <li class="tit_type4">보험수가</li>
+                                        <li class="tit_type5">신청수량</li>
+                                        <li class="tit_type6">합계</li>
+                                        <li class="tit_type7">비용할인</li>
+                                        <li class="tit_type8">예상적립액</li>
+                                    </ul>
+                                    <div class="inner_scroll">
+                                        <form id="orderListForm" name="orderListForm">
+                                            <table class="tbl_type2">
+                                                <caption>낱알 신청 품목 상세정보</caption>
+                                                <colgroup>
+                                                    <col style="width:35px">
+                                                    <col style="width:105px">
+                                                    <col style="width:193px">
+                                                    <col style="width:100px">
+                                                    <col style="width:94px">
+                                                    <col style="width:100px">
+                                                    <col style="width:80px">
+                                                    <col style="width:120px">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">품목 선택</th>
+                                                    <th scope="col">주문번호</th>
+                                                    <th scope="col">상품명/규격/제조사/보험코드</th>
+                                                    <th scope="col">보험수가</th>
+                                                    <th scope="col">신청수량</th>
+                                                    <th scope="col">합계</th>
+                                                    <th scope="col">비용할인</th>
+                                                    <th scope="col">예상적립액</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody id="orderList">
+                                                    <tr>
+                                                        <td><input type="checkbox" class="itemCheck" name="itemCheck_12083" id="itemCheck_12083_51640" title="품목 선택" data-expectreturnamt="76" data-sellercd="12083" value="51640"></td>		
+                                                        <td>123455</td>
+                                            <td class="txt_left">아스피린프로텍트정100밀리그람_(0.1g/1정)<br>/1정/바이엘코리아(주)/641100270</td>		<td><span class="txt_num">100%</span></td>		<td class="txt_right"><span class="txt_num">77</span>원</td>		<td><span class="txt_num">1</span>개</td>		<td class="txt_right"><span class="txt_num">76</span>원</td>		<td rowspan="1">				<select class="rese" name="couponUseSellerCd" id="couponUseSellerCd_12083" style="width:84px;" title="쿠폰 적용 선택" onchange="changeCouponYn(12083);">						<option value="">미적용</option>						<option value="12083">적용</option>				</select>		</td>
+                                                    </tr>
+                                                    <tr class="data_none">		
+                                                        <td colspan="8">				
+                                                            <p class="txt_none"><span class="inner_txt"><span class="ico_grain ico_none"></span><strong>주문 내역이 없습니다.</strong></span></p>		
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" id="cart_add" class="btn_add">선택상품 신청 목록 추가하기</button>
+                        </fieldset>
+                    <div class="wrap_tit">
+                        <strong class="tit_grain tit_check">2. 담은 반품 신청 상품 확인</strong>
+                        <div class="info_coupon">
+                            <p class="txt_coupon">사용가능 반품쿠폰 <span class="emph_color"><span class="txt_num" id="couponCountTxt">2</span>개</span></p>
+                            <a href="#popCouponInfo" class="btn_coupon">반품쿠폰 사용방법</a>
+                        </div>
+                    </div>
+                    <div class="wrap_scroll wrap_check">
+                        <form id="returnPillCartForm" name="returnPillCartForm">
+                            <input type="hidden" id="checkSeq" name="checkSeq" value="">
+                            <input type="hidden" id="periodNo" name="periodNo" value="">
+                            <ul class="list_header">
+                                <li class="tit_type1"><input type="checkbox" id="cartAllCheck" name="cartAllCheck" title="전체선택"></li>
+                                <li class="tit_type2">상품명/규격/제조사/보험코드</li>
+                                <li class="tit_type4">보상율(%)</li>
+                                <li class="tit_type3">보험수가</li>
+                                <li class="tit_type5">신청수량</li>
+                                <li class="tit_type6">예상적립액</li>
+                                <li class="tit_type7">반품 쿠폰적용</li>
+                            </ul>
+                            <div class="inner_scroll">
+                                <table class="tbl_type2">
+                                    <caption>담은 낱알 신청 품목 상세정보</caption>
+                                    <colgroup>
+                                        <col width="4%">
+                                        <col width="*">
+                                        <col width="8%">
+                                        <col width="8%">
+                                        <col width="8%">
+                                        <col width="8%">
+                                        <col width="12%">
+                                        
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">품목 선택</th>
+                                        <th scope="col">상품명/규격/제조사/보험코드</th>
+                                        <th scope="col">보상율(%)</th>
+                                        <th scope="col">보험수가</th>
+                                        <th scope="col">신청수량</th>
+                                        <th scope="col">예상적립액</th>
+                                        <th scope="col">반품 쿠폰적용</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="returnPillCartList">
+                                        <tr class="cell_supply">		
+                                            <input type="hidden" name="rAvailableAmt" id="rAvailableAmt_12083" value="4656"><input type="hidden" name="rSellerTotalAmt" id="rSellerTotalAmt_12083" value="0"><input type="hidden" name="rCheckCount" id="rCheckCount_12083" value="0"><input type="hidden" name="rRemainderAmt" id="rRemainderAmt_12083" value="4656">		
+                                            <td><input type="checkbox" name="sellerCheck" id="sellerCheck_12083" title="그룹 선택" value="12083"></td>                                        
+                                            <td class="txt_left" colspan="6">				<strong class="txt_supply">엠서클_테스트(도매)</strong>				<div class="txt_price">가용한도 <strong>4,656원</strong>- 예상적립예치금 <strong id="returnTotalAmt_12083">0</strong>원 = <strong>예상 잔여신청 가능금액</strong> <strong class="emph_color"><span class="txt_num" id="remainderAmt_12083">4,656</span>원</strong></div>		</td>
+                                        </tr>
+                                        <tr>		
+                                            <input type="hidden" name="rExpectReturnAmt" id="rExpectReturnAmt_12083_51640" value="76">		
+                                    
+                                            <td><input type="checkbox" class="itemCheck" name="itemCheck_12083" id="itemCheck_12083_51640" title="품목 선택" data-expectreturnamt="76" data-sellercd="12083" value="51640"></td>		
+                                            <td class="txt_left">아스피린프로텍트정100밀리그람_(0.1g/1정)<br>/1정/바이엘코리아(주)/641100270</td>		<td><span class="txt_num">100%</span></td>		<td class="txt_right"><span class="txt_num">77</span>원</td>		<td><span class="txt_num">1</span>개</td>		<td class="txt_right"><span class="txt_num">76</span>원</td>		<td rowspan="1">				<select class="rese" name="couponUseSellerCd" id="couponUseSellerCd_12083" style="width:84px;" title="쿠폰 적용 선택" onchange="changeCouponYn(12083);">						<option value="">미적용</option>						<option value="12083">적용</option>				</select>		</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="list_total">
+                        <li class="item_type1"><strong>선택상품</strong><span class="txt_num" id="totalCheckCount">0</span>개</li>
+                        <li class="item_type2"><strong>총 한도</strong><span class="txt_num" id="totalCartAvailableAmt">0</span>점<span class="ico_grain ico_minus">-</span></li>
+                        <li class="item_type3"><strong>예상적립 예치금</strong><span class="txt_num" id="totalAmt">0</span>점<span class="ico_grain ico_equals">=</span></li>
+                        <li class="item_type4"><strong>예상 잔여신청 가능금액</strong><span class="txt_num" id="totalRemainderAmt">0</span>점</li>
+                    </ul>
+                    <div class="btm_btn">
+                        <button type="button" class="btn_type2 btn_del" id="returnPillDelete">선택상품 삭제하기</button>
+                        <button type="button" class="btn_type2" id="returnPillRequest">낱알 반품 신청하기</button>
+                    </div>
+                </div>
+                <div id="tabReturnCheck" style="display:none">
+                    <strong class="screen_out">낱알반품 신청 내역 조회</strong>
+                    <div class="apply_inquiry">
+                        <fieldset>
+                            <legend>낱알 신청 내역 조회 입력폼</legend>
+                            <div class="wrap_search">
+                                <form id="returnPillRequestSearchForm" name="returnPillRequestSearchForm">
+                                    <input type="hidden" id="pageNum" name="pageNum" value="1">
+                                    <input type="hidden" id="pageRowSize" name="pageRowSize" value="5">
+                                    <input type="hidden" id="isPaging" name="isPaging" value="Y">
+                                    <table class="tbl_search">
+                                        <caption>낱알 신청 내역 조회 안내</caption>
+                                        <colgroup>
+                                            <col style="width:71px">
+                                            <col style="width:258px">
+                                            <col style="width:61px">
+                                            <col style="width:200px">
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">주문일자</th>
+                                            <td colspan="3">
+                                                <div class="info_search">
+                                                    <div class="wrap_inp">
+                                                        <input type="text" class="txt_datepicker hasDatepicker" style="width:90px;" name="requestStartDt" id="requestStartDt" readonly="readonly"><img class="ui-datepicker-trigger" src="https://img.shop.co.kr/images/renew/mypage/tspmileage/ico_calendar.gif" alt="달력" title="달력">
+                                                        <span class="txt_bar">ㅡ</span>
+                                                        <input type="text" class="txt_datepicker hasDatepicker" style="width:90px;" name="requestEndDt" id="requestEndDt" readonly="readonly"><img class="ui-datepicker-trigger" src="https://img.shop.co.kr/images/renew/mypage/tspmileage/ico_calendar.gif" alt="달력" title="달력">
+                                                    </div>
+                                                    <div class="wrap_btn">
+                                                        <button type="button" class="btn_month request_month" value="today" onclick="setSearchDate('today', document.getElementById('requestStartDt'), document.getElementById('requestEndDt'));return false;">오늘</button>
+                                                        <button type="button" class="btn_month request_month" value="7day" onclick="setSearchDate('7day', document.getElementById('requestStartDt'), document.getElementById('requestEndDt'));return false;">7일</button>
+                                                        <button type="button" class="btn_month request_month" value="15day" onclick="setSearchDate('15day', document.getElementById('requestStartDt'), document.getElementById('requestEndDt'));return false;">15일</button>
+                                                        <button type="button" class="btn_month request_month" value="1month" onclick="setSearchDate('1month', document.getElementById('requestStartDt'), document.getElementById('requestEndDt'));return false;">1개월</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+        <!-- 	                                <th scope="row"><label for="itemReturn">반품구분</label></th> -->
+        <!-- 	                                <td> -->
+        <!-- 	                                    <select style="width:200px;" name="itemReturn" id="itemReturn"> -->
+        <!-- 	                                        <option value="">전체</option> -->
+        <!-- 	                                        <option value="">전회원</option> -->
+        <!-- 	                                        <option value="">낱알반품</option> -->
+        <!-- 	                                    </select> -->
+        <!-- 	                                </td> -->
+                                            <th scope="row"><label for="couponYn">택배비</label></th>
+                                            <td>
+                                                <select style="width:200px;" name="couponYn" id="couponYn">
+                                                    <option value="">전체</option>
+                                                    <option value="Y">더샵부담</option>
+                                                    <option value="N">고객부담</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label for="searchKey">검색내역</label></th>
+                                            <td colspan="3">
+                                                <div class="info_search">
+                                                    <select style="width:112px;" name="searchKey">
+                                                        <option value="goodsNm">상품명</option>
+                                                        <option value="applicationNo">반품번호</option>
+                                                    </select>
+                                                    <div class="search_inp">
+                                                        <input type="text" name="searchVal" id="searchVal" title="검색어 입력">
+                                                        <button type="button" class="btn_search" id="requestListSearch">검색</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </fieldset>
+                        <div class="wrap_scroll wrap_return">
+                            <ul class="list_header">
+                                <li class="tit_type1">반품신청번호</li>
+                                <li class="tit_type2">신청일자</li>
+                                <li class="tit_type3">공급사</li>
+                                <li class="tit_type4">상품명</li>
+                                <li class="tit_type5">택배비</li>
+                                <li class="tit_type6">진행상태</li>
+                            </ul>
+                            <div class="inner_scroll">
+                                <table class="tbl_type2">
+                                    <caption>낱알반품 신청 내역 리스트</caption>
+                                    <colgroup>
+                                        <col style="width:160px">
+                                        <col style="width:140px">
+                                        <col style="width:140px">
+                                        <col style="width:298px">
+                                        <col style="width:100px">
+                                        <col style="width:105px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">반품신청번호</th>
+                                            <th scope="col">신청일자</th>
+                                            <th scope="col">공급사</th>
+                                            <th scope="col">상품명</th>
+                                            <th scope="col">택배비</th>
+                                            <th scope="col">진행상태</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="returnPillRequestList">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="paging_nav" id="returnPillRequestPage"></div>
+        <!--                 <div class="paging_nav"><span class="active">1</span><a href="#none" onclick="getMileageList(2)">2</a><a href="#none" onclick="getMileageList(3)">3</a></div> -->
+                    </div>
+                    <div class="apply_detail" style="display:none">
+                        <strong class="tit_grain tit_detail">신청 상세 내역</strong>
+                        <table class="tbl_type3">
+                            <caption>반품신청번호, 진행상태, 공급사, 신청일자 안내</caption>
+                            <colgroup>
+                                <col style="width:150px">
+                                <col style="width:215px">
+                                <col style="width:150px">
+                                <col style="width:215px">
+                            </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row">반품신청번호</th>
+                            <td class="txt_num" id="detailAppNo">RT20180832154</td>
+                            <th scope="row">진행상태</th>
+                            <td id="detailStatus">신청완료</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">공급사</th>
+                            <td id="detailSellerNm">한국바이오인더스트리</td>
+                            <th scope="row">신청일자</th>
+                            <td class="txt_num" id="detailTreatDt">2018-04-10 113758</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        <div class="wrap_scroll wrap_detail">
+                            <ul class="list_header">
+                                <li class="tit_type1">상품명/규격/제조사/보험코드</li>
+                                <li class="tit_type2">보험수가</li>
+                                <li class="tit_type3">보상율(%)</li>
+                                <li class="tit_type4">합계</li>
+                                <li class="tit_type5">신청수량</li>
+                                <li class="tit_type6">예상적립액</li>
+                                <li class="tit_type7">반품 쿠폰적용</li>
+                            </ul>
+                            <div class="inner_scroll">
+                                <table class="tbl_type2">
+                                    <caption>상세내역 리스트</caption>
+                                    <colgroup>
+                                        <col style="width:198px">
+                                        <col style="width:100px">
+                                        <col style="width:55px">
+                                        <col style="width:100px">
+                                        <col style="width:65px">
+                                        <col style="width:100px">
+                                        <col style="width:110px">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">상품명/규격/제조사/보험코드</th>
+                                        <th scope="col">보상율(%)</th>
+                                        <th scope="col">보험수가</th>
+                                        <th scope="col">합계</th>
+                                        <th scope="col">신청수량</th>
+                                        <th scope="col">예상적립액</th>
+                                        <th scope="col">반품 쿠폰적용</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="requestDetailList">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="wrap_btn">
+                            <a href="#none" class="btn_type2 btn_list">목록</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--2022-11-01 추가[E]-->
+
+            <!-- <div class="tab_cont">
+                <div id="tabReturnApply">
+                    <div class="sub_cont_head">
+                        <h3 class="sstit">상품 등록 내역</h3>
+                        <div class="apply_btn">
+                            <a href="#none" class="btn_type1 btn_regist">상품등록</a>
+                        </div>
+                    </div>
+                    <div class="box_search">
+                        <div class="inner_search">
+                            <form action="#none">
+                                <fieldset>
+                                    <legend>상품 등록 내역 검색폼</legend>
+                                    <strong class="tit_search">등록 내역 검색</strong>
+                                    <select class="select">
+                                        <option>전체</option>
+                                        <option>상품명</option>
+                                        <option>보험코드</option>
+                                    </select>
+                                    <div class="wrap_search">
+                                        <input type="text" name="searchVal" id="searchVal" title="검색어 입력" class="inp_search">
+                                        <button type="button" class="btn_del"><span class="ico_comm">검색어 삭제</span></button>
+                                        <button type="submit" class="btn_search">검색</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <table class="tbl_type1 tbl_hover">
+                        <caption>상품등록 내역 상세 리스트</caption>
+                        <colgroup>
+                            <col style="width:4%">
+                            <col>
+                            <col style="width:9%">
+                            <col style="width:9%">
+                            <col style="width:6%">
+                            <col style="width:9%">
+                            <col style="width:8%">
+                            <col style="width:10%">
+                            <col style="width:9%">
+                            <col style="width:9%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <div class="chk_g">
+                                        <input type="checkbox" name="prodAllChk" id="prodAllChk" class="inp_chk">
+                                        <label for="prodAllChk" class="lab_chk">
+                                            <span class="ico_comm ico_chkbox">전체 선택</span>
+                                        </label>
+                                    </div>
+                                </th>
+                                <th scope="col">상품명/규격</th>
+                                <th scope="col">제조사</th>
+                                <th scope="col">보험코드</th>
+                                <th scope="col">보상율(%)</th>
+                                <th scope="col">보험수가</th>
+                                <th scope="col">신청수량</th>
+                                <th scope="col">합계</th>
+                                <th scope="col">비용할인</th>
+                                <th scope="col">예상적립액</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="chk_g">
+                                        <input type="checkbox" name="prodChk" id="prodChk" class="inp_chk">
+                                        <label for="prodChk" class="lab_chk">
+                                            <span class="ico_comm ico_chkbox">선택</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="txt_left"><label for="prodChk">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</label></td>
+                                <td>한국로슈</td>
+                                <td><span class="txt_num">68090909</span></td>
+                                <td><span class="txt_num">30</span></td>
+                                <td><span class="txt_num">1,999,500</span>원</td>
+                                <td><input type="text" title="수량 입력" value="9999" style="width:45px"> 개</td>
+                                <td class="txt_emph"><strong class="txt_num">6,999,500</strong>원</td>
+                                <td><span class="txt_num">99,500</span>원</td>
+                                <td><span class="txt_num">1,999,500</span>원</td>
+                            </tr>
+                            <tr class="data_none">
+                                <td colspan="10"><strong class="tit_none"><span class="ico_comm"></span>등록된 상품이 없습니다.</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="box_result box_result2">
+                        <div class="result_tit">
+                            <strong class="tit_sum">선택품목 <span class="txt_price"><span class="txt_num">13</span>개</span></strong>
+                            <span class="ico_comm ico_arr"></span>
+                            <strong class="tit_total">예상적립액 <span class="txt_price"><span class="txt_num">11,265,000</span>원</span></strong>
+                        </div>
+                        <div class="result_btn">
+                            <button type="button" class="btn_type1">낱알반품 신청하기</button>
+                            <button type="button" class="btn_type2">신청수량 저장하기</button>
+                            <button type="button" class="btn_type2">선택 품목 삭제</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabReturnCheck" style="display:none">
+                    <div class="apply_inquiry">
+                        <div class="sub_cont_head">
+                            <h3 class="sstit">낱알반품 신청 내역</h3>
+                            <div class="f_r">
+                                <select class="select" style="width:105px">
+                                    <option>10개씩 보기</option>
+                                    <option>20개씩 보기</option>
+                                    <option>50개씩 보기</option>
+                                    <option>100개씩 보기</option>
+                                    <option>500개씩 보기</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="box_search">
+                            <div class="inner_search">
+                                <form action="#none">
+                                    <fieldset>
+                                        <legend>반품 신청 내역 검색폼</legend>
+                                        <strong class="tit_search">신청 내역 검색</strong>
+                                        <select class="select">
+                                            <option>전체</option>
+                                            <option>상품명</option>
+                                            <option>반품신청번호</option>
+                                        </select>
+                                        <select class="select">
+                                            <option>신청완료</option>
+                                            <option>신청취소</option>
+                                        </select>
+                                        <div class="wrap_search">
+                                            <input type="text" name="searchVal2" id="searchVal2" title="검색어 입력" class="inp_search">
+                                            <button type="button" class="btn_del"><span class="ico_comm">검색어 삭제</span></button>
+                                            <button type="submit" class="btn_search">검색</button>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <table class="tbl_type1 tbl_history tbl_hover">
+                            <caption>낱알반품 신청 내역 리스트</caption>
+                            <colgroup>
+                                <col style="width:4%">
+                                <col style="width:19%">
+                                <col style="width:11%">
+                                <col>
+                                <col style="width:20%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="chk_g">
+                                            <input type="checkbox" name="returnAllChk" id="returnAllChk" class="inp_chk">
+                                            <label for="returnAllChk" class="lab_chk">
+                                                <span class="ico_comm ico_chkbox">선택</span>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">반품신청 번호</th>
+                                    <th scope="col">신청일자</th>
+                                    <th scope="col">상품명</th>
+                                    <th scope="col">진행상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="chk_g">
+                                        <input type="checkbox" name="returnChk" id="returnChk" class="inp_chk" disabled="disabled">
+                                        <label for="returnChk" class="lab_chk">
+                                            <span class="ico_comm ico_chkbox">선택</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td><a href="#none" class="link_num">RT2018040445982</a></td>
+                                <td><span class="txt_num">2018.04.06<br>15:58:50</span></td>
+                                <td class="txt_left"><span class="txt_emph">하루 한 포 시원하게 매일매일 상쾌한변화 세트 15g*10P</span></td>
+                                <td><strong class="emph_color">신청취소</strong></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="chk_g">
+                                        <input type="checkbox" name="returnChk" id="returnChk2" class="inp_chk">
+                                        <label for="returnChk2" class="lab_chk">
+                                            <span class="ico_comm ico_chkbox">선택</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td><a href="#none" class="link_num">RT2018040445982</a></td>
+                                <td><span class="txt_num">2018.04.06<br>15:58:50</span></td>
+                                <td class="txt_left"><span class="txt_emph">타쎄바정150밀리그램(엘로티닙염산염)_(0.16393g/1정)</span></td>
+                                <td><strong class="emph_color2">신청완료</strong></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="chk_g">
+                                        <input type="checkbox" name="returnChk" id="returnChk3" class="inp_chk" disabled="disabled">
+                                        <label for="returnChk3" class="lab_chk">
+                                            <span class="ico_comm ico_chkbox">선택</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td><a href="#none" class="link_num">RT2018040445982</a></td>
+                                <td><span class="txt_num">2018.04.06<br>15:58:50</span></td>
+                                <td class="txt_left"><span class="txt_emph">가나칸정정정정정정정50밀리그램50밀리그램50밀리그램</span></td>
+                                <td><strong class="emph_color">신청취소</strong></td>
+                            </tr>
+                            <tr class="data_none">
+                                <td colspan="5"><strong class="tit_none"><span class="ico_comm"></span>신청 리스트가 없습니다.</strong></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="btm_btn">
+                            <div class="paging_nav">
+                                <a href="#none" class="btn_prev">이전</a>
+                                <a href="#none">1</a>
+                                <a href="#none">2</a>
+                                <a href="#none">3</a>
+                                <a href="#none">4</a>
+                                <a href="#none">5</a>
+                                <span>6</span>
+                                <a href="#none">7</a>
+                                <a href="#none">8</a>
+                                <a href="#none">9</a>
+                                <a href="#none">10</a>
+                                <a href="#none" class="btn_next">다음</a>
+                            </div>
+                            <button type="button" class="btn_type1 btn_cancel">반품신청 취소하기</button>
+                        </div>
+                    </div>
+                    <div class="apply_detail" style="display:none">
+                        <div class="sub_cont_head">
+                            <h3 class="sstit">신청 상세 내역</h3>
+                        </div>
+                        <table class="tbl_type6">
+                            <caption>반품신청번호, 진행 상태, 신청 일자, 예상적립액 합계 안내</caption>
+                            <colgroup>
+                                <col style="width:220px;">
+                                <col style="width:255px;">
+                                <col style="width:220px;">
+                                <col style="width:255px;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">반품신청번호</th>
+                                    <td class="txt_num">RT20180832154</td>
+                                    <th scope="row">진행 상태</th>
+                                    <td>신청 취소</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">신청 일자</th>
+                                    <td class="txt_num">2018-04-10  17:27:18</td>
+                                    <th scope="row">예상적립액 합계</th>
+                                    <td><span class="txt_num">2,111,162</span>원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="tbl_type1 tbl_hover">
+                            <caption>상세정보 안내</caption>
+                            <colgroup>
+                                <col style="width:4%">
+                                <col>
+                                <col style="width:12%">
+                                <col style="width:9%">
+                                <col style="width:6%">
+                                <col style="width:9%">
+                                <col style="width:6%">
+                                <col style="width:10%">
+                                <col style="width:9%">
+                                <col style="width:9%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div class="chk_g">
+                                            <input type="checkbox" name="detailAllChk" id="detailAllChk" class="inp_chk">
+                                            <label for="detailAllChk" class="lab_chk">
+                                                <span class="ico_comm ico_chkbox">전체 선택</span>
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">상품명/규격</th>
+                                    <th scope="col">제조사</th>
+                                    <th scope="col">보험코드</th>
+                                    <th scope="col">보상률(%)</th>
+                                    <th scope="col">보험수가</th>
+                                    <th scope="col">신청수량</th>
+                                    <th scope="col">합계</th>
+                                    <th scope="col">비용할인</th>
+                                    <th scope="col">예상적립액</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="chk_g">
+                                            <input type="checkbox" name="detailChk" id="detailChk" class="inp_chk">
+                                            <label for="detailChk" class="lab_chk">
+                                                <span class="ico_comm ico_chkbox">선택</span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="txt_left"><label for="detailChk">가나칸정정정정정정정50밀리그램) 2줄일 경우 입니다 2줄 2줄/50mg</label></td>
+                                    <td>제조사긴타이틀일때</td>
+                                    <td class="txt_num">68090909</td>
+                                    <td><span class="txt_num">50</span></td>
+                                    <td><span class="txt_num">999,999</span>원</td>
+                                    <td><span class="txt_num">9999</span>개</td>
+                                    <td><strong class="txt_num">9,999,999</strong>원</td>
+                                    <td><span class="txt_num">555,999</span>원</td>
+                                    <td><span class="txt_num">9,999,999</span>원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btm_btn">
+                            <button type="button" class="btn_type9 btn_del">선택 삭제</button>
+                            <div class="f_r">
+                                <button type="button" class="btn_type1">상호인 다운로드</button>
+                                <button type="button" class="btn_type1 btn_list">목록</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+        
+        <!-- 우측 퀵메뉴[s] -->
+        <!--#include virtual="/publish/shop/renewal/html/include/quick_menu_dw.html" -->
+        <!-- 우측 퀵메뉴[e] -->
+    </section>
+    <!-- container [e] -->
+
+    <!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+    <!-- footer [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+    <!-- footer [e] -->
+
+
+    <!-- 낱알반품 신청 시 유의사항 [S] -->
+    <div id="popReturnCaution" style="display:none">
+        <div class="pop_layer pop_return" style="width:830px">
+            <strong class="tit_popup">낱알반품 신청 시 유의사항</strong>
+            <div class="pop_wrap">
+                <strong class="tit_info">유의사항</strong>
+                <ul class="list_caution">
+                    <li>
+                        낱알반품은 매칭된 <em class="emph_color">도매상에서 구매하신 상품에 한하여</em> 신청이 가능하며, 아래 일정으로 진행이 됩니다.
+                        <ul class="list_depth2">
+                            <li class="f_l"><span class="txt_num">1</span> 1일~7일(1주차) - 낱알반품 신청 접수 기간</li>
+                            <li class="f_r"><span class="txt_num">2</span> 8일~15일(2주차) - 낱알반품 회수 기간</li>
+                            <li class="f_l"><span class="txt_num">3</span> 16일~23일(3주차) - 낱알반품 검수 기간</li>
+                            <li class="f_r"><span class="txt_num">4</span> 24일~30일(4주차) - 낱알반품 예치금 적립 기간</li>
+                        </ul>
+                    </li>
+                    <li>낱알반품은 전월 협력도매상 급여약 매출의 1% 한도 내 신청이 가능합니다.</li>
+                    <li>비보험(오남용,OTC) 및 향정, 생제, 마약, 액상, 과립, 겔, 패취, 분말(g), 시럽(ml), 현탁액(ml) 제품의 경우 낱알반품이 불가합니다.</li>
+                    <li>약가인하된 제품은 인하 후 기준가로 처리됩니다.</li>
+                    <li>낱알반품은 해당 상품의 완통이 없을 시 불가합니다.</li>
+                    <li>낱알반품은 ETC/OTC 품목 중 '급여' 보험코드가 있는 제품에 한하여 가능합니다.</li><!-- 2019-04-04 추가 -->
+                </ul>
+                <strong class="tit_info">낱알반품 신청 프로세스</strong>
+                <div class="wrap_box">
+                    <div class="box_step">
+                        <strong class="tit_step">온라인 신청</strong>
+                        <p class="info_step"><strong class="txt_step">1단계</strong>[상품등록] 클릭하여<br>제품 검색 및 등록</p>
+                    </div>
+                    <div class="box_step box_off">
+                        <strong class="tit_step">오프라인 처리</strong>
+                        <ul class="info_step">
+                            <li><strong class="txt_step">2단계</strong>담당 MR이 약국 방문하여<br>실물확인 후 상호인</li>
+                            <li><strong class="txt_step">3단계</strong>공급사<br>회수처리 완료</li>
+                        </ul>
+                    </div>
+                    <div class="box_step">
+                        <strong class="tit_step">온라인 처리</strong>
+                        <p class="info_step"><strong class="txt_step">4단계</strong>예치금<br>적립 완료</p>
+                    </div>
+                    <div class="ico_comm ico_arr"></div>
+                    <div class="ico_comm ico_arr2"></div>
+                </div>
+                <div class="btn_wrap">
+                    <button type="button" class="btn_type1 btn_confirm">닫기</button>
+                </div>
+            </div>
+            <button type="button" class="btn_comm btn_close">닫기</button>
+        </div>
+    </div>
+    <!-- 낱알반품 신청 시 유의사항 [E] -->
+
+    <!-- 낱알반품 상품 등록 [s] -->
+    <div id="popReturnRegist" style="display:none">
+        <div class="pop_layer pop_return" style="width:830px">
+            <strong class="tit_popup">낱알반품 상품 등록</strong>
+            <div class="pop_wrap">
+                <strong class="tit_info">상품 검색</strong>
+                <div class="box_search">
+                    <div class="inner_search">
+                        <form action="#none">
+                            <fieldset>
+                                <legend>상품 등록 내역 검색폼</legend>
+                                <!-- 2018-09-18 수정 시작 -->
+                                <div class="item_search">
+                                    <strong class="tit_search">조회기간</strong>
+                                    <div class="datepicker_view">
+                                        <input name="startDt" type="text" class="inp_txt">
+                                        <span class="txt_bar">ㅡ</span>
+                                        <input name="endDt" type="text" class="inp_txt">
+                                    </div>
+                                    <div class="wrap_btn">
+                                        <button type="button" class="btn_period">1년</button>
+                                        <button type="button" class="btn_period">1년전</button>
+                                        <button type="button" class="btn_period">2년전</button>
+                                        <button type="button" class="btn_period">3년전</button>
+                                        <button type="button" class="btn_period">4년전</button>
+                                    </div>
+                                </div>
+                                <div class="item_search">
+                                    <strong class="tit_search">상품조회</strong>
+                                    <select class="select">
+                                        <option>전체</option>
+                                        <option>상품명</option>
+                                        <option>보험코드</option>
+                                        <option>제조사</option>
+                                    </select>
+                                    <!-- 2018-12-18 수정 시작 -->
+                                    <div class="wrap_search">
+                                        <input type="text" name="searchValRegist" id="searchValRegist" title="검색어 입력" class="inp_search">
+                                        <button type="button" class="btn_del"><span class="ico_comm">검색어 삭제</span></button>
+                                        <button type="submit" class="btn_search">검색</button>
+                                    </div>
+                                    <!-- 2018-12-18 수정 끝 -->
+                                </div>
+                                <!-- 2018-09-18 수정 끝 -->
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <strong class="tit_info">급여 상품 내역</strong>
+                <p class="sub_desc"><span class="emph_color">*</span> 낱알반품은 VIP전용관 협력도매상에서 구매하신 제품에 한하여 신청이 가능합니다.</p><!-- 2019-04-04 추가 -->
+                <table class="tbl_type1 tbl_hover">
+                    <caption>급여 상품 내역 상세 리스트</caption>
+                    <colgroup>
+                        <col style="width:8%">
+                        <col>
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <div class="chk_g">
+                                    <input type="checkbox" name="registAllChk" id="registAllChk" class="inp_chk">
+                                    <label for="registAllChk" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">전체 선택</span>
+                                    </label>
+                                </div>
+                            </th>
+                            <th scope="col">상품명</th>
+                            <th scope="col">규격</th>
+                            <th scope="col">제조사</th>
+                            <th scope="col">보험코드</th>
+                            <th scope="col">보험수가</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="registChk" id="registChk" class="inp_chk">
+                                    <label for="registChk" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="txt_left"><label for="registChk">일이삼사오육칠팔구십</label></td>
+                            <td><span class="txt_num">1000mg</span></td>
+                            <td>이연제약(주)</td>
+                            <td><span class="txt_num">658600010</span>원</td>
+                            <td><span class="txt_num">1,999,500</span>원</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="registChk" id="registChk2" class="inp_chk">
+                                    <label for="registChk2" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="txt_left"><label for="registChk2">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</label></td>
+                            <td><span class="txt_num">1000mg</span></td>
+                            <td>이연제약(주)</td>
+                            <td><span class="txt_num">658600010</span>원</td>
+                            <td><span class="txt_num">6,500</span>원</td>
+                        </tr>
+                        <tr class="data_none">
+                            <td colspan="6"><strong class="tit_none"><span class="ico_comm"></span>등록 가능한 제품이 없습니다.</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="paging_nav">
+                    <a href="#none" class="btn_prev">이전</a>
+                    <a href="#none">1</a>
+                    <a href="#none">2</a>
+                    <a href="#none">3</a>
+                    <a href="#none">4</a>
+                    <a href="#none">5</a>
+                    <span>6</span>
+                    <a href="#none">7</a>
+                    <a href="#none">8</a>
+                    <a href="#none">9</a>
+                    <a href="#none">10</a>
+                    <a href="#none" class="btn_next">다음</a>
+                </div>
+                <div class="btn_wrap">
+                    <button type="submit" class="btn_type1">등록</button>
+                </div>
+            </div>
+            <button type="button" class="btn_comm btn_close">닫기</button>
+        </div>
+    </div>
+    <!-- 낱알반품 상품 등록 [e] -->
+
+    <!-- 2021-10-28 하단 버튼 추가 [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/ez3pl/_bottom_buttons.html" -->
+    <!-- 2021-10-28 하단 버튼 추가 [e] -->
+
+    <script type="text/javascript">
+        $(function(){
+            shopUI.datepicker();
+
+            // 낱알반품 탭 메뉴
+            shopUI.tab({
+                "tabs" : $(".tab_type3 li"),
+                "contWrap" : $(".tab_cont > div")
+            });
+            // 상품 등록 내역 전체선택
+            var prodAllChk = $("input[name='prodAllChk']");
+            prodAllChk.change(function () {
+                var checked = $(this).prop("checked");
+                $("input[name='prodChk']").prop("checked", checked);
+            });
+            var prodChk = $("input[name='prodChk']");
+            prodChk.change(function () {
+                var boxLength = prodChk.length;
+                var checkedLength = $('input[name="prodChk"]:checked').length;
+                var selectAll = (boxLength == checkedLength);
+                prodAllChk.prop('checked', selectAll);
+            });
+
+            // 낱알반품 신청 내역 전체선택
+            var returnAllChk = $("input[name='returnAllChk']");
+            returnAllChk.change(function () {
+                var checked = $(this).prop("checked");
+                $("input[name='returnChk']").prop("checked", checked);
+                $("input[name='returnChk']:disabled").prop("checked", false);
+            });
+            var returnChk = $("input[name='returnChk']");
+            returnChk.change(function () {
+                var boxLength = returnChk.length;
+                var checkedLength = $('input[name="returnChk"]:checked').length;
+                var selectAll = (boxLength == checkedLength);
+                returnAllChk.prop('checked', selectAll);
+            });
+
+            // 낱알반품 신청 상세 내역 전체선택
+            var detailAllChk = $("input[name='detailAllChk']");
+            detailAllChk.change(function () {
+                var checked = $(this).prop("checked");
+                $("input[name='detailChk']").prop("checked", checked);
+                $("input[name='detailChk']:disabled").prop("checked", false);
+            });
+            var detailChk = $("input[name='detailChk']");
+            detailChk.change(function () {
+                var boxLength = detailChk.length;
+                var checkedLength = $('input[name="detailChk"]:checked').length;
+                var selectAll = (boxLength == checkedLength);
+                detailAllChk.prop('checked', selectAll);
+            });
+
+            // 낱알반품 상품 등록 레이어 전체선택
+            var registAllChk = $("input[name='registAllChk']");
+            registAllChk.change(function () {
+                var checked = $(this).prop("checked");
+                $("input[name='registChk']").prop("checked", checked);
+            });
+            var registChk = $("input[name='registChk']");
+            registChk.change(function () {
+                var boxLength = registChk.length;
+                var checkedLength = $('input[name="registChk"]:checked').length;
+                var selectAll = (boxLength == checkedLength);
+                registAllChk.prop('checked', selectAll);
+            });
+            // 이전 신청내역 레이어 전체선택
+            var importAllChk = $("input[name='importAllChk']");
+            importAllChk.change(function () {
+                var checked = $(this).prop("checked");
+                $("input[name='importChk']").prop("checked", checked);
+            });
+            var importChk = $("input[name='importChk']");
+            importChk.change(function () {
+                var boxLength = prodChk.length;
+                var checkedLength = $('input[name="importChk"]:checked').length;
+                var selectAll = (boxLength == checkedLength);
+                importAllChk.prop('checked', selectAll);
+            });
+            // 낱알반품 신청 내역 상세
+            $(".apply_inquiry .link_num").on("click",function (e) {
+                $(".apply_inquiry").hide();
+                $(".apply_detail").show();
+                e.preventDefault();
+            });
+            $(".apply_detail .btn_list").on("click",function () {
+                $(".apply_detail").hide();
+                $(".apply_inquiry").show();
+            });
+            //모달 레이어
+            $('body').on("click", ".cont_return .btn_caution", function() {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popReturnCaution"), {
+                    closeClass: "btn_close"
+                });
+                $("body").on("click", ".btn_confirm", function() {
+                    $(".btn_close").click();
+                });
+            });
+            $('body').on("click", ".cont_return .btn_regist", function() {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popReturnRegist"), {
+                    closeClass: "btn_close"
+                });
+                $("body").on("click", ".btn_confirm", function() {
+                    $(".btn_close").click();
+                });
+            });
+
+            // 검색어 삭제기능
+            $(".wrap_search input[type='text']").on("keyup", function(){
+                var searchInput = $(this).val().length;
+                if(searchInput > 0){
+                    $(this).next().show();
+                } else{
+                    $(this).next().hide();
+                }
+                $(".wrap_search .btn_del").on("click", function () {
+                    $(".wrap_search input").val("");
+                    $(this).hide();
+                });
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

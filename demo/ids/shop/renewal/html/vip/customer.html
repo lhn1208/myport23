@@ -1,0 +1,740 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+<link rel="stylesheet" href="../../css/layout_vip.css">
+<link rel="stylesheet" href="../../css/vip.css">
+</head>
+<body class="layout_vip"><!-- vip전용관인 경우 클래스 layout_vip부여  -->
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header_vip.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+	<section id="container">
+		<div id="content" class="cont_customer">
+			<div class="sub_cont_head">
+				<h2 class="sub_tit">고객만족센터</h2>
+				<p class="sub_txt">고객님의 궁금한 사항을 친절한 안내로 보다 편안한 쇼핑을 할 수 있도록 도와 드리겠습니다.</p>
+			</div>
+			<ul class="tab_menu tab_type3">
+				<li class="on"><a href="#tabNotice" class="link_all">공지사항</a></li>
+				<li><a href="#tabFaq">FAQ(자주 묻는 질문)</a></li>
+				<li><a href="#tabCustomer">고객의 소리</a></li>
+			</ul>
+			<div class="tab_cont">
+				<!-- 공지사항[s] -->
+				<div id="tabNotice">
+					<h3 class="screen_hide">공지사항</h3>
+					<ul class="tab_menu tab_type1">
+						<li class="on"><a href="#">VIP전용관 공지사항</a></li>
+						<li><a href="#">theSHOP 공지사항</a></li>
+						<li><a href="#">공급업체공지</a></li>
+						<li><a href="#">약가인하공지</a></li>
+						<li><a href="#">theSHOP+공지</a></li>
+						<li><a href="#">상품품절공지</a></li>
+						<li><a href="#">이벤트당첨자공지</a></li>
+					</ul>
+					<div class="sub_cont_head">
+						<h4 class="sstit">VIP전용관 공지사항</h4>
+						<div class="f_r">
+							<div class="datepicker_view">
+								<input name="startDt" type="text" class="inp_txt">
+								<span class="txt_bar">ㅡ</span>
+								<input name="endDt" type="text" class="inp_txt">
+							</div>
+							<select class="select" style="width:80px">
+								<option>전체</option>
+								<option>제목</option>
+								<option>내용</option>
+							</select>
+							<div class="cont_search">
+								<!-- 2018-12-18 수정 시작 -->
+								<div class="wrap_search">
+									<input type="text" title="검색어 입력" style="width:190px">
+									<button type="button" class="btn_del"><span class="ico_comm">검색어 삭제</span></button>
+									<button type="submit" class="btn_search"><span class="btn_comm">검색</span></button>
+								</div>
+								<!-- 2018-12-18 수정 끝 -->
+							</div>
+						</div>
+					</div>
+					<table class="tbl_type1">
+						<caption>더샵공지사항 리스트</caption>
+						<colgroup>
+							<col style="width:10%">
+							<col>
+							<col style="width:25%">
+							<col style="width:10%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">제목</th>
+								<th scope="col">작성일</th>
+								<th scope="col">조회수</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="txt_num">10</td>
+								<td class="txt_left"><a href="#">[공지] 귀비론, 가메레온, 시모과립 제조사회수 및 반품 방법 안내</a></td>
+								<td class="txt_num">2017-02-03</td>
+								<td class="txt_num">25</td>
+							</tr>
+							<tr>
+								<td class="txt_num">10</td>
+								<td class="txt_left"><a href="#">[공지] 귀비론, 가메레온, 시모과립 제조사회수 및 반품 방법 안내</a></td>
+								<td class="txt_num">2017-02-03</td>
+								<td class="txt_num">25</td>
+							</tr>
+							<tr>
+								<td class="txt_num">10</td>
+								<td class="txt_left"><a href="#">[공지] 귀비론, 가메레온, 시모과립 제조사회수 및 반품 방법 안내</a></td>
+								<td class="txt_num">2017-02-03</td>
+								<td class="txt_num">25</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="paging_nav">
+						<a href="#" class="btn_prev">이전</a>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<span>6</span>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
+						<a href="#" class="btn_next">다음</a>
+					</div>
+				</div>
+				<!-- 공지사항[e] -->
+				<!-- FAQ[s] -->
+				<div id="tabFaq" style="display:none;">
+					<h3 class="screen_hide">FAQ</h3>
+					<ul class="tab_menu tab_type1">
+						<li><a href="#">회원관련</a></li>
+						<li><a href="#">상품관련</a></li>
+						<li><a href="#">주문/결제</a></li>
+						<li><a href="#">배송</a></li>
+						<li><a href="#">취소/반품</a></li>
+						<li class="on"><a href="#">제휴카드</a></li>
+						<li><a href="#">동물의약품</a></li>
+						<li><a href="#">기타</a></li>
+					</ul>
+					<div class="sub_cont_head">
+						<h4 class="sstit">제휴카드 FAQ</h4>
+						<div class="f_r">
+							<select class="select" style="width:80px">
+								<option>전체</option>
+								<option>제목</option>
+								<option>내용</option>
+							</select>
+							<div class="cont_search">
+								<!-- 2018-12-18 수정 시작 -->
+								<div class="wrap_search">
+									<input type="text" title="검색어 입력" style="width:190px">
+									<button type="button" class="btn_del"><span class="ico_comm">검색어 삭제</span></button>
+									<button type="submit" class="btn_search"><span class="btn_comm">검색</span></button>
+								</div>
+								<!-- 2018-12-18 수정 끝 -->
+							</div>
+						</div>
+					</div>
+					<table class="tbl_type1">
+						<caption>제휴카드 FAQ 리스트</caption>
+						<colgroup>
+							<col style="width:10%">
+							<col style="width:20%">
+							<col>
+							<col style="width:10%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">분류</th>
+								<th scope="col">제목</th>
+								<th scope="col">조회수</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="txt_num">10</td>
+								<td>현대카드 제휴</td>
+								<td class="txt_left"><a href="#">삼성카드 관련 발급관련 문의, 개인신상정보  조회는 어떻게 하나요?</a></td>
+								<td class="txt_num">114</td>
+							</tr>
+							<tr>
+								<td class="txt_num">10</td>
+								<td>삼성카드 제휴</td>
+								<td class="txt_left"><a href="#">삼성카드 관련 발급관련 문의, 개인신상정보  조회는 어떻게 하나요?</a></td>
+								<td class="txt_num">114</td>
+							</tr>
+							<tr>
+								<td class="txt_num">10</td>
+								<td>신한카드 제휴</td>
+								<td class="txt_left"><a href="#">삼성카드 관련 발급관련 문의, 개인신상정보  조회는 어떻게 하나요?</a></td>
+								<td class="txt_num">1,114</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="paging_nav">
+						<a href="#" class="btn_prev">이전</a>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<span>6</span>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
+						<a href="#" class="btn_next">다음</a>
+					</div>
+				</div>
+				<!-- FAQ[e] -->
+				<!-- 고객의소리[s] -->
+				<div id="tabCustomer" style="display:none;">
+					<h3 class="screen_hide">고객의소리</h3>
+					<ul class="tab_menu tab_type1">
+						<li class="on"><a href="#tabInquiry">1:1문의하기</a></li>
+						<li><a href="#tabAnswer">답변 확인하기</a></li>
+						<li><a href="#tabSms">영업사원에게 무료문자</a></li>
+					</ul>
+					<div class="tab_customer_cont">
+						<div id="tabInquiry">
+							<div class="sub_cont_head">
+								<h4 class="sstit">1:1문의하기</h4>
+							</div>
+							<div class="inquiry_box">
+								<span class="ico_comm"></span>
+								<p>문의를 하시기 전에 상단의 FAQ검색을 이용하시면 원하시는 답변을 쉽게 찾으실 수 있습니다.</p>
+								<p>고객의 소리를 통해 문의하신 내용의 답변은 <em>[답변 확인하기]에서 확인</em>하실 수 있습니다.</p>
+								<p>고객의 소리를 통한 문의와 답변은 비공개입니다.</p>
+							</div>
+
+							<!-- input의 id값과 label의 for값을 일치 시켜주세요 -->
+							<table class="tbl_type3 tbl_write">
+								<caption>1:1문의 작성</caption>
+								<colgroup>
+									<col style="width:15%">
+									<col style="width:35%">
+									<col style="width:15%">
+									<col style="width:35%">
+								</colgroup>
+								<tr>
+									<th scope="row">문의유형</th>
+									<td>
+										<select class="select" style="width:200px;">
+											<option>선택하세요</option>
+										</select>
+									</td>
+									<th scope="row">공급업체</th>
+									<td>
+										<select class="select" style="width:200px;">
+											<option>선택하세요</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="inquiry_tit">제목</label></th>
+									<td colspan="3"><input type="text" id="inquiry_tit" style="width:100%;"></td>
+								</tr>
+								<tr>
+									<th scope="row">내용</th>
+									<td colspan="3">에디터영역</td>
+								</tr>
+								<tr>
+									<td colspan="4" class="bg_gray">
+										<em class="wrap_tit">
+											<input type="checkbox" id="chk_mail">
+											<label for="chk_mail">답변내용 메일로 함께 받기</label>
+										</em>
+										<div class="wrap_txt">
+											<input type="text" title="이메일 아이디" style="width:170px;">
+											<span class="txt_bar">@</span>
+											<input type="text" title="이메일 사이트 주소" style="width:170px;">
+											<select class="select" style="width:170px;">
+												<option>메일 직접입력</option>
+											</select>
+										</div>
+										<span class="wrap_txt">
+											<input type="checkbox" id="member_change1">
+											<label for="member_change1">회원정보 동시변경</label>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="4" class="bg_gray">
+										<em class="wrap_tit">
+											<input type="checkbox" id="chk_sms">
+											<label for="chk_sms">답변 완료시 알림 문자 메시지 받기</label>
+										</em>
+										<div class="wrap_txt">
+											<input type="text" title="핸드폰 앞자리" style="width:80px;">
+											<span class="txt_bar">-</span>
+											<input type="text" title="핸드폰 중간자리" style="width:80px;">
+											<span class="txt_bar">-</span>
+											<input type="text" title="핸드폰 뒷자리" style="width:80px;">
+										</div>
+										<span class="wrap_txt">
+											<input type="checkbox" id="member_change2">
+											<label for="member_change2">회원정보 동시변경</label>
+										</span>
+									</td>
+								</tr>
+							</table>
+							<div class="btn_wrap">
+								<a href="#" class="btn_type1">확인</a>
+								<a href="#" class="btn_type2">취소</a>
+							</div>
+						</div>
+						<div id="tabAnswer" style="display:none;">
+							<div class="sub_cont_head">
+								<h4 class="sstit">답변확인하기</h4>
+								<p class="sub_txt">더샵운영자나 공급업체에 문의사항이 있으시면 글을 남겨주세요</p>
+								<div class="f_r">
+									<select class="select" style="width:80px">
+										<option>전체</option>
+										<option>제목</option>
+										<option>내용</option>
+									</select>
+									<div class="cont_search">
+										<!-- 2018-12-18 수정 시작 -->
+										<div class="wrap_search">
+											<input type="text" title="검색어 입력" style="width:190px">
+											<button type="button" class="btn_del"><span class="ico_comm">검색어 삭제</span></button>
+											<button type="submit" class="btn_search"><span class="btn_comm">검색</span></button>
+										</div>
+										<!-- 2018-12-18 수정 끝 -->
+									</div>
+								</div>
+							</div>
+							<table class="tbl_type1 tbl_answer">
+								<caption>답변 리스트</caption>
+								<colgroup>
+									<col style="width:7%">
+									<col style="width:11%">
+									<col style="width:15%">
+									<col>
+									<col style="width:12%">
+									<col style="width:12%">
+									<col style="width:10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">번호</th>
+										<th scope="col">문의유형</th>
+										<th scope="col">공급업체</th>
+										<th scope="col">제목</th>
+										<th scope="col">질문등록일</th>
+										<th scope="col">답변완료일</th>
+										<th scope="col">상태</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="txt_num">10</td>
+										<td>주문취소/반품</td>
+										<td>the shop</td>
+										<td class="txt_left"><a href="#">삼성카드 관련</a></td>
+										<td class="txt_num">2012-02-29</td>
+										<td class="txt_num">2017-02-29</td>
+										<td class="txt_state">완료<div class="appra_btn"><a href="#none" class="btn_g btn_complete">평가완료&gt;</a></div></td>
+									</tr>
+									<tr class="cell_view">
+										<td colspan="7">
+											<div class="info_qa">
+												<strong class="area_question">
+													<span class="txt_qa">Q<span class="screen_out">질문</span></span>
+													해당제품 입고요청 확인 부탁드립니다.
+												</strong>
+												<div class="area_answer">
+													<strong class="txt_qa">A<span class="screen_out">답변</span></strong>
+													<div class="desc_answer">
+														약사님 안녕하세요.<br>
+														요청하신 상품은 현재 생산이 중단된 상태라 현재 입고가 어려운 상황이오니 이점 양해 부탁 드립니다.<br>
+														감사합니다.
+													</div>
+													<a href="#none" class="link_qa">★제휴카드 자세히 보기</a>
+												</div>
+												<div class="wrap_btn">
+													<a href="#none" class="btn_type6 btn_modify">수정하기</a>
+													<a href="#none" class="btn_type6">내가 쓴글 삭제</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="txt_num">10</td>
+										<td>예치금 쿠폰 마일리지</td>
+										<td>복산나이스팜 경남지점</td>
+										<td class="txt_left"><a href="#">삼성카드 관련 발급관련 문의, 개인신상정보  조회는 어떻게 하나요?</a></td>
+										<td class="txt_num">2012-02-29</td>
+										<td class="txt_num">2017-02-29</td>
+										<td class="txt_state">완료<div class="appra_btn"><a href="#none" class="btn_g btn_appra">만족도 평가&gt;</a></div></td>
+									</tr>
+									<tr class="cell_view">
+										<td colspan="7">
+											<div class="info_qa">
+												<strong class="area_question">
+													<span class="txt_qa">Q<span class="screen_out">질문</span></span>
+													해당제품 입고요청 확인 부탁드립니다.
+												</strong>
+												<table class="tbl_qa">
+													<caption>제품안내</caption>
+													<colgroup>
+														<col style="width:124px">
+														<col style="width:163px">
+														<col style="width:140px">
+														<col style="width:158px">
+														<col style="width:135px">
+														<col>
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">구분</th>
+															<th scope="col">상품명</th>
+															<th scope="col">규격</th>
+															<th scope="col">단위</th>
+															<th scope="col">제조사</th>
+															<th scope="col">입고신청수량</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>null</td>
+															<td>스멕타현탁액(NEW)</td>
+															<td>20ml</td>
+															<td>100P(20P*5EA)</td>
+															<td>대웅제약</td>
+															<td class="txt_num">1</td>
+														</tr>
+													</tbody>
+												</table>
+												<div class="area_answer">
+													<strong class="txt_qa">A<span class="screen_out">답변</span></strong>
+													<div class="desc_answer">
+														약사님 안녕하세요.<br>
+														요청하신 상품은 현재 생산이 중단된 상태라 현재 입고가 어려운 상황이오니 이점 양해 부탁 드립니다.<br>
+														감사합니다.
+													</div>
+												</div>
+												<div class="wrap_btn">
+													<a href="#none" class="btn_type6 btn_modify">수정하기</a>
+													<a href="#none" class="btn_type6">내가 쓴글 삭제</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="txt_num">10</td>
+										<td>더샵플러스</td>
+										<td>한국바이오인더스트리</td>
+										<td class="txt_left"><a href="#">삼성카드 관련 발급관련 문의, 개인신상정보  조회는 어떻게 하나요?</a></td>
+										<td class="txt_num">2012-02-29</td>
+										<td class="txt_num">2017-02-29</td>
+										<td class="txt_state">미답변</td>
+									</tr>
+									<tr class="cell_view">
+										<td colspan="7">
+											<div class="info_qa">
+												<strong class="area_question">
+													<span class="txt_qa">Q<span class="screen_out">질문</span></span>
+													타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀
+												</strong>
+												<div class="wrap_btn">
+													<a href="#none" class="btn_type6 btn_modify">수정하기</a>
+													<a href="#none" class="btn_type6">내가 쓴글 삭제</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="txt_num">10</td>
+										<td>쇼핑몰 이용 오류</td>
+										<td>한국바이오인더스트리</td>
+										<td class="txt_left"><a href="#">삼성카드 관련 발급관련 문의, 개인신상정보  조회는 어떻게 하나요?</a></td>
+										<td class="txt_num">2012-02-29</td>
+										<td class="txt_num">2017-02-29</td>
+										<td class="txt_state">완료</td>
+									</tr>
+									<tr class="cell_view">
+										<td colspan="7">
+											<div class="info_qa">
+												<strong class="area_question">
+													<span class="txt_qa">Q<span class="screen_out">질문</span></span>
+													질문입니다.
+												</strong>
+												<div class="area_answer">
+													<strong class="txt_qa">A<span class="screen_out">답변</span></strong>
+													<div class="desc_answer">
+														답변입니다.
+													</div>
+												</div>
+												<div class="wrap_btn">
+													<a href="#none" class="btn_type6 btn_modify">수정하기</a>
+													<a href="#none" class="btn_type6">내가 쓴글 삭제</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="paging_nav">
+								<a href="#" class="btn_prev">이전</a>
+								<a href="#">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<a href="#">5</a>
+								<span>6</span>
+								<a href="#">7</a>
+								<a href="#">8</a>
+								<a href="#">9</a>
+								<a href="#">10</a>
+								<a href="#" class="btn_next">다음</a>
+							</div>
+						</div>
+						<div id="tabSms" style="display:none;">
+							<div class="sub_cont_head">
+								<h4 class="sstit">영업사원에게 무료문자</h4>
+							</div>
+							<div class="info_box">
+								<ul>
+									<li>약사님을 담당하는 대웅제약 영업사원에게 문자 메세지를 보내실 수 있습니다. 비용은 무료이며, 담당 영업사원에게만 메세지가 전송됩니다.</li>
+									<li><em>핸드폰번호 도용차단 서비스</em>에 가입되어 있을 경우 담당영업사원이 메세지를 받지 못하오니 통신사에 연락하셔서 <em>해지신청 하신 후 이용</em>하시기 바랍니다.</li>
+								</ul>
+							</div>
+							<div class="sms_box">
+								<div class="sms_inner">
+									<strong class="sms_tit">1. 대웅제약 담당자 선택</strong>
+									<div class="choice_charge">
+										<div class="choice_wrap"><input type="checkbox" id="charge1"><label for="charge1">[OTC] 오인호 010-0100-0000</label></div>
+										<div class="choice_wrap"><input type="checkbox" id="charge2"><label for="charge2">[OTC] 김아리아 010-0100-0000</label></div>
+										<div class="choice_wrap"><input type="checkbox" id="charge3"><label for="charge3">[OTC] 오혁 010-0100-0000</label></div>
+										<div class="choice_wrap"><input type="checkbox" id="charge4"><label for="charge4">[OTC] 오인호 010-0100-0000</label></div>
+										<div class="choice_wrap"><input type="checkbox" id="charge5"><label for="charge5">[OTC] 김아리아 010-0100-0000</label></div>
+										<div class="choice_wrap"><input type="checkbox" id="charge6"><label for="charge6">[OTC] 오인호 010-0100-0000</label></div>
+										<div class="choice_wrap"><input type="checkbox" id="charge7"><label for="charge7">[OTC] 오인호 010-0100-0000</label></div>
+										<div class="choice_wrap"><input type="checkbox" id="charge8"><label for="charge8">[OTC] 오인호 010-0100-0000</label></div>
+									</div>
+									<strong class="sms_tit">2. 문자메시지 선택</strong>
+									<div class="choice_sms">
+										<div class="owl-carousel">
+											<div class="item">
+												
+												<div class="sms_area"><textarea readonly>1약가인하로 금주 내 ETC영업사원 방문 요청드립니다. [test약국 테스트 선약사]</textarea></div>
+												<div class="sms_area"><textarea readonly>1금주 중에 방문 부탁드립니다. [test약국 테스트선약사]</textarea></div>
+												<div class="sms_area"><textarea readonly>1문의할 내용이 있으니 전화부탁드립니다. [test약국 테스트선약사]</textarea></div>
+											</div>
+											<div class="item">
+												<div class="sms_area"><textarea readonly>2두번째 약가인하로 금주 내 ETC영업사원 방문 요청드립니다. [test약국 테스트 선약사]</textarea></div>
+												<div class="sms_area"><textarea readonly>2두번째 금주 중에 방문 부탁드립니다. [test약국 테스트선약사]</textarea></div>
+												<div class="sms_area"><textarea readonly>2두번째 문의할 내용이 있으니 전화부탁드립니다. [test약국 테스트선약사]</textarea></div>
+											</div>
+											<div class="item">
+												<div class="sms_area"><textarea readonly>3세번째 약가인하로 금주 내 ETC영업사원 방문 요청드립니다. [test약국 테스트 선약사]</textarea></div>
+												<div class="sms_area"><textarea readonly>3세번째 금주 중에 방문 부탁드립니다. [test약국 테스트선약사]</textarea></div>
+											</div>
+										</div>
+										<p class="prod_pagination"><strong>1</strong>/1</p>
+									</div>
+									<strong class="sms_tit">3. 발송시간 선택</strong>
+									<div class="choice_time">
+										<div class="choice_wrap"><input type="radio" id="time1" name="time"><label for="time1">즉시전송</label></div>
+										<div class="choice_wrap">
+											<input type="radio" id="time2" name="time"><label for="time2">예약전송</label>
+											<div class="datepicker_view">
+												<input type="text" class="inp_txt">
+											</div>
+											<input type="text" id="time3" style="width:50px;"> <label for="time3">시</label>
+											<input type="text" id="time4" style="width:50px;"> <label for="time4">분</label>
+										</div>
+									</div>
+								</div>
+								<div class="sms_inner">
+									<strong class="sms_tit">4. 메시지 발송</strong>
+									<div class="sms_write_box">
+										<div class="sms_write_inner">
+											<div class="sms_write">
+												<textarea placeholder="클릭 시 직접 입력"></textarea>
+												<span class="txt_byte">0/90 bytes</span>
+											</div>
+											<div class="sms_number">
+												<p>
+													<label for="recipient">받는사람</label>
+													<input type="text" id="recipient" title="받는사람1 전화번호" style="width:125px;">
+													<input type="text" title="받는사람2 전화번호" style="width:125px;">
+													<input type="text" title="받는사람3 전화번호" style="width:125px;">
+													<input type="text" title="받는사람4 전화번호" style="width:125px;">
+												</p>
+												<p>
+													<label for="sender">보내는는사람</label>
+													<input type="text" id="sender" style="width:125px;">
+												</p>
+											</div>
+											<div class="btn_wrap">
+												<button type="submit" class="btn_type1">전송</button>
+												<button type="reset" class="btn_type2">다시쓰기</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 고객의소리[e] -->
+			</div>
+		</div>
+		<!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu_vip.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+	</section>
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+
+	<div id="popAppra" style="display:none">
+		<div class="pop_layer pop_type1" style="width:610px">
+			<strong class="tit_popup">고객만족도 평가</strong>
+			<div class="pop_wrap">
+				<strong class="tit_question"><span class="txt_tit">문의글:</span> 삼성카드 관련 발급관련 문의, 개인신상정보 조회는 어떻게 하나요?</strong>
+				<table class="tbl_type3">
+					<caption>만족도 평가 체크</caption>
+					<colgroup>
+						<col style="width:130px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">만족도 평가</th>
+							<td>
+								<div class="wrap_inp">
+									<input type="radio" name="appraisalType" id="appraisalType01" class="inp_g" value="01">
+									<label for="appraisalType01" class="lab_g">만족</label>
+									<input type="radio" name="appraisalType" id="appraisalType02" class="inp_g" value="02">
+									<label for="appraisalType02" class="lab_g">보통</label>
+									<input type="radio" name="appraisalType" id="appraisalType03" class="inp_g" value="03">
+									<label for="appraisalType03" class="lab_g">불만족</label>
+								</div>
+							</td>
+						</tr>
+						<tr class="cell_chk">
+							<th scope="row">불만족사유<span class="txt_sub">(복수선택가능)</span></th>
+							<td>
+								<div class="wrap_inp">
+									<input type="checkbox" name="discontentType" id="discontentType01" class="inp_g">
+									<label for="discontentType01" class="lab_g">처리지연</label>
+									<input type="checkbox" name="discontentType" id="discontentType02" class="inp_g">
+									<label for="discontentType02" class="lab_g">응대태도</label>
+									<input type="checkbox" name="discontentType" id="discontentType03" class="inp_g">
+									<label for="discontentType03" class="lab_g">처리결과</label>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<strong class="tit_cmt"><label for="csCmt">남기고 싶은 말</label></strong>
+				<textarea name="csCmt" id="csCmt" class="tf_cmt"></textarea>
+				<div class="btn_wrap">
+					<button type="submit" class="btn_type1 btn_confirm">평가완료</button>
+					<button type="button" class="btn_type2 btn_cancel">취소</button>
+				</div>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(function(){
+			shopUI.datepicker();
+
+			// 고객만족센터 탭
+			shopUI.tab({
+				"tabs" : $(".tab_type3 li"),
+				"contWrap" : $(".tab_cont > div")
+			});
+			// 고객의소리 탭
+			shopUI.tab({
+				"tabs" : $("#tabCustomer .tab_type1 li"),
+				"contWrap" : $(".tab_customer_cont > div")
+			});
+			// 답변확인하기
+			$(".tbl_answer .txt_left a").on("click", function(e){
+				$(this).parent().parent().next(".cell_view").toggleClass("on").siblings().removeClass("on");
+				return false;
+			});
+			//모달 레이어
+			$('body').on("click", ".tbl_answer .btn_appra", function() {
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popAppra"), {
+					closeClass: "btn_close"
+				});
+				$("body").on("click", "#popAppra .btn_cancel", function() {
+					$(".btn_close").click();
+				});
+			});
+			//고객만족도 평가체크
+			$("input[name='appraisalType']").click(function() {
+				if($(this).val() == "03") {
+					$("#popAppra .cell_chk").css("display","table-row")
+				}else {
+					$("#popAppra .cell_chk").css("display","none")
+				};
+			});
+
+			var choiceSms =  $(".choice_sms .owl-carousel");
+			choiceSms.on("initialized.owl.carousel", function(e){
+				var owlItems = e.item.index - 1;
+				$(this).next(".prod_pagination").html("<strong>" + owlItems + "</strong>/" + e.item.count);
+			});
+			choiceSms.on("changed.owl.carousel", function(e){
+				var owlItems = e.item.index - 1;
+				if (owlItems == 0){
+					owlItems = e.item.count
+				} else if (owlItems == -1){
+					owlItems = e.item.index +1
+				}
+				$(this).next(".prod_pagination").html("<strong>" + owlItems + "</strong>/" + e.item.count);
+			});
+			choiceSms.owlCarousel({
+				items: 1,
+				autoplay: true,
+				loop: true,
+				nav: true,
+				dots: false,
+				mouseDrag: false,
+				autoplayTimeout: 6000,
+				autoplayHoverPause: true,
+				smartSpeed:0
+			});
+			// 검색어 삭제기능 2018-12-18 추가
+			$(".wrap_search input[type='text']").on("keyup", function(){
+				var searchInput = $(this).val().length;
+				if(searchInput > 0){
+					$(this).next().show();
+				} else{
+					$(this).next().hide();
+				}
+				$(".wrap_search .btn_del").on("click", function () {
+					$(".wrap_search input").val("");
+					$(this).hide();
+				});
+			});
+
+		});
+	</script>
+</body>
+</html>

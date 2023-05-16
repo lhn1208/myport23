@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리멤버드</title>
+    <script src="../js/jquery-3.6.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+    <!--gnb-->
+    <div id="remember_gnb" class="remember_gnb">
+        <div class="gnb_inner">
+          <h1 class="logo"><a href="#">리멤버드</a></h1>
+          <nav class="gnb">
+            <ul>
+              <li><a href="#">리멤버드</a></li>
+              <li><a href="#">서비스소개</a></li>
+              <li><a href="#">부고</a></li>
+              <li><a href="#">추모관</a></li>
+              <li><a href="#">조문보</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+          <div class="right">
+            <div class="gnb_search_form">
+              <form>
+                <fieldset>
+                  <legend>고인명검색</legend>
+                  <input type="text" class="search_input" placeholder="고인명검색">
+                </fieldset>
+                <a href="#" class="ico_sch">검색</a>
+              </form>
+            </div>
+            <div class="log_info">
+              <a href="#">로그인</a>
+             <!-- <a href="#">로그아웃</a> -->
+           </div>    
+            <a href="#" class="member">마이페이지</a>
+            <a href="#" class="menu">메뉴</a>
+          </div>
+        </div>
+    </div>
+    <!--//gnb-->
+    <!--mobile menu-->
+    <div class="mobile_menu">
+      <div class="mobile_menu_inner">
+        <button class="close">메뉴 닫기</button>
+        <div class="member_info">
+          <a href="#">로그인</a>
+          <a href="#">회원가입</a>
+        </div>
+        <span class="intro">
+          리멤버드는<br>새로운 장례 문화를 선도하는<br>사회적 기업입니다.
+        </span>
+        <ul class="menu_list">
+          <li><a href="#">리멤버드</a></li>
+          <li><a href="#">서비스소개</a></li>
+          <li><a href="#">부고</a></li>
+          <li><a href="#">추모관</a></li>
+          <li><a href="#">조문보</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--//mobile menu-->
+    <div class="main_content_wrap">
+      <div class="main_top">
+          <div class="main_top_inner">
+            <div class="main_slide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../images/main/img_main1.jpg"></div>
+                  <div class="swiper-slide"><img src="../images/main/img_main2.jpg"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>     
+            <div class="cont_area">
+                <div class="search_form">
+                  <form>
+                    <fieldset>
+                      <legend>부고검색</legend>
+                      <input type="text" class="search_input" placeholder="부고검색">
+                    </fieldset>
+                    <a href="#" class="ico_sch">검색</a>
+                  </form>
+                </div>
+                <h2 class="top_title"><img src="../images/main/main_title.png"></h2>    
+                <p class="txt">사랑하는 고인의 가족, 친지분들에게 부고를 알리며 <span class="block">온라인 장례를 통해 조문을 하실 수 있습니다.</span></p>
+            </div>
+          </div>             
+      </div>
+      <div class="main_content">
+        <!-- 추모관 [S]-->
+        <div class="intro_section">
+          <h2 class="title">추모관</h2>
+          <p class="txt">고인의 추모관을 방문해 고인에 대한 그리운 마음과<br>생전에 하지 못한 이야기를 나누세요.</p>
+          <a href="#" class="main_btn">신청하기</a>
+          <div class="intro_slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <span class="img_area"><img src="https://mcc-remembered.s3.ap-northeast-2.amazonaws.com/photo/95ddf7c5-348a-4da7-ad5b-4b83348af843%EA%B7%B8%EB%A6%BC11.jpg"></span>
+                    <p class="text">평생을 한국의 제약산업에 이바지한 아버지</p>
+                    <div class="info">
+                      <em>김한국</em>
+                      1938.09.03 ~ 2020.1.06
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <span class="img_area"><img src="https://mcc-remembered.s3.ap-northeast-2.amazonaws.com/photo/e6d23d6b-d4a4-4036-bbd1-8eb678584fa8%EA%B7%B8%EB%A6%BC4.png"></span>
+                      <p class="text">항상 자식들 말을 믿어주는 우리아빠</p>
+                      <div class="info">
+                      <em>김한국</em>
+                      1938.09.03 ~ 2020.1.06
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <span class="img_area"><img src="https://mcc-remembered.s3.ap-northeast-2.amazonaws.com/photo/04067461-266d-4f14-8e71-7aa0df9fa11a%EC%A0%9C%EB%AA%A9%20%EC%97%86%EC%9D%8C.png"></span>
+                    <p class="text">명랑소녀 곽학련 여사의 인생길 이야기</p>
+                    <div class="info">
+                      <em>곽학련 수녀</em>
+                      1946.01.03 ~ 2021.6.19
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <span class="img_area"><img src="https://mcc-remembered.s3.ap-northeast-2.amazonaws.com/photo/2c43e704-7781-45c2-9fce-7ace194e7f0b01%20%EC%B6%94%EB%AA%A8%EA%B4%80%20%EC%95%84%EB%B2%84%EB%8B%98.png"></span>
+                    <p class="text">명랑소녀 곽학련 여사의 인생길 이야기</p>
+                    <div class="info">
+                      <em>곽학련 수녀</em>
+                      1946.01.03 ~ 2021.6.19
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>    
+          <div class="more_btn_area"><button class="more_btn">더보기</button> </div>
+        </div>
+        <!-- //추모관 [E]-->
+        <span class="logo_content">
+          With Remembered
+        </span>
+        <!-- 부고 [S]-->
+        <div class="memorial_section">
+          <div class="section_style">
+            <h2 class="title">부고</h2>
+            <p class="txt">고인의 추모관을 방문해 고인에 대한 그리운 마음과<br>생전에 하지 못한 이야기를 나누세요.</p>
+            <button class="more_btn">더보기</button> 
+          </div>
+          <div class="memorial_slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <span class="img_area"><img src="https://mcc-remembered.s3.ap-northeast-2.amazonaws.com/photo/95ddf7c5-348a-4da7-ad5b-4b83348af843%EA%B7%B8%EB%A6%BC11.jpg"></span>
+                    <p class="text">홍길여</p>
+                    <dl class="info">
+                      <dt>1946.01.03 ~ 2021.6.19</dt>
+                      <dd><span>상주</span>이미숙</dd>
+                      <dd><span>발인</span>2000.02.16</dd>
+                    </dl>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <span class="img_area"><img src="https://mcc-remembered.s3.ap-northeast-2.amazonaws.com/photo/e6d23d6b-d4a4-4036-bbd1-8eb678584fa8%EA%B7%B8%EB%A6%BC4.png"></span>
+                    <p class="text">김한국</p>
+                    <dl class="info">
+                      <dt>1946.01.03 ~ 2021.6.19</dt>
+                      <dd><span>상주</span>이미숙</dd>
+                      <dd><span>발인</span>2000.02.16</dd>
+                    </dl>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <span class="img_area"><img src="https://mcc-remembered.s3.ap-northeast-2.amazonaws.com/photo/04067461-266d-4f14-8e71-7aa0df9fa11a%EC%A0%9C%EB%AA%A9%20%EC%97%86%EC%9D%8C.png"></span>
+                    <p class="text">김이진</p>
+                    <dl class="info">
+                      <dt>1946.01.03 ~ 2021.6.19</dt>
+                      <dd><span>상주</span>이미숙</dd>
+                      <dd><span>발인</span>2000.02.16</dd>
+                    </dl>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <span class="img_area"><img src="https://mcc-remembered.s3.ap-northeast-2.amazonaws.com/photo/2c43e704-7781-45c2-9fce-7ace194e7f0b01%20%EC%B6%94%EB%AA%A8%EA%B4%80%20%EC%95%84%EB%B2%84%EB%8B%98.png"></span>
+                    <p class="text">홍길동 집사</p>
+                    <dl class="info">
+                      <dt>1946.01.03 ~ 2021.6.19</dt>
+                      <dd><span>상주</span>이미숙</dd>
+                      <dd><span>발인</span>2000.02.16</dd>
+                    </dl>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-prev"><span>PREV</span></div>
+              <div class="swiper-button-next"><span>NEXT</span></div>
+              <div class="swiper-pagination"></div>
+          </div>     
+        </div>
+        <!-- //부고 [E]-->       
+      </div>
+      <div class="remember_service">
+        <div class="service_content">
+          <a href="#" class="sv1">
+            <i><img src="../images/main/ico_service1.png"></i>
+            <strong>부고</strong>
+            <p class="desc">상주가 부고를 만들어<br>유족과 지인들에게<br>알릴 수 있습니다.</p>
+          </a>
+          <a href="#" class="sv2">
+            <i><img src="../images/main/ico_service2.png"></i>
+            <strong>추모관</strong>
+            <p class="desc">부고 이후, 추모관으로 자동 전환되어<br>지속적으로 고인을<br>추모할 수 있습니다.</p>
+          </a>
+          <a href="#" class="sv3">
+            <i><img src="../images/main/ico_service3.png"></i>
+            <strong>조문보</strong>
+            <p class="desc">고인의 삶과 정신적 유산을<br>조문보를 통해 알립니다.</p>
+          </a>
+          <a href="#" class="sv4">
+            <i><img src="../images/main/ico_service4.png"></i>
+            <strong>추모글</strong>
+            <p class="desc">조문객은 글 뿐만 아니라<br>고인과 함께한 추억 사진, 동영상을<br>올릴 수 있습니다.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--right banner-->
+    <div class="right_banner">
+      <a href="#">문의</a>
+      <a href="#" class="kakao">KAKAO</a>
+    </div>
+    <!--//right banner-->
+    <!--footer-->
+    <footer id="remember_footer" class="remember_footer">
+      <div class="footer_inner">
+        <ul class="term_list">
+          <li><a href="#">이용약관</a><i class="bar"></i></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+        <div class="compay_info">
+          <address>서울시 강남구 봉은사로 114길 12, 7층</address> <i class="bar"></i>대표 서종원 <span class="mb_block">사업자 등록번호 120-86-10499</span> <i class="bar none_type"></i><span class="mb_block">통신판매업신고 2009-서울강남-00290 </span>
+          <span class="customer">고객센터<i class="bar mb_none"></i>tel.02-550-8700 <span class="fax">fax.02-563-8398</span><i class="bar mb_none"></i> <span class="email">Email.tslee0710@mcircle.biz</span><i class="bar none_type"></i><span class="mb_block">상담가능시간  오전 9:00 - 오후 6:00</span></span>
+        </div>
+        <span class="footer_logo"><img src="../images/footer_logo.png"></span>
+        <div class="ico_wrap">
+          <a href="#"><img src="../images/footer_ico1.png"></a>
+          <a href="#"><img src="../images/footer_ico2.png"></a>
+        </div>
+      </div>     
+    </footer>
+    <!--//footer-->
+    <script>
+      //main silde
+      var swiper = new Swiper(".main_slide", {
+        effect: 'fade',
+        autoplay: {
+            delay: 2000,
+        },
+        navigation: {
+          nextEl: ".main_slide .swiper-button-next",
+          prevEl: ".main_slide .swiper-button-prev",
+        },
+      });
+      //추모관 슬라이드
+      var swiper = new Swiper(".intro_slide", {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        centeredSlides:true,
+        loop:true,
+        autoHeight:true,
+        simulateTouch:false,
+        navigation: {
+          nextEl: ".intro_slide .swiper-button-next",
+          prevEl: ".intro_slide .swiper-button-prev",
+        },
+        breakpoints: {
+          760: {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+            centeredSlides:false,
+            simulateTouch:true,
+          }
+        }
+      });
+      //부고 슬라이드     
+      var swiper = new Swiper(".memorial_slide", {
+        slidesPerView: 3.5,
+        spaceBetween: 50,
+        centeredSlides:true,
+        loop:true,
+        // autoHeight:true,
+        simulateTouch:false,
+        navigation: {
+          nextEl: ".memorial_slide .swiper-button-next",
+          prevEl: ".memorial_slide .swiper-button-prev",
+        },
+        pagination: {
+          el: ".memorial_slide .swiper-pagination",
+          type: "progressbar"
+        },
+        breakpoints: {
+          760: {
+            slidesPerView: 2,
+            loop:true,
+            simulateTouch:true,
+          }
+        }
+      });
+   </script>
+</body>
+</html>

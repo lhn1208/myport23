@@ -1,0 +1,67 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+    <!-- membership 전용 css 추가 -->
+	<link rel="stylesheet" href="../../css/themembership.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+    <section id="content" class="membership psychology">
+        <img src="../../images/membership/the_psychology1.jpg">
+        <ul class="tab_buttons">
+            <li><a href="#cont1">서비스 소개</a></li>
+            <li><a href="#cont2">서비스 이용<br>동영상 안내</a></li>
+            <li><a href="#cont3">심리상담 이벤트</a></li>
+        </ul>
+        <div class="tab_cont">
+            <div id="cont1" class=""> <img src="../../images/membership/the_psychology2_1.jpg"></div>
+            <div id="cont2" class=""> 
+                <img src="../../images/membership/the_psychology2_2.jpg" usemap="#contMap1">
+                <div class="movie"></div>
+                <map name="contMap1" id="contMap1">
+                    <area shape="rect" coords="165,1012,795,1136" alt="자세한 이용 방법 확인하기" href="#">
+                </map>
+            </div>
+            <div id="cont3" class=""> 
+                <img src="../../images/membership/the_psychology2_3.jpg" usemap="#contMap2">
+                <div class="join_box"></div>
+                <map name="contMap2" id="contMap2">
+                    <area shape="rect" coords="334,817,624,948" alt="참여하기" href="#">
+                </map>
+            </div>
+        </div>
+        <div class="copy_cont">
+            <img src="../../images/membership/the_psychology3.jpg" usemap="#copyMap">
+            <span class="copy_code">ABCDEFAAA</span>
+            <map name="copyMap" id="copyMap">
+                <area shape="rect" coords="176,972,645,1073" alt="할인코드 복사하기" href="#">
+            </map>
+        </div>
+        <script>
+             $(function(){
+				shopUI.tab({
+					"tabs" : $(".psychology .tab_buttons li"),
+					"contWrap" : $(".tab_cont > div")
+				});
+				
+            });
+        </script>
+    </section>
+    <!--#include virtual="/publish/shop/renewal/html/membership/_survey_popup.html" -->
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, minimal-ui">
+    <link href="../../../css/font.min.css" rel="stylesheet">
+    <link href="../../../css/common.min.css" rel="stylesheet">
+    <link href="../../../css/layout.min.css" rel="stylesheet">
+    <link href="../../../css/style.min.css" rel="stylesheet">
+    <link href="../../../css/mq_style.min.css" rel="stylesheet">
+    <link href="../../../css/plugin/swiper.min.css" rel="stylesheet">
+
+
+    <script src="../../../js/3.3.1.min.js"></script>	
+    <script src="../../../js/common.min.js"></script>	
+    <script src="../../../js/sub.min.js"></script>	
+    <script src="../../../js/plugin/swiper.min.js"></script>	
+
+    <title>realhouse</title>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<!--header-->
+<header class="sub_header">
+    <div class="header_inner">
+     <a href="#" class="btn_perv"><span class="blind">뒤로가기</span></a>  
+     <h1 class="tit">지역선택</h1>
+    </div>
+</header>
+<!--//header-->
+<div class="wrapper">
+    <div id=sub_container class="sub_container">  
+        <div class="container_inner">
+            <div class="filter_area">   
+                <h2>가격대</h2>
+                <p class="amount_txt">
+                    <span class="price" id="amount" title="최소값">26900</span>
+                    <span class="price" id="amount02" title="최대값">481200</span>
+                </p>
+                <div class="box_hope">
+
+                    <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                        <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
+                        <a href="#" class="ui-slider-handle ui-state-default ui-corner-all"><span class="blind">최소값</span></a>
+                        <a href="#" class="ui-slider-handle ui-state-default ui-corner-all"><span class="blind">최대값</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_submit fixed">
+               <button class="submit">송파구 전체 매물보기</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../../js/ui.min.js"></script>
+<script>
+ //상세검색팝업 - 가격대
+ $("#slider-range").slider({
+            range: true,
+            min: 26900,
+            max: 481200,
+            values: [26900, 481200],
+            slide: function (event, ui) {
+                $("#amount").text(ui.values[0]);
+                $("#amount02").text(ui.values[1]);
+            }
+        });
+        $("#slider-range").draggable();
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
+
+</script>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../../css/font.min.css" rel="stylesheet">
+    <link href="../../../css/common.min.css" rel="stylesheet">
+    <link href="../../../css/style.min.css" rel="stylesheet">
+    <link href="../../../css/layout.min.css" rel="stylesheet">
+
+
+    <script src="../../../js/3.3.1.min.js"></script>	
+    <script src="../../../js/common.min.js"></script>	
+    <script src="../../../js/sub.min.js"></script>	
+    <script src="../../../js/plugin/cycle2.min.js"></script>	
+    <script src="../../../js/plugin/slick.min.js"></script>	
+
+
+    <title>realhouse</title>
+</head>
+<body>
+<!--header-->
+<header class="sub_header">
+    <h1 class="logo"><a href="#"><img src="../../../../images/common/agent_logo.png" alt="리얼하우스 로고"></a></h1>
+    <div class="header_inner">
+        <button class="btn_close"><span class="blind">닫기</span></button>
+        <h2 class="header_tit">매물 등록/수정</h2>
+    </div>   
+</header>
+<!--//header-->    
+<div class="header_section fixed">
+    <div class="header_inner">
+        <div class="process_idx">
+            <em>1</em>
+            <em class="on">2</em><span>의뢰정보 입력</span>
+            <em>3</em>
+        </div>
+        <div class="btn_process">
+            <button class="btn btn_prev">이전</button>
+            <button class="btn btn_next on">다음</button>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div id=sub_container class="sub_container">          
+        <div class="container_inner">     
+            <div class="new_request">
+                <!--의뢰 구분-->
+                <div class="content_section">
+                    <div class="content_head3">
+                        <h2 class="tit">의뢰 구분</h2>
+                        <span class="right_area"><span class="txt_red">*</span>필수 사항</span>
+                    </div>
+                    <div class="request_entry">
+                        <div class="table_style3">
+                            <table class="table" summary="매물주소,매물구분,거래구분 테이블 입니다.">
+                                <caption>의뢰구분</caption>
+                                <colgroup>  
+                                    <col width="14%">
+                                    <col width="*">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>매물주소</th>
+                                        <td>
+                                            서울특별시 송파구 잠실동 311-10(잠실 엘리티움)
+                                        </td>
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <th rowspan="2">매물구분<span class="txt_red">*</span></th>
+                                        <td class="style_btn">
+                                            <div class="select_area">
+                                                <div class="select_area select_w170 disabled">
+                                                    <a href="#" class="select_top">일반주택</a>
+                                                    <div class="select_list">
+                                                        <a href="#">일반주택</a>
+                                                        <a href="#">공동주택</a>
+                                                    </div>
+                                                </div>
+                                                <div class="select_area select_w170 disabled">
+                                                    <a href="#" class="select_top">단독주택</a>
+                                                    <div class="select_list">
+                                                        <a href="#">다가구주택</a>
+                                                        <a href="#">상가주택</a>
+                                                        <a href="#">원룸주택</a>
+                                                        <a href="#">단독주택</a>
+                                                        <a href="#">전원주택</a>  
+                                                        <a href="#">한옥주택</a>
+                                                        <a href="#">타운하우스</a>
+                                                    </div>
+                                                </div>
+                                                <div class="help_box">
+                                                    <a href="#" class="help_ico"><img src="../../../../images/sub/ico_howto.png" alt="매물구분 도움말"></a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <td class="info">※ <span class="txt_red2">단독주택</span>은 1가구(독채)만 등록 가능합니다.(2가구 이상은 다가구주택)</td>
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <th>거래구분<span class="txt_red">*</span></th>
+                                        <td>
+                                            <div class="click_ev">
+                                                <button class="btn_type1">임대</button>
+                                                <button class="btn_type1 off">매매</button>
+                                            </div>
+                                            <span class="info">※ 현재 <span class="txt_red2">일반주택</span>은 <span class="txt_red2">임대만 가능</span>하며 <span class="txt_red2">공동주택은 임대와 매매가 모두 가능</span>합니다.</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--//의뢰 구분-->
+                <!--도움말-->
+                <div class="content_section">
+                    <div class="content_head3">
+                        <h2 class="tit">의뢰 구분</h2>
+                        <span class="right_area"><span class="txt_red">*</span>필수 사항</span>
+                    </div>
+                    <div class="request_entry">
+                        <div class="table_style3">
+                            <table class="table" summary="매물주소,매물구분,거래구분 테이블 입니다.">
+                                <caption>의뢰구분</caption>
+                                <colgroup>  
+                                    <col width="14%">
+                                    <col width="*">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>매물주소</th>
+                                        <td>
+                                            서울특별시 송파구 잠실동 311-10(잠실 엘리티움)
+                                        </td>
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <th rowspan="2">매물구분<span class="txt_red">*</span></th>
+                                        <td class="style_btn">
+                                            <div class="select_area">
+                                                <div class="select_area select_w170">
+                                                    <a href="#" class="select_top">일반주택</a>
+                                                    <div class="select_list">
+                                                        <a href="#">일반주택</a>
+                                                        <a href="#">공동주택</a>
+                                                    </div>
+                                                </div>
+                                                <div class="select_area select_w170">
+                                                    <a href="#" class="select_top">단독주택</a>
+                                                    <div class="select_list">
+                                                        <a href="#">다가구주택</a>
+                                                        <a href="#">상가주택</a>
+                                                        <a href="#">원룸주택</a>
+                                                        <a href="#">단독주택</a>
+                                                        <a href="#">전원주택</a>  
+                                                        <a href="#">한옥주택</a>
+                                                        <a href="#">타운하우스</a>
+                                                    </div>
+                                                </div>
+                                                <div class="help_box">
+                                                    <a href="#" class="help_ico"><img src="../../../../images/sub/ico_howto.png" alt="매물구분 도움말"></a>
+                                                    <!--툴팁-->
+                                                    <div class="tooltip_box open">
+                                                        <div class="tooltip">
+                                                            <table class="tooltip_table">
+                                                                <colgroup>
+                                                                    <col width="15%">
+                                                                    <col width="*">
+                                                                </colgroup>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>매물구분</th>
+                                                                        <th>매물유형</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th>일반주택</th>
+                                                                        <td>다가구주택, 상가주택, 원룸주택, 단독주택, 전원주택, 한옥주택,타운하우스</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>공동주택</th>
+                                                                        <td>아파트, 주상복합, 연립, 빌라, 도시형생활주택, 오피스텔</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <ul class="tooltip_info">
+                                                                <li>※ <span class="txt_red2">단독주택</span> 또는 <span class="txt_red2">전원주택</span>은 <span class="txt_red2">1가구(독채)인 경우</span>이며 <span class="txt_red2">2가구 이상은 다가구</span>로 선택하십시오.</li>
+                                                                <li>※ <span class="txt_red2">타운하우스</span>는 <span class="txt_red2">1가구(독채)인 경우</span>이며 <span class="txt_red2">2세대 이상은 연립</span>으로 선택하십시오. </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!--//툴팁-->
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <td class="info">※ <span class="txt_red2">단독주택</span>은 1가구(독채)만 등록 가능합니다.(2가구 이상은 다가구주택)</td>
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <th>거래구분<span class="txt_red">*</span></th>
+                                        <td>
+                                            <div class="click_ev">
+                                                <button class="btn_type1">임대</button>
+                                                <button class="btn_type1 off">매매</button>
+                                            </div>
+                                            <span class="info">※ 현재 <span class="txt_red2">일반주택</span>은 <span class="txt_red2">임대만 가능</span>하며 <span class="txt_red2">공동주택은 임대와 매매가 모두 가능</span>합니다.</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--도움말-->
+                <!--의뢰인 정보-->
+                 <div class="content_section">
+                    <div class="content_head3">
+                        <h2 class="tit">의뢰인 정보</h2>
+                    </div>
+                    <div class="request_entry">
+                        <div class="table_style3">
+                            <table class="table" summary="안내 테이블 입니다.">
+                                <caption>의뢰인 정보</caption>
+                                <colgroup>  
+                                    <col width="14%">
+                                    <col width="*">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>안내</th>
+                                        <td class="info">
+                                            의뢰인 정보는 매물 등록 후, 매물 현황에서 수정, 추가, 삭제하실 수 있습니다.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--//의뢰인 정보-->
+            </div>
+        </div>           
+    </div>
+</div>
+<footer id="footer">
+    <div class="footer_content">
+        <div class="footer_inner">
+            <p class="company">(주)아이비소프트</p>
+            <address>
+                <span class="pd_r">대표: 김종진</span> 사업자등록번호: 212-26-83050
+                <br>주소: 서울시 강동구 양재대로 1334(성내동 429-3) 동부빌딩 406호
+                <br><span class="pd_r">사업 제휴문의: biz@realhouse.cc</span> 통신판매업 신고번호: 제2019-서울강동-0000호
+            </address>
+            <div class="custorm">
+                <span class="tit">고객센터</span>
+                <span class="number">02.427.7088</span>
+                고객지원 시간 09:00~18:00
+                <br>(토요일, 일요일, 공휴일 휴무) 
+            </div>
+        </div>
+    </div>
+    <address class="copyright">Ibsoft, Inc. All rights reserved.</address>
+</footer>
+</body>
+</html>

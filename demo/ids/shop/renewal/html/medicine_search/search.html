@@ -1,0 +1,399 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/content.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+    <section id="content" class="medicine_search">
+		<ul class="tab_line_type">
+			<li class="active"><a href="#medicine_sch1"><h2>의약품 상세검색</h2></a></li>
+			<li><a href="#medicine_sch2"><h2>성분명 검색</h2></a></li>
+		</ul>
+		<div class="medicine_cont active" id="medicine_sch1">
+			<h2 class="title">약물 정보 입력</h2>
+			<div class="medicine_form">
+				<div class="tbl_box">
+					<table class="tbl">
+						<colgroup>
+							<col style="width: 110px;">
+							<col style="width: 365px;">
+							<col style="width: 110px;">
+							<col style="width: 365px;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">제품명<br>(한글/영문)</th>
+								<td>
+									<input type="text" class="input prd_nm"><input type="checkbox" id="prn_nm_chk" class="chk match"><label for="prn_nm_chk">일치</label>
+									<div class="initial_sch">
+										<p class="desc">* 정확한 제품명을 모를 경우 초성으로 검색할 수 있습니다.</p>
+										<div class="keyboard">
+											<button>ㄱ</button><button>ㄴ</button><button>ㄷ</button><button>ㄹ</button><button>ㅁ</button><button>ㅂ</button><button>ㅅ</button><button>ㅇ</button><button>ㅈ</button><button>ㅊ</button><button>ㅋ</button><button>ㅌ</button><button>ㅍ</button><button>ㅎ</button>
+											<button>A</button><button>B</button><button>C</button><button>D</button><button>E</button><button>F</button><button>G</button><button>H</button><button>I</button><button>J</button><button>K</button><button>L</button><button>M</button><button>N</button><button>O</button><button>P</button><button>Q</button><button>R</button><button>S</button><button>T</button><button>U</button><button>V</button><button>W</button><button>X</button><button>Y</button><button>Z</button>
+										</div>
+									</div>
+								</td>
+								<th scope="row">성분명<br>(한글/영문)</th>
+								<td>
+									<input type="text" class="input prd_nm"><input type="checkbox" id="ingred_nm_chk1" class="chk match"><label for="ingred_nm_chk1">일치</label>
+									<div class="row">
+										<select style="width: 95px;" class="grey">
+											<option>and</option>
+											<option>옵션1</option>
+											<option>옵션2</option>
+										</select>
+										<input type="text" class="input prd_nm2"><input type="checkbox" id="ingred_nm_chk2" class="chk match"><label for="ingred_nm_chk2">일치</label>
+									</div>
+									<div class="row">
+										<select style="width: 95px;" class="grey">
+											<option>and</option>
+											<option>옵션1</option>
+											<option>옵션2</option>
+										</select>
+										<input type="text" class="input prd_nm2"><input type="checkbox" id="ingred_nm_chk3" class="chk match"><label for="ingred_nm_chk3">일치</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">회사명</th>
+								<td>
+									<input type="text" class="input">
+								</td>
+								<th scope="row">효능효과</th>
+								<td>
+									<input type="text" class="input" placeholder="예)당뇨병">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">단일/복합</th>
+								<td>
+									<input type="checkbox" id="chk_type1_all" class="chk"><label for="chk_type1_all">전체</label>
+									<input type="checkbox" id="chk_type1_1" class="chk"><label for="chk_type1_1">단일</label>
+									<input type="checkbox" id="chk_type1_2" class="chk"><label for="chk_type1_2">복합</label>
+								</td>
+								<th scope="row">전문/일반</th>
+								<td>
+									<input type="checkbox" id="chk_type2_all" class="chk"><label for="chk_type2_all">전체</label>
+									<input type="checkbox" id="chk_type2_1" class="chk"><label for="chk_type2_1">일반</label>
+									<input type="checkbox" id="chk_type2_2" class="chk"><label for="chk_type2_2">전문</label>
+									<input type="checkbox" id="chk_type2_3" class="chk"><label for="chk_type2_3">전문(희귀)</label>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">급여/비급여</th>
+								<td>
+									<input type="checkbox" id="chk_type3_all" class="chk"><label for="chk_type3_all">전체</label>
+									<input type="checkbox" id="chk_type3_1" class="chk"><label for="chk_type3_1">급여</label>
+									<input type="checkbox" id="chk_type3_2" class="chk"><label for="chk_type3_2">비급여</label>
+								</td>
+								<th scope="row">약품코드<br>(급여/비급여)</th>
+								<td>
+									<input type="text" class="input">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">투여경로</th>
+								<td>
+									<select style="width: 338px;">
+										<option>전체</option>
+										<option>옵션1</option>
+										<option>옵션2</option>
+									</select>
+								</td>
+								<th scope="row">제형</th>
+								<td>
+									<select style="width: 338px;">
+										<option>전체</option>
+										<option>옵션1</option>
+										<option>옵션2</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">식약처 분류</th>
+								<td>
+									<input type="text" class="input w248">
+									<button class="btn_type1 btn">선택하기</button>
+								</td>
+								<th scope="row">마약류 등</th>
+								<td>
+									<input type="checkbox" id="chk_type4_all" class="chk"><label for="chk_type4_all">전체</label>
+									<input type="checkbox" id="chk_type4_1" class="chk"><label for="chk_type4_1">마약</label>
+									<input type="checkbox" id="chk_type4_2" class="chk"><label for="chk_type4_2">항정</label>
+									<input type="checkbox" id="chk_type4_3" class="chk"><label for="chk_type4_3">한외마약</label>
+									<br><input type="checkbox" id="chk_type4_4" class="chk" style="margin-left: 0;"><label for="chk_type4_4">오남용우려</label>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">KPIC 약효분류</th>
+								<td>
+									<input type="text" class="input w248">
+									<button class="btn_type1 btn">선택하기</button>
+								</td>
+								<th scope="row">ATC 코드</th>
+								<td>
+									<input type="text" class="input w248">
+									<button class="btn_type1 btn">선택하기</button>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">주성분코드</th>
+								<td>
+									<input type="text" class="input">
+								</td>
+								<th scope="row">생동/대조</th>
+								<td>
+									<input type="checkbox" id="chk_type5_all" class="chk"><label for="chk_type5_all">전체</label>
+									<input type="checkbox" id="chk_type5_1" class="chk"><label for="chk_type5_1">대조</label>
+									<input type="checkbox" id="chk_type5_2" class="chk"><label for="chk_type5_2">생동인정</label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="button_wrap">
+					<button class="btn_type2">다시 입력</button>
+					<button class="btn_type1">검색하기</button>
+				</div>
+			</div>
+			<div class="result_txt"><strong>라베프라졸나트륨(Rabeprazole Soduim)</strong> (으)로 검색한 결과입니다</div>
+			<div class="result_box">
+				<h2 class="title">검색결과 <span class="cnt">(256건)</span></h2>
+				<div class="tbl_box">
+					<table class="tbl result_tbl">
+						<colgroup>
+							<col width="12%">
+							<col width="15%">
+							<col width="*">
+							<col width="5%">
+							<col width="8%">
+							<col width="5%">
+							<col width="6%">
+							<col width="6%">
+							<col width="8%">
+							<col width="8%">
+							<col width="8%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">식별/포장</th>
+								<th scope="col">제품명</th>
+								<th scope="col">성분/함량</th>
+								<th scope="col">효능</th>
+								<th scope="col">회사명</th>
+								<th scope="col">분류</th>
+								<th scope="col">제형</th>
+								<th scope="col">구분</th>
+								<th scope="col">약가</th>
+								<th scope="col">공급유무</th>
+								<th scope="col">&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><img src="../../images/img_result_product.jpg"></td>
+								<td>경보라베프라즐정<br>10mg</td>
+								<td> Rabeprazole Sodium<br>10mg</td>
+								<td><button class="btn_sch">검색 아이콘</button></td>
+								<td>경보제약</td>
+								<td>232</td>
+								<td>장용정</td>
+								<td>전문</td>
+								<td>524원<br>/1정</td>
+								<td>o</td>
+								<td><button class="btn_type1 btn_purchase">구매하기</button></td>
+							</tr>
+							<tr>
+								<td><img src="../../images/img_result_product.jpg"></td>
+								<td>경보라베프라즐정<br>10mg</td>
+								<td> Rabeprazole Sodium<br>10mg</td>
+								<td><button class="btn_sch">검색 아이콘</button></td>
+								<td>경보제약</td>
+								<td>232</td>
+								<td>장용정</td>
+								<td>전문</td>
+								<td>524원<br>/1정</td>
+								<td>o</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><img src="../../images/img_result_product.jpg"></td>
+								<td>경보라베프라즐정<br>10mg</td>
+								<td> Rabeprazole Sodium<br>10mg</td>
+								<td><button class="btn_sch">검색 아이콘</button></td>
+								<td>경보제약</td>
+								<td>232</td>
+								<td>장용정</td>
+								<td>전문</td>
+								<td>524원<br>/1정</td>
+								<td>o</td>
+								<td><button class="btn_type1 btn_purchase">구매하기</button></td>
+							</tr>								
+						</tbody>
+					</table>
+				</div>
+				<button class="btn_result_more">검색결과 더보기</button>
+			</div>
+		</div>
+		<div class="medicine_cont" id="medicine_sch2">
+			<h2 class="title">성분 정보 입력</h2>
+			<div class="medicine_form">
+				<div class="tbl_box">
+					<table class="tbl">
+						<colgroup>
+							<col style="width: 110px;">
+							<col style="width: 840px;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">성분명<br>(한글/영문)</th>
+								<td>
+									<input type="text" class="input w400"><input type="checkbox" id="prn_nm_chk" class="chk match"><label for="prn_nm_chk">일치</label>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">초성검색</th>
+								<td>
+									<div class="initial_sch">
+										<div class="keyboard">
+											<button>ㄱ</button><button>ㄴ</button><button>ㄷ</button><button>ㄹ</button><button>ㅁ</button><button>ㅂ</button><button>ㅅ</button><button>ㅇ</button><button>ㅈ</button><button>ㅊ</button><button>ㅋ</button><button>ㅌ</button><button>ㅍ</button><button>ㅎ</button>
+											<br><button>A</button><button>B</button><button>C</button><button>D</button><button>E</button><button>F</button><button>G</button><button>H</button><button>I</button><button>J</button><button>K</button><button>L</button><button>M</button><button>N</button><button>O</button><button>P</button><button>Q</button><button>R</button><button>S</button><button>T</button><button>U</button><button>V</button><button>W</button><button>X</button><button>Y</button><button>Z</button>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">KPIC<br>약효분류</th>
+								<td class="medicin_efc_cls">
+									<button class="all_back">선택해제<i></i></button>
+									<ul>
+										<li>
+											<input type="checkbox" id="kpic_chk_all" class="chk"><label for="kpic_chk_all" class="kpic_chk_all">전체선택</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk1" class="chk"><label for="kpic_chk1">감염성질환</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk2" class="chk"><label for="kpic_chk2">정신/행동장애</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk3" class="chk"><label for="kpic_chk3">눈·귀·치과·구강용 약물</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk4" class="chk"><label for="kpic_chk4">소화기계질환</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk5" class="chk"><label for="kpic_chk5">신경계 질환</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk6" class="chk"><label for="kpic_chk6">암 및 면역 관련 질환</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk7" class="chk"><label for="kpic_chk7">순환기계질환</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk8" class="chk"><label for="kpic_chk8">호르몬&amp;대사관련 질환</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk9" class="chk"><label for="kpic_chk9">피부/피하조직질환</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk10" class="chk"><label for="kpic_chk10">근골격계/결합조직질환</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk11" class="chk"><label for="kpic_chk11">혈액 및 조혈기관 질환</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk12" class="chk"><label for="kpic_chk12">비타민 및 영양제류</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk13" class="chk"><label for="kpic_chk13">호흡기계질환</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk14" class="chk"><label for="kpic_chk14">비뇨생식기계질환</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk15" class="chk"><label for="kpic_chk15">기타 약물</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk16" class="chk"><label for="kpic_chk16">알러지 질환(비염·가려움증 등 포함)</label>
+										</li>
+										<li>
+											<input type="checkbox" id="kpic_chk17" class="chk"><label for="kpic_chk17">통증 질환</label>
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="button_wrap">
+					<button class="btn_type2">다시 입력</button>
+					<button class="btn_type1">검색하기</button>
+				</div>
+			</div>
+			<div class="result_box">
+				<h2 class="title">검색결과 <span class="cnt">(1건)</span></h2>
+				<div class="tbl_box">
+					<table class="tbl result_tbl">
+						<colgroup>
+							<col width="*">
+							<col width="25%">
+							<col width="18%">
+							<col width="18%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">성분명 (영문)</th>
+								<th scope="col">성분명 (한글)</th>
+								<th scope="col">성분 상세정보</th>
+								<th scope="col">해당제품</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td> Rabeprazole Sodium</td>
+								<td>라베프라졸나트륨</td>
+								<td>있음</td>
+								<td><button class="btn_sch_match">해당제품(256개)</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<button class="btn_result_more">검색결과 더보기</button>
+			</div>
+		</div>
+		
+		<!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+        <script>
+            $('.medicine_search').on({
+                click:function(e){
+                    e.preventDefault();
+                    $(e.currentTarget).closest('li').addClass('active').siblings().removeClass('active');
+                    if($(e.currentTarget.hash).length > 0) {
+                        $(e.currentTarget.hash).addClass('active').siblings().removeClass('active');
+                    }
+                }
+            }, '.tab_line_type a');
+        </script>
+	</section>
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+</body>
+</html>

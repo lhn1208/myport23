@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<title>여행플래너</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../css/ui.css"/>
+	<!--[if lt IE 9]><link rel="stylesheet" href="../css/ie.min.0.css"><![endif]-->
+	
+</head>
+<body class="is-login"><!-- body : is-login 클래스 여부에 따라 로그인, 로그아웃 상태 변함 -->
+<!--[if lt IE 9]><div id="legacy-browser">
+	사용중인 브라우저는 곧 지원이 중단되는 브라우저입니다. <a href="https://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank">Chome</a>과 같은 최신 브라우저를 이용해 주세요.
+	<button type="button" class="legacy-browser-close">닫기<i class="icon"></i></button>
+</div><![endif]-->
+<a href="#container" id="skip">메뉴 건너뛰기</a>
+<!-- S id : wrap -->
+<div id="wrap">
+	<!-- S class : misc-links : 로컬 메뉴 -->
+	<div class="misc-links">
+		<div class="layout">
+			<div class="personal">
+				<a href="#" class="login"><span><i></i><span>로그인</span></span></a>
+				<a href="#" class="logout"><span><i></i><span>로그아웃</span></span></a>
+				<a href="#" class="modify"><span><i></i><span>내정보수정</span></span></a>
+			</div>
+			<div class="admin">
+				<a href="#" class="m1"><span><i></i><span>채널별공지</span></span></a>
+				<a href="#" class="m2"><span><i></i><span>키워드관리</span></span></a>
+				<a href="#" class="m3"><span><i></i><span>온라인BP 배너관리</span></span></a>
+			</div>
+		</div>
+	</div>
+	<!-- E class : misc-links : 로컬 메뉴 -->
+	<!-- S class : header -->
+	<div class="header">
+		<div class="layout">
+			<!-- S class : pc-gnb -->
+			<div class="pc-gnb">
+			    <div class="layout">
+			        <h1 class="logo"><a href="index.html"><img src="https://img.modetour.com/ModeWebAgent/2015/tourplanner/logo_2019.png" alt="모두투어 TourPlanner" class="img"/></a></h1>
+			        <div class="gnb clearfix">
+			            <div class="menu target">
+			                <h2><a href="#"><span>영업공지</span></a></h2>
+			            </div>
+			            <div class="menu">
+			                <h2><a href="#"><span>M마켓</span></a></h2>
+			            </div>
+			            <div class="menu">
+			                <h2><a href="#"><span>그린라이트</span></a></h2>
+			            </div>
+			            <div class="menu">
+			                <h2><a href="#"><span>초록티비</span></a></h2>
+			            </div>
+			            <div class="menu target">
+			                <h2><a href="#"><span>커뮤니티</span></a></h2>
+			            </div>     
+			        </div>
+			        <a href="#" class="gnb-btn-all">전체메뉴</a>
+			    </div>
+			    
+			    <!--전체메뉴-->
+			    <div class="gnb-sitemap">
+			        <div class="sitemap">
+			            <div class="layout">
+			                <div class="tab-wrap">
+			                    <ul class="links-list">
+			                        <li>
+			                            <dl class="first">
+			                                <dt><a href="#" target="_blank">영업공지</a></dt>
+			                                <dd><a href="#" target="_blank">영업</a></dd>
+			                                <dd><a href="#" target="_blank">이벤트</a></dd>
+			                                <dd><a href="#" target="_blank">시스템</a></dd>
+			                                <dd><a href="#" target="_blank">기타</a></dd>
+			                                <dd><a href="#" target="_blank">교육자료</a></dd>
+			                                <dd><a href="#" target="_blank">홍보콘텐츠</a></dd>
+			                            </dl>
+			                        </li>
+			                        <li>
+			                            <dl>
+			                                <dt><a href="#" target="_blank">실시간위기관리정보</a></dt>
+			                                <dd><a href="#" target="_blank">기상(태풍/지진/안개등)</a></dd>
+			                                <dd><a href="#" target="_blank">항공(결항/회황/지연등)</a></dd>
+			                                <dd><a href="#" target="_blank">질병 및 전염병</a></dd>
+			                                <dd><a href="#" target="_blank">정치상황(내란/데모등)</a></dd>
+			                                <dd><a href="#" target="_blank">현지사항(가이드파업등)</a></dd>
+			                                <dd><a href="#" target="_blank">기타상황</a></dd>
+			                            </dl>
+			                        </li>
+			                        <li>
+			                            <dl>
+			                                <dt><a href="#" target="_blank">상품공지(인천/김포)</a></dt>
+			                                <dd><a href="#" target="_blank">공지사항</a></dd>
+			                                <dd><a href="#" target="_blank">상품정보</a></dd>
+			                                <dd><a href="#" target="_blank">여행사임직원 전용상품</a></dd>
+			                                <dd><a href="#" target="_blank">이벤트</a></dd>
+			                                <dd><a href="#" target="_blank">신규상품</a></dd>
+			                                <dd><a href="#" target="_blank">기타</a></dd>
+			                            </dl>
+			                        </li>
+			                        <li>
+			                            <dl>
+			                                <dt><a href="#" target="_blank">상품공지(지방출발)</a></dt>
+			                                <dd><a href="#" target="_blank">공지사항</a></dd>
+			                                <dd><a href="#" target="_blank">상품정보</a></dd>
+			                                <dd><a href="#" target="_blank">여행사임직원 전용상품</a></dd>
+			                                <dd><a href="#" target="_blank">이벤트</a></dd>
+			                                <dd><a href="#" target="_blank">신규상품</a></dd>
+			                                <dd><a href="#" target="_blank">부산출발</a></dd>
+			                                <dd><a href="#" target="_blank">청주출발</a></dd>
+			                                <dd><a href="#" target="_blank">대구출발</a></dd>
+			                                <dd><a href="#" target="_blank">광주출발</a></dd>
+			                                <dd><a href="#" target="_blank">기타</a></dd>
+			                            </dl>
+			                        </li>
+			                        <li>
+			                            <dl>
+			                                <dt><a href="#" target="_blank">커뮤니티</a></dt>
+			                                <dd><a href="#" target="_blank">제안과토론</a></dd>
+			                                <dd><a href="#" target="_blank">구인구직</a></dd>
+			                                <dd><a href="#" target="_blank">사고팔고</a></dd>
+			                                <dd><a href="#" target="_blank">홈페이지관련접수</a></dd>
+			                                <dd><a href="#" target="_blank">채널별공지</a></dd>
+			                                <dd><a href="#" target="_blank">키워드관리</a></dd>
+			                                <dd><a href="#" target="_blank">온라인BP배너관리</a></dd>
+			                            </dl>
+			                        </li>
+			                    </ul>
+			                    <div class="main-menu">
+			                        <div class="links-area">
+			                           <ul>
+			                               <li><a href="#" target="_blank">그린라이트</a></li>
+			                               <li><a href="#" target="_blank">그린라이트 결과발표</a></li>
+			                               <li><a href="#" target="_blank">초록티비</a></li>
+			                               <li><a href="#" target="_blank">M마켓</a></li>
+			                               <li><a href="#" target="_blank">M포인트샵</a></li>
+			                               <li><a href="#" target="_blank">예약조회</a></li>
+			                           </ul>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			    <!--//전체메뉴-->
+			</div>
+			<!-- E class : pc-gnb -->		
+			<!-- S class : all-menu -->
+			<div class="all-menu">
+			        <a href="#" class="btn-all">전체메뉴</a>
+			        <div class="floater">
+			            <div class="inner">
+			                <div class="row clearfix">
+			                    <div class="menu menu-1">
+			                        <h2><a href="#"><i></i><span>공지사항</span></a></h2>
+			                        <ul class="d1">
+			                            <li><a href="#">공지사항</a></li>
+			                        </ul>
+			                    </div>
+			                    <div class="menu menu-2">
+			                        <h2><a href="#"><i></i><span>상품공지(인천출발)</span></a></h2>
+			                        <ul class="d1">
+			                            <li><a href="sub01.html">공지사항</a></li>
+			                            <li><a href="#">실시간 위기관리정보</a></li>
+			                            <li><a href="sub02.html">상품정보</a></li>
+			                            <li><a href="sub03.html">임직원 전용상품</a></li>
+			                            <li><a href="sub04.html">이벤트</a></li>
+			                            <li><a href="sub05.html">신규상품</a></li>
+			                            <li><a href="#">기타</a></li>
+			                        </ul>
+			                    </div>
+			                    <div class="menu menu-3">
+			                        <h2><a href="#"><i></i><span>상품공지(지방출발)</span></a></h2>
+			                        <ul class="d1">
+			                            <li><a href="#">공지사항</a></li>
+			                            <li><a href="#">상품정보</a></li>
+			                            <li><a href="#">임직원 전용상품</a></li>
+			                            <li><a href="#">이벤트</a></li>
+			                            <li><a href="#">신규상품</a></li>
+			                            <li><a href="#">부산출발</a></li>
+			                            <li><a href="#">청주출발</a></li>
+			                            <li><a href="#">대구출발</a></li>
+			                            <li><a href="#">광주출발</a></li>
+			                            <li><a href="#">기타</a></li>
+			                        </ul>
+			                    </div>
+			                    <div class="menu menu-4">
+			                        <h2><a href="#"><i></i><span>커뮤니티</span></a></h2>
+			                        <ul class="d1">
+			                            <li><a href="#">제안과토론</a></li>
+			                            <li><a href="#">구인구직</a></li>
+			                            <li><a href="#">사고팔고</a></li>
+			                            <li><a href="#">홈페이지 관련접수</a></li>
+			                            <li><a href="#">채널별공지</a></li>
+			                            <li><a href="#">키워드관리</a></li>
+			                            <li><a href="#">온라인BP배너관리</a></li>
+			                        </ul>
+			                    </div>							
+			                    <div class="menu menu-5 is-open">
+			                        <h2><a href="#"><i></i><span>예약조회</span></a></h2>
+			                        <ul class="d1">
+			                            <li><a href="#">초록티비</a></li>
+			                            <li><a href="#">그린라이트</a></li>
+			                            <li><a href="#">그린라이트 결과발표</a></li>
+			                            <li><a href="#">주간예약조회</a></li>
+			                            <li><a href="#">홍보메시지발송</a></li>
+			                            <li><a href="#">포인트관리</a></li>									
+			                        </ul>
+			                    </div>
+			                </div>
+			                <a href="#" class="btn-close">전체메뉴 닫기</a>
+			            </div>
+			        </div>
+			    </div>
+			<!-- E class : all-menu -->
+			<!-- S class : search : 전체 검색 -->
+			<div class="search">
+				<a href="#" class="btn-search"><span class="blind">검색</span></a>
+				<div class="floater">
+					<div class="inner">
+						<form name="" method="post" action="">
+							<div class="input-section clearfix">
+								<label for="global-search" class="blind">전체 검색</label>
+								<input type="text" class="input" placeholder="검색어를 입력하세요" name="" id="global-search"/>
+								<a href="#" class="btn-start-search"><i><span class="blind">검색</span></i></a>
+							</div>
+							<a href="#" class="btn-close"><span class="blind">검색창 닫기</span></a>
+						</form>
+					</div>
+				</div>
+				<i class="dim"></i>
+			</div>
+			<!-- E class : search : 전체 검색 -->
+		</div>
+	</div>
+	<!-- E class : header -->
+	<!-- S class : container : 메인일 경우 main 클래스 추가 -->
+	<div class="container grn-container">
+		<div class="layout">
+            <div class="sub-visual">
+                <div class="theme banner-grn2"></div>
+            </div>
+			<!-- S class : sub-cont : 서브 컨텐츠 시작 -->
+			<div class="sub-cont grn-cont">                
+				<div class="cont-wrap">
+					<!--결과발표-->
+					<div class="result-sec">
+						<div class="tab-area">
+							<ul class="tab">
+								<li><a href="#">인천/김포출발</a></li>
+								<li><a href="#">지방출발</a></li>
+								<li class="on"><a href="#">결과발표</a></li>
+							</ul>
+						</div>
+						<div class="result-list-area">
+							<!--등록월 전체보기-->
+							<div class="result-header">
+								<div class="select-category">
+									<a href="#" class="select-top">
+										<span class="txt">등록월 전체보기</span>
+										<span class="arr"></span>
+									</a>
+									<div class="select-list">
+										<a href="#">등록월 전체보기</a>
+										<a href="#">2018년 12월</a>
+										<a href="#">2018년 11월</a>
+										<a href="#">2018년 10월</a>
+										<a href="#">2018년 9월</a>
+										<a href="#">2018년 8월</a>
+									</div>
+								</div>	
+							</div>
+							<!--//등록월 전체보기-->
+							<div class="result-none-area">
+								<div class="result-none">
+									결과 발표 전 상태 입니다! 
+									<br>그린라이트 종료 후 담당자가 확인 후 공지할 예정입니다!
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<!--//결과발표-->				
+				</div>
+				
+			</div>
+			<!-- E class : sub-cont : 서브 컨텐츠 끝 -->
+		</div>
+	</div>
+	<!-- S class : footer -->
+	<div class="footer">
+	    <div class="layout">
+	        <a href="#" class="logo"><img src="https://img.modetour.com/ModeWebAgent/2015/tourplanner/footlogo_2019.png" alt="여행플래너 TourPlanner" class="img"/></a>
+	        <div class="corp-info">
+	            <p class="copyright">Copyright 2015 MODETOUR all rights reserved.</p>
+	            <p class="desc">여행플래너는 여행사 직원용 홈페이지며, 모니터 해상도 1200 X 1200 사이즈에서 최적화 되었습니다.</p>
+	        </div>
+	    </div>
+	</div>	
+	<!-- E class : footer -->	
+	<!-- S class : page-link : 각 페이지 링크 - 테스트용이니 실적용 땐 이 영역 지워주시면 됩니다 -->
+	<div class="page-link">
+		<ul>
+			<li><a href="index.html">메인<br/>index.html</a></li>
+			<li><a href="sub01.html">게시판 목록<br/>sub01.html</a></li>
+			<li><a href="sub05.html">커뮤니티 목록<br/>sub05.html</a></li>
+			<li><a href="sub02.html">게시판 글쓰기<br/>sub02.html</a></li>
+			<li><a href="sub03.html">공지 글보기<br/>sub03.html</a></li>
+			<li><a href="sub04.html">예약조회 목록<br/>sub04.html</a></li>
+		</ul>
+		<a href="sub06.html" class="is-current">커뮤니티 글보기<br/>sub06.html</a>
+	</div>
+	<!-- E class : page-link : 각 페이지 링크-->
+</div>
+<i class="dim"></i>
+<!-- E id : wrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/ui.js"></script>
+</body>
+</html>

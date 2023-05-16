@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>모두투어 - 결제</title>
+	<meta charset="utf-8" />
+	<meta name="keywords" content="모두투어, 해외여행, 동남아여행, 중국여행, 일본여행, 미주여행, 남태평양여행, 유럽여행, 인도여행, 아프리카 여행, 골프여행, 패키지, 에어텔, 허니문, 자유여행, 골프여행, jm프리미엄, 크루즈, 국내여행, 제주여행, 호텔, 숙박, 해외호텔, 국내숙박, 항공권 ,해외항공권 ,국내항공권, 철도 ,패스, 여행정보" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, minimal-ui" />
+	<meta name="apple-mobile-web-app-title" content="모두투어">
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <link rel="stylesheet" href="../../../../Include/CSS/Common/common.css" /> -->
+  <link rel="stylesheet" href="http://m.modetour.com/Include/CSS/Common/common.min.css?ver=20180618" />
+  <!-- [S] 결제쪽 css 새파일로 작업 -->
+  <link rel="stylesheet" href="../../../..//Include/CSS/Mypage/mypage_payments.css" /> 
+  <!-- [E] 결제쪽 css 새파일로 작업 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+  <!-- // css 파일 수정 -->
+</head>
+<body>
+	<div class="mobile_container">
+		<div class="payMent_step_wrap">
+      <!-- [S] 모두페이 상단 -->
+      <div class="pay_top fixed_top">
+        <p class="tit"> <i class="modepay_font"><span class="blind">mode pay</span></i></p>        
+        <a href="#" class="cls_btn font_btn">취소</a>        
+      </div>
+      <!-- [E] 모두페이 상단 -->
+
+      <div class="blank_pay1"></div>
+      <!-- [S] 모두페이 결제-->
+      <div class="mpaystep_cont">   
+        <form action="">
+          <fieldset>
+            <!-- [S] 잔여 결재금액-->
+            <div class="total_price">
+              <p>잔여 결제금액 <strong>545,555</strong>원</p>
+            </div>
+            <!-- [E] 잔여 결재금액-->
+
+            <!-- [S] 결제진행-->
+            <div class="pay_sec">
+              <p class="s_txt">결제금액을 확인하신 후, 결제를 진행해주세요</p>
+              <div class="mpayinput_box">
+                <i class="ico_won"></i>
+                <!-- <label for="mpay_price" >결제하실 금액</label> --> <!-- 181024 삭제-->
+                <input type="number" class="num_input" placeholder="결제하실금액" id="mpay_price" pattern="[0-9]*" inputmode="numeric">
+                <a href="#" class="del_btn"><span class="blind">지우기</span></a>
+              </div>
+
+              <!-- [S] 190221 스타일변경-->
+              <div class="mpayprice_ifo">
+                <p>즉시할인 <strong>1.5%</strong> <span>-20,000<b>원</b></span></p>
+                <p >최종 결제금액 <span>12,000,000<b>원</b></span></p>
+              </div>
+              <!-- [E] 190221 스타일변경-->
+            </div>
+            <!-- [E] 결제진행-->
+
+            <!-- [S] 현금영수증 신청 추가 190221 -->
+            <div class="cashReceipt_box active"> <!-- checkbox가 checked 될때 active class가 추가됩니다. -->
+              <div class="chk_box">
+                <input type="checkbox" name="lib_ck" id="lib1" checked>
+                <label for="lib1">현금 영수증 신청</label>
+              </div>
+
+              <div class="receipt_input">
+                <div class="select_box">
+                  <select name="" id="receipt_sel" required="">
+                    <option value="cash" selected>휴대폰번호(개인)</option>
+                    <option value="card">현금영수증카드(개인)</option>
+                  </select>
+                </div>
+                <div class="gn_input_box">                  
+                  <div class="ip_area"> <!-- focus시 class="on"-->
+                    <label for="receipt_num" style="display:none;">휴대폰번호를 입력해주세요</label>
+                    <input type="number" id="receipt_num" pattern="[0-9]*" inputmode="numeric" value="01012345678">
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <!-- [E] 현금영수증 신청 추가 190221 -->
+
+            <!-- [S] 하단 고정으로 인한 class="mpyStep2_bot" 추가 190102-->
+            <div class="mpyStep2_bot">
+              
+
+              <!-- [S] 이체관련 안내문구 추가 190102 -->
+              <div class="notice_txt">
+                <ul>
+                  <li>1회 1일 이체한도 500만원</li>
+                  <li>모두페이 서비스에 탑재된 은행 외 계좌로는 이용불가</li>
+                  <li>영업일 기준 24시간 서비스 제공, 은행 점검시간 (23시 30분 ~ 00시 30분 경) 전후 서비스 이용제한 가능</li>
+                </ul>
+              </div>
+              <!-- [E] 이체관련 안내문구 추가 190102 -->
+
+              <div class="btn_box "> <!-- 비활성화 class="btn_pay_off" /  활성화 class="btn_pay_on" -->
+                  <button class="btn_pay btn_pay_off">결제하기</button>
+                  <!-- <button class="btn_pay btn_pay_on">결제하기</button> -->
+                </div>
+              <!-- 결제하기 활성화시 class="btn_pay_on"-->
+
+            </div>
+            <!-- [E] 하단 고정 추가 190102-->
+          </fieldset>
+        </form>
+      </div>
+      <!-- [E] 모두페이 결제-->
+      
+
+    </div>
+
+    <!-- [S] 휴대폰 번호 변경 안내 팝업 추가 190110 -->
+    <div class="pay_popup">
+      <div class="layerpop2 paypop" id="cashnum_guide" >
+        <div class="pop_inn">
+          <!-- [S] title 상단 -->
+          <div class="fixed_top">
+              <p class="tit">현금영수증 번호 변경방법</p>        
+              <a href="#" class="cls_btn font_btn">확인</a>                   
+            </div>
+            <!-- [E] title 상단 -->
+            <div class="blank_pay1"></div>
+            <div class="payway_con">
+              <span class="cash_sect">
+                <img src="//img.modetour.com/ModeMobile/2018/Mypage/cashnum_img.jpg" alt="">
+              </span>
+              <img src="//img.modetour.com/ModeMobile/2018/Mypage/cashnum_bot.jpg" alt="">
+            </div>
+        </div>
+      </div>
+    </div>    
+    <!-- [E] 휴대폰 번호 변경 안내 팝업 추가 190110 -->
+
+	</div>
+
+  <!-- [S] 작업용 js -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+  <!-- <script src="//js.modetour.com/plugin/swiper.min.js"></script> -->
+  <!-- [E] 작업용 js -->
+
+	
+
+<script>
+
+  $(function(){
+    
+    input_form(".mpayinput_box", "on"); //190221 추가
+    input_form(".cashReceipt_box .gn_input_box", "on");  //190221 추가
+    layerpop2();
+  })
+     //190221 변경
+      function input_form(boxname , classname ){
+				var placeholderTarget = $( boxname + " input[type='number']"); 
+				 	//포커스시
+				 	placeholderTarget.on('focus', function(){
+            $(this).siblings('label').fadeOut('fast');
+            $(this).parents(boxname).addClass(classname);
+
+				 	});
+				 	//포커스아웃시 
+				 	placeholderTarget.on('focusout', function(){
+				 		if($(this).val() == ''){ 
+               $(this).siblings('label').fadeIn('fast');
+               $(this).parents(boxname).removeClass(classname);
+             }
+				 	}); 
+				 	placeholderTarget.each(function(){ 
+				 		if(!($(this).val() == '')){
+              $(this).siblings('label').css('display','none'); 
+              
+             
+				 		} 
+				 	});
+      }
+
+
+
+      // 190110 현금영수증 번호 변경 방법 안내 팝업 추가
+
+      function layerpop2(){
+        $(".mpyStep2_bot .guide_btn" ).on('click',function(e){
+
+          var target= $(this);          
+          var i = target.attr("href");    
+               
+          $(".payMent_step_wrap, .mpyStep2_bot").addClass('out');
+          $(".pay_popup").find(i).css('display','block');
+        });
+
+        $(".fixed_top .cls_btn").on("click",function(){
+          $(this).parents(".layerpop2").css("display","none");
+          $(".payMent_step_wrap, .mpyStep2_bot").removeClass('out'); 
+        });  
+      }
+
+
+      // 190221 checkbox 활성화 비활성화에 따른 추가
+      $(document).ready(function(){
+        $(".cashReceipt_box input[type='checkbox']").change(function(){
+            if($(this).is(":checked")) {
+                $('.cashReceipt_box').addClass("active");
+            } else {
+                $('.cashReceipt_box').removeClass("active");
+            }
+        });
+      });
+
+      // 190221 select option에 맞춰 label text 변경
+      $("#receipt_sel").change(function(){
+        var value = $("#receipt_sel option:selected").val();
+        var label = $(".gn_input_box .ip_area label"); 
+        
+        if( value == "cash"){
+         label.text("휴대폰번호를 입력해주세요")
+        }else if(value  == "card"){
+          label.text("현금영수증 카드번호를 입력해주세요")
+        }
+      });
+
+
+
+
+</script>
+</body>
+</html>

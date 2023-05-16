@@ -1,0 +1,673 @@
+<section id="menu" class="menu_wrap"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+	<h2 class="screen_out">카테고리 전체보기</h2>
+
+    <div class="first_menu menu_layout">
+        <div class="menu_header">
+            <div class="inner">
+                <!-- 2021-04-13 임시 히든 <button type="button" class="btn_close">취소</button> -->
+                <!-- 2021-04-13 임시 영역 추가 -->
+                <a href="#none" class="btn_close"><span class="ico_oshop ico_close">닫기</span></a>
+                <span class="title">카테고리</span>
+                <!-- 2021-04-13 임시 히든
+                <div class="search">
+                    <form>
+                        <fieldset>
+                            <legend class="screen_out">검색 폼</legend>
+                            <div class="box_search">
+                                <input type="search" class="inp_search" placeholder="검색어를 입력하세요">
+                                <button type="reset" class="btn_reset"><span class="ico_oshop">검색어 초기화</span></button>
+                                <button type="submit" class="btn_search"><span class="ico_oshop">검색</span></button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div> -->
+                <div class="medicine_offer">
+                    <div class="offer_menu">
+                        <a href="#"><span class="ico_oshop ico_offer"></span>의약품 청약</a>
+                        <a href="#"><span class="ico_oshop ico_history"></span>이용내역 등록</a>
+                    </div>
+                    <div class="shortcut">
+                        <a href="#"><span class="ico_oshop ico_qr"></span>의약품 QR코드 바로가기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_body">
+            <div class="category menu_group">
+                <p class="title">카테고리</p>
+                <ul class="category_list">
+                    <li>
+                        <a href="#">
+                            <span class="ico_category ico_plan"></span>
+                            <span class="name">테마기획전</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="ico_category ico_best"></span>
+                            <span class="name">BEST 제품</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="ico_category ico_newprod"></span>
+                            <span class="name">신제품</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="food">
+                            <span class="ico_category ico_food"></span>
+                            <span class="name">식품</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="beauty">
+                            <span class="ico_category ico_beauty"></span>
+                            <span class="name">뷰티</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="living">
+                            <span class="ico_category ico_living"></span>
+                            <span class="name">리빙</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="health">
+                            <span class="ico_category ico_health"></span>
+                            <span class="name">건강/스포츠</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="electronic">
+                            <span class="ico_category ico_electronic"></span>
+                            <span class="name">가전/디지털</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="travel">
+                            <span class="ico_category ico_travel"></span>
+                            <span class="name">여행/서비스</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="toddler">
+                            <span class="ico_category ico_toddler"></span>
+                            <span class="name">출산/유아동</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="hobby">
+                            <span class="ico_category ico_hobby"></span>
+                            <span class="name">취미/교육</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="fasion">
+                            <span class="ico_category ico_fasion"></span>
+                            <span class="name">패션</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="brand menu_group">
+                <p class="title">참여사</p>
+                <ul class="brand_list">
+                    <li>
+                        <a href="#" data-category="maeil">
+                            <span class="ico_brand ico_maeil"></span>
+                            <span class="name">매일유업</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="pmo">
+                            <span class="ico_brand ico_pmo"></span>
+                            <span class="name">풀무원</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="sampio">
+                            <span class="ico_brand ico_sampio"></span>
+                            <span class="name">샘표</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="dw">
+                            <span class="ico_brand ico_dw"></span>
+                            <span class="name">대웅</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="bullsone">
+                            <span class="ico_brand ico_bso"></span>
+                            <span class="name">불스원</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="unix">
+                            <span class="ico_brand ico_unix"></span>
+                            <span class="name">유닉스</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="guksundang">
+                            <span class="ico_brand ico_ksd"></span>
+                            <span class="name">국순당</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="wao">
+                            <span class="ico_brand ico_wao"></span>
+                            <span class="name">원앤원(주)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="naver">
+                            <span class="ico_brand ico_naver"></span>
+                            <span class="name">네이버</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner">
+                <a href="#">
+                    <img src="../../images/temp_banner.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="second_menu menu_layout">
+        <div class="menu_header">
+            <a href="#none" class="prev_menu"><span class="ico_back">뒤로가기</span></a>
+            <span class="title">카테고리</span>
+            <div class="btns_head">
+                <a href="../top/search.html" class="btn_search"><span class="ico_oshop ico_search">검색</span></a>
+                <a href="../cart/cart.html" class="btn_cart"><span class="ico_oshop">장바구니</span><span class="cart_num">5</span></a>
+            </div>
+        </div>
+        <div class="menu_body" data-type="category">
+            <ul class="category_list first_category">
+                <li class="active" data-category="food">
+                    <a href="#">
+                        <span class="ico_category ico_food"></span>
+                        <span class="name">식품</span>
+                    </a>
+                </li>
+                <li data-category="beauty">
+                    <a href="#">
+                        <span class="ico_category ico_beauty"></span>
+                        <span class="name">뷰티</span>
+                    </a>
+                </li>
+                <li data-category="living">
+                    <a href="#">
+                        <span class="ico_category ico_living"></span>
+                        <span class="name">리빙</span>
+                    </a>
+                </li>
+                <li data-category="health">
+                    <a href="#">
+                        <span class="ico_category ico_health"></span>
+                        <span class="name">건강/스포츠</span>
+                    </a>
+                </li>
+                <li data-category="electronic">
+                    <a href="#">
+                        <span class="ico_category ico_electronic"></span>
+                        <span class="name">가전/디지털</span>
+                    </a>
+                </li>
+                <li data-category="travel">
+                    <a href="#">
+                        <span class="ico_category ico_travel"></span>
+                        <span class="name">여행/서비스</span>
+                    </a>
+                </li>
+                <li data-category="toddler">
+                    <a href="#">
+                        <span class="ico_category ico_toddler"></span>
+                        <span class="name">출산/유아동</span>
+                    </a>
+                </li>
+                <li data-category="hobby">
+                    <a href="#">
+                        <span class="ico_category ico_hobby"></span>
+                        <span class="name">취미/교육</span>
+                    </a>
+                </li>
+                <li data-category="fasion">
+                    <a href="#">
+                        <span class="ico_category ico_fasion"></span>
+                        <span class="name">패션</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="second_category">
+                <li data-category="food">
+                    <ul class="category_accordion">
+                        <li class="item">
+                            <a href="#" class="accordion_header">식품 전체</a>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="true">가공식품</button>
+                            <ul class="accordion_body">
+                                <li><a href="#">과자/빵/초콜릿/간식류</a></li>
+                                <li><a href="#">냉장/냉동/간편식</a></li>
+                                <li><a href="#">밥/면/반찬류</a></li>
+                                <li><a href="#">양념/식용유/밀가루</a></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="false">건강식품</button>
+                            <ul class="accordion_body">
+                                <li><a href="#">건강기능식품</a></li>
+                                <li><a href="#">다이어트/헬스식품</a></li>
+                                <li><a href="#">유아/어린이식품</a></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="false">신선식품</button>
+                            <ul class="accordion_body">
+                                <li><a href="#">과일/견과</a></li>
+                                <li><a href="#">쌀/잡곡</a></li>
+                                <li><a href="#">정육/수산/건어물</a></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="false">음료/유제품</button>
+                            <ul class="accordion_body">
+                                <li><a href="#">생수/커피/차/음료</a></li>
+                                <li><a href="#">우유/치즈/유제품</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li data-category="beauty">
+                    <ul class="category_accordion">
+                        <li class="item">
+                            <a href="#" class="accordion_header">뷰티 전체</a>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="true">뷰티</button>
+                            <ul class="accordion_body">
+                                <li><a href="#">네일케어</a></li>
+                                <li><a href="#">미용기기</a></li>
+                                <li><a href="#">뷰티소품</a></li>
+                                <li><a href="#">선케어/메이크업</a></li>
+                                <li><a href="#">스킨케어</a></li>
+                                <li><a href="#">클렌징/필링/팩</a></li>
+                                <li><a href="#">헤어/바디케어</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li data-category="living">
+                    <ul class="category_accordion">
+                        <li class="item">
+                            <a href="#" class="accordion_header">리빙 전체</a>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="true">가구/침구/인테리어</button>
+                            <ul class="accordion_body">
+                                <li><a href="#">인테리어 소품</a></li>
+                                <li><a href="#">침구/커튼</a></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="false">구강건강용품</button>
+                            <ul class="accordion_body">
+                                <li><a href="#">구강건강용품</a></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="false">생활용품</button>
+                            <ul class="accordion_body">
+                                <li><a href="#">방향제/살충제</a></li>
+                                <li><a href="#">욕실용품</a></li>
+                                <li><a href="#">청소용품</a></li>
+                                <li><a href="#">화장지/물티슈/위생용품</a></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="false">주방용품</button>
+                            <ul class="accordion_body">
+                                <li><a href="#">식기/냄비/프라이팬</a></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="false">차량용품</button>
+                            <ul class="accordion_body">
+                                <li><a href="#">차량관리용품</a></li>
+                                <li><a href="#">차량편의용품</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li data-category="health">
+                    <ul class="category_accordion">
+                        <li class="item">
+                            <a href="#" class="accordion_header">건강/스포츠 전체</a>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="true">건강용품/기기</button>
+                            <ul class="accordion_body">
+                                <li><a href="#" class="anchor">건강기능용품</a></li>
+                                <li><a href="#" class="anchor">안마/찜질</a></li>
+                                <li><a href="#" class="anchor">의료/건강측정</a></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="false">스포츠</button>
+                            <ul class="accordion_body">
+                                <li><a href="#" class="anchor">골프</a></li>
+                                <li><a href="#" class="anchor">스포츠의류/잡화</a></li>
+                                <li><a href="#" class="anchor">캠핑/낚시/등산</a></li>
+                                <li><a href="#" class="anchor">헬스/요가/필라테스</a></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="false">헬스/트레이닝</button>
+                            <ul class="accordion_body">
+                                <li><a href="#" class="anchor">운동프로그램</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li data-category="electronic">
+                    <ul class="category_accordion">
+                        <li class="item">
+                            <a href="#" class="accordion_header">가전/디지털 전체</a>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="true">디지털</button>
+                            <ul class="accordion_body">
+                                <li><a href="#" class="anchor">차량주변기기</a></li>
+                                <li><a href="#" class="anchor">컴퓨터/노트북/태블릿</a></li>
+                                <li><a href="#" class="anchor">휴대폰/주변기기</a></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="false">생활/소형가전</button>
+                            <ul class="accordion_body">
+                                <li><a href="#" class="anchor">계절가전</a></li>
+                                <li><a href="#" class="anchor">생활소형가전</a></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="false">영상/음향가전</button>
+                            <ul class="accordion_body">
+                                <li><a href="#" class="anchor">TV/모니터/영상가전</a></li>
+                                <li><a href="#" class="anchor">스피커/헤드폰/주변기기</a></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="false">주방가전/냉장고/세탁기</button>
+                            <ul class="accordion_body">
+                                <li><a href="#" class="anchor">그외 주방가전</a></li>
+                                <li><a href="#" class="anchor">냉장고/김치냉장고</a></li>
+                                <li><a href="#" class="anchor">세탁기/건조기</a></li>
+                                <li><a href="#" class="anchor">식기세척/음식물처리기</a></li>
+                                <li><a href="#" class="anchor">오븐/조리기기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li data-category="travel">
+                    <ul class="category_accordion">
+                        <li class="item">
+                            <a href="#" class="accordion_header">여행/서비스 전체</a>
+                        </li>
+                    </ul>
+                </li>
+                <li data-category="toddler">
+                    <ul class="category_accordion">
+                        <li class="item">
+                            <a href="#" class="accordion_header">유아동 전체</a>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="true">유아동</button>
+                            <ul class="accordion_body">
+                                <li><a href="#" class="anchor">유아동잡화</a></li>
+                                <li><a href="#" class="anchor">임신/출산</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li data-category="hobby">
+                    <ul class="category_accordion">
+                        <li class="item">
+                            <a href="#" class="accordion_header">취미/교육 전체</a>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="true">문구</button>
+                            <ul class="accordion_body">
+                                <li><a href="#" class="anchor">문구</a></li>
+                                <li><a href="#" class="anchor">사무용품</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li data-category="fasion">
+                    <ul class="category_accordion">
+                        <li class="item">
+                            <a href="#" class="accordion_header">패션 전체</a>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="accordion_header btn_collapse" aria-expanded="true">패션잡화</button>
+                            <ul class="accordion_body">
+                                <li><a href="#" class="anchor">패션/계절소품</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="menu_body" data-type="brand">
+            <ul class="category_list first_category icon_brand">
+                <li data-category="maeil">
+                    <a href="#">
+                        <span class="ico_oshop ico_brand04"></span>
+                        <span class="name">매일유업</span>
+                    </a>
+                </li>
+                <li data-category="pmo">
+                    <a href="../sub/landing_wonandone.html">
+                        <span class="ico_oshop ico_brand09"></span>
+                        <span class="name">풀무원</span>
+                    </a>
+                </li>
+                <li data-category="sampio">
+                    <a href="../sub/landing_wonandone.html">
+                        <span class="ico_oshop ico_brand06"></span>
+                        <span class="name">샘표</span>
+                    </a>
+                </li>
+                <li data-category="dw">
+                    <a href="../sub/landing_wonandone.html">
+                        <span class="ico_oshop ico_brand02"></span>
+                        <span class="name">대웅</span>
+                    </a>
+                </li>
+                <li data-category="bullsone">
+                    <a href="../sub/landing_wonandone.html">
+                        <span class="ico_oshop ico_brand05"></span>
+                        <span class="name">불스원</span>
+                    </a>
+                </li>
+                <li data-category="unix">
+                    <a href="../sub/landing_wonandone.html">
+                        <span class="ico_oshop ico_brand08"></span>
+                        <span class="name">유닉스</span>
+                    </a>
+                </li>
+                <li data-category="guksundang">
+                    <a href="../sub/landing_wonandone.html">
+                        <span class="ico_oshop ico_brand16"></span>
+                        <span class="name">국순당</span>
+                    </a>
+                </li>
+                <li data-category="wao">
+                    <a href="../sub/landing_wonandone.html">
+                        <span class="ico_oshop ico_brand18"></span>
+                        <span class="name">원앤원(주)</span>
+                    </a>
+                </li>
+                <li data-category="naver">
+                    <a href="../sub/landing_wonandone.html">
+                        <span class="ico_oshop ico_naver"></span>
+                        <span class="name">네이버</span></a>
+                </li>
+            </ul>
+            <ul class="second_category">
+                <li data-category="maeil">
+                    <ul class="category_accordion">
+                        <li class="item">
+                            <a href="#" class="accordion_header">매일유업</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="accordion_header">상하농원</a>
+                        </li>
+                    </ul>
+                </li>
+                <li data-category="dw">
+                    <ul class="category_accordion">
+                        <li class="item">
+                            <a href="#" class="accordion_header">의약품</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="accordion_header">건강기능식품</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="accordion_header">구강케어</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="accordion_header">DNC</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="accordion_header">엠디웰</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="accordion_header">힐리언스</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="accordion_header">시셀</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="accordion_header">대웅생명과학</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="accordion_header">알피바이오</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 해당 브랜드에 서브카테고리가 있는 경우에만 해당 li 카테고리 추가 -->
+                <!-- 위 예시에 맞추어 카테고리 추가 / data-category 값은 first_category에 표기된 브랜드 값으로 추가 -->
+                <!-- data-category 값이 매칭되지 않는 경우 first_category의 a tag의 href 값으로 페이지 이동됨 -->
+            </ul>
+        </div>
+    </div>
+    
+</section>
+<div class="bg_dimmd"></div>
+
+<script>
+    //메뉴 열기
+    $(".link_menu").on("click", function(e){
+        e.preventDefault();
+        $('body').css({
+            overflowY:'hidden',
+            touchAction:'none'
+        });
+        $("#wrapper").addClass("menu_on");
+        $("#brandFoot").hide();
+    })
+    $('.menu_header .btn_close').on({
+        click:function(e){
+            e.preventDefault();
+            $('body').removeAttr('style');
+            $("#wrapper").removeClass("menu_on");
+        }
+    });
+
+    $('.menu_wrap').on({
+        click:function(e){
+            e.preventDefault();
+            var cate = e.currentTarget.getAttribute('data-category'),
+                menuType = e.currentTarget.closest('.menu_group').className.split(' ')[0];
+
+            if(e.currentTarget.getAttribute('data-category')) {
+                e.delegateTarget.querySelector('.second_menu li[data-category="'+cate+'"] > a').click();
+                $(e.delegateTarget.querySelector('.second_menu')).addClass('active')
+                    .find('.menu_body[data-type="'+menuType+'"]').addClass('active').siblings().removeClass('active');
+            }
+        }
+    }, '.first_menu a[data-category]');
+
+    $('.second_menu').on({
+        click:function(e){
+            e.preventDefault();
+            $(e.delegateTarget).removeClass('active');
+        }
+    }, '.prev_menu');
+    // 2021-04-15 수정
+    $('.second_menu').on({
+        click:function(e){
+            var closest = $(e.currentTarget).closest('li');
+            var index = closest.index();
+            var target = $(e.delegateTarget).find('.second_category > li[data-category="'+closest[0].getAttribute('data-category')+'"]');
+            if(target.length > 0) {
+                e.preventDefault();
+                closest.addClass('active').siblings().removeClass('active');
+                target.addClass('active').siblings().removeClass('active');
+                
+                setTimeout(function(){
+                    $(e.currentTarget.closest('.first_category')).animate({
+                        scrollTop: closest[0].offsetHeight * index
+                    });
+                },150);
+            }
+        }
+    }, '.first_category a');
+    $('.btn_collapse').on({
+        click:function(e){
+            if(e.currentTarget.getAttribute('aria-controls') != 'orderProdList'){
+                $(e.currentTarget).next().stop().slideToggle(300,function(){
+                    $(e.currentTarget).attr('aria-expanded', function(index, attr){
+                        return attr == 'true' ? 'false' : 'true';
+                    });
+                });
+                // 2021-04-15 추가
+                $(e.currentTarget).parent().siblings().find('.accordion_body').slideUp(300,function(){
+                    $(e.currentTarget).attr('aria-expanded', function(index, attr){
+                        return attr == 'true' ? 'false' : 'true';
+                    });
+                })
+            }else {
+                var target = $(e.currentTarget).next();
+                
+                if(!target.is('.expanded')){
+                    target.off('webkitTransitionEnd').addClass('expanded').css({
+                        maxHeight:target.find('.overflow').outerHeight(true)
+                    });
+                }else {
+                    $('body, html').animate({
+                        scrollTop:target.closest('.item').offset().top - 150
+                    },500, function(){
+                        target.removeAttr('style').on({
+                            webkitTransitionEnd:function(){
+                                target.removeClass('expanded');
+                            }
+                        });
+                    });
+                    
+                }
+
+                $(e.currentTarget).attr('aria-expanded', function(index, attr){
+                    return attr == 'true' ? 'false' : 'true';
+                });
+            }
+        }
+    });
+
+    
+</script>

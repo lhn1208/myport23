@@ -1,0 +1,52 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+    <!-- membership 전용 css 추가 -->
+	<link rel="stylesheet" href="../../css/themembership.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+    <section id="content" class="membership">
+        <!-- 2022-04-06 세스코 추가 [s]-->
+        <h2 class="screen_out">TheShop과 세스코가 함께하는 바이러스 안심 약국 만들기-TheSHOP과 세스코가 만나 THe멤버십 고객에게 특별한 서비스를 제공합니다.</h2>
+        <img src="../../images/membership/cesco_img.jpg" usemap="#map">
+        <map id="map" name="map">
+            <area shape="rect" coords="166, 9273, 794, 9427" alt="지금 신청하러가기" href="https://www.cesco.co.kr/Cesco/support/freeEstimateNew-new.aspx?channel=1" target="_blank">
+        </map>
+        <!-- 2022-04-06 세스코 추가 [e]-->
+
+        <!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+
+        <script>
+            $('.accordion_box').on({
+                click:function(e){
+                    
+                    $(e.currentTarget).next().slideToggle(function(){
+                        $(e.currentTarget).attr('aria-expanded',function(i, a){
+                            return a == 'true' ? false : true;
+                        });
+                    });
+                }
+            }, 'button.accordion_header');
+        </script>
+	</section>
+    <!--#include virtual="/publish/shop/renewal/html/membership/_zeroshop_popup.html" -->
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+</body>
+</html>

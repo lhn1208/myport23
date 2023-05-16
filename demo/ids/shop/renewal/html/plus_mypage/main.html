@@ -1,0 +1,275 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../plus_shopping/content.css"> <!-- 기존 VIPG css -->
+	<link rel="stylesheet" href="../../css/layout_shopplus.css">
+	<link rel="stylesheet" href="../../css/shopplus.css">
+</head>
+<body class="shopplus">
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<header id="header">
+		<div class="header_inner">
+			<h1 class="link_logo logo_shopplus"><a href="#" class="ico_comm">the SHOP+</a></h1>
+			<h2 class="tit">마이페이지</h2>
+			<div class="header_search">
+				<div class="search_enter">
+					<div class="search_enter_inner">
+						<select class="select" style="width:80px">
+							<option>전체</option>
+							<option>지식Q&amp;A</option>
+							<option>복약지도</option>
+							<option>경영노하우</option>
+						</select>
+						<input type="text" title="검색어 입력">
+						<button type="submit" class="btn_search">검색</button>
+					</div>
+				</div>
+			</div>
+			<ul class="list_3depth">
+				<li class="on"><a href="main.html">주문/배송조회</a></li>
+				<li><a href="point.html">포인트 이용내역</a></li>
+				<li><a href="#">충전하기</a></li>
+				<li><a href="alarm_setting.html">서비스 알림 설정</a></li>
+			</ul>
+		</div>
+	</header>
+	<section id="container" class="cont_top_bnr" style="background-color:#f3f4f8;"><!-- sub 상단 배너 있을때 class="cont_top_bnr" 추가 -->
+		<!-- 2018-03-22 제거
+		<div class="sub_top_bnr sub_mypage">
+			<div class="inner">
+				<strong class="tit">마이페이지</strong>
+				<img class="bg_img" src="../../images/bg_mypage.jpg" alt="더샵플러스를 통해 주문/배송건 및 포인트 이용내역을 조회할 수 있습니다.">
+			</div>
+		</div>
+		-->
+		<div id="content">
+			<div class="sub_cont mypage_cont">
+				<div class="content_min">
+					<div id="title" class="mb20 black11">
+						<h3><img src="../../images/shopplus/mypage_title_main.gif" alt="주문/배송조회"></h3>
+						<!-- 2017-08-28 삭제
+						<p class="content_section"><img src="/shop/data/skin/godomarket_G/img/content/content_map_icon.jpg" alt="home"> &gt; <span class="current">마이페이지</span></p> -->
+					</div>
+
+					<!-- 2018-03-22 탭메뉴 추가 [s] -->
+					<ul class="tab_menu tab_type3">
+						<li class="on"><a href="#tabPlus">더샵플러스 이용내역 조회</a></li>
+						<li><a href="#tabPoint">포인트몰 이용내역 조회</a></li>
+					</ul>
+					<!-- 2018-03-22 탭메뉴 추가 [e] -->
+
+					<div class="plus_box"><!-- 2017-08-28 감싸는 div 추가 -->
+						<div class="tab_cont"><!-- 2018-03-22 수정(tab_cont와, tabPlus / tabPoint 추가로 감싸줌) -->
+							<div id="tabPlus">
+								<!-- 나의 플러스 포인트 -->
+								<div class="my_vipg">
+									<h4>나의 플러스 포인트</h4>
+									<ul class="list_my_vipg">
+										<li>
+											<em class="txt_num">221,000</em>
+											<span>포인트</span>
+										</li>
+										<li>
+											<span>상품후기 : </span>
+											<em class="txt_num">12</em>건
+										</li>
+										<li>
+											<span>상품문의 : </span>
+											<em class="txt_num">8</em>건
+										</li>
+									</ul>
+								</div>
+								<!-- //나의 플러스 포인트 -->
+								<!-- 진행중인 주문 -->
+								<!-- 2017-08-28 삭제/추가[s]
+                                <strong class="tit_order">진행중인 주문</strong>-->
+								<h4 class="stit">진행중인 주문</h4>
+								<!-- 2017-08-28 삭제/추가[e] -->
+								<ul class="list_status box_status">
+									<li><span class="img_plus_comm status0"></span>입금대기<br><em class="txt_num">0</em>건</li>
+									<li><span class="ico_plus_comm ico_step"></span><span class="img_plus_comm status1"></span>결제완료<br><em class="txt_num">0</em>건</li>
+									<li><span class="ico_plus_comm ico_step"></span><span class="img_plus_comm status2"></span>배송준비중<br><em class="txt_num">0</em>건</li>
+									<li><span class="ico_plus_comm ico_step"></span><span class="img_plus_comm status3"></span>배송중<br><em class="txt_num">0</em>건</li>
+									<li><span class="ico_plus_comm ico_step"></span><span class="img_plus_comm status4"></span>배송완료<br><em class="txt_num">0</em>건</li>
+								</ul>
+								<!-- //진행중인 주문 -->
+								<div class="history_wrap">
+									<!-- 2017-08-28 삭제/추가[s] ->
+                                    <ul class="list_tab list_mypage">
+                                        <li class="on"><a href="#" class="tab1" id="btnVipg">최근 주문 내역</a></li><!-- 활성화 class="on" ->
+                                        <li><a href="#" class="tab2" id="btnAsp">제휴 서비스 구매내역</a></li>
+                                    </ul>
+                                    <dl class="mypage_jehu_b black11" id="aspNotie" style="display:none;">
+                                        <dt class="black11_bold">제휴서비스 구매내역이란?</dt>
+                                        <dd>VIPG와 제휴를 맺은 외부 서비스에서 구매하신 내역을 알려드립니다.단, 서비스에 따라 구매내역이 제공되지 않을 수 있습니다.</dd>
+                                    </dl> -->
+									<h4 class="stit">최근 주문 내역</h4>
+									<!-- 2017-08-28 삭제/추가[e] -->
+
+									<!-- 최근 주문내역 -->
+									<div class="mypage_inner on">
+										<table class="tbl_type1 tbl_list">
+											<caption class="screen_hide">최근 주문내역</caption>
+											<colgroup>
+												<col style="width:52px">
+												<col style="width:35px">
+												<col style="width:149px">
+												<col style="width:102px">
+												<col style="width:85px">
+												<col style="width:68px">
+												<col style="width:75px">
+												<col style="width:57px">
+												<col style="width:86px">
+											</colgroup>
+											<thead>
+											<tr>
+												<th scope="col">번호</th>
+												<th scope="col">구분</th>
+												<th scope="col">주문일시</th>
+												<th scope="col">주문번호</th>
+												<th scope="col">결제방법</th>
+												<th scope="col">주문금액</th>
+												<th scope="col">주문상태</th>
+												<th scope="col">수령확인</th>
+												<th scope="col">상세보기</th>
+											</tr>
+											</thead>
+											<tbody><!-- 최대 10줄 노출 -->
+											<tr>
+												<td>1</td>
+												<td>일반</td>
+												<td class="txt_num">2017-08-28 14:49:31</td>
+												<td class="txt_num">1503899359750</td>
+												<td>무통장</td>
+												<td class="txt_num">8,550</td>
+												<td class="order_status">주문접수</td>
+												<td>
+												</td>
+												<td><a href="view.html"><img src="../../images/shopplus/board_view_on.jpg" alt="보기"></a></td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>일반</td>
+												<td class="txt_num">2017-05-16 14:05:19</td>
+												<td class="txt_num">1494911072892</td>
+												<td>무통장</td>
+												<td class="txt_num">6,900</td>
+												<td class="order_status">취소완료</td>
+												<td>
+												</td>
+												<td><a href="view.html"><img src="../../images/shopplus/board_view_on.jpg" alt="보기"></a></td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>일반</td>
+												<td class="txt_num">2017-01-03 16:06:09</td>
+												<td class="txt_num">1483427155192</td>
+												<td>무통장</td>
+												<td class="txt_num">17,350</td>
+												<td class="order_status">취소완료</td>
+												<td>
+												</td>
+												<td><a href="view.html"><img src="../../images/shopplus/board_view_on.jpg" alt="보기"></a></td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>일반</td>
+												<td class="txt_num">2016-07-01 13:42:26</td>
+												<td class="txt_num">1467348059025</td>
+												<td>전액할인</td>
+												<td class="txt_num">0</td>
+												<td class="order_status">취소완료</td>
+												<td>
+												</td>
+												<td><a href="view.html"><img src="../../images/shopplus/board_view_on.jpg" alt="보기"></a></td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>일반</td>
+												<td class="txt_num">2016-07-01 11:20:05</td>
+												<td class="txt_num">1467339515428</td>
+												<td>신용카드</td>
+												<td class="txt_num">10,850</td>
+												<td class="order_status">취소완료</td>
+												<td>
+												</td>
+												<td><a href="view.html"><img src="../../images/shopplus/board_view_on.jpg" alt="보기"></a></td>
+											</tr>
+											<tr>
+												<td>6</td>
+												<td>일반</td>
+												<td class="txt_num">2016-07-01 09:56:44</td>
+												<td class="txt_num">1467334587430</td>
+												<td>전액할인</td>
+												<td class="txt_num">0</td>
+												<td class="order_status">취소완료</td>
+												<td>
+												</td>
+												<td><a href="view.html"><img src="../../images/shopplus/board_view_on.jpg" alt="보기"></a></td>
+											</tr>
+											</tbody>
+										</table>
+										<div class="btn_wrap"><!-- 2017-08-28 class 수정 -->
+											<a href="/shop/mypage/order_list.php" class="btn_type1 btn_more_view">더보기<span class="ico_plus_comm"></span></a>
+										</div>
+									</div>
+									<!-- //최근 주문내역 -->
+									<!-- 제휴 서비스 구매내역 2017-08-28 삭제
+                                    <div class="mypage_inner">
+                                        <table class="tbl_type1 tbl_list">
+                                            <caption class="screen_hide">제휴 서비스 구매내역</caption>
+                                            <colgroup>
+                                                <col style="width:62px"><col style="width:109px"><col style="width:263px"><col style="width:87px"><col style="width:100px"><col style="width:87px">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">번호</th>
+                                                    <th scope="col">주문일시</th>
+                                                    <th scope="col">상품명</th>
+                                                    <th scope="col">주문금액</th>
+                                                    <th scope="col">회사이름</th>
+                                                    <th scope="col">상세보기</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody><!-- 최대 10줄 노출 ->
+                                                    <tr class="concierge_table_td">
+                                                        <td colspan="6">주문 내역이 없습니다.</td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="btn_wrap_type1">
+                                            <a href="/shop/mypage/order_list_asp.php" class="btn_type1 btn_more_view">더보기<span class="ico_comm"></span></a>
+                                        </div>
+                                    </div>
+                                    <!-- //제휴 서비스 구매내역 -->
+								</div>
+							</div>
+							<div id="tabPoint">
+								이제너두
+							</div>
+						</div>
+					</div><!-- 2017-08-28 감싸는 div 추가 -->
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+	
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer_plus.html" -->
+	<!-- footer [e] -->
+
+	<script type="text/javascript">
+		$(function () {
+			// 이용내역 조회 탭 2018-03-22 추가
+			shopUI.tab({
+				"tabs" : $(".tab_type3 li"),
+				"contWrap" : $(".tab_cont > div")
+			});
+		})
+	</script>
+</body>
+</html>

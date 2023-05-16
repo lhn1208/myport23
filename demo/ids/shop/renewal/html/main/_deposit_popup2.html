@@ -1,0 +1,139 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+<link rel="stylesheet" href="../../css/layout.css">
+<link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+<!--TheShop 예치금 구매 2022-10-14 수정[s]-->
+<div class="deposit_pop">
+    <div class="simple_pay">
+        <div class="pop_body">
+            <h1 class="main_tit">
+                TheSHOP 간편결제 카드등록
+            </h1>
+            <h2 class="sub_tit">카드정보 입력</h2>
+            <form>
+                <fieldset>
+                    <legend>카드정보 입력 폼</legend>
+                    <table class="pay_tbl">
+                        <colgroup>
+                            <col width="20%">
+                            <col width="*">
+                        </colgroup>
+                        <tbody>								
+                            <tr>
+                                <th scope="row">카드구분</th>
+                                <td>
+                                    <div class="radio_item">
+                                        <input type="radio" name="card_sort" class="radio" id="card_sort1" checked>
+                                        <label for="card_sort1">삼성, 신한, 현대, IBK 플래티늄카드</label>
+                                    </div>
+                                    <div class="radio_item">
+                                        <input type="radio" name="card_sort" class="radio" id="card_sort2">
+                                        <label for="card_sort2">그 외 카드</label>
+                                    </div>
+                                </td>									
+                            </tr>
+                            <tr>
+                                <th scope="row">카드선택</th>
+                                    <td>
+                                    <div class="radio_item">
+                                        <input type="radio" name="card_choice" class="radio" id="card_choice1" checked>
+                                        <label for="card_choice1">삼성카드</label>
+                                    </div>
+                                    <div class="radio_item">
+                                        <input type="radio" name="card_choice" class="radio" id="card_choice2" checked>
+                                        <label for="card_choice2">신한카드</label>
+                                    </div>
+                                    <div class="radio_item">
+                                        <input type="radio" name="card_choice" class="radio" id="card_choice3">
+                                        <label for="card_choice3">현대카드</label>
+                                    </div>
+                                    <div class="radio_item">
+                                        <input type="radio" name="card_choice" class="radio" id="card_choice4">
+                                        <label for="card_choice4">IBK 플래티늄카드</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">카드번호</th>
+                                <td>
+                                    <div class="radio_item">
+                                        <input type="radio" name="card_num" class="radio" id="card_num1" value="일반신용카드" checked>
+                                        <label for="card_num1">일반 신용카드</label>
+                                    </div>
+                                    <div class="radio_item">
+                                        <input type="radio" name="card_num" class="radio" id="card_num2" value="아맥스카드">
+                                        <label for="card_num2">아맥스 카드</label>
+                                    </div>
+                                    <div class="input_cd_num_area" id="normalCard">
+                                        <input type="text" class="input_w62" placeholder="0000"> - <input type="text" class="input_w62" placeholder="0000"> - <input type="text" class="input_w62" placeholder="0000"> - <input type="text" class="input_w62" placeholder="0000">
+                                    </div>
+                                    <div class="input_cd_num_area" id="amexCard">
+                                        <input type="text" class="input_amex" placeholder="15자리 입력(-제외)">
+                                    </div>
+                                </td>	
+                            </tr>
+                            <tr>
+                                <th scope="row">유효기간</th>
+                                <td>
+                                    <input type="text" class="input_w62" placeholder="MM"><span class="unit">월</span><input type="text" class="input_w62" placeholder="YY"><span class="unit">년</span><span class="desc">MM/YY</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">주민등록번호</th>
+                                <td>
+                                    <input type="text" class="input_busi_num"><input type="checkbox" class="chk_busi_num" id="chk_busi_num"><label for="chk_busi_num">사업자 등록번호</label>
+                                    <ul class="desc_list">
+                                        <li>개인카드 – 주민등록번호 앞 6자리</li>
+                                        <li>법인카드 – 사업자등록번호 10자리, (-) 제외</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </form>
+            <div class="agree_area">
+                <h2 class="sub_tit">금융거래정보의 제공동의서</h2>
+                <div class="chk_form"><input type="checkbox" class="chk_agree" id="chk_agree"><label for="chk_agree">약관 전체동의</label></div>
+                <div class="agree_box">
+                    <strong>금융거래정보의 제공동의서</strong>
+                    <p>본 신청과 관련하여 본인은 다음 금융거래정보[거래카드사(은행)명,카드번호]를 신용카드 등 자동승인을 신규 신청하는 때로부터 해지신청할 때까지 상기 청구기관(청구기관의 결제대행업체를 포함함)에 제공하는 것에 대하여 「금융실명거래 및 비밀보장에 관한 법률」의 규정에 따라 동의 합니다.</p>
+                    <strong>신용카드 자동승인 약관</strong>
+                    <ul>
+                        <li>1. 앞면의 본인(카드소유주)이 납부하셔야 할 요금에 대하여 별도의 통지 없이 본인의 카드정보를 사용하여 청구기관이 정한 지정 승인일(휴일인 경우 익영업일)에 승인 납부하여 주십시오.</li>
+                        <li>2. 신용카드 등 자동승인을 위하여 지정카드번호로 승인하는 경우에는 신용카드이용약관이나 약정서의 규정에 불구하고 안심클릭 혹은 ISP인증 등의 절차 없이 신용카드 등 자동승인 처리절차에 의하여 승인하여도 이의가 없습니다.</li>
+                        <li>3. 신용카드 등 자동승인 승인한도가 지정 출금일 현재 청구기관의 청구금액보다 부족하거나, 신용카드의 사용정지 또는 신용카드 대금의 연체 등으로 대체 청구가 불가능한 경우의 손해는 본인의 책임으로 하겠습니다.</li>
+                        <li>4. 지정 승인일의 승인정보에 수종의 청구가 있는 경우 처리순서는 회사가 정한 바에 따르는데 이의가 없습니다.</li>
+                        <li>5. 신용카드 등 자동승인 신규신청에 의한 승인개시일은 청구기관의 사정에 의하여 결정되어지며 청구기관으로 부터 사전 통지 받은 승인일을 최초 개시일로 하겠습니다.</li>
+                        <li>6. 신용카드 등 자동승인 신청(신규,해지)은 해당 승인일 30일 전까지 신청서를 제출하여야 합니다.</li>
+                        <li>7. 신용카드 등 자동승인 신청에 의한 지정카드번호에서의 승인은 청구기관의 청구대로 승인키로 하고, 승인금에 이의가 있는 경우에는 본인과 청구기관이 협의하여 조정키로 합니다.</li>
+                        <li>8. 자동승인을 해지하거나 변경하고자 할 경우에, 본인은 문서(이메일 포함)로 변경 의사 및 그 내용을 통지하여야 하며, 이를 준수하지 않음으로 인하여 발생된 모든 문제는 본인의 책임으로 하겠습니다.</li>
+                        <li>9. 이 약관은 신청서를 청구기관에 직접 제출하여 신용카드 등 자동승인을 신청한 경우에도 적용 합니다.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn_pay">
+                <button class="btn_type2">취소하기</button>
+                <button class="btn_type1">결제하기</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.input_cd_num_area').hide();
+    $('#normalCard').show();
+    $("input[name='card_num']").change(function(){
+        if($("input[name='card_num']:checked").val() == '일반신용카드'){
+			$('.input_cd_num_area').hide();
+			$('#normalCard').show();
+		}	
+        if($("input[name='card_num']:checked").val() == '아맥스카드'){
+			$('.input_cd_num_area').hide();
+			$('#amexCard').show();
+		}	
+    });
+</script>
+<!--TheShop 예치금 구매 [e]-->
+</body>
+</html>

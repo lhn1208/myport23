@@ -1,0 +1,198 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/dw_only.css">
+    <link rel="stylesheet" href="../../css/separate_popup.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+	<section id="container">
+        <!-- 상단 상태 바 [s] -->
+        <!--#include virtual="/publish/shop/renewal/html/include/status_daewoong.html" -->
+        <!-- 상단 상태 바 [e] -->
+
+		<div id="content" class="cont_dw_list">
+            <!-- 상단 비주얼 배너 carousel [s] -->
+            <div class="main_visual_wrap">
+                <div class="left_carousel owl-carousel">
+                    <div class="item"><a href="#"><img src="../../images/temp/img_bnr_671_213_1.jpg" alt="" /></a></div>
+                    <div class="item"><a href="#"><img src="../../images/temp/img_bnr_671_213_2.jpg" alt="" /></a></div>
+                </div>
+                <div class="right_carousel owl-carousel">
+                    <div class="item"><a href="#"><img src="../../images/temp/img_bnr_279_215_1.jpg" alt="" /></a></div>
+                    <div class="item"><a href="#"><img src="../../images/temp/img_bnr_279_215_1.jpg" alt="" /></a></div>
+                </div>
+            </div>
+            <!-- 상단 비주얼 배너 carousel [e] -->
+
+            <div class="prd_list">
+                <!-- 2021-06-10 desc 추가 -->
+                <p class="desc">그룹할인 상품은 그룹의 주문 수량에 따라 할인율이 적용됩니다. <br>[그룹할인] 아이콘에 마우스를 가져다 대시면 그룹 할인율을 확인 할 수 있습니다.</p>
+                <p class="tit">OTC/기타</p>
+                <div class="util_func">
+                    <strong class="screen_out">정렬타입 선택 리스트</strong>
+                    <ul class="list_sort">
+                        <li class="on"><a href="#" class="btn_sort">자주구매</a></li>
+                        <li><a href="#" class="btn_sort">최근주문순</a></li>
+                        <li><a href="#" class="btn_sort">상품명순</a></li>
+                    </ul>
+                    <div class="field_wrap">
+                        <!-- <select class="select view">
+                            <option>20개씩 보기</option>
+                            <option>50개씩 보기</option>
+                            <option>100개씩 보기</option>
+                        </select>
+                        <select class="select category">
+                            <option value="">상품카테고리</option>
+                            <option value="">전체</option>
+                            <option value="">영양제</option>
+                            <option value="">건기식</option>
+                            <option value="">감기진통</option>
+                            <option value="">상처군</option>
+                            <option value="">우루사</option>
+                            <option value="">기타</option>
+                        </select> -->
+                        <div class="wrap_search">
+                            <input type="text" title="검색어 입력" class="inp_txt" placeholder="검색할 품목을 입력하세요.">
+                            <button type="button" class="btn_del"><span class="btn_comm">검색어 삭제</span></button>
+                            <button type="button" class="btn_search"><span class="btn_comm">검색</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="prd_list_wrap">
+                    <!-- 제품 목록 리스트 타입 영역(2021-06-10 리뉴얼) [s] -->
+                    <!--#include virtual="/publish/shop/renewal/html/daewoong/_product_list_type_otc.html" -->
+                    <!-- 제품 목록 리스트 타입 영역(2021-06-10 리뉴얼) [e] -->
+                    <button type="button" class="btn_more" tabindex="1">더보기<span class="ico_arr"></span></button>
+                    <div class="box_result">
+                        <div class="result_tit">
+                            <strong class="tit_sum">
+                                선택금액합계 <span class="txt_price"><span class="txt_num">123,882,288</span>원</span>
+                            </strong>
+                            <strong class="tit_discount">
+                                예상비용할인 <span class="txt_price"><span class="txt_num">123,882,288</span>원</span>
+                            </strong>
+                            <strong class="tit_total">
+                                총 예상주문금액 <span class="txt_price"><span class="txt_num">221,222,288</span>원</span>
+                            </strong>
+                        </div>
+                        <div class="result_btn">
+                            <button type="button" class="btn_type1" tabindex="1">장바구니 담기</button>
+                            <button type="button" class="btn_type2" tabindex="1">장바구니 보기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2021-07-13 cart_box 추가 -->
+            <!--#include virtual="/publish/shop/renewal/html/include/cart_box.html" -->
+		</div>
+
+        <script>
+            $(function(){
+                // visual banner carousel
+                $(".main_visual_wrap .left_carousel").owlCarousel({
+                    items: 1,
+                    autoplay: true,
+                    loop: true,
+                    nav: true,
+                    dots: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true
+                });
+                $(".main_visual_wrap .right_carousel").owlCarousel({
+                    items: 1,
+                    autoplay: true,
+                    loop: true,
+                    nav: true,
+                    dots: false,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true
+                });
+
+                // 수량 조절
+                function prodCtl() {
+                    $('.quantity_selector button').on("click", function(){
+                        var inpNum = $(this).parents('.count_desc').find('.inp_count');
+                        var count_val = inpNum.val(); // min 1
+                        if($(this).is('.btn_minus')){
+                            if(count_val<=1){
+                                return;
+                            };
+                            inpNum.val(parseInt(count_val)-1);
+                        }else if($(this).is('.btn_plus')){
+                            inpNum.val(parseInt(count_val)+1);
+                        };
+                    });
+                }
+                prodCtl();
+                // 자동 제품 체크 기능
+                $('.prd_item').on({
+                    // input field에 focus out 되는 경우 자동 체크되는 스크립트 (필요에 따라 주석)
+                    blur:function(e){
+                        $(e.delegateTarget).find('input[type="checkbox"]').prop("checked", "checked");
+                    },
+                    click:function(){
+                        $(this).select();
+                    },
+                    focus:function(e){
+                        $(this).select();
+                        $(this).keydown(function(key) {
+                            if (key.keyCode == 13) {
+                                $(e.delegateTarget).find('input[type="checkbox"]').prop("checked",function(){
+                                    return !$(this).prop('checked');
+                                });
+                            }
+                        });
+                    }
+                }, ".inp_count");
+                // 검색어 삭제기능
+                $(".wrap_search input[type='text']").keyup(function(){
+                    var searchInput = $(this).val().length;
+                    if(searchInput > 0){
+                        $(this).next().show();
+                    } else{
+                        $(this).next().hide();
+                    }
+                    $(".wrap_search .btn_del").click(function () {
+                        $(".wrap_search input").val("");
+                        $(this).hide();
+                    });
+                });
+
+                // 정렬 선택버튼
+                $(".list_sort .btn_sort").on("click", function (e) {
+                    e.preventDefault();
+                    $(this).parent().addClass("on").siblings().removeClass("on");
+                });
+            });
+            $(function(){
+                shopUI.scrollFix();
+            });
+        </script>
+
+		<!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+	</section>
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+
+    <!-- 레이어 팝업 묶음 [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/daewoong/_layerpopup.html" -->
+    <!-- 레이어 팝업 묶음 [e] -->
+</body>
+</html>

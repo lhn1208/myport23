@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <include src="../../include/folder_include/set_css.html"></include>
+    <include src="../../include/folder_include/set_js.html"></include>
+    <title>realhouse</title>
+</head>
+<body>
+<include src="../../include/agent_sub_header2.html"></include>
+<div class="wrapper">
+    <div id=sub_container class="sub_container">  
+        <div class="container_inner">    
+            <div class="sub_intro">
+                <h3 class="tit">오픈 이벤트 안내</h3>
+                <div class="txt">오픈 추천이벤트가 2019.05.31까지 진행됩니다.</div>
+                <div class="right_btn btn_round_white btn_close"><button class="btn">닫기</button></div>
+            </div>
+            <div class="member_event">
+                <div class="member_event_info">
+                    <div class="table_style2 type">
+                        <table class="table" summary="고객 이벤트 정보 테이블입니다.">
+                            <caption>고객 이벤트 정보</caption>
+                            <colgroup>
+                                    <col width="27%"> 
+                                    <col width="14%"> 
+                                    <col width="*"> 
+                                    <col width="20%"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th><strong class="name">홍길동님</strong></th>
+                                    <td>총 추천: <span class="txt_blue">140</span>개</td>
+                                    <td class="align_center">보낸 추천: <span class="txt_red2">95</span>개 / 받은 추천: <span class="txt_red2">45</span>개</td>
+                                    <td class="align_right"><button class="btn red">추천</button></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="member_info">
+                                    <th>현재순위: <span class="txt_red2">2</span>등(12위)</th>
+                                    <td colspan="2">당첨금: 1백만원</td>
+                                    <td>남은 시간: <span class="txt_red2">5</span>일 <span class="txt_red2">4</span>시간 <span class="txt_red2">30분</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab_head">
+                    <ul class="tab">
+                        <li><a href="#">이벤트 안내</a></li>
+                        <li><a href="#">참가 현황</a></li>
+                        <li><a href="#">보낸 추천</a></li>
+                        <li class="active"><a href="#">받은 추천</a></li>
+                    </ul>
+                </div>
+                <!--받은 추천 테이블-->
+                <div class="event_present recomm">
+                    <div class="table_style1 type2_1">
+                        <table class="table" summary="받은 추천 테이블 입니다.">
+                            <caption>받은 추천</caption>
+                            <colgroup>
+                                    <col width="*"> 
+                                    <col width="18%"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="2" class="align_left">
+                                        <div class="position">
+                                            받은 추천: 95개
+                                            <div class="right_area th_txt_right desc">※ 홍길동님이 받은 추천을 확인한 분만 나타납니다.</div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>                           
+                            <tbody>
+                                <tr>
+                                    <th>김길동(010-****-0000)</th>
+                                    <td class="date">18.05.06 13:20</td>
+                                </tr>
+                                <tr>
+                                    <th>김길동(010-****-0000)</th>
+                                    <td class="date">18.05.06 13:20</td>
+                                </tr>
+                                <tr>
+                                    <th>김길동(010-****-0000)</th>
+                                    <td class="date">18.05.06 13:20</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                 <!--//받은 추천 테이블-->
+                 <!--받은 추천 테이블 비로그인시: style은 무시해주세요-->
+                <div class="event_present recomm no_items" style="padding-top:20px">
+                    <div class="table_style1 type2_1">
+                        <table class="table" summary="보낸 추천 테이블 입니다.">
+                            <caption>보낸 추천</caption>
+                            <colgroup>
+                                    <col width="*"> 
+                                    <col width="18%"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="2" class="align_left">
+                                        <div class="position">
+                                            받은 추천: -개
+                                            <div class="right_area th_txt_right desc">※  로그인하셔야 확인하실 수 있습니다.</div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>                           
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">받은 추천을 확인한 내역이 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                 <!--//받은 추천 테이블-->
+                <div class="paging">
+                    <button class="prev"></button>
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button class="next"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<include src="../../include/footer.html"></include>
+</body>
+</html>

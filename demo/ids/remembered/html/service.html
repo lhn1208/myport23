@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리멤버드</title>
+    <script src="../js/jquery-3.6.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<style>
+    /*ie*/
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+    {
+        html{
+            overflow: hidden;
+            height: 100%;   
+        }
+        body{
+            overflow: auto;
+            height: 100%;
+        }
+    }
+</style>
+<body>
+    <!--gnb-->
+    <div id="remember_gnb" class="remember_gnb fix_on">
+        <div class="gnb_inner">
+          <h1 class="logo"><a href="#">리멤버드</a></h1>
+          <nav class="gnb">
+            <ul>
+              <li><a href="#">리멤버드</a></li>
+              <li><a href="#">서비스소개</a></li>
+              <li><a href="#">부고</a></li>
+              <li><a href="#">추모관</a></li>
+              <li><a href="#">조문보</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+          <div class="right type">
+            <div class="gnb_search_form">
+              <form>
+                <fieldset>
+                  <legend>고인명검색</legend>
+                  <input type="text" class="search_input" placeholder="고인명검색">
+                </fieldset>
+                <a href="#" class="ico_sch">검색</a>
+              </form>
+            </div>
+            <div class="log_info">
+              <!-- <a href="#">로그인</a> -->
+             <a href="#">로그아웃</a>
+           </div>     
+            <a href="#" class="member">마이페이지</a>                 
+            <a href="#" class="menu">메뉴</a>
+          </div>
+        </div>
+    </div>
+    <!--//gnb-->    
+    <div class="content_wrap">
+        <div class="services_content">
+            <div class="services_inner_area">
+                <h2>서비스소개</h2>
+                <div class="services_content">
+                    <div class="content_area01">
+                        <div class="text_01">리멤버드는 새로운 장례 문화를 선도하는 <span class="block">사회적 기업입니다.</div>
+                        <p class="text_02">보석처럼 빛나는 고인의 삶과 남겨진 유훈을 조문보에 담아 기리는 <span class="block"> 고인 중심의 장례 문화를 지향합니다. </p>
+                        <p class="text_02">살아온 날의 전부가 모아진 조문보를 쓰듯 오늘 하루를 살아간다면, <span class="block"> 그 만큼 세상은 조금은 더 따듯하고 밝아질 것이라 믿습니다. <span class="block">유훈으로 남겨진 고인의 삶은 우리 주머니 안에 있는 <span class="block"> 온라인 추모관에서 늘 우리와 함께합니다. </p>
+                    </div>
+                    <div class="content_area02">
+                        <div class="visual"><img src="../images/intro_img_01.png" alt=""></div>
+                        <div class="text_01">사랑하는 사람과의<br /> 추억을 영원히</div>
+                        <div class="text_02">고인이 가족 및 친구들과 나누었던 소중한 추억을<br />온라인 공간에서 영원히 간직하며, 고인을 추모하는 전통 가족 문화를 소중히 지킵니다.<br />조문보가 담긴 부고 알림을 통하여 고인의 일생을<br />되돌아보고 온라인 조문으로 유족을 위로합니다.</div>
+                    </div>
+                </div>
+                <div class="services_content">
+                    <div class="content_area02">
+                        <div class="visual"><img src="../images/intro_img_02.png" alt=""></div>
+                        <div class="text_01">부고 알림과<br />조문보</div>
+                        <div class="text_02">사랑하는 사람의 부음을 문자 및 단체 알림,<br />SNS 메시지로 발송 대행하고 장례 의식 공지 등의<br /> 서비스를 제공하며 출생 및 가족과 사회 활동,<br />업적, 어록 등을 조문보로 제작하여<br />고인의 일대기를 기립니다.</div>
+                    </div>
+                    <div class="content_area02">
+                        <div class="visual"><img src="../images/intro_img_03.png" alt=""></div>
+                        <div class="text_01">온라인 조문과<br />디지털화환</div>
+                        <div class="text_02">상가를 직접 방문하지 않고, 온라인으로 조문을<br />가능하게 하는 라이브 조문 서비스와 추모 의식<br />동영상 제작 서비스를 지원합니다. <br />디지털 화환으로 허례허식을 줄이고 <br />유가족 위로와 기부 문화를 발전시킵니다</div>
+                    </div>
+                </div>
+                <div class="services_content">
+                    <div class="content_area02">
+                        <div class="visual"><img src="../images/intro_img_04.png" alt=""></div>
+                        <div class="text_01">온라인<br />추모관</div>
+                        <div class="text_02">장례식이 끝난 후 고인을 기리는 추모글 과<br />고인의 저서, 어록, 활동 자료, 사진 및 동영상 등을 <br />온라인 상으로 언제든지 만날 수 있는 <br />온라인 추모관을 지원합니다.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--right banner-->
+    <div class="right_banner">
+        <a href="#">문의</a>
+        <a href="#" class="kakao">KAKAO</a>
+    </div>
+    <!--//right banner-->
+    <!--footer-->
+    <footer id="remember_footer" class="remember_footer">
+    <div class="footer_inner">
+        <ul class="term_list">
+        <li><a href="#">이용약관</a><i class="bar"></i></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+        <div class="compay_info">
+        <address>서울시 강남구 봉은사로 114길 12, 7층</address> <i class="bar"></i>대표 서종원 <span class="mb_block">사업자 등록번호 120-86-10499</span> <i class="bar none_type"></i><span class="mb_block">통신판매업신고 2009-서울강남-00290 </span>
+        <span class="customer">고객센터<i class="bar mb_none"></i>tel.02-550-8700 <span class="fax">fax.02-563-8398</span><i class="bar mb_none"></i> <span class="email">Email.tslee0710@mcircle.biz</span><i class="bar none_type"></i><span class="mb_block">상담가능시간  오전 9:00 - 오후 6:00</span></span>
+        </div>
+        <span class="footer_logo"><img src="../images/footer_logo.png"></span>
+        <div class="ico_wrap">
+        <a href="#"><img src="../images/footer_ico1.png"></a>
+        <a href="#"><img src="../images/footer_ico2.png"></a>
+        </div>
+    </div>     
+    </footer>
+    <!--//footer-->
+    
+</body>
+</html>

@@ -1,0 +1,848 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/content.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+	<section id="container">
+		<div id="content" class="cont_cart">
+			<div class="cart_step">
+				<ul class="list_step">
+					<li class="on">01 장바구니<span class="ico_comm ico_arr"></span></li>
+					<li>02 주문/결제<span class="ico_comm ico_arr"></span></li>
+					<li>03 주문완료</li>
+				</ul>
+				<h2 class="sub_tit">장바구니</h2>
+			</div>
+			<div class="prod_data">
+				<div class="chk_list">
+					<div class="sub_cont_head">
+						<h3 class="sstit"> 나의 체크 리스트</h3>
+						<a href="#none" class="btn_type4 btn_noti"><span class="btn_comm ico_arr"></span>자세한 공지사항 확인하기</a>
+					</div>
+					<p class="txt_caution"><strong class="tit_caution"><span class="ico_comm ico_caution"></span>유의사항</strong> 약사님의 장바구니 <strong>담는 시점과 실제 결제하는 시간 차이가 있는 경우</strong> 업체 <strong>가격 변동</strong>이 있을 수 있으니 한번 더 확인해주세요!</p>
+					<button type="button" class="btn_slide"><span class="btn_comm"></span>열기</button>
+					<div class="view_slide">
+						<table class="tbl_info">
+							<caption>가격변동 및 배송안내와 제휴카드별 혜택안내</caption>
+							<colgroup>
+								<col style="width:110px">
+								<col style="width:350px">
+								<col style="width:123px">
+								<col>
+							</colgroup>
+							<tbody>
+							<tr>
+								<th scope="row">가격변동<br>안내</th>
+								<td>고객님의 장바구니 상품 중 가격 변동이 있는<br>상품이 <strong class="emph_color txt_underline">1건</strong> 있습니다. 확인해주세요. </td>
+								<th scope="row" rowspan="2">제휴카드별<br>혜택안내</th>
+								<td rowspan="2">
+									<ul class="list_card">
+										<li><strong class="tit_card">삼성카드</strong> : 5만원 이상 <strong>무이자할부 2~3개월</strong></li>
+										<li><strong class="tit_card">신한카드</strong> : 카드상품별 혜택 (하이팜 카드 <strong>1% 청구 할인</strong>)</li>
+										<li><strong class="tit_card">현대카드</strong> : M계열 구매금액별로 <strong>0.7 ~1.4% 포인트 적립,</strong><br>X계열 <strong>0.5~1% 캐쉬백적립</strong></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">배송안내</th>
+								<td>도서산간 및 제주도 지역의 경우 배송예정일 보다<br><strong>2~3일 배송지연</strong> 될 수 있습니다.</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="box_util">
+					<div class="prod_chk">
+						<div class="chk_g chk_all">
+							<input type="checkbox" name="AllCheck" id="AllCheck" class="inp_chk">
+							<label for="AllCheck" class="lab_chk">
+								<span class="ico_comm ico_chkbox"></span>
+								<span class="txt_lab">전체 선택/해제</span>
+							</label>
+						</div>
+						<button type="button" class="btn_type4 btn_del">선택삭제<span class="btn_comm"></span></button>
+						<button type="button" class="btn_type4 btn_empty">장바구니 비우기<span class="btn_comm"></span></button>
+					</div>
+					<div class="cart_sort">
+						<div class="sort_info">
+							<strong class="tit_sort">장바구니 정렬순서</strong>
+							<div class="box_tooltip">
+								<button type="button" class="ico_comm btn_tooltip">안내</button>
+								<div class="layer_tooltip">
+									<strong class="tit_tip">
+										<span class="ico_comm ico_info"></span><span class="emph_color">원하시는 순서대로</span> 장바구니를 정렬<span class="txt_tit">하거나</span><br>보고 싶은 카테고리만 선택<span class="txt_tit">할 수 있습니다.</span>
+									</strong>
+									<ul class="list_tip">
+										<li>
+											<strong class="tit_info"><span class="txt_num">1</span>ON/OFF 하시려면 각 버튼을 한 번 눌러주세요.</strong>
+											<div class="box_info">
+												<span class="txt_info"><strong class="txt_ex">Ex) </strong><br>제약사 카테고리를<br>장바구니에서<br><strong class="txt_emph">숨기고 싶은 경우</strong></span>
+												<span class="img_sort">ON상태 1번클릭 시 OFF상태로 변경</span>
+											</div>
+										</li>
+										<li>
+											<strong class="tit_info"><span class="txt_num">2</span>순서를 변경하고 싶으시면 각 버튼을 원하는 위치로<br>옮겨주세요.</strong>
+											<div class="box_info">
+												<span class="txt_info"><strong class="txt_ex">Ex) </strong><br>제약사 카테고리를<br>3번으로 <strong class="txt_emph">옮기고</strong><br><strong class="txt_emph">싶은 경우</strong></span>
+												<span class="img_sort">버튼 끌어서 3번으로 이동</span>
+											</div>
+										</li>
+									</ul>
+									<button type="button" class="btn_close"><span class="btn_comm ico_close">레이어 닫기</span></button>
+								</div>
+							</div>
+						</div>
+						<div class="bundle_btn">
+							<a href="#none" id="sortCate01" class="btn_sort">제약사</a>
+							<a href="#none" id="sortCate02" class="btn_sort">의약품도매</a>
+							<a href="#none" id="sortCate03" class="btn_sort">부외품업체</a>
+						</div>
+						<button type="button" class="btn_reset">초기화<span class="btn_comm"></span></button>
+					</div>
+				</div>
+				<div class="wrap_view">
+					<a href="#none" class="btn_type4 btn_view1"><span class="btn_comm ico_arr"></span>공급사 선택 보기</a>
+					<a href="#none" class="btn_type4 btn_view2">상품이미지 함께보기</a>
+				</div>
+				<div class="prod_list">
+					<div class="data_none">
+						조회된 데이터가 없습니다.
+					</div>
+				</div>
+				<div class="prod_chk btm_chk">
+					<div class="chk_g chk_all">
+						<input type="checkbox" name="AllCheckBtm" id="AllCheckBtm" class="inp_chk">
+						<label for="AllCheckBtm" class="lab_chk">
+							<span class="ico_comm ico_chkbox"></span>
+							<span class="txt_lab">전체 선택/해제</span>
+						</label>
+					</div>
+					<button type="button" class="btn_type4 btn_del">선택삭제<span class="btn_comm"></span></button>
+					<button type="button" class="btn_type4 btn_empty">장바구니 비우기<span class="btn_comm"></span></button>
+				</div>
+				<div class="box_result">
+					<div class="inner_result">
+						<div class="result_txt"><strong class="tit_txt">총 주문금액</strong> <strong class="txt_num">99,999,535</strong>원<span class="ico_minus">-</span></div>
+						<div class="result_txt"><strong class="tit_txt">예상비용할인</strong> <strong class="txt_num">2,115</strong>원<span class="ico_equals">=</span></div>
+						<div class="result_txt">
+							<strong class="tit_txt">총 예상주문금액</strong> <strong class="txt_num">99,999,535</strong>원
+							<button type="button" class="btn_order">주문하기</button>
+						</div>
+					</div>
+					<button type="button" class="btn_toggle"><span class="btn_comm"></span>접기</button>
+				</div>
+			</div>
+			<div class="wrap_btn">
+				<button type="button" class="btn_type2">쇼핑 계속하기</button>
+				<button type="button" class="btn_type1">선택상품 주문하기</button>
+			</div>
+			<div class="ad_box">
+				<iframe id="cartBanner01" width="465px;" height="222px;" noresize="" scrolling="no" frameborder="0" marginheight="0" marginwidth="0" src="http://realmedia.hidoc.co.kr/RealMedia/ads/adstream_sx.ads/shop.co.kr/theshop_pharm_cart_uriage@Bottom1"></iframe>
+				<iframe id="cartBanner02" width="465px;" height="222px;" noresize="" scrolling="no" frameborder="0" marginheight="0" marginwidth="0" src="http://realmedia.hidoc.co.kr/RealMedia/ads/adstream_sx.ads/shop.co.kr/theshop_pharm_cart_audrey_v2@Bottom1"></iframe>
+			</div>
+		</div>
+		<!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+	</section>
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+
+	<!-- 공지사항 팝업 [s] -->
+	<div id="popCartNotice" style="display:none">
+		<div class="pop_layer" style="width:765px">
+			<strong class="tit_popup">공지사항</strong>
+			<div class="pop_wrap">
+				<ul class="list_noti">
+					<li><strong>각 공급사별 최소주문금액이상 주문하지 않을 경우, 주문이 불가능합니다.</strong><br>단, 대웅과 함께 [서울지오팜]의 상품을 구매할 경우에는 최소주문금액과 상관없이 구매 가능합니다.</li>
+					<li>동일제품에 대하여 공급사 변경을 원하실 경우 하단 공급사 변경 아이콘을 눌러주세요.</li>
+					<li>
+						<strong class="tit_noti">묶음배송 :</strong>
+						<div class="txt_noti">
+							주문마감 시간 내에 특정 공급업체에 대해 최소주문금액 이상 주문 내역이 있을 경우 해당 공급업체에 한해
+							배송비 없이 주문마감 시간 전에 소액 주문이 가능합니다.
+							<div class="txt_caution"><span class="ico_comm ico_caution"></span>단, <strong>카드결제 및 예치금 결제 시</strong>에만 묶음배송(추가주문)이 가능합니다.<br>(공동구매 주문 및 무통장입금, 실시간 계좌이체 시 제외)</div>
+						</div>
+					</li>
+					<li>
+						<strong>묶음배송 가능업체</strong>
+						<div class="box_info">
+							<ul class="list_2depth">
+								<li>
+									<strong class="tit_noti">- 도매업체 :</strong>
+									<div class="txt_noti">
+										대전지오영, 미드팜, 백광의약품, 보덕메디팜, 복산나이스팜, 서울지오팜, 경남청십자,<br>
+										인천약품,티제이팜, 한신약품, 한우약품, 서울약사신협,원주백제약품, 대구백제약품,<br>
+										광주백제약품,부산백제약품, 창원백제약품, 전주백제약품, 제이케이팜, 세화약품, 유진약품,<br>
+										안국약품,백제약품 동부지점, 대전백제약품, 제주백제약품, 헬스팜, 대전지오팜,<br>
+										경동사(대구), 경동사(대전), 경동사(부산), 경동사(서울), 경동사(수원)
+									</div>
+								</li>
+								<li><strong>- 부외품/화장품/동물약품 업체 :</strong> 전 업체</li>
+							</ul>
+						</div>
+					</li>
+					<li>비용할인 1.8% 적용시 1원 미만 소수점은 버림 처리됩니다.</li>
+					<li>각 부외품 업체별 마일리지는 배송완료 후 적립되어 해당 업체 다음 구매시 현금처럼 사용 가능합니다. </li>
+					<li>정확한 적립 금액은 마이페이지에서 확인하세요.</li>
+					<li>실시간 계좌이체, 무통장 입금의 경우, 입금 완료 시간을 기준으로 배송됩니다.</li>
+					<li>건기식 및 식품(드링크포함)은 3개월 이후 반품이 불가합니다.</li>
+					<li>부외품 쿠폰은 부외품 공급사 구매시 사용 가능하며, 부외품 공급사에서 판매하는 일반의약품 상품 포함시<br>쿠폰 사용이 불가합니다.</li>
+				</ul>
+				<div class="btn_wrap"><a href="#none" class="btn_type1 btn_cancel">닫기</a></div>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- 공지사항 팝업 [e] -->
+
+	<!-- 공급사 변경 팝업 [s] -->
+	<div id="popSupplyChange" style="display:none">
+		<div class="pop_layer" style="width:765px">
+			<strong class="tit_popup">공급사 변경</strong>
+			<div class="pop_wrap">
+				<div class="bundle_change">
+					<div class="tbl_scroll_wrap">
+						<div>
+							<table class="tbl_type1">
+								<caption>공급사, 공급가, 세일가, 재고 선택 안내</caption>
+								<colgroup>
+									<col style="width:55px">
+									<col style="width:111px">
+									<col style="width:85px">
+									<col style="width:85px">
+									<col style="width:100px">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">선택</th>
+										<th scope="col">공급사</th>
+										<th scope="col">공급가</th>
+										<th scope="col">세일가</th>
+										<th scope="col">재고</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="radio_g">
+												<input type="radio" name="supplyChangeChk" id="supplyChangeChk1" class="inp_radio">
+												<label for="supplyChangeChk1" class="lab_radio">
+													<span class="ico_comm ico_radio"></span>
+												</label>
+											</div>
+										</td>
+										<td class="txt_supply"><label for="supplyChangeChk1">서울약사신협</label></td>
+										<td>999,999</td>
+										<td>999,999</td>
+										<td>9,999</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="radio_g">
+												<input type="radio" name="supplyChangeChk" id="supplyChangeChk2" class="inp_radio">
+												<label for="supplyChangeChk2" class="lab_radio">
+													<span class="ico_comm ico_radio"></span>
+												</label>
+											</div>
+										</td>
+										<td class="txt_supply"><label for="supplyChangeChk2">서울약사신협</label></td>
+										<td>999,999</td>
+										<td>999,999</td>
+										<td>9,999</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="radio_g">
+												<input type="radio" name="supplyChangeChk" id="supplyChangeChk3" class="inp_radio">
+												<label for="supplyChangeChk3" class="lab_radio">
+													<span class="ico_comm ico_radio"></span>
+												</label>
+											</div>
+										</td>
+										<td class="txt_supply"><label for="supplyChangeChk3">서울약사신협</label></td>
+										<td>999,999</td>
+										<td>999,999</td>
+										<td>9,999</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<ul class="list_info">
+						<li>
+							<div class="tit_info"><strong>배송예정일</strong>  2018/11/16 오후 8시</div>
+							도서산간 및 제주도 지역의 경우<br>배송예정일 보다 2~3일 배송지연<br>될 수 있습니다.
+						</li>
+						<li>
+							<strong class="tit_info">최소주문금액 10만원(주문마감시간) </strong>
+							: 수도권 10시 16시 마감 경기<br>/인천(16시 마감) / 이외 지역14:00
+						</li>
+						<li>
+							<strong class="tit_info">마감배송</strong>
+							: 묶음배송가능<br>(14시 주문마감 > 익일배송)
+						</li>
+						<li>
+							<strong class="tit_info">반품 택배비 : <span class="txt_price">3,300원</span></strong>
+						</li>
+					</ul>
+				</div>
+				<div class="btn_wrap">
+					<button type="button" class="btn_type1">적용</button>
+					<button type="button" class="btn_type2 btn_cancel">취소</button>
+				</div>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- 공급사 변경 팝업 [e] -->
+
+	<!-- 택배사 안내 팝업 [s] -->
+	<div id="popDeliveryInfo" style="display:none">
+		<div class="pop_layer pop_cart">
+			<strong class="tit_popup">택배사 안내</strong>
+			<div class="pop_wrap">
+				<ul class="list_info">
+					<li><strong class="tit_info">업체</strong><span class="txt_info">CJ 대한통운</span></li>
+					<li><strong class="tit_info">배송요일</strong><span class="txt_info">월~토</span></li>
+					<li><strong class="tit_info">전화번호</strong><span class="txt_info">1588-1255</span></li>
+				</ul>
+				<em class="screen_out">유의사항</em>
+				<ul class="list_caution">
+					<li>- 배송 사정에 따라 택배사는 변경될 수 있습니다.</li>
+					<li>- 공휴일/일요일은 휴무입니다.</li>
+				</ul>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- 택배사 안내 팝업 [e] -->
+
+	<!-- 마이너스 잔고 팝업 [s] -->
+	<div id="popMinusAmt" style="display:none">
+		<div class="pop_layer pop_cart">
+			<strong class="tit_popup">대웅제약 마이너스 잔고</strong>
+			<div class="pop_wrap">
+				<ul class="list_info">
+					<li><strong class="tit_info">OTC </strong><span class="txt_info"><span class="txt_num">-117,309</span> 원</span></li>
+					<li><strong class="tit_info">ETC</strong><span class="txt_info"><span class="txt_num">-117,309</span> 원</span></li>
+					<li><strong class="tit_info">우루사</strong><span class="txt_info"><span class="txt_num">-1,028,751</span> 원</span></li>
+				</ul>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- 마이너스 잔고 팝업 [e] -->
+
+	<!-- 최저가 안내 팝업 [s] -->
+	<div id="popLowest" style="display:none">
+		<div class="pop_layer pop_cart">
+			<strong class="tit_popup">최저가 보상</strong>
+			<div class="pop_wrap">
+				<p class="txt_sale"><strong>타의약 쇼핑몰에서</strong> <strong class="emph_color txt_underline">더샵보다 최저가로 판매</strong> 시<br>
+					the SHOP으로 신고해주시면<br>
+					<strong>예치금 또는 부외품 할인쿠폰을 드리는 제도</strong>입니다.
+				</p>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- 최저가 안내 팝업 [e] -->
+
+	<!-- 예약 안내 팝업 [s] -->
+	<div id="popReservation" style="display:none">
+		<div class="pop_layer pop_cart" style="width:560px">
+			<strong class="tit_popup">예약상품</strong>
+			<div class="pop_wrap">
+				<ul class="list_info">
+					<li>등록해두신 <strong>주문 예약 상품은 지정하신 날짜 또는 주기에 자동으로 장바구니</strong>에 담깁니다.</li>
+					<li>예약 상품은 <strong class="emph_color txt_underline">확정 버튼</strong>을 누르셔야 실제 상품금액이 <strong class="emph_color">장바구니에 적용</strong>됩니다.</li>
+					<li>구매 확정을 하지 않으실 경우, <strong>3일 후 자동으로 장바구니에서 사라집니다.</strong></li>
+				</ul>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- 예약 안내 팝업 [e] -->
+
+	<!-- 땡처리 안내 팝업 [s] -->
+	<div id="popZero" style="display:none">
+		<div class="pop_layer pop_cart">
+			<strong class="tit_popup">땡처리상품</strong>
+			<div class="pop_wrap">
+				<p class="txt_sale">
+					<strong class="emph_color txt_underline">땡처리로 판매하는 상품</strong>이며, 해당 코너의 품목은<br>
+					<strong>반품이 불가</strong>하오니 유의하시기 바랍니다.<br>
+					<strong>구매 전 반드시 제품의 유통기한을 확인해주세요.</strong><br>
+					본 코너의 제품은 조기품절 될 수 있습니다.
+				</p>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- 땡처리 안내 팝업 [e] -->
+
+	<!-- 타임세일 팝업 [s] -->
+	<div id="popTimeSale" style="display:none">
+		<div class="pop_layer pop_cart">
+			<strong class="tit_popup">타임세일</strong>
+			<div class="pop_wrap">
+				<p class="txt_sale">타임세일은 <strong>정해진 시간 동안</strong> <strong class="emph_color txt_underline">최저가로</strong><br>판매하며, <strong>진행시간 내에 결제</strong>하셔야<br>해당 가격에 구매 됩니다. 구매를 서두르세요!</p>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- 타임세일 팝업 [e] -->
+
+	<!-- 특가 안내 팝업 [s] -->
+	<div id="popSpecial" style="display:none">
+		<div class="pop_layer pop_cart">
+			<strong class="tit_popup">특가상품</strong>
+			<div class="pop_wrap">
+				<p class="txt_sale">특가상품은 <strong>정해진 기간 동안</strong><br>
+					<strong><span class="emph_color txt_underline">특별한 가격으로 판매</span>하는 상품</strong>입니다.<br>
+					the SHOP에서만 만날 수 있는 할인 혜택을 누려보세요.
+				</p>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- 특가 안내 팝업 [e] -->
+
+	<!-- 공급사 선택보기 팝업 [s] -->
+	<div id="popSupplyChoice" style="display:none">
+		<div class="pop_layer pop_cart" style="width:560px">
+			<strong class="tit_popup">공급사 선택보기</strong>
+			<div class="pop_wrap">
+				<p class="txt_choice">장바구니에서 보고 싶은 공급사만 선택/해제 할 수 있습니다.</p>
+				<table class="tbl_type4">
+					<caption>공급사 선택/해제 안내</caption>
+					<colgroup>
+						<col style="width:135px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">
+								<div class="chk_g chk_all">
+									<input type="checkbox" name="chkAll1" id="chkAll1" class="inp_chk">
+									<label for="chkAll1" class="lab_chk">
+										<span class="ico_comm ico_chkbox"></span>
+										<span class="txt_lab">제약사</span>
+									</label>
+								</div>
+							</th>
+							<td>
+								<div class="chk_g">
+									<input type="checkbox" name="choiceChk" id="choiceChk1_1" class="inp_chk">
+									<label for="choiceChk1_1" class="lab_chk">
+										<span class="ico_comm ico_chkbox"></span>
+										<span class="txt_lab">대웅제약</span>
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<div class="chk_g chk_all">
+									<input type="checkbox" name="chkAll2" id="chkAll2" class="inp_chk">
+									<label for="chkAll2" class="lab_chk">
+										<span class="ico_comm ico_chkbox"></span>
+										<span class="txt_lab">도매상</span>
+									</label>
+								</div>
+							</th>
+							<td>
+								<div class="chk_g">
+									<input type="checkbox" name="choiceChk2" id="choiceChk2_1" class="inp_chk">
+									<label for="choiceChk2_1" class="lab_chk">
+										<span class="ico_comm ico_chkbox"></span>
+										<span class="txt_lab">세화약품</span>
+									</label>
+								</div>
+								<div class="chk_g">
+									<input type="checkbox" name="choiceChk2" id="choiceChk2_2" class="inp_chk">
+									<label for="choiceChk2_2" class="lab_chk">
+										<span class="ico_comm ico_chkbox"></span>
+										<span class="txt_lab">인천약품</span>
+									</label>
+								</div>
+								<div class="chk_g">
+									<input type="checkbox" name="choiceChk2" id="choiceChk2_3" class="inp_chk">
+									<label for="choiceChk2_3" class="lab_chk">
+										<span class="ico_comm ico_chkbox"></span>
+										<span class="txt_lab">지오영</span>
+									</label>
+								</div>
+								<div class="chk_g">
+									<input type="checkbox" name="choiceChk2" id="choiceChk2_4" class="inp_chk">
+									<label for="choiceChk2_4" class="lab_chk">
+										<span class="ico_comm ico_chkbox"></span>
+										<span class="txt_lab">티제이팜</span>
+									</label>
+								</div>
+								<div class="chk_g">
+									<input type="checkbox" name="choiceChk2" id="choiceChk2_5" class="inp_chk">
+									<label for="choiceChk2_5" class="lab_chk">
+										<span class="ico_comm ico_chkbox"></span>
+										<span class="txt_lab">티제이팜</span>
+									</label>
+								</div>
+								<div class="chk_g">
+									<input type="checkbox" name="choiceChk2" id="choiceChk2_6" class="inp_chk">
+									<label for="choiceChk2_6" class="lab_chk">
+										<span class="ico_comm ico_chkbox"></span>
+										<span class="txt_lab">티제이팜</span>
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<div class="chk_g chk_all">
+									<input type="checkbox" name="chkAll3" id="chkAll3" class="inp_chk">
+									<label for="chkAll3" class="lab_chk">
+										<span class="ico_comm ico_chkbox"></span>
+										<span class="txt_lab">부외품 업체</span>
+									</label>
+								</div>
+							</th>
+							<td>
+								<div class="chk_g">
+									<input type="checkbox" name="choiceChk3" id="choiceChk3_1" class="inp_chk">
+									<label for="choiceChk3_1" class="lab_chk">
+										<span class="ico_comm ico_chkbox"></span>
+										<span class="txt_lab">대웅제약</span>
+									</label>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn_wrap">
+					<button type="button" class="btn_type1">적용</button>
+					<button type="button" class="btn_type2 btn_cancel">취소</button>
+				</div>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- 공급사 선택보기 팝업 [e] -->
+
+
+
+
+	<script>
+		$(function () {
+			// 체크리스트 슬라이드
+			$(".chk_list .btn_slide").on("click", function(e){
+				$(this).toggleClass("on");
+				var thisView = $(this).next(".view_slide");
+				if(! thisView.is(':hidden')){
+					thisView.slideUp();
+					$(this).html('<span class="btn_comm"></span>열기');
+				};
+				if(! thisView.is(':visible')){
+					thisView.slideDown();
+					$(this).html('<span class="btn_comm"></span>접기');
+				};
+				e.preventDefault();
+			});
+			// 상품이미지 함께보기
+			$(".prod_data .btn_view2").on("click", function (e) {
+				$(this).toggleClass("on");
+				$(".box_prod .item:first-child").toggleClass("active");
+				e.preventDefault();
+			})
+
+			// 장바구니 정렬순서 안내 레이어
+			$(".cart_sort .btn_tooltip").on("click",function () {
+				$(this).parent().toggleClass("on");
+			});
+			$(document).on("click", function (e) {
+				var sortInfoLayer = $(".cart_sort .layer_tooltip");
+				if(sortInfoLayer.css("display") == "block") {
+					if(!$(".box_tooltip").has(e.target).length) {
+						$(".box_tooltip").removeClass("on")
+					};
+				};
+			});
+			$(".cart_sort .btn_close").on("click",function () {
+				$(".box_tooltip").removeClass("on")
+			});
+			// 수량 조절
+			function prodCtl() {
+				$('.ctl_prod button').on("click", function(){
+					var type = $(this).attr('class');
+					var inpNum = $(this).parent().find('.inp_num');
+					var count_val = inpNum.val(); // min 1
+					if(type=='btn_minus'){
+						if(count_val<=1){
+							return;
+						};
+						inpNum.val(parseInt(count_val)-1);
+					}else if(type=='btn_plus'){
+						inpNum.val(parseInt(count_val)+1);
+					};
+				});
+			}
+			prodCtl();
+			// 체크박스 카테고리 전체선택
+			var AllCheck = $(".prod_chk input[type='checkbox']");
+			AllCheck.change(function () {
+				var checked = $(this).prop("checked");
+				$(".prod_chk input[type='checkbox']").prop("checked", checked);
+				$(".prod_list input[type='checkbox']").prop("checked", checked);
+				$(".prod_list input[type='checkbox']:disabled").prop("checked", false);
+			});
+
+			function prodChk() {
+				// 채크박스 전체선택_제약사
+				var supplyAllChk = $('#supplyAllChk');
+				supplyAllChk.change(function () {
+					var checked = $(this).prop("checked");
+					$("input[name='supplyProdChk']").prop("checked", checked);
+					$("input[name='supplyProdChk']:disabled").prop("checked", false);
+				});
+				var supplyProdChk = $("input[name='supplyProdChk']");
+				supplyProdChk.change(function () {
+					var boxLength = supplyProdChk.length;
+					var checkedLength = $('input[name="supplyProdChk"]:checked').length;
+					var selectAll = (boxLength == checkedLength);
+					supplyAllChk.prop('checked', selectAll);
+				});
+				// 채크박스 전체선택_의약품 도매
+				var medicineAllChk = $('#medicineAllChk');
+				medicineAllChk.change(function () {
+					var checked = $(this).prop("checked");
+					$("input[name='medicineProdChk']").prop("checked", checked);
+					$("input[name='medicineProdChk']:disabled").prop("checked", false);
+				});
+				var medicineProdChk = $("input[name='medicineProdChk']");
+				medicineProdChk.change(function () {
+					var boxLength = medicineProdChk.length;
+					var checkedLength = $('input[name="medicineProdChk"]:checked').length;
+					var selectAll = (boxLength == checkedLength);
+					medicineAllChk.prop('checked', selectAll);
+				});
+				var medicineAllChk2 = $('#medicineAllChk2');
+				medicineAllChk2.change(function () {
+					var checked = $(this).prop("checked");
+					$("input[name='medicineProdChk2']").prop("checked", checked);
+					$("input[name='medicineProdChk2']:disabled").prop("checked", false);
+				});
+				var medicineProdChk2 = $("input[name='medicineProdChk2']");
+				medicineProdChk2.change(function () {
+					var boxLength = medicineProdChk2.length;
+					var checkedLength = $('input[name="medicineProdChk2"]:checked').length;
+					var selectAll = (boxLength == checkedLength);
+					medicineAllChk2.prop('checked', selectAll);
+				});
+				// 채크박스 전체선택_부외품 업체
+				var enterpriseAllChk = $('#enterpriseAllChk');
+				enterpriseAllChk.change(function () {
+					var checked = $(this).prop("checked");
+					$("input[name='enterpriseProdChk']").prop("checked", checked);
+					$("input[name='enterpriseProdChk']:disabled").prop("checked", false);
+				});
+				var enterpriseProdChk = $("input[name='enterpriseProdChk']");
+				enterpriseProdChk.change(function () {
+					var boxLength = enterpriseProdChk.length;
+					var checkedLength = $('input[name="enterpriseProdChk"]:checked').length;
+					var selectAll = (boxLength == checkedLength);
+					enterpriseAllChk.prop('checked', selectAll);
+				});
+				var enterpriseAllChk2 = $('#enterpriseAllChk2');
+				enterpriseAllChk2.change(function () {
+					var checked = $(this).prop("checked");
+					$("input[name='enterpriseProdChk2']").prop("checked", checked);
+					$("input[name='enterpriseProdChk2']:disabled").prop("checked", false);
+				});
+				var enterpriseProdChk2 = $("input[name='enterpriseProdChk2']");
+				enterpriseProdChk2.change(function () {
+					var boxLength = enterpriseProdChk2.length;
+					var checkedLength = $('input[name="enterpriseProdChk2"]:checked').length;
+					var selectAll = (boxLength == checkedLength);
+					enterpriseAllChk2.prop('checked', selectAll);
+				});
+			}
+			prodChk();
+
+			// 예약 확정 버튼
+			$(".cont_cart .btn_reservation").on("click", function () {
+				var check = confirm("예약 상품을 확정 하시겠습니까?");
+				if (check == true) {
+					alert("예약 확정 처리를 완료하였습니다.")
+					$(this).parent().parent().find(".ico_tag2").remove()
+					$(this).parent().html('<button type="button" class="btn_type4 btn_del">삭제</button>')
+				}
+
+			})
+
+			// 장바구니 팝업
+			$("body").on("click", ".cont_cart .btn_noti", function(e) {
+				e.preventDefault();
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popCartNotice"), {
+					closeClass: "btn_close"
+				});
+				// 모달레이어 close 이벤트 추가
+				$("body").on("click", "#popCartNotice .btn_cancel", function() {
+					// modalLayer.close();
+					$(".btn_close").click();
+				});
+			});
+			$("body").on("click", ".cont_cart .btn_myminus", function(e) {
+				e.preventDefault();
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popMinusAmt"), {
+					closeClass: "btn_close"
+				});
+			});
+			$("body").on("click", ".cont_cart .btn_view1", function(e) {
+				e.preventDefault();
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popSupplyChoice"), {
+					closeClass: "btn_close"
+				});
+				// 모달레이어 close 이벤트 추가
+				$("body").on("click", "#popSupplyChoice .btn_cancel", function() {
+					// modalLayer.close();
+					$(".btn_close").click();
+				});
+				var chkAll1 = $('#chkAll1');
+				chkAll1.change(function () {
+					var checked = $(this).prop("checked");
+					$("input[name='choiceChk']").prop("checked", checked);
+					$("input[name='choiceChk']:disabled").prop("checked", false);
+				});
+				var choiceChk = $("input[name='choiceChk']");
+				choiceChk.change(function () {
+					var boxLength = choiceChk.length;
+					var checkedLength = $('input[name="choiceChk"]:checked').length;
+					var selectAll = (boxLength == checkedLength);
+					chkAll1.prop('checked', selectAll);
+				});
+				var chkAll2 = $('#chkAll2');
+				chkAll2.change(function () {
+					var checked = $(this).prop("checked");
+					$("input[name='choiceChk2']").prop("checked", checked);
+					$("input[name='choiceChk2']:disabled").prop("checked", false);
+				});
+				var choiceChk2 = $("input[name='choiceChk2']");
+				choiceChk2.change(function () {
+					var boxLength = choiceChk2.length;
+					var checkedLength = $('input[name="choiceChk2"]:checked').length;
+					var selectAll = (boxLength == checkedLength);
+					chkAll2.prop('checked', selectAll);
+				});
+				var chkAll3 = $('#chkAll3');
+				chkAll3.change(function () {
+					var checked = $(this).prop("checked");
+					$("input[name='choiceChk3']").prop("checked", checked);
+					$("input[name='choiceChk3']:disabled").prop("checked", false);
+				});
+				var choiceChk3 = $("input[name='choiceChk3']");
+				choiceChk3.change(function () {
+					var boxLength = choiceChk3.length;
+					var checkedLength = $('input[name="choiceChk3"]:checked').length;
+					var selectAll = (boxLength == checkedLength);
+					chkAll3.prop('checked', selectAll);
+				});
+			});
+			$("body").on("click", ".cont_cart .btn_supply", function(e) {
+				e.preventDefault();
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popSupplyChange"), {
+					closeClass: "btn_close"
+				});
+				// 모달레이어 close 이벤트 추가
+				$("body").on("click", "#popSupplyChange .btn_cancel", function() {
+					// modalLayer.close();
+					$(".btn_close").click();
+				});
+			});
+			$("body").on("click", ".cont_cart .btn_delivery", function(e) {
+				e.preventDefault();
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popDeliveryInfo"), {
+					closeClass: "btn_close"
+				});
+			});
+			$("body").on("click", ".cont_cart .ico_tag1", function(e) {
+				e.preventDefault();
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popLowest"), {
+					closeClass: "btn_close"
+				});
+			});
+			$("body").on("click", ".cont_cart .ico_tag2", function(e) {
+				e.preventDefault();
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popReservation"), {
+					closeClass: "btn_close"
+				});
+			});
+
+			$("body").on("click", ".cont_cart .ico_tag3", function(e) {
+				e.preventDefault();
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popZero"), {
+					closeClass: "btn_close"
+				});
+			});
+			$("body").on("click", ".cont_cart .ico_tag4", function(e) {
+				e.preventDefault();
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popSpecial"), {
+					closeClass: "btn_close"
+				});
+			});
+			$("body").on("click", ".cont_cart .ico_tag5", function(e) {
+				e.preventDefault();
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popTimeSale"), {
+					closeClass: "btn_close"
+				});
+			});
+			// 리스트 하단 fixed
+			shopUI.scrollCheck($(window).height());
+			var btmHeight = $(".ad_box").height() + $("#footer").height() + 135; // 135 = #content 하단 여백 값
+			$(window).scroll(function() {
+				if ($(window).scrollTop() > ($(document).height() - $(window).height() - btmHeight)) {
+					$("#content .box_result").removeClass("fixed_on");
+				} else {
+					$("#content .box_result").addClass("fixed_on")
+				}
+			});
+			/* 더보기 클릭시 스크롤 체크가 필요한 경우, ajax append 후에 shopUI.scrollCheck($(window).height()); */
+			$(".box_result .btn_toggle").on("click", function () {
+				$(this).parent().toggleClass("fold_on");
+				var thisView = $(this).prev(".inner_result");
+				if(! thisView.is(':hidden')){
+					$(this).html('<span class="btn_comm"></span>접기');
+				};
+				if(! thisView.is(':visible')){
+					$(this).html('<span class="btn_comm"></span>예상금액');
+				};
+			})
+
+		})
+	</script>
+</body>
+</html>

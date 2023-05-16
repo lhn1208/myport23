@@ -1,0 +1,407 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+    <!-- 대웅전용상품 관련 css 추가 -->
+    <link rel="stylesheet" href="../../css/dw_only.css">
+    <!-- membership 전용 css 추가 -->
+	<link rel="stylesheet" href="../../css/themembership.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+    <section id="content" class="membership contract">
+        <!--#include virtual="/publish/shop/renewal/html/membership/_contract_overview.html" -->
+
+        <div class="contract_tabs">
+            <ul class="tab_buttons type_box3">
+                <li><a href="contract.html"><h2>상품 모아보기</h2></a></li>
+                <li class="active"><a href="contract_manage.html"><h2>약정 관리</h2></a></li>
+                <li><a href="contract_return.html"><h2>낱알반품</h2></a></li>
+            </ul>
+        </div>
+        
+        <div class="tab_box">
+            <!-- sub tabs -->
+            <ul class="tab_buttons type_sub">
+                <li class="active"><a href="#contractStatus">약정 현황</a></li>
+                <li><a href="#contractChange">약정 신청/변경</a></li>
+                <li><a href="#retract">약정 철회</a></li>
+            </ul>
+            <ul class="tab_contents expanded">
+                <li class="active" id="contractStatus">
+                    <h3 class="title">약정 현황</h3>
+                    <div class="bg_box">
+                        <h4 class="title">MY 약정 현황</h4>
+                        <!--2022-12-27 내용 수정-->
+                        <table class="simple">
+                            <thead class="colored">
+                                <tr>
+                                    <th scope="row">업체명</th>
+                                    <th scope="row">월 목표금액</th>
+                                    <th scope="row">월 최종결제금액</th>
+                                    <th scope="row">월 주문부족금액</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="center"><strong>복산나이스팜(서울)</strong><br><em>갱신 예정일 : YYYY.mm.01</em></td>
+                                    <td class="number">12,126,000<span class="ico ico_minus"></span></td>
+                                    <td class="number">12,126,000<span class="ico ico_equal"></span></td>
+                                    <td class="number em">12,126,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--//2022-12-27 내용 수정-->
+                        <ul class="dotted">
+                            <li>월 최종결제금액은 주거래 도매 총 매출입니다.</li>
+                            <li>혜택은 가장 최근 수정된 약정 내용을 기반으로 제공됩니다. </li>
+                            <li>약정 기간은 매월 1일 자동 갱신됩니다.</li>
+                            <li>약정 내용은 직접 수정 및 철회 가능합니다. </li>
+                        </ul>
+                        <h4 class="title">약정 금액별 혜택 안내</h4>
+                        <table class="simple">
+                            <thead>
+                                <tr>
+                                    <th scope="row">&nbsp;</th>
+                                    <th scope="row">공통 혜택</th>
+                                    <th scope="row">약정 시 혜택</th>
+                                    <th scope="row">약정 달성 혜택</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="number">월 2,500만원</td>
+                                    <td class="text" rowspan="4">
+                                        <ul class="hyphen">
+                                            <li>ETC급여 품목 매출의 1% 낱알반품 포인트 적립</li>
+                                            <li>비급여 전문의약품, 일반의약품<br>최저가 보상</li>
+                                        </ul>
+                                    </td>
+                                    <td class="text" rowspan="3">약정 달성 여부 상관없이!!<br>전 품목 최소주문 금액 없는<br>무료배송, 무료반품</td>
+                                    <td class="center">설문조사 월 1회<br>(마일리지 월 5만점 적립)</td>
+                                </tr>
+                                <tr>
+                                    <td class="number">월 1,500만원</td>
+                                    <td class="center">설문조사 월 1회<br>(마일리지 월 3만점 적립)</td>
+                                </tr>
+                                <tr>
+                                    <td class="number">월 1,000만원</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="number">월 500만원</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--2022-12-27 내용 수정-->
+                        <ul class="reference_mark small">
+                            <li>낱알반품 포인트 적립 혜택 안내: <br>
+                                - 적립 조건 : 전월 주거래 도매상 총 주문 금액 500만원 이상 (약정 금액과 상관 없음) <br>
+                                - 적립 금액 : 적립 조건 충족 시, 전월 주거래 도매상 ETC급여 품목 주문금액 기준 1% 적립 
+                            </li>
+                            <li>낱알반품 포인트는 주거래 도매상에만 사용 가능합니다.</li>
+                            <li>최저가 보상 혜택 안내 : 
+                                <br>    - 대상회원 : 당월 주거래 도매상 총 주문금액 500만원 이상 처 (약정금액과 상관 없음) 
+                                <br>        - 보상적용품목 : 당월 주거래 도매에서 구매후 발송완료된 일반의약품, 비급여 처방의약품 일체
+                                <br>        - 보상조건 : 구매 당일 더샵 내 최저가보다 비쌀 경우, 당월 발송 완료건에 대해 차액 보상 
+                                <br>        - 최저가 보상 방식 : 당월 보상액을 합산하여 익월 7영업일 내에 예치금으로 일괄적립 
+                                <br>*최저가 보상제도는 약정 이후 주문건에 한해 적용됩니다. 
+                                <br> *약정 철회 또는 주거래 도매 변경의 경우, 이전 도매에 누적된 최저가 보상 차액은 초기화 됩니다.
+                            </li>
+                            <li>무료 배송 및 무료 반품 혜택 안내 :
+                                <br>    - 대상회원 : 당월 주거래 도매 약정금액 1,000만원 이상 처
+                                <br>        - 혜택적용 : 1,000만원 이상 약정 시 해당 도매업체 주문 건에 한해 무료 배송 및 무료 반품
+                                <br>* 반품 시 반품사유를 ‘약정혜택‘으로 선택, 메모에 간단한 반품사유를 적어야 무료 반품 혜택이 적용됩니다.
+                            </li>
+                        </ul>
+                        <!--//2022-12-27 내용 수정-->
+                    </div>
+                </li>
+                <li id="contractChange">
+                    <h3 class="title">주거래 도매 약정 신청/변경</h3>
+                    <div class="bg_box">
+                        <form action="">
+                            <table class="form_type">
+                                <colgroup>
+                                    <col style="width:135px">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" class="required">주거래 도매</th>
+                                        <td>
+                                            <select name="" style="width:235px;">
+                                                <option value="">선택하기</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="required">약정금액</th>
+                                        <td>
+                                            <select name="" style="width:235px;">
+                                                <option value="">1,000만원</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">약정 시 혜택</th>
+                                        <td>
+                                            <p>[약정 시 혜택] 은 회원의 약정금액 선택에 따라 <br>최대 텍스트 3줄까지 화면에 표시되어야 해서 약정금액 / 약정시작일 사이에 좀 더 <br>충분한 공간이 있어야 할 것 같습니다.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">약정 시작일</th>
+                                        <td class="number">2021.10.01</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">약정 종료일</th>
+                                        <td>
+                                            <span class="number">2021.10.31</span><br>
+                                            <ul class="reference_mark small">
+                                                <li>약정 종료일은 해당 월 말일로 자동 설정됩니다. (직접 수정 불가)</li>
+                                                <li>약정 내용을 직접 수정/철회하지 않는 경우 약정은 매월 1일 자동 연장 됩니다.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="required">이용약관</th>
+                                        <td>
+                                            <label class="field">
+                                                <input type="checkbox" name="" id=""> 이용약관 동의하기
+                                            </label>
+                                            <div class="overflow_box">
+                                                <div class="agreement">
+                                                    <p>&lt;이용약관&gt;</p>
+                                                    <p>약정 취소 시 기존 잔여 혜택은 모두 소멸됨을 명시 등등<br>..<br>해당 부분은 8월말 계약서 픽스이후 상세 내용 보강 예정입니다. </p>
+                                                    <p>국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나 대통령령의 위임 또는 직권으로 총리령 또는 부령을 발할 수 있다.</p>
+                                                    <p>근로자는 근로조건의 향상을 위하여 자주적인 단결권·단체교섭권 및 단체행동권을 가진다. 사면·감형 및 복권에 관한 사항은 법률로 정한다. 군인은 현역을 면한 후가 아니면 국무총리로 임명될 수 없다. 국무총리는 국회의 동의를 얻어 대통령이 임명한다.</p>
+                                                    <p>대통령은 필요하다고 인정할 때에는 외교·국방·통일 기타 국가안위에 관한 중요정책을 국민투표에 붙일 수 있다.</p>
+                                                    <p>사면·감형 및 복권에 관한 사항은 법률로 정한다. 군인은 현역을 면한 후가 아니면 국무총리로 임명될 수 없다. 국무총리는 국회의 동의를 얻어 대통령이 임명한다. 법관이 중대한 심신상의 장해로 직무를 수행할 수 없을 때에는 법률이 정하는 바에 의하여 퇴직하게 할 수 있다. 광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="btn_wrap">
+                                <button type="submit" class="submit"><strong>등록</strong></button>
+                            </div>
+                        </form>
+                        <div class="description">
+                            <div class="flex_box">
+                                <p><em><strong>!. 꼭 읽어주세요</strong></em></p>
+                                <ul class="hyphen small">
+                                    <li>혜택은 가장 최근 등록된 약정 내용을 기반으로 제공됩니다.  </li>
+                                    <li>주거래 도매는 월 1회에 한해 변경할 수 있습니다. </li>
+                                    <li>다음과 같은 경우, 주거래 도매 매출 달성분과 혜택이 초기화되며, 복구되지 않습니다. <br>① The멤버십 등급 하락으로 서비스 이용이 불가한 경우<br>② 주거래 도매를 변경한 경우</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contract_history">
+                            <h4 class="title">최근 약정 내역</h4>
+                            <p>현재 시점 기준 3개월 이전까지의 이력만 조회됩니다. <em>(약정 변경일 기준)</em></p>
+                            <table class="merge_type">
+                                <colgroup>
+                                    <col style="width:200px;">
+                                    <col>
+                                    <col>
+                                    <col style="width:230px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>구분</th>
+                                        <th>주거래도매</th>
+                                        <th>약정 금액</th>
+                                        <th class="left">약정 변경일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>자동갱신</td>
+                                        <td>복산나이스팜 (서울)</td>
+                                        <td>2,500만원</td>
+                                        <td class="left">2021.08.30 <span class="badge">이용중</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>수정</td>
+                                        <td>복산나이스팜 (서울)</td>
+                                        <td>2,500만원</td>
+                                        <td class="left">2021.08.30 <span class="badge">이용중</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>자동갱신</td>
+                                        <td>복산나이스팜 (서울)</td>
+                                        <td>1,000만원</td>
+                                        <td class="left">2021.08.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>신규 등록</td>
+                                        <td>복산나이스팜 (서울)</td>
+                                        <td>1,500만원</td>
+                                        <td class="left">2021.08.30</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="paging_nav">
+                                <a href="#none" class="btn_prev">이전</a>
+                                <a href="#none">1</a>
+                                <a href="#none">2</a>
+                                <span>3</span>
+                                <a href="#none">4</a>
+                                <a href="#none">5</a>
+                                <a href="#none">6</a>
+                                <a href="#none">7</a>
+                                <a href="#none">8</a>
+                                <a href="#none">9</a>
+                                <a href="#none">10</a>
+                                <a href="#none" class="btn_next">다음</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="retract">
+                    <h3 class="title">약정 철회</h3>
+                    <div class="bg_box">
+                        <h4 class="title">MY 약정 현황</h4>
+                        <table class="simple">
+                            <colgroup>
+                                <col style="width:145px;">
+                                <col style="width:145px;">
+                                <col style="width:85px;">
+                                <col style="width:85px;">
+                                <col>
+                                <col style="width:108px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="row">업체명</th>
+                                    <th scope="row">약정금액</th>
+                                    <th scope="row">약정 시작일</th>
+                                    <th scope="row">약정 종료일</th>
+                                    <th scope="row">약정혜택</th>
+                                    <th scope="row"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="center">복산나이스팜(서울)</td>
+                                    <td class="number">25,000,000</td>
+                                    <td class="center">2021.11.17</td>
+                                    <td class="center">2021.11.30</td>
+                                    <td class="text">
+                                        <ul class="hyphen">
+                                            <li>ETC급여 품목 매출의 1% 낱알반품 <br>(5년 이내 사입 근거가 있는 품목)</li>
+                                            <li>전 제품 무료 배송 및 무료 반품</li>
+                                            <li>2,500만원 달성 시 5만 마일리지 지급</li>
+                                        </ul>
+                                    </td>
+                                    <td class="center">
+                                        <a href="#" class="btn_simple brown retract">철회하기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="center">복산나이스팜(서울)</td>
+                                    <td class="number">25,000,000</td>
+                                    <td class="center">2021.11.17</td>
+                                    <td class="center">2021.11.30</td>
+                                    <td class="text">
+                                        <ul class="hyphen">
+                                            <li>ETC급여 품목 매출의 1% 낱알반품 <br>(5년 이내 사입 근거가 있는 품목)</li>
+                                            <li>전 제품 무료 배송 및 무료 반품</li>
+                                            <li>2,500만원 달성 시 5만 마일리지 지급</li>
+                                        </ul>
+                                    </td>
+                                    <td class="center">
+                                        <a href="#" class="btn_simple brown retract">철회하기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="center">복산나이스팜(서울)</td>
+                                    <td class="number">25,000,000</td>
+                                    <td class="center">2021.11.17</td>
+                                    <td class="center">2021.11.30</td>
+                                    <td class="text">
+                                        <ul class="hyphen">
+                                            <li>ETC급여 품목 매출의 1% 낱알반품 <br>(5년 이내 사입 근거가 있는 품목)</li>
+                                            <li>전 제품 무료 배송 및 무료 반품</li>
+                                            <li>2,500만원 달성 시 5만 마일리지 지급</li>
+                                        </ul>
+                                    </td>
+                                    <td class="center">
+                                        <a href="#" class="btn_simple brown retract">철회하기</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><em><strong>! 꼭 읽어주세요</strong></em></p>
+                        <ul class="dotted small">
+                            <li>약청 철회 시 낱알반품 한도 등 잔여 혜택은 모두 즉시 소멸되며, 복원되지 않습니다.</li>
+                            <li>약정 철회는 취소가 불가능합니다. </li>
+                            <li>약정 철회 이후 동일 공급사에 재약정 하셔도 기존 혜택 복원은 불가합니다. </li>
+                            <li>약정 철회 후에도 지난 낱알반품 신청 이력은 확인하실 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+		<!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+
+        <script>
+            // 2021-09-07 수정
+            $('.accordion_box').on({
+                click:function(e){
+                    if($(e.delegateTarget).is('li')){
+                        $(e.delegateTarget).siblings().find('.accordion_body').removeAttr('style');
+                        $(e.delegateTarget).siblings().find('.accordion_header').attr('aria-expanded',false);
+
+                        var currentTop = $(e.currentTarget).offset().top,
+                            scrollTop = $('html, body').scrollTop();
+                        if(currentTop < scrollTop) {
+                            $('html, body').animate({
+                                scrollTop: currentTop - 38
+                            });
+                        };
+                    }
+                    
+                    $(e.currentTarget).next().slideToggle(function(){
+                        $(e.currentTarget).attr('aria-expanded',function(i, a){
+                            return a == 'true' ? false : true;
+                        });
+                    });
+                }
+            }, 'button.accordion_header');
+
+            $('.tab_box').on({
+                click:function(e){
+                    e.preventDefault();
+                    $(e.currentTarget).closest('li').addClass('active').siblings().removeClass('active');
+                    if($(e.currentTarget.hash).length > 0) {
+                        $(e.currentTarget.hash).addClass('active').siblings().removeClass('active');
+                    }
+                }
+            }, '.tab_buttons a');
+
+        </script>
+	</section>
+    <!--#include virtual="/publish/shop/renewal/html/membership/_contract_popup.html" -->
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+</body>
+</html>

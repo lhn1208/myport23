@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>리멤버드 리스트</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<style>
+		body{font-family: "Malgun Gothic","맑은 고딕","돋움","Dotum","sans-serif";}
+		*{margin:0; padding:0;}
+		.header{padding:20px 0; background:#e6e6e6;}
+		.header h1{margin-left: 15px; font-size: 20px; line-height: 20px; color: #000;}
+		.guid_board .tit{margin: 25px 0 10px 15px; color:#111; font-size: 18px;}
+		.table_box{margin:0 15px;}
+		.table_box .tb{margin:7px 0 30px; }
+		.tb{width: 100%; font-size: 14px; border-top:2px solid #333; border-spacing: 0; border-collapse: collapse;}
+		.tb th{padding:  10px; background-color: #f0f0f0; text-align: center; border-bottom: 1px solid #aaa; border-left:1px solid #aaa;}
+		.tb th:first-child{border-left: none;}
+		.tb tr:frist-child td{border-top:0;}
+		.tb td:first-child{border-left:none;}
+		.tb td{padding:10px; border-top: 1px solid #aaa; border-left:1px solid #aaa; border-bottom:1px solid #aaa;}
+		.tb .url a:hover{text-decoration: underline;}
+		.tb .demo_btn{color:#ed4949; text-decoration: none;}
+		.tb .demo_btn:hover {text-decoration: underline;}
+		.skill_btn{padding:8px; color: #ed4949; border-radius: 30px; border: 1px solid #ed4949; background-color: #fff; cursor: pointer;}
+		.skill_btn:hover{transition: all .5s; background-color: #ed4949; color: #fff;}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<h1>리멤버드 PC, 모바일 반응형</h1>
+	</header>
+	<div class="guid_board">
+		<h2 class="tit">작업목록</h2>
+		<div class="table_box">
+			<table class="tb">
+				<colgroup>
+					<col width="12%">
+					<col width="12%">
+					<col width="12%">
+					<col width="*">
+					<col width="20%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>1depth</th>
+						<th>2depth</th>
+						<th>3depth</th>
+						<th>url</th>
+						<th>비고</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>메인</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="main.html" target="_blank">main.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>회원관리</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="user_manage.html" target="_blank">user_manage.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>검색결과</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="all_search.html" target="_blank">all_search.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>약관</td>
+						<td>개인정보처리방침</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="terms1.html" target="_blank">terms1.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>이용약관</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="terms2.html" target="_blank">terms2.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>[팝업]개인정보처리방침</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="pop_terms1.html" target="_blank">pop_terms1.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>[팝업]이용약관</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="pop_terms2.html" target="_blank">pop_terms2.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>[팝업] 공통</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="pop_base.html" target="_blank">pop_base.html</a></td>
+						<td>요청 팝업</td>
+					</tr>
+					<tr>
+						<td>부고</td>
+						<td>부고 등록</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="obi_register.html" target="_blank">obi_register.html</a></td>
+						<td>22.03.04 html 태그 여러개 추가</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>[팝업] 가이드</td>
+						<td class="url"><a href="guide_pop_obi_register.html" target="_blank">guide_pop_obi_register.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>[팝업] 추도사 샘플 보기</td>
+						<td class="url"><a href="pop_memorial_sample.html" target="_blank">pop_memorial_sample.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>[팝업] 조문보샘플</td>
+						<td class="url"><a href="pop_sample.html" target="_blank">pop_sample.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>[팝업] 템플릿</td>
+						<td class="url"><a href="pop_templet.html" target="_blank">pop_templet.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>[팝업] 장례식장 검색</td>
+						<td class="url"><a href="pop_address.html" target="_blank">pop_address.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>부고상세</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="obi_content.html" target="_blank">obi_content.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>&nbsp;</td>
+						<td>[팝업] 미디어보기</td>
+						<td class="url"><a href="pop_media.html" target="_blank">pop_media.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>&nbsp;</td>
+						<td>[팝업] 부고전송</td>
+						<td class="url"><a href="pop_message.html" target="_blank">pop_message.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>[팝업] 조의금보내기</td>
+						<td class="url"><a href="pop_transfer.html" target="_blank">pop_transfer.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>[팝업] 추모글 삭제</td>
+						<td class="url"><a href="pop_memorial_del.html" target="_blank">pop_memorial_del.html</a></td>
+						<td>&nbsp;</td>
+					</tr>	
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>[팝업] 문자로 계좌받기</td>
+						<td class="url"><a href="pop_sms_account.html" target="_blank">pop_sms_account.html</a></td>
+						<td>&nbsp;</td>
+					</tr>				
+					<tr>
+						<td>&nbsp;</td>
+						<td>디지털화한</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="digital_wreath.html" target="_blank">digital_wreath.html</a></td>
+						<td>&nbsp;</td>
+					</tr>	
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>[팝업] 디지털화환 선택</td>
+						<td class="url"><a href="pop_wreath.html" target="_blank">pop_wreath.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>[팝업] 결제확인</td>
+						<td class="url"><a href="pop_pay_check.html" target="_blank">pop_pay_check.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>부고 조회</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="obi_inquiry.html" target="_blank">obi_inquiry.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>추모관</td>
+						<td>추모관 등록</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="memorial_register.html" target="_blank">memorial_register.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>추모관 조회</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="memorial_inquiry.html" target="_blank">memorial_inquiry.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>추모관 상세</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="memorial_content.html" target="_blank">memorial_content.html</a></td>
+						<td>10.11라인 grid.js추가</td>
+					</tr>
+					<tr>
+						<td>서비스 소개</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="service.html" target="_blank">service.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>프리미엄 서비스</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="premium_service.html" target="_blank">premium_service.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>마이페이지</td>
+						<td>회원설정</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="mypage_member.html" target="_blank">mypage_member.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>FAQ</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="faq.html" target="_blank">faq.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>부고</td>
+						<td>&nbsp;</td>
+						<td class="url"><a href="mypage.html" target="_blank">mypage.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>[팝업] 감사 인사 전송</td>
+						<td class="url"><a href="pop_greeting.html" target="_blank">pop_greeting.html</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>로그인</td>
+						<td>&nbsp;</td>
+						<td>[팝업] 로그인</td>
+						<td class="url"><a href="pop_login.html" target="_blank">pop_login.html</a></td>
+						<td>&nbsp;</td>
+					</tr> 
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

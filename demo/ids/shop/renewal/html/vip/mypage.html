@@ -1,0 +1,197 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+    <link rel="stylesheet" href="../../css/layout_vip.css">
+    <link rel="stylesheet" href="../../css/vip.css">
+</head>
+<body class="layout_vip"><!-- vip전용관인 경우 클래스 layout_vip부여  -->
+    <nav id="Index">
+        <a href="#content">본문 바로가기</a>
+        <a href="#header">주메뉴 바로가기</a>
+        <a href="#footer">사이트 정보 바로가기</a>
+    </nav>
+    <!-- header [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/header_vip.html" -->
+    <!-- header [e] -->
+
+    <!-- container [s] -->
+    <section id="container">
+        <div id="content" class="cont_mypage">
+            <div class="sub_cont_head">
+                <h2 class="sub_tit">마이페이지</h2>
+                <p class="sub_txt">주문 및 할인정보를 확인하세요.</p>
+                <a href="#none" class="btn_coupon">부외품 할인쿠폰 전환 &gt;</a><!-- 2019-05-29 추가 -->
+            </div>
+            <div class="wrap_tbl_type6"><!-- 2018-12-27 wrap_tbl 추가로 감싸줌 -->
+                <table class="tbl_type6 tbl_order">
+                <caption>주문정보 안내</caption>
+                <colgroup>
+                    <col style="width:25%">
+                    <col style="width:25%">
+                    <col style="width:25%">
+                    <col style="width:25%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">업체명</th>
+                        <th scope="col">목표금액</th>
+                        <th scope="col">최종결제금액</th>
+                        <th scope="col">주문부족금액</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="txt_bold">보덕메디팜</td>
+                        <td class="txt_price"><strong class="txt_num">5,000,000</strong>원<span class="ico_comm ico_minus">-</span></td>
+                        <td class="txt_price"><strong class="txt_num">2,000,000</strong>원<span class="ico_comm ico_equals">=</span></td>
+                        <td class="txt_price"><strong class="txt_num emph_color">3,000,000</strong>원</td>
+                    </tr>
+                    <tr>
+                        <td class="txt_bold">이팜</td>
+                        <td class="txt_price"><strong class="txt_num">5,000,000</strong>원<span class="ico_comm ico_minus">-</span></td>
+                        <td class="txt_price"><strong class="txt_num">2,000,000</strong>원<span class="ico_comm ico_equals">=</span></td>
+                        <td class="txt_price"><strong class="txt_num emph_color">3,000,000</strong>원</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <p class="txt_caution"><span class="emph_color">*</span> 의약품 업체의 최종결제금액은 협력도매의 ETC급여 매출 기준으로 합산됩니다.</p><!-- 2019-01-25 추가 -->
+            <div class="sub_cont_head">
+                <h3 class="sstit">나의 혜택 확인</h3>
+            </div>
+            <ul class="list_benefit">
+                <li>
+                    <strong class="tit_benefit">전월<br>할인혜택</strong>
+                    <div class="txt_price"><strong class="txt_num emph_color">2,000,000</strong>원</div>
+                </li>
+                <li>
+                    <div class="info_price">
+                        <strong class="tit_info">예치금</strong>
+                        <span class="txt_price"><strong class="txt_num">2,000,000</strong>원</span>
+                    </div>
+                    <span class="ico_vip ico_cash"></span>
+                </li>
+                <li>
+                    <div class="info_price">
+                        <strong class="tit_info">마일리지</strong>
+                        <span class="txt_price"><strong class="txt_num">999,000</strong>원</span>
+                    </div>
+                    <span class="ico_vip ico_mileage"></span>
+                </li>
+            </ul>
+            <div class="sub_cont_head">
+                <h3 class="sstit">할인 내역</h3>
+                <p class="sub_desc"><span class="emph_color">*</span> 할인 내역은 부외품 마일리지/낱알반품 처리/주문할인으로 구분되며, 주문할인 금액은 주문시점에서의 협력도매 판매가 대비 최저가 연동 금액과의 차액 또는  VC특가 할인 금액이 표기됩니다. (비용할인 1.8% 포함)</p>
+            </div>
+            <table class="tbl_type1 tbl_history tbl_hover">
+                <caption>할인내역 안내</caption>
+                <colgroup>
+                    <col style="width:20%">
+                    <col>
+                    <col style="width:20%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">구분</th>
+                        <th scope="col">내용</th>
+                        <th scope="col">할인금액</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="txt_bold">의약품 주문</td>
+                        <td class="txt_left"><span class="txt_num">(RT2018040445982)</span> <span class="txt_bold">주문 할인</span></td>
+                        <td class="txt_bold"><span class="emph_color"><span class="txt_num">-2,000</span>원</span></td>
+                    </tr>
+                    <tr>
+                        <td class="txt_bold">부외품 주문</td>
+                        <td class="txt_left"><span class="txt_num">(RT2018040445982)</span> <span class="txt_bold">주문 할인/마일리지 사용</span></td>
+                        <td class="txt_bold"><span class="emph_color"><span class="txt_num">-25,521</span>원</span></td>
+                    </tr>
+                    <tr>
+                        <td class="txt_bold">낱알 반품</td>
+                        <td class="txt_left"><span class="txt_num">(RT2018040445982)</span> <span class="txt_bold">낱알 반품 처리</span></td>
+                        <td class="txt_bold"><span class="emph_color"><span class="txt_num">-999,521</span>원</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 예상 마일리지 적립액 2018-12-27 추가 시작  -->
+            <div class="sub_cont_head">
+                <h3 class="sstit">예상 마일리지 적립액</h3>
+                <p class="sub_desc"><span class="emph_color">*</span> 마일리지 적립일은 매월 1일입니다.(최종결제금액 100만원 미만 시 적립 불가) 잔여 마일리지는 매년 1월 1일 초기화 됩니다.</p>
+            </div>
+            <div class="wrap_tbl_type6"><!-- 2018-12-27 wrap_tbl 추가로 감싸줌 -->
+                <table class="tbl_type6 tbl_mileage">
+                <caption>업체명, 최종결제금액, 반품금액, 적용률, 예상적립액 안내</caption>
+                <colgroup>
+                    <col style="width:20%">
+                    <col style="width:20%">
+                    <col style="width:20%">
+                    <col style="width:20%">
+                    <col style="width:20%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th scope="col">업체명</th>
+                    <th scope="col">최종결제금액</th>
+                    <th scope="col">반품금액</th>
+                    <th scope="col">적용 %</th>
+                    <th scope="col">예상적립액</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="txt_bold">엠서클_테스트(부외)</td>
+                        <td class="txt_price"><strong class="txt_num">5,000,000</strong>원<span class="ico_comm ico_minus">-</span></td>
+                        <td class="txt_price"><strong class="txt_num">2,000,000</strong>원<span class="ico_comm ico_multiply">×</span></td>
+                        <td class="txt_price"><strong class="txt_num">0</strong>%<span class="ico_comm ico_equals">=</span></td>
+                        <td class="txt_price"><strong class="txt_num emph_color">0</strong>원</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <!-- 예상 마일리지 적립액 2018-12-27 추가 끝  -->
+        </div>
+        <!-- 우측 퀵메뉴[s] -->
+        <!--#include virtual="/publish/shop/renewal/html/include/quick_menu_vip.html" -->
+        <!-- 우측 퀵메뉴[e] -->
+    </section>
+    <!-- container [e] -->
+
+    <!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+    <!-- footer [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+    <!-- footer [e] -->
+
+	<!-- 2021-02-01 팝업 추가 [s] -->
+	<div class="pop_main pop_main_rolling" id="popMainRolling" style="width:350px;left:calc(50% - 175px);top:280px;">
+		<div class="pop_wrap">
+			<a href="#"><img src="../../images/temp/pop_vip.jpg" alt="원데이특가" /></a>
+		</div>
+		<div class="chk_today_box">
+			<input type="checkbox" id="chk_today">
+			<label for="chk_today">오늘 하루 이 창을 다시 열지 않음</label>
+		</div>
+		<button type="button" class="btn_comm btn_close">닫기</button>
+	</div>
+	<!-- 2021-02-01 팝업 추가 [e] -->
+
+<script>
+    function copy(obj) {
+        var copy = Object.create(Object.getPrototypeOf(obj));
+        var propNames = Object.getOwnPropertyNames(obj);
+
+        propNames.forEach(function(name) {
+            var desc = Object.getOwnPropertyDescriptor(obj, name);
+            Object.defineProperty(copy, name, desc);
+        });
+
+        return copy;
+    }
+
+    var obj1 = { a: 1, b: 2 };
+    var obj2 = copy(obj1); // obj2는 이제 obj1처럼 보임
+    console.log(obj1)
+    console.log(obj2)
+</script>
+</body>
+</html>

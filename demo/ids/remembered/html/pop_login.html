@@ -1,0 +1,114 @@
+     <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리멤버드</title>
+    <script src="../js/jquery-3.6.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<style>
+   
+</style>
+<!--layer pop활성화시 body에 fixed 클래스 추가-->
+<body class="fixed">
+     <!--layer_pop-->
+     <div class="dim"></div>
+     <div class="layer_pop pop_login">
+         <div class="pop_inner">
+             <!--팝업헤더--> <!--<div class="pop_header"><h2 class="top_title">조문보 템플릿 선택</h2><a href="#" class="close">닫기</a></div>-->
+             <div class="layer_cont_wrap">
+                 <div class="layer_cont">
+                     <div class="layer_cont_inner">
+                        <!--팝업 내용[S]-->
+                            <div class="remember_login">
+                                <h2 class="title">Login</h2>
+                                <div class="sub_title">
+                                    사랑하는 고인의 가족, 친지분들에게
+                                    <br>부고를 알리며 온라인 장례를 통해
+                                    <br>조문을 하실 수 있습니다
+                                </div>
+                                <div class="login_form">
+                                    <form>
+                                        <fieldset>
+                                            <legend>로그인</legend>
+                                            <ul>
+                                                <li>
+                                                    <label for="email">
+                                                        <input type="text" class="login_input" id="email" placeholder="이메일주소">
+                                                    </label>
+                                                </li>
+                                                <li class="mar_type">
+                                                    <label for="password">
+                                                        <input type="password" class="login_input" id="password" placeholder="비밀번호">
+                                                    </label>
+                                                    <div class="check_item">
+                                                        <input type="checkbox" name="" class="check" id="id_chk">
+                                                        <label for="id_chk">아이디 저장</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="password_chk">
+                                                        <input type="password" class="login_input" id="password_chk" placeholder="비밀번호 확인">
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="login_name">
+                                                        <input type="text" class="login_input" id="login_name" placeholder="이름">
+                                                    </label>
+                                                </li>
+                                                <li class="mar_type certi">
+                                                    <label for="ph_num">
+                                                        <input type="text" class="login_input" id="ph_num" placeholder="휴대폰 번호">
+                                                    </label>
+                                                    <button class="button">인증번호 발송</button>
+                                                </li>
+                                                <li class="certi mar_type">
+                                                    <label for="certi_num">
+                                                        <input type="text" class="login_input" id="certi_num" placeholder="인증번호 입력">
+                                                    </label>
+                                                    <button class="button">인증코드 확인</button>
+                                                </li>
+                                            </ul>
+                                            <div class="term_chk">
+                                                <div class="check_item">
+                                                    <input type="checkbox" name="" class="check" id="term_chk1">
+                                                    <label for="term_chk1">개인정보처리방침</label>
+                                                    <a href="#" class="link">보기</a>
+                                                </div>
+                                                <div class="check_item">
+                                                    <input type="checkbox" name="" class="check" id="term_chk2">
+                                                    <label for="term_chk2">이용약관</label>
+                                                    <a href="#" class="link">보기</a>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="login_btn">
+                                    <a href="#" class="login">로그인</a>
+                                    <a href="#" class="login">가입하기</a>
+                                    <a href="#" class="kakao"><i class="ico">카카오 아이콘</i>카카오 간편로그인</a>
+                                    <a href="#" class="naver"><i class="ico">네이버 아이콘</i>네이버 간편로그인</a>
+                                </div>
+                                <div class="member_link">
+                                    <a href="#">회원가입</a>
+                                    <a href="#">아이디 찾기</a>
+                                    <a href="#">비밀번호 찾기</a>
+                                </div>
+                                <a href="#" class="close">닫기</a>
+                            </div>
+                        <!--팝업내용[E]-->
+                    </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!--//layer_pop-->
+</body>
+</html>

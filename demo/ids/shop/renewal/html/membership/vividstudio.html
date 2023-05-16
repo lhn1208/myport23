@@ -1,0 +1,308 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+    <!-- membership 전용 css 추가 -->
+	<link rel="stylesheet" href="../../css/themembership.css">
+    <script>
+         $(document).ready(function () {
+             var vividLayer=$('.vivid_layer');
+            $('.member_btn').click(function(){
+                vividLayer.addClass('on');
+                $('body').css('overflow','hidden');
+            })
+            vividLayer.find('.close').click(function(){
+                vividLayer.removeClass('on');
+                $('body').removeAttr('style');
+            })
+         });
+    </script>
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+    <!-- 2022-04-05 비비드 스튜디오 수정 -->
+    <div class="vivid_layer">
+        <div class="layer_inenr">
+            <button class="close">닫기</button>
+            <img src="../../images/membership/layer_vivid.jpg">
+        </div>
+    </div>
+    <section id="content" class="membership vividstudio">
+        <div class="top_overview">
+            <div class="accordion_box">
+                <button type="button" class="accordion_header" aria-expanded="true">
+                    <span class="ico_membership ico_vivid"></span>
+                    The 멤버십 고객을 위한 <strong>비비드 스튜디오</strong>
+                    <span class="ico_anchor"></span>
+                </button>
+                <!-- 2022-07-13 클래스명 변경 main_type,vivid -->
+                <div class="accordion_body main_type vivid">
+                   <h2 class="top_title">바야흐로 지금은 
+                    <br>영상 콘텐츠의 시대!</h2>
+                    <p class="sub_title">비비드 스튜디오에서 손쉽게 도전해보세요.</p>
+                    <p class="intro">
+                        스튜디오, 장비 모두 갖춘 비비드 스튜디오에서 
+                        <br>약사 Vlog, 건강 컨텐츠 등 YouTube 영상 제작을 도전하거나, 
+                        <br>약국 홍보 동영상을 합리적인 가격으로 찍어보세요! 
+                    </p>
+                    <button class="member_btn">홈페이지 바로가기</button>
+                </div>
+            </div>
+        </div>
+        <div class="document">
+            <h2 class="title"><strong>비비드 스튜디오를 소개합니다. </strong></h2>
+            <ol class="intro_list">
+                <li class="box">
+                    <h2 class="title"><strong>1.위치 : 서울시 강남구 논현로 729, 4층</strong></h2>
+                    <p>학동역 7번 출구 직진방향 도보 6분에 한국도자기를 찾으시면 됩니다!</p>
+                </li>
+                <li class="box">
+                    <h2 class="title"><strong>2.공간 소개</strong></h2>
+                    <ul class="hyphen">
+                        <li>영상 스튜디오 A,B,C룸은 30db 방음 및 차음 시공된 2중 도어록 스튜디오로 기본적인 실내조명 룩스패드, 유선랜 시설 구비되어 있고 
+                            <br>백스크린(핑크, 블루, 그린)이 준비되어 있어 상황에 맞는 촬영이 가능해요!
+                        </li>
+                        <li>스튜디오 한 켠에 위치한 셀프 스튜디오에서는 정해진 촬영기간에 내에 컷 수 제한 없이 자유롭게 셀프 촬영하실 수 있어요!</li>
+                        <li>보컬 스튜디오는 30dB 방음 및 차음 시공된 2중도어록 8평형 스튜디오로 작업용 MAC, 큐베이스, 녹음 음향장비, 키보드 등의 장비가 구비되어있어요</li>
+                        <li>촬영 전 시나리오 작업을 위한 포커스룸, 촬영 후 파일업로드를 위한 PC까지 촬영 전후 업무도 완벽하게 할 수 있어요 </li>
+                    </ul>      
+                    <img src="../../images/membership/img_vivid.jpg">              
+                </li>
+                <li class="box">
+                    <h2 class="title"><strong>3.촬영장비 소개</strong></h2>
+                    <ul>
+                        <li>1) 스튜디오 대여 시 실내 조명, 룩스패드, 유선랜 시설, 마이크가 무상 제공됩니다</li>
+                        <li>2) 카메라는 1시간/10,000원에 대여 가능합니다
+                            <br>※ 대여 카메라 : 캐논 xa40 캠코더(미디어 유튜버, 크리에이터를 준비하는 분들에게 편의성 및 화질 등 많은 것을 고려할때 추천되는 캠코더)
+                        </li>
+                    </ul>                    
+                    <button class="member_btn">자세히보기</button>
+                </li>
+                <li class="box">
+                    <h2 class="title"><strong>4.이용가능시간</strong></h2>
+                    <ul class="hyphen">
+                        <li>평일 / 주말 24시간 대관 가능(최소 2시간 전 예약)</li>
+                    </ul>      
+                </li>
+                <li class="box">
+                    <h2 class="title"><strong>5.상품소개</strong></h2>
+                    <p class="intro_point">스튜디오 공간 대여: 2시간 (20,000원)</p>
+                    <ul>
+                        <li>·최소 2시간 부터 예약 가능 하며, 추가 시간은 현장 결제 가능합니다</li>
+                        <li>·상품 구성
+                            <ul style="padding-left: 4px;">
+                                <li>① 스튜디오 A,B,C 공간대여</li>
+                                <li>② 보컬스튜디오</li>
+                            </ul>
+                        </li>
+                    </ul> 
+                    <div class="add_box">
+                            <strong>*추가옵션</strong>
+                        <ul class="hyphen">
+                            <li>장비대여 : 카메라(캐논 xa40 캠코더) 1시간/10,000원</li>
+                            <li>스튜디오 촬영 대행 : 1회/2,000,000원(카메라2, 오디오1, 조명1)</li>
+                            <li>라이브 대행 : 유튜브 송출 라이브 대행 600,000원/4시간 (카메라1, 스위처, 레코더, 노트북, 핀마이크 대여 포함 )</li>
+                            <li>편집 대행 : 동영상 길이 5분 이내 1편/200,000원 (컷 편집, 로고, 자막, 효과음, 저작권 음악 추가 포함)</li>
+                        </ul>  
+                    </div>    
+                    <p class="intro_point">흑백 셀프 촬영: 20,000원</p>
+                    <ul>
+                        <li>·상품 구성
+                            <ul style="padding-left: 4px;">
+                                <li>① 촬영 > 셀렉 > 인화 까지 1시간 소요</li>
+                                <li>② 원본 사진 무료, 2컷 인화</li>
+                                <li>③ 인원 추가에 따른 추가 비용 없음(권장 촬영 인원 6명 이내)
+                                    <br>카메라 장비가 모두 셋팅이 되어 있어 리모콘만 누르면 촬영이 가능합니다. 
+                                    <br>정해진 촬영 시간 내에 컷수 제한 없이 자유롭게 사진 촬영 후 마음에 드는 사진2컷을 셀렉해주세요. 
+                                    <br>셀렉 후 제공되는 프린트기와 인화지를 인화하시면 됩니다. 
+                                </li>
+                            </ul>
+                        </li>
+                    </ul> 
+                    <div class="add_box">
+                        <strong>*촬영 중 주의사항</strong>
+                        <p>
+                            포토룸 배경지 뒤는 비어있습니다. 촬영시 배경지 등에 기대면 넘어져 다치실 수 있으니 꼭! 조심하시기 바랍니다
+                            <br>촬영 시 검게 촬영이 된다면 조명이 빛을 모을 시간을 충분히 갖지 못해서 입니다. 촬영은 1초 정도 텀을 가지고 찍어주세요
+                        </p>
+                    </div>    
+                </li>
+                <li class="box">
+                    <h2 class="title"><strong>6.구매 방법 안내</strong></h2>
+                    <ul class="hyphen">
+                        <li>하단의 구매하기 버튼 또는 검색창에 [비비드 스튜디오]를 검색해주세요.</li>
+                        <li>구매시 더샵 마일리지(부외마일리지)를 사용하실 수 있습니다. </li>
+                        <li>사용하지 않은 이용권은 100% 환불 가능합니다.<br>다만, 더샵 환불 규정에 따라 환불은 예치금 환불로 진행되며, 마일리지 사용건은 환불 후 7일 이내 사용 가능한 마일리지로 환불됩니다. </li>
+                        <li>예약 완료된 이용권은 하단의 비비드 스튜디오 환불규정에 따라 적용됩니다. </li>
+                    </ul>
+                    <div class="refund_area">
+                        <span class="intro_point">[비비드스튜디오 환불규정]</span>
+                        <ul>
+                            <li>1) 이용 8일 전 : 100% 환불 이용</li>
+                            <li>2) 7~4일 전 : 총 금액의 50% 환불 이용</li>
+                            <li>3) 3일 전~당일 : 환불 불가</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="box">
+                    <h2 class="title"><strong>7.예약 및 이용 안내</strong></h2>
+                    <ul class="hyphen">
+                        <li>결제 시 업체 메시지에 희망하는 날짜와 시간 기재해주시면 비비드 스튜디오 담당자가 개별 연락을 통해 확정됩니다. </li>
+                        <li>건물 내 스튜디오 전용 주차장이 없어 주차는 인근 유료주차장 이용 부탁 드립니다</li>
+                        <li>그 외 예약 및 이용규정은 비비드 스튜디오 규정에 따라 적용됩니다.</li>
+                    </ul>
+                </li>
+            </ol>
+            <!-- 2022-03-29 상품 추가[s] -->
+            <div class="products">
+                <h2 class="title"><strong>비비드 이용권 구매하기</strong></h2>
+                <ul class="list_sort">
+                    <li class="on"><a href="#" class="btn_sort">자주구매</a></li>
+                    <li><a href="#" class="btn_sort">최근주문순</a></li>
+                    <li><a href="#" class="btn_sort">상품명순</a></li>
+                </ul>
+    
+                <ul class="product_list">
+                    <li class="product_box">
+                        <a href="#" class="thumbnails btn_detail">
+                            <img src="https://via.placeholder.com/120/dddddd/808080" alt="">
+                        </a>
+                        <div class="summary">
+                            <a href="#" class="name btn_detail">긴마개 안말랑이투약병(PE) - <em>멤버십전용</em></a>
+                            <p class="ea">12cc  100EA</p>
+                            <p class="price">11,693원 <span class="discount">시중가대비 34%</span></p>
+                            <!-- 2021-09-07 품절 추가 / 클래스 변경 -->
+                            <p class="utils">
+                                <span class="btn_type4 btn_soldout">품절</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product_box">
+                        <a href="#" class="thumbnails btn_detail">
+                            <img src="https://via.placeholder.com/120/dddddd/808080" alt="">
+                        </a>
+                        <div class="summary">
+                            <a href="#" class="name btn_detail">긴마개 안말랑이투약병(PE) - <em>멤버십전용</em></a>
+                            <p class="ea">12cc  100EA</p>
+                            <p class="price">11,693원 <span class="discount">시중가대비 34%</span></p>
+                            <!-- 2021-09-07 클래스 및 구조 변경 -->
+                            <div class="utils">
+                                <div class="stock">재고: <strong>99,999</strong>개</div>
+                                <div class="ctl_prod">
+                                    <input type="text" title="상품 수량" class="inp_num" value="1">
+                                    <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                    <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                                </div>
+                                <a href="#" class="btn_type4 btn_cart">담기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product_box">
+                        <a href="#" class="thumbnails btn_detail">
+                            <img src="https://via.placeholder.com/120/dddddd/808080" alt="">
+                        </a>
+                        <div class="summary">
+                            <a href="#" class="name btn_detail">긴마개 안말랑이투약병(PE) - <em>멤버십전용</em></a>
+                            <p class="ea">12cc  100EA</p>
+                            <p class="price">11,693원 <span class="discount">시중가대비 34%</span></p>
+                            <!-- 2021-09-07 클래스 및 구조 변경 -->
+                            <div class="utils">
+                                <div class="stock">재고: <strong>99,999</strong>개</div>
+                                <div class="ctl_prod">
+                                    <input type="text" title="상품 수량" class="inp_num" value="1">
+                                    <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                    <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                                </div>
+                                <a href="#" class="btn_type4 btn_cart">담기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product_box">
+                        <a href="#" class="thumbnails btn_detail">
+                            <img src="https://via.placeholder.com/120/dddddd/808080" alt="">
+                        </a>
+                        <div class="summary">
+                            <a href="#" class="name btn_detail">긴마개 안말랑이투약병(PE) - <em>멤버십전용</em></a>
+                            <p class="ea">12cc  100EA</p>
+                            <p class="price">11,693원 <span class="discount">시중가대비 34%</span></p>
+                            <!-- 2021-09-07 클래스 및 구조 변경 -->
+                            <div class="utils">
+                                <div class="stock">재고: <strong>99,999</strong>개</div>
+                                <div class="ctl_prod">
+                                    <input type="text" title="상품 수량" class="inp_num" value="1">
+                                    <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                    <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                                </div>
+                                <a href="#" class="btn_type4 btn_cart">담기</a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+    
+                <!-- 2021-09-07 상품 없는 경우 -->
+                <div class="empty">상품이 존재하지 않습니다.</div>
+                
+                <div class="more">
+                    <button type="button">더보기<span class="ico_plus"></span></button>
+                </div>
+                <!-- 제품 리스트 -->
+            </div>
+            <div class="indent_char">
+                <div class=info>
+                    ※ 예약 안내
+                    <p>예약은 해당 상품 구매 후 결제 시 업체 메시지 전달에 적어주세요.</p>
+                    <p>담당자가 개별 연락 드립니다</p>
+                </div>
+            </div>
+            <!-- 2022-03-29 상품 추가[e] -->
+            <!-- <div class="btn_wrap">
+                <a href="#" class="btn_type2">스튜디오 이용권 구매하기</a>
+            </div> -->
+        </div>
+
+		<!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+        <script>
+            $('.accordion_box').on({
+                click:function(e){
+                    if($(e.delegateTarget).is('li')){
+                        $(e.delegateTarget).siblings().find('.accordion_body').removeAttr('style');
+                        $(e.delegateTarget).siblings().find('.accordion_header').attr('aria-expanded',false);
+
+                        var currentTop = $(e.currentTarget).offset().top,
+                            scrollTop = $('html, body').scrollTop();
+                        if(currentTop < scrollTop) {
+                            $('html, body').animate({
+                                scrollTop: currentTop - 38
+                            });
+                        };
+                    }
+                    
+                    $(e.currentTarget).next().slideToggle(function(){
+                        $(e.currentTarget).attr('aria-expanded',function(i, a){
+                            return a == 'true' ? false : true;
+                        });
+                    });
+                }
+            }, 'button.accordion_header');
+        </script>
+	</section>
+    <!--#include virtual="/publish/shop/renewal/html/membership/_survey_popup.html" -->
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+</body>
+</html>

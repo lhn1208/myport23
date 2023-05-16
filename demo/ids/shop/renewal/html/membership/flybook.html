@@ -1,0 +1,68 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+    <!-- membership 전용 css 추가 -->
+	<link rel="stylesheet" href="../../css/themembership.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+    <style>
+    .membership{position: relative;}
+    .membership .code_area{position: absolute; top: 3634px; left: 50%; margin-left: -374px; width: 756px;}
+    .membership .code_area.row2{top: 3877px;}
+    .membership .code_area span{display: inline-block; width: 324px; height: 90px; line-height: 2.4; font-size: 36px; background-color: #e4eaef; font-weight: bold; color: #515152; letter-spacing: -0.02em; text-align: center; border-radius: 5px;}
+    .membership .code_area .num1{margin-right: 94px;}
+    </style>
+	<!-- container [s] -->
+    <section id="content" class="membership">
+        <!-- 2023-01-02 플라이북 추가 [s]-->
+        <img src="../../images/membership/img_flybook.jpg" usemap="#map">
+        <div class="code_area">
+            <span class="num1">33,123</span>
+            <span class="num2">123,123,123</span>
+        </div>
+        <div class="code_area row2">
+            <span class="num1">33,123</span>
+            <span class="num2">123,123,123</span>
+        </div>
+        <map id="map" name="map">
+            <area shape="rect" coords="160, 3738, 364, 3806" alt="복사하기" href="#" target="_blank">
+            <area shape="rect" coords="590, 3738, 7896, 3806" alt="복사하기" href="#" target="_blank">
+            <area shape="rect" coords="160, 3984, 364, 4042" alt="복사하기" href="#" target="_blank">
+            <area shape="rect" coords="590, 3984, 7896, 4042" alt="복사하기" href="#" target="_blank">
+        </map>
+        <!-- 2023-01-02 플라이북 추가 [e]-->
+
+        <!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+
+        <script>
+            $('.accordion_box').on({
+                click:function(e){
+                    
+                    $(e.currentTarget).next().slideToggle(function(){
+                        $(e.currentTarget).attr('aria-expanded',function(i, a){
+                            return a == 'true' ? false : true;
+                        });
+                    });
+                }
+            }, 'button.accordion_header');
+        </script>
+	</section>
+    <!--#include virtual="/publish/shop/renewal/html/membership/_zeroshop_popup.html" -->
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+</body>
+</html>

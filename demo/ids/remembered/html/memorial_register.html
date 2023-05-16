@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리멤버드</title>
+    <script src="../js/jquery-3.6.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <!--gnb-->
+    <div id="remember_gnb" class="remember_gnb sub_gnb">
+        <div class="gnb_inner">
+          <h1 class="logo"><a href="#">리멤버드</a></h1>
+          <nav class="gnb">
+            <ul>
+              <li><a href="#">리멤버드</a></li>
+              <li><a href="#">서비스소개</a></li>
+              <li><a href="#">부고</a></li>
+              <li><a href="#">추모관</a></li>
+              <li><a href="#">조문보</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+          <div class="right">
+            <div class="gnb_search_form">
+              <form>
+                <fieldset>
+                  <legend>고인명검색</legend>
+                  <input type="text" class="search_input" placeholder="고인명검색">
+                </fieldset>
+                <a href="#" class="ico_sch">검색</a>
+              </form>
+            </div>
+            <div class="log_info">
+              <!-- <a href="#">로그인</a> -->
+             <a href="#">로그아웃</a>
+           </div>     
+            <a href="#" class="member">마이페이지</a>                 
+            <a href="#" class="menu">메뉴</a>
+          </div>
+        </div>
+    </div>
+    <!--//gnb-->    
+    <div class="content_wrap bg_grey bg_type2">
+      <div class="register_content memorial_area">
+        <h2 class="content_title memoral_tit">추모관<span class="block">등록</span></h2>
+        <div class="register_inner">
+          <div class="register">
+              <h3 class="title">고인 정보입력</h2>
+              <div class="reg_info reg_style">
+                <div class="row reg_top">                            
+                    <span class="col">
+                        <label for="name" class="input_tit">이름<i class="ico_chk">*</i></label>
+                        <input type="text" id="name">
+                    </span>
+                    <span class="col">
+                        <label for="position" class="input_tit">직위</label>
+                        <input type="text" id="position">
+                    </span>
+                </div>
+                <div class="row">
+                    <label for="birth" class="input_tit">생년월일<i class="ico_chk">*</i></label>
+                    <select id="birth" class="select birth">
+                        <option value="">생년월일</option>
+                        <option value="옵션2">옵션1</option>
+                        <option value="옵션2">옵션2</option>
+                        <option value="옵션3">옵션3</option>
+                        <option value="옵션4">옵션4</option>
+                    </select>     
+                </div>
+                <div class="row">
+                    <label for="day1" class="input_tit">임종일자<i class="ico_chk">*</i></label>
+                    <input type="text" id="day1" class="date" disabled>
+                    <select name="relation" class="select reg_time">
+                        <option value="">00:00</option>
+                        <option value="옵션2">옵션1</option>
+                        <option value="옵션2">옵션2</option>
+                        <option value="옵션3">옵션3</option>
+                        <option value="옵션4">옵션4</option>
+                    </select>     
+                     <!--달력-->
+                      <!-- <div class="calender">
+                        <div class="header">
+                          <a href=# class="prev">이전</a>2022년 3월<a href=# class="next">다음</a>
+                          <a href="#" class="close">닫기</a>
+                        </div>
+                        <table class="datepicker">
+                          <caption>임종일자 달력</caption>
+                          <thead>
+                            <tr>
+                              <th scope="col" class="sun">일</th>
+                              <th scope="col">월</th>
+                              <th scope="col">화</th>
+                              <th scope="col">수</th>
+                              <th scope="col">목</th>
+                              <th scope="col">금</th>
+                              <th scope="col">토</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><a href="#">1</a></td>
+                              <td><a href="#">2</a></td>
+                              <td><a href="#">3</a></td>
+                              <td><a href="#" class="today">4</a></td>
+                              <td><a href="#">5</a></td>
+                              <td><a href="#">6</a></td>
+                              <td><a href="#">7</a></td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">8</a></td>
+                              <td><a href="#">9</a></td>
+                              <td><a href="#">10</a></td>
+                              <td><a href="#">11</a></td>
+                              <td><a href="#">12</a></td>
+                              <td><a href="#">13</a></td>
+                              <td><a href="#">14</a></td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">15</a></td>
+                              <td><a href="#">16</a></td>
+                              <td><a href="#">17</a></td>
+                              <td><a href="#">18</a></td>
+                              <td><a href="#">19</a></td>
+                              <td><a href="#">20</a></td>
+                              <td><a href="#">21</a></td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">22</a></td>
+                              <td><a href="#">23</a></td>
+                              <td><a href="#">24</a></td>
+                              <td><a href="#">25</a></td>
+                              <td><a href="#">26</a></td>
+                              <td><a href="#">27</a></td>
+                              <td><a href="#">28</a></td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">29</a></td>
+                              <td><a href="#">30</a></td>
+                              <td><a href="#">31</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div> -->
+                      <!--//달력-->
+                </div>
+                <div class="row">
+                    <div class="filebox">
+                        <span class="input_tit">고인사진<i class="ico_chk">*</i></span>
+                        <input type="text" class="upload_input" placeholder="영정사진을 등록해 주세요">
+                        <label for="file" class="file">파일선택</label><input type="file" id="file">
+                        <div class="file_output">                            
+                            <span class="img_area">
+                              <img src="../images/file_sample.jpg">
+                              <button class="file_del">사진 삭제</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="register reg_type">
+            <div class="memorial">
+              <div class="row">
+                  <h3 class="title"><label for="">상징문구</label></h3> 
+                  <input type="text" id="" class="reg_input" placeholder="고인을 상징할 수 있는 문구(예 : 명랑소녀 000여사)"> 
+              </div>
+              <div class="row">
+                  <h3 class="title"><label for="info_input">안내글<i class="ico_chk">*</i></label></h3> 
+                  <input type="text" id="info_input" class="reg_input" placeholder="예 : 저희 상가는 조의금을 정중히 사양합니다."> 
+              </div>
+              <div class="row">
+                  <h3 class="title vert"><label for="memorial_textarea">추도사</label></h3> 
+                  <textarea class="memorial_textarea" id="memorial_textarea" placeholder="내용을 입력하세요."></textarea>
+                  <button class="reg_btn_w47 btn_sample">샘플</button>
+              </div>
+            </div>
+          </div>
+          <div class="register">
+            <h3 class="title">조문보 등록<i class="ico_chk">*</i></h3> 
+              <div class="message">
+                  <div class="view_area">
+                      <a href="#" class="sample">샘플보기</a>
+                  </div>
+                  <div class="editor_box">
+                      <div class="subject">
+                          <select class="select">
+                              <option value="">주제 선택</option>
+                              <option value="옵션2">옵션1</option>
+                              <option value="옵션2">옵션2</option>
+                              <option value="옵션3">옵션3</option>
+                              <option value="옵션4">옵션4</option>
+                          </select>  
+                          <input type="text" class="max_opt" placeholder="최대 8글자로 입력해주세요">    
+                          <span class="arr_button_wrap">
+                            <button class="arr_btn">위로정렬</button>
+                            <button class="arr_btn down">아래로정렬</button>
+                          </span>
+                      </div>
+                      <button class="reg_btn">템플릿 선택</button>
+                      <div class="open_opt">
+                          공개여부 <span class="switch"></span>
+                      </div>
+                  </div>
+                  <div class="button_wrap items3">
+                      <button class="add_btn">추가</button>
+                      <button class="minus_btn">삭제</button>
+                  </div>
+                  
+              </div>
+          </div>
+          <!--button-->
+          <div class="register_btn">
+              <button class="preview">미리보기</button>
+              <button>등록완료</button>
+              <button class="cancel">취소</button>
+          </div>
+          <!--//button-->
+        </div>
+        <span class="bg_register1"></span>
+      </div>
+    </div>
+
+    <!--right banner-->
+    <div class="right_banner">
+      <a href="#">문의</a>
+      <a href="#" class="kakao">KAKAO</a>
+    </div>
+    <!--//right banner-->
+    <!--footer-->
+    <footer id="remember_footer" class="remember_footer">
+      <div class="footer_inner">
+        <ul class="term_list">
+          <li><a href="#">이용약관</a><i class="bar"></i></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+        <div class="compay_info">
+          <address>서울시 강남구 봉은사로 114길 12, 7층</address> <i class="bar"></i>대표 서종원 <span class="mb_block">사업자 등록번호 120-86-10499</span> <i class="bar none_type"></i><span class="mb_block">통신판매업신고 2009-서울강남-00290 </span>
+          <span class="customer">고객센터<i class="bar mb_none"></i>tel.02-550-8700 <span class="fax">fax.02-563-8398</span><i class="bar mb_none"></i> <span class="email">Email.tslee0710@mcircle.biz</span><i class="bar none_type"></i><span class="mb_block">상담가능시간  오전 9:00 - 오후 6:00</span></span>
+        </div>
+        <span class="footer_logo"><img src="../images/footer_logo.png"></span>
+        <div class="ico_wrap">
+          <a href="#"><img src="../images/footer_ico1.png"></a>
+          <a href="#"><img src="../images/footer_ico2.png"></a>
+        </div>
+      </div>     
+    </footer>
+    <!--//footer-->
+  
+</body>
+</html>

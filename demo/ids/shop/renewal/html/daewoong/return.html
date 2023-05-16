@@ -1,0 +1,744 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+    <link rel="stylesheet" href="../../css/layout_dw.css">
+    <link rel="stylesheet" href="../../css/dw_only.css">
+    <link rel="stylesheet" href="../../css/separate_popup.css"><!-- 2020-06-19 추가 -->
+</head>
+<body class="layout_dw"><!-- 대웅전용관인 경우 클래스 layout_dw부여  -->
+    <nav id="Index">
+        <a href="#content">본문 바로가기</a>
+        <a href="#header">주메뉴 바로가기</a>
+        <a href="#footer">사이트 정보 바로가기</a>
+    </nav>
+    <!-- header [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/header_daewoong.html" -->
+    <!-- header [e] -->
+    <!-- container [s] -->
+    <section id="container">
+        <!-- 상단 상태 바 [s] -->
+        <!--#include virtual="/publish/shop/renewal/html/include/status_daewoong.html" -->
+        <!-- 상단 상태 바 [e] -->
+
+        <div id="content" class="cont_dw_list return_layout">
+            <ul class="tab_menu tab_type2">
+                <li class="on"><a href="/publish/shop/renewal/html/daewoong/return.html">반품신청</a></li>
+                <li><a href="/publish/shop/renewal/html/daewoong/return_status.html">반품진행현황</a></li>
+            </ul>
+            <p class="tit">반품신청</p>
+            <div class="condition_wrap">
+                <div class="tit_wrap">
+                    <p class="tit">제약사 반품조건</p>
+                    <a href="#" class="btn_return_policy">업체별 반품정책</a>
+                    <a href="#" class="btn_notice">공급사 공지사항</a>
+                </div>
+                <ul class="desc_list">
+                    <li><strong>대웅제약 / 한올바이오파마</strong>사입근거 없는 품목 반품 가능</li>
+                    <li><strong>대웅 바이오</strong>구매일로부터 직전3년 이내 주문한 수량만큼만 반품 신청 가능</li>
+                </ul>
+                <div class="print_btn_wrap">
+                    <a href="#" class="btn_print btn_pop_dw"><strong>제약사</strong>회수확인서 출력</a>
+                </div>
+            </div>
+            <div class="prd_list return">
+                <p class="tit">입점업체 반품신청</p>
+                <div class="selection_box">
+                    <!--
+                    <div class="box_header">
+                        <a href="#" class="active">제약사</a>
+                        <a href="#">도매/부외(완통)</a>
+                        <a href="#">도매 (낱알)</a>
+                    </div>
+                    -->
+                    <div class="box_body">
+                        <div class="field_wrap">
+                            <label for="corpSelector">입점업체</label>
+                            <select id="corpSelector" style="width:170px">
+                                <option value="">대웅제약</option>
+                                <option value="">대웅바이오</option>
+                                <option value="">한올바이오</option>
+                            </select>
+                        </div>
+                        <div class="field_wrap side_right">
+                            <select style="width:110px">
+                                <option value="">상품명</option>
+                                <option value="">주문번호</option>
+                            </select>
+                            <input type="text">
+                            <button type="button">검색</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="desc"><strong>대웅제약/대웅바이오/한올바이오파마상품</strong>에 대해 반품요청하실 수 있습니다.<br>상품명을 입력하시고 검색을 누르신 후 원하시는 반품 상품을 선택하시고 하단 선택추가 버튼을 눌러주세요.</p>
+                <div class="list_wrap">
+                    <table class="prd_list_table">
+                        <colgroup>
+                            <col width="50">
+                            <col width="120">
+                            <col width="135">
+                            <col width="185">
+                            <col width="110">
+                            <col width="85">
+                            <col width="80">
+                            <col width="80">
+                            <col width="105">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" id="o_allCheck" class="checkbox_all" name="orderGoodsCartSeq"></th>
+                                <th>제약사</th>
+                                <th>주문일자<br>주문번호</th>
+                                <th>상품명<br>규격/단위</th>
+                                <th>제조사</th>
+                                <th>단가</th>
+                                <th>주문<br>수량</th>
+                                <th>가능<br>수량</th>
+                                <th>선택<br>추가</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <!-- 검색된 상품이 없는 경우 [s] -->
+                    <div class="scroll_table empty">
+                        <p>검색할 상품이 없습니다.</p>
+                    </div>
+                    <!-- 검색된 상품이 없는 경우 [e] -->
+                    <div class="scroll_table large"><!-- 2020-06-17 수정 -->
+                        <table class="prd_list_table">
+                            <colgroup>
+                                <col width="50">
+                                <col width="120">
+                                <col width="135">
+                                <col width="185">
+                                <col width="110">
+                                <col width="85">
+                                <col width="80">
+                                <col width="80">
+                                <col width="105">
+                            </colgroup>
+                            <tbody>
+                                <tr class="prd_item">
+                                    <td><input type="checkbox" name="orderGoodsCartSeq"></td>
+                                    <td>대웅바이오</td>
+                                    <td>2020-05-06<br>PO100102080</td>
+                                    <td>가제트정 300C</td>
+                                    <td>대웅바이오</td>
+                                    <td>38,800</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td><button type="button" class="btn_type5">추가</button></td>
+                                </tr>
+                                <tr class="prd_item">
+                                    <td><input type="checkbox" name="orderGoodsCartSeq"></td>
+                                    <td>대웅제약</td>
+                                    <td>2020-05-06<br>PO100102080</td>
+                                    <td>대웅로수바스타대웅로수바스타틴정 20mg</td>
+                                    <td>대웅바이오</td>
+                                    <td>9,968,400</td>
+                                    <td>999</td>
+                                    <td>999</td>
+                                    <td><button type="button" class="btn_type5">추가</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="btn_wrap">
+                        <button type="button" class="btn_type6 btn_add_prd">선택상품 반품추가</button>
+                    </div>
+                </div>
+            </div>
+            <div class="prd_list return">
+                <p class="tit">반품 신청 목록</p>
+                <div class="util_func">
+                    <div class="field_wrap side_left">
+                        <label for="augru"><strong>반품사유</strong></label>
+                        <select name="augru" id="augru" style="width:200px">
+							<option value="R03">유효기간임박/경과</option>
+							<option value="R04">재고정리(거래중단 포함)</option>
+							<option value="R05">정책적회수(약가인하 포함)</option>
+							<option value="R06">주문오류/착오(고객변심 포함)</option>
+							<option value="R07">파손</option>
+							<option value="R08">폐업/예정</option>
+							<option value="R09">폐업 후 반품</option>
+						</select>
+                    </div>
+                    <div class="side_right">
+                        <div class="field_wrap">
+                            <label for="accountCdY"><strong>세금계산서 :</strong></label>
+                            <label for="accountCdY"><input type="radio" name="accountCd" id="accountCdY" checked="checked">발행</label>
+                            <label for="accountCdN"><input type="radio" name="accountCd" id="accountCdN">미발행</label>
+                        </div>
+                        <div class="field_wrap">
+                            <label for="augru">반품 박스 수</label>
+                            <select name="returnBoxQty" id="returnBoxQty" style="width:60px">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_wrap">
+                    <table class="prd_list_table">
+                        <colgroup>
+                            <col width="80">
+                            <col width="105">
+                            <col width="150">
+                            <col width="90">
+                            <col width="95">
+                            <col width="95">
+                            <col width="105">
+                            <col width="105">
+                            <col width="125">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" class="checkbox_all" id="r_allCheck" name="orderReturnGoodsCartSeq"></th>
+                                <th>제약사</th>
+                                <th>상품명</th>
+                                <th>규격</th>
+                                <th>주문<br>수량</th>
+                                <th>가능<br>수량</th>
+                                <th>신청<br>수량</th>
+                                <th>낱알<br>수량</th>
+                                <th>예상금액</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <!-- 검색된 상품이 없는 경우 [s] -->
+                    <div class="scroll_table empty">
+                        <p>검색할 상품이 없습니다.</p>
+                    </div>
+                    <!-- 검색된 상품이 없는 경우 [e] -->
+                    <div class="scroll_table large"><!-- 2020-06-17 수정 -->
+                        <table class="prd_list_table">
+                            <colgroup>
+                                <col width="80">
+                                <col width="105">
+                                <col width="150">
+                                <col width="90">
+                                <col width="95">
+                                <col width="95">
+                                <col width="105">
+                                <col width="105">
+                                <col width="125">
+                            </colgroup>
+                            <tbody>
+                                <tr class="prd_item">
+                                    <td><input type="checkbox" name="orderReturnGoodsCartSeq"></td>
+                                    <td>대웅바이오</td>
+                                    <td>타오르정10밀리그램(타다라필) 8T 10mg</td>
+                                    <td>-</td>
+                                    <td>14T</td>
+                                    <td>2</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="10" maxlength="5">개</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="8" maxlength="5">개</td>
+                                    <td>2,238,800</td>
+                                </tr>
+                                <tr class="prd_item">
+                                    <td><input type="checkbox" name="orderReturnGoodsCartSeq"></td>
+                                    <td>대웅제약</td>
+                                    <td>대웅로수바스타틴정대웅로수바스타틴정 20mg</td>
+                                    <td>-</td>
+                                    <td>300C</td>
+                                    <td>111</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="10" maxlength="5">개</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="8" maxlength="5">개</td>
+                                    <td>11,138,800</td>
+                                </tr>
+                                <tr class="prd_item">
+                                    <td><input type="checkbox" name="orderReturnGoodsCartSeq"></td>
+                                    <td>대웅바이오</td>
+                                    <td>가제트정 300C</td>
+                                    <td>-</td>
+                                    <td>14T</td>
+                                    <td>2</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="10" maxlength="5">개</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="8" maxlength="5">개</td>
+                                    <td>38,800</td>
+                                </tr>
+                                <tr class="prd_item">
+                                    <td><input type="checkbox" name="orderReturnGoodsCartSeq"></td>
+                                    <td>대웅제약</td>
+                                    <td>대웅로수바스타틴정 20mg</td>
+                                    <td>-</td>
+                                    <td>300C</td>
+                                    <td>111</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="10" maxlength="5">개</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="8" maxlength="5">개</td>
+                                    <td>38,800</td>
+                                </tr>
+                                <tr class="prd_item">
+                                    <td><input type="checkbox" name="orderReturnGoodsCartSeq"></td>
+                                    <td>대웅바이오</td>
+                                    <td>가제트정 300C</td>
+                                    <td>-</td>
+                                    <td>14T</td>
+                                    <td>2</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="10" maxlength="5">개</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="8" maxlength="5">개</td>
+                                    <td>38,800</td>
+                                </tr>
+                                <tr class="prd_item">
+                                    <td><input type="checkbox" name="orderReturnGoodsCartSeq"></td>
+                                    <td>대웅제약</td>
+                                    <td>대웅로수바스타틴정 20mg</td>
+                                    <td>-</td>
+                                    <td>300C</td>
+                                    <td>111</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="10" maxlength="5">개</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="8" maxlength="5">개</td>
+                                    <td>38,800</td>
+                                </tr>
+                                <tr class="prd_item">
+                                    <td><input type="checkbox" name="orderReturnGoodsCartSeq"></td>
+                                    <td>대웅바이오</td>
+                                    <td>가제트정 300C</td>
+                                    <td>-</td>
+                                    <td>14T</td>
+                                    <td>2</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="10" maxlength="5">개</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="8" maxlength="5">개</td>
+                                    <td>38,800</td>
+                                </tr>
+                                <tr class="prd_item">
+                                    <td><input type="checkbox" name="orderReturnGoodsCartSeq"></td>
+                                    <td>대웅제약</td>
+                                    <td>대웅로수바스타틴정 20mg</td>
+                                    <td>-</td>
+                                    <td>300C</td>
+                                    <td>111</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="10" maxlength="5">개</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="8" maxlength="5">개</td>
+                                    <td>38,800</td>
+                                </tr>
+                                <tr class="prd_item">
+                                    <td><input type="checkbox" name="orderReturnGoodsCartSeq"></td>
+                                    <td>대웅바이오</td>
+                                    <td>가제트정 300C</td>
+                                    <td>-</td>
+                                    <td>14T</td>
+                                    <td>2</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="10" maxlength="5">개</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="8" maxlength="5">개</td>
+                                    <td>38,800</td>
+                                </tr>
+                                <tr class="prd_item">
+                                    <td><input type="checkbox" name="orderReturnGoodsCartSeq"></td>
+                                    <td>대웅제약</td>
+                                    <td>대웅로수바스타틴정 20mg</td>
+                                    <td>-</td>
+                                    <td>300C</td>
+                                    <td>111</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="10" maxlength="5">개</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="8" maxlength="5">개</td>
+                                    <td>38,800</td>
+                                </tr>
+                                <tr class="prd_item">
+                                    <td><input type="checkbox" name="orderReturnGoodsCartSeq"></td>
+                                    <td>대웅바이오</td>
+                                    <td>가제트정 300C</td>
+                                    <td>-</td>
+                                    <td>14T</td>
+                                    <td>2</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="10" maxlength="5">개</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="8" maxlength="5">개</td>
+                                    <td>38,800</td>
+                                </tr>
+                                <tr class="prd_item">
+                                    <td><input type="checkbox" name="orderReturnGoodsCartSeq"></td>
+                                    <td>대웅제약</td>
+                                    <td>대웅로수바스타틴정 20mg</td>
+                                    <td>-</td>
+                                    <td>300C</td>
+                                    <td>111</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="10" maxlength="5">개</td>
+                                    <td><input type="text" class="inp_count" tabindex="1" value="8" maxlength="5">개</td>
+                                    <td>38,800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="btn_wrap">
+                        <button type="button" class="btn_bottom btn_type2">선택삭제</button>
+                        <button type="button" class="btn_bottom btn_type1">반품신청</button>
+                    </div>
+                </div>
+            </div>
+            <div class="prd_list return">
+                <p class="tit">제약사 반품프로세스</p>
+                <div class="image_box">
+                    <img src="../../images/daewoong/return_process.gif" alt="제약사 반품 프로세스 이미지">
+                    <a href="http://www.shop.co.kr/popup/goodsReturn/goodsReturnInfoViewPop.do" class="btn_manual" onclick="javascript:window.open(this.href,'pop2','width=780,height=800,scrollbars=yes'); return false">반품신청 매뉴얼</a>
+                </div>
+            </div>
+            <!-- 2020-06-23 장바구니 영역 추가 [s] -->
+            <div class="cart_box">
+                <h3 class="stit"><span class="ico_comm ico_cart"></span> 장바구니</h3>
+                <table class="tbl_type1">
+                    <caption>장바구니에 담긴 품목의 공급사 및 금액</caption>
+                    <colgroup>
+                        <col style="width:63px;">
+                        <col style="width:23px;">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">공급사</th>
+                            <th scope="col">품목</th>
+                            <th scope="col">금액</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartSummary">
+                        <tr>
+                            <td class="txt_left">대웅제약</td>
+                            <td>5</td>
+                            <td class="txt_price">493,900</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_left">태전약품</td>
+                            <td>1</td>
+                            <td class="txt_price">18,500</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_left">인천약품</td>
+                            <td>1</td>
+                            <td class="txt_price">88,500</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_left">대성메디케어</td>
+                            <td>1</td>
+                            <td class="txt_price">60,000</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_left">케이디상사</td>
+                            <td>1</td>
+                            <td class="txt_price">8,540</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_left">월드비젼팜</td>
+                            <td>1</td>
+                            <td class="txt_price">7,990</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_left">이팜</td>
+                            <td>1</td>
+                            <td class="txt_price">232,000</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_left">탑헬스케어</td>
+                            <td>1</td>
+                            <td class="txt_price">990</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#none" class="btn_more btn_view_cart">더보기 <span class="btn_comm">이동</span></a>
+            </div>
+            <!-- 2020-06-23 장바구니 영역 추가 [e] -->
+        </div>
+        <!-- 우측 퀵메뉴[s] -->
+        <!--#include virtual="/publish/shop/renewal/html/include/quick_menu_vip.html" -->
+        <!-- 우측 퀵메뉴[e] -->
+        <!-- 우측 하단 문자 서비스 영역 [s] -->
+        <!--#include virtual="/publish/shop/renewal/html/daewoong/_consult_area.html" -->
+        <!-- 우측 하단 문자 서비스 영역 [e] -->
+    </section>
+    <!-- container [e] -->
+
+    <!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+    <!-- footer [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+    <!-- footer [e] -->
+
+    <!-- 업체별 반품 정책 레이어 팝업 [s] -->
+    <div id="dwReturnLayer" style="display:none;">
+        <div class="pop_layer pop_layer_return">
+            <div class="pop_header_tab">
+                <ul class="tab_menu">
+                    <li class="on"><a href="#">대웅제약</a></li>
+                    <li><a href="#">대웅바이오</a></li>
+                    <li><a href="#">한올바이오파마</a></li>
+                </ul>
+            </div>
+            <div class="pop_wrap">
+                <ul class="tab_contents">
+                    <!-- 대웅 제약 반품 정책 -->
+                    <li class="on">
+                        <div class="policy_box">
+                            <strong>신청방법</strong>
+                            <ol>
+                                <li><em>반품추가 버튼 클릭  &gt;  팝업에서 상품 선택  &gt;  선택추가 버튼 클릭  &gt;  닫기 버튼 클릭</em></li>
+                                <li>반품사유, 반품 박스수, 반품하실 수량을 선택 또는 입력하신 후 하단의 반품신청을 누르시면 반품접수가 완료됩니다.</li>
+                                <li><em>향정의약품 반품신청시, 보건소의 승인을 받은 후 반품이 진행되어야 하오니, 아래 절차와 필요서유를 확인하신 후, 반품 신청을 해주시기 바랍니다.</em><br>- 향정의약품 (디에타민정,졸피아트정,지미콜정,베아콜정,베아콜에프정,베아코프에프정)
+                                    <ul>
+                                        <li>1) 향정의약품 반품신청시 영업사원에게 연락하여 (SMS발송), 아래 서류 2가지 원본을 받아야 합니다.
+                                            <ul>
+                                                <li>① 마약류 양도승인 신청서 출력</li>
+                                                <li>② 계약서 작성 및 출력 후 대웅제약 사용인감 날인 (원본)<br>* 날인 전 작성내용 : 양도인란 기재<br>* 사용인감 날인 : 영업사원이 해당관리과에 요청하여 처리후 약국에 전달</li>
+                                            </ul>
+                                        </li>
+                                        <li>2) 해당 시군구 보건소에 승인신청 및 승인서류 접수</li>
+                                        <li>3) 반품신청<br>※ 동봉서류 : ① 환입명세서 ② 계약서 사본 ③ 보건소승인서류 사본</li>
+                                        <li>4) 반품회수</li>
+                                        <li>5) 환입실 실물 &서류 확인 후 반품전산처리<br>* 서류 불충분시 반송처리 / 서류 충분시 마이너스잔고로 반품정상처리</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <a href="http://www.shop.co.kr/front/theshop/customer/voc/voc_sms" target="_blank" class="btn_sms">영업사원에게 SMS무료발송</a>
+                        </div>
+                        <div class="policy_box">
+                            <strong>참고사항</strong>
+                            <ol>
+                                <li>반품 신청시 배송사원이 방문하여 <em>3일이내 회수처리</em>합니다.</li>
+                                <li><em>반품 회수 후 최대 11일안에 마이너스 잔고로 반영</em>되며 최종 금액은 마이페이지 내 거래원장에서 확인 가능합니다.<br>(단, 월말에는 처리 시간이 더 걸릴수 있습니다.)</li>
+                                <li>보여드리는 예상 반품 금액에는 입력하신 낱알 반품 예상 금액도 반영되어 확인됩니다.<br>하지만 특정 상품일 경우 낱알 갯수 산정이 안될수 있으니 이점 참고 부탁드립니다.</li>
+                                <li>현재 판매되고 있지 않은 상품인 경우. 반품예상금액이 '-' 로 표시될 수 있습니다.</li>
+                                <li>반품신청 내역과 실물이 일치하도록 해주세요. <br>반품신청후 수량/제품 변동시에는 제품 인수인계 하시기전 환입명세표에 수정 서명 바랍니다.</li>
+                                <li>낱알수량 입력방법 : 예) 우루사 10캡슐* 12개 -> 낱알수량 120개로 입력</li>
+                            </ol>
+                        </div>
+                        <div class="policy_box">
+                            <strong>반품신청시 필독</strong>
+                            <p class="desc">* 대포장제품으로 구입 후 판매하시다가, 낱개제품에 대하여 반품신청시 '주문한 내역이 없는 제품'으로 인식되오니, <br>대포장제품으로 구입하신 제품은 반드시 대포장약호로 반품요청 하시기 바랍니다.</p>
+                            <p class="desc gray">ex) 120정(30개) 대포장 제품으로 1셋트 주문 후, 120정 완포장 1개 반품 신청시 20정 제품으로 완제품수량 1개로 입력하면 안되며, 120정(30개) 대포장 제품으로 낱알수량에 120개로 반품수량 입력해 주세요.</p>
+                        </div>
+                    </li>
+                    <!-- 대웅바이오 반품 정책 -->
+                    <li>
+                        <div class="policy_box">
+                            <strong>대웅바이오 반품신청 가능한 조건</strong>
+                            <ul>
+                                <li>- 2017년 1월이후부터는 주문이력 없는 반품처리는 불가함</li>
+                                <li>- <em>구매일로부터 직전 3년이내 주문한 수량 만큼만 반품신청이 가능</em></li>
+                            </ul>
+                        </div>
+                        <div class="policy_box">
+                            <strong>신청방법</strong>
+                            <ol>
+                                <li>검색 조건 선택 [상품명, 주문번호] 기재후 검색 버튼 클릭</li>
+                                <li>반품할 상품 신청수량 입력후 선택상품 반품추가 클릭 (반품신청가능수량만 반품신청가능)</li>
+                                <li>낱알수량입력또는 반품사유 선택</li>
+                                <li>최종 반품선택 상품 선택후 반품신청 클릭</li>
+                                <li>향정의약품 반품신청시, 보건소의 승인을 받은후 반품이 진행되어야 하오니<br>아래 절차와 필요서류를 확인하신후, 반품 신청을 해주시기 바랍니다.</li>
+                            </ol>
+                        </div>
+                        <div class="policy_box">
+                            <strong>향정의약품 (리제정)</strong>
+                            <ul>
+                                <li>1) 향정의약품 반품신청시 영업사원에게 연락하여 (SMS발송), 아래 서류 2가지 원본을 받아야 합니다.
+                                    <ul>
+                                        <li>① 마약류 양도승인 신청서 출력</li>
+                                        <li>② 계약서 작성 및 출력 후 대웅바이오 사용인감 날인 (원본)<br>* 날인 전 작성내용 : 양도인란 기재<br>* 사용인감 날인 : 영업사원이 해당관리과에 요청하여 처리후 약국에 전달</li>
+                                    </ul>
+                                </li>
+                                <li>2) 해당 시군구 보건소에 승인신청 및 승인서류 접수</li>
+                                <li>3) 반품신청<br>※ 동봉서류 : ① 환입명세서 ② 계약서 사본 ③ 보건소승인서류 사본</li>
+                                <li>4) 반품회수</li>
+                                <li>5) 환입실 실물 & 서류 확인 후 반품전산처리<br>* 서류 불충분시 반송처리 / 서류 충분시 마이너스잔고로 반품정상처리</li>
+                            </ul>
+                            <a href="http://www.shop.co.kr/front/theshop/customer/voc/voc_sms" target="_blank" class="btn_sms">영업사원에게 SMS무료발송</a>
+                        </div>
+                        <div class="policy_box">
+                            <strong>참고사항</strong>
+                            <ol>
+                                <li>반품 회수 후 최대 10일안에 마이너스 잔고로 반영되며 최종 금액은 마이페이지 내 거래원장에서 확인 가능합니다. (단, 월말에는 처리 시간이 더 걸릴수 있습니다.)</li>
+                                <li>보여드리는 예상 반품 금액에는 입력하신 낱알 반품 예상 금액도 반영되어 확인됩니다. <br>하지만 특정 상품일 경우 낱알 갯수 산정이 안될수 있으니 이점 참고 부탁드립니다</li>
+                                <li>현재 판매되고 있지 않은 상품인 경우. 반품예상금액이 '-' 로 표시될 수 있습니다.</li>
+                            </ol>
+                        </div>
+                    </li>
+                    <!-- 한올바이오파마 반품 정책 -->
+                    <li>
+                        <div class="policy_box">
+                            <strong>신청방법</strong>
+                            <ol>
+                                <li>반품추가 버튼 클릭 &gt; 팝업에서 상품 선택 &gt; 선택추가 버튼 클릭 &gt; 닫기 버튼 클릭</li>
+                                <li>반품사유, 반품 박스수, 반품하실 수량을 선택 또는 입력하신 후 하단의 반품신청을 누르시면 반품접수가 완료됩니다.</li>
+                                <li><em>향정의약품 반품신청시, 보건소의 승인을 받은후 반품이 진행되어야 하오니, 아래 절차와 필요서유를 확인하신후, 반품 신청을 해주시기 바랍니다.</em><br>- 향정의약품 (디에타민정,졸피아트정,지미콜정,베아콜정,베아콜에프정,베아코프에프정)
+                                    <ul>
+                                        <li>1) 향정의약품 반품신청시 영업사원에게 연락하여 (SMS발송), 아래 서류 2가지 원본을 받아야 합니다.
+                                            <ul>
+                                                <li>① 마약류 양도승인 신청서 출력</li>
+                                                <li>② 계약서 작성 및 출력 후 대웅제약 사용인감 날인 (원본)<br>* 날인 전 작성내용 : 양도인란 기재<br>* 사용인감 날인 : 영업사원이 해당관리과에 요청하여 처리후 약국에 전달</li>
+                                            </ul>
+                                        </li>
+                                        <li>2) 해당 시군구 보건소에 승인신청 및 승인서류 접수</li>
+                                        <li>3) 반품신청<br>※ 동봉서류 : ① 환입명세서 ② 계약서 사본 ③ 보건소승인서류 사본</li>
+                                        <li>4) 반품회수</li>
+                                        <li>5) 환입실 실물 &서류 확인 후 반품전산처리<br>* 서류 불충분시 반송처리 / 서류 충분시 마이너스잔고로 반품정상처리</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="policy_box">
+                            <strong>참고사항</strong>
+                            <ol>
+                                <li>반품 신청시 배송사원이 방문하여 <em>3일이내 회수처리</em>합니다.</li>
+                                <li><em>반품 회수 후 최대 11일안에 마이너스 잔고로 반영</em>되며 최종 금액은 마이페이지 내 거래원장에서 확인 가능합니다.<br>(단, 월말에는 처리 시간이 더 걸릴수 있습니다.)</li>
+                                <li>보여드리는 예상 반품 금액에는 입력하신 낱알 반품 예상 금액도 반영되어 확인됩니다.<br>하지만 특정 상품일 경우 낱알 갯수 산정이 안될수 있으니 이점 참고 부탁드립니다.</li>
+                                <li>현재 판매되고 있지 않은 상품인 경우. 반품예상금액이 '-' 로 표시될 수 있습니다.</li>
+                                <li>반품신청 내역과 실물이 일치하도록 해주세요. <br>반품신청후 수량/제품 변동시에는 제품 인수인계 하시기전 환입명세표에 수정 서명 바랍니다.</li>
+                                <li>낱알수량 입력방법 : 예) 우루사 10캡슐* 12개 -> 낱알수량 120개로 입력</li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="btn_comm btn_close">닫기</button>
+        </div>
+    </div>
+    <!-- 업체별 반품 정책 레이어 팝업 [e] -->
+    <!-- 대웅제약 회수확인서 출력 레이어 팝업 [s] -->
+    <!-- 2020-06-18 대웅제약 회수확인서 출력 레이어 삭제
+    <div class="pop_layer pop_layer_img" id="dwLayer" style="display:none;">
+        <div class="img_wrap">
+            <img src="http://img.shop.co.kr/images/pop_dw_return.jpg" usemap="#dwReturn" alt="">
+            <map name="dwReturn" id="dwReturn">
+                <area coords="0,309,350,350" href="#none" alt="대웅 회수확인서 출력하기">
+                <area coords="311,0,350,34" class="btn_close" href="#none" alt="닫기">
+            </map>
+        </div>
+    </div> -->
+    <!-- 대웅제약 회수확인서 출력 레이어 팝업 [e] -->
+    <!-- 대웅바이오 회수확인서 출력 레이어 팝업 [s] -->
+    <!-- <div class="pop_layer pop_layer_img" id="bioLayer" style="display:none;">
+        <div class="img_wrap">
+            <img src="http://img.shop.co.kr/images/mypage/return/bio/pop_dwbio_return.jpg" usemap="#bioReturn" alt="">
+            <map name="bioReturn" id="bioReturn">
+                <area coords="0,309,350,350" href="#none" alt="대웅바이오 회수확인서 출력하기">
+                <area coords="311,0,350,34" class="btn_close" href="#none" alt="닫기">
+            </map>
+        </div>
+    </div> -->
+    <!-- 대웅바이오 회수확인서 출력 레이어 팝업 [e] -->
+
+    <script type="text/javascript">
+        $(function(){
+            shopUI.scrollFix(); //2020-06-23 장바구니 sticky script
+            // 전체 체크 체크 박스 기능
+            $('.checkbox_all').on({
+				change: function(e){
+					var checkTarget = document.querySelectorAll('input[name="'+e.currentTarget.name+'"]');
+					for (var i = 0; i < checkTarget.length; i++) {
+						var element = checkTarget[i];
+						element.checked = e.currentTarget.checked;
+					}
+				}
+			});
+            $('.return .prd_list_table').on({
+				change:function(e){
+					var checkedBox = document.querySelectorAll('input[name="'+e.currentTarget.name+'"]:not(.checkbox_all):checked');
+                    var allCheckboxTarget = document.querySelectorAll('input[name="'+e.currentTarget.name+'"]:not(.checkbox_all)');
+					document.querySelector('input[name="'+e.currentTarget.name+'"].checkbox_all').checked = (allCheckboxTarget.length == checkedBox.length);
+				}
+			}, 'input[type="checkbox"]:not(.checkbox_all)');
+            // 자동 제품 체크 기능
+            $('.prd_item').on({
+                // input field에 focus out 되는 경우 자동 체크되는 스크립트 (필요에 따라 주석)
+                blur:function(e){
+                    $(e.delegateTarget).find('input[type="checkbox"]').prop("checked", "checked");
+                },
+                click:function(){
+                    $(this).select();
+                },
+                focus:function(e){
+                    $(this).select();
+                    $(this).keydown(function(key) {
+                        if (key.keyCode == 13) {
+                            $(e.delegateTarget).find('input[type="checkbox"]').prop("checked",function(){
+                                return !$(this).prop('checked');
+                            });
+                        }
+                    });
+                }
+            }, ".inp_count");
+            // 브라우저 하단 담당자무료문자 float 버튼 제어
+            $('.consult_btn').on({
+                click:function(e){
+                    e.preventDefault();
+                    $(e.delegateTarget).hide();
+                }
+            }, '.btn_consult_close');
+            $('#consult_wrap').on({
+                click:function(e){
+                    e.preventDefault();
+                    $(e.delegateTarget).find('.phone_layer').hide();
+                    $(e.delegateTarget).find('.consult_sms').show();
+                }
+            }, '.btn_close');
+            $('#consult_wrap').on({
+                click:function(e){
+                    e.preventDefault();
+                    $(e.delegateTarget).find('.phone_layer').show();
+                    $(e.delegateTarget).find('.consult_sms').hide();
+                }
+            }, '.consult_link');
+            // 담당자무료문자 레이어 팝업 텍스트 length 체크
+            $('.phone_layer textarea').on({
+                keyup:function(){
+                    var str = this.value;
+                    var str_len = str.length;
+                    var maxByte = 80;
+
+                    var rbyte = 0;
+                    var rlen = 0;
+                    var one_char = "";
+                    var str2 = "";
+
+                    for(var i=0; i<str_len; i++){
+                        one_char = str.charAt(i);
+                        if(escape(one_char).length > 4){
+                            rbyte += 2;
+                        }else{
+                            rbyte++;
+                        }
+                        if(rbyte <= maxByte){
+                            rlen = i+1;
+                        }
+                    }
+                    if(rbyte > maxByte){
+                        str2 = str.substr(0,rlen);
+                        this.value = str2;
+                    }else{
+                        $('.phone_layer .count').text(rbyte);
+                    }
+                }
+            });
+            // 대웅제약 회수확인서 출력 팝업 2020-06-18 삭제
+            // $('body').on("click", ".btn_pop_dw", function() {
+            //     var modalLayer = null;
+            //     modalLayer = shopUI.modalLayer($("#dwLayer"), {
+            //         closeClass: "btn_close"
+            //     });
+            // });
+            // 업체별 반품 정책 팝업
+            $('body').on("click", ".btn_return_policy", function() {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#dwReturnLayer"), {
+                    closeClass: "btn_close"
+                });
+            });
+            $('.pop_layer_return').on({
+                click:function(e){
+                    e.preventDefault();
+                    var i = $(e.currentTarget).parent().index();
+                    $(e.delegateTarget).find('.tab_menu > li').eq(i).addClass('on').siblings().removeClass('on');
+                    $(e.delegateTarget).find('.tab_contents > li').eq(i).addClass('on').siblings().removeClass('on');
+                }
+            }, '.tab_menu a');
+            // 대웅바이오 회수확인서 출력 팝업
+            // $('body').on("click", ".btn_pop_dwbio", function() {
+            //     var modalLayer = null;
+            //     modalLayer = shopUI.modalLayer($("#bioLayer"), {
+            //         closeClass: "btn_close"
+            //     });
+            // });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+    <!-- 대웅전용상품 관련 css 추가 -->
+    <link rel="stylesheet" href="../../css/dw_only.css">
+    <!-- membership 전용 css 추가 -->
+	<link rel="stylesheet" href="../../css/themembership.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+    <section id="content" class="membership contract">
+        <!--#include virtual="/publish/shop/renewal/html/membership/_contract_overview.html" -->
+
+        <div class="contract_tabs">
+            <ul class="tab_buttons type_box3">
+                <li class="active"><a href="contract.html"><h2>상품 모아보기</h2></a></li>
+                <li><a href="contract_manage.html"><h2>약정 관리</h2></a></li>
+                <li><a href="contract_return.html"><h2>낱알반품</h2></a></li>
+            </ul>
+        </div>
+
+        <div class="product_table_box">
+            <!-- sub tabs -->
+            <ul class="tab_buttons type_sub">
+                <li class="active"><a href="#">처방의약품</a></li>
+                <li><a href="#">일반/비급여</a></li>
+                <li><a href="#">건강식품</a></li>
+                <li><a href="#">의약외상품</a></li>
+            </ul>
+
+            <div class="prd_list">
+                <p class="tit">처방의약품</p>
+                <div class="util_func">
+                    <strong class="screen_out">정렬타입 선택 리스트</strong>
+                    <ul class="list_sort">
+                        <li class="on"><a href="#" class="btn_sort">자주구매</a></li>
+                        <li><a href="#" class="btn_sort">최근주문순</a></li>
+                        <li><a href="#" class="btn_sort">상품명순</a></li>
+                        <li><a href="#" class="btn_sort">제조사명순</a></li>
+                    </ul>
+                    <div class="field_wrap">
+                        <div class="wrap_search">
+                            <input type="text" title="검색어 입력" class="inp_txt" placeholder="검색할 품목을 입력하세요.">
+                            <button type="button" class="btn_del"><span class="btn_comm">검색어 삭제</span></button>
+                            <button type="button" class="btn_search"><span class="btn_comm">검색</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="prd_list_wrap">
+                    <!-- 제품 목록 리스트 타입 영역 otc_v2.html [s] -->
+                    <!--#include virtual="/publish/shop/renewal/html/daewoong/_product_list_type_otc.html" -->
+                    <!-- 제품 목록 리스트 타입 영역 otc_v2.html [e] -->
+                    <button type="button" class="btn_more" tabindex="1">더보기<span class="ico_arr"></span></button>
+                    <div class="box_result">
+                        <div class="result_tit">
+                            <strong class="tit_sum">
+                                선택금액합계 <span class="txt_price"><span class="txt_num">123,882,288</span>원</span>
+                            </strong>
+                            <strong class="tit_discount">
+                                예상비용할인 <span class="txt_price"><span class="txt_num">123,882,288</span>원</span>
+                            </strong>
+                            <strong class="tit_total">
+                                총 예상주문금액 <span class="txt_price"><span class="txt_num">221,222,288</span>원</span>
+                            </strong>
+                        </div>
+                        <div class="result_btn">
+                            <button type="button" class="btn_type1" tabindex="1">장바구니 담기</button>
+                            <button type="button" class="btn_type2" tabindex="1">장바구니 보기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+		<!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+
+        <script>
+            // 2021-09-07 수정
+            $('.accordion_box').on({
+                click:function(e){
+                    if($(e.delegateTarget).is('li')){
+                        $(e.delegateTarget).siblings().find('.accordion_body').removeAttr('style');
+                        $(e.delegateTarget).siblings().find('.accordion_header').attr('aria-expanded',false);
+
+                        var currentTop = $(e.currentTarget).offset().top,
+                            scrollTop = $('html, body').scrollTop();
+                        if(currentTop < scrollTop) {
+                            $('html, body').animate({
+                                scrollTop: currentTop - 38
+                            });
+                        };
+                    }
+                    
+                    $(e.currentTarget).next().slideToggle(function(){
+                        $(e.currentTarget).attr('aria-expanded',function(i, a){
+                            return a == 'true' ? false : true;
+                        });
+                    });
+                }
+            }, 'button.accordion_header');
+
+            $(function(){
+                shopUI.scrollFix();
+            });
+        </script>
+	</section>
+    <!--#include virtual="/publish/shop/renewal/html/membership/_contract_popup.html" -->
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+</body>
+</html>

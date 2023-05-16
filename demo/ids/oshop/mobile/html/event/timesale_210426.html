@@ -1,0 +1,105 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+		<!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				
+<!-- 타임세일 페이지 [s] -->
+<div class="container_event">
+    <link rel="StyleSheet" href="../../css/event.css" type="text/css">
+    <style>
+        /* 타임세일 타이머 컬러 지정 */
+        .countdown_timer {color:#ffffff;}
+        .countdown_timer > div:not(:first-child):before {color:#931029;}
+        .countdown_timer .numbers > span {background:#b11b37;}
+        .countdown_timer .unit {color:#ffb4b4;}
+        /* 타임세일 타이머 위치 지정 */
+        .countdown_timer {top:29.5%;}
+    </style>
+    <div class="timesale_wrap">
+        <div class="top_visual">
+            <img src="../../images/event/timesale/timesale_easydew_210426_top.jpg" alt="">
+
+            <div class="countdown_timer">
+                <div class="days">
+                    <div class="numbers">
+                        <span>0</span><span>0</span>
+                    </div>
+                    <div class="unit">days</div>
+                </div>
+                <div class="hour">
+                    <div class="numbers">
+                        <span>0</span><span>0</span>
+                    </div>
+                    <div class="unit">hour</div>
+                </div>
+                <div class="min">
+                    <div class="numbers">
+                        <span>0</span><span>0</span>
+                    </div>
+                    <div class="unit">min</div>
+                </div>
+                <div class="sec">
+                    <div class="numbers">
+                        <span>0</span><span>0</span>
+                    </div>
+                    <div class="unit">sec</div>
+                </div>
+            </div>
+        </div>
+        <div class="sale_block">
+            <img src="../../images/event/timesale/timesale_easydew_210426_img_1.jpg" alt="">
+            <a href="https://www.0shop.kr/zeroshop/goods/content.go?cnumbycate=30101&amp;goods_code=9300165004" class="invisible_button center" style="bottom: 6.5%;padding-top: 15%;width: 66.6%;">구매하기</a>
+        </div>
+        <div class="sale_block">
+            <img src="../../images/event/timesale/timesale_easydew_210426_img_2.jpg" alt="">
+        </div>
+        <div class="sale_block">
+            <img src="../../images/event/timesale/timesale_easydew_210426_img_3.jpg" alt="">
+        </div>
+        <div class="sale_block">
+            <img src="../../images/event/timesale/timesale_easydew_210426_img_4.jpg" alt="">
+        </div>
+        <div class="sale_block">
+            <img src="../../images/event/timesale/timesale_easydew_210426_img_5.jpg" alt="">
+            <a href="https://www.0shop.kr/zeroshop/goods/content.go?cnumbycate=30101&amp;goods_code=9300165004" class="invisible_button center" style="bottom: 8.5%;padding-top: 15%;width: 66.6%;">구매하기</a>
+        </div>
+    </div>
+</div>
+<script>
+// 타임세일 시간 입력
+var countDownDate = new Date("february 17, 2021 13:00:00").getTime();
+
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  var countDown = [];
+  countDown[0] = ("0" + Math.floor(distance / (1000 * 60 * 60 * 24))).slice(-2).split("");
+  countDown[1] = ("0" + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2).split("");
+  countDown[2] = ("0" + Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).slice(-2).split("");
+  countDown[3] = ("0" + Math.floor((distance % (1000 * 60)) / 1000)).slice(-2).split("");
+
+    for(var i = 0; i<countDown.length; i++){
+        var timer = document.querySelectorAll('.countdown_timer > div');
+        timer[i].querySelector('.numbers').innerHTML = '<span>'+countDown[i][0]+'</span>'+'<span>'+countDown[i][1]+'</span>';
+    }
+
+  if (distance < 0) {
+    clearInterval(x);
+  }
+}, 1000);
+</script>
+<!-- 타임세일 페이지 [e] -->
+
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a><!-- 2017-03-21 이미지 넓이,높이값 삭제 -->
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+</body>
+</html>

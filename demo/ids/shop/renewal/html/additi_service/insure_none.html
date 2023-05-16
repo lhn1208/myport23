@@ -1,0 +1,84 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/content.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+	<section id="container">
+		<div id="content" class="cont_additi">
+			<div class="sub_cont_head">
+				<h2 class="sub_tit">부가서비스</h2>
+			</div>
+			<ul class="tab_menu tab_type3">
+				<li class="on"><a href="#tabInsure">보험약가 정보 </a></li>
+				<li><a href="#tabTrend">판매가동향</a></li>
+				<li><a href="#tabPop">POP자료실</a></li>
+			</ul>
+			<div class="tab_cont">
+				<div id="tabInsure" style="">
+					<div class="sub_cont_head">
+						<h3 class="sstit">보험약가 정보</h3>
+						<p class="sub_txt">의약품 보험코드에 따른 정보를 공유합니다.</p>
+					</div>
+					<div class="search_additi">
+						<table class="tbl_info">
+							<caption>약품명, 보험코드, 제조사, 주성분코드 검색</caption>
+							<colgroup>
+								<col style="width:67px">
+								<col style="width:433px">
+								<col style="width:97px">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="medicineName">약품명</label></th>
+									<td>
+										<input type="text" name="medicineName" id="medicineName" class="inp_txt">
+									</td>
+									<th scope="row"><label for="insureCode">보험코드</label></th>
+									<td>
+										<input type="text" name="insureCode" id="insureCode" class="inp_txt">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="manufacture">제조사</label></th>
+									<td>
+										<input type="text" name="manufacture" id="manufacture" class="inp_txt">
+									</td>
+									<th scope="row"><label for="mainCode">주성분코드</label></th>
+									<td>
+										<input type="text" name="mainCode" id="mainCode" class="inp_txt">
+										<button type="submit" class="btn_search"><span class="btn_comm">검색</span></button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="insure_data">
+						<p class="txt_none txt_none2"><span class="ico_comm"></span>보험약가 내역이 없습니다.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+	</section>
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+</body>
+</html>

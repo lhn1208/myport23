@@ -1,0 +1,48 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+<link rel="stylesheet" href="../../css/layout_shopplus.css">
+<link rel="stylesheet" href="../../css/shopplus.css">
+</head>
+<body class="shopplus">
+<nav id="Index">
+    <a href="#content">본문 바로가기</a>
+    <a href="#header">주메뉴 바로가기</a>
+    <a href="#footer">사이트 정보 바로가기</a>
+</nav>
+<header id="header">
+    <div class="header_inner">
+        <h1 class="link_logo logo_shopplus"><a href="#" class="ico_comm">the SHOP+</a></h1>
+        <h2 class="tit"><a href="movie.html">엔터테인먼트</a></h2>
+        <ul class="list_3depth">
+            <li class="on"><a href="movie.html">영화</a></li>
+            <!--<li><a href="webtoon.html">웹툰</a></li>-->
+            <li><a href="gifticon.html">기프티콘</a></li>
+        </ul>
+        <div class="etc_box">
+            <p>엔터테인먼트 전용 포인트 <a href="#" class="txt_link"><em class="txt_num">5,000 P</em></a></p>
+        </div>
+    </div>
+</header>
+<section id="container">
+    <div id="content" class="cont_movie">
+        <div class="iframe_box">
+            <iframe src="http://cinefox.shop.co.kr?key=1000000200&ret_url=http://www.shop.co.kr&is_adult=Y" scrolling="auto" style="width:100%;height:2496px;"></iframe>
+        </div>
+    </div>
+</section>
+
+<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+<!-- footer [s] -->
+<!--#include virtual="/publish/shop/renewal/html/include/footer_plus.html" -->
+<!-- footer [e] -->
+
+<!--  영화서비스 종료안내 팝업 [s] 2019-10-29  추가 -->
+<div id="popServiceEnd" style="position:fixed;top:0;left:0;right:0;bottom:0;z-index:9999;background:rgba(0,0,0,.5)">
+    <div style="position:absolute;top:200px;left:50%;width:400px;height:400px;margin:0px 0 0 -200px">
+        <img src="../../images/shopplus/pop_movie_serviceend.jpg" alt="더샵 영화서비스 종료일 2019년 10월 31일 23시 59분까지">
+        <button type="button" class="btn_comm btn_close" style="width:30px;height:30px;background:#ff6325 url(http://img.shop.co.kr/images/hos/btn/btn_mainpop_close.png) no-repeat 50% 50%;" onclick="getElementById('popServiceEnd').style.display='none'">닫기</button>
+    </div>
+</div>
+<!-- 영화서비스 종료안내 팝업 [e] 2019-10-29  추가 -->
+</body>
+</html>

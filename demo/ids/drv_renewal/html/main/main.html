@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/publish/drv_renewal/js/jquery-3.6.min.js"></script>
+    <script src="/publish/drv_renewal/js/swiper.min.js"></script>
+    <script src="/publish/drv_renewal/js/ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="/publish/drv_renewal/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="/publish/drv_renewal/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/publish/drv_renewal/css/drv_renewal_main.css">
+    <script>    
+        (function ($) {
+            $(document).ready(function () {
+                
+            });
+        })(jQuery);
+    </script>
+</head>
+<body>
+    <!--header [s]-->
+    <header id="drv_main_header" class="drv_main_header">
+        <div class="hearder_top">
+           <h1 class="logo"><a href="#">DrVille</a></h1>          
+        </div>
+        <div class="drv_nav_area">
+            <div class="drv_nav_inner">
+                <nav class="drv_nav">
+                    <ul class="main_munu">
+                        <li>
+                            <a href="#">라이브세미나</a>
+                            <ul id="sub_menu" class="drv_gnb_sub">
+                                <li><a href="#">라이브세미나</a></li>
+                                <li><a href="#">다시보기VOD</a></li>
+                                <li><a href="#">닥터빌 ON</a></li>
+                                <li><a href="#">닥터빌 아카데미</a></li>
+                                <li><a href="#">논문 Briefing</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">닥터빌 아카데미</a>
+                            <ul id="sub_menu" class="drv_gnb_sub">
+                                <li><a href="#">라이브세미나</a></li>
+                                <li><a href="#">다시보기VOD</a></li>
+                                <li><a href="#">닥터빌 ON</a></li>
+                                <li><a href="#">닥터빌 아카데미</a></li>
+                                <li><a href="#">논문 Briefing</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">학회<i class="ico_new">N</i></a>
+                        </li>
+                        <li><a href="#">드럭인포</a>
+                        </li>
+                        <li><a href="#">포인트샵</a>
+                        </li>
+                        <li><a href="#">설문</a></li>
+                    </ul>
+                    <div class="all_menu_btn"><a href="#">전체메뉴</a></div>               
+                </nav>
+                <div class="search_box_area">
+                    <div class="search_box">
+                        <fieldset>
+                            <legend>검색</legend>
+                            <label for="sch_input" class="input_box">
+                                <input type="text" id="sch_input" class="sch_input" title="검색" placeholder="검색하세요.">
+                            </label>
+                            <div class="btn_area">
+                                <button class="recomm_keyword"></button>
+                                <button class="btn_search"></button>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <!--추천 검색어-->
+                    <div class="search_recomm_box" style="display: none;">
+                        <div class="search_recomm">
+                            <a href="#">추천인이벤트</a>
+                            <a href="#"><strong>제미글로</strong></a>
+                            <a href="#">학술지원</a>
+                            <a href="#">라이브세미나</a>
+                            <a href="#"><strong>릭시아나</strong></a>
+                        </div>
+                    </div>
+                    <!--//추천 검색어-->
+                </div>
+            </div>
+            <!-- 전체메뉴 -->
+            <div class="all_menu_box">
+                <div class="all_menu_box_inner">
+                    <div class="menu_col">
+                        <div class="menu_row">
+                            <strong>CME</strong>
+                            <ul class="menu_depth">
+                                <li><a href="#">라이브세미나<i class="ico_point">P</i></a></li>
+                                <li><a href="#">다시보기VOD</a></li> 
+                                <li><a href="#">닥터빌 ON</a></li> 
+                                <li><a href="#">닥터빌 아카데미<i class="ico_new">N</i></a></li> 
+                                <li><a href="#">논문 Briefing</a></li> 
+                            </ul>
+                        </div>
+                        <div class="menu_row">
+                            <strong>학회</strong>
+                            <ul class="menu_depth">
+                                <li><a href="#">닥터빌X학회우수강의</a></li>
+                                <li><a href="#">학회/연수일정</a></li> 
+                                <li><a href="#">해외학회스케치</a></li> 
+                                <li><a href="#">해외컨퍼런스 뉴스</a></li> 
+                            </ul>
+                        </div>
+                        <div class="menu_row">
+                            <strong>의학정보&amp;TOOL</strong>
+                            <ul class="menu_depth">
+                                <li><a href="#">드럭인포</a></li>
+                                <li><a href="#">의학논문검색</a></li> 
+                                <li><a href="#">UPTODATE</a></li> 
+                                <li><a href="#">DynaMedPlus</a></li> 
+                                <li><a href="#">SmartImagebase</a></li> 
+                            </ul>
+                        </div>
+                        <div class="menu_row">
+                            <strong>병원경영</strong>
+                            <ul class="menu_depth">
+                                <li><a href="#">심사청구</a></li>
+                                <li><a href="#">보험심사청구컨설팅</a></li> 
+                                <li><a href="#">서식</a></li> 
+                                <li><a href="#">삭감액0원에도전하기</a></li> 
+                            </ul>
+                        </div>
+                        <div class="menu_row">
+                            <strong>닥터빌 FUN</strong>
+                            <ul class="menu_depth">
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">설문<i class="ico_point">P</i></a></li> 
+                                <li><a href="#">홍보영상</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_col">
+                        <div class="menu_row">
+                            <strong>브랜드존</strong><i class="ico_point">P</i>
+                            <ul class="menu_depth">
+                                <li><a href="#">의약품</a></li>
+                                <li><a href="#">의료기기</a></li> 
+                                <li><a href="#">최신의료장비</a></li> 
+                                <li><a href="#">CME매거진</a></li> 
+                            </ul>
+                        </div>
+                        <div class="menu_row">
+                            <strong>포인트샵</strong><i class="ico_point">P</i>
+                            <ul class="menu_depth">
+                                <li><a href="#">영화</a></li>
+                                <li><a href="#">웹툰</a></li> 
+                                <li><a href="#">호텔</a></li> 
+                                <li><a href="#">기프티콘</a></li> 
+                                <li><a href="#">하늘맛</a></li> 
+                            </ul>
+                        </div>
+                        <div class="menu_row">
+                            <strong>학술지원사업</strong>
+                            <ul class="menu_depth">
+                                <li><a href="#">해외학술대회중계</a></li>
+                                <li><a href="#">연구지원</a></li> 
+                                <li><a href="#">학술상</a></li> 
+                                <li><a href="#"><img src="../../images/common/menu_seokchun.png"></a></li> 
+                            </ul>
+                        </div>
+                        <div class="menu_row">
+                            <strong>오픈콜라보레이션</strong>
+                            <ul class="menu_depth">
+                                <li><a href="#">IT제안</a></li>
+                                <li><a href="#">제품개발제안</a></li> 
+                            </ul>
+                        </div>
+                        <div class="menu_row">
+                            <strong>자문참여</strong>
+                        </div>
+                    </div>
+                    <!--닫기버튼-->
+                    <button class="btn_close">
+                        <span>전체메뉴 닫기</span>
+                    </button>
+                </div>
+            </div>
+            <!-- //전체메뉴 -->
+        </div>   
+    </header>
+    <!--header [e]-->
+    <div class="main_container">
+        <div class="main_container_inner">
+            <div class="section section_main">
+                <div class="left_area">
+                    <a href="#" class="main_banner"><img src="../../images/main/main_banner.jpg"></a>
+                   <div class="main_slide_wrap">
+                        <div class="main_slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <i class="ico red">LIVE</i><img src="../../images/main/img_slide1.jpg">
+                                        <span class="badge">신청<em>2,124</em></span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <i class="ico">NEXT</i><img src="../../images/main/img_slide1.jpg">
+                                        <span class="badge">신청<em>3,712</em></span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide"><a href="#"><img src="../../images/main/img_slide1.jpg"><span class="badge">신청<em>2,546</em></span></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="../../images/main/img_slide2.jpg"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="../../images/main/img_slide2.jpg"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="../../images/main/img_slide2.jpg"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="../../images/main/img_slide2.jpg"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="../../images/main/img_slide2.jpg"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="../../images/main/img_slide2.jpg"></a></div>
+                            </div>                            
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="hash_box">
+                        <i class="ico">Pick!</i>
+                        <a href="#">#초음파아카데미</a>
+                        <a href="#">#이벤트</a>
+                        <a href="#">#이달의심사이슈</a>
+                        <a href="#">#보험심사청구</a>
+                        <a href="#">#컨설팅</a>
+                    </div>
+                    <div class="cont_grid main_list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="thum_img"><img src="/publish/drv_renewal/images/main/main_thum_w255.jpg"></span>
+                                    <span class="txt_blue category">라이브세미나</span>
+                                    <p class="txt">2021 석천나눔재간 헬스케어 연구지원 및 연구실정발표</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="thum_img"><img src="/publish/drv_renewal/images/main/main_thum_w255.jpg"></span>
+                                    <span class="txt_blue category">아카데미</span>
+                                    <p class="txt">특이 혈전증, 코로나 바이러스의 원인과 대응 및 증상</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="thum_img"><img src="/publish/drv_renewal/images/main/main_thum_w255.jpg"></span>
+                                    <span class="txt_purple category"><i class="ad_ico">AD</i>한국심장질환학회</span>
+                                    <p class="txt">고혈압 신환자의 심혈관 질환 예방을 위한 약제 선택</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="thum_img"><img src="/publish/drv_renewal/images/main/main_thum_w255.jpg"></span>
+                                    <span class="txt_blue category">라이브세미나</span>
+                                    <p class="txt">왼쪽 가슴통증 동반한 심장마비 전조증상 원인과 치료</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="thum_img"><img src="/publish/drv_renewal/images/main/main_thum_w255.jpg"></span>
+                                    <span class="txt_blue category">라이브세미나</span>
+                                    <p class="txt">만성위장장애, 만성소화불량, 복통 구토 다양한 증상과 원인</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="thum_img"><img src="/publish/drv_renewal/images/main/main_thum_w255.jpg"></span>
+                                    <span class="txt_blue category">웹컨퍼런스</span>
+                                    <p class="txt">2021 제1차 대한중환자의학회 대전충청지회 웹컨퍼런스</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right_area">
+                    <div class="member_info">
+                        <ul>
+                            <li class="name_area">
+                                <a href="#" class="name">김등석닥터</a>
+                                <ul class="link_box">
+                                    <li><a href="#">마이페이지</a></li>
+                                    <li><a href="#">출석하기</a></li>
+                                    <li><a href="#">1:1문의<i class="new">새로운 알림</i></a></li>
+                                    <li><a href="#">로그아웃</a></li>
+                                </ul>
+                            </li>   
+                            <li><a href="#" class="point">1,000,000P</a></li>
+                        </ul> 
+                        <a href="#" class="logout">로그아웃</a>
+                        <div class="txt_point"><a href="#">소멸예정 포인트를 확인하세요(18자)</a> <a href="#" class="alarm">알림<i class="new">새로운 알림</i></a></div>
+                    </div>
+                    <a class="r_banner r_banner1" href="#"><img src="../../images/main/banner_right1.jpg"></a>
+                    <div class="notice_box schedule">
+                        <h3 class="title">학회/연수 일정</h3>
+                        <ul>
+                            <li>
+                                <a href="#"><span class="txt_blue">[국내]</span>온라인 대한의료관련감염학회회</a>
+                                <span>03-24(수)</span>
+                                <span class="val">평점 6점</span>
+                            </li>
+                            <li>
+                                <a href="#"><span class="txt_blue">[국내]</span>2021 대한공중보건의사협의회</a>
+                                <span>03-24(수)</span>
+                            </li>
+                            <li>
+                                <a href="#"><span class="txt_blue">[국내]</span>201년 춘계심포지엄</a>
+                                <span>03-24(수)</span>
+                                <span class="val">평점 6점</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="more">더보기</a>
+                    </div>
+                    <a class="r_banner r_banner2" href="#"><img src="../../images/main/banner_right2.jpg"></a>
+                    <div class="notice_box news">
+                        <h3 class="title">의료게 뉴스</h3>
+                        <ul>
+                            <li><a href="#">2021 대한공중보건의사협의회</a></li>
+                            <li><a href="#">2021 대한공중보건의사협의회</a></li>
+                            <li><a href="#">2021 대한공중보건의사협의회</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section_contents">
+            <div class="left_area">
+                <div class="drv_service">
+                    <h2 class="service_title"><em>닥터빌 회원에게만</em> 제공하는 <em>무료서비스!</em> <span>닥터빌 의학정보&amp;TOOL</span></h2>
+                    <ul class="service">
+                        <li><a href="#"><img src="../../images/main/logo_ebsco.png"></a></li>
+                        <li><a href="#"><img src="../../images/main/logo_pubmed.png"></a></li>
+                        <li><a href="#"><img src="../../images/main/logo_dynamed.png"></a></li>
+                        <li><a href="#"><img src="../../images/main/logo_uptodate.png"></a></li>
+                        <li><a href="#"><img src="../../images/main/logo_smart.png"></a></li>
+                        <li><a href="#"><img src="../../images/main/logo_bitdruginfo.png"></a></li>
+                    </ul>
+                </div>
+                 <!--추천 콘텐츠 리스트형[s]-->
+                 <div class="recomm_area">
+                     <div class="content_top">
+                        <h2 class="cont_title">추천콘텐츠</h2>
+                        <div class="list_set">
+                            <a href="#" class="set">맞춤내용 설정</a>
+                            <a href="#" class="opt"></a>
+                            <a href="#" class="opt album"></a>
+                        </div>
+                     </div>
+                    <div class="cont_list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="thum_img"><img src="../../images/main/img_recomm.jpg"></span>
+                                    <div class="info_area">
+                                        <span class="txt_blue category">웹컨퍼런스</span>
+                                        <div class="title">5th Interscience Conference of Infection</div>
+                                        <p class="txt">새로운 심부전의 정의와 분류, 만성심부전과 급성심부전, 급성심부전의 새로운 임상양상 분류 급성심부전의 새로운 임상양상 분류와 치새로운 심부전의 정의와 분류, 만성심부전과 급성심부전, 급성심부전의 새로운 임상양상 분류 급성심부전의 새로운 임상양상 분류와 치료</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="thum_img"><img src="../../images/main/img_recomm.jpg"></span>
+                                    <div class="info_area">
+                                        <span class="txt_blue category">아카데미</span>
+                                        <div class="title">2021 ESC guideline for HF 새로운 심부전의 정의와 분류, 만성심부전과 급성심부전</div>
+                                        <p class="txt">기본 스캔부터 환자 증례까지, 간, 담낭담도, 췌장비장, 충수, 신장, 방관, 전립선 정확한 진단과 검진을 위한 아카데미</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="thum_img"><img src="../../images/main/img_recomm.jpg"></span>
+                                    <div class="info_area">
+                                        <span class="txt_purple category"><i class="ad_ico">AD</i>한국초음파의학회</span>
+                                        <div class="title">복부초음파 아카데미 1~4강 기본 스캔부터 환자 증례까지, 정확한 진단과 검진</div>
+                                        <p class="txt">바이오테크 마켓 리뷰 웹컨퍼런스, 바이오테크 마켓 리뷰 웹컨퍼런스 FEBPS (Foreign Experienced Korean Biotech/Pharmaceutical Societies)</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="thum_img"><img src="../../images/main/img_recomm.jpg"></span>
+                                    <div class="info_area">
+                                        <span class="txt_purple category"><i class="ad_ico">AD</i>대한핵의학기술학회</span>
+                                        <div class="title">복부초음파 아카데미 1~4강 기본 스캔부터 환자 증례까지, 정확한 진단과 검진</div>
+                                        <p class="txt">바이오테크 마켓 리뷰 웹컨퍼런스, 바이오테크 마켓 리뷰 웹컨퍼런스 FEBPS (Foreign Experienced Korean Biotech/Pharmaceutical Societies)</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more_area"><a href="#" class="more"><em class="txt_blue">콘텐츠</em> 더보기 (1/<span>2</span>)</a></div>
+                </div>
+                <!--추천 콘텐츠 리스트형[e]-->
+                <!--추천 콘텐츠 앨범형[s]-->
+                <div class="recomm_area">
+                    <div class="content_top">
+                       <h2 class="cont_title">추천콘텐츠</h2>
+                       <div class="list_set">
+                           <a href="#" class="set">맞춤내용 설정</a>
+                           <a href="#" class="opt"></a>
+                           <a href="#" class="opt album"></a>
+                       </div>
+                    </div>
+                   <div class="cont_list type">
+                       <ul>
+                           <li>
+                               <a href="#">
+                                   <span class="thum_img"><img src="../../images/main/img_recomm.jpg"></span>
+                                   <div class="info_area">
+                                       <span class="txt_blue category">웹컨퍼런스</span>
+                                       <div class="title">5th Interscience Conference of Infection</div>
+                                   </div>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#">
+                                   <span class="thum_img"><img src="../../images/main/img_recomm.jpg"></span>
+                                   <div class="info_area">
+                                       <span class="txt_blue category">아카데미</span>
+                                       <div class="title">2021 ESC guideline for HF 새로운 심부전의 정의와 분류, 만성심부전과 급성심부전</div>
+                                   </div>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#">
+                                   <span class="thum_img"><img src="../../images/main/img_recomm.jpg"></span>
+                                   <div class="info_area">
+                                       <span class="txt_purple category"><i class="ad_ico">AD</i>한국초음파의학회</span>
+                                       <div class="title">복부초음파 아카데미 1~4강 기본 스캔부터 환자 증례까지, 정확한 진단과 검진</div>
+                                   </div>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="#">
+                                   <span class="thum_img"><img src="../../images/main/img_recomm.jpg"></span>
+                                   <div class="info_area">
+                                       <span class="txt_purple category"><i class="ad_ico">AD</i>대한핵의학기술학회</span>
+                                       <div class="title">복부초음파 아카데미 1~4강 기본 스캔부터 환자 증례까지, 정확한 진단과 검진</div>
+                                   </div>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+                   <div class="more_area"><a href="#" class="more"><em class="txt_blue">콘텐츠</em> 더보기 (1/<span>2</span>)</a></div>
+               </div>
+                <!--추천 콘텐츠 앨범형[e]-->
+                <div class="section_banner">
+                    <a href="#"><img src="../../images/main/banner1.jpg"></a>
+                    <a href="#"><img src="../../images/main/banner2.jpg"></a>
+                    <a href="#"><img src="../../images/main/banner3.jpg"></a>
+                </div>
+            </div>
+            <div class="right_area">
+                <a class="r_banner r_banner3" href="#"><img src="../../images/main/banner_right3.jpg"></a>
+                <div class="ad_box">
+                    <a href="#">
+                        <span class="img"><img src="../../images/main/ad_img1.png"></span>
+                        <div class="ad_info">
+                            <strong>이달의 퀴즈</strong>
+                            <span class="txt">가스모틴 에스알</span>
+                            <span class="sub_txt">08-24(화)</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <span class="img"><img src="../../images/main/ad_img2.png"></span>
+                        <div class="ad_info">
+                            <strong>브랜드존</strong>
+                            <span class="txt">최신진료장비</span>
+                            <span class="sub_txt">다기능전자혈압계</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <span class="img"><img src="../../images/main/ad_img3.png"></span>
+                        <div class="ad_info">
+                            <strong>CME매거진</strong>
+                            <span class="txt">메디컬픽</span>
+                            <span class="sub_txt">2021년36호</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+       
+    </div>   
+    <script>
+         var swiper = new Swiper(".main_slide", {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 3,
+            pagination: {
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".main_slide_wrap .swiper-button-next",
+                prevEl: ".main_slide_wrap .swiper-button-prev",
+            },
+        });    
+    </script>
+</body>
+</html>

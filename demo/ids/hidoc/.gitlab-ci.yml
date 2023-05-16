@@ -1,0 +1,11 @@
+build-dev:
+  stage: deploy  
+  only:
+    - master  
+  script:
+    - pwd && whoami
+    - rm -rf /svc/was/publish/hidoc
+    - mkdir /svc/was/publish/hidoc
+    - cp -r ./* /svc/was/publish/hidoc
+  tags:
+    - publish-runner

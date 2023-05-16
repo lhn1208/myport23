@@ -1,0 +1,217 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../plus_shopping/content.css"> <!-- 기존 VIPG css -->
+	<link rel="stylesheet" href="../../css/layout_shopplus.css">
+	<link rel="stylesheet" href="../../css/shopplus.css">
+</head>
+<body class="shopplus">
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<header id="header">
+		<div class="header_inner">
+			<h1 class="link_logo logo_shopplus"><a href="#" class="ico_comm">the SHOP+</a></h1>
+			<h2 class="tit">쇼핑/기획전</h2>
+			<div class="header_search">
+				<div class="search_enter">
+					<div class="search_enter_inner">
+						<select class="select" style="width:80px">
+							<option>선택</option>
+							<option>경영노하우</option>
+						</select>
+						<input type="text" title="검색어 입력">
+						<button type="submit" class="btn_search">검색</button>
+					</div>
+				</div>
+			</div>
+			<ul class="list_3depth">
+				<li class="on"><a href="#">오늘의 특가</a></li>
+				<li><a href="#">가전</a></li>
+				<li><a href="#">디지털</a></li>
+				<li><a href="#">상품권</a></li>
+				<li><a href="#">생활</a></li>
+				<li><a href="#">식품</a></li>
+				<li><a href="#">유아용품</a></li>
+				<li><a href="#">취미</a></li>
+				<li><a href="#">패션/뷰티</a></li>
+				<li><a href="#">기획전</a></li>
+			</ul>
+			<div class="etc_box">
+				<p>장바구니 <a href="#" class="txt_link"><em class="txt_num">5</em>개</a></p>
+				<p>나의후기 <a href="#" class="txt_link"><em class="txt_num">5</em>개</a></p>
+			</div>
+		</div>
+	</header>
+	<section id="container">
+		<div id="content">
+			<div id="content_order">
+				<p class="chart"><img src="../../images/shopplus/card_navi_chart1.gif" alt="장바구니 step1"></p>
+				<!-- 2017-09-07 삭제
+				<p><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/content/card_bg_top.gif" alt="상단top"></p> -->
+				<div id="content_order_min">
+					<div id="title" class="mb20 black11">
+						<h3><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/content/card_title.gif" alt="1:1 맞춤 서비스"></h3>
+						<!-- 2017-09-07 삭제
+						<p class="content_section"><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/content/content_map_icon.gif" alt="home"> &gt;  장바구니</p> -->
+					</div> <!-- title 끝 -->
+
+					<div id="card_list">
+						<form name="frmCart" method="post">
+						<input type="hidden" name="mode" value="modItem">
+
+						<table class="card_table">
+							<colgroup>
+								<!-- 2017-09-07 수정[s] -->
+								<!-- <col width="50px;"/> -->
+								<col style="width:10%">
+								<col>
+								<col style="width:10%">
+								<col style="width:8%">
+								<col style="width:15%">
+								<col style="width:10%">
+								<col style="width:10%">
+								<col style="width:8%">
+								<!-- 2017-09-07 수정[e] -->
+							</colgroup>
+							<tbody>
+								<tr class="concierge_table_th">
+									<!-- <th class="black12_bold"><a href="javascript:void(0);" onClick="chkBox('idxs[]','rev');nsGodo_CartAction.recalc();">선택</a></th> -->
+									<th class="black12_bold">전체선택</th>
+									<th class="black12_bold">상품정보</th>
+									<th class="black12_bold">상품가격</th>
+									<th class="black12_bold">수량</th>
+									<th class="black12_bold">합계</th>
+									<th class="black12_bold">적립금</th>
+									<th class="black12_bold">배송비</th>
+									<th class="black12_bold">선택</th>
+								</tr>
+								<tr style="height:70px;">
+									<!-- <td><input type="checkbox" name="idxs[]" value="0" checked onClick="nsGodo_CartAction.recalc();"></td> -->
+									<td class="img_br"><a href="https://www.vipg.co.kr/shop/goods/goods_view.php?&amp;goodsno=1202662"><img src="../data/goods/1448615162s0.jpg" width="60" onerror="this.src='https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/common/shopping_img_ing.gif'"></a>
+									</td>
+									<td class="txt_left">맛있는 참탕 시리즈(갈비탕,육개장,설렁탕,양평해장국)<br><span class="black11">선택옵션 : [맛있는 참 갈비탕 600g 5봉/]</span></td>
+									<td class="black12_bold" id="item_per_price_0">20,800원</td>
+									<td>
+										<div id="cart_total">
+											<input type="text" style="width:30px;" id="ea[]" name="ea[]" value="1" onkeydown="onlynumber()">
+											<p class="cart_total_top"><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/board/shopping_btn_total_up.gif" alt="수량올리기 버튼" onclick="nsGodo_CartAction.change_cart_ea(frmCart['ea[]'],'up',0)" style="cursor:pointer"></p>
+											<p class="cart_total_bottom"><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/board/shopping_btn_total_down.gif" alt="수량내리기 버튼" onclick="nsGodo_CartAction.change_cart_ea(frmCart['ea[]'],'dn',0)" style="cursor:pointer"></p>
+											<!-- <input type="image" src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/common/sbtn_mod.gif" class="pl58"> -->
+											<br>
+										</div>
+									</td>
+									<td class="blue12_bold" id="item_per_total_price_0">20,800원</td>
+									<td>0원</td>
+									<td>2,500원</td>
+									<td>
+										<!--img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/content/card_btn_order.gif" alt="주문버튼"/-->
+										<a href="https://www.vipg.co.kr/shop/goods/goods_cart.php?&amp;cart_type=&amp;mode=delItem&amp;idx=0"><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/content/card_btn_del.gif" alt="삭제버튼"></a>
+									</td>
+								</tr>
+									<script type="text/javascript">nsGodo_CartAction.pushdata({itemDelivery:2500, ea:1, reserve:0,price:20800});</script>
+								<tr style="height:70px;">
+									<!-- <td><input type="checkbox" name="idxs[]" value="1" checked onClick="nsGodo_CartAction.recalc();"></td> -->
+									<td class="img_br"><a href="https://www.vipg.co.kr/shop/goods/goods_view.php?&amp;goodsno=1213143"><img src="../data/goods/1489737090s0.jpg" width="60" onerror="this.src='https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/common/shopping_img_ing.gif'"></a>
+									</td>
+									<td class="txt_left">
+										[라오메뜨] 골드 캐이어 앰플 16ml
+									</td>
+									<td class="black12_bold" id="item_per_price_1">13,200원</td>
+									<td>
+										<div id="cart_total">
+											<input type="text" style="width:30px;" id="ea[]" name="ea[]" value="1" onkeydown="onlynumber()">
+											<p class="cart_total_top"><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/board/shopping_btn_total_up.gif" alt="수량올리기 버튼" onclick="nsGodo_CartAction.change_cart_ea(frmCart['ea[]'],'up',1)" style="cursor:pointer"></p>
+											<p class="cart_total_bottom"><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/board/shopping_btn_total_down.gif" alt="수량내리기 버튼" onclick="nsGodo_CartAction.change_cart_ea(frmCart['ea[]'],'dn',1)" style="cursor:pointer"></p>
+											<!-- <input type="image" src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/common/sbtn_mod.gif" class="pl58"> -->
+											<br>
+										</div>
+									</td>
+									<td class="blue12_bold" id="item_per_total_price_1">13,200원</td>
+									<td>0원</td>
+									<td rowspan="2">0원</td>
+									<td>
+										<!--img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/content/card_btn_order.gif" alt="주문버튼"/-->
+										<a href="https://www.vipg.co.kr/shop/goods/goods_cart.php?&amp;cart_type=&amp;mode=delItem&amp;idx=1"><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/content/card_btn_del.gif" alt="삭제버튼"></a>
+									</td>
+								</tr>
+									<script type="text/javascript">nsGodo_CartAction.pushdata({itemDelivery:0, ea:1, reserve:0,price:13200});</script>
+								<tr style="height:70px;">
+									<!-- <td><input type="checkbox" name="idxs[]" value="2" checked onClick="nsGodo_CartAction.recalc();"></td> -->
+									<td class="img_br"><a href="https://www.vipg.co.kr/shop/goods/goods_view.php?&amp;goodsno=1213142"><img src="../data/goods/1489734742s0.jpg" width="60" onerror="this.src='https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/common/shopping_img_ing.gif'"></a>
+									</td>
+									<td class="txt_left">미켈란젤로 UV 침구청소기 컴팩트킬러(ARO-UV400)<br><span class="black11">선택옵션 : [화이트/]</span>							</td>
+									<td class="black12_bold" id="item_per_price_2">79,000원</td>
+									<td>
+										<div id="cart_total">
+											<input type="text" style="width:30px;" id="ea[]" name="ea[]" value="1" onkeydown="onlynumber()">
+											<p class="cart_total_top"><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/board/shopping_btn_total_up.gif" alt="수량올리기 버튼" onclick="nsGodo_CartAction.change_cart_ea(frmCart['ea[]'],'up',2)" style="cursor:pointer"></p>
+											<p class="cart_total_bottom"><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/board/shopping_btn_total_down.gif" alt="수량내리기 버튼" onclick="nsGodo_CartAction.change_cart_ea(frmCart['ea[]'],'dn',2)" style="cursor:pointer"></p>
+											<!-- <input type="image" src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/common/sbtn_mod.gif" class="pl58"> -->
+											<br>
+										</div>
+									</td>
+									<td class="blue12_bold" id="item_per_total_price_2">79,000원</td>
+									<td>0원</td>
+									<td>
+										<!--img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/content/card_btn_order.gif" alt="주문버튼"/-->
+										<a href="https://www.vipg.co.kr/shop/goods/goods_cart.php?&amp;cart_type=&amp;mode=delItem&amp;idx=2"><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/content/card_btn_del.gif" alt="삭제버튼"></a>
+									</td>
+								</tr>
+									<script type="text/javascript">nsGodo_CartAction.pushdata({itemDelivery:0, ea:1, reserve:0,price:79000});</script>
+								<tr style="height:70px;">
+									<!-- <td><input type="checkbox" name="idxs[]" value="3" checked onClick="nsGodo_CartAction.recalc();"></td> -->
+									<td class="img_br"><a href="https://www.vipg.co.kr/shop/goods/goods_view.php?&amp;goodsno=1104820"><img src="../data/goods/1433819577s0.jpg" width="60" onerror="this.src='https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/common/shopping_img_ing.gif'"></a>
+									</td>
+									<td class="txt_left">
+										팜DMS(구.메디파피) 처방전보관서비스<br><span class="black11">선택옵션 : [1,500장 이하/1년/]</span></td>
+									<td class="black12_bold" id="item_per_price_3">192,060원</td>
+									<td>
+										<div id="cart_total">
+											<input type="text" style="width:30px;" id="ea[]" name="ea[]" value="4" onkeydown="onlynumber()">
+											<p class="cart_total_top"><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/board/shopping_btn_total_up.gif" alt="수량올리기 버튼" onclick="nsGodo_CartAction.change_cart_ea(frmCart['ea[]'],'up',3)" style="cursor:pointer"></p>
+											<p class="cart_total_bottom"><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/board/shopping_btn_total_down.gif" alt="수량내리기 버튼" onclick="nsGodo_CartAction.change_cart_ea(frmCart['ea[]'],'dn',3)" style="cursor:pointer"></p>
+											<!-- <input type="image" src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/common/sbtn_mod.gif" class="pl58"> -->
+											<br>
+										</div>
+									</td>
+									<td class="blue12_bold" id="item_per_total_price_3">768,240원</td>
+									<td>0원</td>
+									<td>0원</td>
+									<td>
+										<!--img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/content/card_btn_order.gif" alt="주문버튼"/-->
+										<a href="https://www.vipg.co.kr/shop/goods/goods_cart.php?&amp;cart_type=&amp;mode=delItem&amp;idx=3"><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/content/card_btn_del.gif" alt="삭제버튼"></a>
+									</td>
+								</tr>
+									<script type="text/javascript">nsGodo_CartAction.pushdata({itemDelivery:0, ea:4, reserve:0,price:192060});</script>
+								<tr>
+									<td colspan="8" class="card_pay"><!-- 2017-09-07 colspan 수정 -->
+										<span>상품가격 <span class="blue12_bold" id="item_price">881,240</span> + 배송비 <span class="blue12_bold" id="item_delivery">2,500원</span> =
+										<span class="black12_bold">총 주문금액</span> <span class="red20_bold_tahoma" id="el-orderitem-total-price">883,740</span><span class="red12_bold">원</span></span>
+										<p>받으실적립금								<span class="blue12_bold" id="el-orderitem-total-reserve">0원</span></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						</form>
+						<p class="pt10"><a href="https://www.vipg.co.kr/shop/goods/goods_cart.php?&amp;mode=empty" onfocus="blur()"><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/board/board_btn_all_del.gif" alt="전체삭제 버튼"></a></p>
+						<p class="card_pay_last">
+							<a href="javascript:history.back();" onfocus="blur()"><img src="../../images/shopplus/card_btn_shopping_ing.gif" alt="쇼핑계속하기 버튼"></a>
+							<a href="javascript:if(confirm('회원제 서비스로 기간별(年) 이용회비입니다. ========================================')){ location.href='../order/order.php';  } else { exit;  }" onfocus="blur()"><img src="../../images/shopplus/card_btn_order-10.gif" border="0"></a>&nbsp;
+						</p>
+					</div><!-- card_list 끝 -->
+				</div><!-- content_order_min 끝 -->
+				<!-- 2017-09-07 삭제
+				<p><img src="https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/content/card_bg_bottom.gif" alt="하단bottom"></p> -->
+			</div>
+		</div>
+	</section>
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer_plus.html" -->
+	<!-- footer [e] -->
+</body>
+</html>

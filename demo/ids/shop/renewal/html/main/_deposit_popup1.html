@@ -1,0 +1,173 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+<link rel="stylesheet" href="../../css/layout.css">
+<link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+<!--TheShop 예치금 구매 2022-10-14 수정[s]-->
+<div id="deposit_pop" class="deposit_pop">    
+    <div class="pop_body">
+        <h1 class="main_tit">
+            TheSHOP 예치금 구매
+            <strong>예치금을 구매하여  TheSHOP 주문 시 사용해 보세요.</strong>
+        </h1>
+        <div class="top_area">
+            <span class="amt_img"><img src="../../images/deposit_img.jpg"></span>
+            <div class="order_wrap">
+                <div class="order_cnt">
+                    <button class="order_btn minus"></button><input type="text" class="order_input" value="5,00,000"><button class="order_btn plus"></button>
+                </div>
+                <div class="order_total">
+                    <em>5,000,000</em>원
+                </div>
+            </div>
+        </div>
+        <div class="pay_method grey_type">
+            <table class="pay_tbl">
+                <colgroup>
+                    <col width="24%">
+                    <col width="*">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">결제수단</th>
+                        <td>
+                            <div class="radio_item">
+                                <input type="radio" name="pay_opt" class="radio" id="pay_opt1" checked value="할인쿠폰">
+                                <label for="pay_opt1">할인쿠폰</label>
+                            </div>
+                            <div class="radio_item">
+                                <input type="radio" name="pay_opt" class="radio" id="pay_opt2" value="간편결제">
+                                <label for="pay_opt2">간편결제</label>
+                            </div>
+                            <div class="radio_item">
+                                <input type="radio" name="pay_opt" class="radio" id="pay_opt3" value="신용카드">
+                                <label for="pay_opt3">신용카드</label>
+                            </div>
+                            <div class="radio_item">
+                                <input type="radio" name="pay_opt" class="radio" id="pay_opt4" value="pay">
+                                <label for="pay_opt4">PAY</label>
+                            </div>
+                        </td>	
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="pay_opt_row" id="coupon">
+                            <p class="desc">카드를 선택하여 결제하기를 누른 후 할인쿠폰을 적용해 보세요.</p>
+                            <select name="" style="width:160px;">
+                                <option value="">카드 선택</option>
+                                <option value="">국민카드</option>
+                                <option value="">우리카드</option>
+                                <option value="">삼성카드</option>
+                                <option value="">현대카드</option>
+                                <option value="">BC카드</option>
+                            </select>
+                        </td>
+                        <td colspan="2" class="pay_opt_row" id="simplePay">
+                            <p class="desc">카드를 선택하여 결제하기를 누른 후 할인쿠폰을 적용해 보세요.</p>
+                            <select name="" style="width:160px;">
+                                <option value="">카드 선택</option>
+                                <option value="">국민카드</option>
+                                <option value="">우리카드</option>
+                                <option value="">삼성카드</option>
+                                <option value="">현대카드</option>
+                                <option value="">BC카드</option>
+                            </select>
+                            <select name="" style="width:90px;" class="sel_pay_prd">
+                                <option value="">할부기간</option>
+                                <option value="">1개월</option>
+                                <option value="">2개월</option>
+                                <option value="">3개월</option>
+                                <option value="">4개월</option>
+                                <option value="">5개월</option>
+                                <option value="">6개월</option>
+                                <option value="">7개월</option>
+                                <option value="">8개월</option>
+                                <option value="">9개월</option>
+                                <option value="">10개월</option>
+                                <option value="">11개월</option>
+                                <option value="">12개월</option>
+                            </select>
+                            <button class="btn_simple">간편결제 카드등록</button>
+                        </td>
+                        <td colspan="2" class="pay_opt_row type" id="creditCard">
+                            <p class="desc">신용카드로 구매해보세요. *IBK기업카드 별도</p>
+                            <div class="row">
+                                <div class="radio_item">
+                                    <input type="radio" name="pay_credit" class="radio" id="pay_credit1" checked>
+                                    <label for="pay_credit1">일반 신용카드</label>
+                                </div>
+                                <div class="radio_item">
+                                    <input type="radio" name="pay_credit" class="radio" id="pay_credit2">
+                                    <label for="pay_credit2">IBK기업카드</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td colspan="2" class="pay_opt_row type" id="pay">
+                            <p class="desc">다양한 간편PAY로 구매해보세요.</p>
+                            <div class="row">
+                                <div class="radio_item">
+                                    <input type="radio" name="pay_credit" class="radio" id="pay1" checked>
+                                    <label for="pay1">PAYCO, 카카오페이,SSG페이</label>
+                                </div>
+                                <div class="radio_item">
+                                    <input type="radio" name="pay_credit" class="radio" id="pay2">
+                                    <label for="pay2">네이버페이</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="pay_notice">
+                                <h2 class="pay_tit"><span>꼭 확인하세요</span></h2>
+                                <ul>
+                                    <li>- 간편결제는 사전에 등록하신 카드로 바로 결제됩니다.</li>
+                                    <li>- 결제 완료 시 예치금이 바로 적립되며, 나의 혜택관리 > 예치금 에서 '상품권 구매'로 이력 확인이 가능합니다.</li>
+                                    <li>- 해당 상품은 예치금 적립 완료 시 취소가 불가능합니다.</li>
+                                    <li>- 폐업의 사유로 예치금 환불 신청을 하셨을 경우, 할인쿠폰을 적용했던 금액은 제외되어 환급됩니다.</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">최종 결제금액</th>
+                        <td>
+                            (할인쿠폰 적용 시)<span class="total"><em>49,000,000</em>원</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+           
+        </div>
+        <div class="btn_pay">
+            <button class="btn_type2">취소하기</button>
+            <button class="btn_type1">결제하기</button>
+        </div>
+    </div>
+</div>
+<script>
+    $('.pay_opt_row').hide();
+    $('#coupon').show();
+    $("input[name='pay_opt']").change(function(){
+        if($("input[name='pay_opt']:checked").val() == '할인쿠폰'){
+			$('.pay_opt_row').hide();
+			$('#coupon').show();
+		}	
+        if($("input[name='pay_opt']:checked").val() == '간편결제'){
+			$('.pay_opt_row').hide();
+			$('#simplePay').show();
+		}	
+        if($("input[name='pay_opt']:checked").val() == '신용카드'){
+			$('.pay_opt_row').hide();
+			$('#creditCard').show();
+		}	
+        if($("input[name='pay_opt']:checked").val() == 'pay'){
+			$('.pay_opt_row').hide();
+			$('#pay').show();
+		}	
+    });
+</script>
+<!--TheShop 예치금 구매 [e]-->
+</body>
+</html>

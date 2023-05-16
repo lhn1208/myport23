@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html class="ie7 no-js" lang="ko-KR"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8 no-js" lang="ko-KR"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9 no-js" lang="ko-KR"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="ko"> <!--<![endif]-->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>문서 제목</title>
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/Include/css/Modetour/common.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/Event/Plan/Css/PC/promotion.css" />
+	<script src="https://js.modetour.com/jquery/ver/1.8.3.min.js"></script>
+	<script src="https://js.modetour.com/jquery/plugin/easing.js"></script>
+	<script src="https://js.modetour.com/jquery/plugin/cycle2.js"></script>
+	<script src="https://js.modetour.com/jquery/plugin/cycle2.scrollVert.js"></script>
+</head>
+<body>
+	<div id="EventwarpBody">
+		<div class="promotion_container">
+			<div class="promotion-img">
+				<!-- [시작]: 여기서부터시작 -->			
+				<style type="text/css">
+                    .event_wrap {position: relative; min-width:800px; margin:0 auto;}
+                    .event_wrap img{vertical-align: middle;}
+                    .event_wrap .main{position: relative; height: 920px;}
+                    .event_wrap .main >div{width:100%; background-repeat: no-repeat; background-position: center 0;}
+                    .event_wrap .main .in1{ background-image: url("https://img.modetour.com/promotion/11147/bg_main1.jpg");}
+                    .event_wrap .main .in2{ background-image: url("https://img.modetour.com/promotion/11147/bg_main2.jpg");}
+                    .event_wrap .main .in3{ background-image: url("https://img.modetour.com/promotion/11147/bg_main3.jpg");}
+                    .event_wrap .main .in4{ background-image: url("https://img.modetour.com/promotion/11147/bg_main4.jpg");}
+
+                    .tab_wrap{height: 160px;}
+                    .ev_tab {width:100%; background:#f8cf04;}
+                    .ev_tab.fixed{position: fixed; top:0; z-index: 999;}
+                    .ev_tab .tab{width:800px; margin:0 auto;}
+                    .ev_tab .tab::after{display: block; content: ""; clear: both;}
+                    .ev_tab .tab>a{width:16.6%; padding:21px 0; float: left;}
+                    .event_wrap .section{position: relative; background-repeat: no-repeat; background-position: center 0;}
+                    .event_wrap .cont1{ background-color: #fdf8e1;}
+                    .event_wrap .cont2{ background-image: url("https://img.modetour.com/promotion/11147/bg_cont2.jpg");}
+                    .event_wrap .cont3{ background-image: url("https://img.modetour.com/promotion/11147/bg_cont3.jpg");}
+                    .event_wrap .cont4{position: relative; padding-bottom: 100px; background-color: #fdf8e1;}
+                    .event_wrap .cont4 .resort{width:800px; margin:0 auto;}
+                    .event_wrap .cont4 .resort:after{display: block; content:""; clear: both;}
+                    .event_wrap .cont4 .resort_tab,.event_wrap .cont4 .item_wrap{float: left;}
+                    .event_wrap .cont4 .resort_tab li{cursor: pointer;}
+                    .event_wrap .cont4 .item_wrap .item{display: none;}
+                    .event_wrap .cont4 .item_wrap .item.on{display: block;}
+                    .event_wrap .cont5{ background-image: url("https://img.modetour.com/promotion/11147/bg_cont5.jpg");}
+                    .event_wrap .cont3 .movie{position: absolute; top:262px; left: 50%; margin-left: -292px; width:584px; height: 354px;}
+                    .event_wrap .cont3 .movie iframe{width: 100%; height: 100%;}
+                    .event_wrap .cont7{min-height: 1px;}
+                </style>
+                 <script type="text/javascript">
+					(function($){							
+						$(document).ready(function(){
+                            var tab=$('.ev_tab');
+                            var tab_link=tab.find('a');
+                            var section=$('.section_area .section');		
+                            var tabH= tab.outerHeight();
+                            var conTop = $('.cont1').offset().top;
+                            tab_link.click(function(){
+                                var idx=$(this).index();
+                                $('html, body').stop().animate({
+                                    'scrollTop': section.eq(idx).offset().top -tabH
+                                }, 1000);	
+                                return false;
+                            });			
+                            function fix(){
+                                var scTop = $(window).scrollTop();
+                                if(scTop>conTop){							
+                                    tab.addClass('fixed');						
+                                }else{
+                                    tab.removeClass('fixed');
+                                }
+                            }
+                            function menuOn(){
+                                var scT=$(window).scrollTop();
+                                section.each(function(){
+                                    var idx=$(this).index();
+                                    var offst=Math.floor($(this).offset().top - tabH);
+                                    if(offst <= scT){
+                                        tab_link.each(function(i){
+                                            tab_link.eq(i).find("img").attr("src" , tab_link.eq(i).find("img").attr("src").replace("_on.png" , "_off.png"));    
+                                        });
+                                        tab_link.eq(idx).find("img").attr("src" , tab_link.eq(idx).find("img").attr("src").replace("_off.png" , "_on.png"));    
+                                    }
+                                    
+                                });
+                            }
+                            $('.resort_tab li').click(function(){
+							    $('.resort_tab li').each(function(){
+                                    $(this).find("img").attr("src" , $(this).find("img").attr("src").replace("_on.jpg" , "_off.jpg"));          
+                                });
+                                $(this).find("img").attr("src" , $(this).find("img").attr("src").replace("_off.jpg" , "_on.jpg"));
+                                var a_index = $(this).index();								    		    	
+                                $('.item').eq(a_index).addClass('on').siblings('div').removeClass('on');		
+                            });
+                            $(window).scroll(function(){
+                                fix();
+                                menuOn();
+                            });
+						
+						});
+					})(jQuery);
+				</script>
+				<div class="event_wrap">
+                    <div class=" main cycle-slideshow"
+                    data-cycle-fx="fadeout" 
+                    data-cycle-timeout="3000"
+                    data-cycle-slides=">div">
+                        <div class="in1"><img src="https://img.modetour.com/promotion/11147/img_main1.jpg" alt=""></div>
+                        <div class="in2"><img src="https://img.modetour.com/promotion/11147/img_main2.jpg" alt=""></div>
+                        <div class="in3"><img src="https://img.modetour.com/promotion/11147/img_main3.jpg" alt=""></div>
+                        <div class="in4"><img src="https://img.modetour.com/promotion/11147/img_main4.jpg" alt=""></div>
+                    </div>
+                    <div class="tab_wrap">
+                        <div class="ev_tab">
+                            <div class="tab">
+                                <a href="#"><img src="https://img.modetour.com/promotion/11147/tab1_on.png"></a>
+                                <a href="#"><img src="https://img.modetour.com/promotion/11147/tab2_off.png"></a>
+                                <a href="#"><img src="https://img.modetour.com/promotion/11147/tab3_off.png"></a>
+                                <a href="#"><img src="https://img.modetour.com/promotion/11147/tab4_off.png"></a>
+                                <a href="#"><img src="https://img.modetour.com/promotion/11147/tab5_off.png"></a>
+                                <a href="#"><img src="https://img.modetour.com/promotion/11147/tab6_off.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_area">
+                        <div class="section cont1">
+                            <img src="https://img.modetour.com/promotion/11147/img_cont1.jpg" alt="">
+                        </div>
+                        <div class="section cont2">
+                            <img src="https://img.modetour.com/promotion/11147/img_cont2.jpg" alt="">
+                        </div>
+                        <div class="section cont3">
+                            <img src="https://img.modetour.com/promotion/11147/img_cont3.jpg" alt="">
+                            <!-- <div class="movie">
+                                <iframe src="https://www.youtube.com/embed/dWGKr9z7nIA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div> -->
+                        </div>
+                        <div class="section cont4">
+                            <img src="https://img.modetour.com/promotion/11147/resort_tit.jpg" alt="">
+                            <div class="resort">
+                                <div class="resort_tab">
+                                        <img src="https://img.modetour.com/promotion/11147/tab_tit.jpg" alt="">
+                                    <ul>                                        
+                                        <li><img src="https://img.modetour.com/promotion/11147/item1_on.jpg" alt=""></li>
+                                        <li><img src="https://img.modetour.com/promotion/11147/item2_off.jpg" alt=""></li>
+                                        <li><img src="https://img.modetour.com/promotion/11147/item3_off.jpg" alt=""></li>
+                                        <li><img src="https://img.modetour.com/promotion/11147/item4_off.jpg" alt=""></li>
+                                        <li><img src="https://img.modetour.com/promotion/11147/item5_off.jpg" alt=""></li>
+                                        <li><img src="https://img.modetour.com/promotion/11147/item6_off.jpg" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="item_wrap">
+                                    <div class="item on"><img src="https://img.modetour.com/promotion/11147/item1.jpg" alt=""></div>
+                                    <div class="item"><img src="https://img.modetour.com/promotion/11147/item2.jpg" alt=""></div>
+                                    <div class="item"><img src="https://img.modetour.com/promotion/11147/item3.jpg" alt=""></div>
+                                    <div class="item"><img src="https://img.modetour.com/promotion/11147/item4.jpg" alt=""></div>
+                                    <div class="item"><img src="https://img.modetour.com/promotion/11147/item5.jpg" alt=""></div>
+                                    <div class="item"><img src="https://img.modetour.com/promotion/11147/item6.jpg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section cont5">
+                            <img src="https://img.modetour.com/promotion/11147/img_cont5.jpg" alt="">
+                        </div>
+                        <div class="section cont6">
+                            <img src="https://img.modetour.com/promotion/11147/img_cont6.jpg" alt="">
+                        </div>
+                        <div class="cont7"></div>
+                    </div>
+				</div><!-- event_wrap -->				               
+				<!-- [끝]: 여기까지 -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>

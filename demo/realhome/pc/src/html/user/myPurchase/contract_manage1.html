@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <include src="../../include/folder_include/set_css.html"></include>
+    <include src="../../include/folder_include/set_js.html"></include>
+    <title>realhouse</title>
+</head>
+<body>
+<include src="../../include/sub_header2.html"></include>
+<div class="wrapper">
+    <div id=sub_container class="sub_container">  
+        <div class="container_inner">     
+            <div class="sub_intro">
+                <h3 class="tit">계약관리</h3>
+                <div class="txt">계약서 작성이 완료되면 계약처리하십시오.</div>
+                <div class="right_btn btn_round_white btn_close"><button class="btn">닫기</button></div>
+            </div>
+            <div class="table_style3">
+                <table class="table" summary="계약 부동산,계약구분,금액,계약일,매수측,매수측의 담당 의뢰인,매도측,매도측의 담당 의뢰인 안내 테이블입니다.">
+                    <caption>계약 관리</caption>
+                    <colgroup>  
+                        <col width="14%">
+                        <col width="36%">
+                        <col width="14%">
+                        <col width="36%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                           <th>게약 부동산</th>
+                           <td colspan="3">서울시 송파구 잠실동 321(잠실주공2단지아파트) 102동 102호</td>
+                        </tr>
+                        <tr class="pd_style">
+                            <th>계약 구분</th>
+                            <td colspan="3">
+                                <input id="contract_type1" type="radio" name="contract_type" class="radio_btn green">
+                                <label for="contract_type1"><span class="btn_radio">전세</span></label>
+                                <input id="contract_type2" type="radio" name="contract_type" class="radio_btn green">
+                                <label for="contract_type2"><span class="btn_radio">월세</span></label>
+                                <input id="contract_type3" type="radio" name="contract_type" class="radio_btn green">
+                                <label for="contract_type3"><span class="btn_radio">매매</span></label>
+                                <input id="contract_type4" type="radio" name="contract_type" class="radio_btn green">
+                                <label for="contract_type4"><span class="btn_radio">단기임대</span></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>금액</th>
+                            <td colspan="3"><span class="txt_red2">※ 상단의 계약구분을 선택하십시오</span></td>
+                        </tr>
+                        <tr class="pd_style">
+                            <th>계약일</th>
+                            <td colspan="3">
+                                <div class="select_area select_w210">
+                                    <a href="#" class="select_top">2018.09.06(월)</a>
+                                    <!-- <div class="select_list">
+                                        <a href="#">일반주택</a>
+                                        <a href="#">공동주택</a>
+                                    </div> -->
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>매수측</th>
+                            <td>홍길동(은성공인중개사사무소)</td>
+                            <th>담당 의뢰인</th>
+                            <td>홍길남</td>
+                        </tr>
+                        <tr>
+                            <th>매도측</th>
+                            <td>김길동(은성공인중개사사무소)</td>
+                            <th>담당 의뢰인</th>
+                            <td>강길남</td>
+                        </tr>
+                        <tr>
+                            <th>안내</th>
+                            <td class="info" colspan="3">
+                                <ul>
+                                    <li>1. 계약서를 작성 후, 계약 처리하시기 바랍니다.</li>
+                                    <li>2. 계약 부동산 및 공인중개사, 담당 의뢰인을 확인 후 계약으로 등록하십시오.</li>
+                                    <li>3. 계약 처리하면 의뢰인과 매수측 중개사, 매도측 중개사가 계약내용을 모두 확인 가능합니다.</li>
+                                    <li>4. 계약내용을 정확하게 입력해주십시오.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn_submit">
+                <button class="btn_cancel btn">취소</button>
+                <button class="btn_confirm btn off">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+<include src="../../include/footer.html"></include>
+</body>
+</html>

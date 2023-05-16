@@ -1,0 +1,118 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+		<!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" --> <!-- 2017-03-21 수정 -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<h2 class="screen_out">오프라인 매장</h2>
+				<div class="cont_head"><!-- 2017-03-21 class 수정 -->
+					<h3 class="tit_cate">영수증 등록하기</h3>
+					<!-- 2016-04-15 삭제
+					<div class="btns_head">
+						<a href="#none" class="link_search"><span class="ico_oshop ico_search">검색</span></a>
+						<a href="#none" class="link_cart"><span class="ico_oshop ico_cart">장바구니</span></a>
+					</div> -->
+				</div>
+				<form>
+					<fieldset>
+						<legend class="screen_out">오프라인 매장 이용 등록 폼</legend>
+						<!-- 2017-04-13 수정[s] -->
+						<div class="cont_offline">
+							<ul class="list_type">
+								<li>오프라인 매장 이용일 기준 당월 및 최대 익월 2일 이내 신청해주세요.</li>
+								<li>환불일은 결제일 기준 익월 25일 전 후 금요일 입금됩니다. (승인상태에 한함)</li>
+								<li>주류 환불신청은 대상에서 제외됩니다. (시행일 : 14 .03 .01부터)</li>
+								<li>법인카드 결제 영수증은 처리 되지 않습니다.</li>
+							</ul>
+							<div class="box_type1 wrap_table">
+								<table class="tbl_type1">
+									<caption class="screen_out">오프라인 매장 영수증 등록</caption>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="sel_shop">매장선택</label></th>
+											<td>
+												<div class="select_type1">
+													<select class="list_select" id="sel_shop">
+														<option selected="selected">선택1</option>
+														<option>선택2</option>
+													</select>
+												</div>
+												<p class="txt_guide">※ 마켓(백화점/대영마트/마트등)에서 구매하신 국순당 주류제품 총 30,000원 이상 구매시 10% 할인</p>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="shop_branch">지점선택</label></th>
+											<td>
+												<div class="select_type1">
+													<select class="list_select" id="shop_branch">
+														<option selected="selected">선택</option>
+														<option>선택1</option>
+													</select>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="company_division">결제일</label></th>
+											<td><div class="frame_inp"><input type="date" id="company_division" class="inp_oshop"></div></td>
+										</tr>
+										<tr class="cell_small">
+											<th scope="row"><label for="company_team">승인번호</label></th>
+											<td>
+												<div class="frame_inp"><input type="text" id="company_team" class="inp_oshop"></div>
+												<a href="#none" class="btn_type1">중복확인</a>
+											</td>
+										</tr>
+										<tr class="cell_small">
+											<th scope="row"><label for="company_idnum">결제금액</label></th>
+											<td><div class="frame_inp"><input type="text" id="company_idnum" class="inp_oshop"></div> 원</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="user_id">영수증</label></th>
+											<td>
+												<div class="inp_file_type1">
+													<input type="file" id="fileList1" name="upload" class="screen_out inp_file">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="user_name">은행명</label></th>
+											<td><div class="frame_inp"><input type="text" id="user_name" class="inp_oshop"></div></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="user_gender">환불계좌</label></th>
+											<td><div class="frame_inp"><input type="text" id="user_name" class="inp_oshop"></div></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="user_phone">후기</label></th>
+											<td>
+												<div class="frame_inp">
+													<textarea class="inp_oshop" rows="3"></textarea>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<button type="submit" class="btn_type2 btn_confirm">등록하기</button><!-- 2017-03-21 class 수정 -->
+						</div>
+					</fieldset>
+				</form>
+				<script>
+				$(function() {
+					// 파일박스
+					oshopUI.fileBoxDesign({
+						"target": $(".inp_file_type1"),
+						"maxLength": 1
+					});
+				})
+				</script>
+				<!-- 2017-04-13 수정[e] -->
+				<!-- // template 영역 끝 -->
+			</section>
+		</section>
+	</section>
+
+</body>
+</html>

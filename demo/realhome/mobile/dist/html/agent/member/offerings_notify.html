@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, minimal-ui">
+    <link href="../../../css/font.min.css" rel="stylesheet">
+    <link href="../../../css/common.min.css" rel="stylesheet">
+    <link href="../../../css/layout.min.css" rel="stylesheet">
+    <link href="../../../css/style.min.css" rel="stylesheet">
+    <link href="../../../css/mq_style.min.css" rel="stylesheet">
+    <link href="../../../css/plugin/swiper.min.css" rel="stylesheet">
+
+
+    <script src="../../../js/3.3.1.min.js"></script>	
+    <script src="../../../js/common.min.js"></script>	
+    <script src="../../../js/sub.min.js"></script>	
+    <script src="../../../js/plugin/swiper.min.js"></script>	
+
+    <title>realhouse</title>
+</head>
+<body class="bg_white">
+<!--header-->
+<header class="sub_header">
+    <div class="header_inner">
+        <a href="#" class="btn_perv"><span class="blind">뒤로가기</span></a>  
+        <h1 class="tit">매물 신고</h1>
+    </div>
+</header>
+<!--//header-->
+<div class="wrapper">
+    <i class="cover"></i>
+    <div id=sub_container class="sub_container">  
+        <div class="container_inner">    
+            <div class="offer_notify">
+                <div class="content_area">
+                    <ul class="content_box">
+                        <li class="row">
+                            <input type="radio" id="notify_chk1" name="notify_chk" class="checkbox">
+                            <label for="notify_chk1">
+                                <em>거래완료된 매물</em>
+                            </label>
+                        </li>
+                        <li class="row">
+                            <input type="radio" id="notify_chk2" name="notify_chk" class="checkbox">
+                            <label for="notify_chk2">
+                                <em>매물의 동호수(주소)와 현장 방문한 동호수가 다름</em>
+                            </label>
+                        </li>
+                        <li class="row">
+                            <input type="radio" id="3" name="notify_chk" class="checkbox">
+                            <label for="3">
+                                <em>옵션이 다른 매물</em>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content_area">
+                    <header class="header border_t_none"><strong class="tit">추가설명(20자 이상)</strong></header>
+                    <textarea id="" class="add_textarea textarea" placeholder="추가 설명을 입력해 주십시오."></textarea>
+                </div>
+            </div>
+            <div class="btn_submit fixed">
+                <button class="btn">취소</button>
+                <button class="btn">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../../js/ui.min.js"></script>
+</html>

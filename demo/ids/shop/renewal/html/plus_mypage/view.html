@@ -1,0 +1,234 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../plus_shopping/content.css"> <!-- 기존 VIPG css -->
+	<link rel="stylesheet" href="../../css/layout_shopplus.css">
+	<link rel="stylesheet" href="../../css/shopplus.css">
+</head>
+<body class="shopplus">
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<header id="header">
+		<div class="header_inner">
+			<h1 class="link_logo logo_shopplus"><a href="#" class="ico_comm">the SHOP+</a></h1>
+			<h2 class="tit">마이페이지</h2>
+			<div class="header_search">
+				<div class="search_enter">
+					<div class="search_enter_inner">
+						<select class="select" style="width:80px">
+							<option>전체</option>
+							<option>지식Q&amp;A</option>
+							<option>복약지도</option>
+							<option>경영노하우</option>
+						</select>
+						<input type="text" title="검색어 입력">
+						<button type="submit" class="btn_search">검색</button>
+					</div>
+				</div>
+			</div>
+			<ul class="list_3depth">
+				<li class="on"><a href="main.html">주문/배송조회</a></li>
+				<li><a href="point.html">포인트 이용내역</a></li>
+				<li><a href="#">충전하기</a></li>
+				<li><a href="alarm_setting.html">서비스 알림 설정</a></li>
+			</ul>
+		</div>
+	</header>
+	<section id="container" class="cont_top_bnr" style="background-color:#f3f4f8;"><!-- sub 상단 배너 있을때 class="cont_top_bnr" 추가 -->
+		<div class="sub_top_bnr sub_mypage">
+			<div class="inner">
+				<strong class="tit">마이페이지</strong>
+				<img class="bg_img" src="../../images/bg_mypage.jpg" alt="더샵플러스를 통해 주문/배송건 및 포인트 이용내역을 조회할 수 있습니다.">
+			</div>
+		</div>
+		<div id="content">
+			<div class="sub_cont mypage_cont">
+				<div id="content_min">
+					<div id="title" class="mb20 black11">
+						<h3><img src="../../images/shopplus/mypage_title_order_view.jpg" alt="나의 1:1 맞춤 서비스"></h3>
+						<!-- 2017-08-28 삭제
+						<p class="content_section"><img src="http://lounge.shop.co.kr/shop/vipg/images/content/content_map_icon.jpg" alt="home"> &gt;  1:1 맞춤 서비스 &gt; 마이페이지 &gt; 주문내역상세보기</p> -->
+					</div><!-- title 끝 -->
+
+					<div class="plus_box"><!-- 2017-08-28 감싸는 div 추가 -->
+						<div id="table_list_concierge" class="12black"><!-- 2017-08-28 class "mt30" 삭제 -->
+							<h3><img src="../../images/shopplus/mypage_title_order_data.jpg" alt="주문 정보"></h3><!-- 2017-08-28 alt값 수정 -->
+							<table class="concierge_table tbl_type1">
+								<colgroup>
+									<!-- 2017-08-28 col style 수정[s] -->
+									<col style="width:80px">
+									<col style="width:auto">
+									<col style="width:100px">
+									<col style="width:100px">
+									<col style="width:100px">
+									<col style="width:150px">
+									<!-- 2017-08-28 col style 수정[e] -->
+								</colgroup>
+								<thead>
+									<tr class="concierge_table_th">
+										<th><span class="screen_hide">상품 이미지</span></th><!-- 2017-08-28 수정 -->
+										<th class="black12_bold">상품정보</th>
+										<th class="black12_bold">수량</th>
+										<th class="black12_bold">판매가</th>
+										<th class="black12_bold">배송상태</th>
+										<th class="black12_bold">배송/후기</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="bb_1px_black">
+										<td class="height_60 txt_center"><a href="#"><img src="https://www.vipg.co.kr/shop/data/goods/1486433687s0.jpg" style="width:47px" onerror="this.src='https://www.vipg.co.kr/shop/data/skin/godomarket_G/img/common/shopping_img_ing.gif'"></a></td>
+										<td class="txt_left"><!-- 2017-08-28 class 수정 -->
+											<a href="#">싱크컵 음식물 쓰레기통<br>
+											<span class="black11">선택옵션 :[블루]</span></a>
+										</td>
+										<td class="txt_center">1개</td>
+										<td class="orange12_bold txt_center">8,550원</td><!-- 2017-08-28 class 수정 -->
+										<td class="txt_center">주문접수</td>
+										<td class="txt_center">
+											<div style="margin:5px 0 5px 0;">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="6" class="concierge_table_td_price">
+											주문금액합계 <span class="orange12_bold">8,550원</span>+ 배송비 <span class="orange12_bold">0원</span> = <span class="black12_bold">총 주문금액</span> <span class="orange15_bold_tahoma">8,550원</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!-- table_list_concierge 끝 --> 
+
+						<div id="table_list_concierge" class="mt30 12black">  
+							<h3><img src="../../images/shopplus/mypage_title_order_data_name.jpg" alt="1:1 맞춤 서비스문의내역"></h3>
+							<div id="table_left_ver" class="12black">  
+								<table class="table_left_ver">
+									<!-- 2017-08-28 colgroup 추가[s] -->
+									<colgroup>
+										<col style="width:150px;">
+										<col>
+										<col style="width:150px;">
+										<col>
+									</colgroup>
+									<!-- 2017-08-28 colgroup 추가[e] -->
+									<tbody><!-- 2017-08-28 thead -> tbody 태그 변경 -->
+										<tr class="table_left_ver_top">
+											<th class="black12_bold pl10">주문하시는 분</th><!-- 2017-08-28 inline style 삭제 -->
+											<td class="txt_left">테스트선</td>
+											<th class="black12_bold pl10">전화번호</th><!-- 2017-08-28 inline style 삭제 -->
+											<td class="txt_left">02-111-2222</td>
+										</tr>
+										<tr>
+											<th class="black12_bold pl10">휴대폰 번호</th>
+											<td style="width:273">010-0000-0000</td>
+											<th style="width:97" class="black12_bold pl10">이메일</th>
+											<td style="width:262">12345@mcircle.biz</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<form name="frmOrder" method="post" action="/shop/mypage/indb.php?&amp;" onsubmit="return chkForm(this)">
+							<input type="hidden" name="mode" value="modReceiver">
+							<input type="hidden" name="ordno" value="1503899359750">
+							<div id="table_list_concierge" class="mt30 12black">  
+								<h3><img src="../../images/shopplus/mypage_title_shipping_view.jpg" alt="1:1 맞춤 서비스문의내역"></h3>
+								<div id="table_left_ver" class="12black">  
+									<table class="table_left_ver">
+										<colgroup>
+											<!-- 2017-08-28 col style 수정[s] -->
+											<col style="width:150px">
+											<col style="width:auto">
+											<!-- 2017-08-28 col style 수정[e] -->
+										</colgroup>
+										<tbody><!-- 2017-08-28 thead -> tbody 태그 변경 -->
+											<tr class="table_left_ver_top">
+												<th class="black12_bold pl10">받으시는 분</th><!-- 2017-08-28 inline style 삭제 -->
+												<td class="txt_left">테스트선</td>
+											</tr>
+											<tr>
+												<th class="black12_bold pl10">주소</th>
+												<td>(135-715) 서울 강남구 삼성동 163-3 163 S빌딩 3층(테스트계졍배송하지마세요)</td>
+											</tr>
+											<tr>
+												<th class="black12_bold pl10">전화번호</th>
+												<td>02-111-2222</td>
+											</tr>
+											<tr>
+												<th class="black12_bold pl10">휴대폰번호</th>
+												<td>010-0000-0000</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div id="table_list_concierge" class="mt30 12black">  
+								<h3><img src="../../images/shopplus/mypage_title_sale_view.jpg" alt="1:1 맞춤 서비스문의내역"></h3>
+								<div id="table_left_ver" class="12black">  
+									<table class="table_left_ver">
+										<colgroup>
+											<!-- 2017-08-28 col style 수정[s] -->
+											<col style="width:150px">
+											<col style="width:auto">
+											<!-- 2017-08-28 col style 수정[e] -->
+										</colgroup>
+										<tbody><!-- 2017-08-28 thead -> tbody 태그 변경 -->
+											<tr class="table_left_ver_top">
+												<th style="width:78" class="black12_bold pl10">결제방법</th>
+												<td class="txt_left"> 
+													무통장입금 <br>
+													입금은행 : 우리은행 <br>
+													입금계좌 : 1005-70193-9151 <br>
+													예금주명 : (주)엠서클 <br> 
+													입금자명 : 테스트선
+												</td>
+											</tr>
+											<tr>
+												<th class="black12_bold pl10">총주문금액</th>
+												<td><span class="orange12_bold">8,550원</span></td>
+											</tr>
+											<tr>
+												<th class="black12_bold pl10">배송비</th>
+												<td>
+													<div id="paper_delivery_msg1">0원</div>
+													<div id="paper_delivery_msg2" style="float:left;margin:0;"></div>	
+												</td>
+											</tr>
+											<tr>
+												<th class="black12_bold pl10">회원할인</th>
+												<td>0원</td>
+											</tr>
+											<tr>
+												<th class="black12_bold pl10">더샵플러스 포인트 사용</th><!-- 2017-08-28 텍스트 수정 -->
+												<td>0원</td>
+											</tr>
+
+											<tr>
+												<th class="black12_bold pl10">결제금액</th>
+												<td><span class="orange15_bold_tahoma">8,550<span><span class="orange12_bold">원</span></span></span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<p class="pt10 txt_info"><span>*</span> 주문취소/교환/반품을 원하시면 고객센터를 이용하세요.</p><!-- 2017-08-28 class 수정 및 html 수정 -->
+							<p class="table_left_ver_list">
+								<a href="main.html"><img src="../../images/shopplus/board_btn_list_big.jpg" alt="목록으로가기 버튼"></a>
+								<a href="javascript:chkCancel();"><img src="../../images/shopplus/board_btn_cancel_big.jpg" border="0"></a>
+							</p>
+						</form>
+					</div><!-- 2017-08-28 감싸는 div 추가 -->
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+	
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer_plus.html" -->
+	<!-- footer [e] -->
+</body>
+</html>

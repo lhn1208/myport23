@@ -1,0 +1,190 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+    <!-- 검색 영역 전용 CSS -->
+	<link rel="stylesheet" href="../../css/search.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+	<section id="container">
+		<div id="content" class="search_result">
+            <h2 class="title">검색결과<sub>아래 상품구분을 누르시면 검색 결과에서 원하시는 분류만 확인할 수 있습니다.</sub></h2>
+            <form action="#">
+                <fieldset class="category_selector">
+                    <legend>상품 구분</legend>
+                    <!-- 주의: 상품 구분값(data-type) 속성은 반드시 대문자여야 합니다. -->
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="E" value="" checked>
+                        <div class="label"><span class="em">E</span>급여</div>
+                    </label>
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="O" value="">
+                        <div class="label"><span class="em">O</span>일반/비급여</div>
+                    </label>
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="H" value="">
+                        <div class="label"><span class="em">H</span>건.기.식</div>
+                    </label>
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="X" value="">
+                        <div class="label"><span class="em">X</span>부외품/의료기</div>
+                    </label>
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="B" value="">
+                        <div class="label"><span class="em">B</span>화장품</div>
+                    </label>
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="AM" value="">
+                        <div class="label"><span class="em">AM</span>동물약품</div>
+                    </label>
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="O1" value="">
+                        <div class="label"><span class="em">O</span>그룹할인</div>
+                    </label>
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="O2" value="">
+                        <div class="label"><span class="em">O</span>수량할인</div>
+                    </label>
+                </fieldset>
+            </form>
+            <div class="inner">
+                <!-- 검색 결과 상품 리스트 영역 [s] -->
+                <div class="column result_list">
+                    <h3 class="title">상품리스트</h3>
+                    <div class="prod_list_wrap">
+                        <form action="#">
+                            <fieldset class="option_bar">
+                                <legend>상품 리스트 옵션</legend>
+                                <div class="array_option">
+                                    <label class="bullet">
+                                        <input type="radio" name="arrayType" value="" checked>
+                                        <div class="label">판매순</div>
+                                    </label>
+                                    <label class="bullet">
+                                        <input type="radio" name="arrayType" value="">
+                                        <div class="label">상품평순</div>
+                                    </label>
+                                    <label class="bullet">
+                                        <input type="radio" name="arrayType" value="">
+                                        <div class="label">낮은가격순</div>
+                                    </label>
+                                    <label class="bullet">
+                                        <input type="radio" name="arrayType" value="">
+                                        <div class="label">높은가격순</div>
+                                    </label>
+                                </div>
+                                <select name="" class="show_option" style="width:100px;">
+                                    <option value="">20개씩 보기</option>
+                                </select>
+                            </fieldset>
+                        </form>
+                        <form class="search_bar" action="#">
+                            <fieldset>
+                                <legend>결과 내 재검색</legend>
+                                <p class="row">
+                                    <input type="text" name="" placeholder="상품명, 제조사, 규격, 보험코드로 입력해보세요!"><button type="submit">검색</button>
+                                </p>
+                                <p class="desc">공급사별 상품 검색을 희망하시는 경우, 상단 공급사별 보기를 이용해주세요.</p>
+                            </fieldset>
+                        </form>
+                        <div class="prod_list">
+                            <!-- 2021-06-08 카테고리 해당 상품 없는 케이스 [s] -->
+                            <div class="empty">
+                                <h2 class="title"><strong>[category_selector]</strong>에 해당하는 상품이 존재하지 않습니다.</h2>
+                                <p> 검색 결과를 확인하시려면, 다시 한번 [category_selector]를 선택하시거나 다른 상품 분류를 확인해주세요.</p>
+                            </div>
+                            <!-- 2021-06-08 카테고리 해당 상품 없는 케이스 [e] -->
+
+                            <!-- 2021-06-08 결과 내 검색 해당 상품 없는 케이스 [s] -->
+                            <div class="empty">
+                                <h2 class="title">검색하신 <strong>"임팩타민 원스"</strong> 의 결과가 존재하지 않습니다.</h2>
+                                <p>의약품일 경우 표준코드로 검색시 보다 정확한 검색이 가능합니다.</p>
+                                <div class="button_wrap">
+                                    <a href="#" class="btn_type5">상품 리스트로 돌아가기</a>
+                                </div>
+                            </div>
+                            <!-- 2021-06-08 결과 내 검색 해당 상품 없는 케이스 [e] -->
+                        </div>
+                    </div>
+                </div>
+                <!-- 검색 결과 상품 리스트 영역 [e] -->
+
+                <!--  상품 상세 보기 및 결과 내 검색 영역 [s] -->
+                <div class="column prod_detail">
+                    <!-- 선택된 상품 없는 경우 -->
+                    <div class="detail_wrap">
+                        <h3 class="title">상품상세정보</h3>
+                        <p class="desc">선택된 상품이 없습니다.</p>
+                    </div>
+                </div>
+                <!--  상품 상세 보기 및 결과 내 검색 영역 [e] -->
+            </div>
+		</div>
+        <script>
+            $('.accordion_box').on({
+                click:function(e){
+                    e.preventDefault();
+                    $(e.currentTarget).attr('aria-expanded', true).parent().siblings().find('.accordion_header').attr('aria-expanded', false);
+
+                    var currentTop = $(e.currentTarget).offset().top,
+                        scrollTop = $('html, body').scrollTop();
+                    if(currentTop < scrollTop) {
+                        $('html, body').animate({
+                            scrollTop: currentTop - 38
+                        });
+                    }
+                }
+            }, '.accordion_header');
+
+            $('.thumbnail_wrap').on({
+                click:function(e){
+                    e.preventDefault();
+                    var url = e.currentTarget.getAttribute('href');
+                    if(url == "#") url = e.currentTarget.querySelector('img').getAttribute('src');
+                    e.delegateTarget.querySelector('.thumbnail img').setAttribute('src', url);
+
+                    $(e.currentTarget).parent().addClass('active').siblings().removeClass('active');
+                }
+            },'.thumbnail_list a');
+
+            $('.quantity .selector').on({
+                click:function(e){
+                    var input = e.delegateTarget.querySelector('input[type="text"]');
+                    if($(e.currentTarget).is('.plus')) {
+                        input.value ++;
+                    }else if($(e.currentTarget).is('.minus')){
+                        input.value = input.value == 1 ? 1 : input.value -1;
+                    }
+                }
+            }, 'button');
+            $('.quantity .selector').on({
+                focus:function(e){
+                    e.currentTarget.select();
+                }
+            }, 'input');
+        </script>
+		<!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+	</section>
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+
+    <!-- 레이어 팝업 영역 [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/products/_layerpopup.html" -->
+    <!-- 레이어 팝업 영역 [e] -->
+</body>
+</html>

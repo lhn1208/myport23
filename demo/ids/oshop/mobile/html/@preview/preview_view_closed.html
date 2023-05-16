@@ -1,0 +1,84 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+		<!--#include virtual="/publish/oshop/mobile/html/common/header_sub.html" --> <!-- 2017-03-21 수정 -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<!--#include virtual="/publish/oshop/mobile/html/common/cont_head.html" -->
+				<div class="cont_preview">
+					<div class="box_empt box_closed">
+						<p class="txt_empt">모든 이벤트가 종료되었습니다.</p>
+						<div class="btns_full">
+							<div class="inner"><a href="#none" class="btn_detail btn_type1">후기보러가기</a></div>
+							<div class="inner"><a href="#none" class="btn_detail btn_type6">해당 상품 보기</a></div>
+						</div>
+					</div>
+					<div class="box_type2 box_preview">
+						<em class="state closed">종료된 체험단</em>
+						<h3 class="tit_cate">[체험단] 대웅 락피더스 체험단</h3>
+						<ul class="list_dot_type">
+							<li>모집대상 : 장건강을 원하는 여성 누구나</li>
+							<li>모집인원 : 총 40명 추첨</li>
+							<li>모집기간 : <span class="state">03월 06일(금)~11일(수) 오후 5시까지</span></li>
+							<li>선정발표 : 03월 12일(목) 개별 또는 공지 안내</li>
+							<!-- 발표기간일때
+							<li>선정발표 : <span class="open">03월 12일(목) 개별 또는 공지 안내</span></li>
+							-->
+							<li>제품수령 : 03월 13일(금)</li>
+							<li>후기등록기간 : 03월 14일(토) ~ 4월 19일(일)</li>
+							<!-- 후기등록기간일때
+							<li>후기등록기간 : <span class="review">03월 14일(토) ~ 4월 19일(일)</span></li>
+							-->
+							<li>베스트체험단선정 : 04월 26일(금)</li>
+						</ul>
+						<a href="#none" class="btn_detail btn_type1"><span class="txt">내용 자세히보기</span><span class="ico_oshop ico_more"></span></a>
+					</div>
+				</div>
+
+				<div id="popDetail" style="display:none;">
+					<div class="popup_type1 popup_type1_view">
+						<div class="inner">
+							<strong class="tit_popup">체험단 상세보기</strong>
+							<div class="popup_body">
+								<img src="http://pmoeshop.speedgabia.com/display/5221_img.jpg" class="thumb_detail" alt="">
+								<div class="btns_zoom">
+									<a href="#none" class="btn_zoom btn_out">축소</a>
+									<a href="#none" class="btn_zoom btn_in">확대</a>
+								</div>
+								<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a><!-- 2017-03-21 이미지 넓이,높이값 삭제 -->
+							</div>
+							<a href="#none" class="btn_close"><span class="ico_oshop ico_close">닫기</span></a>
+						</div>
+					</div>
+				</div>
+
+				<script>
+				$(function() {
+
+					// 체험단상세보기 팝업
+					oshopUI.popUp({
+						"clickBtn" : $(".box_preview .btn_detail"),
+						"popupLayer" : $("#popDetail"),
+						"Contents" : $(".cont_preview"),
+						"callback" : function() {
+							window.scroll(0, 0); 
+						}
+					});
+
+					// 상품확대축소
+					oshopUI.imgZoom();
+
+
+				});
+				</script>
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a><!-- 2017-03-21 이미지 넓이,높이값 삭제 -->
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+
+</body>
+</html>

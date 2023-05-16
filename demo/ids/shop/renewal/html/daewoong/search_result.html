@@ -1,0 +1,544 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+    <link rel="stylesheet" href="../../css/layout_dw.css">
+    <link rel="stylesheet" href="../../css/dw_only.css">
+    <link rel="stylesheet" href="../../css/separate_popup.css"><!-- 2020-06-19 추가 -->
+</head>
+<body class="layout_dw"><!-- 대웅전용관인 경우 클래스 layout_dw부여  -->
+    <nav id="Index">
+        <a href="#content">본문 바로가기</a>
+        <a href="#header">주메뉴 바로가기</a>
+        <a href="#footer">사이트 정보 바로가기</a>
+    </nav>
+    <!-- header [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/header_daewoong.html" -->
+    <!-- header [e] -->
+    <!-- container [s] -->
+    <section id="container">
+        <!-- 상단 상태 바 [s] -->
+        <!--#include virtual="/publish/shop/renewal/html/include/status_daewoong.html" -->
+        <!-- 상단 상태 바 [e] -->
+
+        <div id="content" class="cont_dw_list">
+            <!-- 검색 결과 안내 영역 [s] -->
+            <div class="results_box">
+                <!-- 검색 결과 : ETC [s] -->
+                <div class="prd_list">
+                    <p class="tit">ETC</p>
+                    <div class="prd_list_wrap">
+                        <!-- 제품 목록 리스트 타입 영역 [s] -->
+                        <!--#include virtual="/publish/shop/renewal/html/daewoong/_product_list_type.html" -->
+                        <!-- 제품 목록 리스트 타입 영역 [e]] -->
+                        <button type="button" class="btn_more" tabindex="1">더보기<span class="ico_arr"></span></button>
+                    </div>
+                </div>
+                <!-- 검색 결과 : ETC [e] -->
+                <!-- 검색 결과 : OTC [s] -->
+                <div class="prd_list">
+                    <p class="tit">ETC</p>
+                    <div class="prd_list_wrap">
+                        <!-- 제품 목록 리스트 타입 영역 [s] -->
+                        <!--#include virtual="/publish/shop/renewal/html/daewoong/_product_list_type.html" -->
+                        <!-- 제품 목록 리스트 타입 영역 [e]] -->
+                        <button type="button" class="btn_more" tabindex="1">더보기<span class="ico_arr"></span></button>
+                        <div class="box_result">
+                            <div class="result_tit">
+                                <strong class="tit_sum">
+                                    선택금액합계 <span class="txt_price"><span class="txt_num">123,882,288</span>원</span>
+                                </strong>
+                                <strong class="tit_discount">
+                                    예상비용할인 <span class="txt_price"><span class="txt_num">123,882,288</span>원</span>
+                                </strong>
+                                <strong class="tit_total">
+                                    총 예상주문금액 <span class="txt_price"><span class="txt_num">221,222,288</span>원</span>
+                                </strong>
+                            </div>
+                            <div class="result_btn">
+                                <button type="button" class="btn_type1" tabindex="1">장바구니 담기</button>
+                                <button type="button" class="btn_type2" tabindex="1">장바구니 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 검색 결과 : OTC [e] -->
+            </div>
+            <!-- 검색 결과 안내 영역 [e] -->
+            <!-- 2020-06-23 장바구니 영역 추가 [s] -->
+            <div class="cart_box">
+                <h3 class="stit"><span class="ico_comm ico_cart"></span> 장바구니</h3>
+                <table class="tbl_type1">
+                    <caption>장바구니에 담긴 품목의 공급사 및 금액</caption>
+                    <colgroup>
+                        <col style="width:63px;">
+                        <col style="width:23px;">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">공급사</th>
+                            <th scope="col">품목</th>
+                            <th scope="col">금액</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartSummary">
+                        <tr>
+                            <td class="txt_left">대웅제약</td>
+                            <td>5</td>
+                            <td class="txt_price">493,900</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_left">태전약품</td>
+                            <td>1</td>
+                            <td class="txt_price">18,500</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_left">인천약품</td>
+                            <td>1</td>
+                            <td class="txt_price">88,500</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_left">대성메디케어</td>
+                            <td>1</td>
+                            <td class="txt_price">60,000</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_left">케이디상사</td>
+                            <td>1</td>
+                            <td class="txt_price">8,540</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_left">월드비젼팜</td>
+                            <td>1</td>
+                            <td class="txt_price">7,990</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_left">이팜</td>
+                            <td>1</td>
+                            <td class="txt_price">232,000</td>
+                        </tr>
+                        <tr>
+                            <td class="txt_left">탑헬스케어</td>
+                            <td>1</td>
+                            <td class="txt_price">990</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#none" class="btn_more btn_view_cart">더보기 <span class="btn_comm">이동</span></a>
+            </div>
+            <!-- 2020-06-23 장바구니 영역 추가 [e] -->
+        </div>
+        <!-- 우측 퀵메뉴[s] -->
+        <!--#include virtual="/publish/shop/renewal/html/include/quick_menu_vip.html" -->
+        <!-- 우측 퀵메뉴[e] -->
+        <!-- 우측 하단 문자 서비스 영역 [s] -->
+        <!--#include virtual="/publish/shop/renewal/html/daewoong/_consult_area.html" -->
+        <!-- 우측 하단 문자 서비스 영역 [e] -->
+    </section>
+    <!-- container [e] -->
+
+    <!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+    <!-- footer [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+    <!-- footer [e] -->
+
+    <!-- 상품 상세 이미지 팝업 [s] -->
+    <div class="layer_type1 pop_layer layer_detail" id="popProdImgDetail" style="display: none;">
+        <div class="inner_layer">
+            <strong class="tit_layer"><span class="screen_out">상품상세 보기</span></strong>
+            <div class="body_layer" id="layerDetail">
+                <div class="print_img"><button type="button" class="btn_print">인쇄하기<span class="ico_dw"></span></button></div>
+                <div id="detailImg"><img src="http://img.shop.co.kr/upload/product/ADMIN/202004/jFFC2zClvW_20200410165327990001.jpg" width="100%" class="thumb_max"></div>
+            </div>
+            <a href="#none" class="ico_dw btn_close">닫기</a>
+        </div>
+    </div>
+    <!-- 상품 상세 이미지 팝업 [e] -->
+    <!-- POP 이미지 팝업 [s] -->
+    <div class="layer_type1 pop_layer layer_pop" id="popProdPopImg" style="display: none;">
+        <div class="inner_layer">
+            <strong class="tit_layer"><span class="screen_out">POP 보기</span></strong>
+            <div class="body_layer" id="layerPop">
+                <div class="print_img"><button type="button" class="btn_print">인쇄하기<span class="ico_dw"></span></button></div>
+                <div id="layerPopImgDiv" value="526715"><img src="http://img.shop.co.kr/upload/board/info/print/M=-tgUMDbc_20160520160546592000.jpg" alt="POP 이미지" id="layerPopImg" style="max-height: 740px; max-width: 700px;"></div>
+                <div class="view_img">
+                    <button type="button" class="ico_dw btn_prev" style="display: none;" value="1">이전</button>
+                    <button type="button" class="ico_dw btn_next" style="display: inline-block;" value="2">다음</button>
+                </div>
+            </div>
+            <a href="#none" class="ico_dw btn_close">닫기</a>
+        </div>
+    </div>
+    <!-- POP 이미지 팝업 [e] -->
+    <!-- 판매 팁 팝업 [s] -->
+    <div class="layer_type1 pop_layer layer_tip" id="popProdtipImg" style="display: none;">
+        <div class="inner_layer">
+            <strong class="tit_layer"><span class="screen_out">판매팁 보기</span></strong>
+            <div class="body_layer" id="layerTip">
+                <div class="print_img"><button type="button" class="btn_print">인쇄하기<span class="ico_dw"></span></button></div>
+                <div id="printTip">
+                    <div><img alt="" src="http://img.shop.co.kr/editor/attach//vWwSjyRjUB_20180207172131427000.jpg" width="640" height="1694"></div>
+                </div>
+            </div>
+            <a href="#none" class="ico_dw btn_close">닫기</a>
+        </div>
+    </div>
+    <!-- 판매 팁 팝업 [e] -->
+    <!-- 구매이력 팝업 [s] -->
+    <div class="pop_layer pop_layer_etc" id="popBuyInfo" style="display:none;">
+        <strong class="tit_popup">구매이력</strong>
+        <div class="pop_wrap">
+            <div class="top_info">
+                <p class="txt_buy"><span class="ico_etc"></span>구매이력은 최근 6개월에 대한 정보입니다.<br />상세정보는 마이페이지의 구매내역 조회에서 확인하세요</p>
+                <span class="total_num"><strong>총 구매수량 <span class="txt_num" id="totalEtcOrderCnt">0</span></strong><span class="txt_"></span>개</span>
+            </div>
+            <div class="wrap_scroll">
+                <table class="tbl_type01">
+                <caption class="screen_out">주문일자, 공급사, 수량, 구매단가 안내</caption>
+                <colgroup>
+                    <col style="width:30%" />
+                    <col style="width:25%" />
+                    <col style="width:10%" />
+                    <col style="width:25%" />
+                </colgroup>
+                <thead>
+                <tr>
+                    <th scope="col">주문일자</th>
+                    <th scope="col">공급사</th>
+                    <th scope="col">수량</th>
+                    <th scope="col">구매단가</th>
+                </tr>
+                </thead>
+                <tbody id="get_etc_order_list">
+                    <tr>
+                        <td colspan="4"><p class="data_none"><span class="ico_etc"></span>구매이력이 없습니다.</p></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="btn_wrap"><a href="#none" class="btn_type1 btn_cancel2 fnc_close">닫기</a></div>
+        </div>
+        <button type="button" class="btn_comm btn_close2 fnc_close">닫기</button>
+    </div>
+    <!-- 구매이력 팝업 [e] -->
+    <!-- 상품 상세 팝업 [s] -->
+    <div class="pop_layer pop_layer_etc pop_cart_prod" id="popProdDetail" style="display:none;">
+        <strong class="tit_popup">상품 상세보기</strong>
+        <div class="pop_wrap">
+            <div class="page_location" id="goods-ctg-result"></div>
+            <div class="box_info">
+                <strong class="tit_prod" id="id-goods-nm">피블라스트스프레이(트라페르민)</strong>
+                <div class="thumb_prod">
+                    <a href="#none" class="link_expand">
+                        <span class="wrap_thumb" id="id-goods-thumb-img">
+                            <img src="http://img.shop.co.kr/upload/product/ADMIN/201007/81457_01_L.GIF" alt="">
+                        </span>
+                    </a>
+                    <a href="#none" class="link_expand link_expand2"><span class="ico_etc ico_expand">이미지 확대</span></a>
+                </div>
+                <div class="info_prod">
+                    <ul class="list_info">
+                        <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">상품코드</strong><span class="txt_info" id="id-goods-code">SBUC0080N</span></div></li>
+                        <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">제조사</strong><span class="txt_info" id="id-mafc-nm">대웅제약</span></div></li>
+                        <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">보험코드</strong><span class="txt_info" id="id-policy-cd">0000000000</span></div></li>
+                        <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">원산지</strong><span class="txt_info" id="id-macf-nm">대한민국</span></div></li>
+                        <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">규격</strong><span class="txt_info" id="id-goods-stnd">300 mg</span></div></li>
+                        <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">단위</strong><span class="txt_info" id="id-goods-unit">60C</span></div></li>
+                    </ul>
+                    <ul class="list_info list_price">
+                        <li><div class="inner"><strong class="tit_price">판매가</strong> <strong class="txt_num" id="id-last-price">99,921,950</strong> 원</div></li>
+                        <li id="id-goods-dcAmt"><div class="inner"><strong class="tit_info">비용할인</strong><span class="txt_info"><strong class="emph_color">30%</strong> : 999,600원</span></div></li>
+                        <li id="id-cart-etc"><div class="inner"><strong class="tit_info">구분 : </strong><span class="txt_info">전문의약품</span></div></li>
+                    </ul>
+                </div>
+            </div>
+            <strong class="tit_etc tit_detail">상품 상세설명</strong>
+            <div class="box_detail" id="id-goods-desc">
+                <p style="margin: 0px"><strong>효능효과</strong></p>
+                <p style="margin: 0px">욕창, 화상으로 인한 궤양, 하지궤양</p><br><br>
+                <p style="margin: 0px"><strong>주요성분</strong></p>
+                <p style="margin: 0px">트라페르민(숙주:대장균 B주(ATCC 23848), 벡터:pTsF-9Δgal)&nbsp; 500마이크로그램</p><br>
+                <p style="margin: 0px"><strong>성상</strong></p>
+                <p style="margin: 0px">백색의 덩어리 또는 분말이 들어 있는 바이알로 첨부용제로 녹였을 때 무색투명한 외용액제</p><br>
+                <p style="margin: 0px"><strong>사용방법</strong></p>
+                <p style="margin: 0px">첨부용해액 1㎖당 트라페르민으로서 100㎍을 사용시에 용해하고, 궤양면을 깨끗이 닦은 후 전용 분무기로 1일 1회(5번 분무, 트라페르민으로서 30㎍) 적용 1) 궤양의 최대경이 6㎝를 넘지 않는 경우&nbsp;&nbsp; ; 궤양면으로부터 약 5㎝거리에서 5번 분무 2) 궤양의 최대경이 6㎝를 넘는 경우&nbsp;&nbsp; ; 약제가 동일 궤양면에 5번 분무되도록 궤양면으로부터 약 5㎝의 거리를 두고 같은 방법으로 조작을 반복한다.</p>
+            </div>
+            <div class="btn_wrap">
+                <button type="button" class="btn_type1 btn_cancel2 fnc_close">닫기</button>
+            </div>
+        </div>
+        <button type="button" class="btn_comm btn_close2 fnc_close">닫기</button>
+    </div>
+    <!-- 상품 상세 팝업 [e] -->
+    <!-- 상품 확대보기 팝업 [s] -->
+    <div class="pop_layer pop_layer_etc pop_cart_prod" id="popProdExpand" style="display:none;">
+        <strong class="tit_popup">상품 이미지 확대보기</strong>
+        <div class="pop_wrap">
+            <div class="page_location" id="goods-ctg-result"></div>
+            <div class="box_info">
+                <strong class="tit_prod" id="id-goods-nm1"></strong>
+                <div class="wrap_thumb" id="goods-detail-pop-img">
+                    <img src="http://img.shop.co.kr/upload/product/ADMIN/201007/81457_01_L.GIF" alt="">
+                </div>
+                <!-- 이미지 없는경우
+                <div class="wrap_thumb">
+                    <img src="images/img_thumb_b.gif" alt="">
+                </div>
+                -->
+                <div class="info_prod">
+                    <ul class="list_info" id="id-goods-detail-pop">
+                        <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">상품코드</strong><span class="txt_info">FBSL5001</span></div></li>
+                        <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">보험코드</strong><span class="txt_info"></span></div></li>
+                        <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">규격</strong><span class="txt_info">500μg</span></div></li>
+                        <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">단위</strong><span class="txt_info">1바이알</span></div></li>
+                        <li><div class="inner"><span class="ico_etc ico_dot"></span><strong class="tit_info">제조사</strong><span class="txt_info">대웅제약</span></div></li>
+                    </ul>
+                    <ul class="list_thumb">
+                        <li class="on" id="goods-detail-pop-img0">
+                            <a href="#none"><img src="http://img.shop.co.kr/upload/product/ADMIN/201007/81457_01_L.GIF" alt=""></a>
+                        </li>
+                        <li id="goods-detail-pop-img1"></li>
+                        <li id="goods-detail-pop-img2"></li>
+                    </ul>
+                </div>
+                <p class="txt_caution"><span class="ico_etc ico_caution"></span>본 이미지는 실제 상품이미지와 다를 수 있습니다. 더샵 상품 이미지는 더샵 이외에서 사용할 수 없습니다.</p>
+            </div>
+            <div class="btn_wrap">
+                <button type="button" class="btn_type1 btn_cancel2 fnc_close">닫기</button>
+            </div>
+        </div>
+        <button type="button" class="btn_comm btn_close2 fnc_close">닫기</button>
+    </div>
+    <!-- 상품 확대보기 팝업 [e] -->
+    <!-- 2020-07-14 상품 입고 요청 추가 [s] -->
+    <div id="popProdRequest" style="display:none">
+        <div class="pop_layer pop_type1" style="width:360px">
+            <strong class="tit_popup">상품 입고 요청</strong>
+            <div class="pop_wrap">
+                <ul class="list_request">
+                    <li>
+                        <strong class="tit_info">상품명/단위</strong>
+                        <div class="desc_info">(뉴)셀리시드세트(코세척의료기) 1EA</div>
+                    </li>
+                    <li>
+                        <strong class="tit_info"><label for="applyNum">입고신청 수량</label></strong>
+                        <div class="desc_info"><input type="text" style="width:140px" id="applyNum" v-model="param.goodsQty" v-on:focus="selectVal" maxlength="4" v-on:change="changeQty"> 개</div>
+                    </li>
+                    <li>
+                        <strong class="tit_info"><label for="addApply">추가 요청 사항</label></strong>
+                        <textarea v-model="param.bbsComment" id="addApply"></textarea>
+                    </li>
+                    <p><input type="checkbox" id="recvYn" v-model="param.recvYn" v-on:change="changeRecYn">제품 입고 시 문자 알림 수신에 동의하시겠습니까?</p>
+                </ul>
+                <div class="btn_wrap">
+                    <button type="button" class="btn_type1" v-on:click="insertRequestGoods">신청</button>
+                    <button type="button" class="btn_type2 btn_cancel fnc_close" v-on:click="closeLayer">닫기</button>
+                </div>
+            </div>
+            <button type="button" class="btn_comm btn_close fnc_close">닫기</button>
+        </div>
+    </div>
+    <!-- 2020-07-14 상품 입고 요청 추가 [e] -->
+
+    <script type="text/javascript">
+        $(function(){
+            // visual banner carousel
+			$(".main_visual_wrap .owl-carousel").owlCarousel({
+				items: 1,
+				autoplay: true,
+				loop: true,
+				nav: true,
+				dots: false, // 2017-11-29 추가
+				autoplayTimeout: 3000,
+				autoplayHoverPause: true
+			});
+            // 수량 조절
+			function prodCtl() {
+				$('.btns_count button').on("click", function(){
+					var inpNum = $(this).parents('.count_desc').find('.inp_count');
+					var count_val = inpNum.val(); // min 1
+					if($(this).is('.btn_minus')){
+						if(count_val<=1){
+							return;
+						};
+						inpNum.val(parseInt(count_val)-1);
+					}else if($(this).is('.btn_plus')){
+						inpNum.val(parseInt(count_val)+1);
+					};
+				});
+			}
+			prodCtl();
+            // 자동 제품 체크 기능
+            $('.prd_item').on({
+                // input field에 focus out 되는 경우 자동 체크되는 스크립트 (필요에 따라 주석)
+                blur:function(e){
+                    $(e.delegateTarget).find('input[type="checkbox"]').prop("checked", "checked");
+                },
+                click:function(){
+                    $(this).select();
+                },
+                focus:function(e){
+                    $(this).select();
+                    $(this).keydown(function(key) {
+                        if (key.keyCode == 13) {
+                            $(e.delegateTarget).find('input[type="checkbox"]').prop("checked",function(){
+                                return !$(this).prop('checked');
+                            });
+                        }
+                    });
+                }
+            }, ".inp_count");
+            // 검색어 삭제기능
+	       	 $(".wrap_search input[type='text']").keyup(function(){
+	       	     var searchInput = $(this).val().length;
+	       	     if(searchInput > 0){
+	       	         $(this).next().show();
+	       	     } else{
+	       	         $(this).next().hide();
+	       	     }
+	       	     $(".wrap_search .btn_del").click(function () {
+	       	         $(".wrap_search input").val("");
+	       	         $(this).hide();
+	       	     });
+	       	 });
+            // 제품 상세 모달 레이어
+            $('body').on("click", ".link_detail", function() {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popProdDetail"), {
+                    closeClass: "fnc_close"
+                });
+            });
+            // 제품 상세 이미지 모달 레이어
+            $('body').on("click", ".link_detail_img", function() {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popProdImgDetail"), {
+                    closeClass: "btn_close"
+                });
+            });
+            // 2020-07-14 추가 제품 입고 요청 모달 레이어
+            $('body').on("click", ".btn_request", function () {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popProdRequest"), {
+                    closeClass: "fnc_close"
+                });
+            });
+            // 구매 이력 모달 레이어
+            $('body').on("click", ".link_history", function() {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popBuyInfo"), {
+                    closeClass: "fnc_close"
+                });
+            });
+            // POP 이미지 모달 레이어
+            $('body').on("click", ".link_pop", function() {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popProdPopImg"), {
+                    closeClass: "btn_close"
+                });
+            });
+            // 판매 팁 모달 레이어
+            $('body').on("click", ".link_tip", function() {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popProdtipImg"), {
+                    closeClass: "btn_close"
+                });
+            });
+            // 제품 이미지 확대보기 2020-07-01 수정
+            $(".link_expand").click(function (e) {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popProdExpand"), {
+                    closeClass: "fnc_close"
+                });
+                $("#popProdExpand .wrap_thumb img").each(function (index) {
+                    $(this).addClass("img_thumb"+index);
+                });
+                $(".list_thumb img").each(function (index) {
+                    $(this).parent().mouseover(function () {
+                        $(this).parent().addClass("on").siblings().removeClass("on");
+                        $("#popProdExpand .wrap_thumb > .img_thumb"+[index]).css("display","block").siblings().css("display","none");
+                        $(this).on("click", function (e) {
+                            e.preventDefault()
+                        })
+                    })
+                })
+                e.preventDefault();
+            });
+            // 제품 리스트 하단 장바구니 영역 sticky fnc
+            shopUI.scrollFix();
+            // 브라우저 하단 담당자무료문자 float 버튼 제어
+            $('.consult_btn').on({
+                click:function(e){
+                    e.preventDefault();
+                    $(e.delegateTarget).hide();
+                }
+            }, '.btn_consult_close');
+            $('#consult_wrap').on({
+                click:function(e){
+                    e.preventDefault();
+                    $(e.delegateTarget).find('.phone_layer').hide();
+                    $(e.delegateTarget).find('.consult_sms').show();
+                }
+            }, '.btn_close');
+            // 2020-06-11 스크립트 추가
+            $('#consult_wrap').on({
+                click:function(e){
+                    e.preventDefault();
+                    $(e.delegateTarget).find('.phone_layer').show();
+                    $(e.delegateTarget).find('.consult_sms').hide();
+                }
+            }, '.consult_link');
+            // 담당자무료문자 레이어 팝업 텍스트 length 체크
+            $('.phone_layer textarea').on({
+                keyup:function(){
+                    var str = this.value;
+                    var str_len = str.length;
+                    var maxByte = 80;
+
+                    var rbyte = 0;
+                    var rlen = 0;
+                    var one_char = "";
+                    var str2 = "";
+
+                    for(var i=0; i<str_len; i++){
+                        one_char = str.charAt(i);
+                        if(escape(one_char).length > 4){
+                            rbyte += 2;
+                        }else{
+                            rbyte++;
+                        }
+                        if(rbyte <= maxByte){
+                            rlen = i+1;
+                        }
+                    }
+                    if(rbyte > maxByte){
+                        str2 = str.substr(0,rlen);
+                        this.value = str2;
+                    }else{
+                        $('.phone_layer .count').text(rbyte);
+                    }
+                }
+            });
+            // 제품 리스트 노출 타입 제어
+            $('.prd_list').on({
+                click:function(e){
+                    e.preventDefault();
+                    $(e.currentTarget).addClass('active').siblings().removeClass('active');
+
+                    if(e.currentTarget.getAttribute('data-type') == 'gallery'){
+                        $(e.delegateTarget).find('#dwGoodsGallery').show();
+                        $(e.delegateTarget).find('#dwGoodsList').hide();
+                    }else if(e.currentTarget.getAttribute('data-type') == 'list'){
+                        $(e.delegateTarget).find('#dwGoodsList').show();
+                        $(e.delegateTarget).find('#dwGoodsGallery').hide();
+                    }
+                    
+                }
+            }, '.view_type a');
+            // 정렬 선택버튼
+            $(".list_sort .btn_sort").on("click",function (e) {
+                e.preventDefault();
+                $(this).parent().addClass("on").siblings().removeClass("on");
+            });
+        });
+    </script>
+</body>
+</html>

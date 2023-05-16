@@ -1,0 +1,63 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper" class="layout_type1 service_cart"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+		<!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents type_cart"><!-- 2020-12-16 수정 -->
+				<!-- template 영역 시작 -->
+				<div class="cont_head">
+					<h2 class="tit_cate">장바구니</h2>
+				</div>
+                <!-- 2020-12-16 수정 [s] -->
+				<ul class="tab_type4 cart_tab">
+					<li class="on"><a href="#contCart" class="link_tab">일반구매(6)</a></li>
+					<li><a href="#contSubscription" class="link_tab">정기배송(3)</a></li>
+				</ul>
+                <!-- 2020-12-16 수정 [e] -->
+				<form>
+					<fieldset>
+						<legend class="screen_out">장바구니 폼</legend>
+						<!-- 2020-12-16 장바구니 수정[s] -->
+						<div id="contCart" class="cont_cart">
+                            <div class="box_empt">
+                                <span class="img_none img_cart"></span>
+                                <p class="txt">장바구니에 담긴 상품이 없습니다.</p>
+                                <a href="../product/prod_list.html" class="btn_type2">쇼핑하러 가기</a><!-- 2017-03-21 추가 -->
+                            </div>
+                        </div>
+				
+						<!-- 장바구니[e] -->
+
+						<!-- 정기배송[s] -->
+						<div id="contSubscription" class="cont_cart" style="display:none;">
+                            <div class="box_empt">
+                                <span class="img_none img_cart"></span>
+                                <p class="txt">정기배송 장바구니에 담긴 상품이 없습니다.</p>
+                                <a href="../product/prod_list.html" class="btn_type10">정기배송 신청하러 가기</a>
+                            </div>
+                        </div>
+						<!-- 정기배송[e] -->
+					</fieldset>
+				</form>
+
+				<script>
+					$(function() {
+						// 2020-12-16 수정
+						oshopUI.tab({
+							"tabs" : $(".cart_tab .link_tab"),
+							"tabList" : $(".cart_tab li"),
+							"activeClass" : "on",
+							"activeContents" : $(".cont_cart")
+						});
+					});
+				</script>
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a>
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+
+</body>
+</html>

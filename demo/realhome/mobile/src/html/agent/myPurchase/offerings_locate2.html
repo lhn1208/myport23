@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, minimal-ui">
+    <include src="../../include/set_css.html"></include>
+    <include src="../../include/set_js.html"></include>
+    <title>realhouse</title>
+</head>
+<body class="bg_white">
+<!--header-->
+<header class="sub_header">
+    <div class="header_inner">
+      <a href="#" class="btn_perv"><span class="blind">뒤로가기</span></a>  
+      <h1 class="tit">매물위치</h1>
+    </div>
+</header>
+<!--//header-->
+<div class="wrapper">
+    <div id=sub_container class="sub_container">  
+        <div class="locate_area">
+            <div class="map_area">
+                <!--지도 확대/축소-->
+                <div class="map_control">
+                    <button><span class="blind">지도 확대</span></button>
+                    <button class="minus"><span class="blind">지도 축소</span></button>
+                </div>
+                <!--//지도 확대/축소-->
+                <div class="view_button"><button class="btn btn_type1">지도 보기</button></div>
+                <!--로드뷰 샘플-->
+                <div class="map"><img src="../../../../images/sub/sample/img_roadview.jpg"  ></div> 
+            </div>   
+            <div class="locate_bottom_area fixed">
+                <div class="offer_type"><em>전세</em>아파트</div>
+                서울시 송파구 잠실동 (잠실주공1단지아파트) 201동
+            </div>                    
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../../js/ui.min.js"></script>
+</html>

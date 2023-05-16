@@ -1,0 +1,185 @@
+<header id="header" class="header v2"><!-- 2021-04-02 gnb 일부 수정 -->
+	<div class="header_top">
+		<!-- 2021-02-16 제로샵 로고 원상복귀 -->
+		<h1 class="logo_oshop"><a href="../main/main_v3.html"><img src="../../images/m640/logo_0shop_v4_s.png" alt="Thank you! 제로샵"></a></h1>
+		<div class="btns_head">
+			<a href="../top/search.html" class="btn_search"><span class="ico_oshop ico_search">검색</span></a>
+			<a href="../cart/cart.html" class="btn_cart"><span class="ico_oshop">장바구니</span><span class="cart_num">5</span></a>
+		</div>
+		<a href="#none" class="link_menu"><span class="ico_oshop ico_menu">제로샵 메뉴보기</span></a>
+		<!-- 2021-04-02 gnb 뒤로가기 버튼 추가 -->
+		<a href="#none" class="prev_menu"><span class="ico_back">뒤로가기</span></a>
+	</div>
+	<nav class="header_gnb">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" data-index="0"><a href="#" class="bg_zeroshop">홈</a></div>
+				<div class="swiper-slide active" data-target=".lnb.bg_color_maeil" data-index="1"><a href="#" class="bg_maeil">매일유업</a></div>
+				<div class="swiper-slide" data-target=".lnb.bg_color_daewoong" data-index="2"><a href="#none" class="bg_daewoong">대웅</a></div>
+				<div class="swiper-slide" data-index="3"><a href="#none" class="bg_ksdb">국순당</a></div>
+				<div class="swiper-slide" data-target=".lnb.bg_color_oneandone" data-index="4"><a href="#none" class="bg_oneandone">원앤원</a></div>
+				<div class="swiper-slide" data-index="5"><a href="#none" class="bg_pulmuone">풀무원</a></div>
+				<div class="swiper-slide" data-index="6"><a href="#none" class="bg_unix">유닉스</a></div>
+				<div class="swiper-slide" data-index="7"><a href="#none" class="bg_bullsone">불스원</a></div>
+				<div class="swiper-slide" data-index="8"><a href="#none" class="bg_sampio">샘표</a></div>
+				<div class="swiper-slide" data-index="9"><a href="#none" class="bg_naver ">네이버/라인</a></div>
+				<!-- 2021-07-16 힐리언스 추가 -->
+				<div class="swiper-slide" data-index="10"><a href="../etc/healience_form.html" target="_blank" class="bg_healience">힐리언스</a></div>
+			</div>
+		</div>
+	</nav>
+	<!-- <div class="lnb bg_color_maeil active"> -->
+	<div class="lnb bg_color_maeil">
+		<div class="wrapper">
+			<div class="slide">
+				<a href="#" class="active">매일유업</a>
+			</div>
+			<div class="slide">
+				<a href="#">상하농원</a>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="lnb bg_color_daewoong active"> -->
+	<div class="lnb bg_color_daewoong">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="#">의약품</a>
+				</div>
+				<div class="swiper-slide"> 
+					<a href="#">건강기능식품</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">구강케어</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">DNC</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">엠디웰</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">힐리언스</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">시셀</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#" class="active">대웅생명과학</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">알피바이오</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lnb bg_color_oneandone">
+		<div class="wrapper">
+			<div class="slide">
+				<a href="#" class="active">매일유업</a>
+			</div>
+			<div class="slide">
+				<a href="#">상하농원</a>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- 2021-04-12 하단 메뉴 추가 -->
+<nav id="bottomNav" class="bottom_nav">
+	<ul>
+		<li class="active">
+			<button type="button">
+				<span class="ico_nav ico_home"></span>
+				<span class="name">홈</span>
+			</button>
+		</li>
+		<li>
+			<button type="button" class="link_menu">
+				<span class="ico_nav ico_category"></span>
+				<span class="name">카테고리</span>
+			</button>
+		</li>
+		<li>
+			<button type="button">
+				<span class="ico_nav ico_search"></span>
+				<span class="name">검색</span>
+			</button>
+		</li>
+		<li>
+			<a href="">
+				<span class="ico_nav ico_mypage"></span>
+				<span class="name">마이페이지</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+
+<script>
+	$(document).ready(function () {
+		var gnbBox = new Swiper('#header .header_gnb .swiper-container', {
+			slidesPerView: "auto",
+			lazy: { loadPrevNext: true },
+			paginationClickable: true,
+			initialSlide: $(".header_gnb .swiper-slide.active").index()
+		});
+
+		var lnbBox = new Swiper('#header .lnb .swiper-container', {
+			slidesPerView: "auto",
+			lazy: { loadPrevNext: true },
+			observer:true, //2020-10-29 수정
+			observeParents: true, //2020-10-29 수정
+			initialSlide: $(".lnb .swiper-slide .active").parent().index() //2020-10-29 수정
+		});
+
+		$(".header_gnb .swiper-slide").on("load", function() {
+			console.log("11", $(this).indexOf("active"));
+			gnbBox.slideTo($(this).indexOf("active"), 500);
+		});
+
+		$(".header_gnb .swiper-slide").on("click", function () {
+			var $t = $(".header_gnb .swiper-slide");
+			var $trigger = $(this);
+
+			$t.removeClass("active") && $(".lnb").removeClass("active") && $trigger.addClass("active");
+			$trigger.data("target") && $($trigger.data("target")).addClass("active");
+			gnbBox.slideTo($(this).data('index'), 500);
+		});
+
+		$('#header').on({
+			click:function(e){
+				window.history.back();
+			}
+		}, '.prev_menu');
+
+
+		// 2021-04-12 하단 메뉴 버튼 추가
+		var prevScroll = $(window).scrollTop(),
+			timer;
+		$(window).on({
+			scroll:function(e){
+				var h = document.getElementById('header');
+				if(h.offsetHeight < $(e.currentTarget).scrollTop()) {
+					$(h).addClass('sticky');
+				}else {
+					$(h).removeClass('sticky');
+				}
+
+				if (timer) {
+					clearTimeout(timer);
+				}
+				timer = setTimeout(function() {
+					var curScroll = $(window).scrollTop();
+					if(curScroll > (prevScroll)) {
+						$('.bottom_nav').addClass('hidden');
+					}else {
+						$('.bottom_nav').removeClass('hidden');
+					}
+
+					prevScroll = curScroll;
+				}, 25);
+			}
+		});
+	})
+</script>
+
+<!--#include virtual="/publish/oshop/mobile/html/top/menu_v5.html" -->

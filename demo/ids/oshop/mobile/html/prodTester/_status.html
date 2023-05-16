@@ -1,0 +1,61 @@
+<div class="status_wrap">
+    <ol class="tester_status">
+        <li class="active">
+            <p class="title">체험단 모집</p>
+            <p class="date">2021-09-30 ~ <br>2021-09-30</p>
+        </li>
+        <li>
+            <p class="title">당첨자 발표</p>
+            <p class="date">2021-09-30</p>
+        </li>
+        <li class="active">
+            <p class="title">후기 작성</p>
+            <p class="date">2021-09-30 ~ <br>2021-09-30</p>
+        </li>
+    </ol>
+    <div class="button_wrap">
+        <a href="#" class="trigger_result active">당첨자 발표</a>
+        <a href="#" class="active">후기 작성</a>
+    </div>
+</div>
+
+<!-- 2021-10-06 레이어팝업 추가 -->
+<div id="testerResult" class="pop_type01">
+    <div class="pop_wrap" style="width:90%;">
+        <!-- 제품단 선정됨 -->
+        <!-- <div class="pop_cont visual">
+            <img src="../../images/tester_result_win.jpg" alt="">
+            <div class="screen_out">
+                <p>축하 드립니다. 이번 제품 체험단으로 선정되셨습니다.</p>
+                <p>배송된 제품을 체험하신 후, ‘후기작성’에서 후기를 작성해주세요.</p>
+            </div>
+        </div> -->
+
+        <!-- 제품단 선정 안됨 -->
+        <div class="pop_cont visual">
+            <img src="../../images/tester_result_loose.jpg" alt="">
+            <div class="screen_out">
+                <p>안타깝게도 이번 체험단에 선정되지 못하셨습니다</p>
+                <p>다음 체험단을 기다려주세요</p>
+            </div>
+        </div>
+
+        <a href="#none" class="btn_close"><span class="ico_oshop ico_close">닫기</span></a>
+    </div>
+</div>
+<script>
+    // $('.trigger_result').on({
+    //     click:function(e){
+    //         e.preventDefault();
+    //         $("#testerResult").bPopup();
+    //     }
+    // });
+    oshopUI.popUp({
+        "clickBtn" : $(".trigger_result"),
+        "popupLayer" : $("#testerResult"),
+        "Contents" : $(".cont_order"),
+        "callback" : function() {
+            window.scroll(0, 0);
+        }
+    });
+</script>

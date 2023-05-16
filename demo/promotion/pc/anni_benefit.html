@@ -1,0 +1,150 @@
+﻿
+<asp:Content ID="ContentHead" ContentPlaceHolderID="ContentPlaceHead" runat="server">
+    <link rel="stylesheet" type="text/css" href="/LiveBooking/Css/Air5/common.css" />
+    <link rel="stylesheet" type="text/css" href="/LiveBooking/Css/Air5/RealtimeSearch.css" />
+
+<link rel="stylesheet" href="/Include/css/EventTemplate.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/singihae/Webfonts/master/style.css" />
+<!--Swiper--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+<!--Swiper--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+<style type="text/css">
+	/*full 공통*/
+	.blind {position:absolute; top:0; left:0; width:0; height:0; font-size:0; line-height:0; visibility:hidden; overflow:hidden;}
+	.follow_section.aside,
+	#divQuickTop{ display:none !important; }
+	#Containerwrap,
+	#EventwarpBody { margin:0 !important; width:100% !important; }
+	#EventwarpBody {position:relative; min-width:1150px; margin:0 auto;}
+	#footer{padding-top:0;}
+	/*//full 공통*/	
+</style>
+</asp:Content>
+<asp:Content ID="ContentBody" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
+<div id="EventwarpBody">
+	<!-- [S]:  기획전 시작 -->
+	<!--font--><link rel="stylesheet" type="text/css" href="http://www.modetour.com/event/event_18/1211_30th/font.css" />
+	<style type="text/css">
+		.event_wrap{font-family: "Noto Sans KR","Apple SD Gothic Neo",Arial,sans-serif; position: relative; min-width: 800px; margin:0 auto;text-align: center; background:url("https://img.modetour.com/promotion/11265/member/bg_ev.jpg") no-repeat center 0;}
+		.event_wrap button{border:0; cursor: pointer;}
+		.event_wrap .cont .ev_btn{position: absolute; top:1793px; left: 50%; margin-left: -275px; width:550px; height: 130px; background: url("http://img.modetour.com/promotion/11024/empty.png");}
+		.event_wrap .cont .ev_btn.bt_submit{top:2750px;}
+		/*문자보내기*/
+		.tel_form{position: absolute; top:2470px; left:50%; margin-left: -185px; }
+		.tel_form input{width:114px; height:60px; padding:0 8px; font-size: 18px; background-color: #fff; border:1px solid #d7d7d7;}
+		.tel_form input:focus{outline:none;}
+		.tel_form input:first-of-type{margin-left: 0;}
+		.tel_form i{display: inline-block; width:12px; height: 3px; margin:0 18px; background:#75787a;}
+
+		.dim{display: none; position: fixed; top:0; bottom:0; left: 0; right: 0; background: rgba(0,0,0,.4); z-index: 999;}
+		
+		.dim.on,.pop_layer.on{display: block;}
+		.pop_layer{display: none; position: fixed; top:30px; left: 50%; margin-left: -264px; width:528px; height: 440px; padding:70px; line-height: 1.2; font-size: 40px; font-weight: bold; background:#fff; text-align: left; box-sizing: border-box; z-index: 1000;}
+		.pop_layer.type1{text-align: center; padding:112px 0;}
+		.pop_layer.type2{text-align: center; padding:100px 0;}
+		.pop_layer .desc{font-size: 32px;}
+		.pop_layer p{font-size: 24px; font-weight: 400; color: #2d2d2d; line-height: 1.6;}
+		.pop_layer .btn{position: absolute; bottom: 0; left: 0; width:100%; height: 100px;}
+		.pop_layer .btn::after{display: block; content: ""; clear: both;}
+		.pop_layer .w100 button{width:100%;}
+		.pop_layer .w50 button{float: left; width:50%;}
+		.pop_layer  button{height: 100%; background:#ffd200; font-size: 34px; font-weight: bold;}
+		.pop_layer  button.close{background-color: #bababa; color: #fff;}
+	</style>
+	
+	<div class="event_wrap">
+		<div class="dim"></div>	
+		<div class="cont">
+			<img src="https://img.modetour.com/promotion/11265/member/img_ev.jpg" alt="">
+			<button class="ev_btn bt_coupon"></button>
+			<div class="layer">
+				<!-- 쿠폰 발급 -->
+				<div class="pop_layer coupon">
+					쿠폰이 정상적으로 <br>발급되었습니다.
+					<p>발급 내역은 쿠폰조회 <br>페이지에서 확인 가능합니다.</p>
+					<div class="btn w100 close"><button>확인</button></div>
+				</div>
+				<!--//쿠폰 발급-->
+				<!--기존에 발급된 쿠폰-->
+				<div class="pop_layer coupon">
+					기존에 발급된<br>쿠폰이 있습니다.
+					<p>발급 내역은 쿠폰조회 <br>페이지에서 확인 가능합니다.</p>
+					<div class="btn w100 close"><button>확인</button></div>
+				</div>
+				<!--//기존에 발급된 쿠폰-->
+				<!--로그인하기-->
+				<div class="pop_layer coupon type1">
+					로그인 후<br>참여 하시기 바랍니다.
+					<div class="btn w50">
+						<button class="close">닫기</button>
+						<button>확인</button>
+					</div>
+				</div>
+				<!--로그인하기-->
+				<!--마케팅 수신동의-->
+				<div class="pop_layer coupon">
+					마케팅 수신동의<br><span class="desc">(SMS 및 e-mail)</span>
+					<p>마케팅 수신동의한 회원에 한해<br>할인쿠폰 발급 가능합니다.</p>
+					<div class="btn w50">
+						<button class="close">닫기</button>
+						<button>수신동의하기</button>
+					</div>
+				</div>
+				<!--//마케팅 수신동의-->
+				<!--마케팅 수신완료-->
+				<div class="pop_layer coupon">
+					모두투어<br>마케팅수신동의 완료
+					<p><span class="date">2020년 1월 20일</span>에 <br>마케팅정보수신 동의 처리되었습니다.</p>
+					<div class="btn w100 close"><button>확인</button></div>
+				</div>
+				<!--//마케팅 수신완료-->
+			</div>
+			<!-- [s]: 문자보내기 -->
+			<form class="tel_form">				    
+				<input type="text" maxlength="3" class="tel"><i></i>
+				<input type="text" maxlength="4" class="tel"><i></i>
+				<input type="text" maxlength="4" class="tel">
+			</form>
+			<button class="ev_btn bt_submit" title="동의하고 전송하기"></button>
+			<div class="layer">
+				<!--URL전송-->
+				<div class="pop_layer phone type1">
+					입력하신 휴대폰번호로<br>앱 설치 URL을 발송했습니다. 
+					<div class="btn w100 close"><button>확인</button></div>
+				</div>
+				<!--//URL전송-->
+				<!--휴대폰번호 오류-->
+				<div class="pop_layer phone type2">
+					휴대폰번호 오류로<br>발송이 불가합니다.<br>휴대폰번호 확인 바랍니다.
+					<div class="btn w100 close"><button>확인</button></div>
+				</div>
+				<!--//휴대폰번호 오류-->
+			</div>
+			<!-- [E]: 문자보내기 -->
+		</div>
+				
+	</div>	
+	
+	<!-- [끝]: 여기까지 -->
+<script type="text/javascript" src="http://js.modetour.com/jquery/ver/1.11.3.min.js"></script>
+<!-- <script type="text/javascript" src="//js.modetour.com/Common/Date.js?var=1.0.1"></script> -->
+
+<script type="text/javascript">
+	(function($){				
+		$(document).ready(function(){
+			$('.bt_coupon').click(function(){
+				$('.dim, .pop_layer.coupon').addClass('on');
+			});
+			$('.bt_submit').click(function(){
+				$('.dim, .pop_layer.phone').addClass('on');
+			});
+			$('.pop_layer .close').click(function(){
+				$('.dim, .pop_layer').removeClass('on');
+			})
+		});
+	})(jQuery);
+</script>
+
+	<!-- [E]:  기획전 끝 -->
+</div>
+
+</asp:Content>

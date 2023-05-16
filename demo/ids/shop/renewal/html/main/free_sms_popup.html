@@ -1,0 +1,106 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+<link rel="stylesheet" href="../../css/layout.css">
+<link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+<!--2023-01-11 무료문자 팝업[S]-->
+<div id="popFreeSms">
+    <div class="pop_layer" style="width:645px;">
+        <div class="pop_head">
+            담당자에게 무료문자 보내기
+        </div>
+        <div class="pop_wrap">				
+            <div class="free_sms">
+                <ul class="sms_guide_list">
+                    <li>홍길동을 담당하는 담당자에게 문자메시지를 무료로 발송할 수 있습니다.</li>
+                    <li>핸드폰번호 도용차단 서비스에 가입되어 있을 경우 담당영업사원이 메시지를 받을 수 없으니 
+                        <br>통신사에 연락하여 해지신청 하신 후 이용하시기 바랍니다.
+                    </li>
+                    <li>담당자 무료문자는 월 ~ 금요일 8시 부터 18시까지 발송할 수 있습니다.</li>
+                </ul>
+                <div class="sms_box">
+                    <h1 class="title">1. 담당자 선택</h1>						
+                    <ul class="manage_list">
+                        <li>
+                            <input type="radio" id="manage_chk1" name="manage_chk">
+                            <label for="manage_chk1">대웅제약 [ETC] 이성 010-3605-0719</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="manage_chk2" name="manage_chk">
+                            <label for="manage_chk2">대웅제약 [OTC] 이성 010-3605-0719</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="manage_chk3" name="manage_chk"> 
+                            <label for="manage_chk3">이성 010-3605-0719</label>
+                        </li>
+                    </ul>
+                    <!--담당자 정보 없을 시 [S]-->
+                    <div class="manage_none" style="display: none;">
+                        담당자 정보가 없습니다. 고객센터로 문의주세요. 
+                        <div class="button_wrap">
+                            <button>1:1 채팅상담</button>
+                            <button>1:1 문의</button>
+                        </div>
+                    </div>
+                    <!--담당자 정보 없을 시 [E]-->
+                </div>				
+                <div class="sms_box flex_type flex_row">
+                    <div class="sms_select">
+                        <h1 class="title">2. 문자 내용 선택</h1>
+                        <div class="sms_select_box">
+                            <div class="sms_cont on">
+                                <textarea readonly class="scrollbar">어드민템플릿발송내용 #{사업자명}-#{사용자이름}</textarea>
+                            </div>
+                            <div class="sms_cont">
+                                <textarea readonly class="scrollbar">어드민템플릿발송내용 어드민템플릿발송내용 경인의료생활협동조합경기김포지부서울의원어드민템플릿발송내용 어드민템플릿발송내용 경인의료생활협동조합경기김포지부서울의원어드민템플릿발송내용 어드민템플릿발송내용 경인의료생활협동조합경기김포지부서울의원</textarea>
+                            </div>
+                            <div class="sms_cont"><textarea readonly class="scrollbar">어드민템플릿발송내용 #{사업자명}-#{사용자이름}</textarea></div>
+                            <div class="sms_cont">
+                                <textarea readonly class="scrollbar">어드민템플릿발송내용 어드민템플릿발송내용 경인의료생활협동조합경기김포지부서울의원어드민템플릿발송내용 어드민템플릿발송내용 경인의료생활협동조합경기김포지부서울의원어드민템플릿발송내용 어드민템플릿발송내용 경인의료생활협동조합경기김포지부서울의원</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sms_time_select">
+                        <h1 class="title">3. 발송 시간 선택</h1>
+                        <div class="radio_wrap">
+                            <span><input type="radio" id="sms_titm1" name="sms_time">
+                                <label for="sms_titm1">즉시전송</label></span>
+                            <span><input type="radio" id="sms_titm2" name="sms_time">
+                                <label for="sms_titm2">예약전송</label></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sms_box send_box">
+                    <h1 class="title">4. 메시지 발송</h1>
+                    <div class="flex_type">
+                        <div class="sms_txtarea">
+                            <textarea class="scrollbar" placeholder="문의 내용 입력하거나 요청내용을 선택하세요.&#13;&#10;최대 500자까지 작성 가능합니다."></textarea>
+                            <span class="num_cnt">0/1000 bytes</span>
+                        </div>
+                        <div class="send_info">
+                            <ul>
+                                <li><em class="block">받는사람</em>
+                                    대웅제약 [ETC] 이성 010-3605-0719
+                                </li>
+                                <li><em class="block">보내는사람</em>
+                                    #{사용자명} | #{모바일}
+                                </li>
+                                <li><em>발송시간:</em> 2022-07-20 13:00</li>
+                            </ul>
+                            <div class="button_wrap">
+                                <button class="btn_send">전송하기</button>
+                                <button>다시작성</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--2023-01-11 무료문자 팝업[E]-->
+<script>
+   
+</script>
+</body>
+</html>

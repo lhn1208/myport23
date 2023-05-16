@@ -1,0 +1,21 @@
+<div id="popSympathy" class="pop_style align_center" style="display:none;">
+    <div class="pop_layer">
+		<div class="pop_wrap">
+            <h2 class="pop_title">대나무숲 공감 활성화 리워드<br>1,000 마일리지가 적립되었습니다.</h2>
+            <p class="pop_text">※ 분기 최대 10개의 게시글에 공감할 수 있으며, 공감은 취소할 수 없습니다.</p>
+		</div>
+		<button type="button" class="btn_comm btn_close fn_close">닫기</button>
+	</div>
+</div>
+
+<script>
+    $('.the_board_area').on({
+        click: function(e){
+            e.preventDefault();
+            modalLayer = shopUI.modalLayer($("#popSympathy"), {
+                closeClass: "btn_close"
+            });
+        }
+    }, '.sympathy');
+    
+</script>

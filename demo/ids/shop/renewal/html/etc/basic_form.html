@@ -1,0 +1,107 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/content.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+	<!-- container [s] -->
+	<section id="container">
+		<div class="basic_form" id="content">
+            <form action="#">
+                <h2 class="sstit">CRM Happicare for Pham 신청양식</h2>
+                <table class="form_table">
+                    <colgroup>
+                        <col style="width:150px;">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="col">CRM번호 </th>
+                            <td>90144</td>
+                        </tr>
+                        <tr>
+                            <th scope="col"><label class="require" for="pharmName">약국명</label></th>
+                            <td>
+                                <input type="text" class="inp_txt" id="pharmName" value="정다운약국">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col"><label class="require" for="licenceNumber">사업자번호</label></th>
+                            <td>
+                                <input type="text" class="inp_txt" id="licenceNumber" value="21085-52-85963">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col"><label class="require" for="telNumber">대표 전화번호</label></th>
+                            <td>
+                                <input type="text" class="inp_txt" id="telNumber" value="02-5895-8912">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col"><label class="require" for="crewNumber1">약사수/직원수</label></th>
+                            <td>
+                                <span class="fields">
+                                    약사
+                                    <select name="" id="crewNumber1" style="width:150px">
+                                        <option selected hidden disabled>선택</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                        <option value="">5</option>
+                                        <option value="">6</option>
+                                        <option value="">7</option>
+                                        <option value="">8</option>
+                                    </select>
+                                </span>
+                                <span class="fields">
+                                    직원
+                                    <select name="" id="crewNumber2" style="width:150px">
+                                        <option selected hidden disabled>선택</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                        <option value="">5</option>
+                                        <option value="">6</option>
+                                        <option value="">7</option>
+                                        <option value="">8</option>
+                                    </select>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="top"><label class="require" for="questions">개별문의사항</label></th>
+                            <td>
+                                <textarea name="" id="questions"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="button_box">
+                    <button type="button" class="btn_type1">신청하기</button>
+                </div>
+            </form>
+        </div>
+
+		<!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+	</section>
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+</body>
+</html>

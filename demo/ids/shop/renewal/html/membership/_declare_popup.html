@@ -1,0 +1,32 @@
+<div id="popDeclare" class="pop_style" style="display:none;">
+    <div class="pop_layer">
+		<div class="pop_wrap">
+            <h2 class="pop_title">게시글 신고</h2>
+           <ul>
+               <li><em>게시글 번호:</em> 번호</li>
+               <li><em>신고사유: </em>
+                   <textarea placeholder="신고 사유를 입력해주세요">
+                       
+                   </textarea>
+               </li>
+           </ul>
+           <div class="button_wrap">
+               <button class="btn_type2 btn_close">취소</button>
+               <button class="btn_type1">신고하기</button>
+           </div>
+		</div>
+		<button type="button" class="btn_comm btn_close fn_close">닫기</button>
+	</div>
+</div>
+
+<script>
+    $('.the_board_area').on({
+        click: function(e){
+            e.preventDefault();
+            modalLayer = shopUI.modalLayer($("#popDeclare"), {
+                closeClass: "btn_close"
+            });
+        }
+    }, '.declare');
+    
+</script>

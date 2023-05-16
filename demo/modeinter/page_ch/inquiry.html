@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<title>Modetour International</title>
+	<!--[if lt IE 9]>
+		<script language="javascript" type="text/javascript" src="../js/html5shiv-printshiv.js"></script>
+	<![endif]-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="../css/ch/style.css" rel="stylesheet">	
+	<script src="https://js.modetour.com/jquery/ver/1.8.3.min.js"></script>
+	<script src="../js/ch/common.js"></script>
+	<script src="../js/ch/sub.js"></script>
+	<script src="../js/plugin/cycle2.js"></script>	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var calcBox=$(".calc_box");
+			$(".date_form").click(function(){
+				if(calcBox.hasClass("block")){
+					calcBox.removeClass("block")
+				}else{
+					calcBox.addClass("block")
+				}
+				return false;
+			})
+			$(".calc tbody td a").click(function(){
+				calcBox.removeClass("block");
+				return false;
+			});
+		});
+	</script>
+</head>
+<body>	
+<!--submain-->
+<div class="wrap">
+	<header id="header" class="header_style">		
+		<!--navi-->
+		<nav class="navi" id="navi">
+			<header class="navi_header">
+				<a href="#" id="close" class=close><span class="blind">close</span></a>
+			</header>
+			<div class="navi_inner">
+				<ul class="menu">
+					<li><a href="./mice/mice_main.html">MICE</a>
+						<ul class="sub_menu">
+							<li><a href="./mice/meeting.html">国际会议</a></li>
+							<li><a href="./mice/insentour.html">奖励旅游</a></li>
+							<li><a href="./mice/event.html">活动</a></li>
+						</ul>
+					</li>
+					<li><a href="./theme/theme_main.html">主题旅游</a>
+						<ul class="sub_menu">
+							<li><a href="./theme/theme_medical.html">医疗观光</a></li>
+							<li><a href="./theme/theme_korea.html">韩流观光</a></li>
+							<li><a href="./theme/theme_wedding.html">婚纱旅游</a></li>
+						</ul>
+					</li>
+					<li class="pack_menu"><a href="./package/pack_main01.html">团体游</a>
+						<ul class="sub_menu">
+							<li><a  href="./package/pack_main01.html">一般团体游</a>
+								<ul class="sub_menu">
+									<li><a href="./package/basic_beauty.html">- K-Beauty5日游</a></li>
+									<li><a href="./package/basic_well.html">- 首尔健康之旅</a></li>
+									<li><a href="./package/basic.html">- 首尔 3晚4天 (普通型)</a></li>
+									<li><a href="./package/basic_luxury.html">- 首尔 3晚4天 (品质型)</a></li>
+									<li><a href="./package/basic_seoul_outside.html">- 尔近郊 4晚5天</a></li>
+									<li><a href="./package/basic_outside_seorak.html">- 首尔+江原道(雪岳山) 5晚6天</a></li>
+									<li><a href="./package/basic_jeju.html">- 济州 3晚4天</a></li>									
+									<li><a href="./package/basic_seoul_jeju.html">- 首尔+济州 4晚5天</a></li>
+									<li><a href="./package/basic_busan_kyeong.html">- 釜山+庆州 4晚5天</a></li>
+									<li><a href="./package/basic_busan_daegu.html">- 釜山+大邱 3晚4天</a></li>
+								</ul>
+							</li>
+							<li class="type"><a  href="./package/pack_main02.html">一日游</a>
+								<ul class="sub_menu">
+									<li><a href="./package/day1_tour_a.html">- 首尔市区旅游 A</a></li>
+									<li><a href="./package/day1_tour_b.html">- 首尔市区旅游 B</a></li>
+									<li><a href="./package/day1_tour_c.html">- 首尔市区旅游 C</a></li>
+									<li><a href="./package/day1_tour_d.html">- 首尔市区旅游 D</a></li>
+									<li><a href="./package/day1_tour_namisland.html">- 南怡岛 1日游</a></li>
+									<li><a href="./package/day1_tour_night.html">- 首尔夜景游</a></li>
+									<li><a href="./package/day1_tour_food.html">- 饮食体验+ 鹭梁津水产市场</a></li>
+									<li><a href="./package/day1_tour_ski_jjim.html">- 滑雪+汗蒸幕体验 1日游</a></li>
+								</ul>
+							</li>
+							<li><a  href="./package/pack_main03.html">韩朝非军事区观光</a>
+								<ul class="sub_menu">
+									<li><a href="./package/dmz_tour01.html">- DMZ安保观光</a></li>
+									<li><a href="./package/dmz_tour02.html">- DMZ 安保观光 +坡州奥特莱斯</a></li>
+								</ul>
+							</li>
+							<li><a  href="./package/pack_main04.html">外国人主题观光</a>
+								<ul class="sub_menu">
+									<li><a href="./package/ex_theme_village.html">- 杨平外婆家村农村体验</a></li>
+									<li><a href="./package/ex_theme_ridding.html" class="font_letter_type01">- 济州幻想之路&amp;1100高地骑行游</a></li>
+									<li><a href="./package/ex_theme_cherrybloss.html">- 樱花小镇 (季节性）</a></li>
+									<li class="last"><a href="./package/ex_theme_ski.html">- 滑雪+冰雪王国华川山鳟鱼庆典<br>(季节性)</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="pack_menu"><a href="./corp/corp_intro.html">公司介绍</a>
+						<ul class="sub_menu depth2">
+							<li><a  href="./corp/corp_intro.html">公司信息</a></li>
+							<li><a  href="./corp/corp_history.html">公司沿革</a></li>
+							<li><a  href="./corp/ceo_greeting.html">代表理事致詞</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="navi_intro_area">
+					<ul class="navi_intro">
+						<li>
+							<a href="./history_event/history_event.html">
+								<p class="link_tit">Best of Best</p>
+								<div class="link_btn_area">
+									<button class="link_btn"></button>
+								</div>
+							</a>
+						</li>
+						<li><a href="./reserve/reserve_list.html"><p class="link_tit">门票预订</p>
+								<div class="link_btn_area">
+									<button class="link_btn"></button>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="inq_area">					
+					<ul class="inquiry">
+						<li>平日<span class="green">09:00~18:00</span></li>
+						<li><div class="inq_tit pkg">· 团体游</div> 
+							 <div class="inq_cont"><sapn class="green tel">02-3788-4841</sapn><br><span class="email">gumong1221@modetourint.com</span></div>
+						</li>
+						<li><div class="inq_tit">· Mice,<br>主题旅游</div>
+							<div class="inq_cont"><span class="tel">02-3788-4807</span><br><span class="email">lucyhan@modetourint.com</span></div>
+						</li>
+					</ul>
+					<div class="inq_btn"><a href="./inquiry.html" class="btn">立即咨询</a></div>
+				</div>
+				
+			</div>
+			<footer class="navi_footer">
+				<div class="container">
+					<div class="foo_content">
+						<a href="./terms/terms_trip.html" target="_blank">旅游条款</a>
+						<a href="./terms/use_terms.html" target="_blank">利用条款</a>
+						<a href="./terms/privacy_terms.html" target="_blank" class="point">个人信息处理方针</a>
+					</div>
+					<address>
+						首尔市 中区 乙支路 16 总统酒店 (旧：白南大厦) 6层601号 (邮 04533) 
+						<br>营业执照号码 : 104-86-15264  |  代表理事 : 孫湖權
+						<br>COPYRIGHT(C)2018 MODETOUR INTERNATIONAL. ALL RIGHT RESERVED.
+					</address>
+				</div>
+			</footer>
+		</nav>
+		<!--//navi-->
+		<div class="menu_wrap"></div>		
+		<h1 class="logo"><a href="./main.html" ><img src="https://img.modetour.com/modewebagent/2018/modeinter/common/logo.png" alt="Modetour International"></a></h1>
+		<!--global-->
+		<div class="global_area">
+			<a href="#" class="global">CHI</a>
+			<ul class="global_lst">
+				<li><a href="../page/main.html">KOR</a></li>
+				<li><a href="../page_en/main.html">ENG</a></li>
+			</ul>
+		</div>
+		<!--//global-->
+		<div class="navi_open" id="navOpen">
+			<button class="btn"><span class="blind">menu</span></button>
+		</div>	
+	</header>		
+	<!--container-->
+	<div class="container" id="container">				
+		<section class="section02">
+		<!--visual-->
+		<div class="sub_visual02 inquiry">
+			<dl class="txt_visual">
+				<dt>立即咨询</dt>
+				<dd>请留下您的询问内容和回信的联系方式,在三天内诚心诚意地予以答复</dd>
+			</dl>
+		</div>
+		<!--//visual-->
+			<div class="inner">
+				<div class="inq_area">
+					<div class="inq_form"> 
+						<h2 class="tit">个人信息</h2>
+						<div class="desc"><span class="point">*</span> 表示是必需输入项目。</div>
+						<div class="inq_tb_box bar">
+							<!--달력-->
+							<div class="calc_box">
+								<div class="calc_form">
+									<div class="calc_header">选择日期</div>		
+									<div class="calc_area">
+										<div class="calc_title">
+											<select class="year">
+												<option value="">2018</option>
+												<option value="">2017</option>
+												<option value="">2016</option>
+											</select>
+											<select class="month">
+												<option value="">3</option>
+												<option value="">4</option>
+												<option value="">5</option>
+											</select>
+										</div>
+										<table class="calc">
+											<thead>
+												<tr>
+													<th>Sun</th>
+													<th>Mon</th>
+													<th>Tue</th>
+													<th>Wed</th>
+													<th>Thu</th>
+													<th>Fri</th>
+													<th>Sat</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>													
+													<td><a href="#">1</a></td>
+													<td><a href="#">2</a></td>
+													<td><a href="#">3</a></td>
+													<td><a href="#">4</a></td>
+													<td><a href="#">5</a></td>
+													<td><a href="#">6</a></td>
+													<td><a href="#">7</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">8</a></td>
+													<td><a href="#">9</a></td>
+													<td><a href="#">10</a></td>
+													<td><a href="#">11</a></td>
+													<td><a href="#">12</a></td>
+													<td><a href="#">13</a></td>
+													<td><a href="#">14</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">15</a></td>
+													<td><a href="#">16</a></td>
+													<td><a href="#">17</a></td>
+													<td><a href="#">18</a></td>
+													<td><a href="#">19</a></td>
+													<td><a href="#">20</a></td>
+													<td><a href="#">21</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">22</a></td>
+													<td><a href="#">23</a></td>
+													<td><a href="#">24</a></td>
+													<td><a href="#">25</a></td>
+													<td><a href="#">26</a></td>
+													<td><a href="#">27</a></td>
+													<td><a href="#">28</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">29</a></td>
+													<td><a href="#" class="current">30</a></td>
+													<td><a href="#">31</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!--달력-->
+							<table class="inq_tb">
+								<colgroup>
+									<col width="165px">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr> 
+										<th>姓名 <span class="point">*</span></th>
+										<td><input type="text" class="form"></td>
+									</tr>
+									<tr> 
+										<th>邮箱地址 <span class="point">*</span></th>
+										<td>
+											<input type="text" class="form">@<input type="text" class="form">
+										</td>
+									</tr>
+									<tr> 									
+										<th>联系号码 <span class="point">*</span></th>
+										<td>
+											<select class="form w137">
+												<option value="">010</option>
+												<option value="">011</option>
+												<option value="">018</option>
+											</select>
+											-
+											<input type="text" class="form w137">-<input type="text" class="form w137">
+										</td>
+									</tr>
+									<tr>
+										<th>客人国籍 <span class="point">*</span></th>
+										<td><input type="text" class="form">	</td>
+									</tr>
+									<tr> 									
+										<th>出发日期 <span class="point">*</span></th>
+										<td>
+											<a class="form date_form" href="#"><span class="s_date"></span></a>					
+										</td>
+									</tr>
+									<tr> 									
+										<th>人数 <span class="point">*</span></th>
+										<td>
+											<input type="text" class="form w137"">人
+										</td>
+									</tr>
+									<tr> 									
+										<th>咨询内容</th>
+										<td>
+											<textarea class="inq_reg"></textarea>							
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="agree_form"> 
+						<h2 class="tit">同意收集个人信息</h2>
+						<div class="agree_chk">
+							<input type="checkbox" class="chk" id="chk01"><label for="chk01"><span class="chk_set"></span><em>同意</em></label>
+						</div>
+						<div class="agree_cont"> 
+							株)模德旅游以下称为“公司”) 重视用户的个人信息并竭尽全力保护用户的个人信息。公司会遵守《通信秘密保护法》，《电子通信事业法》，《信息通信网使用促进剂有关信息保护》等法律法规, 公司将通过《个人信息保护政策》告知用户，用户向公司提供的个人信息被何种方式，何种用途所使用，以及公司为保护个人信息安全采取的措施。公司将关于个人信息保护政策公开在网站首页下方位置，以便用户随时可以看到。如果公司修改《个人信息保护政策》，变更后的《个人信息保护政策》将通过网站首页的《个人信息保护政策》告知用户。
+							<br>本方针于2018年3月20日开始生效
+							<br>1. 收集个人信息内容
+							<br>收集项目：姓名，邮箱地址，联系号码，国籍
+						</div>
+					</div>
+					<div class="inq_form_btn"><a href="#" class="btn">留底咨询</a></div>
+				</div>
+			</div>
+		</section>			
+	</div>
+	<!--//container-->
+	<!--Top버튼-->
+	<a href="#" class="btn_top"><span>TOP</span></a>
+	<!--//Top버튼-->
+</div>
+<!--//submain-->	
+<!--footer-->
+<footer id="footer">	
+	<div class="inquiry_section">
+		<div class="inner">
+			<div class="reserv_inq">
+				<strong class="tit">预约咨询</strong>
+				<ul class="inq_info">
+					<li><span class="inq_tit">· 团体游</span><span class="tel">02-3788-4841</span><span class="email">gumong1221@modetourint.com</span></li>
+					<li><span class="inq_tit">· MICE,主题旅游</span><span class="tel">02-3788-4807</span><span class="email">lucyhan@modetourint.com</span></li>
+				</ul>
+			</div>
+			<div class="inq_time">
+				<strong class="tit">工作时间</strong>
+				<span class="time">平日 9:00~18:00</span>
+				<div class="inq_btn foo_inq"><a href="./inquiry.html" class="btn">立即咨询</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_inner">
+		<h1 class="logo"><a href="./main.html"><img src="https://img.modetour.com/modewebagent/2018/modeinter/common/logo.png" alt="Modetour International"></a></h1>
+		<div class="foo_section">
+			<div class="foo_content">
+				<a href="./corp/corp_intro.html" target="_blank">公司介绍</a>
+				<a href="./terms/use_terms.html" target="_blank">利用条款</a>
+				<a href="./terms/privacy_terms.html" target="_blank" class="point">个人信息处理方针</a>
+			</div>
+			<address>
+				首尔市 中区 乙支路 16 总统酒店 (旧：白南大厦) 6层601号 (邮 04533) 
+				<br>营业执照号码 : 104-86-15264  |  代表理事 : 孫湖權
+				<br>COPYRIGHT(C)2018 MODETOUR INTERNATIONAL. ALL RIGHT RESERVED.
+			</address>
+			<div class="foo_btn_area">
+				<button class="btn">集团官网</button>
+				<div class="family_form">
+					<ul class="family_list">
+						<li><a href="https://www.modetour.com/" target="_blank">MODETOUR</a></li>
+						<li><a href="https://jm.modetour.com/Premium/default.aspx" target="_blank">JM SPECIAL</a></li>
+						<li><a href="https://www.dramatour.co.kr/default/" target="_blank">TOUR 娱乐公司</a></li>
+						<li><a href="https://www.cruise.co.kr/" target="_blank">邮轮</a></li>
+						
+						<li><a href="https://www.jeonbuk.go.kr/index.jeonbuk" target="_blank">全罗北道</a></li>
+						<li><a href="https://www.bookingm.com/" target="_blank">Booking M</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--//footer-->
+</body>
+</html>
+
+
+

@@ -1,0 +1,178 @@
+<!-- <%@ Page Language="C#" AutoEventWireup="true" CodeFile="mode1.aspx.cs" Inherits="event_19_family_marketing"%>
+<%@ Register TagPrefix="UC2" TagName="Template" Src="~/Include/Uc/Event/Event_List.ascx" %>
+<%@ Import Namespace="Modetour.Common" %> -->
+<!DOCTYPE html>
+<html clang="ko">
+<head>
+    <!-- Google Tag Manager -->
+    
+    <!--AceCounter-Plus Log Gathering for AceTag Manager End -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, minimal-ui" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/Include/CSS/Common/common.min.css" />
+           	
+    <style>
+	html,body,p{margin: 0; padding: 0;}
+	ul,ol{margin: 0; padding: 0;}
+	.event_wrap button{border:0; cursor: pointer; background: none;}
+	.event_wrap {position: relative;}
+ 	.event_wrap img{width: 100%;vertical-align: middle;}
+	.event_wrap .cont .ev_btn{display: block; position: absolute; top:33.2%; left: 15%; width:70%; height: 3%;}
+	.event_wrap .cont .ev_btn.bt_app_coupon{top:45.4%;}
+
+	.dim{display: none; position: fixed; top:0; bottom:0; left: 0; right: 0; background: rgba(0,0,0,.4); z-index: 999;}
+		
+    .dim.on,.pop_layer.on{display: block;}
+    .pop_layer{display: none; position: fixed; top:30%; width:84%; left: 6%; height:33%; padding:8.8vw; line-height: 1.2; font-size: 20px; font-weight: bold; background:#fff; text-align: left; box-sizing: border-box; z-index: 1000;}
+	.pop_layer.type1{text-align: center; padding:18% 0;}
+	.pop_layer.type2{text-align: center; padding:100px 42px;}
+    .pop_layer p{padding-top: 10%; line-height: 1.4; font-size: 14px; font-weight: 400; color: #2d2d2d;}
+    .pop_layer .btn{position: absolute; bottom: 0; left: 0; width:100%; height: 25.4%;}
+    .pop_layer .btn::after{display: block; content: ""; clear: both;}
+    .pop_layer .w100 button{width:100%;}
+    .pop_layer .w50 button{float: left; width:50%;}
+    .pop_layer  button{height: 100%; background:#ffd200; font-size: 18px; font-weight: bold;}
+    .pop_layer  button.close{background-color: #bababa; color: #fff;}
+		
+	</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGQJKVM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="mobile_container">
+<div id="body_section">
+	<section id="section" style="height:auto;">
+		
+        <div class="container" style="padding-bottom:0;">
+			<!--[S] : 기획전 시작-->
+			<div class="event_wrap">
+                <div class="dim"></div>
+				<div class="cont">
+					<img src="https://img.modetour.com/promotion/11265/member/mobile_ev.jpg" alt="">
+
+					<button class="ev_btn bt_coupon" title="쿠폰 다운받기"></button>
+					<div class="layer">
+						<!-- 쿠폰 발급 -->
+						<div class="pop_layer coupon">
+							쿠폰이 정상적으로 <br>발급되었습니다.
+							<p>발급 내역은 쿠폰조회 <br>페이지에서 확인 가능합니다.</p>
+							<div class="btn w100 close"><button>확인</button></div>
+						</div>
+						<!--//쿠폰 발급-->
+						<!--기존에 발급된 쿠폰-->
+						<div class="pop_layer coupon">
+							기존에 발급된<br>쿠폰이 있습니다.
+							<p>발급 내역은 쿠폰조회 <br>페이지에서 확인 가능합니다.</p>
+							<div class="btn w100 close"><button>확인</button></div>
+						</div>
+						<!--//기존에 발급된 쿠폰-->
+						<!--로그인하기-->
+						<div class="pop_layer coupon type1">
+							로그인 후<br>참여 하시기 바랍니다.
+							<div class="btn w50">
+								<button class="close">닫기</button>
+								<button>확인</button>
+							</div>
+						</div>
+						<!--로그인하기-->
+						<!--마케팅 수신동의-->
+						<div class="pop_layer coupon">
+							마케팅 수신동의<br>(SMS 및 e-mail)
+							<p>마케팅 수신동의한 회원에 한해<br>할인쿠폰 발급 가능합니다.</p>
+							<div class="btn w50">
+								<button class="close">닫기</button>
+								<button>수신동의하기</button>
+							</div>
+						</div>
+						<!--//마케팅 수신동의-->
+						<!--마케팅 수신완료-->
+						<div class="pop_layer coupon">
+							모두투어<br>마케팅수신동의 완료
+							<p><span class="date">2020년 1월 20일</span>에 마케팅정보수신 동의 처리되었습니다.</p>
+							<div class="btn w100 close"><button>확인</button></div>
+						</div>
+						<!--//마케팅 수신완료-->
+					</div>
+					<button class="ev_btn bt_app_coupon" title="앱 전용할인 쿠폰 다운받기"></button>
+					<div class="layer">
+						<!--모두투어 앱 다운로드-->
+						<div class="pop_layer app_coupon type1">
+							본 이벤트는 모두투어<br>앱에서만 참여 가능합니다.
+							<div class="btn w50">
+								<button class="close">닫기</button>
+								<button>앱 다운로드</button>
+							</div>
+						</div>
+						<!--모두투어 앱 다운로드-->
+						<!--모두투어 멤버스-->
+						<div class="pop_layer app_coupon type1">
+							모두멤버스 회원에 한해<br>쿠폰발급 가능합니다.
+							<div class="btn w50">
+								<button class="close">닫기</button>
+								<button>가입하기</button>
+							</div>
+						</div>
+						<!--모두투어 멤버스-->
+						<!--앱푸시 수신동의-->
+						<div class="pop_layer coupon">
+							앱 푸시<br>수신동의
+							<p>앱푸시 수신 동의자에 한해<br>5,000원 할인쿠폰 발급이 가능합니다</p>
+							<div class="btn w50">
+								<button class="close">닫기</button>
+								<button>수신동의하기</button>
+							</div>
+						</div>
+						<!--//앱푸시 수신동의-->
+						<!--마케팅 수신동의 완료-->
+						<div class="pop_layer coupon">
+							모두투어 앱<br>마케팅수신동의 완료
+							<p><span class="date">2020년 1월 20일</span>에 <br>마케팅정보수신 동의 처리되었습니다.</p>
+							<div class="btn w100 close"><button>확인</button></div>
+						</div>
+						<!--//마케팅 수신동의 완료-->
+					</div>
+				</div>
+			</div>
+			<!--[E] : 기획전 시작-->
+		</div>
+	<%--</section>
+        <footer></footer>
+	</div>
+</div>--%>
+<script type="text/javascript" src="https://js.modetour.com/jQuery/ver/2.1.0.min.js"></script>
+<script type="text/javascript" src="https://js.modetour.com/Include/Js/Plugin/jquery.easing.min.js"></script>
+<!-- <script type="text/javascript" src="/Include/Js/Plugin/swipe.min.js"></script> -->
+<!-- <script type="text/javascript" src="//js.modetour.com/kakao/link.js"></script>
+<script type="text/javascript" src="https://www.modetour.com/Include/Js/Touch/TouchPosition.js"></script>	
+<script type="text/javascript" src="/Include/Js/Number.js"></script>
+<script type="text/javascript" src="/Include/Js/XmlObject.JS"></script> -->
+<!-- <script type="text/javascript" src="/Include/Js/Common/com.modetour.m.min.js?ver=9.1.1"></script> -->
+<!-- <script type="text/javascript" src="//js.modetour.com/Common/String.js"></script><script type="text/javascript" src="//js.modetour.com/Common/Date.js"></script>
+<script type="text/javascript" src="//js.modetour.com/Common/Validator.js?var=0.0.1"></script>
+<script type="text/javascript" src="/Include/Js/Promotion/countdown.plugin.js?ver=20180430"></script> -->
+
+<script type="text/javascript">
+	(function($){				
+		$(document).ready(function(){
+			$('.bt_coupon').click(function(){
+				$('.dim, .pop_layer.coupon').addClass('on');
+			});
+			$('.bt_app_coupon').click(function(){
+				$('.dim, .pop_layer.app_coupon').addClass('on');
+			});
+			//닫기버튼
+			$('.pop_layer .close').click(function(){
+				$('.dim, .pop_layer').removeClass('on');
+			})
+		});
+	})(jQuery);
+</script>
+
+</body>
+</html>

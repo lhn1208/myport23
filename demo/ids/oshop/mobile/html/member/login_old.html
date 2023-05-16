@@ -1,0 +1,73 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body class="oshop_login fixed_height"><!-- 2017-03-29 class 추가 -->
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+		<!--#include virtual="/publish/oshop/mobile/html/common/header_login.html" -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<div class="cont_member cont_login">
+					<form>
+						<fieldset>
+							<legend class="screen_out">로그인 폼</legend>
+							<h2 class="screen_out">로그인</h2>
+							<div class="wrap_login"><!-- 2017-03-29 추가 -->
+								<div class="frame_inp"><input type="text" class="inp_oshop" placeholder="아이디(사번을 입력해주세요)"></div>
+								<div class="frame_inp pw_box"><!-- 2017-08-29 class추가 -->
+									<input type="password" class="inp_oshop" placeholder="비밀번호"><!-- 2018-12-21 수정 -->
+									<button type="button" class="ico_oshop ico_pw_see">비밀번호 표시</button><!-- 2017-08-29 추가 -->
+								</div>
+								<a href="#none" class="btn_type2 link_login">로그인</a>
+								<div class="info_login">
+									<div class="frame_check"><!-- 2017-04-13 class 수정 -->
+										<div class="check_oshop"><!-- 2017-04-13 class 수정 -->
+											<input type="checkbox" id="saveId" class="inp_vote">
+											<label for="saveId" class="lab_vote">
+												<span class="ico_oshop ico_chk"></span>
+												<span class="txt_chk">자동저장</span>
+											</label>
+										</div>
+									</div>
+									<!-- <a href="#none" class="link_search">아이디/비밀번호 찾기</a> --><!-- 2017-03-29 삭제 -->
+								</div>
+								<p class="txt_attention"><span class="ico_oshop"></span>최초 이용자의 경우 개인정보동의 후 로그인 가능합니다.</p>
+								<p class="txt_attention"><span class="ico_oshop ico_oshop_default"></span>비밀번호를 잊어버렸어요. <a href="#self" class="btn_sm btn_default">비밀번호 찾기</a></p>
+							</div>
+							<div class="info_guide">
+								<h2 class="login_info"><span class="ico_oshop"></span>로그인 이용안내</h2>
+								<ul>
+									<li><span class="ico_oshop"></span><strong>초기 ID/PW는 사번번호입니다.</strong>
+										<ul>
+											<li>- <strong>풀무원</strong> 임직원의 초기 계정은 아이디: 사번, 비밀번호: 생년월일(8자리) 입니다.</li> <!--2018-11-12 text 추가-->
+											<li>- 대웅/대웅제약 임직원은 ID,PW 앞에 숫자 '0'을 넣어주세요.</li>
+										</ul>
+									</li>
+									<li><span class="ico_oshop"></span>로그인되지 않을경우<br /><strong>고객상담센터(02-2185-3233)로 문의</strong>해 주시기 바랍니다.</li>
+								</ul>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<!-- // template 영역 끝 -->
+			</section>
+		</section>
+	</section>
+
+	<!-- 2017-08-29 추가[s] -->
+	<script type="text/javascript">
+		$(function(){
+			$(".pw_box .ico_pw_see").on("click", function(){
+				$(this).toggleClass("off");
+				if($(this).hasClass("off")){
+					$(this).text("비밀번호 숨김");
+					$(this).prev("input").attr("type", "password");
+				} else {
+					$(this).text("비밀번호 표시");
+					$(this).prev("input").attr("type", "text");
+				}
+			});
+		});
+	</script>
+	<!-- 2017-08-29 추가[e] -->
+</body>
+</html>

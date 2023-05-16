@@ -1,0 +1,413 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+    <link rel="stylesheet" href="../../css/layout_vip.css">
+    <link rel="stylesheet" href="../../css/vip.css">
+</head>
+<body class="layout_vip"><!-- vip전용관인 경우 클래스 layout_vip부여  -->
+    <nav id="Index">
+        <a href="#content">본문 바로가기</a>
+        <a href="#header">주메뉴 바로가기</a>
+        <a href="#footer">사이트 정보 바로가기</a>
+    </nav>
+    <!-- header [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/header_vip.html" -->
+    <!-- header [e] -->
+
+    <!-- container [s] -->
+    <section id="container">
+        <div id="content" class="cont_search">
+            <div class="sub_cont_head">
+                <h2 class="sub_tit">검색결과</h2>
+                <p class="sub_txt"><span class="emph_color">멘소래담</span>에 대한 검색 결과는 총 <span class="emph_color">5건</span>입니다.</p>
+                <!-- 결과 없을 경우
+                <p class="sub_txt">총 <span class="emph_color">0건</span>이 검색되었습니다.</p>
+                -->
+            </div>
+            <div class="box_search">
+                <div class="inner_search">
+                    <strong class="tit_none"><span class="ico_comm"></span><span class="emph_color">멘소래담</span>에 대한 검색결과는 0건 입니다.</strong>
+                    <p class="txt_none">전용관 외 상품 검색을 원하신다면<br><strong>아래 검색창에 상품명을 재입력해주세요.</strong></p>
+                    <form action="#none">
+                        <fieldset>
+                            <!-- 2018-12-18 수정 시작 -->
+                            <div class="wrap_search">
+                                <input type="text" name="searchVal" id="searchVal" title="검색어 입력" class="inp_search" style="width:674px">
+                                <button type="button" class="btn_del"><span class="ico_comm">검색어 삭제</span></button>
+                                <button type="submit" class="btn_search">검색</button>
+                            </div>
+                            <!-- 2018-12-18 수정 끝 -->
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="util_func">
+                <strong class="screen_out">정렬타입 선택 리스트</strong>
+                <ul class="list_sort">
+                    <li class="on"><button type="button" class="btn_sort">판매순</button></li>
+                    <li><button type="button" class="btn_sort">상품명순</button></li>
+                    <li><button type="button" class="btn_sort">제조사순</button></li>
+                    <li><button type="button" class="btn_sort">낮은가격순</button></li>
+                    <li><button type="button" class="btn_sort">높은가격순</button></li>
+                </ul>
+                <div class="f_r">
+                    <select class="select" style="width:105px">
+                        <option>10개씩 보기</option>
+                        <option>20개씩 보기</option>
+                        <option>50개씩 보기</option>
+                        <option>100개씩 보기</option>
+                    </select>
+                    <!-- 2018-12-18 수정 시작 -->
+                    <div class="wrap_search">
+                        <input type="text" title="검색어 입력" class="inp_txt" placeholder="결과 내 재 검색" style="width:228px">
+                        <button type="button" class="btn_del"><span class="ico_comm">검색어 삭제</span></button>
+                        <button type="submit" class="btn_search"><span class="btn_comm">검색</span></button>
+                    </div>
+                    <!-- 2018-12-18 수정 끝 -->
+                </div>
+            </div>
+            <div class="prod_data">
+                <table class="tbl_type1 tbl_hover">
+                    <caption>검색결과 리스트</caption>
+                    <colgroup>
+                        <col style="width:5%">
+                        <col style="width:6%">
+                        <col>
+                        <col style="width:9%">
+                        <col style="width:13%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodAllChk" id="prodAllChk" class="inp_chk">
+                                    <label for="prodAllChk" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">전체 선택</span>
+                                    </label>
+                                </div>
+                            </th>
+                            <th scope="col">구분</th>
+                            <th scope="col">상품명</th>
+                            <th scope="col">단위</th>
+                            <th scope="col">제조사(공급사)</th>
+                            <th scope="col">재고</th>
+                            <th scope="col">단가</th>
+                            <th scope="col">수량</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodChk" id="prodChk" class="inp_chk">
+                                    <label for="prodChk" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="txt_bold">거점</td>
+                            <td class="txt_left">
+                                <span class="tag_g">VC특가</span><br>
+                                <a href="#none" class="link_prod">젠가드F캡슐(NEW) 156mg</a>
+                            </td>
+                            <td class="txt_num">1000T</td>
+                            <td>CMG제약<br>(<span data-type="supplyName">대웅제약</span>)</td>
+                            <td colspan="3" class="lst">
+                                <div class="bundle_item">
+                                    <div class="item"><strong class="screen_out">재고</strong><span data-type="prodNum" class="txt_num">99,999</span></div>
+                                    <div class="item">
+                                        <strong class="screen_out">단가</strong>
+                                        <div class="wrap_select">
+                                            <a href="#none" class="select"><strong class="txt_num">9,999</strong>원</a>
+                                            <div class="layer_select">
+                                                <div class="head_info">
+                                                    <strong class="tit_info">공급사<span class="txt_bar"></span></strong>
+                                                    <strong class="tit_info">단가<span class="txt_bar"></span></strong>
+                                                    <strong class="tit_info">재고</strong>
+                                                </div>
+                                                <ul class="list_info">
+                                                    <li>
+                                                        <a href="#none" class="btn_select">
+                                                            <span class="item"><strong class="screen_out">공급사</strong><span class="txt_supply">대웅제약</span></span>
+                                                            <span class="item"><strong class="screen_out">단가</strong><span class="txt_num">9,999</span>원</span>
+                                                            <span class="item"><strong class="screen_out">재고</strong><span class="txt_num">99,999</span></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" class="btn_select">
+                                                            <span class="item"><strong class="screen_out">공급사</strong><span class="txt_supply">이팜</span></span>
+                                                            <span class="item"><strong class="screen_out">단가</strong><span class="txt_num">99,999</span>원</span>
+                                                            <span class="item"><strong class="screen_out">재고</strong><span class="txt_num">999</span></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" class="btn_select">
+                                                            <span class="item"><strong class="screen_out">공급사</strong><span class="txt_supply">일이삼사오육칠팔</span></span>
+                                                            <span class="item"><strong class="screen_out">단가</strong><span class="txt_num">999,999</span>원</span>
+                                                            <span class="item"><strong class="screen_out">재고</strong><span class="txt_num">99</span></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item"><strong class="screen_out">수량</strong><input type="text" title="수량 입력" value="10" style="width:45px"> 개</div>
+                                </div>
+                                <div class="box_lowest">
+                                    <div class="inner_box">
+                                        <strong class="emph_color">더샵최저가</strong>
+                                        <span class="txt_bar"></span>
+                                        <span class="txt_price"><span class="txt_num">9,999,999</span>원</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodChk" id="prodChk2" class="inp_chk">
+                                    <label for="prodChk2" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="txt_bold">일반</td>
+                            <td class="txt_left">
+                                <a href="#none" class="link_prod">게보린정 300mg</a>
+                            </td>
+                            <td class="txt_num">10T(10EA)</td>
+                            <td>삼진제약<br>(인천약품)</td>
+                            <td colspan="3" class="lst">
+                                <div class="bundle_item">
+                                    <div class="item"><strong class="screen_out">재고</strong><span class="txt_num">99,999</span></div>
+                                    <div class="item"><strong class="screen_out">단가</strong><span class="txt_emph"><strong class="txt_num">9,999,999</strong>원</span></div>
+                                    <div class="item"><strong class="screen_out">수량</strong><input type="text" title="수량 입력" value="10" style="width:45px"> 개</div>
+                                </div>
+                                <div class="box_lowest">
+                                    <div class="inner_box">
+                                        <strong class="emph_color">더샵최저가</strong>
+                                        <span class="txt_bar"></span>
+                                        <span class="txt_price"><span class="txt_num">9,999</span>원</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodChk" id="prodChk3" class="inp_chk">
+                                    <label for="prodChk3" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="txt_bold">일반</td>
+                            <td class="txt_left">
+                                <span class="tag_g tag_type4">DW</span><br>
+                                <a href="#none" class="link_prod">노자임캡슐10000(판크레아틴장용성제피미세정)(병) 162.7mg</a>
+                            </td>
+                            <td class="txt_num">100C</td>
+                            <td>한국팜비오<br>(인천약품)</td>
+                            <td colspan="3" class="lst">
+                                <div class="bundle_item">
+                                    <div class="item"><strong class="screen_out">재고</strong><span class="txt_num">99</span></div>
+                                    <div class="item"><strong class="screen_out">단가</strong><span class="txt_emph"><strong class="txt_num">29,999</strong>원</span></div>
+                                    <div class="item"><strong class="screen_out">수량</strong><input type="text" title="수량 입력" value="1" style="width:45px"> 개</div>
+                                </div>
+                                <div class="box_lowest">
+                                    <div class="inner_box">
+                                        <strong class="emph_color">더샵최저가</strong>
+                                        <span class="txt_bar"></span>
+                                        <span class="txt_price"><span class="txt_num">9,999</span>원</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="chk_g">
+                                    <input type="checkbox" name="prodChk" id="prodChk4" class="inp_chk">
+                                    <label for="prodChk4" class="lab_chk">
+                                        <span class="ico_comm ico_chkbox">선택</span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="txt_bold">일반</td>
+                            <td class="txt_left">
+                                <span class="tag_g tag_type2">외자사</span><br>
+                                <a href="#none" class="link_prod">노자임캡슐10000(판크레아틴장용성제피미세정)(병) 162.7mg</a>
+                            </td>
+                            <td class="txt_num">100C</td>
+                            <td>한국팜비오<br>(인천약품)</td>
+                            <td colspan="3" class="lst">
+                                <div class="bundle_item">
+                                    <div class="item"><strong class="screen_out">재고</strong><span class="txt_num">99</span></div>
+                                    <div class="item"><strong class="screen_out">단가</strong><span class="txt_emph"><strong class="txt_num">29,999</strong>원</span></div>
+                                    <div class="item"><strong class="screen_out">수량</strong><input type="text" title="수량 입력" value="1" style="width:45px"> 개</div>
+                                </div>
+                                <div class="box_lowest">
+                                    <div class="inner_box">
+                                        <strong class="emph_color">더샵최저가</strong>
+                                        <span class="txt_bar"></span>
+                                        <span class="txt_price"><span class="txt_num">9,999</span>원</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="btn_more">더보기<span class="ico_arr"></span></button>
+                <div class="box_result">
+                    <div class="result_btn">
+                        <button type="button" class="btn_type1">장바구니 담기</button>
+                        <button type="button" class="btn_type2">장바구니 보기</button>
+                        <button type="button" class="btn_type2">선택 품목 삭제</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 우측 퀵메뉴[s] -->
+        <!--#include virtual="/publish/shop/renewal/html/include/quick_menu_vip.html" -->
+        <!-- 우측 퀵메뉴[e] -->
+    </section>
+    <!-- container [e] -->
+
+    <!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+    <!-- footer [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+    <!-- footer [e] -->
+
+    <!-- 상품 상세 [s] -->
+    <div id="popProdDetail" style="display:none">
+        <div class="pop_layer pop_type1" style="width:510px">
+            <strong class="tit_popup">베아제정(PTP)</strong>
+            <div class="pop_wrap">
+                <div class="prod_location">일반의약품 &gt; <strong>소화제</strong></div>
+                <div class="prod_info">
+                    <div class="wrap_thumb">
+                        <img src="http://img.shop.co.kr/upload/product/medical/large/20100404T/397015.gif" alt="예나트론질좌제">
+                    </div>
+                    <ul class="list_info">
+                        <li><strong class="tit_info">상품코드</strong><span class="txt_info">33305</span></li>
+                        <li><strong class="tit_info">보험코드</strong><span class="txt_info">646802631</span></li>
+                        <li><strong class="tit_info">규격/단위</strong><span class="txt_info">50ml/1EA</span></li>
+                        <li><strong class="tit_info">제조사</strong><span class="txt_info">건일제약</span></li>
+                        <li><strong class="tit_info">판매가</strong><span class="txt_info">5,040원</span></li>
+                        <li><strong class="tit_info">비용할인<br>1.8%</strong><span class="txt_info">92원</span></li>
+                        <li><strong class="tit_info">제휴카드<br>적립1%</strong><span class="txt_info">50점</span></li>
+                        <li><strong class="tit_info">구분</strong><span class="txt_info">전문의약품</span></li>
+                    </ul>
+                </div>
+                <div class="box_detail">
+                    <strong class="tit_detail">상품상세설명</strong>
+                    <div class="desc_detail">
+                        용법/용량<br>
+                        ○ 3개월 이상 소아환자 : 이 약의 권장용량은 아목시실린 함량(600 mg/5 mL)을 기준으로 90mg/kg/일을 12시간 간격으로 나누어 복용하며, 10일간 투여한다.<br>
+                        ○ 40kg 이상 소아환자: 40kg 이상 소아환자에서 이 약의 사용경험은 없다.<br>
+                        ○ 성인: 성인에서 이 약의 사용경험은 없다.<br>
+                        ○ 간장애 환자 : 간기능 장애 환자에게 이 약을 투여할 경우에는 주의하여야 하고 간기능을 정기적으로 모니터링하여야 한다.<br>
+                        ○ 이 약은 위장장애의 가능성을 최소화하기 위하여 식사초기에 투여한다. 이 약의 식사초기 투여 시 클라불란산칼륨의 흡수가 증가한다.<br>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn_comm btn_close">닫기</button>
+        </div>
+    </div>
+    <!-- 상품 상세 [e] -->
+
+    <script type="text/javascript">
+        $(function(){
+            // 정렬 선택버튼
+            $(".list_sort button").on("click",function () {
+                $(this).parent().addClass("on").siblings().removeClass("on")
+            })
+            // 검색결과 리스트 전체선택
+            var prodAllChk = $('#prodAllChk');
+            prodAllChk.change(function () {
+                var checked = $(this).prop("checked");
+                $("input[name='prodChk']").prop("checked", checked);
+            });
+            var prodChk = $("input[name='prodChk']");
+            prodChk.change(function () {
+                var boxLength = prodChk.length;
+                var checkedLength = $('input[name="prodChk"]:checked').length;
+                var selectAll = (boxLength == checkedLength);
+                prodAllChk.prop('checked', selectAll);
+            });
+
+            // 단가 셀렉트박스
+            $(".wrap_select .select").on("click",function (e) {
+                $(this).parent().toggleClass("on").parents("tr").siblings().find(".wrap_select").removeClass("on");
+                e.preventDefault();
+            });
+            $(".wrap_select .btn_select").on("click",function (e) {
+                var supplyName = $(this).find(".txt_supply").text();
+                var priceNum = $(this).find(".item:nth-child(2) .txt_num").text();
+                var prodNum = $(this).find(".item:nth-child(3) .txt_num").text();
+
+                $(this).parents(".wrap_select").find(".select .txt_num").text(priceNum);
+                $(this).parents("tr").find("span[data-type='supplyName']").text(supplyName);
+                $(this).parents("tr").find("span[data-type='prodNum']").text(prodNum);
+
+                $(".wrap_select").removeClass("on");
+                e.preventDefault();
+            });
+            $(document).on("click",function (e) {
+                $(".wrap_select a").each(function () {
+                    var infoLayer = $(this).next();
+                    if (infoLayer.css("display") === "block") {
+                        if (!$(".wrap_select").has(e.target).length) {
+                            $(".wrap_select").removeClass("on")
+                        };
+                    };
+                });
+            });
+
+            // 리스트 하단 fixed
+            shopUI.scrollFix();
+            /* 더보기 클릭시 스크롤 체크가 필요한 경우, ajax append 후에 shopUI.scrollCheck($(window).height()); */
+
+            //모달 레이어
+            $('body').on("click", ".tbl_type1 .link_prod", function() {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popProdDetail"), {
+                    closeClass: "btn_close"
+                });
+            });
+            $('body').on("click", ".box_search .btn_search", function() {
+                shopUI.modalLayerComm({
+                    "type": "1",
+                    "title": "검색 결과",
+                    "description": "검색된 상품이 없습니다.<br>상품명을 다시 확인해주세요!"
+                });
+                $("body").on("click", ".btn_confirm", function() {
+                    $(".btn_close").click();
+                });
+            });
+            // 검색어 삭제기능 2018-12-18 추가
+            $(".wrap_search input[type='text']").on("keyup", function(){
+                var searchInput = $(this).val().length;
+                if(searchInput > 0){
+                    $(this).next().show();
+                } else{
+                    $(this).next().hide();
+                }
+                $(".wrap_search .btn_del").on("click", function () {
+                    $(".wrap_search input").val("");
+                    $(this).hide();
+                });
+            });
+
+
+        });
+
+
+
+    </script>
+
+
+</body>
+</html>

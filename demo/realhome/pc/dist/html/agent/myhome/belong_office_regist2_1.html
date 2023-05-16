@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../../css/font.min.css" rel="stylesheet">
+    <link href="../../../css/common.min.css" rel="stylesheet">
+    <link href="../../../css/style.min.css" rel="stylesheet">
+    <link href="../../../css/layout.min.css" rel="stylesheet">
+
+
+    <script src="../../../js/3.3.1.min.js"></script>	
+    <script src="../../../js/common.min.js"></script>	
+    <script src="../../../js/sub.min.js"></script>	
+    <script src="../../../js/plugin/cycle2.min.js"></script>	
+    <script src="../../../js/plugin/slick.min.js"></script>	
+
+
+    <title>realhouse</title>
+</head>
+<body>
+<!--header-->
+<header class="sub_header">
+    <h1 class="logo"><a href="#"><img src="../../../../images/common/agent_logo.png" alt="리얼하우스 로고"></a></h1>
+    <div class="header_inner">
+        <button class="btn_close"><span class="blind">닫기</span></button>
+        <h2 class="header_tit">소속중개사무소 등록/변경</h2>
+    </div>   
+</header>
+<!--//header-->         
+<div class="header_section fixed">
+    <div class="header_inner">
+        <div class="process_idx">
+            <em>1</em>
+            <em class="on">2</em><span>중개사무소 등록확인</span>
+            <em>3</em>
+        </div>
+        <div class="btn_process">
+            <button class="btn btn_prev">이전</button>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div id=sub_container class="sub_container">          
+        <div class="container_inner">     
+            <div class="myoffice_area">
+                <!--중개사무소 등록여부 확인  -->
+                <div class="content_section">
+                    <div class="content_head3">
+                        <h2 class="tit">중개사무소 등록여부 확인  </h2>
+                    </div>
+                    <div class="table_style3">
+                        <table class="table" summary="사업자등록번호 테이블 입니다.">
+                            <caption>중개사무소 등록여부 확인</caption>
+                            <colgroup>  
+                                <col width="14%">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr class="pd_style">
+                                    <th rowspan="2"><label for="reg_no1">사업자등록번호</label></th>
+                                    <td>
+                                        <input type="text" id="reg_no1" class="reg_no reg_no1 border"><span class="hipen">-</span>
+                                        <input type="text" class="reg_no reg_no2 border"><span class="hipen">-</span>
+                                        <input type="text" class="reg_no reg_no3 border">
+                                        <button class="btn off">확인</button>
+                                        <button class="btn red">확인</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info">
+                                        ※ <span class="txt_red2">해당 정보가 맞을 경우</span> <span class="txt_blue">[등록 요청]</span>을 클릭하십시오. <span class="txt_red2">사업자등록번호는 동일하지만 중개사무소등록번호가 다른 경우</span> <span class="txt_blue">[추가등록]</span>을 하십시오.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--등록요청-->
+                    <div class="table_style3 reg_request">
+                        <table class="table" summary="중개사무소,대표,휴대전화,사업자등록번호,중개사무소등록번호,주소 테이블 입니다.">
+                            <caption>등록 요청 테이블</caption>
+                            <colgroup>  
+                                <col width="14%">
+                                <col width="36%">
+                                <col width="14%">
+                                <col width="36%">
+                            </colgroup>
+                            <tbody>
+                                <tr class="pd_style">
+                                    <th>중개사무소</th>
+                                    <td colspan="2">
+                                        은성공인중개사사무소/02-0000-0000
+                                    </td>
+                                    <td class="align_right">
+                                        <button class="btn green">등록 요청</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>대표</th>
+                                    <td>홍길동</td>
+                                    <th>휴대전화</th>
+                                    <td>010-000-0000</td>
+                                </tr>
+                                <tr>
+                                    <th>사업자등록번호</th>
+                                    <td>212-22-333345</td>
+                                    <th>중개사무소등록번호</th>
+                                    <td>가000-00000</td>
+                                </tr>
+                                <tr>
+                                    <th>주소</th>
+                                    <td colspan="3">서울시 송파구 잠실동 123(은성빌딩) 103호</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//등록요청-->
+                    <!--등록요청-->
+                    <div class="table_style3 reg_request">
+                        <table class="table" summary="중개사무소,대표,휴대전화,사업자등록번호,중개사무소등록번호,주소 테이블 입니다.">
+                            <caption>등록 요청 테이블</caption>
+                            <colgroup>  
+                                <col width="14%">
+                                <col width="36%">
+                                <col width="14%">
+                                <col width="36%">
+                            </colgroup>
+                            <tbody>
+                                <tr class="pd_style">
+                                    <th>중개사무소</th>
+                                    <td colspan="2">
+                                        은성공인중개사사무소/02-0000-0000
+                                    </td>
+                                    <td class="align_right">
+                                        <button class="btn green">등록 요청</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>대표</th>
+                                    <td>홍길동</td>
+                                    <th>휴대전화</th>
+                                    <td>010-000-0000</td>
+                                </tr>
+                                <tr>
+                                    <th>사업자등록번호</th>
+                                    <td>212-22-333345</td>
+                                    <th>중개사무소등록번호</th>
+                                    <td>가000-00000</td>
+                                </tr>
+                                <tr>
+                                    <th>주소</th>
+                                    <td colspan="3">서울시 송파구 잠실동 123(은성빌딩) 103호</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//등록요청-->
+                    <div class="btn_submit">
+                        <button class="btn_right btn red">추가 등록</button>
+                    </div>
+                </div>
+                <!--//중개사무소 등록여부 확인  -->
+                
+            </div>
+        </div>           
+    </div>
+</div>
+<footer id="footer">
+    <div class="footer_content">
+        <div class="footer_inner">
+            <p class="company">(주)아이비소프트</p>
+            <address>
+                <span class="pd_r">대표: 김종진</span> 사업자등록번호: 212-26-83050
+                <br>주소: 서울시 강동구 양재대로 1334(성내동 429-3) 동부빌딩 406호
+                <br><span class="pd_r">사업 제휴문의: biz@realhouse.cc</span> 통신판매업 신고번호: 제2019-서울강동-0000호
+            </address>
+            <div class="custorm">
+                <span class="tit">고객센터</span>
+                <span class="number">02.427.7088</span>
+                고객지원 시간 09:00~18:00
+                <br>(토요일, 일요일, 공휴일 휴무) 
+            </div>
+        </div>
+    </div>
+    <address class="copyright">Ibsoft, Inc. All rights reserved.</address>
+</footer>
+</body>
+</html>

@@ -1,0 +1,823 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+    <!-- 검색 영역 전용 CSS -->
+	<link rel="stylesheet" href="../../css/search.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+
+    <!-- 2021-08-12 category breadcrumbs 추가 [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/products/_breadcrumbs.html" -->
+    <!-- 2021-08-12 category breadcrumbs 추가 [e] -->
+
+	<!-- container [s] -->
+	<section id="container">
+		<div id="content" class="search_result">
+            <!-- 2021-06-24 배너 영역 -->
+            <div class="banner_wrap">
+                <img src="https://via.placeholder.com/950x160/dddddd/808080" alt="">
+            </div>
+            <h2 class="title">상품리스트<sub>아래 상품구분을 누르시면 검색 결과에서 원하시는 분류만 확인할 수 있습니다.</sub></h2>
+            <form action="#">
+                <fieldset class="category_selector">
+                    <legend>상품 구분</legend>
+                    <!-- 주의: 상품 구분값(data-type) 속성은 반드시 대문자여야 합니다. -->
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="E" value="" checked>
+                        <div class="label"><span class="em">E</span>급여</div>
+                    </label>
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="O" value="">
+                        <div class="label"><span class="em">O</span>일반/비급여</div>
+                    </label>
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="H" value="">
+                        <div class="label"><span class="em">H</span>건.기.식</div>
+                    </label>
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="X" value="">
+                        <div class="label"><span class="em">X</span>부외품/의료기</div>
+                    </label>
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="B" value="">
+                        <div class="label"><span class="em">B</span>화장품</div>
+                    </label>
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="AM" value="">
+                        <div class="label"><span class="em">AM</span>동물약품</div>
+                    </label>
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="O1" value="">
+                        <div class="label"><span class="em">O</span>그룹할인</div>
+                    </label>
+                    <label class="rounded">
+                        <input type="radio" name="searchCategory" data-type="O2" value="">
+                        <div class="label"><span class="em">O</span>수량할인</div>
+                    </label>
+                </fieldset>
+            </form>
+            <div class="inner">
+                <!-- 검색 결과 상품 리스트 영역 [s] -->
+                <div class="column result_list">
+                    <div class="prod_list_wrap">                       
+                        <form class="search_bar" action="#">
+                            <fieldset>
+                                <legend>결과 내 재검색</legend>
+                                <p class="row">
+                                    <input type="text" name="" placeholder="상품명, 제조사, 규격, 보험코드로 입력해보세요!"><button type="submit">검색</button>
+                                </p>
+                                <p class="desc">공급사별 상품 검색을 희망하시는 경우, 상단 공급사별 보기를 이용해주세요.</p>
+                            </fieldset>
+                        </form>
+                        <form action="#">
+                            <fieldset class="option_bar">
+                                <legend>상품 리스트 옵션</legend>
+                                <div class="array_option">
+                                    <label class="bullet">
+                                        <input type="radio" name="arrayType" value="" checked>
+                                        <div class="label">판매순</div>
+                                    </label>
+                                    <label class="bullet">
+                                        <input type="radio" name="arrayType" value="">
+                                        <div class="label">상품평순</div>
+                                    </label>
+                                    <label class="bullet">
+                                        <input type="radio" name="arrayType" value="">
+                                        <div class="label">낮은가격순</div>
+                                    </label>
+                                    <label class="bullet">
+                                        <input type="radio" name="arrayType" value="">
+                                        <div class="label">높은가격순</div>
+                                    </label>
+                                </div>
+                                <div class="opt_toggle">
+                                    <label class="switch" title=""상품상세 정보를 확인하는 방법을 설정합니다.>
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="txt">상세보기 버튼 OFF</span>
+                                    <span class="txt" style="display:none;">상세보기 버튼 ON</span>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div class="prod_list">
+                            <ul>
+                                <!-- 주의: 상품 구분값(data-type) 속성은 반드시 대문자여야 합니다. -->
+                                <li class="accordion_box prod dw" data-type="E">
+                                    <a href="#" class="accordion_header" aria-expanded="false">
+                                        <div class="column thumbnail">
+                                            <img src="http://img.shop.co.kr/upload/product/ADMIN/201804/555721_01_L.jpg" alt="">
+                                        </div>
+                                        <div class="column name_wrap">
+                                            <p class="name"><span class="em"></span>펜잘큐정(PTP)</p>
+                                        </div>
+                                        <div class="column simple price">
+                                            <strong><span class="num">310,890</span>원</strong>
+                                        </div>
+                                        <div class="column simple unit">
+                                            <strong><span class="num">100P(20P*5EA)</span></strong>
+                                        </div>
+                                        <div class="column simple maker">한국화이자제약</div>
+                                    </a>
+                                    <div class="accordion_body">
+                                        <!--#include virtual="/publish/shop/renewal/html/products/_prod_detail_img.html" -->
+                                    </div>
+                                </li>
+                                <!-- 2021-10-20 soldout 클래스 삭제 : 기존 표기 방식 badge 추가로 변경 -->
+                                <li class="accordion_box prod dw" data-type="O">
+                                    <a href="#" class="accordion_header" aria-expanded="false">
+                                        <div class="column thumbnail">
+                                            <img src="http://img.shop.co.kr/upload/product/ADMIN/201804/555721_01_L.jpg" alt="">
+                                        </div>
+                                        <div class="column name_wrap">
+                                            <!-- 2021-10-20 품절 추가 -->
+                                            <div class="badges">
+                                                <span class="badge soldout">품절</span>
+                                            </div>
+                                            <p class="name"><span class="em"></span>이지엔6스트롱 연질캡슐(신규패키지)</p>
+                                            <div class="badges">
+                                                <span class="badge groupbuying">공동구매</span>
+                                                <span class="badge lastdeal">땡처리</span>
+                                                <span class="badge timesale">타임세일</span>
+                                                <span class="badge specialdeal">특가</span>
+                                                <span class="badge lowerprice">최저가보상</span>
+                                            </div>
+                                        </div>
+                                        <div class="column simple price">
+                                            <strong><span class="num">310,890</span>원</strong>
+                                        </div>
+                                        <div class="column simple unit">
+                                            <strong><span class="num">100P(20P*5EA)</span></strong>
+                                        </div>
+                                        <div class="column simple maker">대웅제약</div>
+                                    </a>
+                                    <div class="accordion_body">
+                                        <!--#include virtual="/publish/shop/renewal/html/products/_prod_detail.html" -->
+                                    </div>
+                                </li>
+                                <li class="accordion_box prod" data-type="H">
+                                    <a href="#" class="accordion_header" aria-expanded="false">
+                                        <div class="thumbnail">
+                                            <img src="http://img.shop.co.kr/upload/product/medical/large/20100106/8806411003317_MAIN.gif" alt="">
+                                        </div>
+                                        <div class="column name_wrap">
+                                            <p class="name"><span class="em"></span>삼성 Neo QLED 8K Smart TV 189cm KQ75QNA800FXKR (스탠드/벽걸이형 선택)   </p>
+                                            <div class="badges">
+                                                <span class="badge tooltip groupsale">
+                                                    그룹할인
+                                                    <span class="tooltip_box">
+                                                        <p class="desc"><em>[이지엔] 그룹</em>의 상품 총 주문 수량에 따라 할인율이 적용됩니다.</p>
+                                                        <ul>
+                                                            <li><em>300</em>개 이상 주문 시 <em>10</em>% 할인</li>
+                                                        </ul>
+                                                    </span>
+                                                </span>
+                                                <span class="badge tooltip scalesale">
+                                                    수량할인
+                                                    <span class="tooltip_box">
+                                                        <p class="desc"><em>#상품명#</em> 상품 주문 수량에 따라 할인율이 적용됩니다.</p>
+                                                        <ul>
+                                                            <li>10개 이상 주문 시 <em>#10#% 할인</em></li>
+                                                            <li>20개 이상 주문 시 <em>#20#% 할인</em></li>
+                                                            <li>* 클릭 시 수량할인이 적용된 상품을 확인할 수 있습니다.</li>
+                                                        </ul>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="column simple price">
+                                            <strong><span class="num">1,210,890</span>원</strong>
+                                        </div>
+                                        <div class="column simple unit">
+                                            <strong><span class="num">3EA</span></strong>
+                                        </div>
+                                        <div class="column simple maker">한국화이자제약</div>
+                                    </a>
+                                    <div class="accordion_body">
+                                        <!--#include virtual="/publish/shop/renewal/html/products/_prod_detail.html" -->
+                                    </div>
+                                </li>
+                                <li class="accordion_box prod" data-type="X">
+                                    <a href="#" class="accordion_header" aria-expanded="false">
+                                        <div class="thumbnail">
+                                            <img src="http://img.shop.co.kr/upload/product/medical/large/20100106/8806411003317_MAIN.gif" alt="">
+                                        </div>
+                                        <div class="column name_wrap">
+                                            <p class="name"><span class="em"></span>헬스데이 일회용마스크 (부직포 방한대/검정)</p>
+                                            <div class="badges">
+                                                <span class="badge tooltip scalesale">
+                                                    수량할인
+                                                    <span class="tooltip_box">
+                                                        <p class="desc"><em>#상품명#</em> 상품 주문 수량에 따라 할인율이 적용됩니다.</p>
+                                                        <ul>
+                                                            <li>10개 이상 주문 시 <em>#10#% 할인</em></li>
+                                                            <li>20개 이상 주문 시 <em>#20#% 할인</em></li>
+                                                            <li>* 클릭시 해당 그룹의 상품을 확인할 수 있습니다.</li>
+                                                        </ul>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="column simple price">
+                                            <strong><span class="num">1,210,890</span>원</strong>
+                                        </div>
+                                        <div class="column simple unit">
+                                            <strong><span class="num">3EA</span></strong>
+                                        </div>
+                                        <div class="column simple maker">한국화이자제약</div>
+                                    </a>
+                                    <div class="accordion_body">
+                                        <!--#include virtual="/publish/shop/renewal/html/products/_prod_detail.html" -->
+                                    </div>
+                                </li>
+                                <li class="accordion_box prod" data-type="B">
+                                    <a href="#" class="accordion_header" aria-expanded="false">
+                                        <div class="thumbnail">
+                                            <img src="http://img.shop.co.kr/upload/product/medical/large/20100106/8806411003317_MAIN.gif" alt="">
+                                        </div>
+                                        <div class="column name_wrap">
+                                            <p class="name"><span class="em"></span>노바스크정</p>
+                                        </div>
+                                        <div class="column simple price">
+                                            <strong><span class="num">1,210,890</span>원</strong>
+                                        </div>
+                                        <div class="column simple unit">
+                                            <strong><span class="num">3EA</span></strong>
+                                        </div>
+                                        <div class="column simple maker">한국화이자제약</div>
+                                    </a>
+                                    <div class="accordion_body">
+                                        <!--#include virtual="/publish/shop/renewal/html/products/_prod_detail.html" -->
+                                    </div>
+                                </li>
+                                <li class="accordion_box prod" data-type="AM">
+                                    <a href="#" class="accordion_header" aria-expanded="false">
+                                        <div class="thumbnail">
+                                            <img src="http://img.shop.co.kr/upload/product/medical/large/20100106/8806411003317_MAIN.gif" alt="">
+                                        </div>
+                                        <div class="column name_wrap">
+                                            <p class="name"><span class="em"></span>씨콜드플러스코프정 10정(new)</p>
+                                            <div class="badges">
+                                                <span class="badge lastdeal">땡처리</span>
+                                                <span class="badge timesale">타임세일</span>
+                                            </div>
+                                        </div>
+                                        <div class="column simple price">
+                                            <strong><span class="num">1,000</span>원</strong>
+                                        </div>
+                                        <div class="column simple unit">
+                                            <strong><span class="num">3EA</span></strong>
+                                        </div>
+                                        <div class="column simple maker">종근당</div>
+                                    </a>
+                                    <div class="accordion_body">
+                                        <!--#include virtual="/publish/shop/renewal/html/products/_prod_detail.html" -->
+                                    </div>
+                                </li>
+                                <li class="accordion_box prod" data-type="O">
+                                    <a href="#" class="accordion_header" aria-expanded="false">
+                                        <div class="thumbnail">
+                                            <img src="http://img.shop.co.kr/upload/product/medical/large/20100106/8806411003317_MAIN.gif" alt="">
+                                        </div>
+                                        <div class="column name_wrap">
+                                            <p class="name"><span class="em"></span>나보타주50단위(클로스트리디움보톨리눔독소A형)</p>
+                                        </div>
+                                        <div class="column simple price">
+                                            <strong><span class="num">20,220</span>원</strong>
+                                        </div>
+                                        <div class="column simple unit">
+                                            <strong><span class="num">3EA</span></strong>
+                                        </div>
+                                        <div class="column simple maker">한국화이자제약</div>
+                                    </a>
+                                    <div class="accordion_body">
+                                        <!--#include virtual="/publish/shop/renewal/html/products/_prod_detail.html" -->
+                                    </div>
+                                </li>
+                                <li class="accordion_box prod" data-type="O">
+                                    <a href="#" class="accordion_header" aria-expanded="false">
+                                        <div class="thumbnail">
+                                            <img src="http://img.shop.co.kr/upload/product/medical/large/20100106/8806411003317_MAIN.gif" alt="">
+                                        </div>
+                                        <div class="column name_wrap">
+                                            <p class="name"><span class="em"></span>삼성 Neo QLED 8K Smart TV 189cm KQ75QNA800FXKR (스탠드/벽걸이형 선택)   </p>
+                                            <div class="badges">
+                                                <span class="badge tooltip groupsale">
+                                                    그룹할인
+                                                    <span class="tooltip_box">
+                                                        <p class="desc"><em>[이지엔] 그룹</em>의 상품 총 주문 수량에 따라 할인율이 적용됩니다.</p>
+                                                        <ul>
+                                                            <li><em>300</em>개 이상 주문 시 <em>10</em>% 할인</li>
+                                                        </ul>
+                                                    </span>
+                                                </span>
+                                                <span class="badge tooltip scalesale">
+                                                    수량할인
+                                                    <span class="tooltip_box">
+                                                        <p class="desc"><em>#상품명#</em> 상품 주문 수량에 따라 할인율이 적용됩니다.</p>
+                                                        <ul>
+                                                            <li>10개 이상 주문 시 <em>#10#% 할인</em></li>
+                                                            <li>20개 이상 주문 시 <em>#20#% 할인</em></li>
+                                                            <li>* 클릭시 해당 그룹의 상품을 확인할 수 있습니다.</li>
+                                                        </ul>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="column simple price">
+                                            <strong><span class="num">1,210,890</span>원</strong>
+                                        </div>
+                                        <div class="column simple unit">
+                                            <strong><span class="num">3EA</span></strong>
+                                        </div>
+                                        <div class="column simple maker">한국화이자제약</div>
+                                    </a>
+                                    <div class="accordion_body">
+                                        <!--#include virtual="/publish/shop/renewal/html/products/_prod_detail.html" -->
+                                    </div>
+                                </li>
+                                <li class="accordion_box prod" data-type="O">
+                                    <a href="#" class="accordion_header" aria-expanded="false">
+                                        <div class="thumbnail">
+                                            <img src="http://img.shop.co.kr/upload/product/medical/large/20100106/8806411003317_MAIN.gif" alt="">
+                                        </div>
+                                        <div class="column name_wrap">
+                                            <p class="name"><span class="em"></span>삼성 Neo QLED 8K Smart TV 189cm KQ75QNA800FXKR (스탠드/벽걸이형 선택)   </p>
+                                            <div class="badges">
+                                                <span class="badge tooltip groupsale">
+                                                    그룹할인
+                                                    <span class="tooltip_box">
+                                                        <p class="desc"><em>[이지엔] 그룹</em>의 상품 총 주문 수량에 따라 할인율이 적용됩니다.</p>
+                                                        <ul>
+                                                            <li><em>300</em>개 이상 주문 시 <em>10</em>% 할인</li>
+                                                        </ul>
+                                                    </span>
+                                                </span>
+                                                <span class="badge tooltip scalesale">
+                                                    수량할인
+                                                    <span class="tooltip_box">
+                                                        <p class="desc"><em>#상품명#</em> 상품 주문 수량에 따라 할인율이 적용됩니다.</p>
+                                                        <ul>
+                                                            <li>10개 이상 주문 시 <em>#10#% 할인</em></li>
+                                                            <li>20개 이상 주문 시 <em>#20#% 할인</em></li>
+                                                            <li>* 클릭시 해당 그룹의 상품을 확인할 수 있습니다.</li>
+                                                        </ul>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="column simple price">
+                                            <strong><span class="num">1,210,890</span>원</strong>
+                                        </div>
+                                        <div class="column simple unit">
+                                            <strong><span class="num">3EA</span></strong>
+                                        </div>
+                                        <div class="column simple maker">한국화이자제약</div>
+                                    </a>
+                                    <div class="accordion_body">
+                                        <!--#include virtual="/publish/shop/renewal/html/products/_prod_detail.html" -->
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="paging_nav">
+                                <a href="#none" class="btn_prev">이전</a>
+                                <a href="#none">1</a>
+                                <a href="#none">2</a>
+                                <span>3</span>
+                                <a href="#none">4</a>
+                                <a href="#none">5</a>
+                                <a href="#none">6</a>
+                                <a href="#none">7</a>
+                                <a href="#none">8</a>
+                                <a href="#none">9</a>
+                                <a href="#none">10</a>
+                                <a href="#none" class="btn_next">다음</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 검색 결과 상품 리스트 영역 [e] -->
+
+                <!--  상품 상세 보기 및 결과 내 검색 영역 [s] -->
+                <div class="column prod_detail pro_right">
+                    <!-- 2021-06-24 배너 영역 -->
+                    <div class="banner_wrap top">
+                        <div class="owl-carousel">
+                            <div class="item"><a href="#"><img src="https://via.placeholder.com/380x170/dddddd/808080?text=BANNER1" alt="" /></a></div>
+                            <div class="item"><a href="#"><img src="https://via.placeholder.com/380x170/dddddd/808080?text=BANNER2" alt="" /></a></div>
+                            <div class="item"><a href="#"><img src="https://via.placeholder.com/380x170/dddddd/808080?text=BANNER3" alt="" /></a></div>
+                            <div class="item"><a href="#"><img src="https://via.placeholder.com/380x170/dddddd/808080?text=BANNER4" alt="" /></a></div>
+                        </div>
+                    </div>
+                    <!-- 선택된 상품 없는 경우 -->
+                    <div class="detail_wrap">
+                        <h3 class="title">상품상세정보</h3>
+                        <p class="desc">선택된 상품이 없습니다.</p>
+                    </div>
+                    <!-- 상품이 선택된 경우 -->
+                    <div class="detail_wrap">
+                        <h3 class="title">상품상세정보</h3>
+                        <div class="summary">
+                            <ul class="breadcrumb">
+                                <li><a href="#">일반의약품</a></li>
+                                <li class="current"><a href="#">해열, 진통, 소염제</a></li>
+                            </ul>
+                            <!-- 2021-10-20 약가 인하 추가 -->
+                            <p class="alert">약가인하 <span class="num">2021-12-21</span> | <span class="num">80,500</span>원 ▶ <span class="num">80,490</span>원</p>
+                            <div class="name">
+                                헬스데이 일회용마스크 헬스데이 일회용마스크 (부직포 방한대/검정)
+                                <div class="badge repurchase">재구매율 <span class="num">100</span>%</div>
+                            </div>
+                            <dl>
+                                <dt>유효기간</dt>
+                                <dd>2022년 8월 15일까지</dd>
+                                <dt>최저 공급가</dt>
+                                <dd><strong class="price"><span class="num">1,382,250</span>원</strong></dd>
+                            </dl>
+                        </div>
+                        <ul class="sale_list">
+                            <li>
+                                <span class="badge groupbuying">공동구매</span>
+                                <p>모일수록 더싼 000원 구매 클릭</p>
+                                <a href="#" class="btn_quick">바로가기</a>
+                            </li>
+                            <li>
+                                <span class="badge lastdeal">땡처리</span>
+                                <p>모일수록 더싼 000원 구매 클릭</p>
+                                <a href="#" class="btn_quick">바로가기</a>
+                            </li>
+                            <li>
+                                <span class="badge timesale">타임세일</span>
+                                <p>모일수록 더싼 000원 구매 클릭</p>
+                                <a href="#" class="btn_quick">바로가기</a>
+                            </li>
+                        </ul>
+                        <form class="order_table" action="">
+                            <table class="supply_table">
+                                <colgroup>
+                                    <col>
+                                    <col style="width:21%">
+                                    <col style="width:21%">
+                                    <col style="width:16%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">공급사명</th>
+                                        <th scope="col">공급가</th>
+                                        <th scope="col">세일가</th>
+                                        <th scope="col">재고</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label class="field">
+                                                <input type="radio" name="prodSupply" checked><span class="mark"></span>
+                                                지오영
+                                            </label>
+                                        </td>
+                                        <td class="num">26,840</td>
+                                        <td class="num"><strong>23,000</strong></td>
+                                        <td class="num">97</td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <td>
+                                            <label class="field">
+                                                <input type="radio" name="prodSupply"><span class="mark"></span>
+                                                백제약품 동부지점
+                                            </label>
+                                        </td>
+                                        <td class="num">2,530,000</td>
+                                        <td class="num"><strong>2,530,000</strong></td>
+                                        <td class="num">22,222</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="field">
+                                                <input type="radio" name="prodSupply"><span class="mark"></span>
+                                                백제약품 동부지점
+                                            </label>
+                                        </td>
+                                        <td class="num">2,530,000</td>
+                                        <td class="num"><strong>2,530,000</strong></td>
+                                        <td class="num">22,222</td>
+                                    </tr> -->
+                                    <tr>
+                                        <td>
+                                            <label class="field">
+                                                <input type="radio" name="prodSupply"><span class="mark"></span>
+                                                백제약품 동부지점
+                                            </label>
+                                        </td>
+                                        <td class="num">2,530,000</td>
+                                        <td class="num"><strong>2,530,000</strong></td>
+                                        <td class="num">22,222</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="field">
+                                                <input type="radio" name="prodSupply"><span class="mark"></span>
+                                                복산나이스팜(평택)
+                                            </label>
+                                        </td>
+                                        <td class="num">-</td>
+                                        <td class="num"><strong>-</strong></td>
+                                        <td class="num">
+                                            <span class="badge soldout">품절</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="field">
+                                                <input type="radio" name="prodSupply"><span class="mark"></span>
+                                                헬스팜(구,MS홀딩스팜)
+                                            </label>
+                                            <div class="badges">
+                                                <!-- 2022-05-04 추가--><span class="badge deliver">새벽배송</span> -->
+                                                <!-- 2021-09-13 약정도매 추가 -->
+                                                <span class="badge contract">약정도매</span>
+                                                <span class="badge border">대웅제품과 함께 주문시 무료배송</span>
+                                                <span class="badge border">낱알</span>
+                                                <span class="badge border">반품불가</span>
+                                                <span class="badge border">대웅물류거점</span>
+                                            </div>
+                                        </td>
+                                        <td class="num">2,530,000</td>
+                                        <td class="num"><strong>2,530,000</strong></td>
+                                        <td class="num">122,222</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="selected_supply_table">
+                                <colgroup>
+                                    <col>
+                                    <col style="width:21%">
+                                    <col style="width:17%">
+                                    <col style="width:90px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">선택공급사명</th>
+                                        <th scope="col">공급가</th>
+                                        <th scope="col">재고</th>
+                                        <th scope="col">구매수량</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>헬스팜(구,MS홀딩스팜)</td>
+                                        <td class="num"><strong>2,530,000</strong></td>
+                                        <td class="num">22,222</td>
+                                        <td class="quantity">
+                                            <div class="selector">
+                                                <button type="button" class="minus"><span class="screen_out">감소</span></button>
+                                                <input type="text" name="prodQuantity" value="1">
+                                                <button type="button" class="plus"><span class="screen_out">추가</span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="info">
+                                        <td colspan="4">
+                                            주문 가능한 수량 : 2,000개<br>비용할인 : 1.8% 적용 예정
+                                        </td>
+                                    </tr>
+                                    <tr class="total">
+                                        <th scope="row">결제예상금액</th>
+                                        <td colspan="3"><strong class="num">200,000</strong>원</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <div class="button_wrap">
+                                <button type="button" class="bg check_quantity">장바구니 담기</button>
+                                <button type="button" class="border btn_bookmark">즐겨찾기 담기</button>
+                            </div>
+                            <div class="button_wrap">
+                                <button type="button" class="border btn_bookmark">즐겨찾기 담기</button>
+                                <button type="button" class="border orange request_restock">재입고 요청 및 알림 신청</button>
+                            </div>
+                            <p class="caution">* 결제 예상금액은 비용할인, 마일리지 및 쿠폰 사용 금액 등을 반영하지 않은 가격이며, 실 결제 금액은 변동 될 수 있습니다.</p>
+                        </form>
+                        <div class="notice_box">
+                            <p class="subject"><span class="ico_caution"></span>[공지] 반품 불가 상품입니다.</p>
+                            <p>유통기한 임박 상품으로 반품이 불가하오니, 주문 시 신중히 주문하여 주시기 바랍니다.</p>
+                        </div>
+                    </div>
+                    <!-- 2021-06-24 배너영역 -->
+                    <div class="banner_wrap">
+                        <img src="https://via.placeholder.com/380x170/dddddd/808080" alt="">
+                    </div>
+                    <div class="caution_wrap">
+                        <p class="title">지오영 구매 <strong>주의사항</strong></p>
+                        <div class="caution_detail">
+                            <font color="red"><b>주문마감시간 : 2021/05/24 오후 5시</b></font><br>
+                            <font color="red"><b>배송예정일 : 2021/05/25 오후 1시</b></font>
+                            <br>
+                            <font color="red"><b>도서산간 및 제주도 지역의 경우 배송예정일 보다 2~3일 배송지연 될 수 있습니다.</b></font><br>
+                            최소주문금액 10만원( <p>1. 배송 (묶음배송가능)</p>
+                            <p>서울지역 09시주문 당일배송 17시주문 익일배송</p>
+                            <p>지방 14시 주문-&gt; 익일배송 </p>
+                            <p>*티제이팜 =&gt; 배송안내 상세내용 참고해주세요!)
+                                <br>
+                                <font size="2" face="돋음" color="#000000" style="font-weight:bold;">반품 택배비 : 2,500원</font>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="event_wrap">
+                        <p class="title">지오영 이벤트 <strong>5건 진행중</strong></p>
+                        <a href="#" class="btn_quick event_list">이벤트 보기</a>
+                    </div>
+                    <div class="order_list_wrap">
+                        <p class="title">최근 주문</p>
+                        <div class="table_wrap">
+                            <table>
+                                <colgroup>
+                                    <col style="width:20%">
+                                    <col style="width:23%">
+                                    <col style="width:12%">
+                                    <col style="width:22%">
+                                    <col style="width:23%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="row">주문일</th>
+                                        <th scope="row">공급업체</th>
+                                        <th scope="row">구매수량</th>
+                                        <th scope="row">단가</th>
+                                        <th scope="row">주문금액</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="date num">21.05.10</td>
+                                        <td>서울약사신협</td>
+                                        <td>2</td>
+                                        <td class="price"><strong class="num">20,000</strong></td>
+                                        <td class="price"><strong class="num">20,000</strong>원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="date num">21.05.10</td>
+                                        <td>헬스팜(구,MS홀딩스팜)</td>
+                                        <td>200</td>
+                                        <td class="price"><strong class="num">2,320,000</strong></td>
+                                        <td class="price"><strong class="num">3,520,000</strong>원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="date num">21.05.10</td>
+                                        <td>서울약사신협</td>
+                                        <td>2</td>
+                                        <td class="price"><strong class="num">2,000</strong></td>
+                                        <td class="price"><strong class="num">2,000</strong>원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="date num">21.05.10</td>
+                                        <td>서울약사신협</td>
+                                        <td>2</td>
+                                        <td class="price"><strong class="num">20,000</strong></td>
+                                        <td class="price"><strong class="num">20,000</strong>원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="date num">21.05.10</td>
+                                        <td>서울약사신협</td>
+                                        <td>2</td>
+                                        <td class="price"><strong class="num">20,000</strong></td>
+                                        <td class="price"><strong class="num">20,000</strong>원</td>
+                                    </tr>
+                                    <tr class="empty">
+                                        <td colspan="5">최근 6개월 이내 주문하신 내역이 존재하지 않습니다.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="paging_nav">
+                                <a href="#none" class="btn_prev">이전</a>
+                                <a href="#none">1</a>
+                                <a href="#none">2</a>
+                                <span>3</span>
+                                <a href="#none">4</a>
+                                <a href="#none">5</a>
+                                <a href="#none" class="btn_next">다음</a>
+                            </div>
+                        </div>
+                        <p class="caution">최근 6개월 간 선택하신 상품의 주문/반품 내역을 확인할 수 있습니다. <br>보다 상세한 정보는 마이페이지 > 주문배송조회에서 확인할 수 있습니다.</p>
+                    </div>
+                    <!-- 2021-06-24 삭제 <div class="ad_wrap">
+                        <a href="#">
+                            <img src="../../images/search_ad_banner.jpg" alt="대웅제약, 대웅바이오, 한올바이오 최저가 신고제 실시">
+                        </a>
+                    </div> -->
+                </div>
+                <!--  상품 상세 보기 및 결과 내 검색 영역 [e] -->
+            </div>
+
+            <!-- 2021-07-13 cart_box 추가 -->
+            <!--#include virtual="/publish/shop/renewal/html/include/cart_box.html" -->
+		</div>
+        <script>
+            // 2021-07-12 스크립트 변경됨
+            $('.accordion_box').on({
+                click:function(e){
+                    e.preventDefault();
+                    $(e.currentTarget).addClass('active');
+                    if(e.currentTarget.getAttribute('aria-expanded') == "false") {
+                        $(e.currentTarget).attr('aria-expanded', true).parent().siblings().find('.accordion_header').attr('aria-expanded', false).removeClass('active');
+
+                        var currentTop = $(e.currentTarget).offset().top,
+                            scrollTop = $('html, body').scrollTop();
+                        if(currentTop < scrollTop) {
+                            $('html, body').animate({
+                                scrollTop: currentTop - 38
+                            });
+                        };
+                    }else {
+                        $(e.currentTarget).attr('aria-expanded', false);
+                    }
+
+                    $('.column.prod_detail').css({
+                        marginTop: e.delegateTarget.offsetTop - document.querySelector('.search_result > .inner').offsetTop
+                    });
+                }
+            }, '.accordion_header');
+            //상세보기 토글
+            var opt_toggle = $(".option_bar .opt_toggle");
+            var toggle_chk=opt_toggle.find("input[type='checkbox']");
+            toggle_chk.click(function(){
+                opt_toggle.find(".txt").toggle();
+            });
+          
+            $('.thumbnail_wrap').on({
+                click:function(e){
+                    e.preventDefault();
+                    var url = e.currentTarget.getAttribute('href');
+                    if(url == "#") url = e.currentTarget.querySelector('img').getAttribute('src');
+                    e.delegateTarget.querySelector('.thumbnail img').setAttribute('src', url);
+
+                    $(e.currentTarget).parent().addClass('active').siblings().removeClass('active');
+                }
+            },'.thumbnail_list a');
+
+            $('.quantity .selector').on({
+                click:function(e){
+                    var input = e.delegateTarget.querySelector('input[type="text"]');
+                    if($(e.currentTarget).is('.plus')) {
+                        input.value ++;
+                    }else if($(e.currentTarget).is('.minus')){
+                        input.value = input.value == 1 ? 1 : input.value -1;
+                    }
+                }
+            }, 'button');
+            $('.quantity .selector').on({
+                focus:function(e){
+                    e.currentTarget.select();
+                }
+            }, 'input');
+
+            // 2021-06-24 추가
+            $(".banner_wrap .owl-carousel").owlCarousel({
+				items: 1,
+				autoplay: true,
+				loop: true,
+				nav: false,
+				dots: true, //2021-06-29 수정
+				autoplayTimeout: 3000,
+				autoplayHoverPause: true
+			});
+
+            // 2021-07-12 추가
+            // $('.thumbnail_wrap .img_pop').on({
+            //     click:function(e){
+            //         e.preventDefault();
+            //         var height = 550, width = 641;
+            //         var top  = screen.height / 2 - height / 2 - 50;
+            //         var left = screen.width / 2 - width / 2 ;
+
+            //         open(e.currentTarget.href, '제품 이미지 자세히 보기',
+            //         'width=' + width + ', height=' + height + ', top=' + top +
+            //         ', left=' + left + ', resizable=no, status=no, toolbar=no, menubar=no');
+            //     }
+            // });
+        </script>
+		<!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+	</section>
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+
+    <!-- 레이어 팝업 영역 [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/products/_layerpopup.html" -->
+    <!-- 레이어 팝업 영역 [e] -->
+</body>
+</html>

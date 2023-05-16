@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html class="ie7 no-js" lang="ko-KR"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8 no-js" lang="ko-KR"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9 no-js" lang="ko-KR"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="ko"> <!--<![endif]-->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>문서 제목</title>
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/Include/css/Modetour/common.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/Event/Plan/Css/PC/promotion.css" />
+	<script src="https://js.modetour.com/jquery/ver/1.8.3.min.js"></script>
+	<script src="https://js.modetour.com/jquery/plugin/easing.js"></script>
+	<script src="https://js.modetour.com/jquery/plugin/cycle2.js"></script>
+	<script src="https://js.modetour.com/jquery/plugin/cycle2.scrollVert.js"></script>
+</head>
+<body>
+	<div id="EventwarpBody">
+		<div class="promotion_container">
+			<div class="promotion-img">
+				<!-- [시작]: 여기서부터시작 -->
+				<!-- [시작: Promotion Container] -->
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+				<style type="text/css">
+					.event_wrap{position: relative; min-width: 800px; margin:0 auto;}	
+					.event_wrap .main{background: url("https://img.modetour.com/promotion/10765/top_bg.jpg") no-repeat center 0;}
+					.event_wrap .cont1{position: relative;}
+					.event_wrap .cont1 .tab_area{height: 84px; background: url("https://img.modetour.com/promotion/10765/bg_tab.jpg") no-repeat center;}
+					.event_wrap .cont1 .tab_area::after{display: block; content:""; clear: both;}
+					.event_wrap .cont1 .tab_area .tab{position: absolute; top:0; left: 50%; margin-left: -370px;}
+					.event_wrap .cont1 .tab_area a{display: block; float: left; width:370px; height: 84px; background-image: url("https://img.modetour.com/promotion/10765/tab.png"); background-repeat: no-repeat; }
+					.event_wrap .cont1 .tab_area .tab2{background-position-x: -370px;}
+					.event_wrap .cont1 .tab_area .on{height:108px; background-image: url("https://img.modetour.com/promotion/10765/tab_on.jpg"); }
+					.event_wrap .cont1 .items{display: none; margin-top:-1px;}
+					.event_wrap .cont1 .item1{background-image: url("https://img.modetour.com/promotion/10765/bg_item1.jpg"); background-repeat: no-repeat; background-position: center 0;}
+					.event_wrap .cont1 .item2{background-image: url("https://img.modetour.com/promotion/10765/bg_item2.jpg"); background-position: center 0;}
+					.event_wrap .cont1 .on{display: block;}
+					
+					.event_wrap .cont1 .review{background: url("https://img.modetour.com/promotion/10765/bg_review.jpg") no-repeat center 0;}
+					.event_wrap .cont2{background: url("https://img.modetour.com/promotion/10765/bg_cont2.jpg") no-repeat center 0;}
+
+					.review{padding-bottom: 72px;}
+					.control div[class ^= 'swiper-button']{background: none; position: relative; display: inline-block;  top:0; margin-top: 26px; width:77px; height: 58px;}
+					.control div[class ^= 'swiper-button']:focus{outline: none;}
+				</style>	 
+				<div class="event_wrap">
+					<div class="main">
+						<img src="https://img.modetour.com/promotion/10765/top_img.jpg" alt="">
+					</div>					
+					<div class="cont1">
+						<div class="tab_area">
+							<div class="tab">
+								<a href="#" class="on"></a>
+								<a href="#" class="tab2"></a>
+							</div>
+						</div>
+						<div class="items item1 on">
+							<img src="https://img.modetour.com/promotion/10765/img_item1.jpg">
+						</div>
+						<div class="items item2">
+							<img src="https://img.modetour.com/promotion/10765/img_item2.jpg">
+						</div>
+						<div class="review">
+							<img src="https://img.modetour.com/promotion/10765/tit_review.jpg">
+							<div class="swiper-container">
+									<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="https://img.modetour.com/promotion/10765/review1.png" alt=""></div>
+									<div class="swiper-slide"><img src="https://img.modetour.com/promotion/10765/review2.png" alt=""></div>
+									<div class="swiper-slide"><img src="https://img.modetour.com/promotion/10765/review3.png" alt=""></div>
+									<div class="swiper-slide"><img src="https://img.modetour.com/promotion/10765/review4.png" alt=""></div>
+									<div class="swiper-slide"><img src="https://img.modetour.com/promotion/10765/review5.png" alt=""></div>
+								</div>
+								<!-- Add Arrows -->
+								<div class="control">
+									<div class="swiper-button-prev"><img src="https://img.modetour.com/promotion/10765/arr_left.png"></div>
+									<div class="swiper-button-next"><img src="https://img.modetour.com/promotion/10765/arr_right.png"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="cont2">
+						<img src="https://img.modetour.com/promotion/10765/img_cont2.jpg">
+					</div>
+				</div>
+				<script>
+				
+					var swiper = new Swiper('.swiper-container', {
+						slidesPerView: 5,
+						spaceBetween: 20,
+						simulateTouch:false,
+						navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						},
+						loop: true,
+						centeredSlides: true,
+					});
+					
+					$(document).ready(function(){
+						$('.event_wrap .tab>a').click(function(){
+							$(this).addClass('on').siblings().removeClass('on');
+							var idx=$(this).index();
+							$('.event_wrap  .items').eq(idx).addClass('on').siblings('.items').removeClass('on');
+							return false;
+						})
+					});
+				</script>
+				<!-- [끝]: Promotion Container -->
+				<!-- [끝]: 여기까지 -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>

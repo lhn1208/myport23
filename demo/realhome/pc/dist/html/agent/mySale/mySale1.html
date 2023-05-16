@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <link href="../../../css/font.min.css" rel="stylesheet">
+    <link href="../../../css/common.min.css" rel="stylesheet">
+    <link href="../../../css/style.min.css" rel="stylesheet">
+    <link href="../../../css/layout.min.css" rel="stylesheet">
+
+
+    <script src="../../../js/3.3.1.min.js"></script>	
+    <script src="../../../js/common.min.js"></script>	
+    <script src="../../../js/sub.min.js"></script>	
+    <script src="../../../js/plugin/cycle2.min.js"></script>	
+    <script src="../../../js/plugin/slick.min.js"></script>	
+
+
+    <title>realhouse</title>
+</head>
+<body>
+<header id="header" class="agent_header">
+    <div class="header_inner">
+        <h1 class="logo"><a href="#"><img src="../../../../images/common/agent_logo.png" alt="리얼하우스 로고"></a></h1>
+        <div class="h_right">
+            <nav id="nav">
+                <ul class="nav_menu">
+                    <li><a href="#">마이홈</a></li>
+                    <li><a href="#">매물검색</a></li>
+                    <li><a href="#">나의 매수</a></li>
+                    <li><a href="#">나의 매도</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="h_btn">알림2</a>
+            <div class="member_area">
+                <!--로그인 전-->
+                <div class="member" id="member_login">
+                    <a href="#" class="login">로그인</a> · 
+                    <a href="#" class="join">회원가입</a>
+                </div>
+                <!--//로그인 전-->
+                <!--로그인시-->
+                <!-- <div class="member">
+                    <a href="#" class="name">
+                        홍길동님
+                    </a>
+                    <div class="login_layout">
+                        <ul>
+                            <li><a href="">내 계정 설정</a></li>
+                            <li><a href="">로그아웃</a></li>
+                        </ul>
+                    </div> 
+                </div> -->
+                <!--//로그인시-->
+            </div>
+        </div>
+    </div>
+</header>
+<div class="wrapper">
+    <div id=sub_container class="sub_container">  
+        <div class="container_inner">     
+            <div class="mybuying">                
+                <div class="myrequest mysale">
+                    <h3 class="tit">나의매도</h3>
+                    <div class="txt">매물 등록비용이 없어 모든 매물을 거래가 될 때까지 무료로 등록하실 수 있습니다.</div>
+                  <div class="req_btn btn_round_green"><button class="btn">매물 등록(무료)</button></div>
+                </div>
+                <!--매도현황-->
+                <div class="process mysale_porcess">
+                    <div class="process_head">
+                        <!--selectbox-->
+                        <div class="select_right_area">
+                            <div class="select_area">
+                                <a href="#" class="select_top">거래구분 선택</a>
+                                <div class="select_list">
+                                    <a href="#">전체</a>
+                                    <a href="#">매매</a>
+                                    <a href="#">전세</a>
+                                    <a href="#">월세</a>
+                                    <a href="#">단기임대</a>
+                                </div>
+                            </div>
+                            <div class="select_area">
+                                <a href="#" class="select_top">매물유형 선택</a>
+                                <div class="select_list">
+                                    <a href="#">전체</a>
+                                    <a href="#">아파트</a>
+                                    <a href="#">주상복합</a>
+                                    <a href="#">연립/빌라</a>
+                                    <a href="#">오피스텔</a>
+                                    <a href="#">도시형생활주택</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//selectbox-->
+                        <ul class="tab">
+                            <li class="active"><a href="#">진행중(2)</a></li>
+                            <li><a href="#">계약/종료</a></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <ul class="process_list">
+                            <li>
+                                <a href="#">
+                                    <strong class="data">홍길동(은성공인중개사사무소)</strong><span class="icon_type1">미등록</span>
+                                    <p>전세 | 아파트 | 서울시 송파구 잠실동 321(잠실주공1단지) 102동 103호</p>
+                                    <p>고객관심: <span class="txt_red2">0</span> / 공인중개사 관심: <span class="txt_red2">0</span> / 방문요청: <span class="txt_red2">0</span> / 방문완료: <span class="txt_red2">0</span></p>
+                                    <!--date--><span class="date">18.06.09</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <strong class="data">홍길동(은성공인중개사사무소)</strong><span class="icon_type1 yellow">임시저장</span>
+                                    <p>전세 | 아파트 | 서울시 송파구 잠실동 321(잠실주공1단지) 102동 103호</p>
+                                    <p>고객관심: <span class="txt_red2">0</span> / 공인중개사 관심: <span class="txt_red2">0</span> / 방문요청: <span class="txt_red2">0</span> / 방문완료: <span class="txt_red2">0</span></p>
+                                    <!--date--><span class="date">18.06.09</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="paging">
+                            <button class="prev"></button>
+                            <button class="active">1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button>4</button>
+                            <button class="next"></button>
+                        </div>
+                    </div>
+                    <!--중개의뢰가 없을경우-->
+                    <!-- <div class="content">
+                        <div class="none">
+                            <p class="style">진행중인 매도/임대 중개의뢰가 없습니다.</p>
+                        </div>
+                    </div> -->
+                    <!--//중개의뢰가 없을경우-->
+                </div>
+                <!--//매도현황-->
+                <!--하단info-->
+                <div class="info_box">
+                    <ul class="info_list">
+                        <li>• 리얼하우스는 <span class="txt_red2">공동중개를 기반으로 한 시스템</span>으로 <span class="txt_red2">고객과 중개사 모두 등록된 모든 매물을 방문요청</span>할 수 있습니다.</li>
+                        <li>• <span class="txt_red2"> 고객은 매물을 보고 중개의뢰를 요청</span>하고 <span class="txt_red2"> 중개사는 직접 방문한 매수/임차 고객의 공동중개를 위해 방문요청</span>하게 되어 <span class="txt_red2">빠르게 거래가 가능</span>합니다.</li>
+                        <li>• 매물을 등록하시면<span class="txt_red2"> 고객 매물확인 수/관심등록 수 및 중개사 매물확인 수/관심등록 수 등 매물 현황을 실시간 확인</span>하실 수 있습니다.</li>
+                        <li>• 매물을 등록 후 의뢰한 <span class="txt_red2"> 고객이 회원가입하고 [매물 관리요청]을 수락해 매물 중개현황을 실시간 확인할 수 있게 되어 고객의 높은 호응</span>을 얻게 됩니다.<br>(별도 비용 없음)</li>
+                        <li>• 사진을 등록한 매물이 매물리스트 상단에 노출되어 사진 등록한 매물이 빠르게 거래됩니다.</li>
+                    </ul>
+                </div>
+                 <!--//하단info-->
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer_nav_section" class="agent_footer_nav_section">
+    <div class="footer_nav_area">
+        <div class="footer_inner">
+            <h1 class="logo"><a href="#"><img src="../../../images/common/footer_logo.png" alt="리얼하우스 로고"></a></h1>
+            <nav id="footer_nav">
+                <a  href="#">회사소개</a>
+                <a href="#">중개사 이용약관</a>
+                <a href="#">리얼하우스 이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">1대1 문의</a>
+                <a href="#" class="type">리얼하우스프로 바로가기</a>
+            </nav>
+            <div class="sns_links">
+                <a href="#" class="link"><img src="../../../images/main/ico_facebook.png"></a>
+                <a href="#" class="link"><img src="../../../images/main/ico_naver.png"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer id="footer">
+    <div class="footer_content">
+        <div class="footer_inner">
+            <p class="company">(주)아이비소프트</p>
+            <address>
+                <span class="pd_r">대표: 김종진</span> 사업자등록번호: 212-26-83050
+                <br>주소: 서울시 강동구 양재대로 1334(성내동 429-3) 동부빌딩 406호
+                <br><span class="pd_r">사업 제휴문의: biz@realhouse.cc</span> 통신판매업 신고번호: 제2019-서울강동-0000호
+            </address>
+            <div class="custorm">
+                <span class="tit">고객센터</span>
+                <span class="number">02.427.7088</span>
+                고객지원 시간 09:00~18:00
+                <br>(토요일, 일요일, 공휴일 휴무) 
+            </div>
+        </div>
+    </div>
+    <address class="copyright">Ibsoft, Inc. All rights reserved.</address>
+</footer>
+</body>
+</html>

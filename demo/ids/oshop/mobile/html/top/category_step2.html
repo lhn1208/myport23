@@ -1,0 +1,222 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+        <!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" --> <!-- 2017-03-21 수정 -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+                <!-- 2017-03-21 삭제
+				#@include virtual="/publish/oshop/mobile/html/common/cont_head_cate.html" -->
+
+                <!-- 2017-03-21 추가/수정[s] -->
+                <div class="cont_head"><!-- 2017-03-21 class 수정 -->
+                    <h2 class="tit_cate">풀무원</h2>
+                    <div class="list_cate">
+                        <a href="category_step3.html">엔진케어<span class="ico_oshop ico_logo"></span></a>
+                        <a href="category_step3.html">에어케어<span class="ico_oshop ico_logo"></span></a>
+                        <a href="category_step3.html">글래스케어<span class="ico_oshop ico_logo"></span></a>
+                        <a href="category_step3.html">서피스케어<span class="ico_oshop ico_logo"></span></a>
+                        <a href="category_step3.html">악세사리<span class="ico_oshop ico_logo"></span></a>
+                        <a href="category_step3.html">불스원 미러<span class="ico_oshop ico_logo"></span></a>
+                    </div>
+                    <div id="moreList" class="list_cate" style="display:none;">
+                        <a href="category_step3.html">엔진케어<span class="ico_oshop ico_logo"></span></a>
+                        <a href="category_step3.html">에어케어<span class="ico_oshop ico_logo"></span></a>
+                        <a href="category_step3.html">글래스케어<span class="ico_oshop ico_logo"></span></a>
+                        <a href="category_step3.html">서피스케어<span class="ico_oshop ico_logo"></span></a>
+                        <a href="category_step3.html">악세사리<span class="ico_oshop ico_logo"></span></a>
+                        <a href="category_step3.html">불스원 미러<span class="ico_oshop ico_logo"></span></a>
+                    </div>
+                    <a href="#none" class="btn_open_cate" data-status="close"><span class="ico_oshop ico_cate_list"></span>카테고리 열기</a>
+                </div>
+                <!-- 2017-03-21 추가/수정[e] -->
+
+                <div class="cont_prod">
+					<div class="box_sort">
+						<strong class="txt_result">전체상품 <!-- 2017-03-21 삭제 <span class="fc_orange"> -->55<!-- 2017-03-21 삭제 </span>-->개</strong>
+						<ul class="tab_type1">
+							<li class="on"><a href="#popular" class="link_tab">인기상품순</a></li>
+							<li><a href="#highest" class="link_tab">높은가격순</a></li>
+							<li><a href="#lowest" class="link_tab">낮은가격순</a></li>
+							<li><a href="#abc" class="link_tab">상품명순</a></li>
+						</ul>
+					</div>
+					<ul class="list_prod_type1">
+						<li>
+							<div class="prod_area">
+								<a href="#none" class="link_item">
+									<div class="thumb"><img src="http://www.0shop.kr/zeroshop/images/main/corecenter.jpg" width="140" height="140" alt=""></div>
+									<div class="cont">
+										<strong class="tit">겨울 3종 세트</strong>
+										<div class="info_price">
+											<span class="rate">50<span class="per">%</span></span>
+											<div class="price">
+												<del class="before">8,000</del>
+												<span class="after">5,600<span class="won">원</span></span>
+											</div>
+										</div>
+									</div>
+									<span class="ico_oshop ico_lowest">인터넷 최저가</span>
+								</a>
+								<div class="status">
+									<span class="txt_delivery">무료배송</span>
+									<div class="btns">
+										<div class="btn_zzim">
+											<input type="checkbox" id="zzim1" class="inp_check" checked="checked" />
+											<label for="zzim1" class="ico_oshop lab_zzim">관심상품 추가</label>
+										</div>
+										<!-- <span class="txt_bar"></span> 2017-05-10 삭제 -->
+										<div class="btn_cart">
+											<input type="checkbox" id="cart1" class="inp_check" checked="checked">
+											<label for="cart1" class="ico_oshop lab_cart">장바구니 담기</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="prod_area">
+								<a href="#none" class="link_item">
+									<div class="thumb"><img src="http://www.0shop.kr/zeroshop/images/main/corecenter.jpg" width="140" height="140" alt=""></div>
+									<div class="cont">
+										<strong class="tit">불스원샷 프리미엄1P(500ml)/종류:휘발유용</strong>
+										<div class="info_price">
+											<span class="rate">50<span class="per">%</span></span>
+											<div class="price">
+												<del class="before">8,000</del>
+												<span class="after">5,600<span class="won">원</span></span>
+											</div>
+										</div>
+									</div>
+									<span class="ico_oshop ico_lowest">인터넷 최저가</span>
+								</a>
+								<div class="status">
+									<span class="txt_delivery">무료배송</span>
+									<div class="btns">
+										<div class="btn_zzim">
+											<input type="checkbox" id="zzim2" class="inp_check" />
+											<label for="zzim2" class="ico_oshop lab_zzim">관심상품 추가</label>
+										</div>
+										<!-- <span class="txt_bar"></span> 2017-05-10 삭제 -->
+										<div class="btn_cart">
+											<input type="checkbox" id="cart2" class="inp_check" />
+											<label for="cart2" class="ico_oshop lab_cart">장바구니 담기</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="prod_area">
+								<a href="#none" class="link_item">
+									<div class="thumb"><img src="http://www.0shop.kr/zeroshop/images/main/corecenter.jpg" width="140" height="140" alt=""></div>
+									<div class="cont">
+										<strong class="tit">겨울 3종 세트</strong>
+										<div class="info_price">
+											<span class="rate">50<span class="per">%</span></span>
+											<div class="price">
+												<del class="before">8,000</del>
+												<span class="after">5,600<span class="won">원</span></span>
+											</div>
+										</div>
+									</div>
+									<span class="ico_oshop ico_lowest">인터넷 최저가</span>
+								</a>
+								<div class="status">
+									<span class="txt_delivery">무료배송</span>
+									<div class="btns">
+										<div class="btn_zzim">
+											<input type="checkbox" id="zzim3" class="inp_check" checked="checked">
+											<label for="zzim3" class="ico_oshop lab_zzim">관심상품 추가</label>
+										</div>
+										<!-- <span class="txt_bar"></span> 2017-05-10 삭제 -->
+										<div class="btn_cart">
+											<input type="checkbox" id="cart3" class="inp_check" checked="checked">
+											<label for="cart3" class="ico_oshop lab_cart">장바구니 담기</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="prod_area">
+								<a href="#none" class="link_item">
+									<div class="thumb"><img src="http://www.0shop.kr/zeroshop/images/main/corecenter.jpg" width="140" height="140" alt=""></div>
+									<div class="cont">
+										<strong class="tit">불스원샷 프리미엄1P(500ml)/종류:휘발유용</strong>
+										<div class="info_price">
+											<span class="rate">50<span class="per">%</span></span>
+											<div class="price">
+												<del class="before">8,000</del>
+												<span class="after">5,600<span class="won">원</span></span>
+											</div>
+										</div>
+									</div>
+									<span class="ico_oshop ico_lowest">인터넷 최저가</span>
+								</a>
+								<div class="status">
+									<span class="txt_delivery">무료배송</span>
+									<div class="btns">
+										<div class="btn_zzim">
+											<input type="checkbox" id="zzim4" class="inp_check">
+											<label for="zzim4" class="ico_oshop lab_zzim">관심상품 추가</label>
+										</div>
+										<!-- <span class="txt_bar"></span> 2017-05-10 삭제 -->
+										<div class="btn_cart">
+											<input type="checkbox" id="cart4" class="inp_check">
+											<label for="cart4" class="ico_oshop lab_cart">장바구니 담기</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<!-- 2016-04-07 추가 -->
+					<div class="nav_paging">
+						<a href="#none" class="btn_pagint_prev"><span class="ico_oshop">이전</span></a>
+						<a href="#none">1</a>
+						<a href="#none">2</a>
+						<a href="#none" class="on">3</a>
+						<a href="#none">4</a>
+						<a href="#none">5</a>
+						<!-- 2017-04-13 최대 5개 페이징
+						<a href="#none">6</a>
+						<a href="#none">7</a>
+						<a href="#none">8</a>
+						<a href="#none">9</a>
+						<a href="#none">10</a> -->
+						<a href="#none" class="btn_pagint_next"><span class="ico_oshop">다음</span></a>
+					</div>
+					<!-- //2016-04-07 추가 -->
+				</div>
+				<script>
+					$(function() {
+						var $body = $("body");
+
+						$body.on("click", ".btn_open_cate", function(e) {
+							var status = $(this).attr("data-status");
+
+							if (status === "open") {
+								$("#moreList").slideUp();
+								$(this).attr("data-status", "close");
+								$(this).html('<span class="ico_oshop ico_cate_list"></span>카테고리 열기');
+							} else {
+								$("#moreList").slideDown();
+								$(this).attr("data-status", "open");
+								$(this).html('<span class="ico_oshop ico_cate_list"></span>카테고리 닫기');
+							};
+
+							e.preventDefault();
+						});
+					});
+				</script>
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a><!-- 2017-03-21 이미지 넓이,높이값 삭제 -->
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+</body>
+</html>

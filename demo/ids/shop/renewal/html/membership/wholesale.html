@@ -1,0 +1,71 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common.html" -->
+	<link rel="stylesheet" href="../../css/layout.css">
+    <!-- membership 전용 css 추가 -->
+	<link rel="stylesheet" href="../../css/themembership.css">
+</head>
+<body>
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<!-- header [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/header.html" -->
+	<!-- header [e] -->
+    <!-- 2023-01-05 style추가 -->
+    <style>
+    .membership{position: relative;}
+    .membership .left_tab{position: absolute; top: 24px; left: -140px;}
+    .membership .left_tab a{display: block;}
+    .membership .left_tab a.tab2{margin-top: 4px;}
+    </style>
+	<!-- container [s] -->
+    <section id="content" class="membership">
+        <!-- 2023-01-05 추가 [s]-->
+        <div class="left_tab">
+            <a href="#cont1"><img src="../../images/membership/wholesale_left_tab1.png"></a>
+            <a href="#cont2" class="tab2"><img src="../../images/membership/wholesale_left_tab2.png"></a>
+        </div>
+        <div class="cont1" id="cont1">
+            <img src="../../images/membership/wholesale_img1.jpg" usemap="#map1">
+            <map id="map1" name="map1">
+                <area shape="rect" coords="170, 1113, 773, 1243" alt="약정하러 가기" href="https://www.shop.co.kr/front/themembership/whlsCntr/whlsCntr_main" target="_blank">
+            </map>
+        </div>
+        <div class="cont2" id="cont2">
+            <img src="../../images/membership/wholesale_img2.jpg" usemap="#map2">
+            <map id="map2" name="map2">
+                <area shape="rect" coords="170, 6474, 773, 6624" alt="약정하러 가기" href="https://www.shop.co.kr/front/themembership/whlsCntr/whlsCntr_main" target="_blank">
+            </map>
+        </div>
+       
+        
+        <!-- 2023-01-05 추가 [e]-->
+
+        <!-- 우측 퀵메뉴[s] -->
+		<!--#include virtual="/publish/shop/renewal/html/include/quick_menu.html" -->
+		<!-- 우측 퀵메뉴[e] -->
+
+        <script>
+            $('.accordion_box').on({
+                click:function(e){
+                    
+                    $(e.currentTarget).next().slideToggle(function(){
+                        $(e.currentTarget).attr('aria-expanded',function(i, a){
+                            return a == 'true' ? false : true;
+                        });
+                    });
+                }
+            }, 'button.accordion_header');
+        </script>
+	</section>
+    <!--#include virtual="/publish/shop/renewal/html/membership/_zeroshop_popup.html" -->
+	<!-- container [e] -->
+
+	<!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer.html" -->
+	<!-- footer [e] -->
+</body>
+</html>

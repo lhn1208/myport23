@@ -1,0 +1,107 @@
+<!--#include virtual="/publish/shop/renewal/html/include/common_seminar.html" -->
+<body class="shopplus plus_seminar"><!-- 배너 있는 경우 클래스 bnr_on부여 -->
+    <!-- header [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/header_seminar.html" -->
+    <!-- header [e] -->
+    <section id="container">
+        <div class="schedule_seminar">
+            <div class="bg_right"></div>
+            <div class="wrap_schedule">
+                <strong class="tit_schedule">
+                    <span class="bg_skew"></span>
+                    <span class="tit_txt">
+                    <span class="ico_seminar ico_play"></span>예정 세미나
+                </span>
+                </strong>
+                <ul class="list_schedule">
+                    <li>
+                        <a href="#none" class="link_schedule">
+                            <em class="txt_date"><span class="txt_num">9/15</span> (수요일)</em>
+                            <span class="tit_txt">[운동] 쑤시고 저리는 증상 쑤시고 저리는 증상 쑤시고 저리는 증상</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none" class="link_schedule">
+                            <em class="txt_date"><span class="txt_num">9/15</span> (수요일)</em>
+                            <span class="tit_txt">[운동] 쑤시고 저리는 증상 쑤시고 저리는 증상 쑤시고 저리는 증상</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none" class="link_schedule">
+                            <em class="txt_date"><span class="txt_num">9/15</span> (수요일)</em>
+                            <span class="tit_txt">[운동] 쑤시고 저리는 증상 쑤시고 저리는 증상 쑤시고 저리는 증상</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="content" class="cont_search">
+            <div class="page_location">홈 &gt; <em>세미나 검색</em></div>
+            <h3 class="tit_b">세미나 검색</h3>
+            <!-- 2018-11-01 삭제
+            <ul class="tab_menu tab_type3">
+                <li class="on"><a href="#tabLive">Live 세미나</a></li>
+                <li><a href="#tabVod">Vod 세미나</a></li>
+            </ul>
+            -->
+            <form action="#none">
+                <fieldset>
+                    <legend>검색어 입력폼</legend>
+                    <div class="box_search">
+                        <div class="inner_search">
+                            <!-- 2018-10-18 수정 시작 -->
+                            <select class="select" style="width:144px">
+                                <option value="">전체</option>
+                                <option value="">강사명</option>
+                                <option value="">강의명</option>
+                            </select>
+                            <!-- 2018-10-18 수정 끝 -->
+                            <div class="wrap_inp">
+                                <input type="text" title="검색어 입력" placeholder="결과 내 검색">
+                                <button type="submit" class="btn_search">검색</button>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="wrap_g wrap_br">
+                <h4 class="tit_g">LIVE 세미나</h4>
+                <p class="txt_g">총 <span class="emph_g">0건</span>이 검색되었습니다.</p>
+            </div>
+            <div class="data_none">
+                <span class="ico_seminar ico_none"></span>
+                <p class="txt_none">
+                    <strong class="tit_txt"><span class="wrap_txt"><span class="emph_g">쑤시고 저리는 증상</span>에 대한</span> 검색결과가 없습니다.</strong>
+                    <span class="txt_detail">단어의 철자가 틀리지 않았는지 확인해보세요.<br>
+                    한글을 영어로 입력하거나 영어를 한글로 입력하지 않았는지 확인해 보세요.<br>
+                    보다 일반적인 검색어로 다시 검색해보세요.<br>
+                    두 단어 이상의 검색어인 경우, 뛰어쓰기를 확인해 보세요.
+                </span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--#include virtual="/publish/shop/renewal/html/include/left_menu.html" -->
+
+    <!-- footer [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/include/footer_seminar.html" -->
+    <!-- footer [e] -->
+
+    <div class="bg_dimmed"></div>
+
+    <!-- 공통 UI [s] -->
+    <!--#include virtual="/publish/shop/renewal/html/plus_liveseminar/include/ui.html" -->
+    <!-- 공통 UI [e] -->
+
+    <script>
+        $(function () {
+            // 세미나 검색 탭
+            shopUI.tab({
+                "tabs" : $(".tab_type3 li"),
+                "contWrap" : $(".tab_cont > div")
+            });
+        });
+    </script>
+</body>
+</html>

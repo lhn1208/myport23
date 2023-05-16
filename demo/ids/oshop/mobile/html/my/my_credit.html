@@ -1,0 +1,215 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+        <!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" --> <!-- 2017-03-21 수정 -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<div class="cont_head"><!-- 2017-03-21 class 수정 -->
+					<h2 class="tit_cate">신용카드 간편결제 관리</h2>
+					<!-- 2017-03-21 삭제 <a href="#none" class="link_prev"><span class="ico_oshop ico_prev">이전</span></a> -->
+				</div>
+				<!-- 2017-04-13 수정[s] -->
+				<div class="cont_my">
+					<ul class="list_type">
+						<li>신용카드 정보를 한번만 등록하시면, 다음 이용시부터는 카드번호, 공인인증 입력 없이 사전 등록한 비밀번호로 간편하게 결제하실 수 있습니다.</li>
+						<li>입력하신 정보는 해당 PG사(LGU+)에 안전하게 저장되며 퇴사시 등록된 정보는 삭제됩니다.</li>
+					</ul>
+					<a href="#none" class="btn_type2 btn_credit">카드 등록하기</a>
+
+					<div class="box_result">
+						<p>총 <span class="txt_num">55</span>건의 주문이 검색되었습니다.</p>
+					</div>
+
+					<div class="box_type2">
+						<strong class="tit">다모아카드</strong><span class="txt_bar">|</span><span class="date">2015.02.02</span>
+						<div class="desc"><span class="card">비씨</span><span class="txt_bar">|</span>6555545*****54684</div>
+						<div class="btns_order">
+							<a href="#none" class="btn_type3 btn_name">이름수정</a>
+							<a href="#none" class="btn_type3 btn_pw">비밀번호변경</a>
+							<a href="#none" class="btn_type1 btn_default">기본설정</a>
+						</div>
+						<a href="#none" class="link_close"><span class="ico_oshop ico_close">삭제</span></a>
+					</div>
+				</div>
+
+				<div id="popCredit" class="bg_layer" style="display:none;">
+					<div class="popup_type1">
+						<div class="inner">
+							<strong class="tit_popup">신용카드 등록하기</strong>
+							<div class="popup_body">
+								<div class="info_credit">
+									<p class="txt_credit">
+									간편결제 등록 전 본인 확인을 위해 생년월일 등록 후
+									본인인증절차가 필요합니다.
+									등록하실 <strong>신용카드 계약자의 생년월일</strong>을 입력해주세요.<br>
+									(입력예시 : 1983년 1월 1일 출생의 경우 830101로 입력)
+									</p>
+								</div>
+								<form>
+									<fieldset>
+										<legend class="screen_out">비밀번호 변경 폼</legend>
+
+										<div class="box_type1 wrap_table">
+											<table class="tbl_type1">
+												<caption class="screen_out">비밀번호수정</caption>
+												<tbody>
+													<tr>
+														<th scope="row"><label for="user_birth1">생년월일</label></th>
+														<td><div class="frame_inp"><input type="text" id="user_birth1" class="inp_oshop"></div></td>
+													</tr>
+													<tr>
+														<th scope="row"><label for="user_card_name">카드별칭</label></th>
+														<td><div class="frame_inp"><input type="text" id="user_card_name" class="inp_oshop"></div></td>
+													</tr>
+													<tr>
+														<th scope="row"><label for="new_pw1">비밀번호</label></th>
+														<td><div class="frame_inp"><input type="password" id="new_pw1" class="inp_oshop"></div></td>
+													</tr>
+													<tr>
+														<th scope="row"><label for="new_chk_pw1">비밀번호 확인</label></th>
+														<td><div class="frame_inp"><input type="password" id="new_chk_pw1" class="inp_oshop"></div></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="btns_full">
+											<a href="#none" class="btn_type1">취소</a>
+											<a href="#none" class="btn_type2">등록</a>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<a href="#none" class="btn_close"><span class="ico_oshop ico_close">닫기</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="popName" class="bg_layer" style="display:none;">
+					<div class="popup_type1">
+						<div class="inner">
+							<strong class="tit_popup">신용카드 이름수정</strong>
+							<div class="popup_body">
+								<form>
+									<fieldset>
+										<legend class="screen_out">신용카드 이름수정 테이블</legend>
+										<div class="box_type1 wrap_table">
+											<table class="tbl_type1">
+												<caption class="screen_out">비밀번호수정</caption>
+												<tbody>
+													<tr>
+														<th scope="row"><label for="card_name">이름</label></th>
+														<td><div class="frame_inp"><input type="text" id="card_name" class="inp_oshop"></div><span class="info_bytes">(<span class="bytes">0</span>/15bytes)</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="btns_full">
+											<a href="#none" class="btn_type1">취소</a>
+											<a href="#none" class="btn_type2">수정</a>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<a href="#none" class="btn_close"><span class="ico_oshop ico_close">닫기</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="popPw" class="bg_layer" style="display:none;">
+					<div class="popup_type1">
+						<div class="inner">
+							<strong class="tit_popup">비밀번호 변경하기</strong>
+							<div class="popup_body">
+								<div class="info_credit">
+									<p class="txt_credit">
+									간편결제 등록 전 본인 확인을 위해 생년월일 등록 후
+									본인인증절차가 필요합니다.
+									등록하실 <strong>신용카드 계약자의 생년월일</strong>을 입력해주세요.<br>
+									(입력예시 : 1983년 1월 1일 출생의 경우 830101로 입력)
+									</p>
+								</div>
+
+								<form>
+									<fieldset>
+										<legend class="screen_out">비밀번호 변경 폼</legend>
+
+										<div class="box_type1 wrap_table">
+											<table class="tbl_type1">
+												<caption class="screen_out">비밀번호수정</caption>
+												<tbody>
+													<tr>
+														<th scope="row"><label for="user_birth2">생년월일</label></th>
+														<td><div class="frame_inp"><input type="text" id="user_birth2" class="inp_oshop"></div></td>
+													</tr>
+													<tr>
+														<th scope="row"><label for="new_pw2">비밀번호</label></th>
+														<td><div class="frame_inp"><input type="password" id="new_pw2" class="inp_oshop"></div></td>
+													</tr>
+													<tr>
+														<th scope="row"><label for="new_chk_pw2">비밀번호 확인</label></th>
+														<td><div class="frame_inp"><input type="password" id="new_chk_pw2" class="inp_oshop"></div></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="btns_full">
+											<a href="#none" class="btn_type1">취소</a>
+											<a href="#none" class="btn_type2">등록</a>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<a href="#none" class="btn_close"><span class="ico_oshop ico_close">닫기</span></a>
+						</div>
+					</div>
+				</div>
+				<!-- 2017-04-13 수정[e] -->
+				<script>
+				$(function() {
+					// 팝업_신용카드등록
+					oshopUI.popUp({
+						"clickBtn" : $(".cont_my .btn_credit"),
+						"popupLayer" : $("#popCredit"),
+						"Contents" : $(".cont_my"),
+						"callback" : function() {
+							window.scroll(0, 0);
+						}
+					});
+
+					// 팝업_신용카드 이름수정
+					oshopUI.popUp({
+						"clickBtn" : $(".btns_order .btn_name"),
+						"popupLayer" : $("#popName"),
+						"Contents" : $(".cont_my"),
+						"callback" : function() {
+							window.scroll(0, 0);
+						}
+					});
+
+					// 팝업_신용카드 비밀번호 변경
+					oshopUI.popUp({
+						"clickBtn" : $(".btns_order .btn_pw"),
+						"popupLayer" : $("#popPw"),
+						"Contents" : $(".cont_my"),
+						"callback" : function() {
+							window.scroll(0, 0);
+						}
+					});
+
+					// 신용카드 삭제
+					$(".box_type2 .link_close").click(function() {
+						$(this).parent(".box_type2").remove();
+					})
+				})
+				</script>
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a><!-- 2017-03-21 이미지 넓이,높이값 삭제 -->
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+
+</body>
+</html>

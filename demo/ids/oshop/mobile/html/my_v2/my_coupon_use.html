@@ -1,0 +1,103 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+    <!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<div class="cont_head">
+					<h2 class="tit_cate">쿠폰 사용내역</h2>
+				</div>
+				<div class="cont_my_v2 my_coupon">
+					<div class="my_coupon_top">
+						<p class="my_have">
+							<span><span class="ico_oshop"></span>보유한 쿠폰</span>
+							<span class="count"><strong class="txt_num">3</strong> 장</span>
+						</p>
+						<p>
+							<span><span class="ico_oshop"></span>사용한 쿠폰</span>
+							<span class="count"><strong class="txt_num">7</strong> 장</span>
+						</p>
+					</div>
+					<div class="coupon_list">
+						<div class="desc_view box_setting">
+							<!-- 검색영역 [s] -->
+							<h3 class="screen_out">쿠폰 사용내역 조회</h3>
+							<div class="box_type1 cont_setting">
+								<form>
+									<fieldset>
+										<legend class="screen_out">쿠폰 사용내역 조회 폼</legend>
+										<div class="frame">
+											<div class="frame_inp calendar_inp">
+												<label for="from">
+													<input type="date" class="inp_oshop" id="from" value="2018-02-14">
+													<span class="ico_oshop ico_calendar">검색 날짜 선택</span>
+												</label>
+											</div>
+											<span class="txt_g">~</span>
+											<div class="frame_inp calendar_inp">
+												<label for="to">
+													<input type="date" class="inp_oshop" id="to" value="2018-02-21">
+													<span class="ico_oshop ico_calendar">검색 날짜 선택</span>
+												</label>
+											</div>
+										</div>
+										<div class="frame">
+											<div class="select_type1 line_type">
+												<select class="list_select">
+													<option selected="selected">전체</option>
+													<option>option1</option>
+													<option>option2</option>
+												</select>
+											</div>
+											<button type="submit" class="btn_search btn_type5">검색</button>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<!-- 검색영역 [e] -->
+							<div class="box_type1 box_result">
+								<p><strong>총</strong> <span class="txt_num">24 건</span>이 검색되었습니다.</p>
+							</div>
+							<!-- 쿠폰 리스트 [s] -->
+							<div class="box_type1">
+								<div class="use_coupon saving"> <!--적립된 쿠폰-->
+									<p class="use_divide"><span class="date">2018.09.01</span> <span class="state">적립</span></p>
+									<div class="use_info">
+										<strong class="tit">DNC 구매감사 5천원 할인쿠폰 </strong>
+										<span class="date">(18.09.01 ~ 09.30)</span>
+									</div>
+									<span class="info_txt">할인금액 <strong class="price"><span class="txt_num">100,000</span>원</strong></span>
+								</div>
+								<div class="use_coupon using"> <!--사용한 쿠폰-->
+									<p class="use_divide"><span class="date">2018.09.01</span> <span class="state">사용</span></p>
+									<div class="use_info">
+										<strong class="tit">DNC 구매감사 5천원 할인쿠폰 DNC 구매감사 5천원 할인쿠폰 DNC 구매감사 5천원 할인쿠폰</strong>
+										<span class="date">(18.09.01 ~ 09.30)</span>
+									</div>
+									<span class="info_txt">할인금액 <strong class="price"><span class="txt_num">1,000,000</span>원</strong></span>
+								</div>
+								<div class="use_coupon lapse"> <!--소멸된 쿠폰-->
+									<p class="use_divide"><span class="date">2018.09.01</span> <span class="state">소멸</span></p>
+									<div class="use_info">
+										<strong class="tit">DNC 구매감사 5천원 할인쿠폰 </strong>
+										<span class="date">(18.09.01 ~ 09.30)</span>
+									</div>
+									<span class="info_txt">할인금액 <strong class="price"><span class="txt_num">100,000</span>원</strong></span>
+								</div>
+							</div>
+							<div class="btns_full btn_more">
+								<button type="button" class="btn_prod_more btn_type3"><span class="ico_oshop"></span> 더 보기 (15)</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a>
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+
+</body>
+</html>

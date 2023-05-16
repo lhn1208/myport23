@@ -1,0 +1,124 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+		<!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" -->
+		<section class="container clear_g">
+			<!-- 2017-03-21 삭제
+			#@include virtual="/publish/oshop/mobile/html/common/sidebar.html" -->
+			<section id="oshopBody" class="contents">
+				<!-- imageslate 영역 시작 -->
+				<!-- 2021-02-26 이벤트 [s]  -->
+				<div class="event_area">
+                    <script src="../../js/plugin/slick.min.js"></script>
+                    <style>
+                        .slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}.slick-list:focus{outline:0}.slick-list.dragging{cursor:pointer;cursor:hand}.slick-slider .slick-list,.slick-slider .slick-track{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.slick-track{position:relative;top:0;left:0;display:block;margin-left:auto;margin-right:auto}.slick-track:after,.slick-track:before{display:table;content:''}.slick-track:after{clear:both}.slick-loading .slick-track{visibility:hidden}.slick-slide{display:none;float:left;height:100%;min-height:1px}[dir=rtl] .slick-slide{float:right}.slick-slide img{display:block}.slick-slide.slick-loading img{display:none}.slick-slide.dragging img{pointer-events:none}.slick-initialized .slick-slide{display:block}.slick-loading .slick-slide{visibility:hidden}.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}.slick-arrow.slick-hidden{display:none}
+                        .cont_event > img {margin-bottom:0;}
+                        .event_relative_wrap {position:relative;line-height:1;}
+                        .event_relative_wrap a {display:block;position:absolute;display:block;left: 28.8%;right: 28.8%;bottom: 3.2%;height: 4.4%;}
+
+                        .event_video_wrap {position:relative;background:#f4f4f4;text-align:center;padding-bottom:20px;}
+                        .event_video_wrap a {display:inline-block;width:182px;}
+                        .event_video_wrap .play-link {display:block;margin:0 auto;}
+                        .event_video_wrap .youtube-area {width:100%;height:0;padding-top:56.3%;position:relative;}
+                        .event_video_wrap .youtube-area.vertical {width:194px;height:164px;margin:0 auto;position:relative;}
+                        .event_video_wrap .youtube-area iframe,
+                        .event_video_wrap .youtube-area .none-support {position:absolute;left:0;top:0;width:100%;height:100%;}
+                        .event_video_wrap .youtube-area .none-support {display:none;background:#000000;color:#ffffff;}
+                        .event_video_wrap .youtube-area .none-support p {width:100%;position:absolute;top:50%;transform:translateY(-50%);text-align:center;}
+
+                        .youtube-layer {display:none;position:fixed;left:0;top:0;right:0;bottom:0;z-index:999;background:#fff;}
+                        .youtube-layer iframe {width:100%;position:absolute;left:0;top:0;width:100%;height:100%;}
+                        .youtube-layer:after {content:'';display:block;position:absolute;left:0;right:0;top:0;height:90px;background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));background: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));}
+                        .youtube-layer .btn_close {width:auto;padding:11px;position:absolute;right:0;top:0;z-index:1;}
+                        .youtube-layer .btn_close span {width:17px;height:18px;display:block;text-indent:-9999em;overflow:hidden;margin-top:-9px;}
+                        .youtube-layer .btn_close span:before,
+                        .youtube-layer .btn_close span:after {content:'';display:block;position:absolute;left:50%;top:50%;width:1px;height:20px;background:#fff;margin-top:-9px;}
+                        .youtube-layer .btn_close span:before {transform:rotate(45deg);}
+                        .youtube-layer .btn_close span:after {transform:rotate(-45deg);}
+
+                    </style>
+                    <div class="event_relative_wrap">
+                        <img src="images/dualtamin/dualtamin_top.jpg" alt="">
+                    </div>
+
+                    <div class="event_video_wrap" style="background:#884d2f;padding-bottom:10%;">
+                        <img src="images/dualtamin/dualtamin_video_1.jpg" alt="">
+                        <a href="https://youtu.be/ROJ52zDDYos" class="play-link" title="영상 재생">
+                            <img src="images/dualtamin/dualtamin_youtube.jpg" alt="">
+                        </a>
+                        <a href="https://www.0shop.kr/zeroshop/survey/surveyUpload.sv?flag=D&amp;snum=93" title="체험단 응모하기" style="margin-top:6%;"><img src="images/dualtamin/btn_entry.png" alt=""></a>
+                        <div class="youtube-layer">
+                            <a href="#none" class="btn_close"><span>닫기</span></a>
+                        </div>
+                    </div>
+
+                    <div class="event_relative_wrap">
+                        <img src="images/dualtamin/dualtamin_details_1.jpg" alt="">
+                        <img src="images/dualtamin/dualtamin_details_2.jpg" alt="">
+                        <img src="images/dualtamin/dualtamin_video_2.jpg" alt="">
+                    </div>
+
+                    <div class="event_relative_wrap event_video_wrap" style="background:#ffa243;padding:0 50px;">
+                        <div class="youtube-area" style="border:3px solid #fff;background:#000;">
+                            <iframe src="https://www.youtube.com/embed/570ww76ewHk?&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="none-support"><p>지원되지 않는 브라우저입니다.</p></div>
+                        </div>
+                    </div>
+
+                    <div class="event_relative_wrap">
+                        <img src="images/dualtamin/dualtamin_video_3.jpg" alt="">
+                        <img src="images/dualtamin/dualtamin_details_3.jpg" alt="">
+                    </div>
+                    <div class="event_relative_wrap">
+                        <img src="images/dualtamin/dualtamin_details_4.jpg" alt="">
+                        <a href="https://www.0shop.kr/zeroshop/survey/surveyUpload.sv?flag=D&amp;snum=93" title="신청하러가기"></a>
+                    </div>
+                    <script>
+                        $('.event_gallery_wrap .gallery_slick').slick({
+                            arrows:false,
+                            dots:true,
+                            autoplay:true,
+                            autoplaySpeed:2500
+                        });
+
+                        var returnYoutubeSource = function(src, controls){
+                            controls = controls ? 0 : 1;
+                            if(src.indexOf('=') > 0) {
+                                src = src.split('=')[1];
+                            }else if(src.indexOf('/embed/') > 0) {
+                                src = src.split('/embed/')[1];
+                            }else if(src.indexOf('youtu.be/') > 0) {
+                                src = src.split('youtu.be/')[1];
+                            }
+                            return lteIe9 != true ? '<iframe src="https://www.youtube.com/embed/'+src+'?autoplay=1&controls='+controls+'&rel=1&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' : '<div class="none-support"><p>지원되지 않는 브라우저입니다.</p></div>';
+                        }
+                        var lteIe9 = navigator.userAgent.match(/msie\s[5-9]/i) !== null ? true : false;
+                        $('.event_video_wrap').on({
+                            click: function(e){
+                                e.preventDefault();
+                                var src = e.currentTarget.href;
+                                $('body').css({
+                                    overflow:'hidden'
+                                });
+                                $('.youtube-layer').fadeIn().append(returnYoutubeSource(src, 0));
+                            }
+                        }, '.play-link');
+                        $('.youtube-layer').on({
+                            click:function(e){
+                                e.preventDefault();
+                                $(e.delegateTarget).fadeOut().find('iframe').remove();
+                                $('body').removeAttr('style');
+                            }
+                        }, '.btn_close');
+                    </script>
+				</div>
+				<!-- 2021-02-26 이벤트 [e] -->
+				<!-- // imageslate 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a><!-- 2017-03-21 이미지 넓이,높이값 삭제 -->
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+</body>
+</html>

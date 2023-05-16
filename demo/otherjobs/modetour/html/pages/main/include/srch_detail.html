@@ -1,0 +1,70 @@
+<!-- 여행 맞춤 검색 -->
+<div class="search-detail pop-layer" id="searchDetail">
+	<div class="pop-tit">
+		<div class="head blind">여행 통합 검색</div>
+		<div class="close"><span class="blind">닫기</span></div>
+	</div>
+	<div class="pop-con">
+		<div class="srch-move">
+			<a href="#" class="back"><span class="blind">이전으로</span></a>
+			<input type="search" class="ipt-srch" placeholder="검색어를 입력해주세요.">
+			<button type="button" class="btn-srch"><span class="blind">검색</span></button>
+			<button type="button" class="btn-erase" onclick="$(this).siblings('.ipt-srch').val('');return false;"><span class="blind">검색어삭제</span></button>
+		</div>
+		<div class="item-tab ui-tabs-menu">
+			<li><a href="#recent" class="current">최근 검색어</a></li></li>
+			<li><a href="#popular">인기 검색어</a></li>
+		</div>
+		<div class="ui-tabs-contents-wrap">
+			<!-- 1.최근 검색어-->
+			<div class="ui-tab-content" id="recent">
+				<ul class="lst-recent">
+					<li>
+						<a href="#" class="word">마드리드</a>
+						<a href="#" class="btn-remove"><span class="blind">닫기</span></a>
+					</li>
+					<li>
+						<a href="#" class="word">스페인 자유여행</a>
+						<a href="#" class="btn-remove"><span class="blind">닫기</span></a>
+					</li>
+					<li>
+						<a href="#" class="word">방콕</a>
+						<a href="#" class="btn-remove"><span class="blind">닫기</span></a>
+					</li>
+					<li>
+						<a href="#" class="word">신혼여행</a>
+						<a href="#" class="btn-remove"><span class="blind">닫기</span></a>
+					</li>
+				</ul>
+			</div>
+			<!-- // 1.최근 검색어-->
+			<!-- 2.인기 검색어-->
+			<div class="ui-tab-content" id="popular">
+				<ol class="lst-popular">
+					<li><a href="#">사이판</a></li>
+					<li><a href="#">하이난</a></li>
+					<li><a href="#">북해도</a></li>
+					<li><a href="#">코타키나발루</a></li>
+					<li><a href="#">홍콩</a></li>
+					<li><a href="#">미서부</a></li>
+					<li><a href="#">두바이</a></li>
+					<li><a href="#">몰디브</a></li>
+					<li><a href="#">대만</a></li>
+					<li><a href="#">이탈리아</a></li>
+				</ol>
+			</div>
+			<!-- //2.인기 검색어-->
+		</div>		
+		<ul class="lst-autocomplete">
+			<li><a href="#">방콕</a></li>
+			<li><a href="#">방콕파타야</a></li>
+			<li><a href="#">방콕허니문</a></li>
+			<li><a href="#">방콕항공권</a></li>
+			<li><a href="#">방콕자유여행</a></li>
+			<li><a href="#">방콕패키지</a></li>
+			<li><a href="#">방콕사원</a></li>
+			<li><a href="#">방콕알카자쇼</a></li>
+			<li><a href="#">방콕왕궁</a></li>
+		</ul>
+	</div>
+</div>
