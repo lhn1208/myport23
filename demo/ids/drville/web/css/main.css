@@ -1,0 +1,376 @@
+@charset "utf-8";
+/* main_header */
+.main .header_wrap, .main .f_v3 {min-width:1080px;}
+.main .header_top{height:99px}
+.main .header_top h1{float:inherit;width:208px;height:56px;margin:-5px auto 8px}
+.main .header_top h1.logo {width:315px;height:auto;margin:0 auto;text-align:center;}
+.main .header_top h1.logo img {margin:0 auto;}
+.main .header_top .tit_cont {display:none}
+.main .header_top .tit_drville {width:208px;height:56px;background-position:0 0}
+.main .header_top .member_wrap {margin-top:-40px}
+.main .header_top .direct_link > a  {font-size:15px}
+.main .header_top .direct_link .ico_comm_v2 {width:5px;height:3px;margin:10px 5px;background-position:0 -110px}
+.main .header_top .member_wrap li.point {display:inline-block;margin-left:0}
+.main #header .header_inner, .main .gnb_inner {width:1080px}
+.main .header_btm .location_wrap {display:none}
+.main .header_btm .service_list{display:block}
+.main .btn_header {display:none}
+.main .f_v3 .info_foot.top .inner_info, .main .f_v3 .info_foot.btm {width:1080px;}
+
+.main #container {width:100%;min-width:1080px;margin:0;padding:0;font-size:14px;font-family:'SpoqaHanSans', 'dotum', '돋움'}
+.main .column_wrap {overflow:hidden}
+.main .bg_gray {min-width:1080px;background-color:#eff1f5}
+.main .container_inner {position:relative;width:1080px;margin:0 auto;padding:30px 0}
+.main .tit_cont {display:block;margin-bottom:15px;font-size:17px;color:#1e66b1;letter-spacing:-1px}
+.txt_more {position:absolute;right:15px;bottom:15px;font-size:13px;font-weight:bold}
+.txt_more .ico_comm_v2 {width:3px;height:6px;margin-left:7px;background-position:0 -120px;vertical-align:middle}
+.btn_more  {position:absolute;top:16px;right:20px;width:10px;height:10px;padding:6px;background-color:#fff;border:1px solid #dedede}
+.btn_more .ico_comm_v2 {width:10px;height:10px;background-position:0 -130px}
+
+.ico_vod {width:33px;height:33px;background-position:-10px -120px;}
+/*광고영역*/
+.bnr_main_top {width:100%;clear:both}
+.bnr_main_top a {margin:-10px 0 12px}
+.bnr_main_top img {margin:0 auto}
+.bnr_main_mid {width:100%;clear:both}
+.bnr_main_mid .bnr {float:left;width:396px;height:86px}
+.bnr_main_mid .bnr + .bnr {float:right}
+.bnr_main_mid a {width:396px;height:86px}
+.bnr_main_mid img {width:100%;height:100%}
+.main_box_ad {float:left;height:240px;width:240px}
+.main_box_ad.h160 {height:160px;margin-top:12px}
+.main_box_ad a, .main_box_ad img {width:100%;height:100%}
+/*상단 양쪽 광고*/
+.img_box {position:relative;width:100%;height:240px;box-sizing:border-box}
+.img_box figure, .img_box .img_vod {width:100%;height:135px}
+.img_box img {width:100%;height:240px}
+.img_box figure img {width:100%;height:135px}
+.img_box .img_vod {width:100%;height:135px;background-color:#000}
+.img_box .img_vod:after {display:none}
+.img_box .img_cont {width:100%;height:105px;padding:15px;border:1px solid #dee1e7;box-sizing:border-box}
+.img_box .img_txt {overflow:hidden;display:-webkit-box;height:44px;font-size:15px;letter-spacing:-0.5px;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-wrap:break-word}
+.img_box .img_tit {display:block;margin-bottom:5px;font-size:15px;color:#1e66b1;letter-spacing:-1px}
+.img_box .img_tit + .img_txt {overflow:hidden;display:block;height:22px;white-space:nowrap;text-overflow:ellipsis}
+.img_box a:hover .txt_more {text-decoration:underline}
+/* vod 영역 */
+.player_control {display:none;position:absolute;top:0;left:0;right:0;width:240px;height:41px;padding:47px 0;margin:auto;text-align:center;z-index:2;}
+.player_control.open {display:block;}
+.player_control:after {display:block;position:absolute;top:0;left:0;content:'';width:100%;height:100%;background-color:#000;opacity:0.6;z-index:1}
+.player_control .ico_comm_v2 {position:relative;width:41px;height:41px;cursor:pointer;z-index:2;}
+.player_control .ico_play {background-position:0px -155px;}
+.player_control .ico_play.play_on {background-position:-90px -155px;}
+.player_control .ico_vod, .player_control .ico_replay {background-position:-45px -155px;}
+.player_control .ico_volume {background-position:-179px -155px;}
+.player_control .ico_volume.vol_on {background-position:-135px -155px;}
+.player_control .ico_comm_v2 + .ico_comm_v2 {margin-left:15px;}
+.ad_vod .img_vod:hover + .player_control, .player_control:hover {display:block}
+.player_control .ico_play.play_on + .ico_volume,
+.player_control .ico_replay + .ico_volume{display:none;}
+.ad_vod .ie_ver{display:none}
+.ad_vod.ie_ver9 .ie_ver{display:block}
+.ad_vod.ie_ver9 .img_vod, .ad_vod.ie_ver9 .player_control,.ad_vod.ie_ver9 .img_cont {display:none;}
+
+.column_center {float:left;width:calc(100% - 560px);margin:0 40px}
+.column_left {float:left;width:240px}
+.column_right {float:right;width:240px}
+.column_left + .column_right {float:right;width:800px}
+.quick_point {position:absolute;bottom:474px;right:-110px;width:90px;height:140px}
+/*닥터빌 뉴스*/
+.main_news {padding:14px 0 13px;border-bottom:1px solid #dee1e7}
+.main_news .news_cont li {margin:10px 0;letter-spacing:-0.5px}
+.main_news .news_cont .news_tit {overflow:hidden;display:inline-block;max-width:520px;font-size:18px;color:#26262b;text-overflow:ellipsis;white-space:nowrap}
+.main_news .news_cont .category {display:inline-block;margin-left:2px;font-size:14px;color:#1e88e5;line-height:27px;vertical-align:top}
+.main_news .news_cont .ico_new {display:inline-block;width:13px;height:13px;margin:-2px 0 0 3px;background-color:#ff4247;font-size:0;text-align:center;line-height:27px;vertical-align:middle}
+.main_news .news_cont .ico_new:after {display:inline-block;content:'N';font-size:10px;color:#fff;line-height:12px;vertical-align:top}
+.main_news .news_cont .first_news .news_tit {display:inline-block;font-weight:bold;font-size:26px}
+.main_news .news_cont .first_news .category {margin-top:6px}
+.main_news .news_cont a:hover .news_tit {text-decoration:underline}
+/*닥터빌 라이브*/
+.main_live {padding-top:30px}
+.live_cont {margin-top:-15px}
+.live_cont li {overflow:hidden;padding:14px 0}
+.live_cont li + li {border-top:1px solid #dee1e7}
+.live_cont .live_img {overflow:hidden;float:left;width:94px;height:74px;margin-right:15px;text-align:center}
+.live_cont .live_img img {display:inline-block;height:100%}
+.live_cont .first_live .live_img {background-color:#c7e7f6}
+.live_cont .second_live .live_img {background-color:#c3e8ee}
+.live_cont .third_live .live_img {background-color:#dee1e7}
+.live_cont .third_live {padding-bottom:0}
+.live_cont .live_img + .live_info {float:left;width:calc(100% - 110px);margin:4px 0}
+.live_info .date {font-size:14px;font-weight:bold;color:#26262b}
+.live_info .category {margin:0 5px;font-size:14px;color:#1e88e5;letter-spacing:-0.5px}
+.live_info .live_txt {font-size:13px;color:#6e757c}
+.live_info .live_tit {font-size:16px;color:#26262b}
+.live_info .live_tit, .live_info .live_txt {overflow:hidden;display:block;width:100%;text-overflow:ellipsis;white-space:nowrap}
+.live_info .ico_badge {display:inline-block;padding:1px 6px;margin-top:3px;color:#fff;font-size:10px;font-weight:bold;font-family:'Verdana';text-align:center;letter-spacing:-0.5px;vertical-align:top}
+.live_info .ico_live {background-color:#f94040}
+.live_info .ico_live:before {display:inline-block;content:'';width:4px;height:4px;margin:6px 5px 0 0;border-radius:50%;background-color:#fff;vertical-align:top}
+.live_cont a:hover .live_tit {text-decoration:underline}
+/*해외학회스케치*/
+.main_sketch {position:relative;margin-top:12px;border:1px solid #dee1e7;box-sizing:border-box}
+.main_sketch .tit_cont {margin:20px;font-size:16px}
+.main_sketch .sketch_img {width:240px;height:100px;margin:0 0 -1px -1px}
+.main_sketch .sketch_img img{width:240px;height:100px}
+.sketch_cont {padding:0 20px 5px}
+.sketch_cont li {overflow:hidden;padding:10px 0}
+.sketch_cont li:after {float:right;content:'>'}
+.sketch_cont .sketch_tit {overflow:hidden;float:left;width:calc(100% - 10px);color:#26262b;font-size:15px;text-overflow:ellipsis;white-space:nowrap}
+.sketch_cont .sketch_tit:hover {text-decoration:underline}
+/*무료서비스*/
+.free_service {overflow:hidden}
+.free_service .tit_cont {margin-bottom:20px;font-size:19px;text-align:center}
+.free_service li {float:left}
+.free_service li + li {margin-left:24px}
+.free_service .box_service {width:160px;height:90px;padding:18px 0;background-color:#fff;font-size:0;border-radius:6px;box-sizing:border-box}
+.free_service .box_service img {margin:0 auto}
+
+.column_wrap + .column_wrap {padding-top:25px;margin-top:25px;border-top:1px solid #dee1e7}
+.column_right .column_left {position:relative;width:252px;margin-top:20px}
+.column_right .column_left + .column_left {margin-left:22px}
+/*닥터빌 tv*/
+.main_doctv {overflow:hidden}
+.main_doctv .hashtag {float:left;width:240px}
+.main_doctv .hashtag a {display:inline-block;margin:10px 8px 0 0; padding:1px 5px 2px;background-color:#e2eef8;color:#577ea9;font-size:14px}
+.main_doctv .hashtag a:hover {text-decoration:underline}
+.main_doctv .doctv_cont {float:right;width:800px;margin-top:-32px}
+.main_doctv .doctv_cont li {position:relative;float:left;width:252px}
+.main_doctv .doctv_cont li + li {margin-left:22px}
+.main_doctv .doctv_cont .img_vod {width:100%;height:142px}
+.main_doctv .doctv_cont .category {display:block;margin:5px 0;font-size:13px;color:#1e88e5}
+.main_doctv .doctv_cont .img_txt {overflow:hidden;display:-webkit-box;height:42px;font-size:14px;color:#26262b;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-wrap:break-word}
+.main_doctv .doctv_cont a:hover .img_txt{text-decoration:underline}
+.main_doctv .img_vod {position:relative}
+.main_doctv .img_vod:after {position:absolute;top:0;left:0;content:'';width:100%;height:100%;background-color:#000;opacity:0.15;z-index:1}
+.main_doctv .img_vod img {width:100%;height:100%;margin:0 auto}
+.main_doctv .ico_vod {position:absolute;top:90px;right:15px;z-index:2}
+/*포인트 적립*/
+.point_cont li {overflow:hidden;padding:10px 0;border-top:1px solid #eceef1}
+.point_cont li:first-child {padding-top:0;border-top:0 none}
+.point_cont li:last-child {padding-bottom:0}
+.point_img {float:left;width:80px;height:74px}
+.point_img img {width:80px;height:74px}
+.point_info {float:right;width:calc(100% - 90px);margin-top:15px}
+.point_info .tit {font-size:15px;color:#26262b}
+.point_info .tit .ico_comm_v2 {width:3px;height:6px;margin:8px 0 0 6px;background-position:0 -120px;vertical-align:top}
+.point_info .txt {font-size:14px;color:#6e757c}
+.point_cont a:hover .tit {text-decoration:underline}
+/*학회/연수일정*/
+.gray_box .box {overflow:hidden;width:100%;height:100px;background-color:#f4f4f8;box-sizing:border-box}
+.gray_box a:hover .txt {text-decoration:underline}
+.gray_box .btn_more {top:-3px;right:0}
+.gray_box .txt {overflow:hidden;display:-webkit-box;width:100%;height:42px;margin-top:10px;font-size:14px;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-wrap:break-word}
+.main_schedule .box {padding:27px 10px 27px 20px}
+.main_schedule .dday {float:left;margin-right:14px;font-size:30px}
+.main_schedule .txt_badge {display:inline-block;padding:0 6px 1px;background-color:#30bfec;color:#fff;font-size:12px}
+.main_schedule .date {display:block;min-width:105px;margin-top:5px;color:#6e757c;font-size:14px}
+/*CME매거진*/
+.main_magazine .box {position:relative;padding:20px 20px 20px 120px}
+.main_magazine .img_magazine {overflow:hidden;position:absolute;top:15px;left:20px;width:75px;box-shadow:3px 3px 5px rgba(0, 0, 0, 0.3)}
+.main_magazine .img_magazine img {width:100%;margin:0 auto}
+.main_magazine .tit {font-size:14px}
+.main_magazine .date {font-size:13px;color:#6e757c}
+/*의료계소식*/
+.main_medical_news li {margin:6px 0}
+.main_medical_news .news_tit {overflow:hidden;width:100%;text-overflow:ellipsis;white-space:nowrap}
+.main_medical_news .news_tit:hover {text-decoration:underline}
+.main_medical_news .news_tit:before {display:inline-block;content:'';width:3px;height:3px;margin:9px 5px 0 0;background-color:#2979ff;border-radius:50%;vertical-align:top}
+/*브랜드존*/
+.main_brand {position:relative}
+.main_brand .btn_more {top:0;right:0}
+.brand_cont {overflow:hidden}
+.brand_cont li {position:relative;float:left;width:182px;margin-left:24px}
+.brand_cont li:first-child {margin-left:0}
+.brand_cont .img_brand {width:100%;height:120px;background-color:#f4f4f8}
+.brand_cont .img_brand img {max-width:100%;height:100%;margin:0 auto}
+.brand_cont .txt_badge {display:block;position:absolute;top:0;left:0;padding:0 6px 1px;background-color:#2979ff;color:#fff;font-size:12px}
+.brand_cont .img_tit {overflow:hidden;display:block;margin:10px 0 5px;color:#333333;font-size:15px;text-overflow:ellipsis;white-space:nowrap}
+.brand_cont .img_txt {overflow:hidden;display:-webkit-box;height:38px;color:#6e757c;font-size:13px;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-wrap:break-word}
+.brand_cont a:hover .img_txt {text-decoration:underline}
+/*메인 하단 배너*/
+.main_service_banner {overflow:hidden}
+.main_service_banner li {float:left;margin-left:10px;border:1px solid #dee1e7}
+.main_service_banner li a {width:258px;height:178px;padding:20px 15px 20px 20px;box-sizing:border-box}
+.main_service_banner li:first-child {margin-left:0}
+.main_service_banner li.half {width:calc(50% - 10px);}
+.main_service_banner li.half a {width:100%;height:118px;}
+.main_service_banner .tit_cont {height:40px;font-size:16px;line-height:20px}
+.main_service_banner .txt {font-size:13px;color:#6e757c;letter-spacing:-0.5px}
+.main_service_banner li.half .tit_cont {margin-bottom:0.5em;height:auto;font-size:20px;line-height:1.25em}
+.main_service_banner li.half .txt {font-size:15px;}
+.main_service_banner .service_banner1 {background:url(../images/main/bg_main_service_banner1_half.jpg) no-repeat top left}
+.main_service_banner .service_banner2 {background:url(../images/main/bg_main_service_banner2_half.jpg) no-repeat top left}
+.main_service_banner .service_banner3 {background:url(../images/main/bg_main_service_banner3.jpg) no-repeat top left}
+.main_service_banner .service_banner4 {background:url(../images/main/bg_main_service_banner4.jpg) no-repeat top left}
+/* 2022-01-18 메인로고*/
+.main .header_top .drv_logo{width: 224px; height: 76px; background: url(../images/logo_ev.png) no-repeat;}
+.header_wrap .header_inner .btn_gnb{margin-left: -20px;}
+/* 2022 리뉴얼 메인*/
+/*리뉴얼 공통*/
+.cate_class{display: block; color:#4ea1ff; font-size: 13px; letter-spacing: -0.06em; font-family: 돋움, dotum, "Apple SD Gothic Neo", sans-serif;}
+.renew_section .cont_title{margin-top: 30px; margin-bottom: 15px; font-size: 18px; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic","Dotum",Helvetica,Sans-serif; letter-spacing: -0.06em;}
+.renew_ad_ico{display: inline-block; padding:0 2px; margin-right: 6px; border-radius: 3px; font-size: 11px; background-color: #7c2cd0; color: #fff; font-weight:bold; font-style: normal}
+.renew_ico_blue{display: inline-block; padding:0 4px; line-height: 1.8; border-radius: 3px; font-size: 11px; background-color: #1e88e5; color: #fff; font-weight:bold; font-style: normal}
+.renew_txt_blue{color:#4ea1ff;}
+.renew_txt_purple{color:#7c2cd0;}
+.renew_member_info .member_link_box{opacity: 0; visibility: hidden; position: absolute; top:30px; left: -22px; width: 120px; padding:10px 0; background-color: #fff; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic"; z-index: 95; border:1px solid #bbc1cd; transition: all 0.15s ease-in;}
+.renew_member_info .member_link_box::before{position: absolute; top:-7px; left: 50%; margin-left: -10px; width: 12px; height: 7px; background: url("../images/renewal/renew_ico_common.png") -100px -132px no-repeat; content: "";}
+.renew_member_info .member_link_box li{margin:0 14px; line-height:1.6;}
+.renew_member_info .member_link_box a{position: relative; display: inline-block; font-size: 12px; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic"; letter-spacing: -0.06em;}
+.renew_member_info .member_link_box a:hover{text-decoration: underline;}
+.renew_member_info .member_link_box .member_new{top:2px; right: -6px;}
+.renew_member_info .member_new{position: absolute; top:-2px; right: -5px; width:5px; height: 5px; border-radius: 50%; background-color: #ff471c; content: ""; font-size:0; line-height:0; text-indent:-9999px}
+.h_alarm{position: relative; display: inline-block; width: 15px; height: 15px; margin-top: -3px; margin-left: 12px; vertical-align: middle; background: url("../images/renewal/renew_ico_common.png") -130px -103px; font-size:0; line-height:0;}
+.right_area .renew_banner_wrap .renew_banner{display: block; margin-bottom: 8px;}
+.right_area .renew_banner img{vertical-align: middle;}
+.right_area .renew_notice_box{position: relative; overflow: hidden; background-color: #fff; box-sizing: border-box;}
+.right_area .renew_notice_box .notice_title{margin-bottom: 16px; font-size: 15px; color: #535d67; font-weight:bold;}
+.right_area .renew_notice_box li{position: relative; margin-bottom: 12px; letter-spacing: -0.025em; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic";}
+.right_area .renew_notice_box li a{display: block; height: 16px; overflow: hidden; padding-bottom: 2px; line-height: 1.2; font-size: 14px; color: #000003;}
+.right_area .renew_notice_box li a:hover{text-decoration: underline;}
+.right_area .renew_notice_box li a .renew_txt_blue{margin-right: 4px; color:#1e88e5;}
+.right_area .renew_notice_box li span{font-size: 13px; color: #616c7b;}
+.right_area .renew_notice_box .txt_bar{color: #616c7b;}
+.right_area .renew_notice_box.schedule_box{height: 236px;}
+.right_area .renew_notice_box.schedule_box .more{position: absolute; top:0px; right: 20px; display: inline-block; width: 23px; height: 23px; border:1px solid #dedede; font-size:0; line-height:0; text-indent:-9999px;}
+.right_area .renew_notice_box.schedule_box .more::before,.right_area .renew_notice_box.schedule_box .more::after{display: inline-block; position: absolute; background-color: #333; content: "";}
+.right_area .renew_notice_box.schedule_box .more::before{top:10px; left:7px; width: 10px; height: 2px;}
+.right_area .renew_notice_box.schedule_box .more::after{top:6px; left: 11px; width: 2px; height: 10px;}
+.right_area .renew_notice_box.drv_news{height: 162px;}
+.right_area .renew_notice_box.drv_news li a{width:calc(100% - 10px); text-overflow: ellipsis; white-space: nowrap;}
+.right_area .renew_notice_box.drv_news li:after{position: absolute; top: -3px; right: 0; content: ">"; color: #aaaaab;}
+.r_contents{margin-bottom: 30px;}
+
+/*list common*/
+.renew_cont_grid{margin-bottom: 40px;}
+.renew_cont_grid ul::after{display: block; content: ""; clear: both;}
+.renew_cont_grid ul{padding-bottom: 20px; border-bottom: 1px solid #e2e5ea;}
+.renew_cont_grid li{float:left; /*width: 227px;*/ padding-left: 14px; margin-bottom: 24px;} 
+.renew_cont_grid li:nth-child(3n+1){padding-left: 0;}
+.renew_cont_grid li .thum_img{display: inline-block; position: relative; width: 227px; height: 128px; overflow: hidden; margin-bottom: 8px; border: 1px solid #dee1e7;}/*2022-09-15 수정*/
+.renew_cont_grid li .thum_img .ready{position: absolute; top:0; left: 0; width: 100%; height: 100%; padding-top: 46px; content: ""; background-color: rgba(0,0,0,.6); text-align: center;}
+.renew_cont_grid li .thum_img .ready .img_txt{display: inline-block; vertical-align: top; color: #fff; font-size: 16px; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic";}
+.renew_cont_grid li .thum_img .ready .img_txt::before{display: inline-block; vertical-align: -2px; margin-right: 6px; width: 13px; height: 16px; background: url("../images/renewal/cme/ico_cme.png") no-repeat -177px 0; content: "";} 
+.renew_cont_grid li .cate_class{font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic"; letter-spacing:0em}
+.renew_cont_grid li .list_title{line-height: 1.4; padding-top: 2px; height: 43px; overflow: hidden; font-size: 14px; letter-spacing: -0.025em; color: #26262b; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic";}
+.renew_cont_grid li a:hover .list_title{text-decoration: underline;}
+.renew_cont_list .thum_img i.badge{position: absolute; top:0; left: 0; padding:2px 6px; color: #fff; font-size: 13px; background-color: #ff384f;}
+.renew_cont_list ul{padding-bottom: 53px;}
+.renew_cont_list li{margin-bottom: 16px;}
+.renew_cont_list li:last-child{margin-bottom: 0;}
+.renew_cont_list li a{display: flex;}
+.renew_cont_list li .thum_img{position: relative; border: 1px solid #dee1e7;}/*2022-09-15 수정*/
+.renew_cont_list li .thum_img img{width: 100%;}
+.renew_cont_list li .info_area{width: 497px; margin-left: 16px;}
+.renew_cont_list li .cate_class{ padding:6px 0 4px; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic";  letter-spacing: 0em;}
+.renew_cont_list li .class_desc{display: -webkit-box;  height: 40px; margin-top: 4px; line-height: 1.4; overflow: hidden; text-overflow:ellipsis; word-wrap:break-word; white-space:normal; -webkit-box-orient:vertical; -webkit-line-clamp:2; color: #26262b; letter-spacing: -0.06em; font-size: 14px; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic";}
+.renew_cont_list li a:hover .class_desc{text-decoration: underline;}
+.renew_cont_list li .info{display: block; margin-top: 10px; color: #909090; font-size: 13px; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic"; word-break: keep-all;}
+.renew_cont_list li .info em{color: #26262b; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic"; font-weight: 400;}
+.renew_cont_list.album_type ul::after{display: block; content: ""; clear: both;}
+.renew_cont_list.album_type li{float: left; width: 50%; height: 118px; margin-bottom: 18px; box-sizing: border-box;}
+.renew_cont_list.album_type li .info_area{width: 140px;}
+.renew_cont_list .cont_none{padding: 60px 0; text-align: center; font-size: 16px; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic"; }
+.content_top .list_set{position: absolute; top:0; right:0;}
+.content_top .list_set a{vertical-align: middle;}
+.content_top .list_set .opt{margin-right: 6px; display: inline-block; width: 13px; height: 13px; background: url("../images/renewal/renew_ico_common.png") -30px -200px;}
+.content_top .list_set .opt.on{background-position-x: -55px;}
+.content_top .list_set .opt.album{display: inline-block; width: 13px; height: 13px; background-position-x:-80px;}
+.content_top .list_set .opt.album.on{background-position-x: -105px;}
+.main_container {font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic", 'dotum', '돋움';}
+.main_container .main_container_inner{background-color: #eff1f5;}
+.main_container .renew_section{width: 1080px; margin:0 auto; padding-top:20px; display: flex; justify-content: space-between;}
+.main_container .left_area{width: 800px;}
+.main_container .renew_main_bn{display: block; width: 800px; height: 96px; overflow: hidden;}
+.main_slide_wrap{position: relative;}
+.main_slide_wrap .main_slide{position: relative; overflow: hidden; margin:15px 0;}
+.main_slide_wrap .swiper-button-prev, .main_slide_wrap .swiper-button-next{width: 33px; height: 33px;}
+.main_slide_wrap .swiper-button-prev{left: -17px; background: url("../images/renewal/main/slide_arr_prev.png");}
+.main_slide_wrap .swiper-button-next{right: -17px; background: url("../images/renewal/main/slide_arr_next.png");}           
+.main_slide_wrap .swiper-button-prev::after, .main_slide_wrap .swiper-button-next::after{display: none;}
+.main_slide_wrap .main_slide .swiper-slide{position: relative;}
+.main_slide .swiper-slide a{position: relative; overflow: hidden; width: 266px; height: 260px;}
+.main_slide .swiper-slide .slide_cover{position: absolute; left: 0; right: 0; bottom: 0; height: 65%; background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0)); background:linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); z-index: 2;}
+.main_slide .swiper-slide .portrait{position: absolute; width: 90%; height: 240px; right: -20px; bottom: 0;}
+.main_slide .swiper-slide .pro_info_area{position: relative; z-index: 3;}
+.main_slide .swiper-slide img{max-width: 100%;}
+
+.main_slide .swiper-slide .ico_mn_slide{display: inline-block; position: absolute; top:0; left: 0; padding:0 10px; line-height: 1.8; color: #fff; font-size: 14px; font-weight: bold; font-style: normal; background-color: #03bdff; letter-spacing: -0.025em; z-index: 4;}
+.main_slide .swiper-slide .ico_mn_slide.red_type{background-color: #ff4242;}
+.main_slide .swiper-slide .ico_mn_slide.red_type::before{display: inline-block; width: 4px; height: 4px; margin-right: 5px; margin-top: -2px; vertical-align: middle; border-radius: 50%; background-color: #fff; content: "";}
+.main_slide .swiper-slide .main_badge{position: absolute; top:6px; right: 10px; color: #fff; font-size: 13px; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic"; letter-spacing: -0.025em; z-index: 4;}
+.main_slide .swiper-slide .main_badge .badge_cnt{display: inline-block; margin-left: 2px; font-weight: bold; font-family: 'SpoqaHanSans', 'dotum', '돋움';}
+.main_slide .swiper-slide .ico_apply{display: inline-block; width: 16px; height: 16px; margin-right: 2px; background: url("../images/renewal/renew_ico_common.png") -176px -197px; vertical-align: -3px;}
+.main_slide .swiper-slide .pro_info_wrap{position: absolute; top: 18px; left: 0; padding: 20px; color: #fff; font-weight: bold; letter-spacing: -0.025em;}
+.main_slide .swiper-slide .pro_time{padding-bottom: 48px; font-size: 18px;}
+.main_slide .swiper-slide .pro_info .cate_class{color: #9fccff; font-weight: bold; font-family: 'SpoqaHanSans', 'dotum', '돋움';}
+.main_slide .swiper-slide .pro_info .pro_title{margin-bottom: 8px; font-size: 20px; line-height: 1.2; display: -webkit-box; height: 48px; overflow: hidden; text-overflow:ellipsis; word-wrap:break-word; white-space:normal; -webkit-box-orient:vertical; -webkit-line-clamp:2; word-break: keep-all;}
+.main_slide .swiper-slide .pro_info .pro_name{font-size: 13px;}
+.section_main .hash_box{padding:14px 20px 14px; margin-bottom: 14px; border-bottom: 1px solid #4ea1ff; background-color: #fff;}
+.section_main .hash_box .ico{font-size: 12px; margin-right: 20px; padding:0 8px; color: #fff; font-weight: bold; font-style: normal; background-color: #4ea1ff;}
+.section_main .hash_box a{display: inline-block; margin-right: 20px; line-height: 1.8; font-size: 14px; letter-spacing: -0.025em;; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic";}
+.renew_cont_grid.renew_main_list{margin-bottom: 0;}
+.renew_cont_grid.renew_main_list li{width: 257px;}
+.renew_cont_grid.renew_main_list li .thum_img{position: relative; width: 255px; height: 144px;}
+.renew_cont_grid.renew_main_list li .cate_class{font-size: 14px; font-weight: normal;}
+.renew_cont_grid.renew_main_list li .thum_img .ico{position: absolute; width: 32px; height: 32px; right: 10px; bottom: 10px; font-size:0;  line-height:0; text-indent: -9999px; background: url("../images/renewal/renew_ico_common.png") -131px -190px;}
+.section_contents .left_area{padding-top: 30px;}
+.drv_service .service_title{margin-bottom: 15px; font-size: 18px; font-weight: bold;}
+.drv_service .service_title em{color: #1e66b1; font-weight: bold;}
+.drv_service .service_title span{margin-left: 12px; font-weight: normal; font-size: 14px; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic";}
+.drv_service .service{display: flex; margin-bottom: 40px; }
+.drv_service .service li{flex-basis: 132px; height: 64px; border:1px solid #dee1e7; border-left: none; box-sizing: border-box;}
+.drv_service .service li:first-child{border-left: 1px solid #dee1e7;}
+.drv_service .service li a{display: flex; justify-content: center; align-items:center;  width: 100%; height: 100%;}
+.recomm_area{position: relative; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic";}
+.recomm_area .list_set .set{display: inline-block; margin-right: 8px; color: #636367; font-size: 13px; letter-spacing: -0.025em;}
+.recomm_area .list_set .set::before{display: inline-block; width: 12px; height: 12px; vertical-align: -2px; background: url("../images/renewal/renew_ico_common.png") -156px -104px; content: "";}
+.recomm_area .renew_cont_list li .info_area{width: 524px; margin-left: 20px;}
+.recomm_area .renew_cont_list li .info_area .class_title{height: 20px; overflow: hidden; line-height: 1.4; color: #26262b; font-weight: bold; font-size: 14px; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic"; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; white-space: normal; -webkit-box-orient:vertical; -webkit-line-clamp:3;}
+.recomm_area .renew_cont_list.album_type li .info_area{width: 180px; margin-left: 16px;}
+.recomm_area .renew_cont_list.album_type li .info_area .class_title{height: 60px;; font-weight: normal; letter-spacing: -0.06em;}
+.recomm_area .renew_cont_list.album_type li a:hover .info_area .class_title{text-decoration: underline;}
+.recomm_area .more_area{position: relative; border-bottom: 1px solid #dee1e7;}
+.recomm_area .more_area .more{position: absolute; bottom: -15px; left: 50%; margin-left: -84px;  width: 168px; height: 30px; padding:4px 0; text-align: center; font-size: 13px; background-color: #fff; border: 1px solid #dee1e7; border-radius: 30px; box-sizing: border-box;}
+.recomm_area .more_area .more::before{display: inline-block; width: 16px; height: 21px; margin-right: 6px; vertical-align: middle; background: url("../images/renewal/renew_ico_common.png") -25px -126px; content: "";}
+.recomm_area .more_area .more span{color: #868690;}
+.renew_section .drv_service{border-bottom: 1px solid #dee1e7;}
+.renew_section .main_bottom_banner{display: flex; justify-content:space-between; margin:40px 0;}
+.renew_section .main_bottom_banner a{display: inline-block;}
+.main_container .right_area{width: 260px;}
+.renew_member_info{position: relative; display: block; height: 96px; margin-bottom: 15px; padding:20px 10px 20px 14px; border:1px solid #dfe2e7; background-color: #fff; font-size: 14px; box-sizing: border-box;}
+.renew_member_info .member_new{position: absolute; top:-3px; right: -5px; width:5px; height: 5px; border-radius: 50%; background-color: #ff471c; content: ""; font-size:0; line-height:0; text-indent:-9999px}
+.renew_member_info > ul::after{display: block; clear: both; content: '';}
+.renew_member_info > ul > li{float: left; font-weight: bold;}
+.renew_member_info > ul > li .member_nm{letter-spacing: -0.06em; text-decoration: underline;}
+.renew_member_info .member_nm:hover,.renew_member_info .member_txt_point a:hover{text-decoration: underline;}
+.renew_member_info .member_nm::after{display: inline-block; width:1px; height: 10px; margin-left: 3px; background-color: #ccd0d4; content: "";}
+.renew_member_info .member_point{margin-left: 4px; color: #ff471c}
+.renew_member_info .member_logout{position: absolute; top: 20px; right: 16px; padding:2px 8px; font-size: 12px; background-color: #bbc1c8; color: #fff; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic"; border-radius: 30px;}
+.renew_member_info .member_txt_point{position: relative; margin-top: 12px; font-size: 13px; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic";}
+.renew_member_info .member_txt_point a{display: inline-block; color: #888;  font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic";}
+.renew_member_info .member_txt_point a.member_txt{text-decoration: underline;}
+.renew_member_info .member_txt_point a.h_alarm{position: absolute; bottom: 0; right: 12px;}
+.renew_member_info .name_area:hover .member_link_box{opacity: 1; visibility: visible;}
+.renew_member_info .member_link_box{top:48px; left: 0; width: 85px; font-weight: normal;}
+.section_main .renew_banner_wrap{margin-bottom: 20px;}
+.section_main .renew_notice_box{padding: 20px; border:1px solid #dee1e7; }
+.section_main .renew_notice_box.schedule_box .more{top: 18px;}
+.section_contents .column_box{padding:20px; background-color: #eff1f5; overflow: hidden;}
+.section_contents .column_box a{display: flex; position: relative; margin-bottom: 30px; line-height: 1.4;  letter-spacing: -0.025em;}
+.section_contents .column_box a .img{width: 70px; text-align: center;}
+.section_contents .column_box a:last-child{margin-bottom: 0;}
+.section_contents .column_box .column_info{margin-left: 14px; font-size: 15px;}
+.section_contents .column_box strong, .section_contents .column_box span{display: block;}
+.section_contents .column_box strong{font-weight: bold;}
+.section_contents .column_box span{font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic";}
+.section_contents .column_box strong:after{display: inline-block; width: 3px; height: 6px;}
+.section_contents .column_box a:hover .txt{text-decoration: underline;}
+.section_contents .column_box .sub_txt{color: #6e757c; font-size: 14px;}
+/*layer*/
+.layer_pop .recomm_list{margin-bottom: 30px; text-align: left;}
+.layer_pop .recomm_list li{margin-bottom: 10px; display: flex;}
+.layer_pop .recomm_list strong{display: inline-block; letter-spacing: -0.06em; vertical-align: middle; width: 84px;}
+.layer_pop .recomm_list .sub_tit{font-size: 12px; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic";}
+.layer_pop .recomm_list .col{display: inline-block; vertical-align: top;}
+.layer_pop .recomm_list .select{position: relative; width: 178px; height: 40px; padding:6px 10px; border:1px solid #d8d8d8; color: #484848; }
+.layer_pop .recomm_list .keyword{margin-top: 4px; font-size: 12px;}

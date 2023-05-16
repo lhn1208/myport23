@@ -1,0 +1,71 @@
+<!--#include virtual="../../html/common/webinar_common.html" -->
+</head>
+<body>
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+</div>
+<main id="wrap" class="member back_color">
+	<!-- header [s] -->
+	<!--#include virtual="../../html/common/webinar_member_header.html" -->
+	<!-- header [e] -->
+	<!-- container [s] -->
+	<main id="container" class="webinar_guide sub_page" data-title="회원가입">
+		<div class="contents">
+		<form>
+			<h2 class="step01"><a href="findId01.html" class="on">아이디(이메일) 찾기</a> <span>|</span> <a href="findId02.html">비밀번호 재설정</a></h2>
+			<div class="cert_wrap idPwd" id="find_type02">
+				<ul class="certBox3">
+					<li><label for="ip01">이름</label>
+						<input type="text" style="width:304px;">
+					</li>
+					<li><label for="ip02">휴대폰</label>
+						<select style="width:85px;">
+							<option>010</option>
+						</select>
+						<input type="text" style="width:114px;">
+						<input type="text" style="width:114px;">
+						<a href="#none" class="bt btn_gray">인증번호 전송</a>
+					</li>
+
+					<li class="hide">
+						<input type="text" style="margin-left:75px;width:203px;">
+						<a href="#" class="bt btn_blue">확인</a>
+						<p class="alert_txt">인증번호를 입력해 주세요.</p>
+					</li>
+				</ul>
+			</div>
+			<div class="btn_bottom">
+				<a href="findId01_result.html" class="btn_blue">다음</a>
+			</div>
+
+		</form>
+		</div>
+    </main>
+    <!-- container [e] -->
+    <hr>
+	<!-- footer [s] -->
+    <!--#include virtual="../../html/common/webinar_footer.html" -->
+    <!-- footer [e] -->
+
+</div>
+
+<script type="text/javascript">
+$(".select01 li input").click(function(){
+	$(".select01 li").removeClass("on");
+	$(this).parent().parent("li").addClass("on");
+	if($(".select01 li:first-child input").is(':checked')) {
+		$(".contents .cert_wrap").show();
+		$(".contents #find_type02").hide();
+	} else {
+		$(".contents .cert_wrap").hide();
+		$(".contents #find_type02").show();
+	}
+});
+$(".certBox3 li .btn_gray").click(function(){
+	$(".certBox3 li.hidden").show();
+});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!--#include virtual="../../html/common/webinar_common.html" -->
+</head>
+<body>
+<div id="Index">
+	<a href="#container">본문 바로가기</a> 	
+</div>
+<div id="wrap" class="member"> <!-- 각 섹션 별 class 명 변경 (common 기본) -->
+	<!-- header [s] -->
+	<!--#include virtual="../../html/common/webinar_member_header.html" -->
+	<!-- header [e] -->
+	<!-- container [s] -->
+	<main id="container" class="webinar_guide sub_page" data-title="회원가입">
+		<div class="contents">
+			<h2>약관동의</h2>
+			<div class="joinBox">
+				<div class="agreeBox_wr">
+					<div class="agreeAll">
+						<p>이용약관, 개인정보 수집 및 이용에 모두 동의합니다.</p>
+						<a href="#" class="ico_comm agreeCheck">선택</a>
+					</div>
+					<div class="agreeBox">
+						<h3>이용약관 동의</h3> <span>(필수)</span>
+						<div class="scrollBox" tabindex="0">
+							<div class="txtBox">
+								<!--#include virtual="../../html/webinar/txt_policy.html" -->
+							</div>
+						</div>
+						<p class="agree_notice">이용약관에동의해주세요.</p>
+						<a href="#" class="ico_comm agreeCheck on">선택</a> <!--V3 아이콘 이미지 스프라이트 -->
+					</div>
+					<div class="agreeBox">
+						<h3>개인정보 수집 및 이용에 대한 동의</h3> <span>(필수)</span>
+						<div class="scrollBox" tabindex="0">
+							<div class="txtBox">
+								<!--#include virtual="../../html/webinar/txt_userinfo.html" -->
+							</div>
+						</div>
+						<p class="agree_notice">개인정보수집및이용에동의해주세요.</p>
+						<a href="#" class="ico_comm agreeCheck">선택</a> <!--V3 아이콘 이미지 스프라이트 -->
+					</div>
+				</div>
+				<div class="joinBtn">
+					<a href="#" class="btn_join">동의합니다</a>
+					<a href="#" class="btn_cancle">이전으로</a>
+				</div>
+			</div>
+		</div>
+    </main>
+    <!-- container [e] -->
+    <hr>
+	<!-- footer [s] -->
+	<!--#include virtual="../../html/common/webinar_footer.html" -->
+    <!-- footer [e] -->
+    
+</div>
+
+</body>
+</html>

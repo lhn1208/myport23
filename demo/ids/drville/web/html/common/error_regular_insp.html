@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrap">
+		<!-- container [s] -->
+		<style>
+			/*2022-09-05 정기점검*/
+			*{margin: 0; padding: 0;}
+			html,body{height: 100%;}
+			body > div{height: 100%;}
+			.wrap {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				display: flex;
+				flex-direction: column;
+				-webkit-display: flex;
+				-webkit-flex-direction: column;
+				-moz-display: flex;
+				-moz-flex-direction: column;
+				-ms-display: flex;
+				-ms-flex-direction: column;
+				background-color: #fff
+			}
+			#container {
+				position: relative;
+				overflow-x: hidden;
+				overflow-y: auto;
+				word-wrap: break-word;
+				flex: 1;
+				-webkit-flex: 1;
+				-moz-flex: 1;
+				-ms-flex: 1;
+				-webkit-overflow-scrolling: touch
+			}
+			em{font-style: normal;}
+			.member_container{padding: 20px 15px 60px; box-sizing: border-box;}
+			.member_container .s_tit em{color: #30b8ff;}
+			.center{display: table; width: 100%; height: 100%;}
+			.center .inner{display: table-cell; vertical-align: middle;}
+			.member_container .s_tit {
+				margin-bottom: 15px;
+				font-size: 1.5rem;
+				font-weight: 400;
+				text-align: center;
+				word-break: keep-all;
+				word-wrap: break-word
+			}
+			.member_container.error_cont .txt_info{font-size: 16px;}
+			.error_cont{background-color: #f9f9fb;}
+			.member_container .txt_info{font-size: 16px; text-align: center; word-break: keep-all; word-wrap: break-word;}
+			.member_container .txt_blue{color: #30b8ff;}
+			.member_container .info_box{margin-top: 20px; padding: 18px 10px 14px; background-color: #fff; border: 2px solid #e5e6e8; font-size: 14px; box-sizing: border-box;}
+			.member_container .info_box li{list-style: none; margin-bottom: 4px; text-indent: -70px; padding-left: 70px;}
+			@media only screen and (min-width: 1024px){
+				.member_container.error_cont .txt_info{margin-top: 20px; line-height: 1.6;}
+				.member_container .info_box{width: 500px; margin:20px auto 0; padding: 20px;}
+			}
+		</style>
+		<section id="container" class="member_container error_cont">
+			<div class="center">
+				<div class="inner">
+					<h3 class="s_tit"><em>서비스 정기점검</em> 중입니다.</h3>
+					<p class="txt_info txt_bl">서비스 이용에 불편을 드려 죄송합니다.
+						<br>보다 나은 서비스를 제공하기 위해 사이트 점검이 진행 중입니다.
+						<br>불편하시더라도 조금만 기다려 주세요.
+						<br>점검 시간은 변경될 수 있으니 양해 부탁드립니다.</p>
+						<div class="info_box">
+							<ul>
+								<li>점검시간 : <span class="txt_blue">2022년 9월 5일(월) 14:00 ~ 18:00 (4시간 소요 예상/상황에 따라 시간 변동 있을 수 있음)</span></li>
+								<li>점검내용 : 닥터빌 PC 메인 및 닥터빌 모바일 서비스 화면개편</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		<!-- container [e] -->
+	</div>
+	</div>
+	
+	
+</body>
+</html>

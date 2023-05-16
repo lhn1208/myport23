@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>의사 소셜</title>
+	<link rel="shortcut icon" href="../../images/_favicon.ico" type="image/x-icon"><!-- 2016-01-11 파비콘 추가 -->
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<!-- <script src="../../js/jquery.placeholder.js"></script> -->
+	<!-- <script src="../../js/common.js"></script> -->
+	<script src="../../js/ui.js"></script>
+	<script src="../../js/jquery.bpopup.min.js"></script>
+	<script src="../../js/jquery.wmuSlider.min.js"></script>
+	<script src="../../js/jquery.tmpl.min.js"></script>
+	<script src="../../js/jquery.cycle2.min.js"></script>
+	 <!--2022 리뉴얼 js추가-->
+	 <script src="../../js/swiper.min.js"></script> 
+	 
+ <!--리뉴얼 css [s]-->
+	<!-- <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/drv_renewal_sub.css">
+     -->
+ <!--리뉴얼 css [e]-->	
+	<link rel="stylesheet" type="text/css" href="../../css/style_v3.css">
+	 <!--2022 리뉴얼 css추가-->
+	<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+
+<link rel="stylesheet" type="text/css" href="../../css/cme.css">
+</head>
+<body>
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+	<a href="#gnb">메뉴 바로가기</a>
+</div>
+<div id="wrap" class="gmeeting_v2"> <!--클래스명, 위치 변경-->
+	<!-- header [s] -->
+	<header id="header" class="header_wrap">
+	<div class="header_top">
+		<div class="header_inner">
+			<h1><a href="#none" class="ico_comm_v2 tit_drville">DrVille</a></h1>
+			<h2 class="tit_page">&nbsp;</h2>
+			<!-- 로그인시 노출 -->
+			<div class="member_wrap">
+				<ul class="tools">
+					<li class="direct_link">
+						<a href="#">닥터빌 님<span class="ico_comm_v2"></span></a>
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">마이페이지</a>
+								<a href="#">고객센터</a>
+								<a href="#">1:1문의하기</a>
+								<a href="#">공지사항</a> <!--2020-01-14 리스트 추가-->
+								<a href="#">로그아웃</a>
+							</div>
+						</div>
+					</li>
+					<li class="point">
+						<a href="#">1,321,800P</a>
+					</li>
+					<li class="notice new">
+						<a href="#"><span class="ico_comm_v2">알림</span></a>
+					</li>
+				</ul>
+			</div>
+			<!-- 비로그인시 노출 -->
+			<div class="btn_header">
+				<a href="#" class="btn_login">로그인</a>
+				<a href="#" class="btn_join">Mcircle 회원가입</a>
+			</div>
+		</div>
+	</div>
+	<div class="header_btm">
+		<div class="header_inner">
+			<a href="#gnb" class="btn_gnb"><span class="btn_open"><span class="ico_open">전체 메뉴 열기</span></span></a>
+			<div class="location_wrap">
+				<ul class="location tools">
+					<li class="location_home">
+						<a href="#">홈</a>
+					</li>
+					<li class="location_depth1">
+						<a href="#">CME<span class="ico_comm_v2"></span></a>
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">CME</a>
+								<a href="#">해외의학서비스</a>
+								<a href="#">진료가이드</a>
+								<a href="#">병원경영</a>
+								<a href="#">혜택</a>
+								<a href="#">커뮤니티</a>
+								<a href="#">브랜드존</a>
+								<a href="#">포인트샵</a>
+								<a href="#">라이프</a>
+								<a href="#">자료실</a>
+								<a href="#">오픈콜라보레이션</a>
+								<a href="#">학술지원사업</a>
+								<a href="#">경제적이익 지출보고서</a>
+							</div>
+						</div>
+					</li>
+					<li class="location_depth2">
+						<a href="#">라이브세미나<span class="ico_comm_v2"></span></a>
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">라이브세미나</a>
+								<a href="#">다시보기 VOD</a>
+								<a href="#">CME매거진</a>
+								<a href="#">진진영</a>
+								<a href="#">해외학회스케치</a>
+								<a href="#">해외학회스케치 참여신청</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="service_list">
+				<ul>
+					<li><a href="#">라이브세미나</a></li>
+					<li><a href="#">해외의학서비스</a></li>
+					<li><a href="#">드럭인포</a></li>
+					<li><a href="#">자유게시판</a></li>
+					<li><a href="#">포인트샵</a></li>
+					<li><a href="#">피부비만성형포럼</a></li>
+					<!-- 2020-06-24 추가 [s] -->
+					<li><a href="#">닥터빌 아카데미</a></li>
+					<!-- 2020-06-24 추가 [e] -->
+				</ul>
+			</div>
+			<a href="#search_all" class="search_open"><span class="ico_comm_v2">통합검색</span></a>
+		</div>
+		<section id="search_all" class="section_search">
+			<h3 class="screen_out">검색</h3>
+			<div class="header_inner">
+				<form class="form_search" role="search">
+					<fieldset>
+						<legend class="screen_out">검색</legend>
+						<div class="box_search">
+							<input type="text" class="tf_keyword" title="검색어 입력" placeholder="검색할 내용을 입력하세요.">
+							<button type="submit" class="btn_search"><span class="ico_comm_v2">통합검색</span></button>
+						</div>
+					</fieldset>
+				</form>
+				<a href="#search_all" class="search_close"><span class="ico_comm_v2">통합검색 닫기</span></a>
+			</div>
+		</section>
+		<div id="gnb" class="gnb">
+			<div class="gnb_top">
+				<div class="gnb_inner">
+					<!-- 2022-08-31 수정 -->
+					<span class="badge_new_service">Now</span>
+					<a href="#" class="tit_new_service">해외학회스케치</a> 
+
+				</div>
+			</div>
+			<div class="gnb_wrap"> <!--2019-11-18 태그 추가-->
+				<div class="gnb_inner">
+					<ul class="allmenu">
+						<li>
+							<strong>CME</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">세미나편성표<span class="ico_comm_v2 ico_point">point</span></a></li>
+								<li><a href="#">다시보기VOD</a></li>
+								<li><a href="#">닥터빌 ON<span class="ico_comm_v2 ico_play">point</span></a></li>
+								<li><a href="#">CME매거진</a></li>
+								<li><a href="#">진진영</a></li>
+								<li><a href="#">해외학회스케치</a></li>
+								<li><a href="#">해외학회스케치 참여신청</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><strong>해외의학서비스<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">의학논문검색</a></li>
+								<li><a href="#">UpToDate</a></li>
+								<li><a href="#">DynaMed Plus</a></li>
+								<li><a href="#">Smart Imagebase</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>진료가이드</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">드럭인포</a></li>
+								<li><a href="#">학회/연수일정</a></li>
+								<li><a href="#">해외컨퍼런스</a></li>
+								<li><a href="#">해외의학뉴스</a></li>
+								<li><a href="#">처방가이드</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>병원경영</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">병원성공경영가이드<span class="ico_new">NEW</span></a></li> <!--2020-01-28 메뉴 추가-->
+								<li><a href="#">보험인정기준</a></li>
+								<li><a href="#">심사청구</a></li>
+								<li><a href="#">보험심사 청구 컨설팅</a></li>
+								<li><a href="#">개원가 실전 진료 Tip</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>혜택</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">설문<span class="ico_comm_v2 ico_point">point</span></a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="allmenu">
+						<li>
+							<strong>커뮤니티</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">자유게시판</a></li>
+								<li><a href="#">닥라이브<span class="ico_comm_v2 ico_point">point</span></a></li>
+								<li><a href="#">스터디룸</a></li>
+								<li><a href="#">피부비만성형포럼</a></li>
+								<!-- 2020-06-24 추가 [s] -->
+								<li><a href="#">닥터빌 아카데미</a></li>
+								<!-- 2020-06-24 추가 [e] -->
+							</ul>
+						</li>
+						<li>
+							<a href="#"><strong>브랜드존<span class="ico_comm_v2 ico_point">point</span><span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">의약품</a></li>
+								<li><a href="#">의료기기</a></li>
+								<li><a href="#">최신진료장비</a></li> <!-- 2019-12-06 수정 -->
+								<li><a href="#">스페셜라이프</a></li>
+								<li><a href="#">홍보영상</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><strong>포인트샵<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">영화</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">호텔</a></li>
+								<li><a href="#">여행</a></li>
+								<li><a href="#">기프티콘</a></li>
+								<li><a href="#">하늘맛</a></li>
+								<li><a href="#">SERICEO</a></li>
+								<li><a href="#">JArt</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>라이프</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">여행</a></li>
+								<li><a href="#">식신</a></li>
+								<li><a href="#">트렌드</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>자료실</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">서식</a></li>
+								<li><a href="#">케어노트</a></li>
+								<li><a href="#">카드뉴스</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="allmenu">
+						<li class="last_gnb_inner_li"> <!--2020-03-03 Class 추가-->
+							<a href="#"><strong>오픈콜라보레이션<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">IIT 제안</a></li>
+								<li><a href="#">제품개발제안</a></li> <!--2020-01-28 new 뱃지 삭제-->
+							</ul>
+						</li>
+						<li class="support_link last_gnb_inner_li">  <!--2020-03-03 Class 추가-->
+							<a href="#"><strong>학술지원사업<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<!-- 2021-06-28 수정 -->
+								<li><a href="#">해외학술대회 중계</a></li>
+								<li><a href="#">연구지원</a></li>
+								<li><a href="#">학술상</a></li>
+								<li class="seokchun"><a href="#">미래의료 연구지원</a></li>
+							</ul>
+						</li>
+						<li> <!--2020-04-14 수정 -->
+							<a href="#"><strong>경제적이익 지출보고서</strong></a>
+						</li>
+						<li class="last_gnb_inner_li"> <!--2020-04-14 Class 추가-->
+							<a href="#"><strong>자문참여</strong></a>
+						</li>
+						<li class="box">
+							<div class="channel">
+								<span>다양한 채널에서<br>닥터빌의 소식을 전해드립니다!</span>
+								<div class="icon_social">
+									<a href="https://www.youtube.com/channel/UCUOV1IWnqpB69okoWNKQeZQ" target="_blank" class="ico_comm_v2 ico_youtube">유투브</a>
+									<a href="http://pf.kakao.com/_zddxgd" target="_blank" class="ico_comm_v2 ico_kakao">카카오플러스친구</a>
+									<a href="https://www.facebook.com/%EB%8B%A5%ED%84%B0%EB%B9%8C-549462672108716/?ref=aymt_homepage_panel&amp;eid=ARCcUFij5OHuJmsLw9LuoiMg-2G-Eh48BWsaU_SSflZGsF0lu7DupXHoRDofX7sdUsEhMT95BrA64x6F" target="_blank" class="ico_comm_v2 ico_facebkook">페이스북</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="bg_gnb"></div>
+<script>
+	$(function () {
+		// ui 작업물 타이틀 확인용
+		var location = $("#container").data("location")
+			,title = $("#container").data("title");
+		$(".header_wrap .tit_page").text(title);
+		if(location === undefined){
+			$(".location_depth1 > a").html(title + '<span class="ico_comm_v2"></span>');
+			$(".location_depth2").hide();
+		}else{
+			$(".location_depth1 > a").html(location + '<span class="ico_comm_v2"></span>');
+			$(".location_depth2 > a").html(title + '<span class="ico_comm_v2"></span>');
+		}
+
+		// 헤더 고정
+		$(window).on("scroll",function(){
+			var headerTop = $(".header_top").height() + 1,
+				scrollTop = $(window).scrollTop();
+			if(scrollTop<headerTop){
+				$("#wrap").removeClass("fixed");
+			}else{
+				$("#wrap").addClass("fixed");
+			}
+		});
+
+		// 2019-12-06 추가
+		var gnbH = $("#gnb").height()
+			,headerH = $("#header").height(); //header 높이값
+
+		function gnbScroll(){
+			var winH = $(window).height(); // 브라우저 높이값
+			if(winH <= gnbH + headerH){
+				$(".header_wrap .gnb_wrap").scrollTop(0).css("height", winH - headerH - 20);
+			}else{
+				$(".header_wrap .gnb_wrap").scrollTop(0).css("height", gnbH - 47 );
+			}
+			//console.log('win' + winH , 'gnbH' + gnbH, 'headerH' + headerH);
+		}
+		// 2019-12-06
+
+
+
+		// 전체메뉴
+		$(".btn_gnb, .bg_gnb").on("click", function(e){
+			e.preventDefault();
+			if($(".header_wrap").hasClass("open")){
+				$("body").css("overflow-y","auto");
+				$(".header_wrap").removeClass("open");
+				$(".btn_gnb").removeClass("open");
+			}else{
+				gnbScroll();
+				$("body").css("overflow-y","hidden");
+				$(".header_wrap").addClass("open");
+				$(".btn_gnb").addClass("open");
+			}
+		});
+		$(window).on("resize",function(){
+			gnbScroll();
+		});
+
+
+		// 검색
+		$(".search_open, .search_close").on("click",function(e){
+			e.preventDefault();
+			var $search = $($(this).attr("href"));
+			$search.toggle();
+		});
+	});
+</script>
+	<!-- header [e] -->
+	<!-- container [s] -->
+	<main id="container" class="" data-location="CME" data-title="해외학회스케치">
+		<h2 class="screen_out">해외학회스케치</h2>
+		<!-- gmeeting_top -->
+		<article class="gmeeting_top">
+			<div class="contents">
+				<strong class="tit">ESOC 2019</strong>
+				<a href="#none" target="_blank" class="ico_comm_v2 ico_homepage">학회 홈페이지 바로가기</a>
+				<span class="ico_badge ico_dday">D-49</span>
+				<span class="ico_badge ico_ing">학회진행중</span>
+			</div>
+		</article>
+		<!-- // gmeeting_top -->
+		<!-- gmeeting_video -->
+		<section class="gmeeting_video">
+			<div class="contents">
+				<h3 class="tit">영상 <em>4/4</em></h3>
+				<div class="video_items">
+					<div class="item " data-video="http://play.wecandeo.com/video/v/?key=BOKNS9AQWrFCfQmImpouOKkisissk4is24IT02Arha2FF1mQwUKu8I7Piiho4pqLKNis4ZCy4IG7kZTQ431147TteoAieie&auto=true">
+						<a href="#none">
+							<figure class="thumb_img"><img src="../../images/gmeeting/list_thumbnail_JSN2019.jpg" alt=""></figure>
+							<div class="">
+								<p class="video_tit">닥터빌이 국내 유명 Dr.와 함께 ESOC2019에 방문합니다.</p>
+								<span class="tail">김닥터 교수</span>
+							</div>
+						</a>
+					</div>
+					<div class="item " data-video="http://play.wecandeo.com/video/v/?key=BOKNS9AQWrFCfQmImpouOKkisissk4is24IOaCdxPsfT5dipTOkufQj9PCho4pqLKNis4ZCy4IG7kZTQ431147TteoAieie&auto=true">
+						<figure class="thumb_img"><img src="../../images/gmeeting/list_thumbnail_IFSSH2019.jpg" alt=""></figure>
+						<div class="">
+							<p class="video_tit">닥터빌이 국내 유명 Dr.와 함께 ESOC2019에 방문합니다.</p>
+							<span class="tail">김닥터 교수</span>
+						</div>
+					</div>
+					<div class="item" data-video="http://play.wecandeo.com/video/v/?key=BOKNS9AQWrFfd6seaYgM0YYF3MuyLyFiidze06fIisz7mlAB2vip2WlMCho4pqLKNis4C5XTaht0slXhNip0w7UAisGwieie">
+						<figure class="thumb_img"><img src="../../images/gmeeting/list_thumbnail_ESOC2019.jpg" alt=""></figure>
+						<div class="">
+							<p class="video_tit">닥터빌이 국내 유명 Dr.와 함께 ESOC2019에 방문합니다.</p>
+							<span class="tail">김닥터 교수</span>
+						</div>
+					</div>
+					<div class="item" data-video="http://play.wecandeo.com/video/v/?key=BOKNS9AQWrFfd6seaYgM0YYF3MuyLyFiidze06fIisz7nOiplvllwhpqSho4pqLKNis4C5XTaht0slXhNip0w7UAisGwieie">
+						<figure class="thumb_img"><img src="../../images/gmeeting/list_thumbnail_HRS2019.jpg" alt=""></figure>
+						<div class="">
+							<p class="video_tit">닥터빌이 국내 유명 Dr.와 함께 ESOC2019에 방문합니다.</p>
+							<span class="tail">김닥터 교수</span>
+						</div>
+					</div>
+					<div class="item" data-video="http://play.wecandeo.com/video/v/?key=BOKNS9AQWrFfd6seaYgM0YYF3MuyLyFiidze06fIisz7nw2lpYiposzKSho4pqLKNis4C5XTaht0slXhNip0w7UAisGwieie">
+						<figure class="thumb_img"><img src="../../images/gmeeting/list_thumbnail_DDW2019.jpg" alt=""></figure>
+						<div class="">
+							<p class="video_tit">닥터빌이 국내 유명 Dr.와 함께 ESOC2019에 방문합니다.</p>
+							<span class="tail">김닥터 교수</span>
+						</div>
+					</div>
+					<div class="item" data-video="http://play.wecandeo.com/video/v/?key=BOKNS9AQWrFCfQmImpouOKkisissk4is24IOaCdxPsfT5dipTOkufQj9PCho4pqLKNis4ZCy4IG7kZTQ431147TteoAieie&auto=true">
+						<figure class="thumb_img"><img src="../../images/gmeeting/list_thumbnail_IFSSH2019.jpg" alt=""></figure>
+						<div class="">
+							<p class="video_tit">닥터빌이 국내 유명 Dr.와 함께 ESOC2019에 방문합니다.</p>
+							<span class="tail">김닥터 교수</span>
+						</div>
+					</div>
+					<div class="item" data-video="http://play.wecandeo.com/video/v/?key=BOKNS9AQWrFfd6seaYgM0YYF3MuyLyFiidze06fIisz7mlAB2vip2WlMCho4pqLKNis4C5XTaht0slXhNip0w7UAisGwieie">
+						<figure class="thumb_img"><img src="../../images/gmeeting/list_thumbnail_ESOC2019.jpg" alt=""></figure>
+						<div class="">
+							<p class="video_tit">닥터빌이 국내 유명 Dr.와 함께 ESOC2019에 방문합니다.</p>
+							<span class="tail">김닥터 교수</span>
+						</div>
+					</div>
+					<div class="item" data-video="http://play.wecandeo.com/video/v/?key=BOKNS9AQWrFfd6seaYgM0YYF3MuyLyFiidze06fIisz7nOiplvllwhpqSho4pqLKNis4C5XTaht0slXhNip0w7UAisGwieie">
+						<figure class="thumb_img"><img src="../../images/gmeeting/list_thumbnail_HRS2019.jpg" alt=""></figure>
+						<div class="">
+							<p class="video_tit">닥터빌이 국내 유명 Dr.와 함께 ESOC2019에 방문합니다.</p>
+							<span class="tail">김닥터 교수</span>
+						</div>
+					</div>
+					<div class="item on" data-video="http://play.wecandeo.com/video/v/?key=BOKNS9AQWrFfd6seaYgM0YYF3MuyLyFiidze06fIisz7nw2lpYiposzKSho4pqLKNis4C5XTaht0slXhNip0w7UAisGwieie">
+						<figure class="thumb_img"><img src="../../images/gmeeting/list_thumbnail_DDW2019.jpg" alt=""></figure>
+						<div class="">
+							<p class="video_tit">닥터빌이 국내 유명 Dr.와 함께 ESOC2019에 방문합니다.</p>
+							<span class="tail">김닥터 교수</span>
+						</div>
+					</div>
+				</div>
+				<div class="video">
+					<!--<iframe width="700" height="423" src="http://play.wecandeo.com/video/v/?key=BOKNS9AQWrFCfQmImpouOKkisissk4is24IT02Arha2FF1mQwUKu8I7Piiho4pqLKNis4ZCy4IG7kZTQ431147TteoAieie&auto=true " allow="fullscreen;" frameborder="0"></iframe>-->
+				</div>
+				<div class="video_info">
+					<strong class="video_tit">닥터빌이 국내 유명 Dr.와 함께 ESOC2019에 방문합니다</strong>
+					<span class="tail">김나영 교수(서울의대) | 2019-07-31</span>
+					<div class="btn_right">
+						<a href="#none" class="btn_blue btn_satisfy" target="_blank"><span class="ico_comm_v2"></span>만족도 조사</a> <!--2019-08-28 text 변경-->
+						<a href="#none" class="btn_white">상세보기</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- // gmeeting_video -->
+		<div class="tab_area">
+			<div class="tab_header">
+				<ul class="tab_menu">
+					<li class="on"><a href="#tab_agend">사전 질문하기</a></li>
+					<li><a href="#tab_vote">듣고 싶은 세션 투표하기</a></li>
+					<li><a href="#tab_report">학회 리뷰</a></li>
+					<li><a href="#tab_doctor">참여 Dr.</a></li>
+				</ul>
+			</div>
+			<!--2019-08-20 배너영역 추가-->
+			<div class="banner_wrap">
+				<div class="banner"><script type="text/javascript" SRC="http://realmedia.hidoc.co.kr/RealMedia/ads/adstream_jx.ads/www.doctorville.co.kr/doctorville_oversea_top@Top"></script></div>
+			</div>
+			<!-- inner [s] -->
+			<!--사전 질문하기-->
+			<div id="tab_agend" class="contents">
+				<h3 class="tit_cont">AGENDA</h3>
+				<div class="txt_list">
+					■ SLGT-2 억제제의 신장보호 효과  김닥터 교수(서울의대)<br>
+					■ Immune checkpoint inhibitor에 의한 급성 신손상  김닥터 교수(서울의대)
+				</div>
+				<div class="tit_cont">
+					<strong class="tit"><span class="ico_comm_v2 ico_Q">Q</span>학회나 Agenda 관련 궁금한 내용을 자유롭게 질문해주세요</strong>
+					<p class="txt">질문하신 내용은 세션인터뷰 혹은 라이브세미나를 통해 답변드리겠습니다.</p>
+				</div>
+				<!-- 댓글 -->
+				<!--#include virtual="../../html/common/comment.html" -->
+				<!-- //댓글 -->
+			</div>
+			<!--듣고 싶은 세션 투표하기-->
+			<div id="tab_vote" class="contents" style="display:none">
+				<div class="tit_cont">
+					<strong class="tit"><span class="ico_comm_v2 ico_Q">Q</span>듣고 싶은 세션을 2개 선택해주세요</strong>
+					<p class="txt">가장 많은 표를 받은 세미나 3개를 리뷰해드립니다. <span> (*현지 사정에 따라 참석 일정이 변경될 수 있습니다.)</span></p>
+				</div>
+				<div class="vote">
+					<div class="item">
+						<p class="input_check">
+							<input type="checkbox" id="choice1" name="vote_choice" class="inp_chkbox">
+							<label for="choice1" class="tit_chkbox">
+								<span class="txt_check"><span class="ico_comm_v2"></span>ANSPA Anuual Meeting </span>
+								<span class="txt_choice">듣고싶어요 <span class="num_check">103</span></span>
+							</label>
+						</p>
+					</div>
+					<div class="item">
+						<p class="input_check">
+							<input type="checkbox" id="choice2" name="vote_choice" class="inp_chkbox">
+							<label for="choice2" class="tit_chkbox">
+								<span class="txt_check"><span class="ico_comm_v2"></span>ANSPA Anuual Meeting</span>
+								<span class="txt_choice"></span>
+							</label>
+						</p>
+					</div>
+					<div class="item">
+						<p class="input_check">
+							<input type="checkbox" id="choice3" name="vote_choice" class="inp_chkbox">
+							<label for="choice3" class="tit_chkbox">
+								<span class="txt_check"><span class="ico_comm_v2"></span>ANSPA Anuual Meeting</span>
+								<span class="txt_choice">듣고싶어요 <span class="num_check">3</span></span>
+							</label>
+						</p>
+					</div>
+					<div class="item">
+						<p class="input_check">
+							<input type="checkbox" id="choice4" name="vote_choice" class="inp_chkbox">
+							<label for="choice4" class="tit_chkbox">
+								<span class="txt_check"><span class="ico_comm_v2"></span>ANSPA Anuual Meeting</span>
+								<span class="txt_choice"></span>
+							</label>
+						</p>
+					</div>
+					<div class="item">
+						<p class="input_check">
+							<input type="checkbox" id="choice5" name="vote_choice" class="inp_chkbox">
+							<label for="choice5" class="tit_chkbox">
+								<span class="txt_check"><span class="ico_comm_v2"></span>ANSPA Anuual Meeting</span>
+								<span class="txt_choice">듣고싶어요 <span class="num_check">31</span></span>
+							</label>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--학회 리뷰-->
+			<div id="tab_report" class="contents" style="display:none">
+				<h3 class="tit_cont">핵심포인트</h3>
+				<div class="txt_list">
+					1. SLGT-2 억제제의 신장보호 효과<br>
+					2. Immune checkpoint inhibitor에 의한 급성 신손상
+				</div>
+				<div class="tit_cont">리포트</div>
+				<div class="report">
+					<div class="item">
+						<a href="gmeeting_report.html" class="report_box" title="가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가">
+							<figure><img src="../../images/gmeeting/list_thumbnail_ESOC2019.jpg" alt=""></figure>
+							<div class="cont">
+								<span class="ico_comm_v2 ico_report">REPORT</span>
+								<p class="report_tit">가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가</p>
+								<span class="tail">김닥터 교수(분당서울대학교병원)</span>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="gmeeting_report.html" class="report_box" title="ESOC 2019를 다녀와서">
+							<figure><img src="../../images/gmeeting/list_thumbnail_ESOC2019.jpg" alt=""></figure>
+							<div class="cont">
+								<span class="ico_comm_v2 ico_report">REPORT</span>
+								<p class="report_tit">ESOC 2019를 다녀와서</p>
+								<span class="tail">김닥터 교수(서울의대)</span>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="gmeeting_report.html" class="report_box" title="ESOC 2019를 다녀와서">
+							<figure><img src="../../images/gmeeting/list_thumbnail_ESOC2019.jpg" alt=""></figure>
+							<div class="cont">
+								<span class="ico_comm_v2 ico_report">REPORT</span>
+								<p class="report_tit">ESOC 2019를 다녀와서</p>
+								<span class="tail">김닥터 교수(서울의대)</span>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="gmeeting_report.html" class="report_box" title="ESOC 2019를 다녀와서">
+							<figure><img src="../../images/gmeeting/list_thumbnail_ESOC2019.jpg" alt=""></figure>
+							<div class="cont">
+								<span class="ico_comm_v2 ico_report">REPORT</span>
+								<p class="report_tit">ESOC 2019를 다녀와서</p>
+								<span class="tail">김닥터 교수(서울의대)</span>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="gmeeting_report.html" class="report_box" title="ESOC 2019를 다녀와서">
+							<figure><img src="../../images/gmeeting/list_thumbnail_ESOC2019.jpg" alt=""></figure>
+							<div class="cont">
+								<span class="ico_comm_v2 ico_report">REPORT</span>
+								<p class="report_tit">ESOC 2019를 다녀와서</p>
+								<span class="tail">김닥터 교수(서울의대)</span>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="gmeeting_report.html" class="report_box" title="가가가가가가가가가가가가가가">
+							<figure><img src="../../images/gmeeting/list_thumbnail_ESOC2019.jpg" alt=""></figure>
+							<div class="cont">
+								<span class="ico_comm_v2 ico_report">REPORT</span>
+								<p class="report_tit">가가가가가가가가가가가가가가</p>
+								<span class="tail">김닥터 교수(서울의대)</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--참여 Dr.-->
+			<div id="tab_doctor" class="contents" style="display:none">
+				<h3 class="screen_out">참여 doctor</h3>
+				<div class="doctors">
+					<div class="doctor_info">
+						<figure class="doctor_img"><img src="../../images/gmeeting/doctor_thumbnail_ESOC2019_01.png" alt=""></figure>
+						<div class="info">
+							<strong class="doctor">정종원 교수<span>성균관의대</span></strong>
+							<p><span>소속</span><em>삼성서울병원</em></p>
+							<p><span>전문분야</span><em>뇌졸증</em></p>
+						</div>
+					</div>
+					<div class="doctor_info">
+						<figure class="doctor_img"><img src="../../images/gmeeting/doctor_DDW2019_02.png" alt=""></figure>
+						<div class="info">
+							<strong class="doctor">정대영 교수<span>가톨릭의대</span></strong>
+							<p><span>소속</span><em>가톨릭대학교 여의도성모병원</em></p>
+							<p><span>전문분야</span><em>위 말트(MALT), 림프종, 내시경 수술, 위-식도 질환, 위암과 대장암, 크론병과 대장염</em></p>
+						</div>
+					</div>
+					<div class="doctor_info">
+						<figure class="doctor_img"><img src="../../images/gmeeting/doctor_DDW2019_03.png" alt=""></figure>
+						<div class="info">
+							<strong class="doctor">김나영 교수<span>서울의대</span></strong>
+							<p><span>소속</span><em>분당서울대학교병원</em></p>
+							<p><span>전문분야</span><em>식도질환, 소화성궤양, 위암, 위염, 대장질환​</em></p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<a href="gmeeting.html" class=" btn_go_list"><span class="btn_comm">목록으로 가기</span></a>
+	</main>
+	<a href="#none" class="btn_comm btn_top">TOP</a>
+	<!-- container [e] -->
+	<!-- footer [s] 로그인  -->
+<footer id="footer" class="f_v3"> <!-- class="f_v3" 추가 -->
+	<h2 class="screen_out">회사 및 서비스 이용정보</h2>
+	<div class="info_foot top">
+		<div class="inner_info">
+			<strong class="tit_notice">공지사항<span class="txt_bar">|</span></strong>
+			<ul class="cycle-slideshow  list_notice" data-cycle-fx="scrollHorz" data-cycle-timeout="0" data-cycle-slides="> li" data-cycle-prev=".btn_noticePrev" data-cycle-next=".btn_noticeNext">
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관변경 1닥터빌 회원의 이용약관 변경 1닥터빌 회원의 이용약관 변경 1</a></li>
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관 변경 2</a></li>
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관 변경 3</a></li>
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관 변경 4</a></li>
+			</ul>
+			<div class="wrap_btn">
+				<a href="#none" class="btn_comm btn_noticePrev">이전</a>
+				<a href="#none" class="btn_comm btn_noticeNext">다음</a>
+			</div>
+			<!--<a href="#pop_footAllmenu" class="link_sitemap">서비스 전체보기<span class="ico_comm2"></span></a> 삭제-->
+		</div>
+	</div>
+	<div class="info_foot btm">
+		<a href="#none" class="ico_comm_v2 tit_doctor">닥터빌 홈 바로가기</a>
+		<div class="inner_info">
+			<ul class="list_footer">
+				<li><a href="#none" class="link_footer">회사소개</a><span class="txt_bar">|</span></li>
+				<li class=""><a href="#none" class="link_footer">고객센터</a><span class="txt_bar">|</span></li>
+				<li><a href="../intro/with.html" class="link_footer">제휴문의</a><span class="txt_bar">|</span></li>
+				<li><a href="../intro/policy.html" class="link_footer">이용약관</a><span class="txt_bar">|</span></li>
+				<!-- 2021-06-03 개인정보처리방침 볼드처리 -->
+				<li><a href="../intro/userinfo.html" class="link_footer"><strong>개인정보처리방침</strong></a><span class="txt_bar">|</span></li>
+				<li><a href="#none" class="link_footer link_tuor">서비스투어</a></li>
+			</ul>
+			<div class="wrap_family">
+				<a href="#none" class="btn_family">FAMILY SITE <span class="ico_comm">목록 펼치기</span></a>
+				<ul class="list_family">
+					<li><a href="" target="_blank">FAMILY SITE 1</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 2</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 3</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 4</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 5</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 6</a></li>
+				</ul>
+			</div>
+		</div>
+		<address class="inner_info">
+			<div>서울 강남구 봉은사로 114길 12 (삼성동)<span class="txt_bar">|</span>대표자 : 김명석<span class="txt_bar">|</span>사업자번호 : 120-86-10499<br>
+			대표전화 : 1522-0209<span class="txt_bar">|</span>팩스 : 02-563-8399</div> <!-- 2019-02-12 팩스번호 변경 -->
+			<div class="icon_social">
+				<a href="https://www.youtube.com/channel/UCUOV1IWnqpB69okoWNKQeZQ" target="_blank" class="ico_comm_v2 ico_youtube">유투브</a>
+				<a href="http://pf.kakao.com/_zddxgd" target="_blank" class="ico_comm_v2 ico_kakao">카카오플러스친구</a>
+				<a href="https://www.facebook.com/%EB%8B%A5%ED%84%B0%EB%B9%8C-549462672108716/?ref=aymt_homepage_panel&eid=ARCcUFij5OHuJmsLw9LuoiMg-2G-Eh48BWsaU_SSflZGsF0lu7DupXHoRDofX7sdUsEhMT95BrA64x6F" target="_blank" class="ico_comm_v2 ico_facebkook">페이스북</a>
+			</div>
+		</address>
+		<div class="inner_info copy">
+			<span class="copyright">Copyright <em class="emph_addr">ⓒ Mcircle.</em> All right reserved</span>
+			<span class="copyright">VERIFIED & SECURED Site</span>
+		</div>
+	</div>
+</footer>
+<!-- footer [e] 로그인  -->
+
+<!-- footer [s] 프로필, 처방노트
+<footer id="footer" class="f_v3">
+	<h2 class="screen_out">회사 및 서비스 이용정보</h2>
+	<div class="info_foot btm">
+		<a href="#none" class="ico_comm_v2 tit_doctor">닥터빌 홈 바로가기</a>
+		<div class="inner_info copy">
+			<span class="copyright">Copyright <em class="emph_addr">ⓒ Mcircle.</em> All right reserved</span>
+			<span class="copyright">VERIFIED & SECURED Site</span>
+		</div>
+	</div>
+</footer>-->
+<!-- footer [e] 프로필, 처방노트 -->
+	<script>
+		$(".btn_family").bind("click", function(e){
+			var target = $('.list_family'),
+				 state = target.css('display');
+			if(state == "block"){
+				$(this).find(".ico_comm").text('목록 펼치기').removeClass('open');
+				target.hide();
+			}else{
+				$(this).find(".ico_comm").text('목록 접기').addClass('open');
+				target.show();
+			}
+			return false;
+		})
+		$(".list_family  a").bind("click",function(){
+			$(".btn_family").trigger('click');
+		})
+		$(".link_sitemap").on("click", function(e) {
+			e.preventDefault();
+			var link = $(this).attr("href");
+			console.log (link);
+			$("#pop_footAllmenu").toggle();
+		});
+	</script>
+
+	<!--#include virtual="../../html/common/popup.html" -->
+</div>
+<script>
+	//로딩시 선택된 영상
+	$(window).load (function(){
+		var firstVideo = $(".video_items").find(".on");
+		var videoSrc = firstVideo.data('video');  // 영상주소
+		// 2019-08-19 추가
+		var index = firstVideo.index();		// 영상 순서
+		$(".video_items").animate({"scrollTop": index*60},50);
+		firstVideo.parent().siblings(".video").html("<iframe width='700' height='423' src=" + videoSrc + " allow='fullscreen;' frameborder='0'></iframe>");
+	})
+
+	$(function() {
+		// 하위메뉴 숨김 
+		/* $(".list_lnb").find(".current").children("ul").hide();
+		$("#header").removeClass("adddepth"); */
+		// 영상스케치
+		$(".video_items .item").on("click", function () {
+			var videoSrc = $(this).data('video');  // 영상주소
+			$(".video_items .item").removeClass("on");
+			$(this).addClass("on");
+			// 2019-08-19 추가
+			var index = $(this).index();	// 영상 순서
+			$(".video_items").animate({"scrollTop": index*60},500);
+			$(this).parent().siblings(".video").html("<iframe width='700' height='423' src=" + videoSrc + " allow='fullscreen;' frameborder='0'></iframe>");
+		});
+
+		//tab
+		socialUI.tab({
+			"tabs": $(".tab_menu a"),
+			"activeClass": "on"
+		});
+
+		// 듣고싶은 세션 투표
+		$('input[name="vote_choice"]').change(function() {
+			var vote_choice = $("input[name='vote_choice']:checked").size(); // 체크 갯수
+			var checked = $(this).prop('checked');  // checked 상태
+			var numCheck = $(this).siblings(".tit_chkbox").find(".num_check").html()*1; // 투표수
+
+			// 2개 이상 체크시
+			if(vote_choice > 2) {
+				$(this).prop('checked', false);  // checked 해제
+				modalLayer = socialUI.modalLayerComm({
+					"type": 4,
+					"title": "알림",
+					"description": "최대 2개의 세션을 선택할 수 있습니다.<br>변경을 원하시면 이전에 선택한 세션을 취소해주세요."
+				});
+			}else{
+				var txtChoice  = $(this).siblings(".tit_chkbox").find(".txt_choice").text(); // 투표(텍스트) 여부 체크
+				if(!txtChoice){
+					$(this).siblings(".tit_chkbox").find(".txt_choice").html("듣고싶어요 <span class='num_check'>1</span>"); // 텍스트 노출
+				}else{
+					if(checked){
+						numCheck += 1; // 체크시 1증가
+						$(this).siblings(".tit_chkbox").find(".num_check").html(numCheck);
+
+					}else {
+						numCheck -= 1; // 체크시 1감소
+						if(numCheck === 0){ // 투표수 0이 되었을경우
+							$(this).siblings(".tit_chkbox").find(".txt_choice").html(""); // 텍스트 삭제
+						}else{
+							$(this).siblings(".tit_chkbox").find(".num_check").html(numCheck);
+						}
+					}
+				}
+			}
+		});
+	});
+</script>
+</body>
+</html>

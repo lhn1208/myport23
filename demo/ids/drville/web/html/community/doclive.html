@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>의사 소셜</title>
+	<link rel="shortcut icon" href="../../images/_favicon.ico" type="image/x-icon"><!-- 2016-01-11 파비콘 추가 -->
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<!-- <script src="../../js/jquery.placeholder.js"></script> -->
+	<!-- <script src="../../js/common.js"></script> -->
+	<script src="../../js/ui.js"></script>
+	<script src="../../js/jquery.bpopup.min.js"></script>
+	<script src="../../js/jquery.wmuSlider.min.js"></script>
+	<script src="../../js/jquery.tmpl.min.js"></script>
+	<script src="../../js/jquery.cycle2.min.js"></script>
+	 <!--2022 리뉴얼 js추가-->
+	 <script src="../../js/swiper.min.js"></script> 
+	 
+ <!--리뉴얼 css [s]-->
+	<!-- <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/drv_renewal_sub.css">
+     -->
+ <!--리뉴얼 css [e]-->	
+	<link rel="stylesheet" type="text/css" href="../../css/style_v3.css">
+	 <!--2022 리뉴얼 css추가-->
+	<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+
+<link rel="stylesheet" type="text/css" href="../../css/community.css">
+</head>
+<body>
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+	<a href="#gnb">메뉴 바로가기</a>
+</div>
+<div id="wrap">
+	<!-- header -->
+	<header id="header" class="header_wrap">
+	<div class="header_top">
+		<div class="header_inner">
+			<h1><a href="#none" class="ico_comm_v2 tit_drville">DrVille</a></h1>
+			<h2 class="tit_page">&nbsp;</h2>
+			<!-- 로그인시 노출 -->
+			<div class="member_wrap">
+				<ul class="tools">
+					<li class="direct_link">
+						<a href="#">닥터빌 님<span class="ico_comm_v2"></span></a>
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">마이페이지</a>
+								<a href="#">고객센터</a>
+								<a href="#">1:1문의하기</a>
+								<a href="#">공지사항</a> <!--2020-01-14 리스트 추가-->
+								<a href="#">로그아웃</a>
+							</div>
+						</div>
+					</li>
+					<li class="point">
+						<a href="#">1,321,800P</a>
+					</li>
+					<li class="notice new">
+						<a href="#"><span class="ico_comm_v2">알림</span></a>
+					</li>
+				</ul>
+			</div>
+			<!-- 비로그인시 노출 -->
+			<div class="btn_header">
+				<a href="#" class="btn_login">로그인</a>
+				<a href="#" class="btn_join">Mcircle 회원가입</a>
+			</div>
+		</div>
+	</div>
+	<div class="header_btm">
+		<div class="header_inner">
+			<a href="#gnb" class="btn_gnb"><span class="btn_open"><span class="ico_open">전체 메뉴 열기</span></span></a>
+			<div class="location_wrap">
+				<ul class="location tools">
+					<li class="location_home">
+						<a href="#">홈</a>
+					</li>
+					<li class="location_depth1">
+						<a href="#">CME<span class="ico_comm_v2"></span></a>
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">CME</a>
+								<a href="#">해외의학서비스</a>
+								<a href="#">진료가이드</a>
+								<a href="#">병원경영</a>
+								<a href="#">혜택</a>
+								<a href="#">커뮤니티</a>
+								<a href="#">브랜드존</a>
+								<a href="#">포인트샵</a>
+								<a href="#">라이프</a>
+								<a href="#">자료실</a>
+								<a href="#">오픈콜라보레이션</a>
+								<a href="#">학술지원사업</a>
+								<a href="#">경제적이익 지출보고서</a>
+							</div>
+						</div>
+					</li>
+					<li class="location_depth2">
+						<a href="#">라이브세미나<span class="ico_comm_v2"></span></a>
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">라이브세미나</a>
+								<a href="#">다시보기 VOD</a>
+								<a href="#">CME매거진</a>
+								<a href="#">진진영</a>
+								<a href="#">해외학회스케치</a>
+								<a href="#">해외학회스케치 참여신청</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="service_list">
+				<ul>
+					<li><a href="#">라이브세미나</a></li>
+					<li><a href="#">해외의학서비스</a></li>
+					<li><a href="#">드럭인포</a></li>
+					<li><a href="#">자유게시판</a></li>
+					<li><a href="#">포인트샵</a></li>
+					<li><a href="#">피부비만성형포럼</a></li>
+					<!-- 2020-06-24 추가 [s] -->
+					<li><a href="#">닥터빌 아카데미</a></li>
+					<!-- 2020-06-24 추가 [e] -->
+				</ul>
+			</div>
+			<a href="#search_all" class="search_open"><span class="ico_comm_v2">통합검색</span></a>
+		</div>
+		<section id="search_all" class="section_search">
+			<h3 class="screen_out">검색</h3>
+			<div class="header_inner">
+				<form class="form_search" role="search">
+					<fieldset>
+						<legend class="screen_out">검색</legend>
+						<div class="box_search">
+							<input type="text" class="tf_keyword" title="검색어 입력" placeholder="검색할 내용을 입력하세요.">
+							<button type="submit" class="btn_search"><span class="ico_comm_v2">통합검색</span></button>
+						</div>
+					</fieldset>
+				</form>
+				<a href="#search_all" class="search_close"><span class="ico_comm_v2">통합검색 닫기</span></a>
+			</div>
+		</section>
+		<div id="gnb" class="gnb">
+			<div class="gnb_top">
+				<div class="gnb_inner">
+					<!-- 2022-08-31 수정 -->
+					<span class="badge_new_service">Now</span>
+					<a href="#" class="tit_new_service">해외학회스케치</a> 
+
+				</div>
+			</div>
+			<div class="gnb_wrap"> <!--2019-11-18 태그 추가-->
+				<div class="gnb_inner">
+					<ul class="allmenu">
+						<li>
+							<strong>CME</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">세미나편성표<span class="ico_comm_v2 ico_point">point</span></a></li>
+								<li><a href="#">다시보기VOD</a></li>
+								<li><a href="#">닥터빌 ON<span class="ico_comm_v2 ico_play">point</span></a></li>
+								<li><a href="#">CME매거진</a></li>
+								<li><a href="#">진진영</a></li>
+								<li><a href="#">해외학회스케치</a></li>
+								<li><a href="#">해외학회스케치 참여신청</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><strong>해외의학서비스<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">의학논문검색</a></li>
+								<li><a href="#">UpToDate</a></li>
+								<li><a href="#">DynaMed Plus</a></li>
+								<li><a href="#">Smart Imagebase</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>진료가이드</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">드럭인포</a></li>
+								<li><a href="#">학회/연수일정</a></li>
+								<li><a href="#">해외컨퍼런스</a></li>
+								<li><a href="#">해외의학뉴스</a></li>
+								<li><a href="#">처방가이드</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>병원경영</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">병원성공경영가이드<span class="ico_new">NEW</span></a></li> <!--2020-01-28 메뉴 추가-->
+								<li><a href="#">보험인정기준</a></li>
+								<li><a href="#">심사청구</a></li>
+								<li><a href="#">보험심사 청구 컨설팅</a></li>
+								<li><a href="#">개원가 실전 진료 Tip</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>혜택</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">설문<span class="ico_comm_v2 ico_point">point</span></a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="allmenu">
+						<li>
+							<strong>커뮤니티</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">자유게시판</a></li>
+								<li><a href="#">닥라이브<span class="ico_comm_v2 ico_point">point</span></a></li>
+								<li><a href="#">스터디룸</a></li>
+								<li><a href="#">피부비만성형포럼</a></li>
+								<!-- 2020-06-24 추가 [s] -->
+								<li><a href="#">닥터빌 아카데미</a></li>
+								<!-- 2020-06-24 추가 [e] -->
+							</ul>
+						</li>
+						<li>
+							<a href="#"><strong>브랜드존<span class="ico_comm_v2 ico_point">point</span><span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">의약품</a></li>
+								<li><a href="#">의료기기</a></li>
+								<li><a href="#">최신진료장비</a></li> <!-- 2019-12-06 수정 -->
+								<li><a href="#">스페셜라이프</a></li>
+								<li><a href="#">홍보영상</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><strong>포인트샵<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">영화</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">호텔</a></li>
+								<li><a href="#">여행</a></li>
+								<li><a href="#">기프티콘</a></li>
+								<li><a href="#">하늘맛</a></li>
+								<li><a href="#">SERICEO</a></li>
+								<li><a href="#">JArt</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>라이프</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">여행</a></li>
+								<li><a href="#">식신</a></li>
+								<li><a href="#">트렌드</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>자료실</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">서식</a></li>
+								<li><a href="#">케어노트</a></li>
+								<li><a href="#">카드뉴스</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="allmenu">
+						<li class="last_gnb_inner_li"> <!--2020-03-03 Class 추가-->
+							<a href="#"><strong>오픈콜라보레이션<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">IIT 제안</a></li>
+								<li><a href="#">제품개발제안</a></li> <!--2020-01-28 new 뱃지 삭제-->
+							</ul>
+						</li>
+						<li class="support_link last_gnb_inner_li">  <!--2020-03-03 Class 추가-->
+							<a href="#"><strong>학술지원사업<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<!-- 2021-06-28 수정 -->
+								<li><a href="#">해외학술대회 중계</a></li>
+								<li><a href="#">연구지원</a></li>
+								<li><a href="#">학술상</a></li>
+								<li class="seokchun"><a href="#">미래의료 연구지원</a></li>
+							</ul>
+						</li>
+						<li> <!--2020-04-14 수정 -->
+							<a href="#"><strong>경제적이익 지출보고서</strong></a>
+						</li>
+						<li class="last_gnb_inner_li"> <!--2020-04-14 Class 추가-->
+							<a href="#"><strong>자문참여</strong></a>
+						</li>
+						<li class="box">
+							<div class="channel">
+								<span>다양한 채널에서<br>닥터빌의 소식을 전해드립니다!</span>
+								<div class="icon_social">
+									<a href="https://www.youtube.com/channel/UCUOV1IWnqpB69okoWNKQeZQ" target="_blank" class="ico_comm_v2 ico_youtube">유투브</a>
+									<a href="http://pf.kakao.com/_zddxgd" target="_blank" class="ico_comm_v2 ico_kakao">카카오플러스친구</a>
+									<a href="https://www.facebook.com/%EB%8B%A5%ED%84%B0%EB%B9%8C-549462672108716/?ref=aymt_homepage_panel&amp;eid=ARCcUFij5OHuJmsLw9LuoiMg-2G-Eh48BWsaU_SSflZGsF0lu7DupXHoRDofX7sdUsEhMT95BrA64x6F" target="_blank" class="ico_comm_v2 ico_facebkook">페이스북</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="bg_gnb"></div>
+<script>
+	$(function () {
+		// ui 작업물 타이틀 확인용
+		var location = $("#container").data("location")
+			,title = $("#container").data("title");
+		$(".header_wrap .tit_page").text(title);
+		if(location === undefined){
+			$(".location_depth1 > a").html(title + '<span class="ico_comm_v2"></span>');
+			$(".location_depth2").hide();
+		}else{
+			$(".location_depth1 > a").html(location + '<span class="ico_comm_v2"></span>');
+			$(".location_depth2 > a").html(title + '<span class="ico_comm_v2"></span>');
+		}
+
+		// 헤더 고정
+		$(window).on("scroll",function(){
+			var headerTop = $(".header_top").height() + 1,
+				scrollTop = $(window).scrollTop();
+			if(scrollTop<headerTop){
+				$("#wrap").removeClass("fixed");
+			}else{
+				$("#wrap").addClass("fixed");
+			}
+		});
+
+		// 2019-12-06 추가
+		var gnbH = $("#gnb").height()
+			,headerH = $("#header").height(); //header 높이값
+
+		function gnbScroll(){
+			var winH = $(window).height(); // 브라우저 높이값
+			if(winH <= gnbH + headerH){
+				$(".header_wrap .gnb_wrap").scrollTop(0).css("height", winH - headerH - 20);
+			}else{
+				$(".header_wrap .gnb_wrap").scrollTop(0).css("height", gnbH - 47 );
+			}
+			//console.log('win' + winH , 'gnbH' + gnbH, 'headerH' + headerH);
+		}
+		// 2019-12-06
+
+
+
+		// 전체메뉴
+		$(".btn_gnb, .bg_gnb").on("click", function(e){
+			e.preventDefault();
+			if($(".header_wrap").hasClass("open")){
+				$("body").css("overflow-y","auto");
+				$(".header_wrap").removeClass("open");
+				$(".btn_gnb").removeClass("open");
+			}else{
+				gnbScroll();
+				$("body").css("overflow-y","hidden");
+				$(".header_wrap").addClass("open");
+				$(".btn_gnb").addClass("open");
+			}
+		});
+		$(window).on("resize",function(){
+			gnbScroll();
+		});
+
+
+		// 검색
+		$(".search_open, .search_close").on("click",function(e){
+			e.preventDefault();
+			var $search = $($(this).attr("href"));
+			$search.toggle();
+		});
+	});
+</script>
+	<!-- header [e] -->
+	<!-- container [s] -->
+	<main id="container" class="doclive" data-location="커뮤니티" data-title="닥라이브">
+		<h2 class="screen_out">닥라이브</h2>
+		<!-- doclive_top [s] -->
+		<div class="doclive_top">
+			<div class="inner">
+				<h3 class="logo_doclive">닥터빌 라이브 퀴즈쇼 닥라이브</h3> <!--2018-10-26 닥라이브 로고 추가-->
+				<!-- <div class="ad"><script type="text/javascript" src="http://white.contentsfeed.com/RealMedia/ads/adstream_jx.ads/www.doctorville.co.kr/doctorville_newmain_RM@Right"></script></div> -->
+				<div class="doctoday">
+					<strong class="date">9/14 (금) <span class="time">12:30</span></strong>
+					<strong class="prize"><span class="txt">상금</span> 10,000,000 <span class="txt_p">P</span></strong>
+					<p class="tit">졸레드론산과 함께하는 닥라이브~ 졸레드론산과 함께하는 닥라이브~</p>
+					<a href="#none" class="btn btn_not_go">퀴즈가 진행중입니다.</a>   <!-- 2018-11-05 추가	-->
+					<a href="./doclive_view.html" class="btn btn_go">입장하기 ></a>
+					<a href="#none" class="btn btn_standby">대기중...</a>  <!-- 2018-10-26 버튼 텍스트 수정 -->
+				</div>
+				<div class="doc_next">
+					<strong class="ico_nextlive"><span class="ico_comm3">NEXT LIVE</span></strong>
+					<ul class="next_list">
+						<li>
+							<span class="date"><strong>9/2</strong>(금)<br> <span class="time">12:30</span></span>
+							<strong class="prize">9,999,999 <span class="txt_p">P</span></strong>
+						</li>
+						<li>
+							<span class="date"><strong>10/22</strong>(금)<br> <span class="time">12:30</span></span>
+							<strong class="prize">10,000,000 <span class="txt_p">P</span></strong>
+						</li>
+						<li>
+							<span class="date"><strong>11/4</strong>(금)<br> <span class="time">12:30</span></span>
+							<strong class="prize">1,200,000 <span class="txt_p">P</span></strong>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<span class="bg_doclive"></span> <!--2018-10-26 상단 비주얼 패턴 추가-->
+		</div>
+		<!-- doclive_top [e] -->
+		<div class="tab_area">
+			<ul class="tab_line">
+				<li class="on"><a href="#tab_myinfo" class="link_txt">내 정보</a></li>
+				<li><a href="#tab_faq" class="link_txt">FAQ</a></li>
+			</ul>
+			<!-- 내 정보 [s] -->
+			<div id="tab_myinfo" class="tab_cont list_myinfo">
+				<div class="inner">
+					<h3 class="tit_cont">김닥터님, <br>닥라이브에 오신 것을 환영합니다!</h3>
+					<p class="my_point">
+						<span class="txt">내 누적 상금</span>
+						<strong>152,310 <span>P</span></strong>
+						<a href="#" class="link_txt">참여포인트 확인하기 ></a>
+					</p>
+					<div class="nodata">
+						<strong>아직도 닥라이브에 참여 안 해보셨나요?</strong>
+						<p>퀴즈에 참여하고<br>상금의 주인공이 되어보세요!</p>
+					</div>
+					<div class="table">
+						<table class="type02">
+							<caption class="screen_out">닥라이브 참여리스트</caption>
+							<colgroup>
+								<!-- 2017-06-29 수정 -->
+								<col style="width:200px">
+								<col style="width:auto">
+								<col style="width:120px;">
+								<col style="width:155px">
+							</colgroup>
+							<thead>
+							<tr>
+								<th>방송일</th>
+								<th>제목</th>
+								<th>결과</th>
+								<th>상금</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr class="fail">
+								<td class="num">2017.09.21 (금) 12:30</td>
+								<td class="tit">임팩타민과 함께하는 역대급 상금의 퀴즈 레이스 ~</td>
+								<td class="result">탈락</td>
+								<td class="point">0 P</td>
+							</tr>
+							<tr>
+								<td class="num">2017.09.21 (금) 12:30</td>
+								<td class="tit">우루사와 함께하는 닥라이브~</td>
+								<td class="result">불참</td>
+								<td class="point">-</td>
+							</tr>
+							<tr class="fail">
+								<td class="num">2017.09.21 (금) 12:30</td>
+								<td class="tit">아는게 돈이다! 제미글로와 함께하는 닥라이브!</td>
+								<td class="result">탈락</td>
+								<td class="point">0 P</td>
+							</tr>
+							<tr class="fail">
+								<td class="num">2017.09.21 (금) 12:30</td>
+								<td class="tit">임팩타민과 함께하는 역대급 상금의 퀴즈 레이스 ~</td>
+								<td class="result">탈락</td>
+								<td class="point">0 P</td>
+							</tr>
+							<tr class="win">
+								<td class="num">2017.09.21 (금) 12:30</td>
+								<td class="tit">당신을 위해 준비했어요! 우루사와 함께하는 닥라이브~</td>
+								<td class="result">우승</td>
+								<td class="point">5,000 P</td>
+							</tr>
+							<tr class="fail">
+								<td class="num">2017.09.21 (금) 12:30</td>
+								<td class="tit">아는게 돈이다! 제미글로와 함께하는 닥라이브!</td>
+								<td class="result">탈락</td>
+								<td class="point">0 P</td>
+							</tr>
+							<tr class="win">
+								<td class="num">2017.09.21 (금) 12:30</td>
+								<td class="tit">임팩타민과 함께하는 역대급 상금의 퀴즈 레이스 ~</td>
+								<td class="result">우승</td>
+								<td class="point">5,000 P</td>
+							</tr>
+							<tr class="win">
+								<td class="num">2017.09.21 (금) 12:30</td>
+								<td class="tit">임팩타민과 함께하는 역대급 상금의 퀴즈 레이스 ~</td>
+								<td class="result">우승</td>
+								<td class="point">5,000 P</td>
+							</tr>
+							<tr class="fail">
+								<td class="num">2017.09.21 (금) 12:30</td>
+								<td class="tit">임팩타민과 함께하는 역대급 상금의 퀴즈 레이스 ~</td>
+								<td class="result">탈락</td>
+								<td class="point">0 P</td>
+							</tr>
+							<tr>
+								<td class="num">2017.09.21 (금) 12:30</td>
+								<td class="tit">임팩타민과 함께하는 역대급 상금의 퀴즈 레이스 ~</td>
+								<td class="result">불참</td>
+								<td class="point">0 P</td>
+							</tr>
+							</tbody>
+						</table>
+						<!--#include virtual="../../html/common/paging.html" -->
+					</div>
+				</div>
+			</div>
+			<!-- 내 정보 [e] -->
+			<!-- FAQ [s] -->
+			<div id="tab_faq" class="tab_cont" style="display:none;">
+				<div class="inner">
+					<h3 class="tit_cont">자주 묻는 질문</h3>
+					<ul class="list_faq">
+						<li>
+							<strong class="list_q"><span class="ico_comm3 ico_q">Q.</span>닥라이브는?</strong>
+							<p class="list_a">닥터빌 회원들과 함께하는 실시간 서바이벌 퀴즈쇼입니다.​</p>
+						</li>
+						<li>
+							<strong class="list_q"><span class="ico_comm3 ico_q">Q.</span>두근두근 퀴즈​쇼</strong>
+							<p class="list_a">시작 시간 20분 전 부터 입장 가능합니다.<br>한 문제당 13초가 주어지며 단 한 번만 선택할 수 있습니다. 신중하지만 그 누구보다 재빠르게 정답을 선택해주세요!​</p> <!--2019-03-04 문구 수정 10분 ->20분-->
+						</li>
+						<li>
+							<strong class="list_q"><span class="ico_comm3 ico_q">Q.</span>꼭 피해야 할 탈락</strong>
+							<p class="list_a">정답을 맞추지 못한 경우 탈락이며 아쉽게도 이 후 퀴즈에 참여할 수 없습니다. 그래도 나가지 말고 다른 분들과 채팅하며 퀴즈에 참여해보세요.<br>게임 방식에 익숙해질수록 우승에 가까워질 수 있다는 사실!</p>
+						</li>
+						<!-- 2018-12-18 문구 수정  및 클래스 추가 -->
+						<li>
+							<strong class="list_q"><span class="ico_comm3 ico_q">Q.</span>주의할 사항</strong>
+							<p class="list_a num">1. 이왕이면 유선 네트워크를 이용해주세요!​ 사용자 환경(네트워크, PC 상태 등)에 따라 버퍼링이 발생할 수 있습니다</p>
+							<p class="list_a num">2. 퀴즈가 시작된 후에 절대로 새로고침 하거나 페이지를 이탈하지 마세요. 진행이 빠르기 때문에 퀴즈를 풀지 못해 탈락 처리될 수 있습니다.</p>
+						</li>
+						<li>
+							<strong class="list_q"><span class="ico_comm3 ico_q">Q.</span>대망의 ​​​우승 그리고 상금</strong>
+							<p class="list_a num">1. 준비된 문제를 모두 맞춘 회원이 그날의 상금을 획득하고 우승자가 여렷인 경우 총상금을 똑같이 나눠갖습니다.​ 상금은 닥터빌 포인트로 바로 전환해드리며 기존의 닥터빌 포인트와 동일하게 사용할 수 있습니다. ​</p>
+							<p class="list_a num">2. 우승자가 없는 경우 상금은 지급되지 않습니다.​</p>
+						</li>
+						<!-- //2018-12-18 문구 수정  및 클래스 추가 -->
+						<!--2019-03-04 문구 삭제
+						<li>
+							<strong class="list_q"><span class="ico_comm3 ico_q">Q.</span>지금은, 베타 서비스</strong>
+							<p class="list_a">​준비는 많이 했지만 실시간이다 보니 예상할 수 없는 문제가 발생할 수도 있어요.<br>원활한 서비스 운영을 위한 준비기간이라고 생각해주세요. 지금은 매주 1회지만 안정되면 더 자주 찾아뵐 수 있겠죠?​</p>
+						</li>-->
+					</ul>
+					<!-- #include virtual="../../html/common/paging.html" -->
+				</div>
+			</div>
+			<!-- FAQ [e] -->
+		</div>
+	</main>
+	<!-- container [e] -->
+	<!-- footer [s] 로그인  -->
+<footer id="footer" class="f_v3"> <!-- class="f_v3" 추가 -->
+	<h2 class="screen_out">회사 및 서비스 이용정보</h2>
+	<div class="info_foot top">
+		<div class="inner_info">
+			<strong class="tit_notice">공지사항<span class="txt_bar">|</span></strong>
+			<ul class="cycle-slideshow  list_notice" data-cycle-fx="scrollHorz" data-cycle-timeout="0" data-cycle-slides="> li" data-cycle-prev=".btn_noticePrev" data-cycle-next=".btn_noticeNext">
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관변경 1닥터빌 회원의 이용약관 변경 1닥터빌 회원의 이용약관 변경 1</a></li>
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관 변경 2</a></li>
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관 변경 3</a></li>
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관 변경 4</a></li>
+			</ul>
+			<div class="wrap_btn">
+				<a href="#none" class="btn_comm btn_noticePrev">이전</a>
+				<a href="#none" class="btn_comm btn_noticeNext">다음</a>
+			</div>
+			<!--<a href="#pop_footAllmenu" class="link_sitemap">서비스 전체보기<span class="ico_comm2"></span></a> 삭제-->
+		</div>
+	</div>
+	<div class="info_foot btm">
+		<a href="#none" class="ico_comm_v2 tit_doctor">닥터빌 홈 바로가기</a>
+		<div class="inner_info">
+			<ul class="list_footer">
+				<li><a href="#none" class="link_footer">회사소개</a><span class="txt_bar">|</span></li>
+				<li class=""><a href="#none" class="link_footer">고객센터</a><span class="txt_bar">|</span></li>
+				<li><a href="../intro/with.html" class="link_footer">제휴문의</a><span class="txt_bar">|</span></li>
+				<li><a href="../intro/policy.html" class="link_footer">이용약관</a><span class="txt_bar">|</span></li>
+				<!-- 2021-06-03 개인정보처리방침 볼드처리 -->
+				<li><a href="../intro/userinfo.html" class="link_footer"><strong>개인정보처리방침</strong></a><span class="txt_bar">|</span></li>
+				<li><a href="#none" class="link_footer link_tuor">서비스투어</a></li>
+			</ul>
+			<div class="wrap_family">
+				<a href="#none" class="btn_family">FAMILY SITE <span class="ico_comm">목록 펼치기</span></a>
+				<ul class="list_family">
+					<li><a href="" target="_blank">FAMILY SITE 1</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 2</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 3</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 4</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 5</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 6</a></li>
+				</ul>
+			</div>
+		</div>
+		<address class="inner_info">
+			<div>서울 강남구 봉은사로 114길 12 (삼성동)<span class="txt_bar">|</span>대표자 : 김명석<span class="txt_bar">|</span>사업자번호 : 120-86-10499<br>
+			대표전화 : 1522-0209<span class="txt_bar">|</span>팩스 : 02-563-8399</div> <!-- 2019-02-12 팩스번호 변경 -->
+			<div class="icon_social">
+				<a href="https://www.youtube.com/channel/UCUOV1IWnqpB69okoWNKQeZQ" target="_blank" class="ico_comm_v2 ico_youtube">유투브</a>
+				<a href="http://pf.kakao.com/_zddxgd" target="_blank" class="ico_comm_v2 ico_kakao">카카오플러스친구</a>
+				<a href="https://www.facebook.com/%EB%8B%A5%ED%84%B0%EB%B9%8C-549462672108716/?ref=aymt_homepage_panel&eid=ARCcUFij5OHuJmsLw9LuoiMg-2G-Eh48BWsaU_SSflZGsF0lu7DupXHoRDofX7sdUsEhMT95BrA64x6F" target="_blank" class="ico_comm_v2 ico_facebkook">페이스북</a>
+			</div>
+		</address>
+		<div class="inner_info copy">
+			<span class="copyright">Copyright <em class="emph_addr">ⓒ Mcircle.</em> All right reserved</span>
+			<span class="copyright">VERIFIED & SECURED Site</span>
+		</div>
+	</div>
+</footer>
+<!-- footer [e] 로그인  -->
+
+<!-- footer [s] 프로필, 처방노트
+<footer id="footer" class="f_v3">
+	<h2 class="screen_out">회사 및 서비스 이용정보</h2>
+	<div class="info_foot btm">
+		<a href="#none" class="ico_comm_v2 tit_doctor">닥터빌 홈 바로가기</a>
+		<div class="inner_info copy">
+			<span class="copyright">Copyright <em class="emph_addr">ⓒ Mcircle.</em> All right reserved</span>
+			<span class="copyright">VERIFIED & SECURED Site</span>
+		</div>
+	</div>
+</footer>-->
+<!-- footer [e] 프로필, 처방노트 -->
+	<script>
+		$(".btn_family").bind("click", function(e){
+			var target = $('.list_family'),
+				 state = target.css('display');
+			if(state == "block"){
+				$(this).find(".ico_comm").text('목록 펼치기').removeClass('open');
+				target.hide();
+			}else{
+				$(this).find(".ico_comm").text('목록 접기').addClass('open');
+				target.show();
+			}
+			return false;
+		})
+		$(".list_family  a").bind("click",function(){
+			$(".btn_family").trigger('click');
+		})
+		$(".link_sitemap").on("click", function(e) {
+			e.preventDefault();
+			var link = $(this).attr("href");
+			console.log (link);
+			$("#pop_footAllmenu").toggle();
+		});
+	</script>
+
+	<!--#include virtual="../../html/common/popup.html" -->
+	<script type="text/javascript">
+		$(function() {
+			socialUI.tab({
+				"tabs": $(".tab_line .link_txt"),
+				"activeClass": "on",
+				"firstLoadTab": $("#tab_myinfo")
+			});
+			$(".btn_standby").click(function(e){
+				modalLayer = socialUI.modalLayerComm({
+					"type": 4,
+					"title": "알림",
+					"description": "입장시간이 아닙니다."
+				});
+				e.preventDefault();
+			});
+			// 2018-11-05 추가
+			$(".btn_not_go").click(function(e){
+				modalLayer = socialUI.modalLayerComm({
+					"type": 4,
+					"title": "알림",
+					"description": "퀴즈가 시작되어 <br>입장하실 수 없습니다."
+				});
+				e.preventDefault();
+			});
+		});
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+@charset "utf-8";
+#container {width:980px;}
+/* 저널업데이트 */
+.txt_journal {display:block;background:url(../images/txt_journal.png) 0 0 no-repeat;font-size:0;line-height:0;text-indent:-9999px}
+/* 해외의학서비스 메인  */
+#wrap.foreign_service {background-color:#fff}
+#wrap.foreign_service #container {width:100%;margin:0;font-family:'SpoqaHanSans', 'dotum', '돋움'}
+#wrap.foreign_service .content {width:980px;margin:30px auto 0;font-family:'SpoqaHanSans', 'dotum', '돋움'}
+#wrap.foreign_service .top_banner {margin:25px 0}
+#wrap.foreign_service .top_banner img {margin:0 auto}
+.foreign_service .foreign_top {position:relative;width:100%;height:340px;background:url(../images/bg_foreign_top.jpg) no-repeat top center;color:#fff}
+.foreign_service .foreign_top .inner {width:980px;padding:85px 0;margin:0 auto;text-align:center}
+.foreign_service .foreign_top p {margin-bottom:25px;font-size:26px}
+.foreign_service .foreign_top span {display:block;font-size:44px;font-weight:bold;line-height:1.2}
+.foreign_service .foreign_top strong {color:#fffbb4}
+.foreign_service .box_list li {float:left;width:298px;margin:0 0 25px 40px;border:1px solid #ebebeb}
+.foreign_service .box_list li:nth-child(3n+1) {margin-left:0}
+.foreign_service .service_link {height:132px;padding:30px}
+.foreign_service .service_link strong {font-size:21px}
+.foreign_service .service_link p {margin-top:15px;font-size:15px;color:#999;line-height:28px}
+.foreign_service .use_info {width:100%;padding:20px 0;background-color:#f9f9f9;text-align:center}
+.foreign_service .use_info .link_txt {display:inline-block;font-size:13px;border-bottom:1px solid #333333}
+.foreign_service .use_info .txt_journal {margin:0 auto}
+.foreign_service .service01 .txt_journal {width:270px;height:60px;background-position:0 -400px}
+.foreign_service .service02 .txt_journal {width:127px;height:32px;margin:14px auto;background-position:0 -520px}
+.foreign_service .service03 .txt_journal {width:179px;height:31px;margin:15px auto 14px;background-position:0 -460px}
+.foreign_service .service04 .txt_journal {width:205px;height:31px;margin:15px auto 14px;background-position:-140px -520px}
+.foreign_service .service05 .txt_journal {width:184px;height:46px;margin:17px auto;background-position:-200px -460px}
+
+.journal .use_info {width:100%;padding:20px 0;background-color:#f9f9f9;text-align:center}
+.journal .use_info .link_txt {display:inline-block;font-size:13px;border-bottom:1px solid #333333}
+.journal .use_info .txt_journal {margin:0 auto}
+/* 의학논문 검색 */
+#container.journal_v2 {width:100%;margin:0;font-family:'SpoqaHanSans', 'dotum', '돋움'}
+.journal_v2 {background-color:#fff}
+.journal_v2 .inner {width:980px;margin:0 auto}
+.journal_v2 .journal_top {height:235px;padding:85px 0 40px;background:#8e98a4 url(../images/bg_journal_v2.jpg) no-repeat top center;text-align:center}
+.journal_v2 .btn_use_info {display:inline-block;margin-top:20px;padding:8px 14px;line-height:19px;border:1px solid #fff;color:#fff;font-size:15px}
+.journal_v2 .btn_use_info:before {display:inline-block;content:'?';width:18px;height:18px;margin-right:8px;background-color:#fff;font-size:13px;font-weight:bold;color:#97a4b0;border-radius:50%}
+.journal_v2 .btn_use_info .ico_comm3 {display:inline-block;width:5px;height:10px;margin:5px 0 0 8px;background-position:-145px -1760px}
+.journal_v2 .journal_top .link_box {overflow:hidden;float:left;width:460px;height:180px;border-left:1px solid #ebebeb;border-right:0}
+.journal_v2 .journal_top .link_box + .link_box {float:right}
+.journal_v2 .journal_top .link_box .cont_info {float:left;height:auto;padding:35px 30px}
+.journal_v2 .journal_top .link_box:first-child .cont_info{padding:30px 25px}
+.journal_v2 .journal_top .link_box:first-child .cont_info .txt {margin-top:10px;}
+.journal_v2 .journal_top .link_box .cont_logo {float:right;width:200px;height:177px}
+.journal_v2 .journal_top .link_box .txt_journal.journal01 {width:131px;height:105px;background-position:-270px -325px;}
+.journal_v2 .journal_top .link_box .txt_journal.journal02 {width:133px;background-position:0 -65px}
+.journal_v2 .link_box {position:relative;width:300px;border:1px solid #ebebeb;border-top:2px solid #2384e6;background-color:#fff;box-sizing:border-box}
+.journal_v2 .link_box:active {background-color:#fff}
+.journal_v2 .link_box .cont_info {height:158px;padding:30px 25px 0;text-align:left}
+.journal_v2 .link_box .cont_info .tit {font-size:22px;letter-spacing: -1px}
+.journal_v2 .link_box .cont_info .txt {margin-top:20px;font-size:14px;color:#999999}
+.journal_v2 .link_box .badge {position:absolute;top:-2px;right:-1px;padding:3px 8px;background-color:#2384e6;color:#fff;font-size:15px;letter-spacing: -1px;z-index:1}
+.journal_v2 .link_box .cont_logo {position:relative;width:298px;height:119px;background-color:#f9f9f9}
+.journal_v2 .link_box .txt_journal {position:absolute;top:0;right:0;left:0;bottom:0;height:65px;margin:auto;}
+.journal_v2 .link_box .journal01 {width:131px;height:105px;background-position:-270px -325px;}
+.journal_v2 .link_box .journal02 {width:133px;background-position:0 -65px}
+.journal_v2 .journal03 {width:190px;background-position:-140px 0}
+.journal_v2 .journal04 {width:185px;background-position:-140px -65px}
+.journal_v2 .journal05 {width:202px;background-position:-140px -130px}
+.journal_v2 .journal06 {width:114px;background-position:0 -130px}
+.journal_v2 .journal07 {width:87px;background-position:0 -195px}
+.journal_v2 .journal08 {width:150px;background-position:-140px -195px}
+.journal_v2 .journal09 {width:234px;background-position:-140px -260px}
+.journal_v2 .journal10 {width:110px;background-position:0 -260px}
+.journal_v2 .journal11 {width:167px;background-position:0 -325px}
+.journal_v2 .journal_list {overflow:hidden}
+.journal_v2 .journal_list li {float:left;margin:30px 0 0 40px}
+.journal_v2 .journal_list li:nth-child(3n+1) {margin-left:0}
+/* 의학저널 이용안내  */
+.journal_v2.journal_info {position:relative;background-color:#f9f9f9}
+.journal_v2 .journal_info_top {position:relative;background:#16e3aa;z-index:2}
+.journal_v2 .journal_info_top .tit_journal_info {width:100%;height:360px;background:url(../images/bg_journal_info.jpg) no-repeat top center;font-size:0;line-height:0}
+.journal_v2 .journal_info_top:before {display:block;position:absolute;top:0;right:0;width:50%;height:360px;background:#7ce0fa;content:'';z-index:-1}
+.journal_info .img_journal {display:block;overflow:hidden;font-size:0;line-height:0;background:url(../images/img_journal_info.jpg) no-repeat}
+.journal_info .journal_info_conts {width:980px;margin:0 auto}
+.journal_info_conts .subdesc {margin:20px 0 50px;padding-left:15px;line-height:18px;color:#000;font-size:15px}
+.journal_info_conts .subdesc .txt_bar {display:inline-block;width:15px;margin-left:-15px}
+.list_advantage {overflow:hidden;margin:50px 0 120px}
+.list_advantage li {float:left;position:relative;width:31.5%;text-align:center;font-size:15px}
+.list_advantage li.advantage2 {width:37%}
+.list_advantage li:before {content:"";display:block;position:absolute;top:26px;left:0;width:1px;height:190px;background:#e7e4e4}
+.list_advantage li:first-child:before {display:none}
+.list_advantage .img_journal {height:170px;margin:0 auto 16px}
+.list_advantage .advantage1 .img_journal {width:143px;background-position:-97px 0}
+.list_advantage .advantage2 .img_journal {width:137px;background-position:-396px 0}
+.list_advantage .advantage3 .img_journal {width:165px;background-position:-707px 0}
+.list_advantage .txt {display:inline-block;line-height:22px;letter-spacing:-0.05em;text-align:left;color:#6b6c6d}
+.box_use_guide {margin-bottom:120px;font-size:15px}
+.box_use_guide .subtit_journal_info1 {height:30px;background-position:0 -225px}
+.box_use_guide .txt_use_guide2 {width:275px;height:28px;margin-bottom:30px;background-position:0 -680px}
+.box_use_guide .use_guide1 {display:inline-block;width:329px;height:252px;margin-right:60px;background-position:-64px -680px}
+.box_use_guide .inner_guide {display:inline-block}
+.box_use_guide .txt_use_guide1 {width:285px;height:28px;margin:0 0 50px;background-position:-456px -680px}
+.box_use_guide .list_use_guide1 li {overflow:hidden;margin-bottom:12px}
+.box_use_guide .list_use_guide1 em {float:left;height:23px;margin-right:15px;padding:0 14px;border-radius:10px;background:#626466;line-height:23px;letter-spacing:-0.05em;text-align:center;color:#fff}
+.box_use_guide .list_use_guide1 span {float:left;line-height:22px;color:#000}
+.box_use_guide .use_guide2 {float:right;width:329px;height:252px;margin-top:-115px;background-position:-540px -260px}
+.journal_info2 {position:relative;margin-bottom:20px}
+.journal_info2 .subtit_journal_info2 {display:inline-block;width:200px;height:24px;background-position:0 -525px}
+.journal_info2 .btn_manual {display:inline-block;height:29px;margin-left:15px;padding:0 18px;border:1px solid #1795e2;border-radius:2px;background:#17a5fb;font-size:15px;line-height:29px;text-align:center;color:#fff;vertical-align:top}
+.list_use_guide2 {padding:0 15px;font-size:15px}
+.list_use_guide2 > li {margin-bottom:47px;word-break:keep-all;word-wrap:break-word}
+.list_use_guide2 strong {display:block;margin-bottom:20px;font-size:17px;font-weight:bold;color:#434956}
+.list_use_guide2 .bul_chk {display:inline-block;width:20px;height:19px;margin:-3px 9px 0 0;background-position:-236px -525px;vertical-align:middle}
+.list_use_guide2 .list_inner {padding-left:17px}
+.list_use_guide2 .list_inner li {margin-bottom:12px;padding-left:27px}
+.list_use_guide2 .list_inner .txt_bar {display:inline-block;width:17px;margin-left:-17px;color:#b3b3b3}
+.list_use_guide2 .case {overflow:hidden;padding:11px 0 0 21px}
+.list_use_guide2 .case em {float:left;width:70px;font-size:14px;font-weight:bold;color:#f05917}
+.list_use_guide2 .case .ico_exc {display:inline-block;width:23px;height:23px;margin-right:6px;background-position:-266px -525px;vertical-align:middle}
+.list_use_guide2 .case p {float:left;width:850px;line-height:20px;letter-spacing:-0.05em;color:#7b7b7b}
+/* iframe */
+#wrap.journal {height:100%;background-color:#fff}
+.journal #container {position:relative;width:980px;height:100%;margin:40px auto 0}
+.journal #footer {display:none}
+.journal #container iframe{background-color:#fff;box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);box-sizing:border-box}
+#container.conference iframe {padding:0 10px}
+/*uptodate*/
+.ico_uptodate {display:inline-block;background:url("../images/uptodate/ico_uptodate.png") 0 0 no-repeat;font-size:0;line-height:0;text-indent:-9999px;vertical-align:top}
+#container.cont_uptodate {position:relative;width:100%;margin:0;padding:0;font-family:'SpoqaHanSans','dotum','돋움';letter-spacing:-1px;}
+.cont_uptodate .cont_inner {position:relative;z-index:1;width:980px;margin:0 auto;}
+.cont_uptodate .tit_cont {display:block;font-size:72px;font-weight:bold;color:#fff;text-align:center;letter-spacing:-3px;}
+.cont_uptodate .tit_cont .txt_logo {font-size:78px;color:#acf748;line-height:1.15;letter-spacing:-7px;}
+.cont_uptodate .tit_cont .ico_free {display:inline-block;padding:3px 11px;border:3px solid #acf748;vertical-align:top;letter-spacing:0;border-radius:20px;font-size:24px;line-height:1;}
+.cont_uptodate .txt_info {padding-top:20px;font-size:19px;color:#a6e5ed;text-align:center;letter-spacing:0}
+.cont_uptodate .txt_info strong {color:#acf748}
+.uptodate_body {position:relative;padding:97px 0 65px;text-align:center;background:url("../images/uptodate/bg_uptodate_head.gif") repeat 0 0;}
+.uptodate_body .bg_uptodate {display:block;position:absolute;left:0;right:0;bottom:0;z-index:0;width:100%;height:310px;background:url("../images/uptodate/bg_uptodate.png") no-repeat 50% bottom;}
+.uptodate_box {margin-top:50px;padding:45px 60px 50px;background-color:#fff;border-radius:10px;}
+.uptodate_box .stit_cont {color:#0fc5e5;font-size:32px;}
+.uptodate_use {overflow:hidden;margin-top:40px;}
+.uptodate_use li {width:370px;min-height:200px;float:left;text-align:left;}
+.uptodate_use li:first-child {padding:0 58px 48px 0;border-right:2px dashed #d3d3d3;border-bottom:2px dashed #d3d3d3}
+.uptodate_use li:nth-child(2) {padding:0 0 48px 58px;border-bottom:2px dashed #d3d3d3}
+.uptodate_use li:nth-child(3) {padding:48px 58px 0 0;border-right:2px dashed #d3d3d3;}
+.uptodate_use li:last-child {padding:48px 0 0 58px;}
+.uptodate_use .txt_num {display:block;float:left;width:26px;height:26px;margin:3px 15px 0 0;border:2px solid #1ecdec;border-radius:50%;color:#1ecdec;font-size:18px;font-weight:bold;font-family:verdana,'SpoqaHanSans','dotum','돋움';text-align:center;line-height:1.5}
+.uptodate_use .tit {display:block;margin-bottom:20px;font-size:24px;}
+.uptodate_use .txt {margin-bottom:20px;font-size:18px;color:#848484}
+.uptodate_body .btn_wrap a,
+.uptodate_body .btn_wrap button {float:left;width:100%;height:65px;padding-top:18px;font-size:18px;color:#fff;box-sizing:border-box;text-align:center;}
+.uptodate_body .btn_wrap .btn_uptodate_go {color:#00bab8;border:2px solid #00bab8;background-color:#fff;}
+.uptodate_body .btn_wrap .btn_uptodate_pdf {margin-top:12px;color:#11ce91;border:2px solid #11ce91;background-color:#fff;}
+.uptodate_body .btn_wrap .btn_apply {float:none;clear:both;width:100%;margin-bottom:0;color:#fff;background-color:#2fdea6;}
+.uptodate_body .btn_wrap .btn_free_go {margin-top:12px;padding-top:11px;color:#fff;background-color:#0cbbda}
+.uptodate_body .btn_wrap .btn_free_go span {display:block;font-size:14px;}
+.uptodate_attention {padding:43px 0 40px;background-color:#f2f4f7;}
+.uptodate_attention strong {display:block;margin-bottom:15px;padding-left:50px;font-size:26px;background:url("../images/uptodate/ico_uptodate.png") no-repeat -289px -45px;}
+.uptodate_attention p {font-size:16px;color:#9197a3;}
+.uptodate_attention p + p {padding-top:5px;}

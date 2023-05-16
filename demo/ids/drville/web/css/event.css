@@ -1,0 +1,239 @@
+@charset "utf-8";
+#container {width:980px;}
+.event #container {margin-top:45px;}
+.blind{display:none}
+.mt20{margin-top:20px !important}
+.mt25{margin-top:25px !important}
+.mt30{margin-top:30px !important}
+caption{text-indent:-5000px;line-height:0;font-size:0;position:absolute; top:0;left:0}
+a:hover, a:focus, a:active{text-decoration:none}
+
+/* design select box */
+
+/*input*/
+button:focus, button:active, input:focus, input:active{outline:none !important}
+button[type="reset"], button[type="button"], button[type="submit"],
+input[type="reset"], input[type="button"], input[type="submit"]{filter:chroma(color=#000000)}
+
+/* event Gnb */
+.list_gnb .link_event1{width:105px;background-position:0 -212px}
+.list_gnb .link_event2{width:76px;background-position:-121px -212px;}
+.list_gnb .link_event1:hover, .list_gnb .on .link_event1 {background-position:0 -237px}
+.list_gnb .link_event2:hover, .list_gnb .on .link_event2  {background-position:-121px -237px}
+
+/*button*/
+.btn_area{margin-top:16px;text-align:center}
+.btn_area .btn_white{display:inline-block;width:92px;height:30px;line-height:30px;border:1px solid #e4e4e4;color:#606060;font-size:11px;font-weight:bold;background:#fff}
+.search_bot_wrap{text-align:center}
+.search_bot_wrap .list_search{display:inline-block;*display:inline;zoom:1}
+.list_search .txt_search{float:left;margin-right:4px;padding-left:8px;height:27px;width:130px;line-height:27px;border:1px solid #c0c0c0}
+.list_search .btn_search{float:left;padding:0 12px;height:29px;border:1px solid #a5a5a5;font-weight:bold;color:#575757;background:#fff;cursor:pointer}
+
+/* 2016-06-08 수정 */
+.banner_wrap {border-top:1px solid #14afff;background-color:#dff0fb;}
+.banner_wrap .scope {position:relative;width:1089px;height:261px;margin:0 auto;}/* 2016-06-09 수정 */
+.banner_wrap .bx-controls-direction a {position:absolute;display:block;top:113px;width:27px;height:44px;text-indent:-9999px;background-image:url(../images/btn-main_banner-dir.png);background-repeat:no-repeat;}
+.banner_wrap .bx-controls-direction .bx-prev {left:0;background-position:-26px 0;}
+.banner_wrap .bx-controls-direction .bx-prev.disabled {background-position:0 0;}
+.banner_wrap .bx-controls-direction .bx-next {right:0;background-position:-26px -44px;}
+.banner_wrap .bx-controls-direction .bx-next.disabled {background-position:0 -44px;}
+.banner_wrap .bx-default-pager {overflow:hidden;position:absolute;left:0;bottom:20px;width:100%; height:10px;text-align:center}
+.banner_wrap .bx-default-pager .bx-pager-item:first-child {margin-left:0}
+.banner_wrap .bx-pager-item { display:inline-block; height:10px; margin:0 5px;}
+.banner_wrap .bx-pager-item .bx-pager-link{display:inline-block;width:10px;height:10px;background:#fff;text-indent:-9999px; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px;}
+.banner_wrap .bx-pager-item .bx-pager-link.active { background:#1594c7}
+.main_banner {}
+.main_banner li {}
+.main_banner li a {display:block;text-align:center;}
+
+.event-area {margin:-22px 0 0;}
+.event-area .scope {overflow:hidden;width:100%;padding:50px 0 47px;border-top:1px solid #e5e5e5;}
+.event-area .scope:first-child {border:0;}
+.event-area .scope h2 {float:left;width:150px;}
+.event-area .scope ul {overflow:hidden;float:right;}
+.event-area .scope ul li {float:left;}
+.event-area .scope ul li a {display:block;text-align:center;}
+.event-area .scope ul li a img {display:block;margin:0 auto;}
+.event-area .scope ul li a figure {}
+.event-area .scope ul li a figure figcaption {padding:11px 0 0;font-size:16px;color:#202b34;font-weight:bold;line-height:20px;}
+
+.event-area .scope .join-list {width:776px;}
+.event-area .scope .join-list li {width:234px;margin-left:37px;}
+.event-area .scope .join-list li:first-child {margin-left:0;}
+
+.event-area .scope .ing-list {width:798px;}
+.event-area .scope .ing-list li {width:234px;margin:0 0 20px 30px;border:1px solid #fff;}
+.event-area .scope .ing-list li a {width:232px;height:223px;border:1px solid #eaeaea;}
+.event-area .scope .ing-list li:hover {border:1px solid #43c9ff;}
+.event-area .scope .ing-list li:hover a {border:1px solid #43c9ff;}
+.event-area .scope .ing-list li strong,
+.event-area .scope .ing-list li em,
+.event-area .scope .ing-list li span {overflow:hidden;display:block;width:192px;margin:0 auto;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;text-align:left;}
+.event-area .scope .ing-list li img {width:232px;height:118px;border-bottom:1px solid #eaeaea;}
+.event-area .scope .ing-list li strong {margin-top:22px;font-size:16px;color:#202b34;}
+.event-area .scope .ing-list li em {margin-top:-3px;font-size:12px;color:#979797}
+.event-area .scope .ing-list li span {margin-top:6px;font-size:12px;color:#202b34;}
+
+.event-area .scope .end-list {width:709px;padding:20px 30px;border:1px solid #eaeaea;}
+.event-area .scope .end-list li {overflow:hidden;position:relative;width:709px;height:70px;padding:10px 0;border-top:1px solid #f2f2f2;}
+.event-area .scope .end-list li:first-child {border:0;}
+.event-area .scope .end-list li figure img,
+.event-area .scope .end-list li figure figcaption {display:block;float:left;}
+.event-area .scope .end-list li figure img {width:134px;height:68px;margin-right:28px;border:1px solid #eaeaea;}
+.event-area .scope .end-list li figure figcaption strong,
+.event-area .scope .end-list li figure figcaption em,
+.event-area .scope .end-list li figure figcaption span {display:block;}
+.event-area .scope .end-list li figure figcaption strong,
+.event-area .scope .end-list li figure figcaption em {overflow:hidden;width:320px;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
+.event-area .scope .end-list li figure figcaption strong {margin:13px 0 1px;font-size:16px;color:#202b34;}
+.event-area .scope .end-list li figure figcaption em {color:#979797;}
+.event-area .scope .end-list li figure figcaption span {position:absolute;right:0;top:29px;color:#202b34;}
+/* //2016-06-08 수정 */
+
+.event h2{margin:25px 0 6px;font-size:20px;font-weight:bold;color:#353535;letter-spacing:-2px}
+.event h2 span{color:#01a6ff}
+.new_ccount_event ul{overflow:hidden;margin-left:-10px}
+.new_ccount_event ul li{float:left;width:304px;height:224px;margin-left:14px;border:1px solid #e3e3e3}
+
+/* event Gnb */
+.event .nav_gnb .list_gnb  {background-position:0 -220px}
+.progress_event{position:relative}
+.progress_event ul li ul{overflow:hidden;margin-left:-10px}
+.progress_event ul li ul li{float:left;width:308px;margin-left:10px;margin-bottom:10px;border:1px solid #e3e3e3}
+.progress_event ul li ul li a img{display:block;width:308px;height:149px}
+.progress_event ul li ul li .txt_area{padding:17px 20px 16px;border-top:1px solid #e3e3e3;letter-spacing:-1px}
+.progress_event ul li ul li .txt_area span{display:block}
+.progress_event ul li ul li .txt_area .subject{font-weight:bold;color:#202b34}
+.progress_event ul li ul li .txt_area .views{margin:2px 0 9px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px;color:#808d97}
+.progress_event .bx-controls-direction {position:absolute;left:157px;top:8px;overflow:hidden}
+.progress_event .bx-controls-direction a {float:left;display:block;text-indent:-9999px}
+.progress_event .bx-controls-direction .bx-prev {width:16px;height:16px;background:url(../images/btn_comm.gif) 0 0 no-repeat}
+.progress_event .bx-controls-direction .bx-next {width:15px;height:16px;background:url(../images/btn_comm.gif) -16px 0 no-repeat}
+
+.event .a_side{float:left;width:220px;}
+.event .a_side .event_list_type1 ul{background:#fff}
+.contents{float:right;width:710px;/*margin-left:50px*/}
+.event_list_type1 ul{padding-top:19px;border:1px solid #e3e3e3;border-top:1px solid #efeef3}
+.event_list_type1 li{overflow:hidden;padding:0 24px;margin-bottom:24px}
+.event_list_type1 li figure{float:left;margin-right:8px;border:1px solid #ededed}
+.event_list_type1 li figure img{width:48px;height:48px}
+.event_list_type1 li .txt{overflow:hidden;float:left;width:110px; height:48px;font-size:11px;color:#606060;letter-spacing:-1px;line-height:16px}/* 2016-01-11 수정 */
+.event_list_type1 li .txt b{display:block;color:#57565b;font-size:12px;line-height:18px}
+
+.event_list_type1 h3, .event_list_type2 h3{margin:0;height:39px;line-height:39px;padding:0 0 0 26px;background:#f9fafc;border:1px solid #e3e3e3;font-size:12px;border-bottom:none;font-weight:bold;color:#57565b}
+.event_list_type2 ul{padding:0 22px;border:1px solid #e3e3e3;border-top:1px solid #efeef3}
+.event_list_type2 li a{overflow:hidden;padding:18px 0 14px;border-top:1px solid #efeef3}
+.event_list_type2 li:first-child a{border-top:0 none}
+.event_list_type2 li .ico_comm3{float:left;width:28px;height:28px;margin-right:14px;margin-top:2px}
+.event_list_type2 li .ico_join{background-position:-140px -920px}
+.event_list_type2 li .ico_cert{background-position:-180px -920px}
+.event_list_type2 li .ico_addinfo{background-position:-220px -920px}
+.event_list_type2 dl{float:left;width:132px}
+.event_list_type2 dt{display:block;color:#57565b;font-weight:bold}
+.event_list_type2 dd{display:block;overflow:hidden;font-size:11px;color:#606060;letter-spacing:-1px;line-height:16px;text-overflow:ellipsis}
+.a_side .banner:first-child {margin-top:0;} /* 2017-06-30 수정 */
+.a_side .banner {margin:11px 0;} /* 2017-06-30 수정 */
+.a_side .banner img {width:220px;height:220px;} /* 2017-06-30 이미지 사이즈 고정 */
+
+.event_area{border:1px solid #e3e3e3}
+.event_area .event_img{border-bottom:1px solid #e1e5e7} /* 2016-09-02 추가 */
+
+.point_calendar .date{display:block;margin:15px 0 10px;font-size:18px;font-weight:bold;color:#606060;letter-spacing:-1px;font-family:verdana}
+.point_calendar .date .dot{width:10px;height:10px;margin:-3px 8px 0 0;vertical-align:middle;background:none;background-color:#f4527a}
+.point_calendar table{width:100%;border-top:1px solid #dddce1;border-left:1px solid #dddce1;background:#fff}
+.point_calendar table tr th{height:44px;line-height:44px;background:#f4f5f7;border-right:1px solid #dddce1;border-bottom:1px solid #dddce1}
+.point_calendar table tr th:first-child{color:red}
+.point_calendar table tr td{position:relative;height:100px;border-right:1px solid #dddce1;border-bottom:1px solid #dddce1;vertical-align:top}
+.point_calendar table tr td .num{position: absolute;left:6px;top:10px; z-index:300;color:#909090;font-weight:bold}
+.point_calendar table .point{height: 100px;text-align:center}
+.point_calendar table .point .ico_comm3{position:absolute;left:50%;top:15px;width:70px;height:54px;margin-left:-35px;padding-top:18px;font-weight:bold;font-size:20px;line-height:24px;color:#dcdcdc;text-indent:-4px}
+.point_calendar table .point .ico_point{background-position: -240px 0}
+.point_calendar table .point.on .ico_point{background-position: -160px 0;color:#fd351b}
+.point_calendar table .point.complete .ico_point{text-indent:-9999px;background-position: -70px -610px}
+.point_calendar table .point.end .ico_point{text-indent:-9999px;background-position: -160px -610px}
+.point_calendar table .point_down{position:absolute;left:0;bottom:0;height:24px;width:100%;text-align:center;border-top:1px solid #dddce1;font-weight:bold;font-size:11px;line-height:25px;color:#606060;background-color:#fff;letter-spacing:-1px}
+
+.point_calendar table tr td:first-child .num{color:#ff6363}
+.point_calendar table tr td.last_month .num{color:#d3d3d3}
+.point_calendar table tr td.last_month:first-child .num{color:#ffc9c9}
+.plz_view{overflow:hidden;margin-top:10px;padding:15px 20px 13px 20px;border:1px solid #e3e3e3;background:#f9fafc;color:#606060}
+.plz_view dt{float:left;font-size:12px;font-weight:bold}
+.plz_view dd{float:left;margin-left:42px;width:530px}
+.plz_view dd ul{}
+.plz_view dd ul li{list-style:decimal;letter-spacing:-1px;line-height:22px}
+
+.history{padding:40px 39px;border:1px solid #e3e3e3;background-color:#fff} /* 2016-05-17 수정 */
+.history .tit_sub_history {margin:0;}
+.past_events li{position:relative;overflow:hidden;padding:30px 0;border-bottom:1px dashed #ccc}
+.past_events li figure{float:left;border:1px solid #d9d9d9}
+.past_events li dl{float:left;margin:0 0 0 21px}
+.past_events li dl dt{padding:21px 0 8px 0;font-size:14px;font-weight:bold;color:#464646}
+.past_events li dl dd{color:#808080}
+.past_events li dl dd.period{position:absolute;top:51px;right:0} /* 2016-05-17 수정 */
+.past_events .nodata, .past_events .nodata:first-child{padding:80px 0;text-align:center;border-top:1px dashed #ccc}
+
+.point_earn{z-index:1000;position:absolute;left:0;top:0;right:0;bottom:0;margin:auto;display:none;width:498px;height:375px;padding:28px 0 29px;background:#fff;border:1px solid #e5e5e5;text-align:center;color:#707070}
+.point_earn > span{display:block}
+.point_earn .title{padding:0 0 26px;font-size:24px; font-weight:bold}
+.point_earn .title em{color:#369be5;font-weight:bold}
+.point_earn .bg_point{width:140px;height:112px;margin:0 auto 17px;padding-top:46px;background:url(../images/ico_comm3_160127.gif) -150px -100px no-repeat;font-size:49px;font-weight:bold;color:#fd351b;line-height:1em}
+.point_earn .earn{font-size:18px;font-weight:bold}
+.point_earn .earn em{color:#ff2e12; font-weight:bold}
+.point_earn .txt_point_notice {margin-top:10px;}
+.point_earn .btn_area{overflow:hidden;width:208px;margin:28px auto 0 auto}
+.point_earn .btn_area > a{float:left;display:block;width:98px;height:28px;line-height:28px}
+.point_earn .btn_area .btn_blue{margin-right:8px;border:1px solid #2184cb;background:#369be5;color:#fff}
+
+/* 이벤트 상세  */
+.wrap_event{overflow:hidden;padding:30px 38px 0;border:1px solid #e9e9e9;background:#fff}
+.section_event{overflow:hidden;font-size:0;line-height:0;border-top:1px solid #e9e9e9;text-indent:-9999px}
+.event_new{height:650px;border-top:0 none;background:url(../images/event_point01.jpg) 0 0 no-repeat}
+.event_new .list_hub{overflow:hidden;width:702px;margin-top:560px}
+.event_new .list_hub li{float:left;width:230px}
+.event_new .list_hub li:first-child{width:238px}
+.event_new .link_go{width:80px;height:30px}
+.event_click{height:81px;padding-top:148px;background:url(../images/event_point02.jpg) 0 0 no-repeat}
+.event_cert + .event_click{padding-top:166px;background:url(../images/event_point04.jpg) 0 20px no-repeat}
+.event_click .link_go{width:182px;height:34px}
+.event_cert{border-top:0 none;height:250px;background:url(../images/event_point03.jpg) 0 0 no-repeat}
+.event_shop{height:82px;padding-top:188px;background:url(../images/event_point05.jpg) 0 0 no-repeat}
+.event_shop .link_go{width:130px;height:34px}
+/* 2016-10-05 수정 */
+.event_addinfo{border-top:0 none;height:83px;padding-top:435px;background:url(../images/event_point06.jpg) 0 0 no-repeat}
+.event_addinfo .link_go{width:150px;height:40px;margin:0 auto}
+/* //2016-10-05 수정 */
+.event_family{height:100px;padding-top:148px;background:url(../images/event_point07.jpg) 0 30px no-repeat}
+.event_family .link_go{width:120px;height:34px}
+
+.search_bot_wrap .select_type1{float:left;position:relative;background-color:#fff}
+.search_bot_wrap .select_type1 .ico_ctrl{position:absolute;right:10px;top:12px;width:18px;height:14px;background-position:-50px -660px}
+.search_bot_wrap .select_type1 .sel_value{display:block;height:27px;text-indent:0;font-size:12px;line-height:27px;padding-left:10px;border:1px solid #c0c0c0;text-align:left;cursor:pointer;color:#979797}
+.search_bot_wrap .select_type1 ul{overflow:hidden;position:absolute;left:-9999px;width:100%;max-height:300px;background:#fff;border-top:1px solid #cdcdd1;border-bottom:1px solid #cdcdd1}
+.search_bot_wrap .select_type1 li{position:relative;height:25px;border-left:1px solid #cdcdd1;border-right:1px solid #cdcdd1;vertical-align:top}
+.search_bot_wrap .select_type1 .inp_radio{position:absolute;left:-9999px}
+.search_bot_wrap .select_type1 label{position:absolute;left:0;top:0;width:100%;height:25px;line-height:25px;color:#767676;background:#fff;cursor:pointer;text-align:left;text-indent:10px}
+
+/* 이벤트 - 부가정보 - 회원정보수정  */
+.pop_addinfo_modify .popup{width:590px}
+.pop_addinfo_modify .desc_popup{overflow-x:hidden;overflow-y:scroll;height:431px;padding:8px 0 20px;border-top:2px solid #606060;border-bottom:1px solid #606060}
+.pop_addinfo_modify .tit_popup{color:#17a5fb}
+.fld_item_area{padding:10px 0 0 115px}
+.fld_item_area .input_wrap{overflow:hidden;position:relative}
+.fld_item_area .tit_area{float:left;display:block;width:115px;height:32px;margin-left:-115px;line-height:16px;font-weight:bold}
+.tit_area > span{display:table-cell;width:90px;height:34px;vertical-align:middle}
+.fld_item_area .tf_item{ width:143px;height:29px;padding:0 8px;line-height:29px;border:1px solid #c0c0c0;background:#fff;color:#737373;vertical-align:middle}
+.fld_item_area .opt_select{width:78px;height:32px;padding:7px 2px;border:1px solid #c0c0c0;font-family:verdana Regular, sans-serif;vertical-align:middle;line-height:28px}
+.fld_item_area .opt_select.year{width:90px}
+.fld_item_area .lab_box{display:inline-block;padding-left:20px;vertical-align:middle}
+.fld_item_area .lab_date{margin-left:16px;color:#555}
+.fld_item_area .lab_date:first-child{margin-left:0}
+.fld_item_area .lab_name{display:inline-block;padding:0 28px 0 0;color:#555;vertical-align:middle}
+.fld_item_area .btn_area{width:252px;height:21px;padding-top:8px;margin-top:20px;margin-bottom:10px;border:1px solid #c0c0c0;border-radius:1px;background-color:#fff;color:#7c7c7c;font-size:11px;font-weight:bold;text-align:center;vertical-align:top}
+.fld_item_area .btn_delete{display:inline-block;width:68px;margin-left:20px}
+.fld_item_area .btn_delete .ico_comm{width:7px;height:6px;margin-right:5px;background-position:-15px -1650px;vertical-align:middle}
+.fld_item_area .btn_add .ico_comm{width:6px;height:6px;margin-right:5px;background-position:0 -1650px;vertical-align:middle}
+.fld_item_area .inp_ckb{margin-right:3px}
+.fld_item_area .lab_interest{display:inline-block;width:86px;margin:0 10px 8px 0}
+.box_family{margin:10px 0}
+.box_family .area{overflow:hidden;height:32px;margin-bottom:10px}
+.box_family .btn_area{margin-top:0}

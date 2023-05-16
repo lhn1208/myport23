@@ -1,0 +1,59 @@
+<!--#include virtual="../../html/common/webinar_common.html" -->
+</head>
+<body>
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+</div>
+<div id="wrap" class="member back_color"> <!-- 각 섹션 별 class 명 변경 (common 기본) -->
+	<!-- header [s] -->
+	<!--#include virtual="../../html/common/webinar_member_header.html" -->
+	<!-- header [e] -->
+	<!-- container [s] -->
+	<main id="container" class="webinar_guide sub_page" data-title="회원가입">
+		<div class="contents">
+		<form>
+			<h2 class="step01"><a href="findId01.html">아이디(이메일) 찾기</a> <span>|</span> <a href="findId02.html" class="on">비밀번호 재설정</a></h2>
+			<div class="cert_wrap idPwd">
+				<div class="certBox5">
+					<h4>새로운 비밀번호를 입력해 주세요</h4>
+					<p class="center">
+						<span><input type="password" placeholder="비밀번호 입력"><em class="txt_blue">사용 가능합니다.</em></span>
+						<span><input type="password" placeholder="비밀번호 재입력"><em>8~12자의 영문, 숫자 조합만 가능합니다.</em></span>
+					</p>
+					<div class="line"></div>
+					<ul class="txt1">
+						<li>비밀번호는 8~12자의 영문, 숫자를 조합하여 입력해 주세요.</li>
+						<li>자주 사용했거나 쉬운 비밀번호가 아닌 새 비밀번호를 등록하고 주기적으로 변경해 주세요.
+							<br>비밀번호 변경은 [ 마이페이지 > 내정보 관리 > 회원정보수정 > 비밀번호 변경 ]에서 하실 수 있습니다.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="btn_bottom">
+				<a href="#" class="btn_blue btn_confirm">확인</a>
+			</div>
+		</form>
+		</div>
+    </div>
+    <!-- container [e] -->
+    <hr>
+	<!-- footer [s] -->
+    <!--#include virtual="../../html/common/webinar_footer.html" -->
+    <!-- footer [e] -->
+
+</div>
+
+<script type="text/javascript">
+$(".btn_bottom .btn_confirm").click(function(e){
+	// 모달레이어 호출
+	modalLayer = socialUI.modalLayerComm({
+		"type": 2,
+		"title": "안내",
+		"description": "비밀번호 설정이 완료되었습니다."
+	});
+	e.preventDefault();
+});
+</script>
+
+</body>
+</html>

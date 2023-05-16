@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>의사 소셜</title>
+	<link rel="shortcut icon" href="../../images/_favicon.ico" type="image/x-icon"><!-- 2016-01-11 파비콘 추가 -->
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<!-- <script src="../../js/jquery.placeholder.js"></script> -->
+	<!-- <script src="../../js/common.js"></script> -->
+	<script src="../../js/ui.js"></script>
+	<script src="../../js/jquery.bpopup.min.js"></script>
+	<script src="../../js/jquery.wmuSlider.min.js"></script>
+	<script src="../../js/jquery.tmpl.min.js"></script>
+	<script src="../../js/jquery.cycle2.min.js"></script>
+	 <!--2022 리뉴얼 js추가-->
+	 <script src="../../js/swiper.min.js"></script> 
+	 
+ <!--리뉴얼 css [s]-->
+	<!-- <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/drv_renewal_sub.css">
+     -->
+ <!--리뉴얼 css [e]-->	
+	<link rel="stylesheet" type="text/css" href="../../css/style_v3.css">
+	 <!--2022 리뉴얼 css추가-->
+	<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+
+<link rel="stylesheet" type="text/css" href="../../css/support.css">
+</head>
+<body>
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+	<a href="#gnb">메뉴 바로가기</a>
+</div>
+<div id="wrap" class="">
+	<!-- header -->
+	<header id="header" class="header_wrap">
+	<div class="header_top">
+		<div class="header_inner">
+			<h1><a href="#none" class="ico_comm_v2 tit_drville">DrVille</a></h1>
+			<h2 class="tit_page">&nbsp;</h2>
+			<!-- 로그인시 노출 -->
+			<div class="member_wrap">
+				<ul class="tools">
+					<li class="direct_link">
+						<a href="#">닥터빌 님<span class="ico_comm_v2"></span></a>
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">마이페이지</a>
+								<a href="#">고객센터</a>
+								<a href="#">1:1문의하기</a>
+								<a href="#">공지사항</a> <!--2020-01-14 리스트 추가-->
+								<a href="#">로그아웃</a>
+							</div>
+						</div>
+					</li>
+					<li class="point">
+						<a href="#">1,321,800P</a>
+					</li>
+					<li class="notice new">
+						<a href="#"><span class="ico_comm_v2">알림</span></a>
+					</li>
+				</ul>
+			</div>
+			<!-- 비로그인시 노출 -->
+			<div class="btn_header">
+				<a href="#" class="btn_login">로그인</a>
+				<a href="#" class="btn_join">Mcircle 회원가입</a>
+			</div>
+		</div>
+	</div>
+	<div class="header_btm">
+		<div class="header_inner">
+			<a href="#gnb" class="btn_gnb"><span class="btn_open"><span class="ico_open">전체 메뉴 열기</span></span></a>
+			<div class="location_wrap">
+				<ul class="location tools">
+					<li class="location_home">
+						<a href="#">홈</a>
+					</li>
+					<li class="location_depth1">
+						<a href="#">CME<span class="ico_comm_v2"></span></a>
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">CME</a>
+								<a href="#">해외의학서비스</a>
+								<a href="#">진료가이드</a>
+								<a href="#">병원경영</a>
+								<a href="#">혜택</a>
+								<a href="#">커뮤니티</a>
+								<a href="#">브랜드존</a>
+								<a href="#">포인트샵</a>
+								<a href="#">라이프</a>
+								<a href="#">자료실</a>
+								<a href="#">오픈콜라보레이션</a>
+								<a href="#">학술지원사업</a>
+								<a href="#">경제적이익 지출보고서</a>
+							</div>
+						</div>
+					</li>
+					<li class="location_depth2">
+						<a href="#">라이브세미나<span class="ico_comm_v2"></span></a>
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">라이브세미나</a>
+								<a href="#">다시보기 VOD</a>
+								<a href="#">CME매거진</a>
+								<a href="#">진진영</a>
+								<a href="#">해외학회스케치</a>
+								<a href="#">해외학회스케치 참여신청</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="service_list">
+				<ul>
+					<li><a href="#">라이브세미나</a></li>
+					<li><a href="#">해외의학서비스</a></li>
+					<li><a href="#">드럭인포</a></li>
+					<li><a href="#">자유게시판</a></li>
+					<li><a href="#">포인트샵</a></li>
+					<li><a href="#">피부비만성형포럼</a></li>
+					<!-- 2020-06-24 추가 [s] -->
+					<li><a href="#">닥터빌 아카데미</a></li>
+					<!-- 2020-06-24 추가 [e] -->
+				</ul>
+			</div>
+			<a href="#search_all" class="search_open"><span class="ico_comm_v2">통합검색</span></a>
+		</div>
+		<section id="search_all" class="section_search">
+			<h3 class="screen_out">검색</h3>
+			<div class="header_inner">
+				<form class="form_search" role="search">
+					<fieldset>
+						<legend class="screen_out">검색</legend>
+						<div class="box_search">
+							<input type="text" class="tf_keyword" title="검색어 입력" placeholder="검색할 내용을 입력하세요.">
+							<button type="submit" class="btn_search"><span class="ico_comm_v2">통합검색</span></button>
+						</div>
+					</fieldset>
+				</form>
+				<a href="#search_all" class="search_close"><span class="ico_comm_v2">통합검색 닫기</span></a>
+			</div>
+		</section>
+		<div id="gnb" class="gnb">
+			<div class="gnb_top">
+				<div class="gnb_inner">
+					<!-- 2022-08-31 수정 -->
+					<span class="badge_new_service">Now</span>
+					<a href="#" class="tit_new_service">해외학회스케치</a> 
+
+				</div>
+			</div>
+			<div class="gnb_wrap"> <!--2019-11-18 태그 추가-->
+				<div class="gnb_inner">
+					<ul class="allmenu">
+						<li>
+							<strong>CME</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">세미나편성표<span class="ico_comm_v2 ico_point">point</span></a></li>
+								<li><a href="#">다시보기VOD</a></li>
+								<li><a href="#">닥터빌 ON<span class="ico_comm_v2 ico_play">point</span></a></li>
+								<li><a href="#">CME매거진</a></li>
+								<li><a href="#">진진영</a></li>
+								<li><a href="#">해외학회스케치</a></li>
+								<li><a href="#">해외학회스케치 참여신청</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><strong>해외의학서비스<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">의학논문검색</a></li>
+								<li><a href="#">UpToDate</a></li>
+								<li><a href="#">DynaMed Plus</a></li>
+								<li><a href="#">Smart Imagebase</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>진료가이드</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">드럭인포</a></li>
+								<li><a href="#">학회/연수일정</a></li>
+								<li><a href="#">해외컨퍼런스</a></li>
+								<li><a href="#">해외의학뉴스</a></li>
+								<li><a href="#">처방가이드</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>병원경영</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">병원성공경영가이드<span class="ico_new">NEW</span></a></li> <!--2020-01-28 메뉴 추가-->
+								<li><a href="#">보험인정기준</a></li>
+								<li><a href="#">심사청구</a></li>
+								<li><a href="#">보험심사 청구 컨설팅</a></li>
+								<li><a href="#">개원가 실전 진료 Tip</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>혜택</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">설문<span class="ico_comm_v2 ico_point">point</span></a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="allmenu">
+						<li>
+							<strong>커뮤니티</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">자유게시판</a></li>
+								<li><a href="#">닥라이브<span class="ico_comm_v2 ico_point">point</span></a></li>
+								<li><a href="#">스터디룸</a></li>
+								<li><a href="#">피부비만성형포럼</a></li>
+								<!-- 2020-06-24 추가 [s] -->
+								<li><a href="#">닥터빌 아카데미</a></li>
+								<!-- 2020-06-24 추가 [e] -->
+							</ul>
+						</li>
+						<li>
+							<a href="#"><strong>브랜드존<span class="ico_comm_v2 ico_point">point</span><span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">의약품</a></li>
+								<li><a href="#">의료기기</a></li>
+								<li><a href="#">최신진료장비</a></li> <!-- 2019-12-06 수정 -->
+								<li><a href="#">스페셜라이프</a></li>
+								<li><a href="#">홍보영상</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><strong>포인트샵<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">영화</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">호텔</a></li>
+								<li><a href="#">여행</a></li>
+								<li><a href="#">기프티콘</a></li>
+								<li><a href="#">하늘맛</a></li>
+								<li><a href="#">SERICEO</a></li>
+								<li><a href="#">JArt</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>라이프</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">여행</a></li>
+								<li><a href="#">식신</a></li>
+								<li><a href="#">트렌드</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>자료실</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">서식</a></li>
+								<li><a href="#">케어노트</a></li>
+								<li><a href="#">카드뉴스</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="allmenu">
+						<li class="last_gnb_inner_li"> <!--2020-03-03 Class 추가-->
+							<a href="#"><strong>오픈콜라보레이션<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">IIT 제안</a></li>
+								<li><a href="#">제품개발제안</a></li> <!--2020-01-28 new 뱃지 삭제-->
+							</ul>
+						</li>
+						<li class="support_link last_gnb_inner_li">  <!--2020-03-03 Class 추가-->
+							<a href="#"><strong>학술지원사업<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<!-- 2021-06-28 수정 -->
+								<li><a href="#">해외학술대회 중계</a></li>
+								<li><a href="#">연구지원</a></li>
+								<li><a href="#">학술상</a></li>
+								<li class="seokchun"><a href="#">미래의료 연구지원</a></li>
+							</ul>
+						</li>
+						<li> <!--2020-04-14 수정 -->
+							<a href="#"><strong>경제적이익 지출보고서</strong></a>
+						</li>
+						<li class="last_gnb_inner_li"> <!--2020-04-14 Class 추가-->
+							<a href="#"><strong>자문참여</strong></a>
+						</li>
+						<li class="box">
+							<div class="channel">
+								<span>다양한 채널에서<br>닥터빌의 소식을 전해드립니다!</span>
+								<div class="icon_social">
+									<a href="https://www.youtube.com/channel/UCUOV1IWnqpB69okoWNKQeZQ" target="_blank" class="ico_comm_v2 ico_youtube">유투브</a>
+									<a href="http://pf.kakao.com/_zddxgd" target="_blank" class="ico_comm_v2 ico_kakao">카카오플러스친구</a>
+									<a href="https://www.facebook.com/%EB%8B%A5%ED%84%B0%EB%B9%8C-549462672108716/?ref=aymt_homepage_panel&amp;eid=ARCcUFij5OHuJmsLw9LuoiMg-2G-Eh48BWsaU_SSflZGsF0lu7DupXHoRDofX7sdUsEhMT95BrA64x6F" target="_blank" class="ico_comm_v2 ico_facebkook">페이스북</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="bg_gnb"></div>
+<script>
+	$(function () {
+		// ui 작업물 타이틀 확인용
+		var location = $("#container").data("location")
+			,title = $("#container").data("title");
+		$(".header_wrap .tit_page").text(title);
+		if(location === undefined){
+			$(".location_depth1 > a").html(title + '<span class="ico_comm_v2"></span>');
+			$(".location_depth2").hide();
+		}else{
+			$(".location_depth1 > a").html(location + '<span class="ico_comm_v2"></span>');
+			$(".location_depth2 > a").html(title + '<span class="ico_comm_v2"></span>');
+		}
+
+		// 헤더 고정
+		$(window).on("scroll",function(){
+			var headerTop = $(".header_top").height() + 1,
+				scrollTop = $(window).scrollTop();
+			if(scrollTop<headerTop){
+				$("#wrap").removeClass("fixed");
+			}else{
+				$("#wrap").addClass("fixed");
+			}
+		});
+
+		// 2019-12-06 추가
+		var gnbH = $("#gnb").height()
+			,headerH = $("#header").height(); //header 높이값
+
+		function gnbScroll(){
+			var winH = $(window).height(); // 브라우저 높이값
+			if(winH <= gnbH + headerH){
+				$(".header_wrap .gnb_wrap").scrollTop(0).css("height", winH - headerH - 20);
+			}else{
+				$(".header_wrap .gnb_wrap").scrollTop(0).css("height", gnbH - 47 );
+			}
+			//console.log('win' + winH , 'gnbH' + gnbH, 'headerH' + headerH);
+		}
+		// 2019-12-06
+
+
+
+		// 전체메뉴
+		$(".btn_gnb, .bg_gnb").on("click", function(e){
+			e.preventDefault();
+			if($(".header_wrap").hasClass("open")){
+				$("body").css("overflow-y","auto");
+				$(".header_wrap").removeClass("open");
+				$(".btn_gnb").removeClass("open");
+			}else{
+				gnbScroll();
+				$("body").css("overflow-y","hidden");
+				$(".header_wrap").addClass("open");
+				$(".btn_gnb").addClass("open");
+			}
+		});
+		$(window).on("resize",function(){
+			gnbScroll();
+		});
+
+
+		// 검색
+		$(".search_open, .search_close").on("click",function(e){
+			e.preventDefault();
+			var $search = $($(this).attr("href"));
+			$search.toggle();
+		});
+	});
+</script>
+	<!-- header [e] -->
+	<!-- container [s] -->
+	<main id="container" class="support symposium" data-location="학술지원사업" data-title="해외학술대회 중계">
+		<!-- support_top [s] -->
+		<div class="visual_top">
+			<div class="content">
+				<strong><span class="bg_txt">특정 질환군의 해외개최 국제학술대회</span><br><span class="bg_txt">참가를 지원하고 최신지견을</span><br><span class="bg_txt">국내/개도국 의학자에게 전파합니다</span></strong><!--2019-02-08 text 수정-->
+				<p class="txt_box"><span>궁금한 점은 언제든지 문의주세요 <br>medischolar@daewoongfoundation.or.kr</span></p>
+				<a href="#" class="btn_box"><span>프로그램<br>소개</span></a> 
+			</div>
+		</div>
+		<!-- support_top [e] -->
+		<!-- 참여중인 프로그램 [s] --> <!-- 21.04.27 수정 -->
+		<div class="my_support">
+			<div class="content">
+				<ul class="list_tab" style="margin-top:0;">
+					<li class="on"><a href="#program" class="link_tab">참여중인 프로그램</a></li>
+					<li><a href="#program2" class="link_tab">참여했던 프로그램</a></li>
+				</ul>
+				<!-- 참여중인 프로그램 [s]-->
+				<div id="program">
+					<a href="#none" class="program">
+						<div class="program_info">
+							<strong class="program_tit">ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20</strong>
+							<p class="tail">ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20 </p>
+						</div>
+						<p class="progress_badge"><span class="badge green">심사중</span></p>
+					</a>
+					<a href="#none" class="program">
+						<div class="program_info">
+							<strong class="program_tit">ESMO (ESMO Annual Congress)</strong>
+							<p class="tail">Munich, Germany  |  2018-10-19 ~ 2018-10-23 </p>
+						</div>
+						<p class="progress_badge"><span class="badge blue">연구결과서<br>등록</span></p>
+					</a>
+				</div>
+				<!-- 참여중인 프로그램 [e]-->
+				<!-- 참여했던 프로그램 [s] -->
+				<div id="program2" class="tbl_list" style="display:none;">
+					<table>
+						<caption>참여했던 학회 리스트</caption>
+						<colgroup>
+							<col style="width:140px;">
+							<col style="width:auto">
+							<col style="width:150px;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">상태</th>
+								<th scope="col">학회명</th>
+								<th scope="col">피드백</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="badge blue">입금<br>완료</span></td>
+								<td class="program_info">
+									<strong class="program_tit">ESMO (ESMO Annual Congress)</strong>
+									<p class="tail">심사완료일  2018-10-23 </p>
+								</td>
+								<td><a href="#none" class="btn_tbl">피드백</a></td>
+							</tr>
+							<tr>
+								<td><span class="badge blue">입금<br>완료</span></td>
+								<td class="program_info">
+									<strong class="program_tit">ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20</strong>
+									<p class="tail">심사완료일  2018-10-23 </p>
+								</td>
+								<td><a href="#none" class="btn_tbl">피드백</a></td>
+							</tr>
+							<tr>
+								<td><span class="badge red">미선정</span></td>
+								<td class="program_info">
+									<strong class="program_tit">[ASBMR] The American Society for Bone and Mineral Research</strong>
+									<p class="tail">심사완료일  2018-10-23 </p>
+								</td>
+								<td><a href="#none" class="btn_tbl">피드백</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- 신참여했던 프로그램 [e] -->
+			</div>
+		</div>
+		<!-- 참여중인 프로그램 [e] -->
+		<!-- 프로그램 리스트 [s] -->
+		<div class="content">
+			<h2 class="txt_type1">학회참가 신청</h2>
+			<div class="tab_cont">
+				<ul class="list_tab2"> <!--2021-04-27 text 수정-->
+					<li class="on"><a href="#possible" class="link_tab">온라인</a></li>
+					<li><a href="#completion" class="link_tab">오프라인</a></li><!-- 2021-06-28 subtext 삭제-->
+				</ul>
+
+				<!-- 온라인 신청 탭 [s] -->
+				<!-- <div id="possible" class="apply_box">
+					<h4 class="tit_cont"><span>2023년 진행되는 해외개최 국제학술대회</span><br>모두 지원 가능합니다.</h4>
+                    <div class="apply_info">
+                        <p>지원금도 받고 국내/외 의학자들에게 최신지견도 공유해주세요!</p>
+                        <ul>
+                            <li>* 상시지원</li>
+                            <li>* 학회 개최일 기준 <span class="f_blue">30일 전</span>까지 신청가능</li>
+                        </ul>
+                        <a href="symposium_suggest01.html" class="btn_apply">지원하기</a>
+                        <a href="http://www.doctorville.co.kr/mjournal/societySchedule/main" class="btn_apply green">학회일정 보기</a>
+                    </div>
+                </div> -->
+				<!-- 2023-01-10 수정 -->
+				<div id="possible" class="apply_box">
+					<h4 class="tit_cont"><span>대웅재단 2023년 해외학회 중계사업에 대한 
+						<br>많은 선생님들의 관심과 지원에 감사드립니다.</span></h4>
+                    <div class="apply_info">
+                        <p><strong>본 사업의 상반기 신청 TO 마감</strong>에 따라,
+							<br><strong>하반기 추가 모집할 예정</strong>이오니 참고 부탁드립니다.
+							<br><br>
+							하반기 사업 안내를 희망하시는 선생님들께서는 <br>‘알림받기’ 를 이용해 주세요. 
+						</p>
+							<a href="#" class="btn_apply">알림받기</a>
+							<!-- <ul>
+								<li>* 상시지원</li>
+								<li>* 학회 개최일 기준 <span class="f_blue">30일 전</span>까지 신청가능</li>
+							</ul> -->
+                        <!-- <a href="http://www.doctorville.co.kr/mjournal/societySchedule/main" class="btn_apply green">학회일정 보기</a>  -->
+                    </div>
+                </div>
+				<!-- //2023-01-10 수정 -->
+                <!-- 온라인 신청 탭 [e] -->
+				<!-- <div id="possible" class="tbl_list">
+					<table>
+						<caption>학회참가 신청</caption>
+						<colgroup>
+							<col style="width:140px;">
+							<col style="width:auto">
+							<col style="width:150px;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">신청기간</th>
+								<th scope="col">학회명</th>
+								<th scope="col">신청하기</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="date">09-01<br>~ 09-30</span></td>
+								<td class="program_info">
+									<strong class="program_tit">ESMO (ESMO Annual Congress)</strong>
+									<p class="tail">Munich, Germany  |  2018-10-19 ~ 2018-10-23 </p>
+								</td>
+								<td><a href="#none" class="btn_tbl">신청하기</a></td>
+							</tr>
+							<tr>
+								<td><span class="date">09-01<br>~ 09-30</span></td>
+								<td class="program_info">
+									<strong class="program_tit">[ESPE] European Society for Paediatric Endocrinology</strong>
+									<p class="tail">Athene, Greece  |  2018-10-19 ~ 2018-10-23 </p>
+								</td>
+								<td><a href="#none" class="btn_tbl">신청하기</a></td>
+							</tr>
+							<tr>
+								<td><span class="date">09-01<br>~ 09-30</span></td>
+								<td class="program_info">
+									<strong class="program_tit">[ASBMR] The American Society for Bone and Mineral Research</strong>
+									<p class="tail">Quebec, Canada	  |  2018-10-19 ~ 2018-10-23 </p>
+								</td>
+								<td><a href="#none" class="btn_tbl">신청하기</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>-->
+				
+				<!-- 2021-06-28 오프라인 신청 탭 [s] -->
+				<!-- <div id="completion" class="apply_box" style="display:none;">
+					<h4 class="tit_cont"><span>2023년 진행되는 해외개최 국제학술대회</span><br>모두 지원 가능합니다.</h4>
+                    <div class="apply_info">
+                        <p>지원금도 받고 국내/외 의학자들에게 최신지견도 공유해주세요!</p>
+                        <ul>
+                            <li>* 상시지원</li>
+                            <li>* 학회 개최일 기준 <span class="f_blue">30일 전</span>까지 신청가능</li>
+                        </ul>
+                        <a href="symposium_suggest01.html" class="btn_apply">지원하기</a>
+                        <a href="http://www.doctorville.co.kr/mjournal/societySchedule/main" class="btn_apply green">학회일정 보기</a>
+                    </div>
+                </div> -->
+				<!-- 2023-01-10 수정 -->
+				<div id="completion" class="apply_box" style="display:none;">
+					<h4 class="tit_cont"><span>대웅재단 2023년 해외학회 중계사업에 대한 
+						<br>많은 선생님들의 관심과 지원에 감사드립니다.</span></h4>
+                    <div class="apply_info">
+                        <p><strong>본 사업의 상반기 신청 TO 마감</strong>에 따라,
+							<br><strong>하반기 추가 모집할 예정</strong>이오니 참고 부탁드립니다.
+							<br><br>
+							하반기 사업 안내를 희망하시는 선생님들께서는 <br>‘알림받기’ 를 이용해 주세요. 
+
+						</p>
+							<a href="#" class="btn_apply">알림받기</a>
+							<!-- <ul>
+								<li>* 상시지원</li>
+								<li>* 학회 개최일 기준 <span class="f_blue">30일 전</span>까지 신청가능</li>
+							</ul> -->
+                        <!-- <a href="http://www.doctorville.co.kr/mjournal/societySchedule/main" class="btn_apply green">학회일정 보기</a>  -->
+                    </div>
+				</div>
+				<!-- //2023-01-10 수정 -->
+				<!-- 2021-06-28 오프라인 신청 탭 [e] -->
+
+				<!-- 참여했던 학회 주석 처리 [s] -->
+				<!-- <div id="completion" class="tbl_list" style="display:none;">
+					<div class="apply_box">
+						'현재 진행되지 않습니다’
+					</div>
+					<table>
+						<caption>참여했던 학회 리스트</caption>
+						<colgroup>
+							<col style="width:140px;">
+							<col style="width:auto">
+							<col style="width:150px;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">상태</th>
+								<th scope="col">학회명</th>
+								<th scope="col">피드백</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="badge blue">입금<br>완료</span></td>
+								<td class="program_info">
+									<strong class="program_tit">ESMO (ESMO Annual Congress)</strong>
+									<p class="tail">심사완료일  2018-10-23 </p>
+								</td>
+								<td><a href="#none" class="btn_tbl">피드백</a></td>
+							</tr>
+							<tr>
+								<td><span class="badge blue">입금<br>완료</span></td>
+								<td class="program_info">
+									<strong class="program_tit">ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20ash2019_20</strong>
+									<p class="tail">심사완료일  2018-10-23 </p>
+								</td>
+								<td><a href="#none" class="btn_tbl">피드백</a></td>
+							</tr>
+							<tr>
+								<td><span class="badge red">미선정</span></td>
+								<td class="program_info">
+									<strong class="program_tit">[ASBMR] The American Society for Bone and Mineral Research</strong>
+									<p class="tail">심사완료일  2018-10-23 </p>
+								</td>
+								<td><a href="#none" class="btn_tbl">피드백</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div> -->
+				<!-- 참여했던 학회 주석 처리 [e] -->
+			</div>
+		</div>
+
+		<!-- 프로그램 소개 [s] -->
+		<!-- 2022-12-23 전체수정-->
+		<div class="introduction possible">
+			<div class="content">
+				<h3 class="tit_cont">프로그램 소개</h3>
+				<a href="#popSymposiumOnline" class="btn_guide"><span>운영원칙</span></a>
+				<div class="tbl_cont">
+					<table>
+						<caption>프로그램 소개</caption>
+						<colgroup>
+							<col style="width:160px;">
+							<col style="width:auto;">
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="row">취지</th>
+							<td>
+								<p class="text-justify">유능하고 젊은 의학자를 선별하여 국내/외 학회 참석 지원을 통한 최신 의학지식 학습 및 역량 증가의 기회를 제공하고, 학회에 참여하지 못한 국내외 의학자들에게는 최신 지견을 전달받을 수 있는 기회를 동시 발전시키기 위함</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">지원자격</th>
+							<td>
+								<ul>
+									<li>1) 만 45세 미만의 MD 취득자 (<em class="f_red">1978</em>년 1월 1일 이후 출생자)</li>
+									<li>2) 재단의 의무사항을 이행한다고 동의한 자 </li>
+									<li>3) 영어로 진행되는 해외 온라인 학회의 내용을 이해하고 전달 강의를 하는데 문제가 없는 자</li>
+									<li>4)<em class="f_red">동 사업의 선정이력이 있는 경우, 결과이행이 완료된 자</em></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">대상학회</th>
+							<td>2023년 온라인으로 개최되는 해외학술대회 중 전파가치가 있는 학회 (국내개최 국제학술대회 제외)</td>
+						</tr>
+						<tr>
+							<th scope="row">지원범위</th>
+							<td>
+								<ul>
+									<li>- 오프라인 참가시,  미주/유럽 500만원, 중동/아프라카 400만원, 아시아 300만원 (대륙별 정액지원)</li>
+									<li>- 온라인 참가시, 300만원(세후 정액지원)</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">수혜자 의무</th>
+							<td>
+								<p>학회 참석 종료일 후 30일 이내 닥터빌에 기본 의무사항 제출완료 후 지원금 지급</p> 
+								<span class="f_gray">※ 제출된 의무 사항은 작성자명으로 닥터빌 해외학회 스케치에 게재하여 국내 의학자에게 전파</span> 
+								<a href="/mjournal/societyjourney/sketch/main" class="btn_link" target="_blank">닥터빌 해외학회스케치</a>
+								<strong class="mat_25">&#9632; 기본 의무사항</strong>
+								<ul><!-- 2020-03-20 text 수정 -->
+									<li>
+										- <strong class="inline">오프라인</strong> 참가시, <strong class="inline">보고서, 온라인강의(국문), 브이로그</strong>
+									</li>
+									<li>
+										- <strong class="inline">온라인</strong> 참가시, <strong class="inline">보고서, 온라인강의(국문)</strong>
+										<br><span class="f_red"> ※ 이행기간 : 보고서 7일, 영상 30일 이내 제출
+										<br>사후결과평가를 통하여 동사업 재지원시 추가지원 여부 확정</span>
+									</li>
+									<li>
+										<strong>1. 국/영문 보고서</strong>
+										<p>학회 주요 내용 10페이지 이내 보고서 작성</p>
+										<a href="#" class="btn_link inline_block" target="_blank">보고서 양식</a>
+										<a href="http://www.doctorville.co.kr/mjournal/societyjourney/sketch/detail/1143" class="btn_link inline_block" target="_blank">보고서 예시</a>
+									</li>
+									<li>
+										<strong>2.온라인 강의(한국어)</strong>
+										<p>학습한 온라인 학회 주요내용 요약 후 전달강의 촬영</p>
+										<a href="#" class="btn_link inline_block" target="_blank">셀프촬영 가이드</a>
+										<a href="#" class="btn_link inline_block" target="_blank">촬영 가이드(스튜디오/출장)</a>
+										<a href="http://www.doctorville.co.kr/mjournal/societyjourney/sketch/1059" class="btn_link inline_block" target="_blank">영상강의 예시</a>
+									</li>
+									<li>
+										<strong>3. 브이로그 (오프라인 참석시 해당)</strong>
+										<a href="#" class="btn_link inline_block" target="_blank">브이로그 촬영 가이드</a>
+										<a href="https://www.youtube.com/watch?v=mF3MLbdrUkk" class="btn_link inline_block" target="_blank">브이로그 예시</a>
+									</li>
+									<li>
+										<strong>4.(선택사항) 온라인 강의(영어)</strong>
+										<p>학습한 온라인 학회 주요내용 요약 후 영어로 전달강의 촬영</p>
+									</li>
+									<li>
+										<strong>5. 지출내역 증빙</strong>
+										<p>학회 참석증빙 자료 제출<br />(예: 학회등록증, 영수증, 항공권 등)</p>
+									</li>
+								</ul>
+								<!-- 2020-03-03 delete
+								<strong class="mat_25">&#9632; 선택의무사항 <span class="f_red">(택1 필수)</span></strong>
+								<ul>
+									<li>
+										<strong>1. 영상강의(한국어 또는 영어)</strong>
+										<p>참가한 학회 주요 내용 전달 교육 영상 촬영</p>
+										<span class="f_gray">(닥터빌 담당자와 촬영 스케줄 조율후 한국어 30분 혹은 영어 20분 촬영)</span>
+									</li>
+									<li>
+										<strong>2. 스포트라이트 보고서(영어)</strong>
+										<p>참가한 학회 주요 내용 중 전파가 필요한 내용을 논평 형식으로 작성</p>
+										<span class="f_gray">(A4 7매 이상 분량의 가이드라인 준용)</span>
+									</li>
+								</ul>
+								-->
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">신청 및 심사기간</th>
+							<td>
+								<p>신청 기간 : 수시 공모 진행하며 학회 <em class="f_red">개최일 기준 30일 전까지 신청</em>
+									<span class="desc">* 지원인원 달성시 사업이 조기 마감될 수 있음</span>
+								</p>
+								<p>심사 기간 : 신청일 기준 <em class="f_red">7일 이내</em> 선정 결과 안내</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">심사기준</th>
+							<td>
+								<ul>
+									<li>- <em class="f_red">연구 업적 및 역량, 학습 및 전파계획, 학회주제 및 전달내용, 전파가치 등</em></li>
+									<li class="mat_15">- 온라인 강의 촬영, 보고서 등 제출물 배포 동의 </li>
+								</ul>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<h3 class="tit_cont">진행 프로세스</h3>
+				<ol class="process">
+					<li>
+						<strong>심사</strong>
+						<p>접수마감 후<br>심사를 진행합니다<br>신청일 기준 7일 이내<br>선정결과를 안내합니다<br>
+						</p>
+					</li>
+					<li>
+						<strong>학회 참석</strong>
+						<p>학회에 참석하시어<br>최신 의학 지식과<br />기술을 학습해주세요</p>
+					</li>
+					<li class="dot_line">
+						<strong>영상강의</strong>
+						<p>학회 종료 후<br>지원자께 스케줄 조율<br>안내차 연락드립니다</p>
+					</li>
+					<li>
+						<strong>자료 제출</strong>
+						<p>의무 이행사항<br />자료를 제출합니다.<br>보고서/브이로그 7일이내,<br>온라인강의 30일이내<br>제출합니다.</p>
+					</li>
+					<li>
+						<strong>지원금 지급</strong>
+						<p>의무사항 및 증빙서류<br>심사 후<br>입금합니다</p>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<!-- 2022-12-23 오프라인 전체수정 -->
+		<div class="introduction completion" style="display:none;">
+			<div class="content">
+				<h3 class="tit_cont">프로그램 소개</h3>
+				<a href="#popSymposium" class="btn_guide"><span>운영원칙</span></a>
+				<div class="tbl_cont">
+					<table>
+						<caption>프로그램 소개</caption>
+						<colgroup>
+							<col style="width:160px;">
+							<col style="width:auto;">
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="row">취지</th>
+							<td>
+								<p class="text-justify">유능하고 젊은 의학자를 선별하여 국내/외 학회 참석 지원을 통한 최신 의학지식 학습 및 역량 증가의 기회를 제공하고, 학회에 참여하지 못한 국내외 의학자들에게는 최신 지견을 전달받을 수 있는 기회를 동시 발전시키기 위함</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">지원자격</th>
+							<td>
+								<ul>
+									<li>1) 만 45세 미만의 MD 취득자 (<em class="f_red">1978</em>년 1월 1일 이후 출생자)</li>
+									<li>2) 재단의 의무사항을 이행한다고 동의한 자 </li>
+									<li>3) 영어로 진행되는 해외 온라인 학회의 내용을 이해하고 전달 강의를 하는데 문제가 없는 자</li>
+									<li>4)<em class="f_red">동 사업의 선정이력이 있는 경우, 결과이행이 완료된 자</em></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">대상학회</th>
+							<td>2023년 온라인으로 개최되는 해외학술대회 중 전파가치가 있는 학회 (국내개최 국제학술대회 제외)</td>
+						</tr>
+						<tr>
+							<th scope="row">지원범위</th>
+							<td>
+								<ul>
+									<li>- 오프라인 참가시,  미주/유럽 500만원, 중동/아프라카 400만원, 아시아 300만원 (대륙별 정액지원)</li>
+									<li>- 온라인 참가시, 300만원(세후 정액지원)</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">수혜자 의무</th>
+							<td>
+								<p>학회 참석 종료일 후 30일 이내 닥터빌에 기본 의무사항 제출완료 후 지원금 지급</p> 
+								<span class="f_gray">※ 제출된 의무 사항은 작성자명으로 닥터빌 해외학회 스케치에 게재하여 국내 의학자에게 전파</span> 
+								<a href="/mjournal/societyjourney/sketch/main" class="btn_link" target="_blank">닥터빌 해외학회스케치</a>
+								<strong class="mat_25">&#9632; 기본 의무사항</strong>
+								<ul><!-- 2020-03-20 text 수정 -->
+									<li>
+										- <strong class="inline">오프라인</strong> 참가시, <strong class="inline">보고서, 온라인강의(국문), 브이로그</strong>
+									</li>
+									<li>
+										- <strong class="inline">온라인</strong> 참가시, <strong class="inline">보고서, 온라인강의(국문)</strong>
+										<br><span class="f_red"> ※ 이행기간 : 보고서 7일, 영상 30일 이내 제출
+										<br>사후결과평가를 통하여 동사업 재지원시 추가지원 여부 확정</span>
+									</li>
+									<li>
+										<strong>1. 국/영문 보고서</strong>
+										<p>학회 주요 내용 10페이지 이내 보고서 작성</p>
+										<a href="#" class="btn_link inline_block" target="_blank">보고서 양식</a>
+										<a href="http://www.doctorville.co.kr/mjournal/societyjourney/sketch/detail/1143" class="btn_link inline_block" target="_blank">보고서 예시</a>
+									</li>
+									<li>
+										<strong>2.온라인 강의(한국어)</strong>
+										<p>학습한 온라인 학회 주요내용 요약 후 전달강의 촬영</p>
+										<a href="#" class="btn_link inline_block" target="_blank">셀프촬영 가이드</a>
+										<a href="#" class="btn_link inline_block" target="_blank">촬영 가이드(스튜디오/출장)</a>
+										<a href="http://www.doctorville.co.kr/mjournal/societyjourney/sketch/1059" class="btn_link inline_block" target="_blank">영상강의 예시</a>
+									</li>
+									<li>
+										<strong>3. 브이로그 (오프라인 참석시 해당)</strong>
+										<a href="#" class="btn_link inline_block" target="_blank">브이로그 촬영 가이드</a>
+										<a href="https://www.youtube.com/watch?v=mF3MLbdrUkk" class="btn_link inline_block" target="_blank">브이로그 예시</a>
+									</li>
+									<li>
+										<strong>4.(선택사항) 온라인 강의(영어)</strong>
+										<p>학습한 온라인 학회 주요내용 요약 후 영어로 전달강의 촬영</p>
+									</li>
+									<li>
+										<strong>5. 지출내역 증빙</strong>
+										<p>학회 참석증빙 자료 제출<br />(예: 학회등록증, 영수증, 항공권 등)</p>
+									</li>
+								</ul>
+								<!-- 2020-03-03 delete
+								<strong class="mat_25">&#9632; 선택의무사항 <span class="f_red">(택1 필수)</span></strong>
+								<ul>
+									<li>
+										<strong>1. 영상강의(한국어 또는 영어)</strong>
+										<p>참가한 학회 주요 내용 전달 교육 영상 촬영</p>
+										<span class="f_gray">(닥터빌 담당자와 촬영 스케줄 조율후 한국어 30분 혹은 영어 20분 촬영)</span>
+									</li>
+									<li>
+										<strong>2. 스포트라이트 보고서(영어)</strong>
+										<p>참가한 학회 주요 내용 중 전파가 필요한 내용을 논평 형식으로 작성</p>
+										<span class="f_gray">(A4 7매 이상 분량의 가이드라인 준용)</span>
+									</li>
+								</ul>
+								-->
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">신청 및 심사기간</th>
+							<td>
+								<p>신청 기간 : 수시 공모 진행하며 학회 <em class="f_red">개최일 기준 30일 전까지 신청</em>
+									<span class="desc">* 지원인원 달성시 사업이 조기 마감될 수 있음</span>
+								</p>
+								<p>심사 기간 : 신청일 기준 <em class="f_red">7일 이내</em> 선정 결과 안내</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">심사기준</th>
+							<td>
+								<ul>
+									<li>- <em class="f_red">연구 업적 및 역량, 학습 및 전파계획, 학회주제 및 전달내용, 전파가치 등</em></li>
+									<li class="mat_15">- 온라인 강의 촬영, 보고서 등 제출물 배포 동의 </li>
+								</ul>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<h3 class="tit_cont">진행 프로세스</h3>
+				<ol class="process">
+					<li>
+						<strong>심사</strong>
+						<p>접수마감 후<br>심사를 진행합니다<br>신청일 기준 7일 이내<br>선정결과를 안내합니다<br>
+						</p>
+					</li>
+					<li>
+						<strong>학회 참석</strong>
+						<p>학회에 참석하시어<br>최신 의학 지식과<br />기술을 학습해주세요</p>
+					</li>
+					<li class="dot_line">
+						<strong>영상강의</strong>
+						<p>학회 종료 후<br>지원자께 스케줄 조율<br>안내차 연락드립니다</p>
+					</li>
+					<li>
+						<strong>자료 제출</strong>
+						<p>의무 이행사항<br />자료를 제출합니다.<br>보고서/브이로그 7일이내,<br>온라인강의 30일이내<br>제출합니다.</p>
+					</li>
+					<li>
+						<strong>지원금 지급</strong>
+						<p>의무사항 및 증빙서류<br>심사 후<br>입금합니다</p>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<!-- 프로그램 소개 [e] -->
+
+	</main>
+	<a href="#none" class="btn_comm btn_top">TOP</a> <!-- 2019-02-08 top 버튼 추가-->
+
+	<!-- 운영규정 팝업 [s] -->
+	<!-- 2022-12-23 팝업 전체수정 -->
+	<div id="popSymposiumOnline" class="layer_pop layer_sym"><!--2022-12-23 layer_sym 클래스 추가-->
+		<div class="inner">
+			<div class="layer_head">
+				<h4 class="tit">해외학술대회 중계프로그램 운영규정</h4>
+				<span>개정일 : 2023.02.01</span>
+			</div>
+			<div class="layer_body">
+				<strong>제1조 (명칭)</strong>
+				<p>동 규정은 대웅재단 해외학술대회 중계프로그램 운영규정이라고 함</p>
+				<strong>제2조 (목적)</strong>
+				<p>유능하고 젊은 의학자를 선별하여 해외학회 참석 지원을 통한 최신 의학지식 학습 및 역량 증가의 기회를 제공하고, 학회에 참여하지 못한 국내외 의학자들에게는 최신 지견을 전달받을 수 있는 기회를 동시 발전시키기 위함.</p>
+				<strong>제3조 (지원대상 학회)</strong>
+				<p>2023년 개최되는 해외학술대회(국내개최 국제학술대회 제외)</p>
+				<strong>제4조 (지원자격)</strong>
+				<p>다음 각 호에 모두 해당되는 경우 지원신청을 할 수 있음</p>
+				<ul>
+					<li>1. 만 45세 미만 MD 취득자 (1978년 1월 1일 이후 출생자)</li>
+					<li>2. 재단의 의무사항을 이행한다고 동의한 자</li>
+					<li>3. 영어로 진행되는 해외 온라인 학회의 내용을 이해하고 전달 강의를 하는데 문제가 없는 자</li>
+					<li>4. 동 사업의 선정이력이 있는 경우, 결과이행이 완료된 자에 한함</li>
+				</ul>
+				<strong>제5조 (지원신청)</strong>
+				<ul>
+					<li>
+						1. 지원자는 다음의 증빙자료를 갖추어 공지된 날까지 온라인 신청해야 함
+						<ul class="txt_indent">
+							<li>1) 지원서 (필수)</li>
+							<li>2) 발표자의 경우 초록사본, 채택메일 (선택)</li>
+						</ul>
+					</li>
+				</ul>
+				<strong>제6조 (지원범위)</strong>
+				<ul>
+					<li><em class="point">오프라인 참가 시, 미주/유럽 500만원, 중동/아프리카 400만원, 아시아 300만원(대륙별 정액지원), 온라인 참가 시, 300만원</em>(국제학술대회 등록/참가비, 전달강의 준비 및 강의료)으로 참석 후 아래 7조 증빙자료 제출 및 재단 승인 후 예산지급</li>
+				</ul>
+				<strong>제7조 (수혜자 의무)</strong>
+                <ul class="pdt10">
+                    <li>
+                        1. 지원받은 수혜자는 학술대회 참석 후 보고서/브이로그는 7일 이내, 온라인 강의는 30일 이내에 아래 각 호에 해당하는 서류를 온라인으로 제출해야 함. 아래 내용 승인 후 제출한 통장 사본으로 지원금 입금
+                        <ul class="txt_indent">
+                            <li>1) 국/영문 보고서 (필수)
+								<ul class="txt_indent">
+									<li>- 학회 주요 내용 10페이지 미만 보고서 작성</li>
+									<li>- 제출한 보고서는 작성자 이름으로 국내/외 의과자학자에게 전파됨</li>
+								</ul>
+							</li>
+							<li>
+								2) 한국어 온라인 강의 (필수)
+								<ul class="txt_indent">
+									<li>- 촬영 30분 내외</li>
+									<li>- 학습한 학회 주요내용 요약 후 전달강의 촬영</li>
+								</ul>
+								<p>* 영상강의 촬영은 셀프, 스튜디오 방문, 영상 촬영팀 출장 방문 촬영 중 선택 가능</p>
+							</li>
+							<li>3)	브이로그 (필수)
+								<ul class="txt_indent">
+									<li>- 제출 영상 분량 10분 내외</li>
+									<li>- 제출한 보고서는 작성자 이름으로 국내 의과자학자에게 전파됨</li>
+								</ul>
+							</li>
+							<li>4) 영어 온라인 강의 (선택)
+								<ul class="txt_indent">
+									<li>- 촬영 30분 내외</li>
+									<li>- 학습한 학회 주요내용 요약 후 영어로 전달강의 촬영</li>
+								</ul>
+								<p>* 한국어 온라인 강의 촬영 시 함께 진행 예정 1) 국/영문 보고서 (필수)</p>
+							</li>
+                        </ul>
+                    </li>
+                    <li class="pdt10">
+                        2. 집행결과 보고서
+                        <ul class="txt_indent">
+                            <li class="">
+                                1) 해당 학회를 실제 참석했는지를 증빙할 수 있는 내용 제출
+                                <ul class="txt_indent">
+                                    <li>ㄱ. 등록확인증 (학회에서 보내온 이메일 등) 및 영수증 또는 송금확인서</li>
+									<li>ㄴ. 신분증 및 본인명의 통장사본 1부</li>
+                                    <!-- <li>
+                                         ㄴ. Boarding Pass 및 항공료 영수증
+                                        <p class="txt_indent">* 분실 시, 항공사 발행 탑승 확인서 & 마일리지 적립 확인서</p>
+                                        <p class="txt_indent">* 일부 외국항공사에서 탑승확인서를 받기 어려울 경우, 여권 사본 및 출국 확인 도장이 찍힌 페이지 사본을 제출 </p>
+
+                                    </li>
+                                    <li>
+                                        ㄷ. 숙박 증빙서류
+                                        <p class="txt_indent">* 호텔 Check in/out 증빙 또는 카드영수증/송금확인서</p>
+                                    </li>
+									 <li>
+                                        ㄹ. 신분증 및 본인 명의 통장사본 1부
+                                    </li> -->
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+				<strong>제8조(지원예산)</strong>
+				<p>재단법인 대웅재단 예산으로 지원</p>
+				<strong>제9조 (부칙)</strong>
+				<p>본 규정에 규정되지 않은 사항은 대웅재단 내규에 따름</p>
+			</div>
+			<div class="btns">
+				<button type="button" class="btn btn_cancel">닫기</button>
+			</div>
+			<button type="button" class="btn_comm btn_close" title="닫기">닫기</button>
+		</div>
+	</div>
+	<!-- 온라인 운영규정 팝업 [e] -->
+
+	<!-- 오프라인 운영규정 팝업 [s] -->
+	<!-- 2022-12-23 오프라인 팝업 전체수정 -->
+	<div id="popSymposium" class="layer_pop layer_sym"><!--2022-12-23 layer_sym 클래스 추가-->
+		<div class="inner">
+			<div class="layer_head">
+				<h4 class="tit">해외학술대회 중계프로그램 운영규정</h4>
+				<span>개정일 : 2023.02.01</span>
+			</div>
+			<div class="layer_body">
+				<strong>제1조 (명칭)</strong>
+				<p>동 규정은 대웅재단 해외학술대회 중계프로그램 운영규정이라고 함</p>
+				<strong>제2조 (목적)</strong>
+				<p>유능하고 젊은 의학자를 선별하여 해외학회 참석 지원을 통한 최신 의학지식 학습 및 역량 증가의 기회를 제공하고, 학회에 참여하지 못한 국내외 의학자들에게는 최신 지견을 전달받을 수 있는 기회를 동시 발전시키기 위함.</p>
+				<strong>제3조 (지원대상 학회)</strong>
+				<p>2023년 개최되는 해외학술대회(국내개최 국제학술대회 제외)</p>
+				<strong>제4조 (지원자격)</strong>
+				<p>다음 각 호에 모두 해당되는 경우 지원신청을 할 수 있음</p>
+				<ul>
+					<li>1. 만 45세 미만 MD 취득자 (1978년 1월 1일 이후 출생자)</li>
+					<li>2. 재단의 의무사항을 이행한다고 동의한 자</li>
+					<li>3. 영어로 진행되는 해외 온라인 학회의 내용을 이해하고 전달 강의를 하는데 문제가 없는 자</li>
+					<li>4. 동 사업의 선정이력이 있는 경우, 결과이행이 완료된 자에 한함</li>
+				</ul>
+				<strong>제5조 (지원신청)</strong>
+				<ul>
+					<li>
+						1. 지원자는 다음의 증빙자료를 갖추어 공지된 날까지 온라인 신청해야 함
+						<ul class="txt_indent">
+							<li>1) 지원서 (필수)</li>
+							<li>2) 발표자의 경우 초록사본, 채택메일 (선택)</li>
+						</ul>
+					</li>
+				</ul>
+				<strong>제6조 (지원범위)</strong>
+				<ul>
+					<li><em class="point">오프라인 참가 시, 미주/유럽 500만원, 중동/아프리카 400만원, 아시아 300만원(대륙별 정액지원), 온라인 참가 시, 300만원</em>(국제학술대회 등록/참가비, 전달강의 준비 및 강의료)으로 참석 후 아래 7조 증빙자료 제출 및 재단 승인 후 예산지급</li>
+				</ul>
+				<strong>제7조 (수혜자 의무)</strong>
+                <ul class="pdt10">
+                    <li>
+                        1. 지원받은 수혜자는 학술대회 참석 후 보고서/브이로그는 7일 이내, 온라인 강의는 30일 이내에 아래 각 호에 해당하는 서류를 온라인으로 제출해야 함. 아래 내용 승인 후 제출한 통장 사본으로 지원금 입금
+                        <ul class="txt_indent">
+                            <li>1) 국/영문 보고서 (필수)
+								<ul class="txt_indent">
+									<li>- 학회 주요 내용 10페이지 미만 보고서 작성</li>
+									<li>- 제출한 보고서는 작성자 이름으로 국내/외 의과자학자에게 전파됨</li>
+								</ul>
+							</li>
+							<li>
+								2) 한국어 온라인 강의 (필수)
+								<ul class="txt_indent">
+									<li>- 촬영 30분 내외</li>
+									<li>- 학습한 학회 주요내용 요약 후 전달강의 촬영</li>
+								</ul>
+								<p>* 영상강의 촬영은 셀프, 스튜디오 방문, 영상 촬영팀 출장 방문 촬영 중 선택 가능</p>
+							</li>
+							<li>3)	브이로그 (필수)
+								<ul class="txt_indent">
+									<li>- 제출 영상 분량 10분 내외</li>
+									<li>- 제출한 보고서는 작성자 이름으로 국내 의과자학자에게 전파됨</li>
+								</ul>
+							</li>
+							<li>4) 영어 온라인 강의 (선택)
+								<ul class="txt_indent">
+									<li>- 촬영 30분 내외</li>
+									<li>- 학습한 학회 주요내용 요약 후 영어로 전달강의 촬영</li>
+								</ul>
+								<p>* 한국어 온라인 강의 촬영 시 함께 진행 예정 1) 국/영문 보고서 (필수)</p>
+							</li>
+                        </ul>
+                    </li>
+                    <li class="pdt10">
+                        2. 집행결과 보고서
+                        <ul class="txt_indent">
+                            <li class="">
+                                1) 해당 학회를 실제 참석했는지를 증빙할 수 있는 내용 제출
+                                <ul class="txt_indent">
+                                    <li>ㄱ. 등록확인증 (학회에서 보내온 이메일 등) 및 영수증 또는 송금확인서</li>
+									<li>ㄴ. 신분증 및 본인명의 통장사본 1부</li>
+                                    <!-- <li>
+                                         ㄴ. Boarding Pass 및 항공료 영수증
+                                        <p class="txt_indent">* 분실 시, 항공사 발행 탑승 확인서 & 마일리지 적립 확인서</p>
+                                        <p class="txt_indent">* 일부 외국항공사에서 탑승확인서를 받기 어려울 경우, 여권 사본 및 출국 확인 도장이 찍힌 페이지 사본을 제출 </p>
+
+                                    </li>
+                                    <li>
+                                        ㄷ. 숙박 증빙서류
+                                        <p class="txt_indent">* 호텔 Check in/out 증빙 또는 카드영수증/송금확인서</p>
+                                    </li>
+									 <li>
+                                        ㄹ. 신분증 및 본인 명의 통장사본 1부
+                                    </li> -->
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+				<strong>제8조(지원예산)</strong>
+				<p>재단법인 대웅재단 예산으로 지원</p>
+				<strong>제9조 (부칙)</strong>
+				<p>본 규정에 규정되지 않은 사항은 대웅재단 내규에 따름</p>
+			</div>
+			<div class="btns">
+				<button type="button" class="btn btn_cancel">닫기</button>
+			</div>
+			<button type="button" class="btn_comm btn_close" title="닫기">닫기</button>
+		</div>
+	</div>
+	<!-- 오프라인 운영규정 팝업 [e] -->
+	<!--알림 받기 팝업 2022-10-17 추가[S]-->
+	<div id="alarmPop" class="apply_alarm_pop" style="display: none;">
+		<div class="popup">
+			<div class="top_area">
+				<h1 class="title">지원 모집기간 <span class="f_blue">알림받기</span></h1>
+				<p class="sub_tit">내년도 모집기간에 이메일 또는 연락처로 안내드립니다.</p>
+			</div>
+			<ul class="alarm_info_list">
+				<li>
+					<strong>이름</strong>
+					<span>$이름</span>
+				</li>
+				<li>
+					<strong>소속</strong>
+					<span>$소속</span>
+				</li>
+				<li>
+					<strong>전공</strong>
+					<span>$전공</span>
+				</li>
+				<li>
+					<strong>연락처</strong>
+					<span>$연락처</span>
+				</li>
+				<li>
+					<strong>이메일</strong>
+					<span>$이메일</span>
+				</li>
+				<li>
+					<strong>관심있는<br>해외학회</strong>
+					<span>
+						<textarea class="textarea" placeholder="관심있는 해외학회"></textarea>
+					</span>
+				</li>
+			</ul>
+			<div class="notice">
+				회원정보가 상이하시다면, 마이페이지 > <a href="#" class="f_blue">회원정보</a>에서 확인하세요. 문의사항이 있으시면 <a href="#" class="f_blue">1:1 문의</a> 또는 1522-0209번을 이용해 주세요.
+			</div>
+			<div class="btns">
+				<button type="button" class="btn_type1 btn_submit">보내기</button>
+			</div>
+			<button type="button" class="btn_comm btn_close" title="닫기">닫기</button>
+		</div>			
+	</div>
+	<!--알림 받기 팝업[E]-->
+
+	<!-- container [e] -->
+	<!-- footer [s] -->
+	<!-- footer [s] 로그인  -->
+<footer id="footer" class="f_v3"> <!-- class="f_v3" 추가 -->
+	<h2 class="screen_out">회사 및 서비스 이용정보</h2>
+	<div class="info_foot top">
+		<div class="inner_info">
+			<strong class="tit_notice">공지사항<span class="txt_bar">|</span></strong>
+			<ul class="cycle-slideshow  list_notice" data-cycle-fx="scrollHorz" data-cycle-timeout="0" data-cycle-slides="> li" data-cycle-prev=".btn_noticePrev" data-cycle-next=".btn_noticeNext">
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관변경 1닥터빌 회원의 이용약관 변경 1닥터빌 회원의 이용약관 변경 1</a></li>
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관 변경 2</a></li>
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관 변경 3</a></li>
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관 변경 4</a></li>
+			</ul>
+			<div class="wrap_btn">
+				<a href="#none" class="btn_comm btn_noticePrev">이전</a>
+				<a href="#none" class="btn_comm btn_noticeNext">다음</a>
+			</div>
+			<!--<a href="#pop_footAllmenu" class="link_sitemap">서비스 전체보기<span class="ico_comm2"></span></a> 삭제-->
+		</div>
+	</div>
+	<div class="info_foot btm">
+		<a href="#none" class="ico_comm_v2 tit_doctor">닥터빌 홈 바로가기</a>
+		<div class="inner_info">
+			<ul class="list_footer">
+				<li><a href="#none" class="link_footer">회사소개</a><span class="txt_bar">|</span></li>
+				<li class=""><a href="#none" class="link_footer">고객센터</a><span class="txt_bar">|</span></li>
+				<li><a href="../intro/with.html" class="link_footer">제휴문의</a><span class="txt_bar">|</span></li>
+				<li><a href="../intro/policy.html" class="link_footer">이용약관</a><span class="txt_bar">|</span></li>
+				<!-- 2021-06-03 개인정보처리방침 볼드처리 -->
+				<li><a href="../intro/userinfo.html" class="link_footer"><strong>개인정보처리방침</strong></a><span class="txt_bar">|</span></li>
+				<li><a href="#none" class="link_footer link_tuor">서비스투어</a></li>
+			</ul>
+			<div class="wrap_family">
+				<a href="#none" class="btn_family">FAMILY SITE <span class="ico_comm">목록 펼치기</span></a>
+				<ul class="list_family">
+					<li><a href="" target="_blank">FAMILY SITE 1</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 2</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 3</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 4</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 5</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 6</a></li>
+				</ul>
+			</div>
+		</div>
+		<address class="inner_info">
+			<div>서울 강남구 봉은사로 114길 12 (삼성동)<span class="txt_bar">|</span>대표자 : 김명석<span class="txt_bar">|</span>사업자번호 : 120-86-10499<br>
+			대표전화 : 1522-0209<span class="txt_bar">|</span>팩스 : 02-563-8399</div> <!-- 2019-02-12 팩스번호 변경 -->
+			<div class="icon_social">
+				<a href="https://www.youtube.com/channel/UCUOV1IWnqpB69okoWNKQeZQ" target="_blank" class="ico_comm_v2 ico_youtube">유투브</a>
+				<a href="http://pf.kakao.com/_zddxgd" target="_blank" class="ico_comm_v2 ico_kakao">카카오플러스친구</a>
+				<a href="https://www.facebook.com/%EB%8B%A5%ED%84%B0%EB%B9%8C-549462672108716/?ref=aymt_homepage_panel&eid=ARCcUFij5OHuJmsLw9LuoiMg-2G-Eh48BWsaU_SSflZGsF0lu7DupXHoRDofX7sdUsEhMT95BrA64x6F" target="_blank" class="ico_comm_v2 ico_facebkook">페이스북</a>
+			</div>
+		</address>
+		<div class="inner_info copy">
+			<span class="copyright">Copyright <em class="emph_addr">ⓒ Mcircle.</em> All right reserved</span>
+			<span class="copyright">VERIFIED & SECURED Site</span>
+		</div>
+	</div>
+</footer>
+<!-- footer [e] 로그인  -->
+
+<!-- footer [s] 프로필, 처방노트
+<footer id="footer" class="f_v3">
+	<h2 class="screen_out">회사 및 서비스 이용정보</h2>
+	<div class="info_foot btm">
+		<a href="#none" class="ico_comm_v2 tit_doctor">닥터빌 홈 바로가기</a>
+		<div class="inner_info copy">
+			<span class="copyright">Copyright <em class="emph_addr">ⓒ Mcircle.</em> All right reserved</span>
+			<span class="copyright">VERIFIED & SECURED Site</span>
+		</div>
+	</div>
+</footer>-->
+<!-- footer [e] 프로필, 처방노트 -->
+	<script>
+		$(".btn_family").bind("click", function(e){
+			var target = $('.list_family'),
+				 state = target.css('display');
+			if(state == "block"){
+				$(this).find(".ico_comm").text('목록 펼치기').removeClass('open');
+				target.hide();
+			}else{
+				$(this).find(".ico_comm").text('목록 접기').addClass('open');
+				target.show();
+			}
+			return false;
+		})
+		$(".list_family  a").bind("click",function(){
+			$(".btn_family").trigger('click');
+		})
+		$(".link_sitemap").on("click", function(e) {
+			e.preventDefault();
+			var link = $(this).attr("href");
+			console.log (link);
+			$("#pop_footAllmenu").toggle();
+		});
+	</script>
+
+	<!--2022-10-17 추가--><!--#include virtual="../../html/common/popup.html" -->
+	<!-- footer [e] -->
+</div>
+<script type="text/javascript">
+	$(function(){
+		// 탭
+		socialUI.tab({
+			"tabs": $(".list_tab .link_tab"),
+			"activeClass": "on"
+		});
+
+		socialUI.tab({
+			"tabs": $(".list_tab2 .link_tab"),
+			"activeClass": "on"
+		});
+
+		// 2021-06-28
+		$(".list_tab2 .link_tab").on({
+			click:function(e){
+				var target = e.currentTarget.getAttribute('href').replace("#",'.');
+				$('.introduction'+target).show().siblings('.introduction').hide();
+			}
+		});
+
+		// 2021-06-28 버튼 스크립트 수정
+		$(".btn_guide").on("click", function (e) {
+			socialUI.modalLayer($(e.currentTarget.getAttribute('href')),{"closeClass":"btn_close"});
+		})
+		// 2022-12-22 삭제
+		// $('.apply_box .apply_info .btn_apply').click(function(){
+		// 	socialUI.modalLayer($("#alarmPop"), {
+		// 		closeClass: "btn_close"
+		// 	});
+		// })		 
+		$('#alarmPop .btn_submit').click(function(){
+			// 모달레이어 호출
+			modalLayer = socialUI.modalLayerComm({
+				"type": 4,
+				"title": "알림",
+				"description": "알림 신청이 완료되었습니다."
+			});
+		})
+		// 테스트용 레이어팝업 노출
+		// modalLayer = socialUI.modalLayer($("#alarmPop"), {
+		// 	closeClass: "btn_close"
+		// });
+
+		// 2019-02-08 추가
+		$(".btn_box").on("click", function () {
+			var scrollPosition =  $(".introduction").offset().top;
+			$("body, html").animate({"scrollTop" : scrollPosition},300);
+			return false;
+		});
+	});
+</script>
+</body>
+</html>

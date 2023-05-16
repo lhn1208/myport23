@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>더샵 약국몰 리스트</title>
+    <title>더샵 약국 쇼핑몰 리스트</title>
     <script type="text/javascript" src="../js/libs/jquery-1.12.1.min.js"></script>
     <style>
         *{margin: 0; padding: 0;}
@@ -17,11 +17,47 @@
         .wrap h1{margin: 2rem 0;}
         .table_wrap{margin-bottom:1.25rem; padding: 1.25rem; color: #000; border: 1px solid #fd6006; background-color: #fff;}
         .table_wrap h2{margin-bottom: 1rem; color: #fd6006;}
-        .table_wrap table{width: 100%; border-spacing:0; border-collapse: collapse;}
-        .table_wrap table thead th{background-color: #fd6006; color: #fff; border-left: 1px solid #fff; border-bottom: 1px solid #fff;}
-        .table_wrap table th, .table_wrap table td{padding: .2rem .6rem; border-top: 1px solid #fd6006; border-left: 1px solid #fd6006; border-bottom: 1px solid #fd6006;}
-        .table_wrap table th:first-child, .table_wrap table td:first-child{border-left: none;}
-        .table_wrap a{color: #000;}
+        .table_wrap table{width: 100%; border-spacing:0; border-collapse: collapse; }
+        .table_wrap table thead th{background-color: #fd6006; color: #fff; border:1px solid #fff}
+        .table_wrap table th, .table_wrap table td{padding: .2rem .6rem; border: 1px solid #fd6006;}
+        .table_wrap a{color: #000; text-decoration: none;}
+        .animated {
+        -webkit-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        .s1 {animation-duration: 1s;}
+        @-webkit-keyframes fadeInUp {
+            from {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 50px, 0);
+                -ms-transform: translate3d(0, 50px, 0);
+
+                transform: translate3d(0, 50px, 0);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none;
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 50px, 0);
+                -ms-transform: translate3d(0, 50px, 0);
+                transform: translate3d(0, 50px, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none;
+            }
+        }
+        .fadeInUp {-webkit-animation-name: fadeInUp; animation-name: fadeInUp;}
     </style>
 </head>
 <body>
@@ -29,7 +65,7 @@
         <div class="progress-bar" id="myBar"></div>
     </div>
     <div class="wrap">
-        <h1>더샵 약국 쇼핑몰 리스트</h1>
+        <h1 class="animated s1 fadeInUp">더샵 약국 쇼핑몰 리스트</h1>
         <!--메인 [S]-->
         <div class="table_wrap">
             <h2>메인</h2>
@@ -50,6 +86,26 @@
                         <th scope="row">메인</th>
                         <td><a href="./main/main_curation.html" target="_blank">./main/main_curation.html</a></td>
                     </tr>
+                </tbody>
+            </table>
+        </div>
+         <!--메인 [E]-->
+         <!--멤버 정보 [S]-->
+        <div class="table_wrap">
+            <h2>멤버 정보</h2>
+            <table>
+                <caption>멤버 정보 목록 테이블</caption>
+                <colgroup>
+                    <col width="30%">
+                    <col width="*">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">목록</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <th scope="row">로그인</th>
                         <td><a href="./main/login.html" target="_blank">./main/login.html</a></td>
@@ -70,26 +126,6 @@
                         <th scope="row">개인정보 취급방침</th>
                         <td><a href="./footer_menu/terms.html" target="_blank">./footer_menu/terms.html</a></td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
-         <!--메인 [E]-->
-         <!--마이페이지 [S]-->
-        <div class="table_wrap">
-            <h2>마이페이지</h2>
-            <table>
-                <caption>마이페이지 목록 테이블</caption>
-                <colgroup>
-                    <col width="30%">
-                    <col width="*">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th scope="col">목록</th>
-                        <th scope="col">Link</th>
-                    </tr>
-                </thead>
-                <tbody>
                     <tr>
                         <th scope="row">마이페이지</th>
                         <td><a href="./mypage/grain.html" target="_blank">./mypage/grain.html</a></td>
@@ -113,7 +149,7 @@
                 </tbody>
             </table>
         </div>
-         <!--마이페이지 [E]-->
+         <!--멤버 정보 [E]-->
         <!--상품 [S]-->
         <div class="table_wrap">
             <h2>상품</h2>
@@ -180,17 +216,15 @@
                         <td><a href="./membership/bigdata.html" target="_blank">./membership/bigdata.html</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">약사 참여 공간</th>
-                        <th scope="row">&nbsp;</th>
+                        <th scope="row" rowspan="3">약사 참여 공간</th>
+                        <th scope="row">메인</th>
                         <td><a href="./membership/bamboo.html" target="_blank">./membership/bamboo.html</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">&nbsp;</th>
                         <th scope="row">등록</th>
                         <td><a href="./membership/bamboo_write.html" target="_blank">./membership/bamboo_write.html</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">&nbsp;</th>
                         <th scope="row">게시판</th>
                         <td><a href="./membership/bamboo_view.html" target="_blank">./membership/bamboo_view.html</a></td>
                     </tr>
@@ -203,12 +237,11 @@
                         <td><a href="./membership/check.html" target="_blank">./membership/check.html</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">운동 소개 영상</th>
-                        <th scope="row">&nbsp;</th>
+                        <th scope="row" rowspan="2">운동 소개 영상</th>
+                        <th scope="row">메인</th>
                         <td><a href="./membership/exercise.html" target="_blank">./membership/exercise.html</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">&nbsp;</th>
                         <th scope="row">등록</th>
                         <td><a href="./membership/exercise_write.html" target="_blank">./membership/exercise_write.html</a></td>
                     </tr>
@@ -249,17 +282,15 @@
                         <td><a href="./membership/zeroshop.html" target="_blank">./membership/zeroshop.html</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">복약지도</th>
-                        <th scope="row">&nbsp;</th>
+                        <th scope="row" rowspan="3">복약지도</th>
+                        <th scope="row">메인</th>
                         <td><a href="./membership/guidance.html" target="_blank">./membership/guidance.html</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">&nbsp;</th>
                         <th scope="row">작성</th>
                         <td><a href="./membership/guidance_write.html" target="_blank">./membership/guidance_write.html</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">&nbsp;</th>
                         <th scope="row">my 복약지도</th>
                         <td><a href="./membership/guidance_mypage.html" target="_blank">./membership/guidance_mypage.html</a></td>
                     </tr>
@@ -291,27 +322,24 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">지식 공유</th>
-                        <th scope="row">&nbsp;</th>
+                        <th scope="row" rowspan="3">지식 Q&A</th>
+                        <th scope="row">메인</th>
                         <td><a href="./plus_knowledge/main.html" target="_blank">./plus_knowledge/main.html</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">&nbsp;</th>
                         <th scope="row">내 답변</th>
                         <td><a href="./plus_knowledge/my_answer.html" target="_blank">./plus_knowledge/my_answer.html</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">&nbsp;</th>
                         <th scope="row">질문 하기</th>
                         <td><a href="./plus_knowledge/write.html" target="_blank">./plus_knowledge/write.html</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">지식 공유</th>
-                        <th scope="row">&nbsp;</th>
+                        <th scope="row" rowspan="2">지식 공유</th>
+                        <th scope="row">메인</th>
                         <td><a href="./plus_knowledge/counsel_list.html" target="_blank">./plus_knowledge/counsel_list.html</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">&nbsp;</th>
                         <th scope="row">작성</th>
                         <td><a href="./plus_knowledge/counsel_write.html" target="_blank">./plus_knowledge/counsel_write.html</a></td>
                     </tr>

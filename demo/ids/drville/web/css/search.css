@@ -1,0 +1,270 @@
+@charset "utf-8";
+#wrap .header_btm {display: none;}
+#wrap .header_top {border-bottom:0  none;}
+.search #container {width:100%;margin-top:0}
+
+.search .inner {overflow:hidden;width:980px;margin:0 auto;padding-bottom:0;background:url(../images/bg_search.gif) 728px 0 repeat-y}
+.section_search{overflow:visible;}
+.section_search .box_search {overflow:visible;position:relative;border-width:2px;}
+.section_search .btn_auto {position:absolute;right:40px;top:0;width:40px;height:40px;background-position:-65px -87px}
+.section_search .auto_on .btn_auto {background-position:-105px -85px}
+.section_search .box_keyword {overflow:hidden}
+.section_search .wrap_suggest {display:none;position:absolute;left:-2px;top:42px;width:460px;z-index:200;background-color:#fff}
+.section_search .auto_on .wrap_suggest {display:block}
+.section_search .list_suggest {overflow-x:hidden;overflow-y:scroll;max-height:204px;padding:10px 12px;border:1px solid #8d8d8d;border-bottom:0 none;border-top:0 none}
+.section_search .list_suggest li {overflow:hidden;line-height:24px}
+.section_search .list_suggest .link_suggest {float:left;width:218px;color:#000;text-overflow:ellipsis;white-space:nowrap}
+.section_search .list_suggest .ico_delete {float:right;width:20px;height:20px;background-position:-10px -1642px;opacity:0.5}
+.section_search .opt_suggest {display:block;padding:0 12px;height:30px;border:1px solid #8d8d8d;border-top:1px solid #e3e3e3;background:#f9f9f9;line-height:30px}
+.section_search .opt_suggest a {font-size:11px;color:#a3a3a3}
+
+.search_tab {overflow:hidden;margin-top:20px; margin-bottom: 12px; border-bottom:1px solid #d9d9d9;font-family:'SpoqaHanSans', 'dotum', '돋움'}
+.search_tab .inner {background:none;}
+.search_tab li {float:left;margin-right:30px;}
+.search_tab a {position: relative; padding:10px 0 8px;font-size:15px;color:#3a3d40}
+.search_tab a sup{position: absolute; top: -4px; font-size: 10px; color: #4ea1ff; text-align: left;}
+.search_tab li.on {border-bottom:2px solid #187ee6}
+.search_tab li.on a {color:#187ee6}
+
+/* right */
+.right_slide {position:relative;width:100%;overflow:hidden}
+.right_slide > ul > li{float:left;width:220px;overflow:hidden}
+.interest > li > ul > li {margin-bottom:13px;width:100%}
+.interest > li > ul > li a  {text-decoration:none}
+.interest > li > ul > li a.img  {overflow:hidden}
+.interest > li > ul > li a.img figure {float:left}
+.interest > li > ul > li a.img figure img {border:1px solid #ededed;max-width:48px;max-height:48px}
+.interest > li > ul > li a.img dl  {float:left;width:132px;margin-left:8px}
+.interest > li > ul > li a.img dl span  {display:block;padding-left:0}
+.interest_wrap .link_more {display:inline-block;padding-left:4px;color:#57565b;text-decoration:underline}
+.link_more .ico_arr {font-size:10px;line-height:18px}
+.interest > li > ul > li a dl dt  {font-size:13px;color:#57565b;font-weight:bold}
+.interest > li > ul > li a dl dt span  {padding-left:7px;font-family:verdana;color:#8c8c8c;font-size:11px;font-weight:normal}
+.interest > li > ul > li a dl dd  {overflow:hidden;display:block;color:#606060;line-height:18px}
+.interest > li > ul > li a > span  {clear:both;display:block;padding:12px 0 0 0;color:#ababab;height:14px;line-height:14px}
+.interest > li > ul > li a > .note .ico_comm2 {width:18px;height:15px;background-position:0 -550px}
+.interest > li > ul > li a > .people .ico_comm2 {width:18px;height:15px;background-position:0 -529px}
+.control  {overflow:hidden;position:absolute;right:0;top:20px}
+.control a  {display:block;float:left;text-indent:-9999px}
+.control a.prev  {width:16px;height:16px;background-position:0 0}
+.control a.next  {width:15px;height:16px;background-position:-16px 0}
+.search .contents {float:left;width:729px;padding-bottom:50px}
+.search .contents section {overflow:hidden;position:relative;width:700px;padding:40px 0 0;border-top:1px solid #ddd;*zoom:1}
+.search .contents section:first-child {border-top:0}
+.search .contents section .btn_top {position:absolute;right:0;top:21px}
+.search .contents section .top_txt { padding-bottom:10px;font-size:11px;color:#999}
+.search .contents section .btn_top a {font-size:11px;color:#999;text-decoration:underline}
+.search .contents section .btn_more {position:absolute;right:0;bottom:28px;padding-right:10px}
+.search .contents section .btn_more a {font-size:11px;color:#1122cc;text-decoration:underline}
+.search .contents section .btn_more span {position:absolute;right:0;top:3px;width:6px;height:9px;background-position:0 -120px}
+.search .contents h3 {height:24px;font-size:14px;font-weight:bold}
+.search .contents h3 span {font-size:12px;font-weight:normal;color:#717171 } /*{height:36px;font-size:14px;font-weight:bold}*/
+/* 학술검색 */
+.search .contents .thumb_list {margin-bottom:30px; margin-top:20px}
+.search .contents .thumb_list li {position:relative;margin-top:30px;overflow:hidden}
+.search .contents .thumb_list li:first-child {margin:0}
+.search .contents .thumb_list .thumb {overflow:hidden;float:left;width:120px;height:90px;margin-right:20px;border:1px solid #dedede}
+.search .contents .thumb_list .title a {display:inline-block;font-size:14px;color:#1122cc;margin-bottom:5px}
+.search .contents .thumb_list .title .emph_live {display:inline-block;margin-right:5px;padding:2px 5px;border:1px solid #6da4e7;color:#6da4e7;font-size:11px;vertical-align:top}
+.search .contents .thumb_list .title .emph_guide {display:inline-block;margin-right:5px;padding:2px 5px;color:#fff;font-size:11px;vertical-align:top;background-color:#6ea5e8}
+.search .contents .thumb_list .title .en {color:#8c8c8c;font-size:11px}
+.search .contents .thumb_list .update {float:left;font-size:11px;color:#999}
+.search .contents .thumb_list .sub_txt {padding-top:8px;color:#5f5f5f;line-height:18px;clear:both}
+.search .contents .thumb_list .txt {overflow:hidden;width:auto}
+.search .contents .thumb_list  .txt_bar {padding:0 4px;color:#dadada}
+/* .search .contents  .live_seminar {padding-top:25px} 2016-05-17 삭제 */
+.live_seminar + .prescription_guide {border-top:1px solid #ddd}
+.search .prescription_guide .thumb_list .update {padding-left:12px;line-height:16px;background-position:0 -1169px;text-indent:0}
+.search .contents .searchNews_list {width:598px;margin-bottom:30px}
+.search .contents .searchNews_list li {position:relative;margin-top:30px;width:100%;overflow:hidden}
+.search .contents .searchNews_list li:first-child {margin:0}
+.search .contents .searchNews_list .title a {font-size:14px;color:#1122cc}
+.search .contents .searchNews_list .update {display:block;font-size:11px;color:#999}
+.search .contents .searchNews_list .sub_txt {padding-top:8px;color:#4a4a4a;line-height:18px}
+.search .contents .searchNews_list .txt {overflow:hidden}
+.search .contents section .top_link {position:absolute;top:42px;right:0;font-size:11px;color:#1121cc;text-decoration:underline} /* 2016-05-17 수정 */
+/* 정확도, 최신순 정렬 */
+.list_category {overflow:hidden;position:absolute;top:45px;right:0} /* 2016-05-17 수정 */
+.list_category li {float:left;height:18px;margin-left:10px} /* 2016-05-17 수정 */
+.list_category li .link_category {display:inline-block;color:#393a3f}
+.list_category .on .link_category {color:#3884fe;font-weight:bold}
+.list_category .ico_v {width:1px;height:1px;margin-right:10px;vertical-align:middle;background-position:0 -5000px}
+.list_category .on .ico_v {width:14px;height:16px;margin:0;background-position:0 -1452px;vertical-align:top}
+/* 검색 연관검색어 */
+.search .contents .related_search {width:100%;padding-bottom:4px}
+.search .related_search h3 {float:left;margin-right:18px}
+.search .related_search ul {float:left}
+.search .related_search ul li {float:left;margin-right:10px}
+.search .related_search ul li a {color:#1122cc}
+/* 검색 인물정보 */
+.search .person_info .thumb_person {overflow:hidden;margin-bottom:30px}
+.search .person_info li {float:left;width:330px;color:#4a4a4a}
+.search .person_info .thumb {float:left;margin-right:15px}
+.search .person_info .profile_person {float:left;padding-top:1px}
+.search .person_info .profile_person h4 {font-weight:bold}
+.search .person_info .profile_person .reason {font-size:10px;font-family:tahoma}
+.search .person_info .profile_person dl {padding-top:10px}
+.search .person_info .profile_person dt {margin-bottom:3px }
+.search .person_info .profile_person dd,
+.search .person_info .profile_person dd a {font-size:11px}
+.search .person_info .profile_person dd a {color:#1122cc}
+/* 학술검색_오른쪽메뉴 */
+.search .right_section {float:left;width:220px;padding:30px 0 50px 30px}
+.search .right_section section {position:relative}
+.search .right_section h3 {margin-bottom:20px;padding-top:20px;font-size:14px;font-weight:bold;border-top:1px solid #ddd}
+.search section:first-child h3 {padding-top:0;border-top:0 none}
+.search .right_section .ranking_list {padding-bottom:10px}
+.search .right_section .ranking_list li {margin-bottom:9px;overflow:hidden}
+.search .right_section .ranking_list li a {color:#000}
+.search .right_section .ranking_list li strong,
+.search .right_section .ranking_list li a {float:left}
+.search .right_section .ranking_list li strong {width:14px;text-align:center;margin-right:11px;color:#999;font-size:11px}
+.search .right_section .ranking_list li.top strong {color:#00a6fc}
+.search .right_section .ranking_list span {float:right;font:9px tahoma;color:#00a6fc;font-weight:bold}
+.search .right_section .ad {display:block;width:220px;height:220px} /* 2016-05-12 수정 */
+.search .right_section .more {position:absolute;right:0;top:0}
+.search .right_section .more a {font-size:11px;color:#999;text-decoration:underline}
+.search .right_section .sub_txt {margin:-10px 0 18px;font-size:11px;line-height:14px;color:#999}
+/*오늘의 학술 업데이트 */
+.right_update {position:relative;width:100%}
+.right_update .box_update {overflow:hidden;padding-bottom:29px}
+.right_update .box_update .thumb {float:left;padding-right:10px}
+.right_update .box_update .desc {overflow:hidden;float:none;width:auto;max-height:51px;padding-top:3px;font-size:11px}
+.right_update .box_update .cate {color:#00a5fe}
+.right_update .box_update .link_more {position:absolute;top:20px;right:0;font-size:11px;color:#9a9a9a;text-decoration:underline;letter-spacing:-1px}
+/* 검색 처방가이드 */
+.search .prescription_guide h3.eng {font-size:15px}
+.search .prescription_guide .tail {overflow:hidden;width:100%;padding-top:10px}
+.search .prescription_guide .tail .toggle {float:left;padding-left:14px;font-size:11px;color:#999;line-height:13px;text-indent:0;background-position:0 -629px}
+.search .prescription_guide .tail .txt_middot {float:left;margin:0 6px;font-size:11px;color:#999;line-height:13px}
+.search .prescription_guide .tail .hit {float:left;font-size:11px;color:#999;line-height:13px}
+.search .prescription_guide .tail.on .toggle {background-position:0 -649px}
+.search .prescription_guide .search_list {margin-bottom:15px;overflow:hidden}
+.search .prescription_guide .search_list li {float:left;margin-right:5px}
+.search .prescription_guide .search_list li a {color:#0000cc}
+.search .prescription_guide .guide_tab {border-bottom:2px solid #9499a4;overflow:hidden}
+.search .prescription_guide .guide_tab li {float:left;width:84px;height:32px;margin-left:-1px;overflow:hidden}
+.search .prescription_guide .guide_tab li:first-child {margin:0}
+.search .prescription_guide .guide_tab li.on {position:relative}
+.search .prescription_guide .guide_tab li a {display:block;width:82px;height:31px;line-height:31px;font-weight:bold;color:#5c5c5c;text-align:center;background:#f7f7f7;border:1px solid #e8e8e8;border-bottom:0}
+.search .prescription_guide .guide_tab li.on a {color:#fff;background:#70747f;border-color:#656973}
+.search .prescription_guide .guide_wrap {border:1px solid #cfd3dc;overflow:hidden}
+.search .prescription_guide .thumb_list .thumb {height:110px}
+
+.search .guide_wrap .bottom_list {padding:0 0 0 20px}
+.search .guide_wrap .title a {font-size:12px !important}
+.search .guide_wrap .thumb_list .sub_txt {height:36px;overflow:hidden}
+.search .contents .thumb_list .thumb_news {float:left;width:110px;height:70px;margin-right:20px;border:1px solid #dedede}
+.search .news_list {margin-top:30px}
+.search .news_list li {width:652px}
+.search .news_list .thumb {float:left;width:120px;height:90px;margin-right:20px;border:1px solid #dedede}
+/* caseshare */
+.search .caseshare .thumb_list .sub_txt {padding-top:5px}
+.search .caseshare .sub_txt li {position:relative;overflow:hidden;height:20px;padding-left:12px;margin:0}
+.search .caseshare .sub_txt li:after {position:absolute;top:8px;left:0;content:'';width:4px;height:4px;border-radius:50%;background-color:#5f5f5f}
+.search .caseshare .sub_txt li strong {float:left;display:inline-block;position:relative;margin-right:6px;padding-right:6px;font-weight:normal}
+.search .caseshare .sub_txt li strong:after {position:absolute;top:5px;right:0;content:'';width:1px;height:11px;background-color:#dfdfdf}
+.search .caseshare .sub_txt li .ellipse {display:inline-block;overflow:hidden;max-width:525px;text-overflow:ellipsis;white-space:nowrap}
+.search .caseshare .thumb {height:110px}
+.search .caseshare .thumb + .txt .sub_txt li .ellipse {display:inline-block;overflow:hidden;max-width:400px;text-overflow:ellipsis;white-space:nowrap}
+.search .caseshare .tail {overflow:hidden;padding-top:5px}
+.search .caseshare .tail span {position:relative;margin:0 9px;font-size:11px;color:#9f9f9f;line-height:15px}
+.search .caseshare .tail span:after {position:absolute;top:0px;left:-10px;content:'';width:1px;height:10px;background-color:#e3e7ee}
+.search .caseshare .tail span:first-child {margin-left:0}
+.search .caseshare .tail span:first-child:after {width:0}
+.search .caseshare .tail span em {padding-left:2px;font-weight:bold}
+.search .caseshare .tail .ico_comm2 {width:14px;height:14px;margin:1px 0 0 0}
+.search .caseshare .tail .ico_person {margin-right:0;background-position:0 -528px}
+/* 2016-07-27 지식톡 추가 */
+.search .talk .date {color:#999}
+.search .talk .thumb_list {margin-bottom:45px}
+/* 2016-09-20 말줄임표 추가[s] */
+.search .talk .thumb_list .title a {margin-bottom:0;line-height:1.3;text-decoration:underline;max-width:602px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.search .talk .thumb_list .thumb + .txt .title a{max-width:460px}
+/* 2016-09-20 말줄임표 추가[e] */
+.search .talk .txt_question,
+.search .talk .txt_answer {margin-top:3px;color:#5f5f5f}
+/* 2016-08-29 태그 추가[s] */
+.search .talk .txt_tag {padding:10px 0 0}
+.search .talk .txt_tag a {display:inline;margin:0 5px;color:#348fcb}
+.search .talk .txt_tag a:first-child {margin-left:0}
+/* 2016-08-29 태그 추가[e] */
+.search .talk .ico_question {width:14px;height:14px;margin-top:2px;margin-right:7px;background-position:-17px -1486px}
+.search .talk .ico_answer {width:13px;height:13px;margin-top:2px;margin-right:7px;background-position:-17px -1505px}
+.search .contents .talk .btn_more {bottom:25px}
+/* 검색 검색결과 없음 */
+.search .no_search {border:0 !important}
+.search .no_search .suggestion {margin-bottom:77px}
+.search .no_search .suggestion span {color:#ff1717}
+.search .no_search .suggestion a {color:#1122cc;text-decoration:underline}
+.search .no_search h4 {margin-bottom:29px;font-size:16px;font-weight:bold}
+.search .no_search h4 span {color:#ff1717}
+.search .no_search .protect li{margin-bottom:6px;padding-left:12px}
+.search .no_search .txt_question {margin-left:12px;color:#1122cc;text-decoration:underline}
+.search .no_search .journal_question{display:inline-block;margin:16px 0 0 12px}
+.search .no_search .question_list {overflow:hidden;margin-top:35px;padding-top:27px;border-top:1px solid #ddd}
+.search .no_search .question_list span{float:left}
+.search .no_search .question_list a{float:right;margin-right:40px}
+.search .wrap_sub {display:none;overflow:hidden;position:absolute;right:0;top:30px;z-index:999;width:348px;height:194px;border:1px solid #16afff;background:#fff}
+.wrap_sub .list_sub {float:left;width:106px;height:112px;padding-top:24px}
+.list_sub li {float:none;margin-left:0}
+.list_sub .link_sub {color:#434956;font-size:12px;line-height:24px;text-indent:0}
+.list_sub .ico_bulit {display:inline-block;width:1px;height:1px;background:#434956;vertical-align:top;margin-top:11px;margin-right:4px}
+.wrap_sub .list_fst {padding-left:24px}
+.list_fst .link_sub {font-weight:bold}
+.list_fst .ico_bulit {width:3px;height:1px}
+.wrap_sub .box_mymenu {clear:both;height:47px;padding-top:11px;border-top:1px solid #e0e0e0}
+.box_mymenu .link_mymenu {width:108px;height:34px;margin:0 auto;font-weight:bold;font-size:12px;line-height:34px;border:1px solid #cbcbcb;color:#434956;text-align:center;text-indent:0}
+/* 검색도움말 버튼 */
+.btn_search_help {position:absolute;bottom:12px;right:0}
+.btn_search_help a {display:inline-block;padding:6px 8px;text-align:center;border:1px solid #d1d6d8;font-size:11px;font-weight:bold;color:#8b8f96;border-radius:2px;vertical-align:middle;background-color:#fff;letter-spacing:-1px}
+/* 검색 의약품정보  */
+.search .contents .drug_info h4{margin-top:15px}
+.search .contents .info_list {margin-top:10px}
+.search .contents .info_list li {margin-top:17px}
+.search .contents .info_list .thumb {width:100px;height:50px}
+.search .contents .info_list .title {float:left}
+.search .contents .info_list .title a{margin-bottom:0;text-decoration:underline}
+.search .contents .info_list span{color:#8c8c8c}
+.search .contents .info_list .item{float:left;margin-top:1px}
+.search .contents .info_list .item:before{content:"|";margin:0 7px;color:#ddd}
+.search .contents .info_list .txt_bar{font-size:9px;color:#ddd}
+.search .contents .info_list .info {float:right;text-align:right;color:#5f5f5f}
+.search .contents .info_list .status {display:block}
+.search .contents .info_list .btn_relation {color:#1122cc;text-decoration:underline}
+.search .contents .disease_list .disease {margin-right:8px;text-decoration:underline}
+.search .contents .disease_list .title .en {font-size:12px}
+.search .contents .drug_info .btn_more {bottom:15px}
+/* 검색 영화 */
+.search .contents .movie .thumb_list .thumb {position:relative;width:111px;height:155px;border:0 none}
+.search .contents .movie .thumb_list .ico_free{display:block;position:absolute;top:0;left:0;z-index:1;width:42px;height:42px;background-position:-170px -2340px}
+.search .contents .movie .thumb_list .txt {padding-top:8px;color:#4a4a4a}
+.search .contents .thumb_list .rating{margin-bottom:13px}
+.search .contents .thumb_list .rating .grade_wrap {display:inline-block;position:relative;width:81px;height:13px;margin:2px 10px 0 0;background-position:0 -970px;text-indent:0}
+.search .contents .thumb_list .rating .grade {display:inline-block;position:absolute;top:0;left:0;height:13px;background-position:0 -993px}
+.search .contents .thumb_list .info {margin-bottom:7px}
+.search .contents .thumb_list .spec_list {overflow:hidden}
+.search .contents .thumb_list .spec_list dt {float:left;width:40px}
+.search .contents .thumb_list .spec_list dd {float:left;width:calc(100% - 40px)}
+.search .contents .movie .btn_more {bottom:15px}
+/* 검색 웹툰 */
+.search .contents .webtoon .thumb_list .thumb {position:relative}
+.search .contents .webtoon .thumb_list .ico_red {display:block;position:absolute;top:2px;left:2px;padding:2px 5px 0;border-radius:10px;background-color:#ff2b38;font-size:11px;font-weight:bold;line-height:14px;color:#fff;text-align:center;text-indent:-4px;letter-spacing:-0.13em}
+.search .contents .webtoon .thumb_list .txt {padding-top:8px}
+.search .contents .webtoon .thumb_list .title{font-weight:bold}
+.search .contents .webtoon .thumb_list .genre{margin-left:10px;font-size:11px;font-weight:normal}
+.search .contents .webtoon .btn_more {bottom:15px}
+/* select box title */
+.select{position:absolute;left:-100000px;height:auto}
+.selectbox_title {position:absolute;top:10px;right:240px;height:27px;line-height:27px;background:url(../images/ico_comm.gif) 100% -1057px no-repeat;border:1px solid #b4b4b4;color:#737373}
+.selectbox_title strong {padding-left:9px;font-weight:normal}
+.selectbox_scroll {width:100%}
+.selectbox_scroll a {display:block;line-height:28px;color:#737373}
+div.selectbox_option{overflow:hidden;padding-left:9px;border:1px solid #b4b4b4;background:#fff}
+/* 검색 포럼 2017-02-23 추가 [e] */
+
+/*search 리뉴얼*/
+.search .sch_none{margin:104px 0; text-align: center; font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic";} 
+.search .sch_none strong{display: block; margin-bottom: 35px; color: #555; font-size: 22px; font-weight:bold;}
+.search .sch_none ul li{font-size: 16px; line-height: 1.8;}
+

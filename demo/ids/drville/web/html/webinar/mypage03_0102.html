@@ -1,0 +1,94 @@
+<!--#include virtual="../../html/common/webinar_common.html" -->
+</head>
+<body>
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+	<a href="#gnb">메뉴 바로가기</a>
+</div>
+<div id="wrap" class="webinar_wrap">
+	<!-- header [s] -->
+	<!--#include virtual="../../html/common/webinar_header.html" -->
+	<!-- header [e] -->
+	<!-- container [s] -->
+	<main id="container" class="webinar_guide sub_page">
+		<h2 class="screen_out">컨퍼런스 상세안내</h2>
+		<div class="webinar_top">
+			<div class="inner">
+				<strong class="tit02">마이페이지</strong>
+			</div>
+		</div>
+
+		<div class="tab_area">
+			<div class="tab_header">
+				<ul class="tab_menu">
+					<li><a href="#none">참여내역</a></li>
+					<li><a href="#none">회원정보</a></li>
+					<li class="on"><a href="#none">1:1 문의</a></li>
+				</ul>
+			</div>
+			<!-- inner [s] -->
+			<div class="contents">
+				<h3 class="tit_cont">1:1 문의 작성하기</h3>
+				<div class="oto_wrap">
+					<table cellspacing="0" cellpadding="0">
+						<colgroup>
+							<col width="90px">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th class="required"><span class="screen_out">필수 항목</span>제목</th>
+								<td><input type="text" class="tit" placeholder="제목을 적어주세요"></td>
+							</tr>
+							<!-- 2021-10-27 select fields 추가 -->
+							<tr>
+								<th>컨퍼런스</th>
+								<td>
+									<div class="select_box">
+										<select title="컨퍼런스 선택">
+											<option value="" disabled selected hidden>컨퍼런스 선택</option>
+											<option value="">전체</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th class="required"><span class="screen_out">필수 항목</span>문의항목</th>
+								<td>
+									<div class="select_box">
+										<select title="문의항목 선택">
+											<option value="" disabled selected hidden>문의항목 선택</option>
+											<option value="">입/퇴장관련</option>
+											<option value="">평점조회</option>
+											<option value="">영상끊김</option>
+											<option value="">계정정보변경</option>
+											<option value="">사용기기(PC/모바일)</option>
+											<option value="">유입코드</option>
+											<option value="">다시보기</option>
+											<option value="">E-TEST</option>
+											<option value="">기타</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th class="required"><span class="screen_out">필수 항목</span>내용</th>
+								<td><textarea placeholder="문의하실 내용을 적어주세요" class="con"></textarea></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btns">
+						<a href="#none" class="btn_ok">저장</a>
+						<a href="#none" class="btn_cancel">취소</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<a href="#none" class="btn_comm btn_top">TOP</a> 
+	<!-- container [e] -->
+	<!--#include virtual="../../html/common/webinar_footer.html" -->
+</div>
+
+</body>
+</html>
