@@ -1,4 +1,29 @@
-<!--#include virtual="../../html/common/webinar_common.html" -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>컨퍼런스빌</title>
+	<link rel="shortcut icon" href="../../images/_favicon.ico" type="image/x-icon">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<!-- <script src="../../js/jquery.placeholder.js"></script> -->
+	<!-- <script src="../../js/common.js"></script> -->
+	<script src="../../js/webinar_ui.js"></script>
+	<script src="../../js/jquery.bpopup.min.js"></script>
+	<script src="../../js/jquery.wmuSlider.min.js"></script>
+	<!-- 2020-10-28 SLICK 추가 -->
+	<script src="../../js/slick.min.js"></script>
+	<script src="../../js/jquery.tmpl.min.js"></script>
+	<script src="../../js/jquery.cycle2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/slick.css"><!-- 2020-10-28 SLICK 추가 -->
+	<link rel="stylesheet" type="text/css" href="../../css/pc/style_v3.css">
+	<link rel="stylesheet" type="text/css" href="../../css/pc/webinar.css">
 </head>
 <body>
 <div id="Index">
@@ -7,7 +32,41 @@
 </div>
 <div id="wrap" class="">
 	<!-- header [s] -->
-	<!--#include virtual="../../html/common/webinar_header.html" -->
+	<header id="header" class="header_wrap">
+		<div class="header_inner">
+			<h1><a href="#none" class="tit_drville"><img src="../../images/pc/webinar/header_logo.jpg"></a></h1>
+			<div class="search_area">
+				<input type="text" placeholder="심포지엄 검색" title="심포지엄 검색" class="inp_txt">
+				<button type="button" class="btn_search"><span class="btn_comm">검색</span></button>
+			</div>
+			<p class="notice_alert new_ico">
+				<a href="#none">(공지)컨퍼런스빌 이용안내</a>
+			</p>
+			<div class="member_wrap">
+				<ul class="tools">
+					<li class="direct_link">
+						<span class="ico_comm_v2"></span>
+						<a href="#">닥터빌 님</a><!-- 한글 -->
+						<a href="#">johntravolta</a><!-- 영문 -->
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">마이페이지</a>
+								<a href="#">1:1문의</a>
+								<a href="#">로그아웃</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- 비로그인시 노출 -->
+			<div class="btn_header">
+				<a href="#" class="btn_login">로그인</a>
+				<a href="#" class="btn_join">회원가입</a>
+			</div>
+		</div>
+
+	</div>
+</header>
 	<!-- header [e] -->
 	<!-- container [s] -->
 	<main id="container" class="webinar_guide">
@@ -140,7 +199,66 @@
 		</div>
 	</main>
 	<!-- container [e] -->
-	<!--#include virtual="../../html/common/webinar_footer.html" -->
+	<!-- footer [s] 로그인  -->
+<footer id="footer" class="f_v3">
+	<div class="info_foot btm">
+		<a href="#none" class="ico_comm_v2 tit_doctor">닥터빌 홈 바로가기</a>
+		<div class="inner_info">
+			<ul class="list_footer">
+				<li><a href="policy.html" class="link_footer">이용약관</a><span class="txt_bar">|</span></li>
+				<!-- 2021-06-03 개인정보처리방침 볼드처리 -->
+				<li><a href="userinfo.html" class="link_footer"><strong>개인정보처리방침</strong></a></li>
+			</ul>
+			<!--2023-01-05 수정 [S]-->
+			<div class="wrap_family">
+				<a href="#none" class="btn_family">FAMILY SITE <span class="ico_comm">목록 펼치기</span></a>
+				<ul class="list_family">
+					<li><a href="" target="_blank">FAMILY SITE 1</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 2</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 3</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 4</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 5</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 6</a></li>
+				</ul>
+			</div>
+			<!--2023-01-05 수정 [E]-->
+		</div>
+		<!--2022-12-13 수정[s]-->
+		<address class="inner_info">
+			<div>서울 강남구 봉은사로 114길 12 (삼성동)<span class="txt_bar">|</span>대표자 : 서종원<span class="txt_bar">|</span>사업자번호 : 120-86-10499<br><!--2023-01-05 대표자 변경-->
+			고객센터 : 1522-0209(월-금: 09:30-17:30 / 그 외 행사 운영시간에 따름)<span class="txt_bar">|</span>팩스 : 02-563-8399</div>
+		</address>
+		<!--2022-12-13 수정[e]-->
+		<div class="inner_info copy">
+			<span class="copyright">Copyright <em class="emph_addr">ⓒ Mcircle.</em> All right reserved</span>
+		</div>
+	</div>
+</footer>
+<!-- footer [e] 로그인  -->
+
+<script>
+	//2023-01-05 푸터 추가
+	$(".btn_family").bind("click", function(e){
+		var target = $('.list_family'),
+				state = target.css('display');
+		if(state == "block"){
+			$(this).find(".ico_comm").text('목록 펼치기').removeClass('open');
+			target.hide();
+		}else{
+			$(this).find(".ico_comm").text('목록 접기').addClass('open');
+			target.show();
+		}
+		return false;
+	})
+
+	$(".link_sitemap").on("click", function(e) {
+		e.preventDefault();
+		var link = $(this).attr("href");
+		console.log (link);
+		$("#pop_footAllmenu").toggle();
+	});
+</script>
+
 </div>
 </body>
 </html>

@@ -372,7 +372,40 @@
 
 	<!-- container [s] -->
 	<main id="container" data-title="마이페이지">
-		<!--#include virtual="../../html/mypage/common/leftmenu.html" -->
+		<article id="leftAside" class="left_wrap"> <!-- @@ left_wrap 전체적으로 변경 -->
+	<div class="my_menu">
+		<ul class="list_my">
+			<li><a href="main.html" class="link_my">마이페이지 홈</a></li>
+			<li>
+				<a href="mp01_01.html" class="link_my">내정보 관리</a>
+				<ul class="list_depth2">
+					<li class="on"><a href="mp01_01.html" class="link_my">회원정보 관리</a></li> <!-- 해당페이지시 on 추가 -->
+				</ul>
+			</li>
+			<li><a href="mp02_01.html" class="link_my">포인트 관리</a>
+					<ul class="list_depth2">
+						<li><a href="mp02_01.html" class="link_my">이용/충전 내역</a></li>
+						<li><a href="mp02_02.html" class="link_my">포인트 충전하기</a></li>
+						<li><a href="mp02_03.html" class="link_my">적립/사용안내</a></li>
+					</ul>
+				</li>
+			<li>
+				<a href="mp03_01.html" class="link_my">내관심</a>
+				<ul class="list_depth2">
+					<li><a href="mp03_01.html" class="link_my">CME</a></li>
+					<li><a href="mp03_06.html" class="link_my">학회</a></li><!--2022-06-27 메뉴추가-->
+					<li><a href="mp03_02.html" class="link_my">연자</a></li>
+					<li><a href="mp03_03.html" class="link_my">병원경영</a></li>
+					<!-- <li><a href="mp03_04.html" class="link_my">자료실</a></li> -->
+					<!-- <li><a href="mp03_05.html" class="link_my">커뮤니티</a></li> 2018-04-13 메뉴삭제 -->
+				</ul>
+			</li>
+			<li><a href="mp04_01.html" class="link_my">알림</a></li>
+		</ul>
+	</div>
+</article>
+<!-- left_wrap [e] -->
+
 		<!-- contents [s] -->
 		<div class="contents">
 			<div class="tit_area myinterest">

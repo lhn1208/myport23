@@ -1,4 +1,29 @@
-<!--#include virtual="../../html/common/webinar_common.html" -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>컨퍼런스빌</title>
+	<link rel="shortcut icon" href="../../images/_favicon.ico" type="image/x-icon">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<!-- <script src="../../js/jquery.placeholder.js"></script> -->
+	<!-- <script src="../../js/common.js"></script> -->
+	<script src="../../js/webinar_ui.js"></script>
+	<script src="../../js/jquery.bpopup.min.js"></script>
+	<script src="../../js/jquery.wmuSlider.min.js"></script>
+	<!-- 2020-10-28 SLICK 추가 -->
+	<script src="../../js/slick.min.js"></script>
+	<script src="../../js/jquery.tmpl.min.js"></script>
+	<script src="../../js/jquery.cycle2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/slick.css"><!-- 2020-10-28 SLICK 추가 -->
+	<link rel="stylesheet" type="text/css" href="../../css/pc/style_v3.css">
+	<link rel="stylesheet" type="text/css" href="../../css/pc/webinar.css">
 </head>
 <body>
 <div id="Index">
@@ -7,7 +32,41 @@
 </div>
 <div id="wrap" class="">
 	<!-- header [s] -->
-	<!--#include virtual="../../html/common/webinar_header.html" -->
+	<header id="header" class="header_wrap">
+		<div class="header_inner">
+			<h1><a href="#none" class="tit_drville"><img src="../../images/pc/webinar/header_logo.jpg"></a></h1>
+			<div class="search_area">
+				<input type="text" placeholder="심포지엄 검색" title="심포지엄 검색" class="inp_txt">
+				<button type="button" class="btn_search"><span class="btn_comm">검색</span></button>
+			</div>
+			<p class="notice_alert new_ico">
+				<a href="#none">(공지)컨퍼런스빌 이용안내</a>
+			</p>
+			<div class="member_wrap">
+				<ul class="tools">
+					<li class="direct_link">
+						<span class="ico_comm_v2"></span>
+						<a href="#">닥터빌 님</a><!-- 한글 -->
+						<a href="#">johntravolta</a><!-- 영문 -->
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">마이페이지</a>
+								<a href="#">1:1문의</a>
+								<a href="#">로그아웃</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- 비로그인시 노출 -->
+			<div class="btn_header">
+				<a href="#" class="btn_login">로그인</a>
+				<a href="#" class="btn_join">회원가입</a>
+			</div>
+		</div>
+
+	</div>
+</header>
 	<!-- header [e] -->
 	<!-- container [s] -->
 	<main id="container" class="webinar_guide sub_page" data-title="이용약관">
