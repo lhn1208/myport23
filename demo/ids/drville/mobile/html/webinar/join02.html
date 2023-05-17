@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=yes">
+	<title>컨퍼런스빌</title>
+	<link rel="apple-touch-icon-precomposed" href="../../images/ico_ios.png" />
+	<link rel="shortcut icon" href="../../images/ico_android.png" />
+	<!-- 2020-10-28 slick 추가 -->
+	<link rel="stylesheet" type="text/css" href="../../css/mobile/slick.css">
+	<link rel="stylesheet" type="text/css" href="../../css/mobile/webinar.css">
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<script src="../../js/ui.js"></script>
+	<script src="../../js/menu.js"></script>
+	<script src="../../js/jquery.bpopup.min.js"></script>
+	<script src="../../js/slick.min.js"></script><!-- 2020-10-28 slick 추가 -->
+
+</head>
+<body>
+<!-- 스킵내비게이션
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+</div> -->
+<!--전체 페이지를 감싸는 태그 id="app" [s]-->
+<div id="app">
+
+	<script type="text/javascript">
+		// 2017-12-12 TOP 버튼 스크립트 수정
+		$(window).load(function() {
+			var btnTop = $(".btn_top");
+			btnTop.hide();
+			if($(".wrap footer").length != 1){
+				btnTop.css("bottom","20px");
+			//}else {
+				//btnTop.css("bottom","75px");
+				//var fTop = $("footer").offset().top;
+			}
+			$("#container").scroll(function(){
+				btnTop.fadeIn(300);
+				if($("#container").scrollTop()==0 ) {
+					btnTop.fadeOut(300);
+				};
+				//if($("body").height() + $("#container").scrollTop() >= fTop + 50){
+				//	btnTop.css("bottom","80px");
+				//}else {
+				//	btnTop.css("bottom","20px");
+				//}
+			});
+			btnTop.click(function(){
+				$("#container").animate({ scrollTop: 0 }, 500);
+				return false;
+			});
+		})
+	</script>
+
+<div class="wrap"> <!-- 페이지 별 class="wrap" -->
+	<!-- header [s] -->
+	<header id="header">
+	<h1 class="screen_out">닥터빌 컨퍼런스</h1>
+	<a href="#" class="link_home">
+		<h1 class="screen_out">닥터빌 컨퍼런스</h1>
+		<h2 class="ico_webinar">메인</h2>
+	</a>
+	<a href="#" class="ico_comm btn_menu sidenavi-btn new_ico">메뉴</a>
+</header>
+
+<!-- NaviMenu [s] -->
+<nav  class="layer_box sidenavi">
+	<div class="info_head">
+		<a href="#" class="btn_close sidenavi-close">닫기</a>
+		 <!-- 로그아웃 했을때 -->
+			<a href="#none" class="info_btn login_btn">로그인</a>
+			<a href="#none" class="info_btn join_btn">회원가입</a>
+		<!-- 로그인 했을때
+			<strong class="name"><span>김닥터</span> 님</strong>
+			<a href="#none" class="info_btn logout_btn">로그아웃</a>
+		-->
+	</div>
+	<div id="gnb">
+		<ul class="list_gnb">
+			<li><a href="#">홈</a></li>
+			<li><a href="#">회원정보</a></li>
+			<li><a href="#" class="new_ico">참여내역</a></li>
+			<li><a href="#">1:1문의</a></li>
+			<li><a href="#">이용안내</a></li>
+			<li><a href="#">공지사항</a></li>
+		</ul>
+	</div>
+	<div class="banner_wr">
+
+	</div>
+</nav>
+<!-- NaviMenu [e] -->
+<!-- SEARCH [s] -->
+<div class="search_wr">
+	<div  class="search-box">
+		<input type="search" class="search_inp" placeholder="심포지엄 검색"/>
+		<a href="#none" class="search_btn" type="submit"></a>
+	</div>
+	<span class="search-menu">
+	  <span class="search_menu_ico"></span>
+	</span>
+</div>
+<!-- SEARCH [e] -->
+	<!-- header [e] -->
+	<!-- navi [s] -->
+	<nav id="navi">
+		<h2 class="h_tit">정보 입력</h2>
+		<a href="#" class="ico_comm btn_back">이전</a>
+	</nav>
+	<!-- navi [e] -->
+	<!-- container [s] -->
+	<section id="container" class="member_container">
+		<div class="join_write">
+			<h3 class="s_tit">정보 입력</h3>
+			<div class="join_row">
+				<em class="join_tit ico_must"><label for="user_name">이름</label></em>
+				<input type="text" title="이름" class="inp_txt inp_w50" id="user_name" placeholder="이름을 입력해주세요">
+			</div>
+			<!-- 2021-07-05 아이디 수정 [s] -->
+			<div class="join_row id_row">
+				<em class="join_tit ico_must"><label for="user_id">아이디(이메일)</label></em>
+				<p class="row">
+					<input type="text" class="inp_txt" id="user_id" style="width:calc(50% - 13px);"> @ <input type="text" class="inp_txt" id="user_id_domain" style="width:calc(50% - 14px);" disabled>
+				</p>
+				<p class="row">
+					<select class="select_type black">
+						<option value="" disabled selected hidden>이메일 선택</option>
+						<option value="naver.com">naver.com</option>
+						<option value="daum.net">daum.net</option>
+						<option value="hanmail.net">hanmail.net</option>
+						<option value="gmail.com">gmail.com</option>
+						<option value="nate.com">nate.com</option>
+						<option value="hotmail.com">hotmail.com</option>
+						<option value="paran.com">paran.com</option>
+						<option value="">직접 입력</option>
+					</select>
+					<a href="#" class="btn_type4 btn_join check_btn">중복확인</a>
+				</p>
+			</div>
+			<!-- 2021-07-05 아이디 수정 [e] -->
+			<div class="join_row">
+				<em class="join_tit ico_must"><label for="user_pw">비밀번호</label></em>
+				<input type="password" class="inp_txt inp_w100" id="user_pw" placeholder="8~16자의 영문(소문자), 숫자 조합">
+				<input type="password" class="inp_txt inp_w100" title="비밀번호를 한 번 더 입력해주세요" placeholder="비밀번호를 한 번 더 입력해주세요">
+				<p class="alert_error">8~16자 이내로 영문 소문자, 숫자가 필요합니다.</p>
+			</div>
+
+			<div class="join_row btn_row">
+				<em class="join_tit ico_must"><label for="phone_number">휴대폰</label></em>
+				<input type="text" class="inp_txt" id="phone_number" placeholder="휴대폰 번호를 입력해주세요">
+				<a href="#none" class="btn_type4 btn_join">인증요청</a>
+			</div>
+			<div class="join_row btn_row"> 
+				<input type="text" class="inp_txt" placeholder="인증번호를 입력해주세요">
+				<a href="#none" class="btn_type4 btn_join">확인</a>
+				<p class="alert_right "><span>2</span>분 <span>58</span>초 이내에 인증번호를 입력하세요.</p>
+				<p class="alert_right "><b>※ 카카오 알림톡 혹은 문자로 인증번호 발송</b></p><!-- 20200918 text 추가 -->
+			</div>
+
+			<div class="join_row">
+				<em class="join_tit ico_must"><label for="work_pattern">근무형태</label></em>
+				<select id="work_pattern" class="select_type black">
+					<option>근무형태를 선택하세요</option>
+					<option>선택</option>
+					<option>선택</option>
+				</select>
+				<input type="text" class="inp_txt inp_w100" title="근무형태를 입력하세요" placeholder="근무형태를 입력하세요">
+			</div>
+			<div class="join_row">
+				<em class="join_tit ico_must"><label for="working_place">근무처</label></em>
+				<input type="text" title="근무처" id="working_place" class="inp_txt inp_w100" placeholder="근무처를 입력하세요">
+			</div>
+			<div class="join_row">
+				<em class="join_tit"><label for="license_number">면허번호</label></em>
+				<input type="text" title="면허번호" id="license_number" class="inp_txt inp_w100" placeholder="면허번호를 입력하세요">
+			</div>
+			<div class="join_row">
+				<em class="join_tit ico_must"><label for="medical_office">진료과</label></em>
+				<select id="medical_office" class="select_type black">
+					<option>진료과를 선택하세요</option>
+					<option>선택</option>
+					<option>선택</option>
+				</select>
+			</div>
+			<div class="join_row info_chk_row">
+				<em class="join_tit">정보 수신여부</em>
+				<div class="join_area">
+					<span class="inp_chk_circle"><input type="checkbox" id="info_sms"><label for="info_sms">SMS 수신 동의</label></span>
+					<span class="inp_chk_circle"><input type="checkbox" id="info_email"><label for="info_email">이메일 수신 동의</label></span>
+					<p class="txt_info">※ 컨퍼런스 등록 등 이용에 필요한 정보를 수신합니다.</p>
+				</div>
+			</div>
+		</div>
+		<div class="btn_wrap">
+			<button type="submit" class="btn_type2">가입하기</button>
+			<button type="submit" class="btn_type2 btn_blue">가입하기</button> <!--모두 기입시 "btn_blue" class 추가-->
+		</div>
+	</section>
+	<!-- container [e] -->
+</div>
+</div>
+<!--전체 페이지를 감싸는 태그 [e]-->
+
+
+<div class="pop_layout" id="alert_id">
+	<div class="pop_content">
+		<div class="pop_tit">알림</div>
+		<div class="pop_cont">
+			<p>
+				이미 사용중인 아이디 입니다.
+			</p>
+		</div>
+	</div>
+	<div class="btn_wrap btn_w100">
+		<button class="btn_type1 btn_cancel">확인</button>
+	</div>
+</div>
+
+<script>
+	$(function() {
+
+		// 2021-07-05
+		$(".join_row.id_row").on({
+			change:function(e){
+				var val = e.currentTarget.options[e.currentTarget.selectedIndex].value;
+				e.delegateTarget.querySelector('input#user_id_domain').value = val;
+				if(val == ""){
+					e.delegateTarget.querySelector('input#user_id_domain').disabled = false;
+					e.delegateTarget.querySelector('input#user_id_domain').focus();
+				}else {
+					e.delegateTarget.querySelector('input#user_id_domain').disabled = true;
+				}
+			}
+		}, 'select');
+
+		$(".check_btn").click(function(e){
+			socialUI.modalLayer($("#alert_id"),{"closeClass":"btn_close"});
+		});
+
+	});
+</script>
+</body>
+</html>

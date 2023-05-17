@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=yes">
+	<title>닥터빌</title>
+	<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<script src="../../js/ui.js"></script>
+	<style>
+		body {overflow:auto;}
+		.content_box > div {padding:5px 0;}
+		.content_box h4 {padding-top:15px;}
+		.btn_margin button, .btn_margin a, .btn_margin span {margin:5px 0;}
+	</style>
+</head>
+<body>
+<!--전체 페이지를 감싸는 태그 id="app" [s]-->
+<div id="app">
+	<div class="wrap">
+		<!-- header [s] -->
+		<header id="header" class="main_header">
+			<a href="#" class="link_home">
+				<h1 class="screen_out">닥터빌</h1>
+				<h2 class="h_tit"><span class="ico_comm ico_logo"></span>메인</h2>
+			</a>
+			<a href="#" class="ico_comm btn_menu">메뉴</a>
+			<a href="#" class="ico_comm btn_back">이전</a>
+		</header>
+		<!-- header [e] -->
+		<!-- container [s] -->
+		<section id="container">
+			<div class="content_box">
+				<h3 class="s_tit">List</h3>
+				<div>
+					<a href="#" class="list_detail type2">
+						<div class="list_cont">
+							<span class="category">라이프케어</span>
+							<p class="list_tit"><strong class="tit">탄탄한 몸매를 만들어주는 실내 근력운동</strong><span class="ico_new">N</span></p>
+							<span class="tail">정운경 강사(힐리언스 코어운동센터)</span>
+						</div>
+						<div class="img">
+							<img src="../../images/m640/bg_attend.gif" alt="">
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="#" class="list_detail type2">
+						<div class="list_cont">
+							<p class="list_tit"><strong class="tit">탄탄한 몸매를 만들어주는 실내 근력운동</strong></p>
+							<span class="tail">2017-11-16</span>
+						</div>
+						<div class="img">
+							<img src="../../images/m640/bg_attend.gif" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="seminar_list">
+					<a href="#" class="list_detail">
+						<div class="list_cont">
+							<span class="category">심혈관질환</span>
+							<p class="list_tit"><strong class="tit">​ENGAGE AF-TIMI 48 sub-analysis, Edoxaban</strong><span class="ico_new">N</span></p>
+							<span class="tail">윤남식 교수(전남의대)</span><span class="txt_bar">|</span><span class="tail">2017-11-27</span>
+						</div>
+					</a>
+				</div>
+				<div class="seminar_list">
+					<a href="#" class="list_detail no_replay">
+						<div class="list_cont">
+							<span class="category">라이프케어</span>
+							<p class="list_tit"><strong class="tit">아름다운 영주씨의 와인이야기 5. 전통을 계승한 명산지 와인</strong>	</p>
+							<span class="tail">이영주 강사(부띠끄 림코)</span><span class="txt_bar">|</span><span class="tail">2017-11-27</span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="content_box slide_list">
+				<h3 class="s_tit">슬라이드</h3>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<a href="#" class="list_detail">
+								<div class="list_cont">
+									<span class="category">병원경영</span>
+									<p class="list_tit"><strong class="tit">1연속형 자료의 분석</strong></p>
+								</div>
+								<figure class="img"><img src="http://timgs.wecandeo.com/thumb/1185/20171123/18/4412_8bf35_00002.jpg" alt="" style="width:100%;"></figure>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="list_detail">
+								<div class="list_cont">
+									<span class="category">병원경영</span>
+									<p class="list_tit"><strong class="tit">2연속형 자료의 분석 연속형 자료의 분석 연속형 자료의 분석 연속형 자료의 분석 연속형 자료의 분석 연속형 자료의 분석</strong></p>
+								</div>
+								<figure class="img"><img src="http://timgs.wecandeo.com/thumb/1185/20171116/15/0514_164fe_00000.jpg" alt="" style="width:100%;"></figure>
+							</a>
+						</div>
+						<div class="swiper-slide">
+								<figure class="img"><img src="http://timgs.wecandeo.com/thumb/1185/20171123/18/4412_8bf35_00002.jpg" alt="" style="width:100%;"></figure>
+						</div>
+						<div class="swiper-slide">
+							<figure class="img"><img src="http://timgs.wecandeo.com/thumb/1185/20171116/15/0514_164fe_00000.jpg" alt="" style="width:100%;"></figure>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+
+			<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+			<script src="../../js/swiper.min.js"></script>
+			<script>
+				$(function() {
+					var swiper = new Swiper('.swiper-container', {
+						// autoplay: {delay: 2000},
+						loop: true,
+						pagination: {
+							el: '.swiper-pagination',
+							clickable: true,
+						},
+					});
+				});
+			</script>
+			<div class="content_box">
+				<h3 class="s_tit">Font Size</h3>
+				<p style="font-size:0.75rem;">$font-ss 0.75rem</p>
+				<p style="font-size:0.875rem;">$font-s 0.875rem</p>
+				<p style="font-size:1rem;">$font-m 1rem</p>
+				<p style="font-size:1.125rem;">$font-l 1.125rem</p>
+				<p style="font-size:1.5rem;">$font-xl 1.5rem</p>
+			</div>
+			<div class="content_box">
+				<h3 class="s_tit">Icon Font</h3>
+				<span class="font_icon"><i class="icon-cancel">&#xe800;</i><span class="ico_name">취소</span></span> <br>
+				<span class="font_icon"><i class="icon-logout">&#xe801;</i><span class="ico_name">로그아웃</span></span> <br>
+				<span class="font_icon"><i class="icon-search">&#xe802;</i><span class="ico_name">검색하기</span></span> <br>
+				<span class="font_icon"><i class="icon-left-open">&#xf007;</i><span class="ico_name">뒤로가기</span></span> <br>
+				<span class="font_icon"><i class="icon-right-open">&#xf006;</i><span class="ico_name">앞으로가기</span></span> <br>
+				<span class="font_icon"><i class="icon-monitor">&#xf032;</i><span class="ico_name">PC버전</span></span> <br>
+				<span class="font_icon"><i class="icon-menu">&#xf0c9;</i><span class="ico_name">메뉴열기</span></span>
+			</div>
+			<div class="content_box">
+				<h3 class="s_tit">Color</h3>
+				<p style="color:#666666">$base-color #666666</p>
+				<p style="color:#30b8ff">$main-color #30b8ff</p>
+				<p style="color:#618cff">$sub-color #618cff</p>
+				<p style="color:#24292f">$black-color #24292f</p>
+				<p style="color:#4a5662">$darkgray-color #4a5662</p>
+				<p style="color:#848484">$gray-color #848484</p>
+				<p style="color:#fff;background-color:#000;">$white-color #ffffff</p>
+				<p style="color:#ff0000">$red-color #ff0000</p>
+				<p style="color:#ff5400">$orange-color #ff5400</p>
+				<p style="color:#4a70d1">$seminar-color #4a70d1</p>
+				<p style="color:#2dd8dd">$forum-color #2dd8dd</p>
+				<p style="color:#e0e0e0">$border-color #e0e0e0</p>
+			</div>
+			<div class="content_box">
+				<h3 class="s_tit">input</h3>
+				<div>
+					<span class="inp_chk"><input type="checkbox" id="chk1"><label for="chk1">체크박스1</label></span>
+					<span class="inp_chk"><input type="checkbox" id="chk2"><label for="chk2">체크박스2</label></span>
+				</div>
+				<div>
+					<span class="inp_chk_circle"><input type="checkbox" id="chk_circle1"><label for="chk_circle1">둥근체크박스1</label></span>
+					<span class="inp_chk_circle"><input type="checkbox" id="chk_circle2"><label for="chk_circle2">둥근체크박스2</label></span>
+				</div>
+				<div>
+					<span class="inp_rdo"><input type="radio" id="rdo1" name="rdo" checked="checked"><label for="rdo1">라디오1</label></span>
+					<span class="inp_rdo"><input type="radio" id="rdo2" name="rdo"><label for="rdo2">라디오2</label></span>
+				</div>
+				<div>
+					<input type="text" class="inp_txt" placeholder="텍스트 입력">
+				</div>
+				<div>
+					<select class="select_type" title="카테고리 선택">
+						<option>셀렉트 박스 그레이</option>
+						<option>셀렉트 박스</option>
+						<option>셀렉트 박스</option>
+					</select>
+				</div>
+				<div>
+					<select class="select_type black" title="카테고리 선택">
+						<option>셀렉트 박스 블랙</option>
+						<option>셀렉트 박스</option>
+						<option>셀렉트 박스</option>
+					</select>
+				</div>
+				<div>
+					<textarea title="내용입력" placeholder="내용 입력"></textarea>
+				</div>
+			</div>
+			<div class="content_box btn_margin">
+				<h3 class="s_tit">Button</h3>
+				<button type="submit" class="btn_type1">btn_type1</button>
+				<button type="submit" class="btn_type2">btn_type2</button>
+				<button type="submit" class="btn_type3">btn_type3</button>
+				<button type="submit" class="btn_type4">btn_type4</button>
+				<button type="submit" class="btn_type5">btn_type5</button>
+				<button type="submit" class="btn_type6">btn_type6</button>
+				<a href="#" class="btn_more">더보기<span class="ico_comm"></span></a>
+				<span class="ico_loading">로딩중입니다.</span>
+			</div>
+			<div class="content_box">
+				<h3 class="s_tit">Tab menu</h3>
+				<ul class="tab_type1">
+					<li class="on"><a href="#none">tab1</a></li>
+					<li><a href="#none">tab2</a></li>
+				</ul>
+				<ul class="tab_type2">
+					<li class="on"><a href="#none">tab1</a></li>
+					<li><a href="#none">tab2</a></li>
+					<li><a href="#none">tab3</a></li>
+				</ul>
+			</div>
+			<div class="content_box">
+				<div>
+					<p class="txt_notice"><span class="ico_comm"></span>설문 참여는 PC에서만 가능합니다.</p>
+				</div>
+				<div>
+					<p class="txt_notice"><span class="ico_comm"></span>꼭! 확인해주세요</p>
+					<ul class="list_notice">
+						<li>- 닥터빌 자유게시판에 등록된 게시물은 모든 닥터빌 회원 들에게 공개됩니다. </li>
+						<li>- 등록한 게시물로 인해 발생한 손해나 기타 문제에 대한 책 임은 게시자에게 있습니다. </li>
+					</ul>
+				</div>
+				<div>
+					<p class="alert_error">아이디 중복확인 버튼을 클릭해주세요</p>
+					<p class="alert_right">사용가능 합니다.</p>
+				</div>
+			</div>
+			<div class="content_box">
+				<h3 class="s_tit">List</h3>
+				<div class="seminar_list">
+					<a href="#" class="list_detail">
+						<div class="list_cont">
+							<span class="category">심혈관질환</span>
+							<p class="list_tit"><strong class="tit">​ENGAGE AF-TIMI 48 sub-analysis, Edoxaban</strong><span class="ico_new">N</span></p>
+							<span class="tail">윤남식 교수(전남의대)</span><span class="txt_bar">|</span><span class="tail">2017-11-27</span>
+						</div>
+					</a>
+				</div>
+				<div class="seminar_list">
+					<a href="#" class="list_detail no_replay">
+						<div class="list_cont">
+							<span class="category">라이프케어</span>
+							<p class="list_tit"><strong class="tit">아름다운 영주씨의 와인이야기 5. 전통을 계승한 명산지 와인</strong>	</p>
+							<span class="tail">이영주 강사(부띠끄 림코)</span><span class="txt_bar">|</span><span class="tail">2017-11-27</span>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="#" class="list_detail type2">
+						<div class="list_cont">
+							<span class="category">라이프케어</span>
+							<p class="list_tit"><strong class="tit">탄탄한 몸매를 만들어주는 실내 근력운동</strong><span class="ico_new">N</span></p>
+							<span class="tail">정운경 강사(힐리언스 코어운동센터)</span>
+						</div>
+						<div class="img">
+							<img src="../../images/m640/bg_attend.gif" alt="">
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<!--<div class="content_box">-->
+			<!--<strong class="tit"></strong>-->
+			<!--<div class="article_info">-->
+			<!--<p class="author">이민영성형외과 전문의</p>-->
+			<!--<span class="txt_date">2016-04-09</span>-->
+			<!--<p><span class="ico_comm ico_favorite">관심글</span> 305</p>-->
+			<!--<p><span class="ico_comm ico_hits">조회수</span> 305</p>-->
+			<!--<p><span class="ico_comm ico_commend">댓글</span> 86</p>-->
+			<!--</div>-->
+			<!--<div class="view_content">-->
+			<!--<p></p>-->
+			<!--<p><img src="http://placehold.it/500x250/e6e9f0/000000" alt=""></p>-->
+			<!--</div>-->
+			<!--<div class="file_download">-->
+			<!--<strong>첨부파일 :</strong>-->
+			<!--<a href="#none"><span class="ico_comm ico_down"></span>종아리.txt</a>-->
+			<!--</div>-->
+			<!--<div class="btn_wrap">-->
+			<!--<button type="button" onclick="btnOn();" id="btn_favorite" class="f_l btn_type4"><span class="ico_comm ico_big_favorite"></span>관심</button>-->
+			<!--<button class="btn_type4">수정</button>-->
+			<!--<button class="btn_type4">삭제</button>-->
+			<!--</div>-->
+			<!--<div class="inp_row inp_file">-->
+			<!--<strong class="tit">첨부파일</strong>-->
+			<!--<label for="inp_file" class="btn_type4">파일찾기</label>-->
+			<!--<input type="file" id="inp_file" class="screen_out">-->
+			<!--<span class="btn_type4 file_name"><em>KakaoTalk_20170213_164834305.jpg</em><a href="#none" class="ico_comm ico_del">삭제</a></span>-->
+			<!--</div>-->
+			<!--</div>-->
+			<!-- 알림 팝업 버튼 1개 [s] -->
+			<div class="content_box w_full" style="background:#f4f4f6;">
+				<h3 class="s_tit" style="padding-left:20px;">popup</h3>
+				<div style="padding:10px 0">
+					<div class="popup_type1"  style="display:block;">
+						<div class="pop_content">
+							<p class="pop_tit">알림</p>
+							<div class="pop_cont"><p>포인트 적립 완료 !</p>	</div>
+						</div>
+						<div class="btn_wrap">
+							<button class="btn_type1">확인</button>
+						</div>
+					</div>
+				</div>
+				<!-- 알림 팝업 [e] -->
+				<!-- 알림 팝업 버튼 2개 [s] -->
+					<div style="padding:10px 0">
+					<div class="popup_type1"  style="display:block;">
+						<div class="pop_content">
+							<p class="pop_tit">알림</p>
+							<div class="pop_cont"><p>이미 사용중인 아이디 입니다.</p></div>
+						</div>
+						<div class="btn_wrap btn_w50">
+							<button class="btn_type6">취소</button>
+							<button class="btn_type1">확인</button>
+						</div>
+					</div>
+				</div>
+				<!-- 알림 팝업 [e] -->
+				<!-- 글쓰기 팝업 [s] -->
+				<div style="padding:10px 0">
+					<div class="popup_type1"  style="display:block;">
+						<div class="pop_content">
+							<p class="pop_tit">질문 등록</p>
+							<div class="pop_cont">
+								<div class="q_write">
+									<form action="#">
+										<fieldset>
+											<legend class="screen_out">질문 작성</legend>
+											<p class="screen_out"><strong class="name">허지은</strong></p>
+											<textarea class="tf_cmt" cols="90" rows="5" placeholder="질문을 입력해주세요" title="질문 입력">질문을 입력해주세요</textarea>
+											<span class="info_append">
+												<span class="screen_out">입력된 바이트 수 : </span>
+												<span class="txt_byte"><em>0</em> / 1000자</span>
+											</span>
+											<div class="secret_choice">
+												<span class="inp_rdo_box"><input type="radio" id="open" name="secret" checked="checked"><label for="open">공개</label></span>
+												<span class="inp_rdo_box"><input type="radio" id="private" name="secret"><label for="private">비공개</label></span>
+											</div>
+										</fieldset>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="btn_wrap btn_w50">
+							<button class="btn_type6">취소</button>
+							<button class="btn_type1">등록</button>
+						</div>
+					</div>
+				</div>
+				<!-- 글쓰기 팝업 [e] -->
+			</div>
+			<!-- footer [s] -->
+			<footer id="footer">
+	<div class="footer_menu">
+		<a href="../member/terms_policy.html" class="txt">이용약관</a>
+		<span class="txt_bar">|</span>
+		<!-- 2021-06-03 개인정보처리방침 볼드 처리 -->
+		<a href="../member/terms_userinfo.html" class="txt"><strong>개인정보처리방침</strong></a>
+		<span class="txt_bar">|</span>
+		<span class="txt">고객센터</span>
+		<a href="tel:02-1522-0209" class="txt link_num">1522-0209</a>
+	</div>
+	<address>Copyright &copy;Mcircle. All right reserved</address> <!--2017-12-14 수정-->
+</footer>
+			<!-- footer [e] -->
+		</section>
+		<a href="#" class="ico_comm btn_top">상단으로 이동</a> <!--top 버튼-->
+
+		<!-- container [e] -->
+		<script type="text/javascript">
+			$(function() {
+			})
+			// 2017-12-12 TOP 버튼 스크립트 수정
+			$(window).load(function() {
+				var btnTop = $(".btn_top");
+				btnTop.hide();
+				$("#container").scroll(function(){
+					btnTop.fadeIn(300);
+					if($("#container").scrollTop()==0 ) {
+						btnTop.fadeOut(300);
+					};
+				});
+				btnTop.click(function(){
+					$("#container").animate({ scrollTop: 0 }, 500);
+					return false;
+				});
+			})
+		</script>
+	</div>
+</div>
+<!--전체 페이지를 감싸는 태그 [e]-->
+</body>
+</html>

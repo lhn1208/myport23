@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<title>HTML LIST</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="../js/jquery-treeview/lib/jquery.js"></script>
+<style>
+*{margin: 0; padding: 0;}
+body{background-color: #000; color: #fff;}
+h1{margin: 2rem .4rem; font-size:20px; color:#fff;letter-spacing:-0.05em;}
+img {margin-right:20px;vertical-align: middle;}
+table caption{font-size:0;line-height:0;visibility:hidden}
+.table_wrap{margin-bottom:1.25rem; padding: 1.25rem; color: #000; border: 1px solid #2979ff; background-color: #fff;}
+.table_wrap h2{margin-bottom: 1rem; color: #2979ff;}
+.table_wrap table {width:100%;border-collapse: collapse;border-top:1px solid #666;}
+.table_wrap table thead th {background-color: #2979ff; color: #fff; border:1px solid #fff; font-weight: normal;}
+.table_wrap table tbody th{font-weight: normal;}
+.table_wrap table th, .table_wrap table td{padding: .2rem .6rem; border: 1px solid #2979ff;}
+table td {height:17px;letter-spacing: -0.01em; }
+table th a, table td a{font-size: 14px;}
+table td a.preview{font-weight: bold;}
+a {text-decoration: none;color:#000}
+a:hover {text-decoration: underline;}
+.page {color:#34ad70;font-weight:bold; }
+</style>
+</head>
+<body>
+    <h1>의사 커뮤니티 닥터빌 리스트</h1>
+    <!--메인 [S]-->
+    <div class="table_wrap">
+        <h2>메인</h2>
+        <table>
+            <caption>메인 목록 테이블</caption>
+            <colgroup>
+                <col width="30%">
+                <col width="20%">
+                <col width="*">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">목록</th>
+                    <th scope="col">Preview</th>
+                   <th scope="col">Link</th>
+                 </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">메인</th>
+                    <td><a href="./main/main.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./main/main.html" target="_blank">./main/main.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">메뉴</th>
+                    <td><a href="./common/menu.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./common/menu.html" target="_blank">./common/menu.html</a> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--메인 [E]-->
+    <!--CME [S]-->
+    <div class="table_wrap">
+        <h2>CME</h2>
+        <table>
+            <caption>CME 목록 테이블</caption>
+            <colgroup>
+                <col width="16%">
+                <col width="14%">
+                <col width="20%">
+                <col width="*">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col" colspan="2">목록</th>
+                    <th scope="col" rowspan="2">Preview</th>
+                   <th scope="col" rowspan="2">Link</th>
+                 </tr>
+                 <tr>
+                     <th scope="col">Depth1</th>
+                     <th scope="col">Depth2</th>
+                 </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" rowspan="6">라이브 세미나</th>
+                    <th scope="row">세미나편성표</th>
+                    <td><a href="./cme/seminar_main.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./cme/seminar_main.html" target="_blank">./cme/seminar_main.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">다시보기 VOD</th>
+                    <td><a href="./cme/seminar_vod.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./cme/seminar_vod.html" target="_blank">./cme/seminar_vod.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">상세</th>
+                    <td><a href="./cme/seminar_view.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./cme/seminar_view.html" target="_blank">./cme/seminar_view.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Q&A 게시판</th>
+                    <td><a href="./cme/seminar_qna_layer.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./cme/seminar_qna_layer.html" target="_blank">./cme/seminar_qna_layer.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">세미나 시청</th>
+                    <td><a href="./cme/seminar_player_layer.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./cme/seminar_player_layer.html" target="_blank">./cme/seminar_player_layer.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">검색</th>
+                    <td><a href="./cme/seminar_search_layer.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./cme/seminar_search_layer.html" target="_blank">./cme/seminar_search_layer.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="2">해외의학 뉴스</th>
+                    <th scope="row">리스트</th>
+                    <td><a href="./cme/medical_news.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./cme/medical_news.html" target="_blank">./cme/medical_news.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">상세</th>
+                    <td><a href="./cme/medical_news_view.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./cme/medical_news_view.html" target="_blank">./cme/medical_news_view.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="2">학회 컨시어지</th>
+                    <th scope="row">리스트</th>
+                    <td><a href="./cme/society_schedule.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./cme/society_schedule.html" target="_blank">./cme/society_schedule.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">상세</th>
+                    <td><a href="./cme/society_schedule_view.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./cme/society_schedule_view.html" target="_blank">./cme/society_schedule_view.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row" colspan="2">UpToDate</th>
+                    <td><a href="./prescribe/uptodate_v2.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./prescribe/uptodate_v2.html" target="_blank">./prescribe/uptodate_v2.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row" colspan="2">MedLine Complete</th>
+                    <td><a href="./prescribe/medline.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./prescribe/medline.html" target="_blank">./prescribe/medline.html</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+     <!--CME [E] -->
+    <!--진료 가이드 [S]-->
+    <div class="table_wrap">
+        <h2>진료 가이드-보험인정기준</h2>
+        <table>
+            <caption>진료 가이드 목록 테이블</caption>
+            <colgroup>
+                <col width="30%">
+                <col width="20%">
+                <col width="*">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">목록</th>
+                    <th scope="col">Preview</th>
+                    <th scope="col">Link</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">리스트</th>
+                    <td><a href="./prescribe/insurance.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./prescribe/insurance.html" target="_blank">./prescribe/insurance.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">상세</th>
+                    <td><a href="./prescribe/insurance_view.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./prescribe/insurance_view.html" target="_blank">./prescribe/insurance_view.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">검색</th>
+                    <td><a href="./prescribe/insurance_search_layer.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./prescribe/insurance_search_layer.html" target="_blank">./prescribe/insurance_search_layer.html</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+     <!--진료 가이드 [E] -->
+     <!--자유 게시판 [S]-->
+    <div class="table_wrap">
+        <h2>자유 게시판</h2>
+        <table>
+            <caption>자유 게시판 목록 테이블</caption>
+            <colgroup>
+                <col width="30%">
+                <col width="20%">
+                <col width="*">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">목록</th>
+                    <th scope="col">Preview</th>
+                    <th scope="col">Link</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">리스트</th>
+                    <td><a href="./community/freeboard.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./community/freeboard.html" target="_blank">./community/freeboard.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">상세</th>
+                    <td><a href="./community/freeboard_view.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./community/freeboard_view.html" target="_blank">./community/freeboard_view.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">작성</th>
+                    <td><a href="./community/freeboard_write.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./community/freeboard_write.html" target="_blank">./community/freeboard_write.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">댓글</th>
+                    <td><a href="./community/comment_layer.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./community/comment_layer.html" target="_blank">./community/comment_layer.html</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+     <!--자유 게시판 [E] -->
+     <!--이벤트 [S]-->
+    <div class="table_wrap">
+        <h2>이벤트</h2>
+        <table>
+            <caption>이벤트 목록 테이블</caption>
+            <colgroup>
+                <col width="30%">
+                <col width="20%">
+                <col width="*">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">목록</th>
+                    <th scope="col">Preview</th>
+                    <th scope="col">Link</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">리스트</th>
+                    <td><a href="./event/event_main.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./event/event_main.html" target="_blank">./event/event_main.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">출석체크</th>
+                    <td><a href="./event/attend.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./event/attend.html" target="_blank">./event/attend.html</a></td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+     <!--이벤트 [E] -->
+    <!--공지사항 [S]-->
+    <div class="table_wrap">
+        <h2>공지사항</h2>
+        <table>
+            <caption>공지사항 목록 테이블</caption>
+            <colgroup>
+                <col width="30%">
+                <col width="20%">
+                <col width="*">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">목록</th>
+                    <th scope="col">Preview</th>
+                    <th scope="col">Link</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">리스트</th>
+                    <td><a href="./cscenter/notice.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./cscenter/notice.html" target="_blank">./cscenter/notice.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">상세</th>
+                    <td><a href="./cscenter/notice_view.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./cscenter/notice_view.html" target="_blank">./cscenter/notice_view.html</a></td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+     <!--공지사항 [E] -->
+     <!--멤버 정보 [S]-->
+    <div class="table_wrap">
+        <h2>멤버 정보</h2>
+        <table>
+            <caption>멤버 정보 목록 테이블</caption>
+            <colgroup>
+                <col width="30%">
+                <col width="20%">
+                <col width="*">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">목록</th>
+                    <th scope="col">Preview</th>
+                    <th scope="col">Link</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">마이 포인트</th>
+                    <td><a href="./mypage/mypoint.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./mypage/mypoint.html" target="_blank">./mypage/mypoint.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">로그인</th>
+                    <td><a href="./member/login.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./member/login.html" target="_blank">./member/login.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">회원가입-이용약관</th>
+                    <td><a href="./member/join01.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./member/join01.html" target="_blank">./member/join01.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">회원가입-본인인증</th>
+                    <td><a href="./member/join02.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./member/join02.html" target="_blank">./member/join02.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">회원가입-정보입력</th>
+                    <td><a href="./member/join03.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./member/join03.html" target="_blank">./member/join03.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">의사인증</th>
+                    <td><a href="./member/join04.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./member/join04.html" target="_blank">./member/join04.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">가입완료</th>
+                    <td><a href="./member/join05.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./member/join05.html" target="_blank">./member/join05.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">휴먼계정 전환</th>
+                    <td><a href="./member/dormant.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./member/dormant.html" target="_blank">./member/dormant.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">휴먼계정 해제</th>
+                    <td><a href="./member/dormant_completion.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./member/dormant_completion.html" target="_blank">./member/dormant_completion.html</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">이용약관</th>
+                    <td><a href="./member/terms_policy.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./member/terms_policy.html" target="_blank">./member/terms_policy.html</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+     <!--멤버 정보 [E] -->
+</body>
+</html>

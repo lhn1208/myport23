@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <title>theSHOP</title>
+    <!-- 2018-05-30 바로가기 아이콘 추가 [s] -->
+    <link rel="apple-touch-icon-precomposed" href="http://websvn.mcircle.co.kr/publish/shop/renewal/mobile/images/ico_ios.png" />
+    <link rel="shortcut icon" href="http://websvn.mcircle.co.kr/publish/shop/renewal/mobile/ico_android.png" />
+    <!-- 2018-05-30 바로가기 아이콘 추가 [e] -->
+    <link rel="stylesheet" href="../../js/libs/jquery-ui.css">
+    <link rel="stylesheet" href="../../js/libs/swiper.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/content.css">
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <script type="text/javascript" src="../../js/libs/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../js/libs/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.countdown.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.bpopup.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/sly.min.js"></script>
+    <script type="text/javascript" src="../../js/ui.js"></script>
+</head>
+<body>
+    <!-- header [s] -->
+    <header id="header" class="head_shop">
+        <div class="wrap_tit">
+            <h1 class="screen_out">더샵</h1>
+            <h2>본인확인</h2>
+            <a href="#self" class="link_back"><span class="ico_comm ico_back">뒤로</span></a>
+            <a href="#self" class="link_close"><span class="ico_comm ico_close">닫기</span></a>
+        </div>
+    </header>
+    <!-- header [e] -->
+
+    <!-- content [s] -->
+    <section id="content" class="cont_shop cont_join">
+        <div class="wrap_subtit">
+            <strong class="tit_sub">본인확인</strong>
+            <p class="desc_info">더샵 서비스는 실명이 확인된 의사 회원분들만 사용하실 수 있는 안전한 서비스로, 본인 확인이 필수입니다.</p>
+        </div>
+        <ul class="list_chk">
+            <li class="on">
+                <a href="#none" class="btn_chk">
+                    <strong class="tit_chk">휴대폰 인증</strong>
+                    <span class="txt_chk">본인의 이름과 생년월일로<br>가입된 휴대폰으로 확인하세요.</span>
+                    <span class="ico_comm ico_phone"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#none" class="btn_chk">
+                    <strong class="tit_chk">아이핀(I-PIN) 인증</strong>
+                    <span class="txt_chk">아이핀에 가입한 아이디와 비밀번호를<br>통해 확인하세요.</span>
+                    <span class="ico_comm ico_ipin"></span>
+                </a>
+            </li>
+        </ul>
+        <button type="button" class="btn_full btn_type1">다음</button>
+    </section>
+    <!-- content [e] -->
+
+    <script type="text/javascript">
+        $(function () {
+            $(".list_chk .btn_chk").on("click",function () {
+                $(this).parent().addClass("on").siblings().removeClass("on")
+            })
+        })
+    </script>
+</body>
+</html>

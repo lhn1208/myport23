@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=yes">
+	<title>컨퍼런스빌</title>
+	<link rel="apple-touch-icon-precomposed" href="../../images/ico_ios.png" />
+	<link rel="shortcut icon" href="../../images/ico_android.png" />
+	<!-- 2020-10-28 slick 추가 -->
+	<link rel="stylesheet" type="text/css" href="../../css/mobile/slick.css">
+	<link rel="stylesheet" type="text/css" href="../../css/mobile/webinar.css">
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<script src="../../js/ui.js"></script>
+	<script src="../../js/menu.js"></script>
+	<script src="../../js/jquery.bpopup.min.js"></script>
+	<script src="../../js/slick.min.js"></script><!-- 2020-10-28 slick 추가 -->
+
+</head>
+<body>
+<!-- 스킵내비게이션
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+</div> -->
+<!--전체 페이지를 감싸는 태그 id="app" [s]-->
+<div id="app">
+
+	<script type="text/javascript">
+		// 2017-12-12 TOP 버튼 스크립트 수정
+		$(window).load(function() {
+			var btnTop = $(".btn_top");
+			btnTop.hide();
+			if($(".wrap footer").length != 1){
+				btnTop.css("bottom","20px");
+			//}else {
+				//btnTop.css("bottom","75px");
+				//var fTop = $("footer").offset().top;
+			}
+			$("#container").scroll(function(){
+				btnTop.fadeIn(300);
+				if($("#container").scrollTop()==0 ) {
+					btnTop.fadeOut(300);
+				};
+				//if($("body").height() + $("#container").scrollTop() >= fTop + 50){
+				//	btnTop.css("bottom","80px");
+				//}else {
+				//	btnTop.css("bottom","20px");
+				//}
+			});
+			btnTop.click(function(){
+				$("#container").animate({ scrollTop: 0 }, 500);
+				return false;
+			});
+		})
+	</script>
+
+<div class="wrap">
+	<!-- header [s] -->
+	<header id="header">
+	<h1 class="screen_out">닥터빌 컨퍼런스</h1>
+	<a href="#" class="link_home">
+		<h1 class="screen_out">닥터빌 컨퍼런스</h1>
+		<h2 class="ico_webinar">메인</h2>
+	</a>
+	<a href="#" class="ico_comm btn_menu sidenavi-btn new_ico">메뉴</a>
+</header>
+
+<!-- NaviMenu [s] -->
+<nav  class="layer_box sidenavi">
+	<div class="info_head">
+		<a href="#" class="btn_close sidenavi-close">닫기</a>
+		 <!-- 로그아웃 했을때 -->
+			<a href="#none" class="info_btn login_btn">로그인</a>
+			<a href="#none" class="info_btn join_btn">회원가입</a>
+		<!-- 로그인 했을때
+			<strong class="name"><span>김닥터</span> 님</strong>
+			<a href="#none" class="info_btn logout_btn">로그아웃</a>
+		-->
+	</div>
+	<div id="gnb">
+		<ul class="list_gnb">
+			<li><a href="#">홈</a></li>
+			<li><a href="#">회원정보</a></li>
+			<li><a href="#" class="new_ico">참여내역</a></li>
+			<li><a href="#">1:1문의</a></li>
+			<li><a href="#">이용안내</a></li>
+			<li><a href="#">공지사항</a></li>
+		</ul>
+	</div>
+	<div class="banner_wr">
+
+	</div>
+</nav>
+<!-- NaviMenu [e] -->
+<!-- SEARCH [s] -->
+<div class="search_wr">
+	<div  class="search-box">
+		<input type="search" class="search_inp" placeholder="심포지엄 검색"/>
+		<a href="#none" class="search_btn" type="submit"></a>
+	</div>
+	<span class="search-menu">
+	  <span class="search_menu_ico"></span>
+	</span>
+</div>
+<!-- SEARCH [e] -->
+	<!-- header [e] -->
+	<!-- navi [s] -->
+	<nav id="navi">
+		<h2 class="h_tit">Archives</h2>
+		<a href="#" class="ico_comm btn_back">이전</a>
+	</nav>
+	<!-- navi [e] -->
+	<!-- container [s] -->
+	<section id="container">
+		<div class="content_box view">
+			<div class="view_head">
+				<strong class="tit">심부전학회 세션3 출석이 안 되었습니다.</strong>
+				<span class="tail"><span>작성일</span> 2020-08-01 12:30:30</span>
+                <span class="file_name"><span class="icon_file"></span><a href="#">대한장연구학회 제91차 학술집담회</a></span>
+			</div>
+			<div class="edit_view">
+				<p>안녕하세요,</p>
+				<p>심부전학회 세션 3 출석이 안되었는데</p>
+				<p>확인 부탁드립니다.</p>
+			</div>
+		</div>
+		<div class="list_btn"><a href="#none">목록으로</a></div>
+	</section>
+	<!-- container [e] -->
+</div>
+</div>
+<!--전체 페이지를 감싸는 태그 [e]-->
+
+<!-- footer [s] -->
+<footer id="footer">
+	<div class="footer_menu">
+		<a href="../member/terms_policy.html" class="txt">이용약관</a>
+		<span class="txt_bar">|</span>
+		<!-- 2021-06-03 개인정보처리방침 볼드 처리 -->
+		<a href="../member/terms_userinfo.html" class="txt"><strong>개인정보처리방침</strong></a>
+		<span class="txt_bar">|</span>
+		<span class="txt">고객센터</span>
+		<a href="tel:02-1522-0209" class="txt link_num">1522-0209</a>
+	</div>
+	<address>Copyright &copy;Mcircle. All right reserved</address>
+</footer>
+<!-- footer [e] -->
+</body>
+</html>

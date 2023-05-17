@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<title>HTML LIST</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="../js/jquery-treeview/lib/jquery.js"></script>
+<style>
+*{margin: 0; padding: 0;}
+body{background-color: #000; color: #fff;}
+h1{margin: 2rem .4rem; font-size:20px; color:#fff;letter-spacing:-0.05em;}
+img {margin-right:20px;vertical-align: middle;}
+table caption{font-size:0;line-height:0;visibility:hidden}
+.table_wrap{margin-bottom:1.25rem; padding: 1.25rem; color: #000; border: 1px solid #fd6006; background-color: #fff;}
+.table_wrap h2{margin-bottom: 1rem; color: #fd6006;}
+.table_wrap table {width:100%;border-collapse: collapse;border-top:1px solid #666;}
+.table_wrap table thead th {background-color: #fd6006; color: #fff; border:1px solid #fff}
+.table_wrap table tbody th{font-weight: normal;}
+table th, table td{padding:8px;font-size: 14px; }
+.table_wrap table th, .table_wrap table td{padding: .2rem .6rem; border: 1px solid #fd6006;}
+table td {height:17px;letter-spacing: -0.01em; }
+table th a, table td a{font-size: 14px;}
+table td a.preview{font-weight: bold;}
+a {text-decoration: none;color:#000}
+a:hover {text-decoration: underline;}
+.page {color:#34ad70;font-weight:bold; }
+</style>
+</head>
+<body>
+    <h1>더샵 약국 쇼핑몰 모바일 리스트</h1>
+    <div class="table_wrap">
+        <table>
+            <caption>더샵 약국 쇼핑몰 모바일 목록 테이블</caption>
+            <colgroup>
+                <col width="18%">
+                <col width="20%">
+                <col width="*">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">목록</th>
+                    <th scope="col">Preview</th>
+                    <th scope="col">Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">메인</th>
+                    <td><a href="./main/main.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./main/main.html" target="_blank">./main/main.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">상품 상세</th>
+                    <td><a href="./main/prod_detail.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./main/prod_detail.html" target="_blank">./main/prod_detail.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">장바구니</th>
+                    <td><a href="./cart/cart.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./cart/cart.html" target="_blank">./cart/cart.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">특가상품</th>
+                    <td><a href="./special/special.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./special/special.html" target="_blank">./special/special.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">타임세일</th>
+                    <td><a href="./timesale/timesale.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./timesale/timesale.html" target="_blank">./timesale/timesale.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">재구매</th>
+                    <td><a href="./reorder/reorder.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./reorder/reorder.html" target="_blank">./reorder/reorder.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">베스트</th>
+                    <td><a href="./best/best.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./best/best.html" target="_blank">./best/best.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">관심상품</th>
+                    <td><a href="./quick/interest.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./quick/interest.html" target="_blank">./quick/interest.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">주문/배송</th>
+                    <td><a href="./order/manage.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./order/manage.html" target="_blank">./order/manage.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">주문결제</th>
+                    <td><a href="./order/pay.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./order/pay.html" target="_blank">./order/pay.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">공급업체 연락처</th>
+                    <td><a href="./supply/supply.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./supply/supply.html" target="_blank">./supply/supply.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">검색 결과</th>
+                    <td><a href="./main/search_result.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./main/search_result.html" target="_blank">./main/search_result.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">마이페이지</th>
+                    <td><a href="./quick/mypage.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./quick/mypage.html" target="_blank">./quick/mypage.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">회원가입</th>
+                    <td><a href="./member/join.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./member/join.html" target="_blank">./member/join.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">약관동의</th>
+                    <td><a href="./member/join_agree.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./member/join_agree.html" target="_blank">./member/join_agree.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">본인확인</th>
+                    <td><a href="./member/join_chk.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./member/join_chk.html" target="_blank">./member/join_chk.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">회원정보 입력</th>
+                    <td><a href="./member/join_form.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./member/join_form.html" target="_blank">./member/join_form.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">회원가입 신청완료</th>
+                    <td><a href="./member/join_step3.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./member/join_step3.html" target="_blank">./member/join_step3.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">회원가입 완료</th>
+                    <td><a href="./member/join_complete.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./member/join_complete.html" target="_blank">./member/join_complete.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">로그인</th>
+                    <td><a href="./login/login.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./login/login.html" target="_blank">./login/login.html</a> </td>
+                </tr>
+                <tr>
+                    <th scope="row">이용약관</th>
+                    <td><a href="./terms/terms.html" target="ifrhowl" class="preview">왼쪽 미리보기</a></td>
+                    <td><a href="./terms/terms.html" target="_blank">./terms/terms.html</a> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
