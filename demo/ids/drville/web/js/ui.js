@@ -796,52 +796,6 @@ socialUI = {
 
 
 $(window).load(function() {
-	/* 2015-12-07 수정
-	var _body = $("body");
-	var hideEl = [".path ul", ".head_pop", ".info_photo .list_edit",".header_cv_layer",".left_aside .aside_friend_layer",".list_family"];
-	$(".list_mymenu a, .info_foot .link_sitemap").on("click", function(e) {
-		e.preventDefault();
-		e.stopPropagation();
-		var link = $(this).attr("href");
-		$(link).toggle();
-	});
-	$.each(hideEl, function(i,val){
-		$(hideEl[i]).on('click', function(e){
-			e.stopPropagation();
-		});
-	});
-	_body.on('click',function(){
-		_body.trigger('BODY_CLICK_LAYER_All_CLOSE');
-	});
-	_body.on('BODY_CLICK_LAYER_All_CLOSE', function(){
-		$.each(hideEl, function(i,val){
-			$(hideEl[i]).hide();
-		})
-	});
-
-	// 2016-08-03 사이트맵 내 닫기버튼 추가[s]
-	$("#pop_allmenu .btn_close, #pop_footAllmenu .btn_close").on("click", function(e){
-		$(this).parent("div").hide();
-	});
-	// 2016-08-03 사이트맵 내 닫기버튼 추가[e]
-
-	$(".btn_family").bind("click", function(e){
-		var target = $('.list_family'),
-			 state = target.css('display');
-		if(state == "block"){
-			$(this).find(".ico_comm").text('목록 펼치기').removeClass('open');
-			target.hide();
-		}else{
-			$(this).find(".ico_comm").text('목록 접기').addClass('open');
-			target.show();
-		}
-		return false;
-	})
-
-	$(".list_family a").bind("click",function(){
-		$(".btn_family").trigger('click');
-	}); */
-
 	/* 탑버튼 */
 	$(window).on("scroll",function(){
 		var btnTop = $(".btn_top"),
@@ -871,6 +825,18 @@ $(window).load(function() {
 	$(".btn_top").on("click", function (e) {
 		$("body, html").animate({"scrollTop" : 0},300);
 		return false;
+	})
+	/*컨텐츠 리스트형 앨범형*/
+	$('.content_top .list_set .opt').click(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+		$('.recomm_area .renew_cont_list').removeClass('on');	
+		var href = $(this).attr('href');
+		if(href.indexOf('cont_list')>-1){
+			$(href).addClass('on');
+		}else if(href.indexOf('cont_album')>-1){
+			$(href).addClass('on');
+		}
+		return false; 
 	})
 });
 

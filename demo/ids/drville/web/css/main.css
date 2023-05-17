@@ -329,6 +329,8 @@
 .recomm_area .renew_cont_list.album_type li .info_area{width: 180px; margin-left: 16px;}
 .recomm_area .renew_cont_list.album_type li .info_area .class_title{height: 60px;; font-weight: normal; letter-spacing: -0.06em;}
 .recomm_area .renew_cont_list.album_type li a:hover .info_area .class_title{text-decoration: underline;}
+.recomm_area .renew_cont_list{display: none;}
+.recomm_area .renew_cont_list.on{display: block;}
 .recomm_area .more_area{position: relative; border-bottom: 1px solid #dee1e7;}
 .recomm_area .more_area .more{position: absolute; bottom: -15px; left: 50%; margin-left: -84px;  width: 168px; height: 30px; padding:4px 0; text-align: center; font-size: 13px; background-color: #fff; border: 1px solid #dee1e7; border-radius: 30px; box-sizing: border-box;}
 .recomm_area .more_area .more::before{display: inline-block; width: 16px; height: 21px; margin-right: 6px; vertical-align: middle; background: url("../images/renewal/renew_ico_common.png") -25px -126px; content: "";}
