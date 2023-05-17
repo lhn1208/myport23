@@ -1,0 +1,102 @@
+.report_sch_cont{
+    @include cont_with();
+    .journal_list{
+        margin-bottom: 80px;
+        li{
+            width: 382px;
+            height: 306px;
+            margin-bottom: 26px;            
+            border:1px solid $c_g_c;
+            border-radius: 30px;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+            &:nth-child(3n+1){
+                margin-left: 0;
+            }
+            float: left;
+            margin-left: 27px;
+            .link_box{
+                position: relative;                
+                display: block;
+                height: 100%;
+            }
+            .cont_info{
+                position: relative;
+                height: 146px;
+                padding:35px 30px 0 40px;
+                .tit{
+                    display: block;
+                    margin-bottom: 12px;
+                    font-weight: 500;
+                    font-size: 22px;
+                }
+                .txt{
+                    color: $c_g_6;
+                    font-size: 16px;
+                }
+                i{
+                    @include pos_right(35px,31px);
+                    width: 20px;
+                    height: 20px;
+                    @include txtHidden2();
+                    @include bg_ico(-128px, -147px);
+                }
+            }
+            .cont_logo{
+                position: relative;
+                height: 122px;
+                text-align: center;
+                background-color: #F9F9F9;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                .txt_journal{
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 65px;
+                    margin: auto;
+                    background: url("../images/sub/txt_journal.png") no-repeat 0 0;
+                    @include txtHidden2();
+                    &.journal01{
+                        width: 133px;
+                        background-position-y: -70px;
+                    }
+                    &.journal03{
+                        width: 190px;
+                        background-position-x: -140px;
+                    }
+                    &.journal06{
+                        width: 114px;
+                        background-position-y: -130px;
+                    }
+                    &.journal07{
+                        width: 87px;
+                        background-position-y: -195px;
+                    }
+                    &.journal08{
+                        width: 150px;
+                        background-position:-140px -195px;
+                    }
+                    &.journal09{
+                        width: 234px;
+                        background-position:-140px -260px;
+                    }
+                    &.journal10{
+                        width: 110px;
+                        background-position-y:-260px;
+                    }
+                    &.journal11{
+                        width: 167px;
+                        background-position-y:-325px;
+                    }
+                }
+            }
+        }
+        &::after{
+            @include clear();
+        }
+    }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베터빌</title>
+    <script src="../../js/swiper.min.js"></script>     
+    <link rel="stylesheet" type="text/css" href="../../css/community.css" />
+</head>
+<body>
+    <div class="vetter_wrap">
+         <!-- header [s] -->
+        <div class="vet_header">
+    <div class="vet_header_inner">
+        <a href="#" class="logo"><img src="../../images/logo.png"></a>
+        <div class="menu_wrap">
+            <ul class="nav">
+                <li><a href="#">클래스룸</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">임상강좌 VOD</a></li>
+                        <li><a href="#">Live 세미나</a></li>
+                        <li><a href="#">다시보기 VOD</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">라이브러리</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">베터빌 뉴스</a></li>
+                        <li><a href="#">논문검색</a></li>
+                        <li><a href="#">약물정보</a></li>
+                        <li><a href="#">Vetter 계산기</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">커뮤니티</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">자유게시판</a></li>
+                        <li><a href="#">실전 진료 Tip</a></li>
+                        <li><a href="#">진단케이스</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--menu right-->
+            <div class="menu_right">
+                <span class="name">김베터닥터</span>
+                <div class="member_area">
+                    <a href="#" class="member"></a>
+                    <ul class="sub_menu">
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">1:1문의하기</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                </div>
+                <div class="vet_search_box_area">
+                    <div class="vet_search_box">
+                        <fieldset>
+                            <legend>검색</legend>
+                            <label for="sch_input" class="sch_input_box">
+                                <input type="text" id="sch_input" class="sch_input" title="검색" placeholder="검색하세요.">
+                            </label>
+                            <div class="vet_btn_area">
+                                <button class="btn_search"></button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <a href="#" id="all_menu_btn" class="all_menu_btn" onclick="allmenu_fnc()">
+                    <span class="menu_ico">전체메뉴</span>
+                </a>
+            </div>
+             <!--//menu right-->
+        </div>
+    </div>
+     <!-- 전체메뉴 -->
+     <div class="all_menu_box" id="all_menu_box">
+        <div class="all_menu_box_inner">
+            <div class="menu_row">
+                <strong>클래스룸</strong>
+                <ul class="menu_depth">
+                    <li><a href="#">임상강좌 VOD<i class="ico_point">new</i></a></li>
+                    <li><a href="#">라이브 세미나</a></li> 
+                    <li><a href="#">다시보기 VOD</a></li> 
+                </ul>
+            </div>
+            <div class="menu_row">
+                <strong>라이브러리</strong>
+                <ul class="menu_depth">
+                    <li><a href="#">베터빌 뉴스</a></li>
+                    <li><a href="#">의학논문검색</a></li> 
+                    <li><a href="#">약물정보</a></li> 
+                    <li><a href="#">Vetter 계산기</a></li> 
+                </ul>
+            </div>
+            <div class="menu_row">
+                <strong>커뮤니티</strong>
+                <ul class="menu_depth">
+                    <li><a href="#">자유게시판</a></li>
+                    <li><a href="#">실전 진료/운영 Tip</a></li> 
+                    <li><a href="#">진단케이스</a></li> 
+                    <li><a href="#">이벤트</a></li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- header [e] -->
+        <div class="vet_container">
+            <div class="visual drag_info">
+                <div class="visual_inner">
+                    <h2 class="title">약물정보</h2>
+                    <span class="sub_tit">궁금하신 동물용의약품을 검색해 보세요.</span>
+                </div>               
+            </div>
+        </div>
+        <!-- footer [s] -->
+        <div id="vet_footer" class="vet_footer">
+    <div class="footer_top">
+        <div class="footer_inner">
+            <div class="notice_area">
+                <strong class="tit_notice">공지사항</strong>
+                <div class="notice_slide">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#">닥터빌 회원의 이용약관변경 1닥터빌 회원의 이용약관 변경 1닥터빌 회원의 이용약관 변경 1</a></li>
+                        <li class="swiper-slide"><a href="#">닥터빌 회원의 이용약관변경 2222</a></li>
+                        <li class="swiper-slide"><a href="#">닥터빌 회원의 이용약관변경 3333</a></li>
+                    </ul>                           
+                </div>
+                <div class="notice_btn arr_btn_wrap">
+                    <div class="swiper-button-next btn_next"></div>
+                    <div class="swiper-button-prev btn_prev"></div>
+                </div>
+            </div>
+            <ul class="footer_t_txt">
+                VERIFIED & SECURED Site
+            </ul>
+        </div>
+    </div>
+    <div class="footer_info">
+        <div class="footer_inner">
+            <a href="#" class="logo"><img src="../../images/logo.png"></a>
+            <ul class="list_footer">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">제휴문의</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+            </ul>
+            <address class="vet_address">
+                <span>서울 강남구 봉은사로 114길 12 (삼성동)</span><span>대표전화 : 1522-0209</span><span>Fax : 02-563-8399</span>
+            </address>
+            <span class="copyright">Copyright (c)Mcircle Corp. All rights reserved.</span>
+            
+            <div class="wrap_family" id="family_site">
+                <a href="#none" class="btn_family" onclick="family_fun()">Family Site<span class="ico_open open">목록 펼치기</span></a>
+                <ul class="list_family">
+                    <li><a href="http://www.hidoc.co.kr/healthqna/list" target="_blank">하이닥</a></li>
+                    <li><a href="http://www.shop.co.kr/index.jsp" target="_blank">더샵</a></li>
+                    <li><a href="http://www.clickmedi.co.kr/brand/main" target="_blank">클릭메디</a></li>
+                    <li><a href="http://www.happicare.co.kr/index.asp" target="_blank">해피케어</a></li>
+                    <li><a href="http://www.sisselkorea.com/main/index" target="_blank">시셀</a></li>
+                    <li><a href="http://www.doctorville.co.kr/intro" target="_blank">닥터빌</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../js/vet.js"></script> 
+
+        <!-- footer [e] -->
+    </div>
+</body>
+</html>

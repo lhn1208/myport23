@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Hidoc</title>
+	<meta content="width=1054" name="viewport" />
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+	<link rel="stylesheet" type="text/css" href="../../css/fullcalendar.css">
+	<script src="../../js/Chart.min.js"></script>
+	<script src="../../js/build/moment.min.js"></script>
+	<script src="../../js/build/html5shiv.min.js"></script>
+	<script src="../../js/build/amcharts.js"></script>
+	<script src="../../js/build/serial.js"></script>
+	<script src="../../js/ui.js"></script>
+
+</head>
+
+
+<body>
+	<div id="hidocIndex"><!-- 접근성 바로가기 -->
+		<a href="#hidocBody">본문 바로가기</a>
+		<a href="#hidocMenu">메뉴 바로가기</a>
+	</div>
+	<section id="wrapper">
+
+		<!-- header -->
+<header class="header">
+	<div class="inner">
+		<h1 class="logo"><a href="../../html/main/main.html"><img src="../../images/logo_hidocpro.png" alt="HiDocPro" /></a></h1>
+		<nav id="hidocMenu" class="navigation">
+			<strong class="screen_out">관련 서비스</strong>
+			<ul class="gnb">
+				<li class="active"><a href="../../html/health/qna_my_reg_list.html">건강Q&A</a>
+					<ul>
+						<li><a href="../../html/health/qna_my_reg_list.html">나에게 등록된 질문</a></li>
+						<li><a href="../../html/health/qna_answer_possible_list.html">답변 가능한 질문</a></li>
+						<li><a href="../../html/health/qna_collection_reply_list.html">내 답변 모음</a></li>
+					</ul>
+				</li>
+				<li><a href="../../html/news/my_write_list.html">건강이야기</a>
+					<ul>
+						<li><a href="../../html/news/my_write_list.html">내 글 모음</a></li>
+						<li><a href="../../html/news/my_write_column.html">칼럼 작성</a></li>
+					</ul>
+				</li>
+				<li><a href="../../html/mypage/hospital_info_view.html">마이페이지</a>
+					<ul>
+						<li><a href="../../html/mypage/hospital_info_view.html">근무처 정보</a></li>
+						<li><a href="../../html/mypage/doctor_info_view.html">프로필</a></li>
+						<li><a href="../../html/mypage/hidoc_point.html">하이닥포인트</a></li>
+					</ul>
+				</li>
+				<li><a href="../../html/customer/customer_notice.html">고객센터</a>
+					<ul>
+						<li><a href="../../html/customer/customer_notice.html">공지사항</a></li>
+						<li><a href="../../html/customer/customer_faq.html">자주 묻는 질문</a></li>
+						<li><a href="../../html/customer/customer_1vs1_list.html">내 문의 현황</a></li>
+						<li><a href="../../html/customer/customer_1vs1.html">1:1 문의</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div class="user_info">
+			<a href="../../html/mypage/doctor_info_view.html"><span class="user_name">김프로님</span></a>
+			<a href="../../html/member/login.html">로그아웃</a>
+		</div>	
+	</div>
+</header>
+<!-- header -->
+</div>
+
+		
+		<section class="container layout_type4 service_pro_view"><!-- 클래스 명은 서비스별로 동적이여야 합니다. ex) service_서비스이름 -->
+			<!-- <div class="sub_feature"></div> --><!-- 2019-01-18 삭제 -->
+			<div class="container_inner clear_g">
+				<div class="sub_location"><span>홈</span><span class="pro_comm">></span><span>마이페이지</span><span class="pro_comm">></span><strong>하이닥 포인트</strong></div>
+				<section id="hidocBody" class="contents">
+					<!-- template 영역 시작 -->
+					<h1 class="screen_out">마이페이지</h1>
+					<!-- pointHistory -->
+					<div class="pro_point_history box_type1 tab_wrap">
+						<h2 class="fc_blue hd2_tit">하이닥 포인트</h2>
+
+						<!-- 포인트정보 -->
+						<div class="view_point_box clear_g">
+							<!-- 사용 가능 포인트 -->
+							<div class="box_list">
+								<h3 class="fc_blue tit_point">사용 가능 포인트</h3>
+								<div class="point available">
+									<span>500,000</span>P
+								</div>
+								<!-- 2020-11-23 삭제 <a href="#" class="btn_move">포인트몰 바로가기 &gt;</a> -->
+								<!-- 2020-11-23 추가 -->
+								<div class="payco">
+									<a href="#none" class="btn type3 btn_payco"><span class="ico_comm2 ico_payco">payco</span>포인트로 전환<span class="ico_comm2 ico_convert"></span></a>
+								</div>
+							</div>
+
+							<!-- 2020-11-23 승인 대기 포인트 추가 -->
+							<div class="box_list">
+								<h3 class="fc_blue tit_point">승인 대기 포인트</h3>
+								<div class="point">
+									<span>221,000</span>P
+								</div>
+							</div>
+
+							<!-- 한 달 이내 소멸 예정 포인트 -->
+							<div class="box_list">
+								<h3 class="fc_blue tit_point">한 달 이내 소멸 예정 포인트</h3><!-- 2020-11-23 수정 -->
+								<div class="point">
+									<span>1,000</span>P
+								</div>
+							</div>
+
+							<!-- 하이닥포인트 운영가이드 -->
+							<div class="operate_guide">
+								<a href="#" class="fc_blue tit_point">
+									하이닥 포인트<br>운영가이드 <strong>&gt;</strong>
+									<span class="ico_comm2"></span>
+								</a>
+							</div>
+						</div>
+						<!-- 포인트정보 -->
+
+						<!-- tab -->
+						<div class="tab_type2">
+							<ul class="tab_button">
+								<li class="on"><a href="#" data-target="pointDesc1">적립/사용/소멸 내역</a></li>
+								<li><a href="#" data-target="pointDesc2">소멸예정내역</a></li>
+							</ul>
+						</div>
+						<!--  // tab -->
+
+						<!-- tabContent -->
+						<div class="point_wrap tab_cont">
+
+							<!-- 적립/ 사용/ 소멸 내역 cont  -->
+							<div class="point_list" id="pointDesc1">
+
+								<!-- 적립/사용 기간 조회 -->
+								<div class="inquiry_period clear_g">
+									<select name="" id="" class="select_type1">
+										<option value="전체">전체</option>
+										<option value="적립">적립</option>
+										<option value="사용">사용</option>
+										<option value="소멸">소멸</option>
+									</select>
+
+									<div class="period_btn">
+										<!-- 활성화class : active -->
+										<button type="button">오늘</button>
+										<button type="button">이번주</button>
+										<button type="button" class="active">이번달</button>
+									</div>
+
+									<div class="setting_date">
+										<label for="start">
+											<input type="text" id="start" title="시작날짜" value="2020-09-09" name="" class="input_date">
+										</label>
+										<span class="txt_wave"> ~ </span>
+										<label for="end">
+											<input type="text" id="end" title="종료날짜" value="2020-09-09" name="" class="input_date">
+										</label>
+									</div>
+
+									<button type="button" class="btn_type8" id="btn_inquiry">조 회</button>
+								</div>
+								<!-- 적립/사용 기간 조회 -->
+
+								<!-- 결과 -->
+								<div class="result_txt">
+									<div class="result_count">
+										총 <strong class="fc_blue tit_count">100</strong> 건
+									</div>
+									<p class="result_point">
+										<strong class="tit">조회기간 내</strong>
+										<strong class="accum">10,000P 적립</strong>
+										<strong class="txt_bar">|</strong>
+										<strong class="use">500P 사용</strong>
+									</p>
+								</div>
+								<!-- // 결과 -->
+
+								<table class="tbl tbl_list">
+									<colgroup>
+										<col class="col1">
+										<col class="col2">
+										<col class="col3">
+										<col class="col4">
+										<col class="col5">
+										<col class="col6">
+										<col class="col7">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">순번</th>
+											<th scope="col">날짜</th>
+											<th scope="col">구분</th>
+											<th scope="col">포인트</th>
+											<th scope="col">내용</th>
+											<th scope="col">소멸예정일</th>
+											<th scope="col">메모</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!-- 포인트 이력이 없을때 -->
+										<!--<tr>
+											<td colspan="7" class="no_history">
+												<strong>해당 기간에 포인트 적립/사용/소멸 이력이 없습니다.</strong><br>
+												승인 전/반려 상태인 답변이 있을 수 있으니 확인해보세요.<br><br>
+												<a href="#" class="move_answer">내 답변 모음 바로가기</a>
+											</td>
+										</tr>-->
+										<!-- // 포인트 이력이 없을때 -->
+										<tr>
+											<td scope="row">1</td>
+											<td>2020-09-09</td>
+											<td class="accum_point">적립</td>
+											<td class="accum_point">+200</td>
+											<td>영상답변</td>
+											<td>2020-09-09</td>
+											<td class="memo">이곳은 적립, 사용 포인트 내역을 메모하는 공간입니다.</td>
+										</tr>
+										<tr>
+											<td scope="row">2</td>
+											<td>2020-09-09</td>
+											<td class="accum_point">적립</td>
+											<td class="accum_point">+200</td>
+											<td>영상답변</td>
+											<td>2020-09-09</td>
+											<td class="memo">이곳은 적립, 사용 포인트 내역을 메모하는 공간입니다.</td>
+										</tr>
+										<tr>
+											<td scope="row">3</td>
+											<td>2020-09-09</td>
+											<td class="accum_point">적립</td>
+											<td class="accum_point">+200</td>
+											<td>영상답변</td>
+											<td>2020-09-09</td>
+											<td class="memo">이곳은 적립, 사용 포인트 내역을 메모하는 공간입니다.</td>
+										</tr>
+										<tr>
+											<td scope="row">4</td>
+											<td>2020-09-09</td>
+											<td class="accum_point">적립</td>
+											<td class="accum_point">+200</td>
+											<td>영상답변</td>
+											<td>2020-09-09</td>
+											<td class="memo">이곳은 적립, 사용 포인트 내역을 메모하는 공간입니다.</td>
+										</tr>
+										<tr>
+											<td scope="row">5</td>
+											<td>2020-09-09</td>
+											<td class="accum_point">적립</td>
+											<td class="accum_point">+200</td>
+											<td>영상답변</td>
+											<td>2020-09-09</td>
+											<td class="memo">이곳은 적립, 사용 포인트 내역을 메모하는 공간입니다.</td>
+										</tr>
+										<tr>
+											<td scope="row">6</td>
+											<td scope="row">2020-09-09</td>
+											<td scope="row" class="use_point">사용</td>
+											<td scope="row" class="use_point">-500,000</td>
+											<td>포인트 사용</td>
+											<td>2020-09-09</td>
+											<td class="memo">이곳은 적립, 사용 포인트 내역을 메모하는 공간입니다.</td>
+										</tr>
+										<tr>
+											<td scope="row">7</td>
+											<td scope="row">2020-09-09</td>
+											<td scope="row" class="use_point">사용</td>
+											<td scope="row" class="use_point">-500,000</td>
+											<td>포인트 사용</td>
+											<td>2020-09-09</td>
+											<td class="memo">이곳은 적립, 사용 포인트 내역을 메모하는 공간입니다.</td>
+										</tr>
+										<tr>
+											<td scope="row">8</td>
+											<td scope="row">2020-09-09</td>
+											<td scope="row" class="use_point">사용</td>
+											<td scope="row" class="use_point">-500,000</td>
+											<td>포인트 사용</td>
+											<td>2020-09-09</td>
+											<td class="memo">이곳은 적립, 사용 포인트 내역을 메모하는 공간입니다.</td>
+										</tr>
+										<tr>
+											<td scope="row">9</td>
+											<td scope="row">2020-09-09</td>
+											<td scope="row" class="use_point">사용</td>
+											<td scope="row" class="use_point">-500,000</td>
+											<td>포인트 사용</td>
+											<td>2020-09-09</td>
+											<td class="memo">이곳은 적립, 사용 포인트 내역을 메모하는 공간입니다.</td>
+										</tr>
+										<tr>
+											<td scope="row">1000</td>
+											<td scope="row">2020-09-09</td>
+											<td scope="row" class="use_point">사용</td>
+											<td scope="row" class="use_point">-500,000</td>
+											<td>포인트 사용</td>
+											<td>2020-09-09</td>
+											<td class="memo">이곳은 적립, 사용 포인트 내역을 메모하는 공간입니다.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- // 적립/사용내역 cont  -->
+
+							<!-- 소멸예정내역 cont  -->
+							<div class="point_list" id="pointDesc2">
+								<!-- 결과 -->
+								<div class="result_txt">
+									<div class="result_count">
+										총 <strong class="fc_blue tit_count">100</strong> 건
+									</div>
+									<p class="result_point">
+										<strong class="dissipate">10,000P 소멸예정</strong>
+									</p>
+								</div>
+								<!-- // 결과 -->
+
+								<table class="tbl tbl_list">
+									<colgroup>
+										<col class="col1">
+										<col class="col2">
+										<col class="col3">
+										<col class="col4">
+										<col class="col5">
+										<col class="col6">
+										<col class="col7">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">순번</th>
+											<th scope="col">적립일</th>
+											<th scope="col">상태</th>
+											<th scope="col">소멸예정포인트</th>
+											<th scope="col">적립내용</th>
+											<th scope="col">소멸예정일</th>
+											<th scope="col">메모</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!-- 내역이 없을때 -->
+										<!--<tr>
+											<td colspan="7" class="no_history">
+											   <strong>포인트 소멸예정내역이 없습니다</strong>
+											</td>
+										</tr>-->
+										<!-- 내역이 없을때 -->
+										<tr>
+											<td scope="row">1</td>
+											<td>2020-09-09</td>
+											<td>적립</td>
+											<td class="dissipate_point">200</td>
+											<td>영상답변</td>
+											<td>2020-09-09</td>
+											<td class="memo">이곳은 적립, 사용 포인트 내역을 메모하는 공간입니다.</td>
+										</tr>
+										<tr>
+											<td scope="row">1</td>
+											<td>2020-09-09</td>
+											<td>적립</td>
+											<td class="dissipate_point">200</td>
+											<td>영상답변</td>
+											<td>2020-09-09</td>
+											<td class="memo">이곳은 적립, 사용 포인트 내역을 메모하는 공간입니다.</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+							<!-- 소멸예정내역 cont  -->
+						</div>
+						<!-- // tabContent -->
+
+
+						<!-- PAGING -->
+						<div class="paging_type1">
+							<span class="paging_inner">
+								<a href="#none" class="ico_comm btn_prev" title="이전">이전</a>
+								<a href="#none" class="num_page">1</a>
+								<strong><span class="screen_out">현재 페이지</span>2</strong>
+								<a href="#none" class="num_page">3</a>
+								<a href="#none" class="num_page">4</a>
+								<a href="#none" class="num_page">5</a>
+								<a href="#none" class="num_page">6</a>
+								<a href="#none" class="num_page">7</a>
+								<a href="#none" class="num_page">8</a>
+								<a href="#none" class="num_page">9</a>
+								<a href="#none" class="num_page">10</a>
+								<a href="#none" class="ico_comm btn_next" title="다음">다음</a>
+							</span>
+						</div>
+						<!-- // PAGING -->
+					</div>
+					<!--// pointHistory -->
+					<script>
+						hidocUI.tab();
+					</script>
+					<!-- // template 영역 끝 -->
+				</section>
+			</div>
+		</section>
+
+		<!-- 2020-11-23 포인트 전환 동의 레이어 추가 시작 -->
+		<div class="pop_modal point_popup pop_convert_agree" id="popConvertAgree">
+			<div class="pop_inner">
+				<div class="agree_wrap">
+					<div class="agree_form" id="convertAgreeForm">
+						<strong class="tit_popup">개인정보 제3자 제공 동의</strong>
+						<div class="popup_body">
+							<p class="visual"><img src="../../images/point_convert_img.jpg" alt=""></p>
+							<label class="checkbox all_check">
+								<input type="checkbox" name="agreement">개인정보  제3자 제공 전체동의 
+							</label>
+							<label class="checkbox">
+								<input type="checkbox" name="agreement">하이닥이 페이코에 제공 <em>(필수)</em> <a href="#convertAgreement1" class="link_agreement">보기</a>
+							</label>
+							<label class="checkbox">
+								<input type="checkbox" name="agreement">페이코가 하이닥에 제공 <em>(필수)</em> <a href="#convertAgreement2" class="link_agreement">보기</a>
+							</label>
+							<a href="#none" class="btn type1 btn_agree">동의하기</a>
+						</div>
+					</div>
+					<div class="agreement" id="convertAgreement1">
+						<strong class="tit_popup">개인정보 제3자 제공동의 (필수)</strong>
+						<div class="popup_body document">
+							<p>㈜엠서클이 본인의 포인트 전환을 위하여 엔에이치엔페이코 주식회사에 개인정보를 제공하는 것에 동의합니다.</p>
+							<p><strong>제공받는 자</strong>엔에이치페이코(주)</p>
+							<p><strong>제공 목적</strong>하이닥 회원 여부 확인 <br>하이닥 포인트 잔액 조회 및 전환</p>
+							<p><strong>제공하는 개인정보 항목</strong>- 암호화된 CI, <br>- 전환 거래 포인트 금액</p>
+							<p><strong>보유 및 이용기간</strong>고객의 포인트 전환 처리 완료시 까지</p>
+							<p>동의 거부하실 수 있으나, 서비스 제공에 필요한 최소 정보로 미동의시 서비스 이용에 제한될 수 있습니다.</p>
+						</div>
+						<a href="#convertAgreeForm" class="ico_comm2 btn_prev link_agreement">뒤로가기</a>
+					</div>
+					<div class="agreement" id="convertAgreement2">
+						<strong class="tit_popup">개인정보 제3자 제공동의 2 (필수)</strong>
+						<div class="popup_body document">
+							<p>엔에이치엔페이코 주식회사가 본인의 포인트 전환을 위하여 하이닥에 개인정보를 제공하는 것에 동의합니다.</p>
+							<p><strong>제공받는 자 </strong>㈜엠서클</p>
+							<p><strong>제공 목적</strong>하이닥 포인트의 PAYCO 포인트전환</p>
+							<p><strong>제공하는 개인정보 항목</strong>PAYCO회원키<br>마스킹된 PAYCO ID<br>PAYCO포인트 잔액</p>
+							<p><strong>보유 및 이용기간</strong>서비스 이용기간</p>
+							<p>동의 거부하실 수 있으나, 서비스 제공에 필요한 최소 정보로 미동의시 서비스 이용에 제한될 수 있습니다.</p>
+						</div>
+						<a href="#convertAgreeForm" class="ico_comm2 btn_prev link_agreement">뒤로가기</a>
+					</div>
+				</div>
+				<button type="button" class="ico_comm2 btn_close" title="닫기">닫기</button>
+			</div>
+			<div class="overlay"></div>
+		</div>
+		<!-- 2020-11-23 포인트 전환 동의 레이어 추가 끝 -->
+		<!-- 2020-11-23 포인트 전환 레이어 추가 시작 -->
+		<div class="pop_modal point_popup pop_convert_form" id="popConvertForm">
+			<div class="pop_inner">
+				<strong class="tit_popup">하이닥 포인트 - PAYCO 포인트 전환</strong>
+				<div class="popup_body">
+					<div class="status">
+						<table>
+							<colgroup>
+								<col style="width:130px;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">전환 가능 포인트</th>
+									<td>
+										<span class="txt_num">165,000 P</span>
+									</td>
+									<td>
+										<button type="button" class="rounded"><span class="ico_comm2 ico_refresh"></span> 새로고침</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="convertPointField">전환할 포인트</label></th>
+									<td>
+										<input type="text" name="" id="convertPointField" value="100,000">
+									</td>
+									<td>
+										<label class="checkbox">
+											<input type="checkbox" name="wholePoint"> 포인트 전액
+										</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<p class="sub_tit">PAYCO 계정</p>
+					<label class="radio_box">
+						<input type="radio" name="paycoAccount"><span class="ico_radio"></span>
+						<strong>ki********</strong> (500P 보유)
+					</label>
+					<label class="radio_box">
+						<input type="radio" name="paycoAccount"><span class="ico_radio"></span>
+						<strong>bb********</strong> (500P 보유)
+					</label>
+					<div class="btn_wrap">
+						<button type="button" class="btn type1">전환하기</button>
+					</div>
+					<div class="description">
+						<ul>
+							<li>- 하이닥 1포인트가 PAYCO적립포인트 1P로 전환 됨</li>
+							<li>- 월 최대 10만P 전환 가능, 일 최대 전환 횟수 10회</li>
+							<li><em>- 전환 완료된 후 취소 불가</em></li>
+							<li><em>- 전환한 포인트 재전환 및 출금(환불) 불가</em></li>
+							<li>- 전환된 포인트의 유효기간은 전환된 시점으로부터 2년</li>
+						</ul>
+						<p><a href="#">개인정보 제3자 제공 전체 동의 철회</a></p>
+					</div>
+				</div>
+				<button type="button" class="ico_comm2 btn_close" title="닫기">닫기</button>
+			</div>
+		</div>
+		<!-- 2020-11-23 포인트 전환 레이어 추가 끝 -->
+
+		<a href="https://www.hidoc.co.kr" id="link_hidoc" target="_blank">하이닥 사이트로 이동</a>
+<button type="button" id="btn_top">상단으로 이동</button>
+<!-- footer -->
+<footer class="footer">	
+	<div class="footer_top">
+		<div class="inner">
+			<div class="navi">
+				<h2 class="screen_out">하이닥PRO 메뉴</h2>
+				<ul class="list_menu">
+					<li><a href="#self">건강Q&A</a>
+						<ul>
+							<li><a href="#self">나에게 등록된 질문</a></li>
+							<li><a href="#self">답변 가능한 질문</a></li>
+							<li><a href="#self">내 답변 모음</a></li>
+						</ul>
+					</li>
+					<li><a href="#self">건강이야기</a>
+						<ul>
+							<li><a href="#self">내 글 모음</a></li>
+							<li><a href="#self">칼럼 작성</a></li>
+						</ul>
+					</li>
+					<li><a href="#self">마이페이지</a>
+						<ul>
+							<li><a href="#self">근무처 정보</a></li>
+							<li><a href="#self">프로필</a></li>
+							<li><a href="#self">하이닥포인트</a></li>
+						</ul>
+					</li>
+					<li><a href="#self">고객센터</a>
+						<ul>
+							<li><a href="#self">공지사항</a></li>
+							<li><a href="#self">자주 묻는 질문</a></li>
+							<li><a href="#self">내 문의 현황</a></li>
+							<li><a href="#self">1:1 문의</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="inner">
+		<div class="copyright">
+			<h1 class="tit_logo"><a href="#none"><img src="../../images/logo_hidoc_foot.png" alt="HiDoc" /></a></h1>
+			<address>
+				(주)엠서클 06170 <span class="txt_bar"> | </span>서울특별시 강남구 봉은사로 114길 12(삼성동) <span class="txt_bar"> | </span> 대표번호: 1577-0781 <br />
+				발행인: 김명석 <span class="txt_bar"> | </span> 편집인: 문현주 <span class="txt_bar"> | </span> 청소년 보호 관리 책임자: 문희탁 <span class="txt_bar"> | </span> 
+				사업자등록번호: 120-86-10499 <br />인터넷신문 제호: 하이닥 <span class="txt_bar"> | </span> 정기간행물 등록번호: 서울 아 01224 <span class="txt_bar"> | </span> 등록일자: 2010.04.28 <span class="txt_bar"> | </span> 발행일자: 2019.01.24<br />
+				하이닥의 모든 콘텐츠(기사)는 저작권법의 보호를 받는 바, 무단 전제, 복사, 배포등을 금합니다.<br/>
+				<span class="txt_copyright">Copyright &copy; </span><a href="http://www.mcircle.co.kr/" target="_blank" class="link_mcircle">Mcircle Corp.</a><span class="txt_copyright"> All rights reserved.</span>
+			</address>
+		</div>
+		<div class="family_site">
+			<h2>하이닥PRO와 함께합니다</h2>
+			<ul class="list_site">
+				<li>
+					<a href="https://www.hidoc.co.kr" target="_blank"><span class="pro_comm ico_hidoc"></span>하이닥</a>
+				</li>
+				<li>
+					<a href="https://www.doctorville.co.kr" target="_blank"><span class="pro_comm ico_doctorville"></span>닥터빌</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!-- //footer -->
+
+<script type="text/javascript">
+// 스크롤Top
+document.getElementById("btn_top").onclick = function(){	
+	function scrollToTop(scrollDuration) {
+		var scrollStep = -window.pageYOffset / (scrollDuration / 15);
+		var scrollInterval = setInterval(function(){
+			if ( window.pageYOffset != 0 ) {
+				window.scrollBy( 0, scrollStep );
+			}
+			else clearInterval(scrollInterval); 
+		},15);
+	};
+	scrollToTop(300);
+}
+</script>
+
+	</section>
+	<script>
+		/*	2020-11-23 payco 포인트 전환 동의 레이어 추가 */
+		var popConvertAgree = document.querySelectorAll(".btn_payco");
+		for (i = 0; i < popConvertAgree.length; i++){
+			popConvertAgree[i].onclick = function(){
+				var modalLayer = null;
+				modalLayer = hidocUI.modalLayer({
+					"popId": "popConvertAgree",
+					"openBtn":".btn_payco",
+					// "closeBtn": "#popConvertAgree .btn_close",
+					"callback": function(){
+						var agreement = document.querySelectorAll('#popConvertAgree .agree_wrap > *');
+						for(i=0;i<agreement.length;i++) {
+							agreement[i].removeAttribute("style");
+						}
+					}
+				});
+			}
+		};
+		var linkAgreement = document.querySelectorAll(".link_agreement");
+		for (i = 0; i < linkAgreement.length; i++){
+			linkAgreement[i].onclick = function(e){
+				e.preventDefault();
+				var agreement = document.querySelectorAll('#popConvertAgree .agree_wrap > *');
+				for(i=0;i<agreement.length;i++) {
+					agreement[i].style.display = "none";
+				}
+				document.querySelector(e.currentTarget.hash).style.display = "block";
+			}
+		};
+		var popConvertForm = document.querySelectorAll("#popConvertAgree .btn_agree");
+		for (i = 0; i < popConvertForm.length; i++){
+			popConvertForm[i].onclick = function(e){
+				e.preventDefault();
+				var modalLayerA = null;
+				modalLayerA = hidocUI.modalLayer({
+					"popId": "popConvertForm",
+					"openBtn":"#popConvertAgree .btn_agree",
+					// "closeBtn": "#popConvertForm .btn_close"
+				});
+			}
+		};
+		</script>
+</body>
+</html>

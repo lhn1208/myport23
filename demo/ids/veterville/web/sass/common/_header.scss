@@ -1,0 +1,237 @@
+.vet_header{
+    height: 70px;
+    border-bottom: 1px solid $c_g_c;
+    box-sizing: border-box;
+    .logo{
+      position: absolute; 
+      top: 17px;
+      left: 0;
+    }
+    .menu_wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 278px;
+        .nav, .member_area{
+            .sub_menu{
+                opacity: 0;
+                visibility: hidden;
+                position: absolute; 
+                top: 69px;
+                left: -20px;
+                width: 160px;
+                padding: 17px;
+                line-height: 1.6;
+                z-index: 90;                  
+                background-color: #fff;
+                border: 1px solid #BBC1CD;
+                box-sizing: border-box;
+                transition: all 0.15s ease-in;
+                a{
+                    font-size: 14px;
+                    font-weight: 400;
+                    &.on,&:hover{
+                        color: $c_blue;
+                    }
+                }
+            }
+        }
+        .member_area{
+            .sub_menu{
+                left: 20px;
+                width: 127px;
+            }
+            &:hover{
+                .sub_menu{
+                    opacity: 1;
+                    visibility: visible;
+                  
+                }
+            }
+        }
+        .nav{
+            &>li{
+                float: left; 
+                position: relative;
+                margin-left: 36px;
+                padding:25px 0;
+                &:first-child{
+                    margin-left: 0;
+                }                               
+                a{                  
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+                &:hover{
+                    .sub_menu{
+                        opacity: 1;
+                        visibility: visible;
+                        
+                    }
+                }
+            }
+            &::after{
+                @include clear();
+            }            
+        }
+        .menu_right{
+            display: flex;
+            position: relative;
+            padding-top: 17px;
+            .name{
+                margin-right: 15px;
+                padding-top: 10px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .member{
+                position: relative;
+                display: inline-block;
+                width: 28px;
+                height: 24px;
+                margin-top: 6px;
+                margin-right: 22px;
+                background:url("../images/ico_common.png") 0 0px;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: -2px;
+                    right: 0;
+                    width: 7px;
+                    height: 7px;
+                    background-color: #4AFF88;
+                    border-radius: 30px;
+                }
+            }
+          
+            %bg_menu{
+                position: absolute;
+                display: block;
+                width: 100%;
+                top: 0;
+                height: 3px;
+                background-color: #000;
+                transition: all ease 0.3s;
+            }
+            .all_menu_btn{
+                position: relative;
+                width: 24px;
+                margin-top: 9px;
+                margin-left: 30px;
+                @include txtHidden2();               
+                &::before{
+                    content: "";
+                    @extend %bg_menu;
+                }
+                .menu_ico{
+                    @extend %bg_menu;
+                    top:6px;
+                    width: 18px;
+                }
+                &::after{
+                    content: "";
+                    @extend %bg_menu;
+                    top:12px;
+                    width: 12px;
+                }
+                //menu open
+                &.active{
+                    .menu_ico{
+                        display: none;
+                    }
+                    &::before{
+                        transform: translateY(7px) rotate(45deg);
+                    }
+                    &::after{
+                        width: 24px;
+                        transform: translateY(-5px) rotate(-45deg);                        
+                    }
+                }
+            }
+        }
+    }
+}
+.vet_header_inner{
+    @include cont_with();
+     position: relative;
+ }
+ .vet_search_box_area{
+     position: relative;
+ }
+ .vet_search_box{
+     position: relative;
+     width: 260px;
+     height: 40px;
+     padding-right: 35px;
+     border:2px solid $c_blue;
+     box-sizing: border-box;
+     .sch_input{
+         width: 100%;
+         padding: 10px 14px;
+         border: 0;
+         box-sizing: border-box;
+     }
+     .vet_btn_area{
+        @include pos_right();
+         width: 35px;       
+         .btn_search{
+             width: 24px;
+             height: 37px;
+             background:url("../images/ico_common.png") -33px 7px;
+         } 
+     }
+ }
+ //menu
+ .all_menu_box{
+     &.active{
+         display: block;
+         transition: all ease 0.3s;
+     }
+     position: absolute; 
+     display: none;
+     top: 70px;
+     left: 0;
+     width: 100%;   
+     z-index: 92;
+     background-color: $c_white;
+     border-bottom: 1px solid $c_g_c;
+     .menu_row{
+         width: 24%;
+         >strong{
+             display: block;
+             margin-bottom: 20px;
+             color: $c_black;
+             font-size: 24px;
+             font-weight: 600;
+         }
+         li{
+             font-size: 16px;
+             font-weight: 400;
+             line-height: 2;
+             a{
+                 display: block;
+             }
+             .ico_point{
+                 display: inline-block;
+                 width: 16px;
+                 height: 16px;
+                 margin-left: 8px;
+                 vertical-align: 13px;
+                 @include txtHidden2();
+                 background:url("../images/ico_common.png") -140px -30px;
+             }
+             &.on,&:hover{
+                 color: $c_blue;
+             }
+         }
+        
+     }
+ }
+ .all_menu_box_inner{
+     display: flex;
+     position: relative;
+     @include cont_with();
+     height: 360px;
+     padding-top: 93px;
+     box-sizing: border-box;
+ }
+ 
