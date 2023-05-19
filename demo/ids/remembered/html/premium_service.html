@@ -13,50 +13,60 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
-    <!--gnb-->
-    <div id="remember_gnb" class="remember_gnb sub_gnb">
-        <div class="gnb_inner">
-          <h1 class="logo"><a href="#">리멤버드</a></h1>
-          <nav class="gnb">
-            <ul>
-              <li><a href="#">리멤버드</a></li>
-              <li><a href="#">서비스소개</a></li>
-              <li><a href="#">부고</a></li>
-              <li><a href="#">추모관</a></li>
-              <li><a href="#">조문보</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </nav>
-          <div class="right">
-            <div class="gnb_search_form">
-              <form>
+  <div class="wrap" id="memorialCanvas">
+    <!--header-->
+    <header class="is_memorial">
+        <div class="contents_width">
+        <h1 class="logo"><a href="main.html"><span>MEMORIAL CANVAS</span></a></h1>
+        <div class="header_util">
+            <div class="box_user">
+            <div class="user_sch d-md-none">
+                <form>
                 <fieldset>
-                  <legend>고인명검색</legend>
-                  <input type="text" class="search_input" placeholder="고인명검색">
+                    <legend>고인명검색</legend>
+                    <input type="text" class="sch_input" placeholder="고인명검색">
+                    <a href="all_search.html" class="ico_sch">검색</a>
                 </fieldset>
-                <a href="#" class="ico_sch">검색</a>
-              </form>
+                </form>
             </div>
-            <div class="log_info">
-              <!-- <a href="#">로그인</a> -->
-             <a href="#">로그아웃</a>
-           </div>     
-            <a href="#" class="member">마이페이지</a>                 
-            <a href="#" class="menu">메뉴</a>
-          </div>
+            <div class="user-profile">
+                <ul>
+                <li class="d-block">
+                    <a href="#">회원가입</a>
+                </li>
+                <li class="d-block">
+                    <a href="pop_login.html">로그인</a>
+                </li>
+                </ul>
+            </div>
+            </div>
         </div>
-    </div>
-    <!--//gnb-->    
-    <div class="content_wrap bg_grey bg_type">
+        <nav id="gnbMenuWrap" class="nav">
+            <ul>
+            <li><a href="service.html">서비스소개</a></li>
+            <li><a href="obi_inquiry.html">부고</a></li>
+            <li><a href="memorial_inquiry.html">추모관</a></li>
+             <!--<li><a href="premium_service.html">조문보</a></li>-->
+            <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <a href="#" class="link_mylife">라이프 캔버스로 이동</a>
+        </nav>
+        <button class="toggle_gnb btn-toggle-gnb"><span class="offscreen">전체메뉴</span></button>
+        <span class="nav-bg"></span>
+        </div>
+    </header>  
+    <!--//header--> 
+    <section class="content_wrap bg_grey bg_type">
+      <div class="visual_wrap"></div>
       <div class="content_inner">
         <h2 class="content_title">조문보</h2>
         <div class="premium_service">
             <div class="tab_area">
-              <a href="#" class="on">조문보란</a>
-              <a href="#">작성과정</a>
-              <a href="#">프리미엄서비스</a>
-              <a href="#">절차</a>
-              <a href="#">신청</a>
+              <button class="on">조문보란</button>
+              <button>작성과정</button>
+              <button>프리미엄서비스</button>
+              <button>절차</button>
+              <button>신청</button>
             </div>
             <div class="section_wrap">
               <section>
@@ -261,7 +271,7 @@
        
       </div>
      
-    </div>
+    </section>
 
     <!--right banner-->
     <div class="right_banner">
@@ -288,6 +298,6 @@
       </div>     
     </footer>
     <!--//footer-->
-  
+  </div>
 </body>
 </html>

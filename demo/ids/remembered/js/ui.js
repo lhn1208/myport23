@@ -1,24 +1,21 @@
 
 $(document).ready(function () {
-    var gnb=$('.remember_gnb');
+    var $gnb_header=$('#memorialCanvas header');
     $(window).scroll(function(){
         //gnb
         var scTop = $(window).scrollTop();
         if(scTop>0){							
-            gnb.addClass('fix_on');						
+            $gnb_header.addClass('is-fixed');						
         }else{
-            gnb.removeClass('fix_on');
+            $gnb_header.removeClass('is-fixed');
         }           
     });
-    //mobile menu
-    gnb.find('.menu').click(function(){
-        $('body').addClass('fixed');
-        $('.mobile_menu').addClass('on');
+    //toggle-gnb
+    $gnb_header.find('.toggle_gnb').click(function(){
+        $(this).closest('header').toggleClass('is-active');
     })
-    $('.mobile_menu .close').click(function(){
-        $('body').removeClass('fixed');
-        $('.mobile_menu').removeClass('on');
-    })
+
+
     //공개여부
     $('.register .switch').on({
         click:function(e){
@@ -27,7 +24,7 @@ $(document).ready(function () {
         }
     });
     //프리미엄 서비스 탭
-    var item=$('.tab_area').find('a');
+    var item=$('.tab_area').find('button');
     var section=$('.section_wrap section');						
     var gnb_h=$('#remember_gnb').height();
     item.click(function(){

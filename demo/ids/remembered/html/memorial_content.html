@@ -15,286 +15,302 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
-    <!--gnb-->
-    <div id="remember_gnb" class="remember_gnb sub_gnb">
-        <div class="gnb_inner">
-          <h1 class="logo"><a href="#">리멤버드</a></h1>
-          <nav class="gnb">
-            <ul>
-              <li><a href="#">리멤버드</a></li>
-              <li><a href="#">서비스소개</a></li>
-              <li><a href="#">부고</a></li>
-              <li><a href="#">추모관</a></li>
-              <li><a href="#">조문보</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </nav>
-          <div class="right">
-            <div class="gnb_search_form">
-              <form>
+    <div class="wrap" id="memorialCanvas">
+        <!--header-->
+    <header class="is_memorial">
+        <div class="contents_width">
+        <h1 class="logo"><a href="main.html"><span>MEMORIAL CANVAS</span></a></h1>
+        <div class="header_util">
+            <div class="box_user">
+            <div class="user_sch d-md-none">
+                <form>
                 <fieldset>
-                  <legend>고인명검색</legend>
-                  <input type="text" class="search_input" placeholder="고인명검색">
+                    <legend>고인명검색</legend>
+                    <input type="text" class="sch_input" placeholder="고인명검색">
+                    <a href="all_search.html" class="ico_sch">검색</a>
                 </fieldset>
-                <a href="#" class="ico_sch">검색</a>
-              </form>
+                </form>
             </div>
-            <div class="log_info">
-              <!-- <a href="#">로그인</a> -->
-             <a href="#">로그아웃</a>
-           </div>     
-            <a href="#" class="member">마이페이지</a>                 
-            <a href="#" class="menu">메뉴</a>
-          </div>
-        </div>
-    </div>
-    <!--//gnb-->    
-    <div class="content_wrap bg_grey bg_type2">
-        <div class="death_content">
-            <h2 class="content_title">추모관</h2>
-            <div class="death_inner">
-                <div class="death_cotent_area">
-                    <div class="top_contents">
-                        <div class="visual">
-                            <img src="http://125.209.206.229/static/media/no_deceased_photo.460765e1d16d514734ae.jpg" alt="">              
-                        </div>
-                        <div class="text_area type01">
-                            <div class="info_area">
-                                <div class="name">선우조문 <a href="#" class="modify_btn">수정</a></div>
-                                <p class="date">1946.01.03 ~ 2021.6.19</p>
-                            </div>
-                            <div class="text_content">항상 그 누구보다 열심히 살아오신 우리 아버지000 에게 많은 추모글 부탁드립니다.</div>
-                            <div class="register_btn">
-                                <button>추모관 전송</button>
-                            </div>
-                        </div>
-                    </div>                   
-                </div>
+            <div class="user-profile">
+                <ul>
+                <li class="d-block">
+                    <a href="#">회원가입</a>
+                </li>
+                <li class="d-block">
+                    <a href="pop_login.html">로그인</a>
+                </li>
+                </ul>
+            </div>
             </div>
         </div>
-        <div class="content_mid">
-              <!-- 부고 [S]-->
-            <div class="memorial_section type01">
-                <div class="section_style">
-                    <div class="eulogy_area type01">
-                        <div class="eulogy_title">
-                            <h3 class="title">추도사</h3>
-                            <p class="text">고인의 아름다운 생애를<br />이야기합니다.</p>
-                        </div>
-                        <div class="text_area">
-                            <div class="text_box">충남 강경에서 태어나 고려대학교를 나오시고 사법 시험 공부를 하시다가 국회 사무처 의사과장 시절 1967년 제6회 변리사 시험에 최고령 45세에 유일하게 합격하시고, 변리사 업을 시작하여 오늘날까지 50년이 되기 때문에 대기만성(大器晩成)이라고 하지만 참으로 장하신 일생이십니다. 시험 당시만 해도 1년에 한사람이나 두 사람 합격시키던 때여서 13회(1975년)에 합격한 저로서도 먼저 합격하신 선배님께서 출판하신 ‘공업소유권법’과 일본 책 밖에는 변리사 시험공부를 할 수 없던 시절이었으므로, 선배님의 책을 유일한 수험 교과서로 하였습니다.​</div>
-                        </div>
+        <nav id="gnbMenuWrap" class="nav">
+            <ul>
+            <li><a href="service.html">서비스소개</a></li>
+            <li><a href="obi_inquiry.html">부고</a></li>
+            <li><a href="memorial_inquiry.html">추모관</a></li>
+             <!--<li><a href="premium_service.html">조문보</a></li>-->
+            <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <a href="#" class="link_mylife">라이프 캔버스로 이동</a>
+        </nav>
+        <button class="toggle_gnb btn-toggle-gnb"><span class="offscreen">전체메뉴</span></button>
+        <span class="nav-bg"></span>
+        </div>
+    </header>  
+    <!--//header-->   
+        <section class="content_wrap bg_grey bg_type2">
+            <div class="visual_wrap"></div>
+            <div class="death_content">
+                <h2 class="content_title">추모관</h2>
+                <div class="death_inner">
+                    <div class="death_cotent_area">
+                        <div class="top_contents">
+                            <div class="visual">
+                                <img src="../images/img_obi.jpg" alt="">              
+                            </div>
+                            <div class="text_area type01">
+                                <div class="info_area">
+                                    <div class="name">선우조문 <a href="#" class="modify_btn">수정</a></div>
+                                    <p class="date">1946.01.03 ~ 2021.6.19</p>
+                                </div>
+                                <div class="text_content">항상 그 누구보다 열심히 살아오신 우리 아버지000 에게 많은 추모글 부탁드립니다.</div>
+                                <!-- 2022-08-21 추가 [s] -->
+                                <div class="register_btn">
+                                    <button class="w400">고인 일대기(영상)</button>
+                                </div>
+                                <!-- 2022-08-21 추가 [e] -->
+                                <div class="register_btn">
+                                    <button>추모관 전송</button>
+                                </div>
+                            </div>
+                        </div>                   
                     </div>
                 </div>
             </div>
-            <!-- //부고 [E]-->
-            <div class="tab_content_inner">
-                 <!-- 탭메뉴 -->
-                 <div id="tab_menu">
-                    <div id="tab_tit">
-                       <div id="tab_btn">
-                              <ul>
-                                  <li class="active"><a href="#tab_cont">조문보</a></li>
-                                  <li><a href="#tab_cont">추모의 글</a></li>
-                                  <li><a href="#tab_cont">앨범</a></li>
-                                  <li><a href="#tab_cont">영상</a></li>
-                              </ul>
-                          </div>
-                    </div>
-                    <div id="tab_cont" class="tab_content_area">
-                        <div class="content_infor_01">
-                            <div class="reply_area">
-                                <div class="content_area">
-                                    <div class="name">홍길동</div>
-                                    <div class="text_content">
-                                        <div class="text">삼가 조의 표하오며 고인의 유덕이 후세에 이어져 빛나기를 빕니다. </div>
-                                    </div>
-                                    <a href="#" class="del_btn">삭제</a>
-                                </div>
-                                <div class="content_area">
-                                    <div class="name">김강수</div>
-                                    <div class="text_content">
-                                        <div class="text">밖의 비보에 한걸음에 달려가 위로의 말씀과 함께 고인의 가시는 길을 지켜 드려야 하는데 그러지 못하여 죄송합니다. 
-                                        먼 곳에서나마 진심어린 삼가 조의를 표하오며 고인의 명복을 빕니다.</div>
-                                        <span><img src="../images/thum_01.jpg" alt=""></span>
-                                        <span><img src="../images/thum_02.jpg" alt=""></span>
-                                    </div>
-                                    <a href="#" class="del_btn">삭제</a>
-                                </div>
-                                <div class="content_area">
-                                    <div class="name">홍길동</div>
-                                    <div class="text_content">
-                                        <div class="text">밖의 비보에 한걸음에 달려가 위로의 말씀과 함께 고인의 가시는 길을 지켜 드려야 하는데 그러지 못하여 죄송합니다. 
-                                            먼 곳에서나마 진심어린 삼가 조의를 표하오며 고인의 명복을 빕니다.</div>
-                                    </div>
-                                    <a href="#" class="del_btn">삭제</a>
-                                </div>
+            <div class="content_mid">
+                <!-- 부고 [S]-->
+                <div class="memorial_section type01">
+                    <div class="section_style mb_sc_style"><!--mb_sc_style 클래스 추가-->
+                        <div class="eulogy_area type01">
+                            <div class="eulogy_title">
+                                <h3 class="title">추도사</h3>
+                                <p class="text">고인의 아름다운 생애를<br />이야기합니다.</p>
                             </div>
-                        </div>
-                        <div class="content_infor_02">
-                            <div class="reply_area">
-                                <div class="content_area">
-                                    <div class="name">홍길동</div>
-                                    <div class="text_content">
-                                        <div class="text">삼가 조의 표하오며 고인의 유덕이 후세에 이어져 빛나기를 빕니다. </div>
-                                    </div>
-                                    <a href="#" class="del_btn">삭제</a>
-                                </div>
-                                <div class="content_area">
-                                    <div class="name">김강수</div>
-                                    <div class="text_content">
-                                        <div class="text">밖의 비보에 한걸음에 달려가 위로의 말씀과 함께 고인의 가시는 길을 지켜 드려야 하는데 그러지 못하여 죄송합니다. 
-                                        먼 곳에서나마 진심어린 삼가 조의를 표하오며 고인의 명복을 빕니다.</div>
-                                        <span><img src="../images/thum_01.jpg" alt=""></span>
-                                        <span><img src="../images/thum_02.jpg" alt=""></span>
-                                    </div>
-                                    <a href="#" class="del_btn">삭제</a>
-                                </div>
-                                <div class="content_area">
-                                    <div class="name">홍길동</div>
-                                    <div class="text_content">
-                                        <div class="text">밖의 비보에 한걸음에 달려가 위로의 말씀과 함께 고인의 가시는 길을 지켜 드려야 하는데 그러지 못하여 죄송합니다. 
-                                            먼 곳에서나마 진심어린 삼가 조의를 표하오며 고인의 명복을 빕니다.</div>
-                                    </div>
-                                    <a href="#" class="del_btn">삭제</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content_infor_03">
-                            <ul class="grid">
-                                <li class="grid-item"><a href="#"><img src="../images/image 112.jpg" alt=""></a></li>
-                                <li class="grid-item"><a href="#"><img src="../images/image 113.jpg" alt=""></a></li>
-                                <li class="grid-item"><a href="#"><img src="../images/image 114.jpg" alt=""></a></li>
-                                <li class="grid-item"><a href="#"><img src="../images/image 115.jpg" alt=""></a></li>
-                                <li class="grid-item"><a href="#"><img src="../images/image 116.jpg" alt=""></a></li>
-                                <li class="grid-item"><a href="#"><img src="../images/image 116.jpg" alt=""></a></li>
-                                <li class="grid-item"><a href="#"><img src="../images/image 116.jpg" alt=""></a></li>
-                            </ul>
-                            <!--paging-->
-                            <div class="paging">
-                                <a href="#" class="prev"></a>
-                                <span class="paging_num">
-                                    <a href="#" class="on">1</a>
-                                    <a href="#">2</a>
-                                    <a href="#">3</a>
-                                    <a href="#">4</a>
-                                    <a href="#">5</a>
-                                    <a href="#">6</a>
-                                    <a href="#">7</a>
-                                    <a href="#">8</a>
-                                    <a href="#">9</a>
-                                    <a href="#">10</a>
-                                </span>
-                                <a href="#" class="next"></a>
-                            </div>
-                            <!--//paging-->
-                        </div>
-                        <div class="content_infor_04">
-                            <div class="video_list_area">
-                                <div class="list_video">
-                                    <div class="list_thumnail"><a href="#"><img src="../images/image 112.jpg" alt=""></a></div>
-                                    <div class="list_thumnail"><a href="#"><img src="../images/image 113.jpg" alt=""></a></div>
-                                    <div class="list_thumnail"><a href="#"><img src="../images/image 114.jpg" alt=""></a></div>
-                                    <div class="list_thumnail"><a href="#"><img src="../images/image 115.jpg" alt=""></a></div>
-                                    <div class="list_thumnail"><a href="#"><img src="../images/image 116.jpg" alt=""></a></div>
-                                    <div class="list_thumnail"><a href="#"><img src="../images/image 116.jpg" alt=""></a></div>
-                                  </div>
-                                   <!--paging-->
-                                    <div class="paging">
-                                        <a href="#" class="prev"></a>
-                                        <span class="paging_num">
-                                            <a href="#" class="on">1</a>
-                                            <a href="#">2</a>
-                                            <a href="#">3</a>
-                                            <a href="#">4</a>
-                                            <a href="#">5</a>
-                                            <a href="#">6</a>
-                                            <a href="#">7</a>
-                                            <a href="#">8</a>
-                                            <a href="#">9</a>
-                                            <a href="#">10</a>
-                                        </span>
-                                        <a href="#" class="next"></a>
-                                    </div>
-                                    <!--//paging-->
+                            <div class="text_area">
+                                <div class="text_box">충남 강경에서 태어나 고려대학교를 나오시고 사법 시험 공부를 하시다가 국회 사무처 의사과장 시절 1967년 제6회 변리사 시험에 최고령 45세에 유일하게 합격하시고, 변리사 업을 시작하여 오늘날까지 50년이 되기 때문에 대기만성(大器晩成)이라고 하지만 참으로 장하신 일생이십니다. 시험 당시만 해도 1년에 한사람이나 두 사람 합격시키던 때여서 13회(1975년)에 합격한 저로서도 먼저 합격하신 선배님께서 출판하신 ‘공업소유권법’과 일본 책 밖에는 변리사 시험공부를 할 수 없던 시절이었으므로, 선배님의 책을 유일한 수험 교과서로 하였습니다.​</div>
                             </div>
                         </div>
                     </div>
-                  </div>
-                <!-- //탭메뉴-->
+                </div>
+                <!-- //부고 [E]-->
+                <div class="tab_content_inner">
+                    <!-- 탭메뉴 -->
+                    <div id="tab_menu">
+                        <div id="tab_tit">
+                        <div id="tab_btn">
+                                <ul>
+                                    <li class="active"><a href="#tab_cont">조문보</a></li>
+                                    <li><a href="#tab_cont">추모의 글</a></li>
+                                    <li><a href="#tab_cont">앨범</a></li>
+                                    <li><a href="#tab_cont">영상</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="tab_cont" class="tab_content_area">
+                            <div class="content_infor_01">
+                                <div class="reply_area">
+                                    <div class="content_area">
+                                        <div class="name">홍길동</div>
+                                        <div class="text_content">
+                                            <div class="text">삼가 조의 표하오며 고인의 유덕이 후세에 이어져 빛나기를 빕니다. </div>
+                                        </div>
+                                        <a href="#" class="del_btn">삭제</a>
+                                    </div>
+                                    <div class="content_area">
+                                        <div class="name">김강수</div>
+                                        <div class="text_content">
+                                            <div class="text">밖의 비보에 한걸음에 달려가 위로의 말씀과 함께 고인의 가시는 길을 지켜 드려야 하는데 그러지 못하여 죄송합니다. 
+                                            먼 곳에서나마 진심어린 삼가 조의를 표하오며 고인의 명복을 빕니다.</div>
+                                            <span><img src="../images/thum_01.jpg" alt=""></span>
+                                            <span><img src="../images/thum_02.jpg" alt=""></span>
+                                        </div>
+                                        <a href="#" class="del_btn">삭제</a>
+                                    </div>
+                                    <div class="content_area">
+                                        <div class="name">홍길동</div>
+                                        <div class="text_content">
+                                            <div class="text">밖의 비보에 한걸음에 달려가 위로의 말씀과 함께 고인의 가시는 길을 지켜 드려야 하는데 그러지 못하여 죄송합니다. 
+                                                먼 곳에서나마 진심어린 삼가 조의를 표하오며 고인의 명복을 빕니다.</div>
+                                        </div>
+                                        <a href="#" class="del_btn">삭제</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_infor_02">
+                                <div class="reply_area">
+                                    <div class="content_area">
+                                        <div class="name">홍길동</div>
+                                        <div class="text_content">
+                                            <div class="text">삼가 조의 표하오며 고인의 유덕이 후세에 이어져 빛나기를 빕니다. </div>
+                                        </div>
+                                        <a href="#" class="del_btn">삭제</a>
+                                    </div>
+                                    <div class="content_area">
+                                        <div class="name">김강수</div>
+                                        <div class="text_content">
+                                            <div class="text">밖의 비보에 한걸음에 달려가 위로의 말씀과 함께 고인의 가시는 길을 지켜 드려야 하는데 그러지 못하여 죄송합니다. 
+                                            먼 곳에서나마 진심어린 삼가 조의를 표하오며 고인의 명복을 빕니다.</div>
+                                            <span><img src="../images/thum_01.jpg" alt=""></span>
+                                            <span><img src="../images/thum_02.jpg" alt=""></span>
+                                        </div>
+                                        <a href="#" class="del_btn">삭제</a>
+                                    </div>
+                                    <div class="content_area">
+                                        <div class="name">홍길동</div>
+                                        <div class="text_content">
+                                            <div class="text">밖의 비보에 한걸음에 달려가 위로의 말씀과 함께 고인의 가시는 길을 지켜 드려야 하는데 그러지 못하여 죄송합니다. 
+                                                먼 곳에서나마 진심어린 삼가 조의를 표하오며 고인의 명복을 빕니다.</div>
+                                        </div>
+                                        <a href="#" class="del_btn">삭제</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_infor_03">
+                                <ul class="grid">
+                                    <li class="grid-item"><a href="#"><img src="../images/image 112.jpg" alt=""></a></li>
+                                    <li class="grid-item"><a href="#"><img src="../images/image 113.jpg" alt=""></a></li>
+                                    <li class="grid-item"><a href="#"><img src="../images/image 114.jpg" alt=""></a></li>
+                                    <li class="grid-item"><a href="#"><img src="../images/image 115.jpg" alt=""></a></li>
+                                    <li class="grid-item"><a href="#"><img src="../images/image 116.jpg" alt=""></a></li>
+                                    <li class="grid-item"><a href="#"><img src="../images/image 116.jpg" alt=""></a></li>
+                                    <li class="grid-item"><a href="#"><img src="../images/image 116.jpg" alt=""></a></li>
+                                </ul>
+                                <!--paging-->
+                                <div class="paging">
+                                    <a href="#" class="prev"></a>
+                                    <span class="paging_num">
+                                        <a href="#" class="on">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">7</a>
+                                        <a href="#">8</a>
+                                        <a href="#">9</a>
+                                        <a href="#">10</a>
+                                    </span>
+                                    <a href="#" class="next"></a>
+                                </div>
+                                <!--//paging-->
+                            </div>
+                            <div class="content_infor_04">
+                                <div class="video_list_area">
+                                    <div class="list_video">
+                                        <div class="list_thumnail"><a href="#"><img src="../images/image 112.jpg" alt=""></a></div>
+                                        <div class="list_thumnail"><a href="#"><img src="../images/image 113.jpg" alt=""></a></div>
+                                        <div class="list_thumnail"><a href="#"><img src="../images/image 114.jpg" alt=""></a></div>
+                                        <div class="list_thumnail"><a href="#"><img src="../images/image 115.jpg" alt=""></a></div>
+                                        <div class="list_thumnail"><a href="#"><img src="../images/image 116.jpg" alt=""></a></div>
+                                        <div class="list_thumnail"><a href="#"><img src="../images/image 116.jpg" alt=""></a></div>
+                                    </div>
+                                    <!--paging-->
+                                        <div class="paging">
+                                            <a href="#" class="prev"></a>
+                                            <span class="paging_num">
+                                                <a href="#" class="on">1</a>
+                                                <a href="#">2</a>
+                                                <a href="#">3</a>
+                                                <a href="#">4</a>
+                                                <a href="#">5</a>
+                                                <a href="#">6</a>
+                                                <a href="#">7</a>
+                                                <a href="#">8</a>
+                                                <a href="#">9</a>
+                                                <a href="#">10</a>
+                                            </span>
+                                            <a href="#" class="next"></a>
+                                        </div>
+                                        <!--//paging-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //탭메뉴-->
+                </div>
             </div>
+        </section>
+        <!--right banner-->
+        <div class="right_banner">
+            <a href="#">문의</a>
+            <a href="#" class="kakao">KAKAO</a>
         </div>
+        <!--//right banner-->
+        <!--footer-->
+        <footer id="remember_footer" class="remember_footer">
+        <div class="footer_inner">
+            <ul class="term_list">
+            <li><a href="#">이용약관</a><i class="bar"></i></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+            <div class="compay_info">
+            <address>서울시 강남구 봉은사로 114길 12, 7층</address> <i class="bar"></i>대표 서종원 <span class="mb_block">사업자 등록번호 120-86-10499</span> <i class="bar none_type"></i><span class="mb_block">통신판매업신고 2009-서울강남-00290 </span>
+            <span class="customer">고객센터<i class="bar mb_none"></i>tel.02-550-8700 <span class="fax">fax.02-563-8398</span><i class="bar mb_none"></i> <span class="email">Email.tslee0710@mcircle.biz</span><i class="bar none_type"></i><span class="mb_block">상담가능시간  오전 9:00 - 오후 6:00</span></span>
+            </div>
+            <span class="footer_logo"><img src="../images/footer_logo.png"></span>
+            <div class="ico_wrap">
+            <a href="#"><img src="../images/footer_ico1.png"></a>
+            <a href="#"><img src="../images/footer_ico2.png"></a>
+            </div>
+        </div>     
+        </footer>
+        <!--//footer-->
     </div>
-    <!--right banner-->
-    <div class="right_banner">
-        <a href="#">문의</a>
-        <a href="#" class="kakao">KAKAO</a>
-    </div>
-    <!--//right banner-->
-    <!--footer-->
-    <footer id="remember_footer" class="remember_footer">
-    <div class="footer_inner">
-        <ul class="term_list">
-        <li><a href="#">이용약관</a><i class="bar"></i></li>
-        <li><a href="#">개인정보처리방침</a></li>
-        </ul>
-        <div class="compay_info">
-        <address>서울시 강남구 봉은사로 114길 12, 7층</address> <i class="bar"></i>대표 서종원 <span class="mb_block">사업자 등록번호 120-86-10499</span> <i class="bar none_type"></i><span class="mb_block">통신판매업신고 2009-서울강남-00290 </span>
-        <span class="customer">고객센터<i class="bar mb_none"></i>tel.02-550-8700 <span class="fax">fax.02-563-8398</span><i class="bar mb_none"></i> <span class="email">Email.tslee0710@mcircle.biz</span><i class="bar none_type"></i><span class="mb_block">상담가능시간  오전 9:00 - 오후 6:00</span></span>
-        </div>
-        <span class="footer_logo"><img src="../images/footer_logo.png"></span>
-        <div class="ico_wrap">
-        <a href="#"><img src="../images/footer_ico1.png"></a>
-        <a href="#"><img src="../images/footer_ico2.png"></a>
-        </div>
-    </div>     
-    </footer>
-    <!--//footer-->
     <script>
         //부고 슬라이드     
-          var swiper = new Swiper(".memorial_slide", {
-              slidesPerView: 3.5,
-              spaceBetween:50,
-              centeredSlides:true,
-              loop:true,
-              // autoHeight:true,
-              simulateTouch:true,
-              navigation:false,
-              pagination: {
-              el: ".memorial_slide .swiper-pagination",
-              type: "progressbar"
-              },
-              breakpoints: {
-              760: {
-                  slidesPerView: 2,
-                  loop:true,
-                  simulateTouch:true,
-              }
-              }
-          });
-          // 탭메뉴            
-          // 컨텐츠 내용을 숨겨주세요!
-          var tabBtn = $("#tab_btn > ul > li"); //각각의 버튼을 변수에 저장
-          var tabCont = $("#tab_cont > div");  //각각의 컨텐츠를 변수에 저장
+        var swiper = new Swiper(".memorial_slide", {
+            slidesPerView: 3.5,
+            spaceBetween:50,
+            centeredSlides:true,
+            loop:true,
+            // autoHeight:true,
+            simulateTouch:true,
+            navigation:false,
+            pagination: {
+            el: ".memorial_slide .swiper-pagination",
+            type: "progressbar"
+            },
+            breakpoints: {
+            760: {
+                slidesPerView: 2,
+                loop:true,
+                simulateTouch:true,
+            }
+            }
+        });
+        // 탭메뉴            
+        // 컨텐츠 내용을 숨겨주세요!
+        var tabBtn = $("#tab_btn > ul > li"); //각각의 버튼을 변수에 저장
+        var tabCont = $("#tab_cont > div");  //각각의 컨텐츠를 변수에 저장
 
-          tabCont.hide().eq(0).show();
-          tabBtn.click(function(){
-          var target = $(this);        //버튼의 타켓(순서)을 변수에 저장
-          var index = target.index();  //버튼의 순서를 변수에 저장
-           //alert(index);
-              tabBtn.removeClass("active");   //버튼의 클래스를 삭제
-              target.addClass("active");   //타켓의 클래스를 추가
-              tabCont.css("display","none");
-              tabCont.eq(index).css("display","block");
-              if(index == 2){
-                  var $grid = $('.grid').imagesLoaded( function() {
-                      $grid.masonry({
-                          itemSelector: '.grid-item',
-                          fitwidth: true
-                      });
-                  });
-              }
-          });
+        tabCont.hide().eq(0).show();
+        tabBtn.click(function(){
+        var target = $(this);        //버튼의 타켓(순서)을 변수에 저장
+        var index = target.index();  //버튼의 순서를 변수에 저장
+        //alert(index);
+            tabBtn.removeClass("active");   //버튼의 클래스를 삭제
+            target.addClass("active");   //타켓의 클래스를 추가
+            tabCont.css("display","none");
+            tabCont.eq(index).css("display","block");
+            if(index == 2){
+                var $grid = $('.grid').imagesLoaded( function() {
+                    $grid.masonry({
+                        itemSelector: '.grid-item',
+                        fitwidth: true
+                    });
+                });
+            }
+        });
     </script>
 </body>
 </html>

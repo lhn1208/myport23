@@ -13,41 +13,51 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
-    <!--gnb-->
-    <div id="remember_gnb" class="remember_gnb sub_gnb">
-        <div class="gnb_inner">
-          <h1 class="logo"><a href="#">리멤버드</a></h1>
-          <nav class="gnb">
-            <ul>
-              <li><a href="#">리멤버드</a></li>
-              <li><a href="#">서비스소개</a></li>
-              <li><a href="#">부고</a></li>
-              <li><a href="#">추모관</a></li>
-              <li><a href="#">조문보</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </nav>
-          <div class="right">
-            <div class="gnb_search_form">
+  <div class="wrap" id="memorialCanvas">
+    <!--header-->
+    <header class="is_memorial">
+      <div class="contents_width">
+      <h1 class="logo"><a href="main.html"><span>MEMORIAL CANVAS</span></a></h1>
+      <div class="header_util">
+          <div class="box_user">
+          <div class="user_sch d-md-none">
               <form>
-                <fieldset>
+              <fieldset>
                   <legend>고인명검색</legend>
-                  <input type="text" class="search_input" placeholder="고인명검색">
-                </fieldset>
-                <a href="#" class="ico_sch">검색</a>
+                  <input type="text" class="sch_input" placeholder="고인명검색">
+                  <a href="all_search.html" class="ico_sch">검색</a>
+              </fieldset>
               </form>
-            </div>
-            <div class="log_info">
-              <!-- <a href="#">로그인</a> -->
-             <a href="#">로그아웃</a>
-           </div>     
-            <a href="#" class="member">마이페이지</a>                 
-            <a href="#" class="menu">메뉴</a>
           </div>
-        </div>
-    </div>
-    <!--//gnb-->    
-    <div class="content_wrap bg_grey bg_type2">
+          <div class="user-profile">
+              <ul>
+              <li class="d-block">
+                  <a href="#">회원가입</a>
+              </li>
+              <li class="d-block">
+                  <a href="pop_login.html">로그인</a>
+              </li>
+              </ul>
+          </div>
+          </div>
+      </div>
+      <nav id="gnbMenuWrap" class="nav">
+          <ul>
+          <li><a href="service.html">서비스소개</a></li>
+          <li><a href="obi_inquiry.html">부고</a></li>
+          <li><a href="memorial_inquiry.html">추모관</a></li>
+           <!--<li><a href="premium_service.html">조문보</a></li>-->
+          <li><a href="faq.html">FAQ</a></li>
+          </ul>
+          <a href="#" class="link_mylife">라이프 캔버스로 이동</a>
+      </nav>
+      <button class="toggle_gnb btn-toggle-gnb"><span class="offscreen">전체메뉴</span></button>
+      <span class="nav-bg"></span>
+      </div>
+  </header>  
+  <!--//header--> 
+    <section class="content_wrap bg_grey bg_type2">
+      <div class="visual_wrap"></div>
       <div class="content_inner">
         <div class="inquiry_wrap memorial_area">
             <div class="title_area"><h2 class="content_title">추모관<span class="num">(160)</span></h2></div>
@@ -58,15 +68,15 @@
                           <fieldset>
                               <legend>고인명 검색</legend>
                                 <input type="text" placeholder="고인명을 입력하세요" class="search_input">
-                                <a href="#" class="ico_sch">검색</a>
+                                <a href="all_search.html" class="ico_sch">검색</a>
                             </fieldset>
                         </form>
                     </div>
-                    <button class="base_button reg_btn">추모관 등록</button>
+                    <button class="base_button reg_btn" onclick="location.href='memorial_register.html'">추모관 등록</button>
                 </div>
                 <ul class="inquiry_list">
                     <li>
-                        <a href="#">
+                        <a href="memorial_content.html">
                             <span class="img_area">
                                 <img src="https://mcc-remembered.s3.ap-northeast-2.amazonaws.com/photo/95ddf7c5-348a-4da7-ad5b-4b83348af843%EA%B7%B8%EB%A6%BC11.jpg">
                                 <p class="text">명랑소녀 곽학련 여사의 인생길 이야기</p>
@@ -79,7 +89,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="memorial_content.html">
                             <span class="img_area">
                                 <img src="https://mcc-remembered.s3.ap-northeast-2.amazonaws.com/photo/2c43e704-7781-45c2-9fce-7ace194e7f0b01%20%EC%B6%94%EB%AA%A8%EA%B4%80%20%EC%95%84%EB%B2%84%EB%8B%98.png">
                                 <p class="text">자랑스런 나의 아버지 사랑합니다.</p>
@@ -92,7 +102,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="memorial_content.html">
                             <span class="img_area">
                                 <img src="https://mcc-remembered.s3.ap-northeast-2.amazonaws.com/photo/95ddf7c5-348a-4da7-ad5b-4b83348af843%EA%B7%B8%EB%A6%BC11.jpg">
                                 <p class="text">자랑스런 나의 아버지 사랑합니다. 아버지 사랑합니다. 아버지 사랑합니다.</p>
@@ -122,8 +132,7 @@
 
       </div>
       
-    </div>
-
+    </section>
     <!--right banner-->
     <div class="right_banner">
       <a href="#">문의</a>
@@ -149,6 +158,7 @@
       </div>     
     </footer>
     <!--//footer-->
+  </div>
   
 </body>
 </html>
