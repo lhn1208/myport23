@@ -1,4 +1,7 @@
 @charset "utf-8";
+/*tab*/
+.tab_cont_box .tab_cont{display: none;}
+.tab_cont_box .tab_cont.on{display: block;}
 /* 세미나 layout */
 #container {position:relative;width:980px;}
 .right_section {float:right;width:240px;padding-left:30px}

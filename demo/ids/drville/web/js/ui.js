@@ -831,11 +831,7 @@ $(window).load(function() {
 		$(this).addClass('on').siblings().removeClass('on');
 		$('.recomm_area .renew_cont_list').removeClass('on');	
 		var href = $(this).attr('href');
-		if(href.indexOf('cont_list')>-1){
-			$(href).addClass('on');
-		}else if(href.indexOf('cont_album')>-1){
-			$(href).addClass('on');
-		}
+		$($(this).attr("href")).addClass('on');
 		return false; 
 	})
 });

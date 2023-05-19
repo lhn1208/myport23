@@ -404,9 +404,20 @@
 							<!--관심 on--><button class="like_btn type on">관심</button>
 							<a href="#" class="profile_edit ab_right">프로필 수정</a>
 						</div>
+						<script>
+							 $(document).ready(function(){
+								var $tab_cont=$('.tab_cont_box .tab_cont');
+								$('.tab_area a').click(function(){
+									$(this).addClass('on').siblings().removeClass('on');
+									var idx=$(this).index();
+									$tab_cont.eq(idx).addClass('on').siblings().removeClass('on');
+									return false;
+								})
+							 });
+						</script>
 						<div class="board_area">
 							<div class="content_top">
-								<div class="board_tab">
+								<div class="board_tab tab_area">
 									<a href="#" class="on">전체</a>
 									<a href="#">라이브세미나</a>
 									<a href="#">아카데미</a>
@@ -417,31 +428,66 @@
 									<a href="#" class="sort_txt">관심순순</a>
 								</div>
 							</div>
-							<div class="board_content">
-								<ul>
-									<li>
-										<a href="#">
-											<span class="cate_class">라이프케어</span>
-											<div class="board_title">쑤시고 저린 증상 없애는 운동법 (하지)</div>
-											<span class="info"><em>송보라</em> 강사(힐리언스 코어운동센터) <span class="txt_bar">|</span>2021-12-30</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span class="cate_class">내분비질환</span>
-											<div class="board_title">쑤시고 저린 증상 없애는 운동법 (하지)</div>
-											<span class="info"><em>송보라</em> 강사(힐리언스 코어운동센터) <span class="txt_bar">|</span>2021-12-30</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span class="cate_class">내분비질환</span>
-											<div class="board_title">쑤시고 저린 증상 없애는 운동법 (하지)</div>
-											<span class="info"><em>송보라</em> 강사(힐리언스 코어운동센터) <span class="txt_bar">|</span>2021-12-30</span>
-										</a>
-									</li>
-								</ul>
-								<div class="more_btn_wrap"><a href="#" class="more_btn">더보기(1/5)</a></div>
+							<div class="tab_cont_box">
+								<div class="board_content tab_cont on">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="cate_class">라이프케어</span>
+												<div class="board_title">쑤시고 저린 증상 없애는 운동법 (하지)</div>
+												<span class="info"><em>송보라</em> 강사(힐리언스 코어운동센터) <span class="txt_bar">|</span>2021-12-30</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="cate_class">내분비질환</span>
+												<div class="board_title">쑤시고 저린 증상 없애는 운동법 (하지)</div>
+												<span class="info"><em>송보라</em> 강사(힐리언스 코어운동센터) <span class="txt_bar">|</span>2021-12-30</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="cate_class">내분비질환</span>
+												<div class="board_title">쑤시고 저린 증상 없애는 운동법 (하지)</div>
+												<span class="info"><em>송보라</em> 강사(힐리언스 코어운동센터) <span class="txt_bar">|</span>2021-12-30</span>
+											</a>
+										</li>
+									</ul>
+									<div class="more_btn_wrap"><a href="#" class="more_btn">더보기(1/5)</a></div>
+								</div>
+								<div class="board_content tab_cont">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="cate_class">라이프케어</span>
+												<div class="board_title">쑤시고 저린 증상 없애는 운동법 (하지)</div>
+												<span class="info"><em>송보라</em> 강사(힐리언스 코어운동센터) <span class="txt_bar">|</span>2021-12-30</span>
+											</a>
+										</li>
+									</ul>
+									<div class="more_btn_wrap"><a href="#" class="more_btn">더보기(1/5)</a></div>
+								</div>
+								<div class="board_content tab_cont">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="cate_class">라이프케어</span>
+												<div class="board_title">쑤시고 저린 증상 없애는 운동법 (하지)</div>
+												<span class="info"><em>송보라</em> 강사(힐리언스 코어운동센터) <span class="txt_bar">|</span>2021-12-30</span>
+											</a>
+										</li>
+									</ul>
+									<ul>
+										<li>
+											<a href="#">
+												<span class="cate_class">라이프케어</span>
+												<div class="board_title">쑤시고 저린 증상 없애는 운동법 (하지)</div>
+												<span class="info"><em>송보라</em> 강사(힐리언스 코어운동센터) <span class="txt_bar">|</span>2021-12-30</span>
+											</a>
+										</li>
+									</ul>
+									<div class="more_btn_wrap"><a href="#" class="more_btn">더보기(1/5)</a></div>
+								</div>
 							</div>
 						</div>
 					</div>
