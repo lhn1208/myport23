@@ -116,14 +116,50 @@ $(document).ready(function(){
     }
   }
 
-  
+  //quick
+  var $quick = $('.quick');
+  var $quickItem = $quick.find('li');
+  var $section = $('.main .sec');
+  function quick(){
+    var scT = $(window).scrollTop();
+    var $port_top= $('.portfolio_area').offset().top;
+    if (scT > $port_top)
+      $quick.addClass('fixed');
+    else
+        $quick.removeClass('fixed');
 
+     //section
+     $section.each(function () {
+        var idx = $(this).index()-1;
+        var offst = $(this).offset().top -200; 
+        if (offst <= scT) {
+            $quickItem.eq(idx).addClass('on').siblings().removeClass('on');
+        }
+    });
+
+    var second_sec = $('.content_skill').offset().top -200; 
+    if (second_sec <= scT) {
+        $quickItem.find('button').css('color','white');
+    }else{
+      $quickItem.find('button').css('color','black');
+    }
+  }
+  //quick click
+  $quickItem.click(function(){
+		var idx=$(this).index();
+		$('html, body').stop().animate({
+			'scrollTop': $section.eq(idx).offset().top
+		}, 800);
+		return false;
+	})
+  
   $(window).scroll(function(){
     progressBar();
     dpnoneTop(); 
     port_fadeup();   
     skill_ev();
     about_ev();
+    quick();
   });
 
 });

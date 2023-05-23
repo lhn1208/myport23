@@ -9,7 +9,7 @@ button{border:none; background:none; cursor: pointer;}
 .message_wap{position: relative; overflow: hidden; width: 600px; height: 130px; text-transform: uppercase; white-space: nowrap; color: #333;font-size: 48px; font-weight: 100;line-height: 1.5;}
 .message {display: block; position: absolute; top: 12.5rem; overflow: hidden; color: #fff; font-size: 6.25rem; background-color: #eea303;
   -webkit-animation: openclose 5s ease-in-out infinite; animation: openclose 5s ease-in-out infinite;}
-.message div{padding-left: 14px; font-size: 80px; font-family: "Spoqa Han Sans Bold";}
+.message div{padding-left: 14px; font-size: 80px; font-family: "맑은고딕",MalgunGothic,sans-serif;}
 .content_header .tit .mb{opacity: 0;}
 
 .progress-container {position: fixed; top:0; width: 100%; height: 6px; background: rgba(0,0,0,.4); z-index: 80;}
@@ -65,6 +65,15 @@ section h2{padding:40px 20px; color: #111; font-size: 38px;}
 .footer i{display: block; font-size: 12px;}
 .bt_top{display:block; position:fixed; right:15px; bottom:15px; z-index: 999;}
  
+.quick{position: absolute; top: 800px; right: 50%; margin-right: -664px;}
+.quick.fixed{position: fixed; top:10%; z-index: 990;}
+.quick::before{display: inline-block; position: absolute; top: 10px; left: -12px; width: 1px; height: 110px; background-color: #555; content: ""; z-index: 10;}
+.quick ul li{position: relative; margin-bottom: 30px;}
+.quick ul li::before{display: inline-block; position: absolute; top: 9px; left: -15px; width: 7px; height: 7px; background-color: #999; border-radius: 50%; z-index: 15; content: "";}
+.quick ul li button{font-size: 16px; font-family: "맑은고딕",MalgunGothic,sans-serif;}
+.quick ul li.on button{border-radius: 4px; background-color: #eea303; color: #fff;}
+.quick ul li.on::before{background-color: #eea303;}
+
 /*태블릿*/
 @media (max-width: 1024px){
   .portfolio_area .portfolio{width: auto;}
@@ -74,11 +83,12 @@ section h2{padding:40px 20px; color: #111; font-size: 38px;}
   .skill_area .skill_list li>div{margin:0 auto 30px; left: 0; transition: none;}
   .skill_area .skill_list li:hover .front{transform: rotateY(0deg);}
   .skill_area .skill_list li:hover .back{display: none;}
-
+  .quick{display: none;}
 }
 @media (min-width: 768px) and (max-width: 1024px){
   .portfolio>li{width: 50%;}  
   .skill_area .skill_list li{width: 50%;} 
+
 }
 /*모바일*/
 @media (max-width: 767px){
