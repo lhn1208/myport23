@@ -144,6 +144,19 @@ $(document).ready(function(){
       $quickItem.find('button').css('color','black');
     }
   }
+  //port tab
+  $('.portfolio').isotope({
+    itemSelector: '.port_li',
+  });
+  
+  // filter items on button click
+  $('.tab_menu ul').on( 'click', 'li', function() {
+    var filterValue = $(this).children().attr('data-filter');
+    $('.portfolio').isotope({ filter: filterValue });
+    $('.tab_menu li').removeClass('on');
+    $(this).addClass('on');
+  });
+
   //quick click
   $quickItem.click(function(){
 		var idx=$(this).index();
