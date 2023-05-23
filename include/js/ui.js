@@ -145,17 +145,32 @@ $(document).ready(function(){
     }
   }
   //port tab
-  $('.portfolio').isotope({
-    itemSelector: '.port_li',
-  });
-  
+  // $('.portfolio').isotope({
+  //   itemSelector: '.port_li',
+  // });
   // filter items on button click
-  $('.tab_menu ul').on( 'click', 'li', function() {
-    var filterValue = $(this).children().attr('data-filter');
-    $('.portfolio').isotope({ filter: filterValue });
-    $('.tab_menu li').removeClass('on');
-    $(this).addClass('on');
-  });
+  // $('.tab_menu ul').on( 'click', 'li', function() {
+  //   var filterValue = $(this).children().attr('data-filter');
+  //   $('.portfolio').isotope({ filter: filterValue });
+  //   $('.tab_menu li').removeClass('on');
+  //   $(this).addClass('on');
+  // });
+
+  //port tab
+  var $tab_li=$('.tab_menu li'),
+  $tab_button=$tab_li.find('button');
+
+  $tab_button.click(function(){
+    $tab_li.removeClass('on');
+    $(this).parent().addClass('on');
+    var category=$(this).data('category');
+    if (category=="*"){
+      $('.portfolio>li').css('display','block');
+    }else{
+      $('.portfolio>li').css('display','none');
+      $(category).css('display','block')
+    }
+  })
 
   //quick click
   $quickItem.click(function(){
