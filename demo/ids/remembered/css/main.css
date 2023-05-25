@@ -402,6 +402,7 @@
   .remember_service .sv4 {
     background-image: url('../images/main/bg_service4.png');
   }
+  .remember_service a:hover{transform: scale(1.03); transition: all .2s ease-in-out;}
   /* main memorial_section */
   .main_content .memorial_section {
     overflow: visible;
