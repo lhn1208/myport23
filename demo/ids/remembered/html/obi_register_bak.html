@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리멤버드</title>
+    <script src="../js/jquery-3.6.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+  <div class="wrap" id="memorialCanvas">
+    <!--header-->
+    <header class="is_memorial">
+      <div class="contents_width">
+      <h1 class="logo"><a href="main.html"><span>MEMORIAL CANVAS</span></a></h1>
+      <div class="header_util">
+          <div class="box_user">
+          <div class="user_sch d-md-none">
+              <form>
+              <fieldset>
+                  <legend>고인명검색</legend>
+                  <input type="text" class="sch_input" placeholder="고인명검색">
+                  <a href="all_search.html" class="ico_sch">검색</a>
+              </fieldset>
+              </form>
+          </div>
+          <div class="user-profile">
+              <ul>
+              <li class="d-block">
+                  <a href="#">회원가입</a>
+              </li>
+              <li class="d-block">
+                  <a href="pop_login.html" target="_blank">로그인</a>
+              </li>
+              </ul>
+          </div>
+          </div>
+      </div>
+      <nav id="gnbMenuWrap" class="nav">
+          <ul>
+          <li><a href="service.html">서비스소개</a></li>
+          <li><a href="obi_inquiry.html">부고</a></li>
+          <li><a href="memorial_inquiry.html">추모관</a></li>
+           <!--<li><a href="premium_service.html">조문보</a></li>-->
+          <li><a href="faq.html">FAQ</a></li>
+          </ul>
+          <a href="#" class="link_mylife">라이프 캔버스로 이동</a>
+      </nav>
+      <button class="toggle_gnb btn-toggle-gnb"><span class="offscreen">전체메뉴</span></button>
+      <span class="nav-bg"></span>
+      </div>
+  </header>  
+  <!--//header-->    
+    <section class="content_wrap bg_type">
+      <div class="visual_wrap"><span class="offscreen">비쥬얼 이미지 영역입니다.</span></div>
+      <div class="register_content">
+        <h2 class="content_title">부고등록</h2>
+        <div class="register_inner">
+          <div class="register">
+            <h3 class="title">대표상주정보<i class="ico_chk">*</i></h3> <sapn class="sub_txt">※디지털화환 비용을 받으실 대표상주정보를 입력해주세요</sapn>
+            <div class="relation_info row">
+                <select class="select">
+                    <option value="">고인관계</option>
+                    <option value="옵션2">옵션1</option>
+                    <option value="옵션2">옵션2</option>
+                    <option value="옵션3">옵션3</option>
+                    <option value="옵션4">옵션4</option>
+                </select>     
+                <input type="text" class="represent_nm" placeholder="상주명을 입력하세요">
+                <input type="text" class="represent_ph" placeholder="휴대폰 번호를 (하이픈 없이 숫자만)입력해주세요">
+                <div class="chk_txt val_chk">* 상주명을 입력하세요</div>
+                <div class="check_item">
+                    <input type="checkbox" name="" class="check" id="txt_check">
+                    <label for="txt_check">디지털화환을 신청하지 않습니다.</label>
+                </div>
+             </div>
+          </div>
+          <div class="register">
+              <h3 class="title">고인 정보입력</h2>
+              <div class="reg_info reg_style">
+                <div class="reg_top_wrap">
+                  <div class="row reg_top">                            
+                      <span class="col">
+                          <label for="name" class="input_tit">이름<i class="ico_chk">*</i></label>
+                          <input type="text" id="name">                        
+                      </span>
+                      <span class="col">
+                          <label for="position" class="input_tit">직위</label>
+                          <input type="text" id="position">
+                      </span>
+                  </div>
+                  <div class="val_chk">이름을 입력하세요</div>
+                </div>
+                <div class="row">
+                    <label for="birth" class="input_tit">생년월일<i class="ico_chk">*</i></label>
+                    <input type="date" id="birth" class="birth date">
+                    <div class="val_chk">* 생년월일을 입력하세요</div>
+                </div>
+                <div class="row">
+                    <label for="day1" class="input_tit">임종일자<i class="ico_chk">*</i></label>
+                    <input type="date" id="day1" class="date">
+                    <input type="time" id="day1" class="reg_time">
+                    <div class="val_chk">* 임종일자를 입력하세요</div>
+                </div>
+                <div class="row">
+                    <label for="day2" class="input_tit">발인일자<i class="ico_chk">*</i></label>
+                    <input type="date" id="day2" class="date">
+                    <input type="time" id="day1" class="reg_time">
+                </div>
+                <div class="row">
+                    <div class="filebox">
+                        <span class="input_tit">고인사진<i class="ico_chk">*</i></span>
+                        <input type="text" class="upload_input" placeholder="영정사진을 등록해 주세요">
+                        <label for="file" class="file">파일선택</label><input type="file" id="file">
+                        <!--이미지가 없습니다.-->
+                        <div class="file_output default">              
+                            이미지가<br>없습니다.
+                        </div>
+                        <!--//이미지가 없습니다.-->
+                        <div class="file_output">              
+                            <span class="img_area">
+                              <img src="../images/file_default.png">
+                              <button class="file_del">사진 삭제</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="register">
+            <h3 class="title">장례식장 정보<i class="ico_chk">*</i></h2>
+              <div class="funeral_info reg_style">
+                  <div class="row">
+                      <input type="text" class="funeral_input" placeholder="장례식장을 검색해 주세요">
+                      <button class="reg_btn">검색하기</button>
+                      <input type="text" class="room_nm" placeholder="호실">
+                  </div>
+                  <p class="val_chk">* 등록된 장례식장 정보가 없습니다.</p>
+              </div>
+          </div>
+          <div class="register reg_type">
+            <div class="site">
+              <h3 class="title"><label for="site_input">장지<i class="ico_chk">*</i></label></h3> 
+              <input type="text" id="site_input" placeholder="장지주소를 입력해주세요">
+              <div class="val_chk">* 장지를 입력하세요</div>
+            </div>
+          </div>
+          <div class="register">
+              <h3 class="title">상주정보<i class="ico_chk">*</i></h3> 
+              <div class="relation_info2 flex_style">
+                  <div class="col">
+                    <select name="relation" class="select">
+                        <option value="">고인관계</option>
+                        <option value="옵션2">옵션1</option>
+                        <option value="옵션2">옵션2</option>
+                        <option value="옵션3">옵션3</option>
+                        <option value="옵션4">옵션4</option>
+                    </select>     
+                    <div class="val_chk">* 고인관계를 입력하세요</div>
+                  </div>
+                  <div>
+                    <span class="input_wrap">
+                        <input type="text" class="reg_input" placeholder="상주명">
+                        <input type="text" class="ph_input" placeholder="휴대폰번호(숫자만)">
+                      </span>
+                      <div class="val_chk">* 상주정보를 입력하세요</div>
+                  </div>
+                  <span class="button_wrap">
+                    <button class="minus_btn">삭제</button>
+                    <button class="arr_btn">위로정렬</button>
+                    <button class="arr_btn down">아래로정렬</button>
+                  </span>
+              </div>
+              <div class="relation_info2 flex_style">
+                  <div class="col">
+                    <select name="relation" class="select">
+                        <option value="">고인관계</option>
+                        <option value="옵션2">옵션1</option>
+                        <option value="옵션2">옵션2</option>
+                        <option value="옵션3">옵션3</option>
+                        <option value="옵션4">옵션4</option>
+                    </select>     
+                    <div class="val_chk">* 고인관계를 입력하세요</div>
+                  </div>
+                  <div>
+                    <span class="input_wrap">
+                        <input type="text" class="reg_input" placeholder="상주명">
+                        <input type="text" class="ph_input" placeholder="휴대폰번호(숫자만)">
+                      </span>
+                      <div class="val_chk">* 상주정보를 입력하세요</div>
+                  </div>
+                  <span class="button_wrap">
+                    <button class="minus_btn">삭제</button>
+                    <button class="arr_btn">위로정렬</button>
+                    <button class="arr_btn down">아래로정렬</button>
+                  </span>
+              </div>
+              <!--추가버튼--><button class="reg_btn_w47 add_btn">추가</button>
+          </div>
+          <div class="register">
+            <h3 class="title">조의금 계좌 입력<i class="ico_chk">*</i></h3> 
+            <div class="account_info reg_style">
+                <div class="row flex_style">
+                  <div class="col">
+                    <input type="text" class="input_nm" placeholder="이름">
+                    <div class="val_chk">* 이름을 입력하세요</div>
+                  </div>
+                  <span class="input_wrap">
+                      <select name="bank" class="select bank_select">
+                        <option value="">은행</option>
+                        <option value="옵션2">옵션1</option>
+                        <option value="옵션2">옵션2</option>
+                        <option value="옵션3">옵션3</option>
+                        <option value="옵션4">옵션4</option>
+                    </select>     
+                    <input type="text" class="input_account" placeholder="계좌번호를 입력하세요">
+                    <div class="val_chk">* 계좌번호를 입력하세요</div>
+                  </span>
+                  <span class="button_wrap">                   
+                    <button class="minus_btn">삭제</button>
+                    <button class="arr_btn">위로정렬</button>
+                    <button class="arr_btn down">아래로정렬</button>
+                  </span>                  
+                </div>
+                <div class="row bank_row">
+                  <label for="pay_input" class="input_tit">(선택)카카오페이 송금</label>
+                  <input type="text" id="pay_input" class="link_input" placeholder="링크를 등록해주세요">
+                  <button class="reg_btn_w47">방법</button>
+              </div>
+            </div>
+            <div class="account_info reg_style">
+                <div class="row flex_style">
+                  <div class="col">
+                    <input type="text" class="input_nm" placeholder="이름">
+                    <div class="val_chk">* 이름을 입력하세요</div>
+                  </div>
+                  <span class="input_wrap">
+                      <select name="bank" class="select bank_select">
+                        <option value="">은행</option>
+                        <option value="옵션2">옵션1</option>
+                        <option value="옵션2">옵션2</option>
+                        <option value="옵션3">옵션3</option>
+                        <option value="옵션4">옵션4</option>
+                    </select>     
+                    <input type="text" class="input_account" placeholder="계좌번호를 입력하세요">
+                    <div class="val_chk">* 계좌번호를 입력하세요</div>
+                  </span>
+                  <span class="button_wrap">                   
+                    <button class="minus_btn">삭제</button>
+                    <button class="arr_btn">위로정렬</button>
+                    <button class="arr_btn down">아래로정렬</button>
+                  </span>                  
+                </div>
+                <div class="row bank_row">
+                    <label for="pay_input" class="input_tit">(선택)카카오페이 송금</label>
+                    <input type="text" id="pay_input" class="link_input" placeholder="링크를 등록해주세요">
+                    <button class="reg_btn_w47">방법</button>
+                </div>
+            </div>
+            <!--추가버튼--><button class="reg_btn_w47 add_btn">추가</button>
+          </div>
+          <div class="register reg_type">
+            <div class="memorial">
+              <div class="row">
+                  <h3 class="title"><label for="info_input">안내글<i class="ico_chk">*</i></label></h3> 
+                  <input type="text" id="info_input" class="reg_input" placeholder="예 : 저희 상가는 조의금을 정중히 사양합니다."> 
+                  <div class="val_chk">* 안내글을 입력하세요</div>
+              </div>
+              <div class="row">
+                  <h3 class="title vert"><label for="memorial_textarea">추도사<i class="ico_chk">*</i></label></h3> 
+                  <textarea class="memorial_textarea" id="memorial_textarea" placeholder="내용을 입력하세요."></textarea>
+                  <button class="reg_btn_w47 btn_sample">샘플</button>
+              </div>
+            </div>
+          </div>
+          <div class="register">
+            <h3 class="title">조문보 등록<i class="ico_chk">*</i></h3> 
+              <div class="message">
+                  <div class="view_area">
+                      <a href="#" class="sample">샘플보기</a>
+                  </div>
+                  <div class="editor_box">
+                      <div class="subject">
+                          <select class="select">
+                              <option value="">주제 선택</option>
+                              <option value="옵션2">옵션1</option>
+                              <option value="옵션2">옵션2</option>
+                              <option value="옵션3">옵션3</option>
+                              <option value="옵션4">옵션4</option>
+                          </select>  
+                          <input type="text" class="max_opt" placeholder="최대 8글자로 입력해주세요">    
+                          <span class="arr_button_wrap">
+                            <button class="minus_btn">삭제</button>
+                            <button class="arr_btn">위로정렬</button>
+                            <button class="arr_btn down">아래로정렬</button>
+                          </span>
+                      </div>
+                      <button class="reg_btn">템플릿 선택</button>
+                      <div class="open_opt">
+                          공개여부 <span class="switch"></span>
+                      </div>
+                  </div>
+                  <div class="val_chk">* 조문보를 등록 하세요</div>
+              </div>
+              <div class="message">
+                <div class="editor_box">
+                    <div class="subject">
+                        <select class="select">
+                            <option value="">주제 선택</option>
+                            <option value="옵션2">옵션1</option>
+                            <option value="옵션2">옵션2</option>
+                            <option value="옵션3">옵션3</option>
+                            <option value="옵션4">옵션4</option>
+                        </select>  
+                        <input type="text" class="max_opt" placeholder="최대 8글자로 입력해주세요">    
+                        <span class="arr_button_wrap">
+                          <button class="minus_btn">삭제</button>
+                          <button class="arr_btn">위로정렬</button>
+                          <button class="arr_btn down">아래로정렬</button>
+                        </span>
+                    </div>
+                    <button class="reg_btn">템플릿 선택</button>
+                    <div class="open_opt">
+                        공개여부 <span class="switch"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 부고 공개여부 -->
+            <div class="bt_opt open_opt">
+                부고 공개여부 <span class="switch"></span>
+            </div>
+            <!--추가버튼--><button class="reg_btn_w47 add_btn">추가</button>
+          </div>
+        
+          <!--button-->
+          <div class="register_btn">
+              <button class="preview">미리보기</button>
+              <button>등록완료</button>
+              <button class="cancel">취소</button>
+          </div>
+          <!--//button-->
+        </div>
+        <span class="bg_register1"></span>
+      </div>
+    </section>
+
+    <!--right banner-->
+    <div class="right_banner">
+      <a href="#">문의</a>
+      <a href="#" class="kakao">KAKAO</a>
+    </div>
+    <!--//right banner-->
+    <!--footer-->
+    <footer id="remember_footer" class="remember_footer">
+      <div class="footer_inner">
+        <ul class="term_list">
+          <li><a href="#">이용약관</a><i class="bar"></i></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+        <div class="compay_info">
+          <address>서울시 강남구 봉은사로 114길 12, 7층</address> <i class="bar"></i>대표 서종원 <span class="mb_block">사업자 등록번호 120-86-10499</span> <i class="bar none_type"></i><span class="mb_block">통신판매업신고 2009-서울강남-00290 </span>
+          <span class="customer">고객센터<i class="bar mb_none"></i>tel.02-550-8700 <span class="fax">fax.02-563-8398</span><i class="bar mb_none"></i> <span class="email">Email.tslee0710@mcircle.biz</span><i class="bar none_type"></i><span class="mb_block">상담가능시간  오전 9:00 - 오후 6:00</span></span>
+        </div>
+        <span class="footer_logo"><img src="../images/footer_logo.png"></span>
+        <div class="ico_wrap">
+          <a href="#"><img src="../images/footer_ico1.png"></a>
+          <a href="#"><img src="../images/footer_ico2.png"></a>
+        </div>
+      </div>     
+    </footer>
+    <!--//footer-->
+  </div>
+</body>
+</html>

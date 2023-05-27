@@ -14,6 +14,18 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .blind {position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
 legend{font-size:0;  line-height:0;  text-indent:-9999px;}
 body{font-family: "Noto Sans KR", sans-serif;}
+.filebox input[type='file'] {position: absolute; top: 0; left: 0; width: 0; height: 0; line-height: 0; overflow: hidden; border: 0;}
+textarea{resize: none;}
+.btn_del{position: absolute; top:6px; right: 6px; width: 10px; height: 10px;}
+.btn_del::before,
+.btn_del::after{display: block; content: ""; height: 2px; background-color: #fff; transform:rotate(45deg);}
+.btn_del::after{margin-top: -2px; transform:rotate(-45deg);}
+
+.pop_close{position: absolute; top:6px; right: 6px; width: 30px;height: 30px;}
+.pop_close::before,
+.pop_close::after{display: block; content: ""; height: 2px; background-color: #000; transform:rotate(45deg);}
+.pop_close::after{margin-top: -2px; transform:rotate(-45deg);}
+
 #memorialCanvas .contents_width{margin: 0 auto; width: 1440px;}
 #memorialCanvas header{width: 100%; height: 120px; position: fixed; top: 0; left: 0; padding: 40px 0 38px; border-bottom: 1px solid transparent; transition: border-bottom-color .1s ease; z-index: 200; box-sizing: border-box;}
 #memorialCanvas header .contents_width{align-items: center; display: flex; position: relative;}
@@ -36,7 +48,7 @@ body{font-family: "Noto Sans KR", sans-serif;}
 #memorialCanvas header .user-profile ul li+li{margin-left: 20px;}
 /*togle-gnb*/
 #memorialCanvas header .toggle_gnb{display: block;position: absolute; right: 30px; top: 50%; transform: translateY(-50%); width: 38px; height: 24px; z-index: 190;}
-#memorialCanvas .offscreen{clip:rect(1px 1px 1px 1px); display: inline-block; position: absolute; width: 1px; height: 1px; line-height: 0;font-size: 1px; overflow: hidden;}
+.offscreen{clip:rect(1px 1px 1px 1px); display: inline-block; position: absolute; width: 1px; height: 1px; line-height: 0;font-size: 1px; overflow: hidden;}
 #memorialCanvas header .toggle_gnb:after, #memorialCanvas header .toggle_gnb:before{display: block; content: ""; width: 100%; height: 3px; transition: all .2s ease; background:#fff;}
 #memorialCanvas header .toggle_gnb:after{margin-top: 3px;}
 
@@ -60,6 +72,7 @@ body{font-family: "Noto Sans KR", sans-serif;}
 #memorialCanvas header.is-active .toggle_gnb:after{transform: translateY(-5px) rotate(-45deg); }
 @media all and (max-width:1024px) { 
   .d-md-none{display: none;}
+  .btn.m-btn{height:40px; padding: 0 20px; line-height: 40px; font-size: 14px !important;}
   #memorialCanvas .contents_width{width: 100%;}
   #memorialCanvas header .nav-bg{left: auto; right: -100%; width: 100%;height: 100% !important; background-color: #fff;}
   #memorialCanvas header .nav{position: fixed; top: 210px; right: -100%;  height: calc(100% - 296.5px); margin: 0; overflow: hidden; box-sizing: border-box; transition: all .3s ease;;}
@@ -579,16 +592,20 @@ body{font-family: "Noto Sans KR", sans-serif;}
     font-family: 'Noto Sans KR', sans-serif;
   }
   
-  .base_button_wrap {
+  .btn_wrap {
     text-align: center;
   }
-  .base_button {
+  .btn {
     height: 50px;
+    line-height: 50px;
     color: #fff;
     background-color: #192b57;
     border-radius: 50px;
     font-size: 20px;
+    padding: 0 40px;
+    box-sizing: border-box;
   }
+  
   /*모바일~노트북 해상도*/
   @media (min-width: 760px) and (max-width: 1760px) {
     #remember_gnb .gnb_inner {
