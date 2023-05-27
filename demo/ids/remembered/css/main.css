@@ -282,6 +282,7 @@
     margin-top: 40px;
     margin-bottom: 13px;
     font-size: 28px;
+    font-family: 'NotoSerifKR'; 
   }
   .main_content .memorial_section .memorial_slide .info {
     margin-top: 0;
@@ -294,7 +295,7 @@
     color: #7c7c7c;
     font-size: 22px;
     font-weight: normal;
-    font-family: 'NotoSerifKR';
+    font-family: 'NotoSerifKR'; font-weight: 400;
   }
   .main_content .memorial_section .memorial_slide dd {
     margin-bottom: 6px;
@@ -424,6 +425,7 @@
     .main_content .logo_content{width: 100%; font-size: 100px;}
     .remember_service .service_content {width: 98%; justify-content: center; padding: 136px 0 80px;}
     .remember_service .service_content a{width: 50%; margin-bottom: 20px; background-position: center;}
+    .main_content .memorial_section .memorial_slide .img_area{height: 304px;}
   }
   @media (max-width: 760px) {
     .main_content_wrap {
