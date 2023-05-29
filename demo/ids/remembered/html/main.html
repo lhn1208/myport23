@@ -14,6 +14,9 @@
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
+  <div id="Index">
+    <a href="#container">본문 바로가기</a>
+  </div>
   <div class="wrap" id="memorialCanvas">
     <!--header-->
     <header class="is_memorial">
@@ -88,7 +91,7 @@
           With Remembered
         </span>
         <!-- 추모관 [S]-->
-        <div class="memorial_section">
+        <div class="memorial_section" id="container">
           <div class="section_style">
             <h2 class="title">추모관</h2>
             <p class="txt">고인의 추모관을 방문해 고인에 대한 그리운 마음과<br>생전에 하지 못한 이야기를 나누세요.</p>
@@ -237,7 +240,7 @@
       slidesPerView: 3.5,
       spaceBetween: 50,
       centeredSlides:true,
-      loop:true,
+      loop:true, 
       // autoHeight:true,
       simulateTouch:false,
       navigation: {

@@ -20,7 +20,9 @@ textarea{resize: none;}
 .btn_del::before,
 .btn_del::after{display: block; content: ""; height: 2px; background-color: #fff; transform:rotate(45deg);}
 .btn_del::after{margin-top: -2px; transform:rotate(-45deg);}
-
+#Index{margin:0;padding:0; position:relative;z-index:9999; text-align: center;}
+#Index a{position:absolute;top:-200px; left:0;width:100%; line-height: 30px; background-color: #192b57; color: #fff; } 
+#Index a:focus, #Index a:active{top: 0;}
 .pop_close{position: absolute; top:6px; right: 6px; width: 30px;height: 30px;}
 .pop_close::before,
 .pop_close::after{display: block; content: ""; height: 2px; background-color: #000; transform:rotate(45deg);}

@@ -12,6 +12,9 @@ button{border:none; background:none; cursor: pointer;}
 .message div{padding-left: 14px; font-size: 80px; font-family: "맑은고딕",MalgunGothic,sans-serif;}
 .content_header .tit .mb{opacity: 0;}
 
+#skipNav{position:relative;z-index:9999;}
+#skipNav a{position: absolute; top: -200px; left:0; width: 100%; line-height: 30px; border: 1px solid #dedede; color:#fff; background-color: #333; text-align: center; font-size: 14px;}
+#skipNav a:focus, #skipNav a:active{top: 0;}
 .progress-container {position: fixed; top:0; width: 100%; height: 6px; background: rgba(0,0,0,.4); z-index: 80;}
 .progress-bar {height: 6px; background: #eea303; width: 0%; transition:all .3s ease;}
 section h2{padding:40px 20px; color: #111; font-size: 38px;}
