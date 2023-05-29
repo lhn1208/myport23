@@ -2,7 +2,7 @@
 
 html{font-size: 16px;}
 body{font-family: "맑은고딕",MalgunGothic,sans-serif;}
-.wrap{background:#fff;}
+.wrap{background:#fff; overflow-x: hidden;}
 button{border:none; background:none; cursor: pointer;}
 .content_header{display: flex; align-items: center; justify-content:center; height: 654px;; background: url("../../img/bg_main.jpg") no-repeat top fixed; }
 .content_header .tit{color: #333; font-size: 102px;}
@@ -22,8 +22,9 @@ section h2{padding:40px 20px; color: #111; font-size: 38px;}
 .portfolio_area .portfolio::after{display: block; content: ''; clear: both;}
 .portfolio>li{position: relative; width:33.3%; height: 490px; margin-bottom: 60px; transition: width .4s ease;}
 .portfolio>li .port_box{margin:0 .5rem;}
+.portfolio>li .port_box>a{display: block;}
 .portfolio li .img{position: relative; width: 350px; height: 272px; margin:0 auto; transition-duration: 0.5s;}
-.portfolio li .img img{width: 100%;}
+.portfolio li .img img{width: 100%; height: 100%;}
 .portfolio li .mb_img{position: absolute; right:0; bottom: 0; width:30%; height: 80%; overflow: hidden;}
 .portfolio li .only_mb_img {text-align: center;}
 .portfolio li .only_mb_img img{width: auto; height: 272px;}
@@ -71,6 +72,7 @@ section h2{padding:40px 20px; color: #111; font-size: 38px;}
 .tab_menu{margin-bottom: 60px;}
 .tab_menu ul{display: flex; justify-content: center;}
 .tab_menu ul li{position: relative; margin: 6px;}
+.tab_menu ul li button{font-size: 14px;}
 .tab_menu ul li.on button{position: relative; z-index: 2;}
 .tab_menu ul li.on::after{position: absolute; bottom:2px; left: 0; width: 100%; height: 8px; background-color: rgba(238,163,3,.6); z-index: 1; content: "";}
 
@@ -92,24 +94,37 @@ section h2{padding:40px 20px; color: #111; font-size: 38px;}
   .skill_area .skill_list li>div{margin:0 auto 30px; left: 0; transition: none;}
   .skill_area .skill_list li:hover .front{transform: rotateY(0deg);}
   .skill_area .skill_list li:hover .back{display: none;}
-  .quick{display: none;}
+  #quick{display: none;}
 }
 @media (min-width: 768px) and (max-width: 1024px){
   .portfolio>li{width: 50%;}  
   .skill_area .skill_list li{width: 50%;} 
-
 }
 /*모바일*/
 @media (max-width: 767px){
+  .progress-container{display: none;}
   .content_header{height: 240px;}
   .content_header .tit{font-size: 50px;}
-  .message_wap {display: none;}
   .content_header .tit .mb{opacity: 1; transition: all .4s;}
+  .message_wap {display: none;}
+
+  section h2{padding:20px; font-size: 22px;}
   .portfolio>li{width: 100%; height: auto; margin-bottom: 15px;}   
-  .skill_area .skill_list li{width: 100%;}
+  .portfolio>li .port_box{margin:0;}
+  .portfolio li .img{width: 66%; height: 200px;}
+  .portfolio li .only_mb_img{width: 32%; height: 240px;}
+  .portfolio li .only_mb_img img{width: 100%; height: 100%;}
+  .portfolio>li .more_detail h3 span{font-size: 14px;}
+  .portfolio .more_detail li{font-size: 12px;}
+  .portfolio .demo{height: 34px; font-size: 12px;}
+  .skill_area .skill_list li{width: 100%; height: auto; padding-bottom: 30px;}
+  .skill_area .skill_list li>div{width: 160px; height: 160px; margin: 0 auto 16px;}
+  .skill_area .skill_list li>div span{font-size: 14px;}
   .content_about .about_area{padding:0;}
+  .content_about .about_area h3{font-size: 1.2rem;}
   .about_area .about{width: 300px;}
-  .about_area .about li{padding:8px; font-size: 14px;}
+  .about_area .about li{padding:8px; font-size: 12px;}
+  .footer{font-size: 14px;}
   
 }
 @media (max-width: 480px){
