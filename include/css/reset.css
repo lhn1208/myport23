@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-/* reset.css - 브라우저 스타일 초기화 - 장영석 수정
----------------------------------------------------------------- */
-
 /* 모든 요소 공간 0, 서체 크기 100%, 세로정렬 baseline, 배경색 투명 */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -25,7 +22,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 /* HTML5 새 요소 초기화 */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section { display: block; }
-
 /* 본문 기본 설정, 리스트 블릿 제거, 인용 구문 제거 */
 body { 
 	font-family: "Spoqa Han Sans","돋움","Dotum","Helvetica Neue","Helvetica,Arial","sans-serif";
@@ -37,17 +33,14 @@ strong{font-weight: 600;  font-family: "Spoqa Han Sans Bold","돋움","Dotum","s
 /* 목록 및 인용 */
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
-
 /* hr 제거 */
 hr { display: none; }
-
 /* img를 포함한 a요소의 보더, 패딩 초기화 설정 */
 a img {
 	border: 0; 
 	padding: 0;
 }
-
-
+img{vertical-align: top;}
 /* 테이블 설정 */
 table {
 	width: 100%;
@@ -61,11 +54,8 @@ th, td {
 caption { 
 	display:none;
 }
-
 /* input 타입 설정 */
 input,select { vertical-align:middle;}
-
 legend {display:none;}
-
 a {text-decoration:none; color:#000;}
 
