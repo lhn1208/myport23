@@ -39,12 +39,12 @@ $(document).ready(function(){
   var $navItem= $(".nav li");
   var $section=$('section');
   var scT = $(window).scrollTop();  
-  $navItem.click(function(){
+  $navItem.click(function(e){
+    e.preventDefault();
      var idx=$(this).index();
     $('html, body').stop().animate({
       'scrollTop': $section.eq(idx).offset().top
     }, 800);
-    return false;
   })
 
   //헤더 화살표
@@ -173,12 +173,12 @@ $(document).ready(function(){
   })
 
   //quick click
-  $quickItem.click(function(){
+  $quickItem.click(function(e){
+    e.preventDefault();
 		var idx=$(this).index();
 		$('html, body').stop().animate({
 			'scrollTop': $section.eq(idx).offset().top
 		}, 800);
-		return false;
 	})
   
   $(window).scroll(function(){
