@@ -89,6 +89,26 @@ function bindingTabEvent(wrap){
 
 bindingTabEvent('.multi_tab_wrap');
 
+//tab
+var targetLink= document.querySelectorAll('.list_set a');
+var tabContent=document.querySelectorAll('.main_section #contlist_wrap .cont_list')
+for(var i=0; i < targetLink.length; i++){
+    //탭 메뉴 클릭이벤트
+    targetLink[i].addEventListener('click',function(e){
+        e.preventDefault();
+        var orgTarget= e.target.getAttribute('href');
+        var tabTarget=orgTarget.replace('#',''); 
+        for(var x=0; x < tabContent.length; x++ ){
+            //content 전체 숨김
+            tabContent[x].style.display='none';
+        }
+        document.getElementById(tabTarget).style.display='block';
+        for(var j = 0; j < targetLink.length; j++){
+            targetLink[j].classList.remove('on');
+            e.target.classList.add('on');
+        }
+    });
+}
 //footerslide
 var foo_notice_swiper = new Swiper(".vet_footer .notice_slide", {
     direction: 'vertical',
