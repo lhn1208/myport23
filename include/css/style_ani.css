@@ -5,6 +5,7 @@
 .s3 {animation-duration: 1.6s;}
 .s4 {animation-duration: 1.8s;}
 
+
 .animated {
   /* -webkit-animation-duration: 1s;
   animation-duration: 1s; */
@@ -69,7 +70,6 @@
     width: 0;
   }
 }
-
 @keyframes openclose {
   0% {
     top: 0.2rem;
