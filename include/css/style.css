@@ -101,6 +101,7 @@ section h2{padding:40px 20px; color: #111; font-size: 38px; box-sizing: border-b
 @media (max-width: 1024px){
   .contents_with, .content_skill h2{width: 100%;}
   #quick{display: none;}
+  .content_header::before,.content_header::after{border-width: 62px 25vw;} 
   /*Portfolio*/
   .portfolio_area{padding-bottom: 20px;}
   .portfolio_area .portfolio{grid-template-columns:repeat(2,1fr);}
@@ -122,12 +123,15 @@ section h2{padding:40px 20px; color: #111; font-size: 38px; box-sizing: border-b
   .portfolio_area .tab_menu{margin-bottom: 30px;}
   .portfolio_area .tab_menu ul li button{font-size: 12px;}
   /*Header*/
+  .logo{left: 14px;}
   .logo a{width: 120px;}
   .content_header .tit{font-size: 50px;}
   .content_header .message_wrap{display: none;}
   .content_header .tit .mb{opacity: 1; transition: all .4s;}
   .header_wrapper{background-position-x: 42%; background-size: 255% 100%;}
+  
    /*Portfolio*/
+  .portfolio_area h2{padding:30px 20px}
   .portfolio_area .portfolio{grid-template-columns:repeat(1,1fr); row-gap: 20px;}
   .portfolio>li .img{width: 70%;}
   .portfolio>li:hover .img{transform:none;}
