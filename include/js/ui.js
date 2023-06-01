@@ -8,9 +8,10 @@ const docElement=document.documentElement,
       aboutSec=document.querySelector('.content_about'),
       about_items=aboutSec.querySelectorAll('.about'),
       bottom_bt=document.querySelector('.bt_top'),
-      top_box=document.querySelector('.top_fix');
+      topBox=document.querySelector('.top_fix'),
+      topBoxHeight=topBox.offsetHeight;
 let scrollPos, 
-    mainContentOST = mainContent.offsetTop;
+    mainContentOST = mainContent.offsetTop-100;
 
 
 skipContent.addEventListener('click',(e)=>{
@@ -26,7 +27,7 @@ bottom_bt.addEventListener('click',(e)=>{
 window.addEventListener('scroll',(e)=>{
   e.preventDefault();
   scrollPos=docElement.scrollTop; //스크롤 양
-  if(scrollPos>mainContentOST-600){
+  if(scrollPos>mainContentOST-300){
    portfolioSec.classList.add('fadeInUp');
   }
   let skillSecTop=skillSec.offsetTop;
@@ -45,9 +46,9 @@ window.addEventListener('scroll',(e)=>{
    }
    //logo
    if(scrollPos>0){
-    top_box.classList.add('fixed');
+    topBox.classList.add('fixed');
    }else{
-    top_box.classList.remove('fixed');
+    topBox.classList.remove('fixed');
    }
 
 });

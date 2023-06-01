@@ -10,7 +10,7 @@ body{font-family:var(--body-font);}
 button{border:none; background:none; cursor: pointer;}
 img{width: 100%;}
 section h2{padding:40px 20px; color: #111; font-size: 38px; box-sizing: border-box;}
-.bt_top{display:block; position:fixed; left: 50%; bottom:15px; margin-left: 800px; z-index: 999;width: 60px; height: 60px; background-color: var(--primary-color); border-radius: 50%;}
+.bt_top{display:block; position:fixed; bottom:15px; right:20px; z-index: 999;width: 60px; height: 60px; background-color: var(--primary-color); border-radius: 50%;}
 .bt_top i{display: inline-block; width: 10px; height: 10px; border-bottom: 2px solid #fff; border-right: 2px solid #fff; transform: rotate(-135deg); margin-top: 10%;}
 .progress-container {position: fixed; top:0; width: 100%; height: 6px; background: rgba(0,0,0,.4); z-index: 80;}
 .progress-bar {height: 6px; background: var(--primary-color); width: 0%; transition:all .3s ease;}
@@ -100,12 +100,12 @@ section h2{padding:40px 20px; color: #111; font-size: 38px; box-sizing: border-b
 /*태블릿 size*/
 @media (max-width: 1024px){
   .contents_with, .content_skill h2{width: 100%;}
-  #quick{display: none;}
   .content_header::before,.content_header::after{border-width: 62px 25vw;} 
   /*Portfolio*/
   .portfolio_area{padding-bottom: 20px;}
   .portfolio_area .portfolio{grid-template-columns:repeat(2,1fr);}
   .portfolio>li .img{width: 84%; height: auto;}
+  .portfolio .more_detail{margin-top: 0;}
   /*Skill*/
   .skill_area .skill_list{flex-wrap:wrap;}
   .skill_area .skill_list li{width: 50%;}
@@ -114,14 +114,11 @@ section h2{padding:40px 20px; color: #111; font-size: 38px; box-sizing: border-b
   .skill_area .skill_list li .back{left: 27%;}
   
 }
-
 /*모바일 size*/
 @media (max-width: 767px){
-  .bt_top{display: none;}
+  .bt_top{width: 45px; height: 45px;}
   section h2{padding:20px; font-size: 26px;}
-  .content_about .about_area h3{font-size: 22px;}
-  .portfolio_area .tab_menu{margin-bottom: 30px;}
-  .portfolio_area .tab_menu ul li button{font-size: 12px;}
+ 
   /*Header*/
   .logo{left: 14px;}
   .logo a{width: 120px;}
@@ -133,6 +130,8 @@ section h2{padding:40px 20px; color: #111; font-size: 38px; box-sizing: border-b
    /*Portfolio*/
   .portfolio_area h2{padding:30px 20px}
   .portfolio_area .portfolio{grid-template-columns:repeat(1,1fr); row-gap: 20px;}
+  .portfolio_area .tab_menu{margin-bottom: 30px;}
+  .portfolio_area .tab_menu ul li button{font-size: 12px;}
   .portfolio>li .img{width: 70%;}
   .portfolio>li:hover .img{transform:none;}
   .portfolio>li:hover .more_detail h3:after{width: 0;}
@@ -148,8 +147,8 @@ section h2{padding:40px 20px; color: #111; font-size: 38px; box-sizing: border-b
   .skill_area .skill_list li:hover .front{transform: rotateY(0deg);}
   .skill_area .skill_list li:hover .back{display: none;}
   /*About*/
+  .content_about .about_area h3{font-size: 22px;}
   .about_area .about{width: 300px; padding-bottom: 16px;}
   .about_area .about li{padding:8px; font-size: 12px;}
-
   .footer{font-size: 14px;}
 }
