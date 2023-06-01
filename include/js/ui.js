@@ -39,16 +39,16 @@ window.addEventListener('scroll',(e)=>{
   }
   let skillSecTop=skillSec.offsetTop;
   if(scrollPos>skillSecTop-500){
-    for(let i=0; i<skill_items.length; i++){
-      skill_items[i].classList.add('bounce');
-      skill_items[i].style.opacity=1;
+    for(let sklitem of skill_items){
+      sklitem.classList.add('bounce');
+      sklitem.style.opacity=1;
     }
    }
    let aboutSecTop=aboutSec.offsetTop;
    if(scrollPos>aboutSecTop-400){
-      for(let i=0; i<about_items.length; i++){
-        about_items[i].classList.add('bounceInLeft');
-        about_items[i].style.opacity=1;
+      for(let abitem of about_items){
+        abitem.classList.add('bounceInLeft');
+        abitem.style.opacity=1;
       }
    }
    //logo
@@ -57,25 +57,53 @@ window.addEventListener('scroll',(e)=>{
    }else{
     topBox.classList.remove('fixed');
    }
+   //portfolio tab
+   const portfTab=document.querySelectorAll('.portfolio_area .tab_menu li button'),
+         portList=document.querySelectorAll('.portfolio li');
+   for(let pt of portfTab){
+       pt.addEventListener('click', (e)=>{
+          for(let ptEv of portfTab){
+            ptEv.classList.remove('on');
+          }
+          e.currentTarget.classList.add('on');
+          let targetClass=e.currentTarget.getAttribute('data-filter');
+          let filteredList = document.querySelectorAll(`.portfolio li.${targetClass}`);
+          console.log(targetClass);
+          if(targetClass === 'all'){
+            for(let pl of portList){
+              pl.style.display = 'block';
+            }
+          }else{
+            for(let pl of portList){
+              pl.style.display = 'none';
+            }
+            //해당 필터로 클래스명 찾아block
+            for(let fl of filteredList){
+              fl.style.display = 'block';
+            }
+          }
+          
+       });//button
 
+   }
 });
 
-//tab
+//jquery
 $(document).ready(function(){
-  var $tab_li=$('.tab_menu li'),
-  $tab_button=$tab_li.find('button');
+  // var $tab_li=$('.tab_menu li'),
+  // $tab_button=$tab_li.find('button');
   //portfolio tab
-  $tab_button.click(function(){
-    $tab_li.removeClass('on');
-    $(this).parent().addClass('on');
-    var category=$(this).data('category');
-    if (category=="*"){
-      $('.portfolio>li').css('display','block');
-    }else{
-      $('.portfolio>li').css('display','none');
-      $(category).css('display','block')
-    }
-  });
+  // $tab_button.click(function(){
+  //   $tab_li.removeClass('on');
+  //   $(this).parent().addClass('on');
+  //   var category=$(this).data('category');
+  //   if (category=="*"){
+  //     $('.portfolio>li').css('display','block');
+  //   }else{
+  //     $('.portfolio>li').css('display','none');
+  //     $(category).css('display','block')
+  //   }
+  // });
   function progressBar(){
     var wins = $(this).scrollTop();
     var hei = $('.wrap').outerHeight(); //전체 페이지 높이
