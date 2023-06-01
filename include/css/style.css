@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
 :root{--body-font:"맑은고딕",MalgunGothic,sans-serif;
   --primary-color:#eea303;
   --white-color:#fff;
@@ -89,12 +90,15 @@ section h2{padding:40px 20px; color: #111; font-size: 38px; box-sizing: border-b
 .skill_area .skill_list li:hover .back{transform: rotateY(0deg); opacity: 1;}
 .skill_area .skill_list li:hover .back:after{position: absolute; top: -7px; left: -7px; width: 100%; height: 100%; padding: 7px;border-radius: 50%; box-shadow: 0 0 0 4px var(--white-color); content: '';} 
 /*About*/
-.content_about{background:#161717; text-align: center;}
+.content_about{background:#161717; text-align: center; position: relative;}
 .content_about h2{color: var(--white-color); padding-bottom: 40px;}
 .content_about .about_area h3{margin-bottom: 20px; color: var(--white-color); font-size: 1.875rem;}
 .about_area .about{width: 450px; margin:0 auto; padding-bottom: 30px; opacity: 0;}
 .about_area .about .act2{visibility: hidden; animation-delay: 0.2s; animation-name: none}
-.about_area .about li{margin-bottom: 15px; padding:15px; background-color: var(--white-color); border-radius: 50px; font-size:1rem; }
+.about_area .about li{margin-bottom: 15px; padding:15px; background-color: var(--white-color); border-radius: 50px; font-size:1rem;}
+.text_ico_ev{display: flex; position: absolute; bottom: 20px; left: 50%; margin-left: 468px; } 
+.text_ico_ev .txt_ico{display: inline-block; animation: waviy 1.2s infinite both; animation-delay: calc(.1s * var(--i)); font-size: 50px; font-family: 'Rubik Puddles', cursive; text-transform: uppercase; font-weight: 600; font-style: normal; letter-spacing: .3rem; color: var(--primary-color);}
+.text_ico_ev .txt_ico:nth-child(5){margin-right: 16px;}
 /*footer*/
 .footer{height: 116px; padding:40px 0; background: var(--primary-color); color: var(--white-color); text-align: center; box-sizing: border-box;}
 .footer i{display: block; font-size: 12px;}
@@ -113,6 +117,8 @@ section h2{padding:40px 20px; color: #111; font-size: 38px; box-sizing: border-b
   .skill_area .skill_list li>div{margin:0 auto;}
   .skill_area .skill_list li>div span{font-size: 16px;}
   .skill_area .skill_list li .back{left: 27%;}
+  /*about*/
+  .text_ico_ev{display: non;}
   
 }
 /*모바일 size*/
@@ -127,7 +133,6 @@ section h2{padding:40px 20px; color: #111; font-size: 38px; box-sizing: border-b
   .content_header .message_wrap{display: none;}
   .content_header .tit .mb{opacity: 1; transition: all .4s;}
   .header_wrapper{background-position-x: 42%; background-size: 255% 100%;}
-  
    /*Portfolio*/
   .portfolio_area h2{padding:30px 20px}
   .portfolio_area .portfolio{grid-template-columns:repeat(1,1fr); row-gap: 20px;}

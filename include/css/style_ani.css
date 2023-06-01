@@ -12,7 +12,7 @@
   animation-fill-mode: both;
 }
 
-@-webkit-keyframes openclose {
+@keyframes openclose {
   0% {
     top: 0.2rem;
     width: 0;
@@ -70,62 +70,13 @@
     width: 0;
   }
 }
-@keyframes openclose {
-  0% {
-    top: 0.2rem;
-    width: 0;
+@keyframes waviy {
+  0%,40%,100% {
+      transform: translateY(0);
+      opacity: 1;
   }
-  5% {
-    width: 0;
-  }
-  15% {
-    width: 340px;
-  }
-  30% {
-    top: 0.2rem;
-    width: 340px;
-  }
-  33% {
-    top: 0.2rem;
-    width: 0;
-  }
-  38% {
-    top: -120px;
-    width: 0;
-  }
-  48% {
-    width: 425px;
-  }
-  62% {
-    top: -120px;
-    width: 425px;
-  }
-  66% {
-    top: -120px;
-    width: 0;
-    text-indent: 0;
-  }
-  71% {
-    top: -240px;
-    width: 0;
-    text-indent: 5px;
-  }
-  86% {
-    width: 482px;
-  }
-  98% {
-    top: -240px;
-    width: 482px;
-  }
-  99% {
-    text-indent: 5px;
-    top: -240px;
-    width: 0;
-  }
-  100% {
-    text-indent: 0;
-    top: 0;
-    width: 0;
+  20% {
+      transform: translateY(-20px)
   }
 }
 @-webkit-keyframes fadeInUp {
