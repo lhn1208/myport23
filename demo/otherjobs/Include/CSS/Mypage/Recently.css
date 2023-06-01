@@ -1,0 +1,33 @@
+﻿#sub_Recently {font-family:Helvetica,Arial,sans-serif; -webkit-text-size-adjust:none;}
+#sub_Recently .tab_item { margin:0; overflow:hidden; }
+#sub_Recently .tab_item a { float:left; display:block; padding:0; width:50%; font-size:14px; line-height:33px; height:33px; color:#b9b9b9; text-align:center; text-decoration:none; background:url("//img.modetour.com/mobilesite/Common/func_background.png") no-repeat 0 -66px, url("//img.modetour.com/mobilesite/Common/func_background.png") no-repeat 0 -66px, url("//img.modetour.com/mobilesite/Common/func_background.png") repeat-x 0 -172px; overflow:hidden; }
+#sub_Recently .tab_item a.select { color:#3cb02a; background:#1d1d1d url("//img.modetour.com/mobilesite/Common/func_background.png") no-repeat 0 -119px; }
+
+#sub_Recently .package { position:relative; padding:0 5px; }
+#sub_Recently .package .result_list { margin:0; padding:0; list-style-type:none; }
+#sub_Recently .package .result_list li { padding:8px 0; color:#494949; border-bottom:1px solid #ededed; }
+#sub_Recently .package .result_list li p b { font-weight:normal; color:#ff6600; }
+
+#sub_Recently .package .result_list li .noting {padding:100px 0; text-align:center; width:100%; font-weight:bold; color:Red;}
+
+#sub_Recently .package .result_list .title {background-color:#ededed; height:25px;}
+#sub_Recently .package .result_list .title input{margin-top:7px;}
+#sub_Recently .package .result_list .title span{float:right;}
+#sub_Recently .package .result_list .title span a {text-decoration: none; display:inline-block; margin:0; padding:5px 10px;color: #4d4d4d;background-color: #f6f6f6;border: 1px solid #c5c5c5;border-radius: 4px;}
+
+#sub_Recently .package .result_list .title,
+#sub_Recently .package .result_list .item { position:relative; padding:10px 5px; }
+#sub_Recently .package .result_list input[type=checkbox]{ -webkit-appearance:checkbox}
+#sub_Recently .package .result_list .item .checkbox { position:absolute; left:5px; top:40px; }
+#sub_Recently .package .result_list .item .thumb { position:absolute; display:block; left:25px; top:10px;padding:1px; border:solid 1px #000; border-bottom-width:2px;border-right-width:2px; }
+#sub_Recently .package .result_list .item .thumb img {width:83px; height:88px;  }
+#sub_Recently .package .result_list .item .explain { margin:0 0 0 105px; padding:5px; color:#000; height:80px; overflow:hidden; }
+#sub_Recently .package .result_list .item .name { color:#333333; clear:both; margin-bottom:5px;}
+#sub_Recently .package .result_list .item .price b {  color:#333333; font-size:12px; float:left; }
+#sub_Recently .package .result_list .item .price span { float:right; margin-top:-4px; padding:0 0 0 15px; font-weight:bold; color:#0080e3; line-height:22px; background:url("//img.modetour.com/mobilesite/Common/func_background.png") no-repeat 0 -400px; }
+#sub_Recently .package .more { padding:10px 0; font-size:12px; color:#949494; text-align:center; border-bottom:1px solid #ededed; }
+#sub_Recently .package .more span { font-size:14px; color:#494949;  }
+          
+.loading { position:absolute; left:0; top:0; margin:0; width:100%; height:100%; z-index:1000;}
+.loading p { position:relative; background-color:#000; width:100%; height:100%; opacity:0.8; filter:alpha(opacity=80); }
+.loading img { position:absolute; top:50%; left:50%; margin:-16px 0 0 -16px; }

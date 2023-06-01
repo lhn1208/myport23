@@ -1,0 +1,267 @@
+@charset "utf-8";
+/*
+	Copyright Modetour. All Rights Reserved.
+	The following software licensing rules apply:
+	- Name : Modetour Mobile Mypage
+*/
+
+/*180411 mypage 추가*/
+
+.clearfix:after{display: block; clear:both; content: "";}
+
+.section_mypage,.section_infoChange {padding-top: 10px;}
+.section_mypage *{box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+
+.section_mypage .mp_info{background: #049050; padding: 20px 0; text-align: center;  margin-bottom: 10px;}
+.section_mypage .mp_info h2{ font-size: 16px; line-height: 100%; letter-spacing: -0.02em; color: #fff ; padding:0 0 8px ;}
+.section_mypage .mp_info h2 strong{color: #e1f31b; }
+.section_mypage .mp_info p{color: #fff; font-size: 12px;}
+
+.section_mypage .general_ifo{ background: #fff; padding:20px 0px; margin-bottom: 10px; }
+.section_mypage .general_ifo dl{position: relative; display: inline-block; vertical-align: middle; text-align: left; width: 35%;text-align: center; }
+.section_mypage .general_ifo dl:first-child{width: 55%}
+.section_mypage .general_ifo dl:last-child{padding-left: 20px;}
+.section_mypage .general_ifo dl:last-child:after{position: absolute; content: ""; left:0; top:0; background: url('//img.modetour.com/ModeMobile/2018/Mypage/general_bgline.png')repeat-y; width: 1px; height: 100%; -webkit-background-size: 1px 5px; background-size: 1px 5px;}
+.section_mypage .general_ifo dl dt{font-size: 12px; line-height: 20px; color: #2f2f2f; margin-bottom: 6px; }
+.section_mypage .general_ifo dl dd{font-size: 33px; color: #33ad70; letter-spacing: -0.1em;}
+.section_mypage .general_ifo dl dd span{font-size: 12px; color: #2f2f2f; }
+.section_mypage .general_ifo dl dd .ml_ico{display: inline-block; background: url(//img.modetour.com/ModeMobile/2018/Mypage/ml_ico.png) no-repeat; width: 20px; height: 18px; -webkit-background-size: cover; background-size: cover;}
+.section_mypage .general_ifo .mem_agree{display: inline-block; text-align: center; font-size: 12px; text-decoration: none; vertical-align: middle;  background: #0daa63; color: #fff; padding:10px; letter-spacing: -0.1em; border-radius: 2px; -moz-border-radius:2px; -webkit-border-radius:2px;}
+
+
+.section_mypage .mp_box {margin-bottom: 12px;}
+.section_mypage .mp_box h3{color: #808080; font-size: 16px; line-height: 35px; letter-spacing: -0.05em; padding:7px 13px; background: #fff; border-bottom: 1px solid #f0f0f0;}
+.section_mypage .mp_box h3 span{display: inline-block; border: 1px solid #e8e8e8; background: #f0f0f0; font-size:15px; line-height: 20px; border-radius:30px; ; color: #808080; padding:5px  10px; margin-left: 10px; vertical-align: middle; font-weight: bold;}
+
+.section_mypage .mp_box .mem_change{}
+.section_mypage .mp_box .mem_change li{float: left; width: 50%; text-align: center;  border-bottom: none; }
+.section_mypage .mp_box .mem_change li i{display: block; margin:0 auto 5px; }
+.section_mypage .mp_box .mem_change li a{padding:15px 0; line-height: 26px; }
+
+.section_mypage .mp_box .mem_change li:first-child i{background-position: 0 0;}
+.section_mypage .mp_box .mem_change li:first-child{border-right: 1px solid #e8e8e8;}
+.section_mypage .mp_box .mem_change li.ch_pw i{background-position: 0 -24px;}
+.section_mypage .mp_box .mem_change.mem_change_easy {}
+.section_mypage .mp_box .mem_change.mem_change_easy li{width: 100%; text-align: left;padding:0 13px;}
+.section_mypage .mp_box .mem_change.mem_change_easy li i{display: inline-block; margin-right: 10px;}
+
+.section_mypage .mp_box  ul li{position: relative;  background: #fff;  border-bottom: 1px solid #f0f0f0;}
+.section_mypage .mp_box  ul li i{display: inline-block; width: 23px; height: 23px; background: #fff url(//img.modetour.com/ModeMobile/2018/Mypage/myinfo_ico1.png) no-repeat; -webkit-background-size: cover ; background-size: cover ; vertical-align: middle;  }
+.section_mypage .mp_box  ul li a{display: block;line-height: 50px; text-decoration: none; font-size: 14px; font-weight: 600; color: #555; letter-spacing: -0.05em; padding-left: 13px; }
+
+.section_mypage .mp_box .sns_setting i{background-position: 0 -48px;}
+.section_mypage .mp_box  .center_info{padding:10px; background: #fff;}
+.section_mypage .mp_box  .center_info table{width: 100%; table-layout: fixed; }
+.section_mypage .mp_box  .center_info table th, .section_mypage .mp_box  .center_info table td{ font-size: 12px ;border: 1px solid #b6b6b6;}
+.section_mypage .mp_box  .center_info table th{ width: 11%; text-align: center; vertical-align: middle; background: #b6b6b6; color: #fff; }
+.section_mypage .mp_box  .center_info table td{ width: 39%; padding: 10px; word-break: keep-all; color: #555; letter-spacing: -0.1em;}
+
+.section_mypage .mp_box .app_list ul:after{content: ''; clear:both; display: block; }
+.section_mypage .mp_box .app_list{padding:30px 0; background: #fff;}
+.section_mypage .mp_box .app_list ul li{ float: left; width: 25% ;border-bottom: none; height:auto; text-align: center;  background: transparent; margin-bottom: 25px; }
+.section_mypage .mp_box .app_list ul li a{ line-height: 100%;  padding:0;}
+.section_mypage .mp_box .app_list ul li img{width: 70px; }
+.section_mypage .mp_box .app_list ul li span{display: block; font-size: 14px; line-height: 20px; padding:10px 0;}
+
+.onoffswitch { position: absolute; width: 59px; right: 9px; top: 50%; margin-top: -10px; }
+.onoffswitch .switch_inn{position: relative;  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;  width: 100%;}
+.onoffswitch-checkbox { display: none;} 
+.onoffswitch-label { display: block; overflow: hidden; cursor: pointer; border-radius: 20px; height: 16px;} 
+.onoffswitch-inner { display: block; width: 200%; margin-left: -100%; transition: margin 0.3s ease-in 0s; }
+.onoffswitch-inner:before, .onoffswitch-inner:after { /*display: block; */float: left; width: 50%; height: 31px; padding: 0; line-height: 31px;  box-sizing: border-box}
+.onoffswitch-inner:before { content: ""; padding-left: 10px; background-color: #1DA664; }
+.onoffswitch-inner:after { content: ""; padding-right: 10px; background-color: #ddd; } 
+.onoffswitch-switch { position: absolute; /*display: block;*/ width: 30px;  height: 30px; margin: 3px; background: #bebec1; top: -10px; bottom: 0; right: 29px; border-radius: 20px; transition: all 0.3s ease-in 0s; }
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner:before{background: #99d6b7;}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner { margin-left: 0;}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch { right:-3px; background: #049050;}
+
+
+.find_group .form_joinwrap.form_changewrap {}
+.find_group .form_joinwrap.form_changewrap  h3{display: inline-block; }
+.form_joinwrap.form_changewrap .left{display: inline-block; }
+
+.section_mypage .mp_general_info{background: #fff; margin-bottom: 10px;}
+.section_mypage .mp_general_info h3{ position: relative; border-bottom: 1px solid #f0f0f0; font-size: 13px; line-height: 23px;
+    padding: 13px;  color: #808080;}
+.section_mypage .mp_general_info table{table-layout: fixed; width: 100% }
+.section_mypage .mp_general_info table input{height:26px; color: #454545; width: 95%; font-size: 14px; border: 1px solid #e8e8e8;  }
+.section_mypage .mp_general_info table tr{position: relative; border-top: 1px solid #f0f0f0;}
+.section_mypage .mp_general_info table tr:nth-of-type(1){border-top: 0;}
+.section_mypage .mp_general_info table th{position: relative; font-size: 13px; color: #808080; letter-spacing: -0.05em; padding-left: 13px; vertical-align: middle; }
+.section_mypage .mp_general_info table td{position: relative; padding:10px 0; font-size: 14px;}
+.section_mypage .mp_general_info table .email_form input{width: 46%; padding:0 5px;}
+.section_mypage .mp_general_info table .email_form{padding:10px 13px;}
+.section_mypage .mp_general_info table .email_form span{display: inline-block; width: 6%; text-align: center; margin-left: -1px; color: #808080; font-size: 12px; line-height: 26px;}
+
+.section_mypage .mp_general_info .ch_btn{position: absolute;  right:10px; top:50%; margin-top: -14px; height: 28px; line-height: 28px; padding:0 15px; color: #616161;font-size: 12px; border-radius:7px; -webkit-border-radius:7px; border: 1px solid #d6d6d8; text-decoration: none; background: #fff; letter-spacing: -0.05em; }
+
+.section_mypage .mp_general_info table .tell_form{padding:10px 0;}
+.section_mypage .mp_general_info table .tell_form li{float: left; width: 23%; margin-left:5px;  }
+.section_mypage .mp_general_info table .tell_form li:first-child{margin-left: 0;}
+.section_mypage .mp_general_info table .tell_form label.selectbox { position:relative; display:block; overflow:hidden;height:26px;font-size:12px;;border:1px solid #ededed; 5px; width: 100%; }
+.section_mypage .mp_general_info table .tell_form label.selectbox:after { display:block; position:absolute; top:50%; right:11px; margin-top: -3px; width:9px; height:6px; background:url("//img.modetour.com/ModeMobile/2018/mypage/select_ico.png") no-repeat ; content:""; -webkit-background-size: cover; background-size: cover;}
+.section_mypage .mp_general_info table .tell_form label.selectbox select{ position:absolute; top:50%; margin-top: -13px; left:0; padding-left:5px; width:100%; height:26px; outline:0; border:0 none;  color:#808080; background: #e8e8e8;}
+.section_mypage .mp_general_info table .tell_form label.selectbox select.option_gender{background-color:#e6e6e6;}
+.section_mypage .mp_general_info table .tell_form input{width: 100%; padding:0 5px;}
+
+.section_mypage .mp_general_info .bdn{border:none;}
+
+.section_mypage .mp_general_info table .name_ch th{background: #f0f0f0; padding:20px 13px; min-height:80px;}
+.section_mypage .mp_general_info table .name_ch th p{padding-right: 38%; font-size: 12px; line-height:19px; ;}
+.section_mypage .mp_general_info table .name_ch th a{position: absolute; width: 32%; right:13px; top:50%; margin-top: -36px; border: 1px solid #e8e8e8;  background: #fff; border-radius: 5px; -moz-border-radius:5px; -webkit-border-radius:5px; text-align: center; font-size: 12px; color: #808080; letter-spacing: -0.025em; text-decoration: none; padding:5px 0 10px;}
+.section_mypage .mp_general_info table .name_ch th a i{ position: relative; display: block; background: url(//img.modetour.com/ModeMobile/2014/icon/ico_certifi_id.png) no-repeat; background-size: 40px auto; width: 40px; height: 38px;background-position: 0 -54px; margin:0 auto;}
+
+.section_mypage .mp_general_info table .id_make th{padding:8px 13px ;}
+.section_mypage .mp_general_info table .id_make th a{ display: block; width: 100%; height: 32px; line-height: 30px; border: 1px solid #e8e8e8; text-align: center; font-size: 12px; color: #808080; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;  text-decoration: none;}
+
+.section_mypage .mp_general_info .get_list li{border-top: 1px solid #f0f0f0; padding:10px 0;}
+.section_mypage .mp_general_info .get_list li:first-child{border-top: none;}
+.section_mypage .mp_general_info .get_list li dl{padding:0 13px;}
+.section_mypage .mp_general_info .get_list li dl dt{display: inline-block;width: 40%; color: #454545; font-size: 13px;}
+.section_mypage .mp_general_info .get_list li dl dd{position: relative; display: inline-block;width: 25%;}
+.section_mypage .mp_general_info .rd_box label { position:relative; display:inline-block; height:17px;font-size:12px;color:#2f2f2f; text-align:left; line-height:17px; } 
+.section_mypage .mp_general_info .rd_box label:before { display:inline-block; margin-right:8px; width:17px; height:17px; background:url("//img.modetour.com/ModeMobile/2018/mypage/radio_ico.png") no-repeat 0 0px; background-size:17px auto; content:""; vertical-align:top; } 
+.section_mypage .mp_general_info .rd_box input[type="radio"]:checked + label:before { background-position:0 -17px; }
+
+.section_mypage .mp_general_info .get_list li.add_box{padding:10px 13px;}
+.section_mypage .mp_general_info .add_box .add_top {position: relative; border: 1px solid #e8e8e8; margin-bottom: 10px;}
+.section_mypage .mp_general_info .add_box .add_top input{height: 36px; font-size: 12px; color:#808080; border: none; }
+.section_mypage .mp_general_info .add_box .add_top .post_w1{width: 14%; padding:0 7px; text-align: center; }
+.section_mypage .mp_general_info .add_box .add_top .post_w2{margin-left: -6px; width:64%;}
+.section_mypage .mp_general_info .add_box .add_top .find_btn{position: absolute; font-size: 12px; top:-1px; right:-1px; background: #0daa63; color: #fff; padding:5px  10px ; line-height: 29px; text-decoration: none; }
+.section_mypage .mp_general_info .add_box input{width: 100%; height: 36px; padding:5px 10px; border: 1px solid #e8e8e8;}
+
+.section_mypage .partner_content {position: relative; padding:0 13px 10px; }
+.section_mypage .partner_content h2{font-size: 13px; color: #454545;  line-height: 42px;}
+.section_mypage .partner_content .partnerS_btn{ position: absolute;right: 13px ;top: 0; padding: 0 18px; height: 38px;line-height: 38px;  text-decoration: none; background: url(//img.modetour.com/ModeMobile/2014/icon/bg_nonlogin_member.png) repeat-x;  color: #fff;  font-size: 0.75em;  border: 1px solid #868687;   border-radius: 5px;  text-align: center;  box-shadow: 1px 1px 0 0 #c6c6c6;  -moz-box-shadow: 1px 1px 0 0 #c6c6c6;  -webkit-box-shadow: 1px 1px 0 0 #c6c6c6;}
+.section_mypage .partner_content .partner_wrap{position: relative; }
+.section_mypage .partner_content .partnerTxt{ background: url(//img.modetour.com/ModeMobile/2018/mypage/point_ico.png) no-repeat 0 7px;  color: #808080; background-size: 18px; padding: 6px 0 0 21px; font-size: 12px; text-align: justify; letter-spacing: -0.05em; line-height: 22px;}
+
+.section_mypage .partner_content .partner_wrap{}
+.section_mypage .partner_content .partner_wrap.partner_info{position: relative; width: 100%; background: #fff;margin-top: 10px; padding:10px;}
+.section_mypage .partner_content .partner_wrap.partner_info dl{position: relative;  margin-top: 15px; }
+.section_mypage .partner_content .partner_wrap.partner_info dl:nth-of-type(1){margin-top: 0;}
+.section_mypage .partner_content .partner_wrap.partner_info dt { position: absolute; left: 0; top: -2px; font-size: 13px; font-weight: bold;  color: #2f2f2f; letter-spacing: -0.05em;}
+.section_mypage .partner_content .partner_wrap.partner_info dd{ padding-left: 65px; font-size: 13px; color: #2f2f2f;  line-height: 16px;  letter-spacing: -0.05em;}
+.section_mypage .partner_content .partnerS_btn.typeL_btn{right:80px;}
+
+.section_mypage .btn_go{  display: block; margin: 13px; background: #33ad70; color: #fff;  font-size: 16px;  text-align: center;
+    line-height: 47px; text-decoration: none;}  
+
+/*파트너 여행사 팝업*/
+.layer-popup-section{position:relative;z-index:90;background-color:#fff;}
+.find-partner.layer-popup-section a{text-decoration: none;}
+.layer-popup-section h2.h{position:relative;padding:10px 20px;height:20px;font-size:16px;line-height:20px;color:#fff;background-color:#4c4c4c;}
+.layer-popup-section h2.h .btn-close{position:absolute;top:50%;right:10px;margin-top:-6px;padding:0;width:11px;height:11px;text-indent:-9999em;overflow:hidden;background:url(//img.modetour.com/ModeMobile/2015/localtour/pop_close.png) 0px 0 no-repeat;background-size:10px 10px;}
+.find-partner.layer-popup-section .popup>.l-default{padding: 20px 15px 0 15px;
+    color: #2b2a2a; background: #f0f0f0; }
+
+.find-partner.layer-popup-section .tab-cont .section{display: none;}
+.find-partner.layer-popup-section .tab-cont .section:first-child{display: block;}
+.find-partner.layer-popup-section .tab-list a{float:left;position:relative;margin-left:2%;padding:13px 0;width:49%;font-size:14px;color:#888;line-height:14px;letter-spacing:-.5px;text-align:center;background-color:#f7f7f9;border:1px solid #d3d1d1;border-radius:3px 3px 0 0;    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;    }
+.find-partner.layer-popup-section .tab-list a:first-child{margin-left:0;}
+.find-partner.layer-popup-section .tab-list .is-current { color: #222; font-weight: 600;
+    background-color: #fff; border-bottom-color: #fff; z-index: 1;}
+.find-partner.layer-popup-section .tab-cont{    margin-top: -1px; /*padding: 20px 15px 35px;*/ border-top: 1px solid #d3d1d1;}
+.find-partner.layer-popup-section .search-box{padding: 20px 15px 15px;}
+.find-partner.layer-popup-section .search-box >ul{margin-bottom:20px ;}
+.find-partner.layer-popup-section .search-box >ul>li{float: left; width: 50%; overflow: hidden;}
+.find-partner.layer-popup-section label.selectbox{position: relative; display: block;width: 90%; margin:0 auto; height: 30px; line-height: 30px; font-size: 12px; border: 1px solid #dbd9d9; border-radius:5px;}
+.find-partner.layer-popup-section label.selectbox select{position: absolute; top: 0;left: 0;  padding-left: 5px;  width: 100%;  height: 30px;  outline: 0;   border: 0 none; border-radius: 5px;   color: #282828;}	    
+.find-partner.layer-popup-section label.selectbox:after{ position: absolute; top: 12px; right: 11px; width: 9px;  height: 5px; background: url(//img.modetour.com/ModeMobile/2014/icon/ico_customer.png) no-repeat 0 -36px;
+    background-size: 20px auto; display: block; content: "";}
+.find-partner.layer-popup-section .search-box .btn-sch { width: 50%; margin:0 auto;}
+.find-partner.layer-popup-section select::-ms-expand { display: none; } 
+.find-partner.layer-popup-section .search-box .btn-sch a {  display: block; padding: 9px 0 8px;   font-size: 14px;  color: #fff;  text-align: center;   background-color: #33ad70; font-weight: bold; border: 1px solid #2a9e64; border-radius:5px; } 
+
+.find-partner.layer-popup-section .search-box .input{display: block; font-size: 12px; width: 96%; border: 1px solid #dbd9d9; border-radius: 5px; height: 32px; vertical-align: middle;    box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; padding-left: 15px; margin:0 auto 20px; }
+
+.find-partner.layer-popup-section .l-default {background-color: #f0f0f0; border-top: 1px solid #d3d1d1; }
+.find-partner .l-default .addr-section ul li {position: relative; font-size: 17px; box-sizing: border-box; width: 100%; padding:15px 5px ; border-bottom: 1px solid #efefef;}
+.find-partner .l-default .addr-section ul li:last-child{border-bottom: none;}
+.find-partner .l-default .addr-section ul li p{width: 70%; font-size: 13px; line-height: 30px;}
+.find-partner .l-default .addr-section ul li p.office_name{color: #167746; letter-spacing: -0.05em;}
+.find-partner .l-default .addr-section ul li p.office_addr{ color: #2f2f2f; line-height: 18px; letter-spacing: -0.05em; }
+.find-partner .l-default .addr-section ul li p.office_tel{}
+.find-partner .l-default .addr-section .ch_btn{position: absolute; width: 25%; line-height: 40px; text-align: center; color: #fff; font-size: 12px; background: url(//img.modetour.com/ModeMobile/2014/icon/bg_nonlogin_member.png) repeat-x; border: 1px solid #868687;border-radius: 5px;  text-align: center; box-shadow: 1px 1px 0 0 #c6c6c6; -moz-box-shadow: 1px 1px 0 0 #c6c6c6; -webkit-box-shadow: 1px 1px 0 0 #c6c6c6; right:5px; top:50%; margin-top: -21px;}
+.find-partner.layer-popup-section .no-data{background-color: #fff;}
+.find-partner.layer-popup-section .no-data b{display: block; font-size: 13px; font-weight: 600; color: #2f2f2f; margin-bottom: 10px; text-align: center;padding: 35px 4%; line-height: 26px;letter-spacing: -0.05em;}
+.layer-popup-section .desc{font-size: 13px; font-weight: 600; color: #393939; line-height: 35px; letter-spacing:-0.05em; border-bottom: 1px solid #d3d1d1;}
+.l-default { color: #2b2a2a;  }
+.l-default p.desc{background: #f0f0f0; padding-left: 15px; }
+.l-default .addr-section{padding: 5px 15px 20px;    width: 100%; box-sizing: border-box; background-color: #fff;}
+
+@media only all and (max-width:320px){
+.container.find-partner.layer-popup-section .search-box input[type="text"]{font-size:12px;}
+.find-partner.layer-popup-section .ticket-receive .post p.desc,.find-partner.layer-popup-section .tab-cont .section>.l-default,
+	.find-partner.layer-popup-section .tab-cont .section>.l-default span{font-size:12px!important;}
+.find-partner .l-default .addr-section ul li {padding:10px 5px;}
+}
+
+.layer-popup-section.mk-popup-section{background: #f0f0f0;}
+.mk-popup-section .make_pop{margin-top:10px; padding-bottom:10px;}
+.mk-popup-section .make_pop ul{background: #fff; margin-bottom: 10px;}
+.mk-popup-section .make_pop ul li{position: relative; padding:5px 13px; border-bottom: 1px solid #f0f0f0;}
+.mk-popup-section .make_pop ul li input{width:92%; height: 22px; padding:5px 10px; border: none; font-size: 12px;}
+.mk-popup-section .make_pop ul li.user_id{ }
+.mk-popup-section .make_pop ul li.user_id input{width:66%}
+.mk-popup-section .make_pop ul li.user_id a{position: absolute; padding:5px 10px; border: 1px solid #33ad70; font-size: 12px; color: #33ad70; text-align: center; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-decoration: none; right:13px; top:50%; margin-top: -14px;}
+.mk-popup-section .make_pop li.on .del_ico{ position: absolute; background: url(//img.modetour.com/ModeMobile/2018/mypage/login_del.png) no-repeat; width: 22px; height: 22px; -webkit-background-size: cover; background-size: cover;  right:25px; top:50%; margin-top: -11px;}
+.mk-popup-section .make_pop li.user_id.on .del_ico{right:0; left:62%;}
+
+.mk-popup-section .make_pop .makeTxt{font-size: 12px; color: #ed4949; line-height: 16px;padding:0 13px 0 38px; background: url(//img.modetour.com/ModeMobile/2018/mypage/point_ico1.png) no-repeat 13px 2px; background-size: 18px; text-align: justify; letter-spacing: -0.05em; line-height: 22px;}
+
+.mk-popup-section .make_pop .btn_go{  display: block; margin: 13px; background: #33ad70; color: #fff;  font-size: 16px;  text-align: center; line-height: 47px; text-decoration: none;}  
+
+body>i.dim{display:none;position:fixed;top:0;right:0;bottom:0;left:0;background-color:#000;opacity:.5;filter:alpha(opacity=50);z-index:90;}
+
+/* 190220 거주지역 추가 */
+
+.section_mypage .mp_general_info .loc_select{width:100%;  color:#454545; border:none; background: url(//img.modetour.com/modemobile/2018/mypage/join_select_arrow.png) no-repeat; background-size: 17px auto; background-position: 90% center;}
+.section_mypage .mp_general_info .period_box h3{padding:0 13px 10px 13px; color: #454545; }
+
+.section_mypage .mp_general_info .period_box ul li{ position:relative; float: left; width: 20%; border-top: none;}
+.section_mypage .mp_general_info .period_box ul li:last-child{width: 39%;}
+.section_mypage .mp_general_info .period_box ul{padding:0 13px;}
+.section_mypage .mp_general_info .period_box p{ font-size: 12px; color: #808080; padding: 0 13px; padding-bottom: 10px;}
+
+/* 190222 마이페이지내 모두페이 관리 추가 */
+
+.section_mypage .mp_box.mp_box_st1{position: relative;}
+.section_mypage .mp_box.mp_box_st1 h3{ color: #212121; font-size: 17px; font-weight: 600;}
+.section_mypage .mp_box.mp_box_st1 .contect_btn{ position: absolute; width: 10px; height: 16px; background: url(//img.modetour.com/modemobile/2018/mypage/mypage_next.png); background-size: cover; right:4%; top:50%; margin-top: -8px;;}
+
+.section_mypage .mp_general_info .period_box ul li input{ position:absolute; left:0; top:0; width: 0; height: 0; font-size: 0; line-height: 0; visibility:hidden; overflow:hidden;  }
+
+.section_mypage .mp_general_info .gend_select{width:80%;  color:#454545; border:none; background: url(//img.modetour.com/modemobile/2018/mypage/join_select_arrow.png) no-repeat; background-size: 17px auto; background-position: 90% center;}
+
+/* 190522 회원 고도화 작업 추가 */
+label.selectbox_1{display: block;margin: 0 auto;height: 38px;line-height: 30px;font-size: 12px;position: relative;border: 1px solid #e8e8e8;margin-bottom: 10px;}
+label.selectbox_1 select{position: absolute;top: 0;left: 0;padding-left: 5px;width: 100%;outline: 0;border-radius: 5px;height: 36px;font-size: 12px;color: #808080;border: none;background-color: #fff;}	
+label.selectbox_1:after{ position: absolute; top: 12px; right: 11px; width: 9px;  height: 5px; background: url(//img.modetour.com/ModeMobile/2014/icon/ico_customer.png) no-repeat 0 -36px;
+background-size: 20px auto; display: block; content: "";}
+.section_mypage .mp_general_info #country_no_li{display: none;padding: 10px 13px;}
+.section_mypage .mp_general_infochk .get_list li{border-top:0; padding:10px 0;}
+.section_mypage .mp_general_infochk h3{ position: relative; border-bottom: 0px solid; font-size: 13px; line-height: 23px;padding: 13px;  color: #808080;}
+.section_mypage .mp_general_infochk .get_list{ border-top: 1px solid #f0f0f0;}  
+.section_mypage .mp_general_infochk  .get_list li div ul li{padding: 3px 10px 3px 10px;}
+.mypage_infochk .btn_se, .btn_ho{display: block; margin: 13px; background: #33ad70; color: #fff;  font-size: 16px;  text-align: center;line-height: 47px; text-decoration: none;}  
+.mypage_infochk .certifi_btn{margin-top: 15px;text-align: center;}  
+.mypage_infochk .certifi_btn > a.btn_certi_cancel{width: 40%;padding-right: 5px;} 
+.mypage_infochk .certifi_btn > a {display: inline-block;text-align: center;text-decoration: none;font-size: 12px;color: #fff;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-o-box-sizing: border-box;
+box-sizing: border-box;}
+
+.mypage_infochk .certifi_btn > a.btn_certi_cancel span {background-color: #b1b1b1;}
+.mypage_infochk .certifi_btn > a span {display: block; width: 100%;height: 42px;line-height: 42px;}
+.mypage_infochk .certifi_btn > a.btn_certi_next span{background-color: #33ad70;}
+.mypage_infochk .certifi_btn > a.btn_certi_next {width: 55%;padding-left: 5px;}
+.mypage_infochk .get_list .period_box .clearfix{padding: 0 13px 10px;}
+
+.infochk_pop{position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: none;}
+.infochk_pop.is-active{display: block;}
+.infochk_pop .in{width:100%; margin: 30% auto 0; text-align: center; z-index:1000; position: relative;}
+.infochk_pop .in img{width: 100%; max-width: 320px;}
+.infochk_pop .in a.go_web{font-size: 14px; color: #FFF;}
