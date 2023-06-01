@@ -30,7 +30,6 @@ for(let i=0; i<textItems.length; i++){
   vh=i;
   textItems[i].style.setProperty('--vh', `${vh}`);
 }
-//jquery
 window.addEventListener('scroll',(e)=>{
   e.preventDefault();
   scrollPos=docElement.scrollTop; //스크롤 양
