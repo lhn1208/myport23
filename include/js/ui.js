@@ -67,7 +67,7 @@ window.addEventListener('scroll',(e)=>{
           e.currentTarget.classList.add('on');
           let targetClass=e.currentTarget.getAttribute('data-filter');
           let filteredList = document.querySelectorAll(`.portfolio li.${targetClass}`);
-          console.log(targetClass);
+          // console.log(targetClass);
           if(targetClass === 'all'){
             for(let pl of portList){
               pl.style.display = 'block';
