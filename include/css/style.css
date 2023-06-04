@@ -70,7 +70,7 @@ section h2{padding:var(--content-pd) 20px; color: #111; font-size: 38px; box-siz
 .portfolio .more_detail li:nth-child(2){text-transform: uppercase;}
 .portfolio>li:hover .img{transform:translate3d(0,-20px,0);}
 .portfolio>li:hover .more_detail h3:after{width: 100%;}
-.portfolio .demo{display: inline-block; width: 100px; height: var(--content-pd); margin-top: 10px; padding:8px 0; background-color: var(--primary-color); color: var(--white-color); border-radius: 10px; box-sizing: border-box;}
+.portfolio .demo{display: inline-block; width: 100px; margin:0 auto; height: var(--content-pd); margin-top: 10px; padding:8px 0; background-color: var(--primary-color); color: var(--white-color); border-radius: 10px; box-sizing: border-box; text-align: center;}
 .portfolio .real{display: inline-block; width: 100px; height: var(--content-pd); margin-top: 10px; padding:8px 0; background-color: #2979ff; color: var(--white-color); border-radius: 10px; box-sizing: border-box;}
 /*skill*/
 .content_skill{position: relative; padding-bottom: 2.5rem; background: linear-gradient( to top, #5e1530, #152944 );}
