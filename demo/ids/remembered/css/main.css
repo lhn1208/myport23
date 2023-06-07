@@ -12,13 +12,16 @@
     background-size: 100%;
   }
   .main_content .swiper-slide .img_area {
-    display: inline-block;
+    display: block;
     width: 100%;
     overflow: hidden;
+    position: relative;
   }
+
   .main_content .swiper-slide img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
   .main_top {
     width: 1920px;
@@ -414,7 +417,14 @@
     content: none;
   }
   .main_content .memorial_section .memorial_slide .img_area:before {
-    content: none;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right:0;
+      background:rgba(0, 0, 0, 0.2);
   }
   .main_content .memorial_section .memorial_slide .swiper-slide-active .img_area:after {
     content: none;
