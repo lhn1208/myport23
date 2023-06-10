@@ -58,7 +58,7 @@ window.addEventListener('scroll',(e)=>{
    }
    //portfolio tab
    const portfTab=document.querySelectorAll('.portfolio_area .tab_menu li button'),
-         portList=document.querySelectorAll('.portfolio li');
+         portList=document.querySelectorAll('.portfolio>li');
    for(let pt of portfTab){
        pt.addEventListener('click', (e)=>{
           for(let ptEv of portfTab){
@@ -66,7 +66,7 @@ window.addEventListener('scroll',(e)=>{
           }
           e.currentTarget.classList.add('on');
           let targetClass=e.currentTarget.getAttribute('data-filter');
-          let filteredList = document.querySelectorAll(`.portfolio li.${targetClass}`);
+          let filteredList = document.querySelectorAll(`.portfolio>li.${targetClass}`);
           // console.log(targetClass);
           if(targetClass === 'all'){
             for(let pl of portList){

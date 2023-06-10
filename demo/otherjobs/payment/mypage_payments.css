@@ -2647,16 +2647,16 @@ html.ly-fixed, body.ly-fixed{
 }
 
 .account_management_wrap {
-  height: 100%;
+  height: 100vh;
 }
 
 .account_management_wrap *{
   font-family: 'Malgun Gothic',"Apple SD Gothic Neo",Helvetica,'돋움', 'Dotum', Arial,sans-serif;
 }
 
-.h100{
-  height:100%;
-}
+/* .h100{
+  height:100vh;
+} */
 
 /* 현금영수증관련 신청관련 */
 
