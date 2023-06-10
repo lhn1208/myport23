@@ -24,12 +24,12 @@ bottom_bt.addEventListener('click',(e)=>{
   window.scrollTo({left:0, top:0, behavior:"smooth"})
 });
 //about animation
-const textItems=document.querySelectorAll('.text_ico_ev i');
-let vh;
-for(let i=0; i<textItems.length; i++){
-  vh=i;
-  textItems[i].style.setProperty('--vh', `${vh}`);
-}
+// const textItems=document.querySelectorAll('.text_ico_ev i');
+// let vh;
+// for(let i=0; i<textItems.length; i++){
+//   vh=i;
+//   textItems[i].style.setProperty('--vh', `${vh}`);
+// }
 window.addEventListener('scroll',(e)=>{
   e.preventDefault();
   scrollPos=docElement.scrollTop; //스크롤 양
