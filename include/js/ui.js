@@ -1,4 +1,4 @@
-
+window.onload=function(){ 
 const docElement=document.documentElement,
       skipContent = document.querySelector('.quick_link'),
       mainContent=document.querySelector('#main'),
@@ -153,3 +153,4 @@ $(document).ready(function(){
 
   
 })
+}
