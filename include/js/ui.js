@@ -4,21 +4,76 @@ const docElement=document.documentElement,
       mainContent=document.querySelector('#main'),
       portfolioSec=document.querySelector('.portfolio'),
       skillSec=document.querySelector('.content_skill'),
-      skill_items=skillSec.querySelectorAll('.skill_list li .front'),
       aboutSec=document.querySelector('.content_about'),
       about_items=aboutSec.querySelectorAll('.about'),
       bottom_bt=document.querySelector('.bt_top'),
       topBox=document.querySelector('.top_fix'),
       topBoxHeight=topBox.offsetHeight;
-let scrollPos, 
-    mainContentOST = mainContent.offsetTop-100;
+      let scrollPos, 
+      mainContentOST = mainContent.offsetTop-100;
+
+const skill_items=skillSec.querySelectorAll('.skill_list li .front');
+let skillSecTop=skillSec.offsetTop, aboutSecTop=aboutSec.offsetTop;
+class scrollEv{
+  constructor(opt_scrollPos, opt_contTop, calc_num, evItems, opt_ev){
+    this.opt_scrollPos=opt_scrollPos;
+    this.opt_contTop=opt_contTop; // 요소 각 cont값
+    this.clac_num=calc_num;
+    this.evItems=evItems;
+    this.opt_ev=opt_ev;
+  }
+  getEv(){
+    if(this.opt_scrollPos > this.opt_contTop - this.clac_num){
+      for(let items of this.evItems){ 
+          items.style.opacity=1;
+          items.classList.add(this.opt_ev);
+      }
+    }
+  }
+  
+} 
+function sectScrollEv(){
+  scrollPos=docElement.scrollTop; //스크롤 양
+
+  const skillScrollev = new scrollEv(scrollPos, skillSecTop, 500, skill_items, 'bounce');
+  const aboutScrollev = new scrollEv(scrollPos, aboutSecTop, 400, about_items, 'bounceInLeft');
+  skillScrollev.getEv();
+  aboutScrollev.getEv();
+
+  //portfolio 
+  class portfolioEv extends scrollEv{
+    getEv(){
+      if(this.opt_scrollPos > this.opt_contTop - this.clac_num){
+          this.evItems.classList.add(this.opt_ev);
+      }
+    }
+  }
+  const portScrollev = new portfolioEv(scrollPos, mainContentOST, 300, portfolioSec, 'fadeInUp');
+  portScrollev.getEv();
+  // console.log(`scrollpos--> ${scrollev.opt_scrollPos}`);
+
+  // if(scrollPos>mainContentOST-300){
+  //  portfolioSec.classList.add('fadeInUp');
+  // }/*portfolio */
+  // if(scrollPos>skillSecTop-500){
+  //   for(let sklitem of skill_items){
+  //     sklitem.classList.add('bounce');
+  //     sklitem.style.opacity=1;
+  //   }
+  //  }
+  //  if(scrollPos>aboutSecTop-400){
+  //     for(let abitem of about_items){
+  //       abitem.classList.add('bounceInLeft');
+  //       abitem.style.opacity=1;
+  //     }
+  //  }
+}
 
 
 skipContent.addEventListener('click',(e)=>{
   e.preventDefault();
   window.scrollTo({left:0, top:mainContentOST, behavior:"smooth"})
 });
-
 bottom_bt.addEventListener('click',(e)=>{
   e.preventDefault();
   window.scrollTo({left:0, top:0, behavior:"smooth"})
@@ -30,26 +85,10 @@ bottom_bt.addEventListener('click',(e)=>{
 //   vh=i;
 //   textItems[i].style.setProperty('--vh', `${vh}`);
 // }
+
 window.addEventListener('scroll',(e)=>{
   e.preventDefault();
-  scrollPos=docElement.scrollTop; //스크롤 양
-  if(scrollPos>mainContentOST-300){
-   portfolioSec.classList.add('fadeInUp');
-  }
-  let skillSecTop=skillSec.offsetTop;
-  if(scrollPos>skillSecTop-500){
-    for(let sklitem of skill_items){
-      sklitem.classList.add('bounce');
-      sklitem.style.opacity=1;
-    }
-   }
-   let aboutSecTop=aboutSec.offsetTop;
-   if(scrollPos>aboutSecTop-400){
-      for(let abitem of about_items){
-        abitem.classList.add('bounceInLeft');
-        abitem.style.opacity=1;
-      }
-   }
+   sectScrollEv();
    //logo
    if(scrollPos>0){
     topBox.classList.add('fixed');
