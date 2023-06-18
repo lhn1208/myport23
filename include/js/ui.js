@@ -23,7 +23,9 @@ class scrollEv{
     this.opt_ev=opt_ev;
   }
   getEv(){
-    if(this.opt_scrollPos > this.opt_contTop - this.clac_num){
+    // console.log('-->',typeof this.opt_contTop, typeof this.clac_num);
+    // console.log('-->', this.opt_contTop -  this.clac_num);
+    if(this.opt_scrollPos > this.opt_contTop -  this.clac_num){
       for(let items of this.evItems){ 
           items.style.opacity=1;
           items.classList.add(this.opt_ev);
@@ -34,9 +36,10 @@ class scrollEv{
 } 
 function sectScrollEv(){
   scrollPos=docElement.scrollTop; //스크롤 양
+  // console.log(`scrollpos--> ${scrollPos}`);
 
-  const skillScrollev = new scrollEv(scrollPos, skillSecTop, 500, skill_items, 'bounce');
-  const aboutScrollev = new scrollEv(scrollPos, aboutSecTop, 400, about_items, 'bounceInLeft');
+  const skillScrollev = new scrollEv(scrollPos, skillSecTop, 780, skill_items, 'bounce');
+  const aboutScrollev = new scrollEv(scrollPos, aboutSecTop, 800, about_items, 'bounceInLeft');
   skillScrollev.getEv();
   aboutScrollev.getEv();
 
@@ -50,7 +53,6 @@ function sectScrollEv(){
   }
   const portScrollev = new portfolioEv(scrollPos, mainContentOST, 300, portfolioSec, 'fadeInUp');
   portScrollev.getEv();
-  // console.log(`scrollpos--> ${scrollev.opt_scrollPos}`);
 
   // if(scrollPos>mainContentOST-300){
   //  portfolioSec.classList.add('fadeInUp');
