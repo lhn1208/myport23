@@ -39,7 +39,7 @@ function sectScrollEv(){
   // console.log(`scrollpos--> ${scrollPos}`);
 
   const skillScrollev = new scrollEv(scrollPos, skillSecTop, 780, skill_items, 'bounce');
-  const aboutScrollev = new scrollEv(scrollPos, aboutSecTop, 800, about_items, 'bounceInLeft');
+  const aboutScrollev = new scrollEv(scrollPos, aboutSecTop, 700, about_items, 'bounceInLeft');
   skillScrollev.getEv();
   aboutScrollev.getEv();
 
