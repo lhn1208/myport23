@@ -47,7 +47,7 @@ window.onload=function(){
     
     // portfolio section
     const portfolioSecTop = portfolioSec.offsetTop;
-    if (scrollPos > portfolioSecTop - 300) {
+    if (scrollPos > portfolioSecTop - 400) {
       portfolioSec.classList.add('fadeInUp');
     }
     
