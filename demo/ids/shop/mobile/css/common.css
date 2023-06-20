@@ -181,6 +181,8 @@ button.rounded.orange {border-color:#ff4e00;color:#ff4e00;}
 /* 상품 갯수 조절 */
 .ctl_prod{float:left;width:108px;margin-top:2px}
 .ctl_prod .inp_num{float:left}
+.ctl_prod .inp_num::-webkit-inner-spin-button,
+.ctl_prod .inp_num::-webkit-outer-spin-button{-webkit-appearance: none; /* Clear default arrow */}
 .ctl_prod button{float:left;position:relative;width:25px;height:25px;border:1px solid #dfdfdf;border-radius:25px}
 .ctl_prod .inner_btn{display:block;overflow:hidden;width:11px;height:1px;margin:0 auto;background-color:#000;text-indent:-9999px}
 .ctl_prod .btn_plus .inner_btn:after{position:absolute;top:6px;left:11px;width:1px;height:11px;background-color:#000;content:''}
