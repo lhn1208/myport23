@@ -57,7 +57,7 @@ window.onload=function(){
     
     // about section
     const aboutSecTop = aboutSec.offsetTop;
-    addAnimationOnScroll(about_items, aboutSecTop, 'bounceInLeft');
+    addAnimationOnScroll(about_items, aboutSecTop, 'fadeInUp');
     
      //logo
      if(scrollPos>0){
