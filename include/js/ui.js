@@ -156,7 +156,7 @@ window.onload=function(){
       }, 800);
     })
     $(window).scroll(function(){
-      progressBar();
+      // progressBar();
       quick();
     });
   
