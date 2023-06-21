@@ -56,8 +56,8 @@ window.onload=function(){
     addAnimationOnScroll(skill_items, skillSecTop, 'bounce');
     
     // about section
-    const aboutSecTop = aboutSec.offsetTop;
-    addAnimationOnScroll(about_items, aboutSecTop, 'fadeInUp');
+    // const aboutSecTop = aboutSec.offsetTop;
+    // addAnimationOnScroll(about_items, aboutSecTop, 'fadeInUp');
     
      //logo
      if(scrollPos>0){
@@ -156,7 +156,7 @@ window.onload=function(){
       }, 800);
     })
     $(window).scroll(function(){
-      // progressBar();
+      progressBar();
       quick();
     });
   
