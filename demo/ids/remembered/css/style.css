@@ -322,8 +322,11 @@ text-indent: -9999px;}
 
   /*login popup[e]*/
 /* 서비스 [e] */
+@media all and (max-width:1440px){
+*{transition: all .4s ease;}
+.content_wrap .content_inner{width: 96vw; margin:0 auto}
+}
 @media all and (max-width:1024px){
-  .content_wrap .content_inner{width: 96%; margin:0 auto;} 
   /*조회[s]*/
   .inquiry_content .top_content{display: block;}
   .inquiry_content .top_content .left{margin-bottom: 20px;}

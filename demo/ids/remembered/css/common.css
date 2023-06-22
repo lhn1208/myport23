@@ -65,7 +65,7 @@ textarea{resize: none;}
 #memorialCanvas header.is-fixed .toggle_gnb:after, #memorialCanvas header.is-fixed .toggle_gnb:before{background-color: #203c82;}
 /*menu is-active*/
 #memorialCanvas header .nav-bg{position: fixed; top:0; left: 0; width: 100%; height: 0; transition: all .2s ease; background: #a2b1d9; z-index: 180;}
-#memorialCanvas header.is-active h1 a{background-image: url("../images/main/logo.png");}
+#memorialCanvas header.is-active.is-fixed h1 a{background-image: url("../images/main/logo_on.png");}
 #memorialCanvas header.is-active .nav-bg{height: 330px; opacity: 1;}
 #memorialCanvas header.is-active .nav>ul li a, #memorialCanvas header.is-active .user-profile ul li a{color: #fff;}
 #memorialCanvas header.is-active .nav .link_mylife{display: block; position: absolute; top:10px;right: 120px; color: #fff;}
@@ -78,7 +78,7 @@ textarea{resize: none;}
   .d-md-none{display: none;}
   .btn.m-btn{height:40px; padding: 0 20px; line-height: 40px; font-size: 14px !important;}
   #memorialCanvas .contents_width{width: 100%;}
-  #memorialCanvas header .nav-bg{left: auto; right: -100%; width: 100%;height: 100% !important; background-color: #fff;}
+  #memorialCanvas header .nav-bg{left: auto; right: -100%; width: 50%;height: 100% !important; background-color: #fff;}
   #memorialCanvas header .nav{position: fixed; top: 210px; right: -100%;  height: calc(100% - 296.5px); margin: 0; overflow: hidden; box-sizing: border-box; transition: all .3s ease;;}
   #memorialCanvas header .nav>ul{display: flex; flex-direction: column; }
   #memorialCanvas header .nav>ul li{position: relative;}
@@ -89,12 +89,13 @@ textarea{resize: none;}
   #memorialCanvas header.is-active .nav-bg{right: 0;}
   #memorialCanvas header.is-active .nav, 
   #memorialCanvas header.is-active .header_util,
-  #memorialCanvas header.is-active .nav .link_mylife{width: 100%; right: 0; padding: 0 26px;  z-index: 200; box-sizing: border-box;}
+  #memorialCanvas header.is-active .nav .link_mylife{width: 50%; right: 0; padding: 0 26px;  z-index: 200; box-sizing: border-box;}
   #memorialCanvas header.is-active .nav>ul li a, #memorialCanvas header.is-active .user-profile ul li a{color: #203c82;}
-  #memorialCanvas header.is-active .nav .link_mylife{position: relative; top: auto; padding: 40px 0 0; color: #203c82; font-size: 20px; box-sizing: border-box;}
+  #memorialCanvas header.is-active .nav .link_mylife{width: 100%; position: relative; top: auto; padding: 40px 0 0; color: #203c82; font-size: 20px; box-sizing: border-box;}
   #memorialCanvas header.is-active .nav .link_mylife::after{border-bottom: 1px solid #203c82; border-right: 1px solid #203c82;}
   #memorialCanvas header.is-active .toggle_gnb{z-index: 280;}
-  #memorialCanvas header .toggle_gnb:after, #memorialCanvas header .toggle_gnb:before{background-color: #fff;}
+  #memorialCanvas.main header .toggle_gnb:after, #memorialCanvas.main header .toggle_gnb:before{background-color: #fff;}
+  #memorialCanvas header.is-fixed .toggle_gnb:after, #memorialCanvas header.is-fixed .toggle_gnb:before{background-color: #203c82;}
   #memorialCanvas header.is-active .toggle_gnb:after, #memorialCanvas header.is-active .toggle_gnb:before{background-color: #203c82;}
   
 }
@@ -910,4 +911,7 @@ textarea{resize: none;}
       font-size: 14px;
     }
   }
-  
+  @media (max-width: 480px) {
+    #memorialCanvas header .nav-bg{width: 100%;}
+    #memorialCanvas header.is-active .nav, #memorialCanvas header.is-active .header_util, #memorialCanvas header.is-active .nav .link_mylife{width: 100%;}
+  }
