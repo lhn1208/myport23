@@ -28,7 +28,7 @@ textarea{resize: none;}
 .pop_close::after{display: block; content: ""; height: 2px; background-color: #000; transform:rotate(45deg);}
 .pop_close::after{margin-top: -2px; transform:rotate(-45deg);}
 
-#memorialCanvas .contents_width{margin: 0 auto; width: 1440px;}
+#memorialCanvas .contents_width{margin: 0 auto; max-width: 1440px;}
 #memorialCanvas header{width: 100%; height: 120px; position: fixed; top: 0; left: 0; padding: 40px 0 38px; border-bottom: 1px solid transparent; transition: border-bottom-color .1s ease; z-index: 200; box-sizing: border-box;}
 #memorialCanvas header .contents_width{align-items: center; display: flex; position: relative;}
 #memorialCanvas header h1{width: 174px; height: 48px; z-index: 200;}
@@ -41,6 +41,7 @@ textarea{resize: none;}
 #memorialCanvas header .nav .link_mylife{display: none;}
 #memorialCanvas header .header_util{position: absolute; right: 100px; top:50%; transform: translateY(-50%);}
 #memorialCanvas header .box_user{align-items: center; display: flex;}
+#memorialCanvas header .box_user .user-profile a{color: #203c82;}
 #memorialCanvas header .user_sch{position: relative; width: 218px; margin-right: 10px;}
 #memorialCanvas header .user_sch legend{position: absolute; top:0; left: 0; width: 0; height: 0; line-height: 0; visibility: hidden; overflow: hidden; text-indent: -9999px;}
 #memorialCanvas header .user_sch .sch_input{display: inline-block; width: 180px; height: 30px; padding-left: 4px; font-family: "Noto Sans KR", sans-serif; font-size: 16px; border: 0; border-bottom: 1px solid #8893aa; color: #8893aa; background-color: transparent;}
@@ -51,7 +52,7 @@ textarea{resize: none;}
 /*togle-gnb*/
 #memorialCanvas header .toggle_gnb{display: block;position: absolute; right: 30px; top: 50%; transform: translateY(-50%); width: 38px; height: 24px; z-index: 190;}
 .offscreen{clip:rect(1px 1px 1px 1px); display: inline-block; position: absolute; width: 1px; height: 1px; line-height: 0;font-size: 1px; overflow: hidden;}
-#memorialCanvas header .toggle_gnb:after, #memorialCanvas header .toggle_gnb:before{display: block; content: ""; width: 100%; height: 3px; transition: all .2s ease; background:#fff;}
+#memorialCanvas header .toggle_gnb:after, #memorialCanvas header .toggle_gnb:before{display: block; content: ""; width: 100%; height: 3px; transition: all .2s ease; background:#203c82;}
 #memorialCanvas header .toggle_gnb:after{margin-top: 3px;}
 
 
@@ -72,7 +73,7 @@ textarea{resize: none;}
 #memorialCanvas header.is-active .nav .link_mylife:hover:after{border-bottom: 1px solid #203c82; border-right: 1px solid #203c82;}
 #memorialCanvas header.is-active .toggle_gnb:after, #memorialCanvas header.is-active .toggle_gnb:before{transform: rotate(45deg); background-color: #fff;}
 #memorialCanvas header.is-active .toggle_gnb:after{transform: translateY(-5px) rotate(-45deg); }
-@media all and (max-width:1024px) { 
+@media all and (max-width:1440px) { 
   .d-md-none{display: none;}
   .btn.m-btn{height:40px; padding: 0 20px; line-height: 40px; font-size: 14px !important;}
   #memorialCanvas .contents_width{width: 100%;}
@@ -92,7 +93,9 @@ textarea{resize: none;}
   #memorialCanvas header.is-active .nav .link_mylife{position: relative; top: auto; padding: 40px 0 0; color: #203c82; font-size: 20px; box-sizing: border-box;}
   #memorialCanvas header.is-active .nav .link_mylife::after{border-bottom: 1px solid #203c82; border-right: 1px solid #203c82;}
   #memorialCanvas header.is-active .toggle_gnb{z-index: 280;}
+  #memorialCanvas header .toggle_gnb:after, #memorialCanvas header .toggle_gnb:before{background-color: #fff;}
   #memorialCanvas header.is-active .toggle_gnb:after, #memorialCanvas header.is-active .toggle_gnb:before{background-color: #203c82;}
+  
 }
 #memorialCanvas .visual_wrap{position: relative; height: 116px; background: url("../images/bg_sub_visual.jpg");}
 /*gnb*/
