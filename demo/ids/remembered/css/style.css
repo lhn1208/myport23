@@ -86,7 +86,7 @@ text-indent: -9999px;}
 .inquiry_content .content_list>ul>li{margin-bottom: 70px;}
 .inquiry_content .content_list>ul>li a{display: block;}
 .inquiry_content .content_list figure{display: inline-block; width: 330px; height: 400px; margin-bottom: 15px; overflow: hidden;}
-.inquiry_content .content_list figure img{width: 100%; height: 100%;}
+.inquiry_content .content_list figure img{width: 100%; height: 100%; object-fit: cover;}
 .inquiry_content .content_list .info_area .person_info{text-align: center;}
 .inquiry_content .content_list .info_area .person_info .name{display: block; font-size: 26px; font-weight: 400;}
 .inquiry_content .content_list .info_area .person_info .date{display: block; margin-bottom: 18px; color: #666; font-size: 18px; font-weight: 300;}
