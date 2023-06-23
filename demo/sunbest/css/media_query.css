@@ -26,7 +26,8 @@
     .main_bottom .customer_sec{height: 100%;}
 }
 @media all and (max-width:1023px){
-    *{transition: all .5s ease} 
+    *{transition: all .4s ease;} 
+    /* width 0.5s, height 0.5s, background-color 0.5s, transform 0.5s */
     /*main*/
     .content_width{width: var(--mb-content-w);}
     .main_container .visual .inner .title{font-size: 24px;} 
@@ -63,7 +64,7 @@
 @media all and (max-width:767px){
     /*mobile menu*/
     .mobile_menu{padding: 20px; width: 50%;}
-    .mobile_menu .menu_list li a{font-size: var(--font-14px);}
+    /* .mobile_menu .menu_list>li a{font-size: var(--font-14px);} */
     /*main*/
     .main_container .visual .inner>*{letter-spacing: -0.06em;}
     .main_container .section .title{margin-bottom: 10px;}  
@@ -74,8 +75,8 @@
     .customer_center .sub_title .tel::after{height: 12px; margin:-4px 2px 0 6px;}
     .support .content_width{overflow: hidden;}
     /*footer*/
-    #footer .menu_list li.mb{display: block;}
-    #footer .menu_list li.mb:before{display: none;}
+    #footer .menu_list>li.mb{display: block;}
+    #footer .menu_list>li.mb:before{display: none;}
     #footer address{font-size: 12px; line-height: 1.6;}
     #footer address .mb{display: block; width: 0; height:0;}
 }

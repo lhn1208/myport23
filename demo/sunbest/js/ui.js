@@ -17,6 +17,9 @@ $(function() {
     var $btnMb_all=$('#header .btn_mb_all');
     var $mbCont=$('.mobile_menu');
     var $mbCont_clse=$('.mobile_menu .btn_close');
+    
+    var $mbsub=$mbCont.find('ul li a');
+
     var $mbLayer=$('.mb_layer');
     $btnMb_all.click(function(){var $subMenu=$('#header .navi .sub_menu');
     var $sub_li=$subMenu.find('ul li')
@@ -24,6 +27,12 @@ $(function() {
         var idx= $(this).index();
         $(this).parent('ul').siblings().find('.link_img').eq(idx).addClass('active').siblings().removeClass('active');
     }); 
+    //sub menu
+    $mbsub.click(function(){
+       $(this).parents('.menu_list li').siblings().find('ul').slideUp(60);
+       $(this).siblings().slideToggle(60);
+    })
+
     $mbCont.addClass('active');
     var timer = setInterval(function() {
         $mbLayer.show();
