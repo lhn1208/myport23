@@ -84,6 +84,8 @@
     .main_container .visual .inner .sub_title{font-size: var(--font-14px);}
     .main_container .visual .inner .sub_title .mb_block{display: block;}
     .main_container .visual .inner .tel{font-size: 12px;}
+    /*footer*/
+    #footer .menu_list{margin:20px 0 18px;}
 }
 @media all and (max-width:380px){
     /*main*/
