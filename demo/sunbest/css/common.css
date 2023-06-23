@@ -102,7 +102,6 @@ body{font-family: "NanumSquare",sans-serif; color: #000;}/*"맑은고딕",Malgun
 #footer .sns_links .ico_youtube{background-color: #e53925;}
 #footer .sns_links .ico_youtube:before{content:""; border-top: 20px solid #fff; border-left:14px solid transparent; border-right:14px solid transparent;width: auto; height: auto; transform: rotate(-90deg) translate(36%, -50%);}
 #footer .sns_links .ico_tel{background-color:#6355a2}
-#footer .sns_links .ico_tel img{}
 #footer .menu_list{margin:32px 0 18px;}
 #footer .menu_list li{display: inline-block;}
 #footer .menu_list li a{font-weight: bold; font-size: 18px; color: #fff;}
