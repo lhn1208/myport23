@@ -17,7 +17,7 @@ $(function() {
     var $btnMb_all=$('#header .btn_mb_all');
     var $mbCont=$('.mobile_menu');
     var $mbCont_clse=$('.mobile_menu .btn_close');
-    var $mbsub=$mbCont.find('ul li a');
+    var $menuTarget=$mbCont.find('ul li a');
     var $mbLayer=$('.mb_layer');
     $btnMb_all.click(function(){var $subMenu=$('#header .navi .sub_menu');
     var $sub_li=$subMenu.find('ul li')
@@ -26,15 +26,14 @@ $(function() {
         $(this).parent('ul').siblings().find('.link_img').eq(idx).addClass('active').siblings().removeClass('active');
     }); 
     //sub menu
-    $mbsub.click(function(){
-       $(this).parents('.menu_list li').siblings().find('ul').slideUp(70);
-       $(this).siblings().slideToggle(70);
+    $menuTarget.click(function(){
+       $(this).parents('.menu_list li').siblings().find('ul').slideUp(100);
+       $(this).siblings().slideToggle(100);
     })
-
     $mbCont.addClass('active');
     var timer = setInterval(function() {
         $mbLayer.show();
-        clearInterval(timer); // 타이머를 멈춥니다.
+        clearInterval(timer);
     }, 200);
     });
     $mbCont_clse.click(function(){

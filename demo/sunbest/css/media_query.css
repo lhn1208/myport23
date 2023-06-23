@@ -93,5 +93,5 @@
 @media all and (max-width:380px){
     /*main*/
     .main_container .visual .inner .custom_tel{margin-bottom: 0;}
-    .main_container .visual .inner .tel{display: block; margin-bottom: 2px;}
+    .main_container .visual .inner .tel{display: block; width: 60vw; margin:0 auto 2px;}
 }

@@ -64,7 +64,7 @@ section h2{padding:var(--content-pd) 20px; color: #111; font-size: 38px; box-siz
 .portfolio>li .only_mb_img img{width: auto; height: 272px;}
 .portfolio .more_detail{margin-top: 30px; text-align: center;}
 .portfolio>li .more_detail h3{position: relative; display: inline-block; margin-bottom: 10px;; font-size: 20px;}
-.portfolio>li .more_detail h3 span{position: relative; z-index: 2; font-family: var(--body-font);}
+.portfolio>li .more_detail h3 span{position: relative; z-index: 2; font-family: var(--body-font); text-transform: uppercase;}
 .portfolio>li .more_detail h3:after{position: absolute; top:0; left:0; width: 0; height: 100%; background-color: var(--primary-color); transition: width .4s ease; -webkit-transition:width .4s ease; content: ""; z-index: 1;}
 .portfolio .more_detail li{line-height: 2; font-size: 14px; text-transform: uppercase;}
 .portfolio .more_detail li:nth-child(2){text-transform: uppercase;}
