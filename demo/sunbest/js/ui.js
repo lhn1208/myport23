@@ -17,7 +17,7 @@ $(function() {
     var $btnMb_all=$('#header .btn_mb_all');
     var $mbCont=$('.mobile_menu');
     var $mbCont_clse=$('.mobile_menu .btn_close');
-    var $menuTarget=$mbCont.find('ul li a');
+    
     var $mbLayer=$('.mb_layer');
     $btnMb_all.click(function(){var $subMenu=$('#header .navi .sub_menu');
     var $sub_li=$subMenu.find('ul li')
@@ -25,11 +25,14 @@ $(function() {
         var idx= $(this).index();
         $(this).parent('ul').siblings().find('.link_img').eq(idx).addClass('active').siblings().removeClass('active');
     }); 
+
+    var $menuTarget=$mbCont.find('.menu_list>li button');
     //sub menu
     $menuTarget.click(function(){
-       $(this).parents('.menu_list li').siblings().find('ul').slideUp(100);
-       $(this).siblings().slideToggle(100);
+        $(this).next(".mb_sub").stop().slideToggle(200);
+        $(this).parents('li').siblings().find('.mb_sub').slideUp(200);
     })
+
     $mbCont.addClass('active');
     var timer = setInterval(function() {
         $mbLayer.show();
