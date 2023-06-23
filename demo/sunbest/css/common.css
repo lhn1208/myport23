@@ -94,7 +94,7 @@ body{font-family: "NanumSquare",sans-serif; color: #000;}/*"맑은고딕",Malgun
  .mobile_menu .menu_list{margin-top: 40px;}
  .mobile_menu .menu_list>li{cursor: pointer;}
  .mobile_menu .menu_list>li a{display: block; position: relative; margin-bottom: 4px;padding: 10px 0; font-size: 17px; border-bottom: 1px solid #ddd; font-family: var(--body-font);}
- .mobile_menu .menu_list>li>a{font-weight: bold; pointer-events: none;}
+ .mobile_menu .menu_list>li>a{font-weight: bold;}
  .mobile_menu .menu_list>li>a:after{content: "+"; display: inline-block; position: absolute; top: 50%; transform: translateY(-50%); right:10px; font-size: 16px; font-weight: bold;}
  .mobile_menu .menu_list ul{display: none;}
  .mobile_menu .menu_list ul li a{padding: 6px 0; font-size: 14px;}
