@@ -29,8 +29,8 @@ $(function() {
     }); 
     //sub menu
     $mbsub.click(function(){
-       $(this).parents('.menu_list li').siblings().find('ul').slideUp(60);
-       $(this).siblings().slideToggle(60);
+       $(this).parents('.menu_list li').siblings().find('ul').slideUp(80);
+       $(this).siblings().slideToggle(80);
     })
 
     $mbCont.addClass('active');
