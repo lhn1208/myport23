@@ -3,7 +3,7 @@
     --mb-content-w:94vw;
     --font-14px:14px;
 }
-@media all and (max-width:1440px){
+@media all and (max-width:1450px){
     #header{height: 50px;}
     #header .logo a{height:40px}
     #header .logo a img{height: 100%;}
