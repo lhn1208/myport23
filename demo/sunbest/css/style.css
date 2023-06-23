@@ -7,7 +7,7 @@
 .main_container .visual{position: relative;}
 .main_container .visual .content_width{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 105; text-align: center;}
 .main_container .visual .inner .title{color: rgba(255, 255, 255, .9);  margin-bottom: 14px;  font-size: 36px;}
-.main_container .visual .inner .sub_title{display: block; margin-bottom: 14px; color: rgba(255, 255, 255, .8); font-size: 24px;}
+.main_container .visual .inner .sub_title{display: block; margin-bottom: 14px; color: rgba(255, 255, 255, .8); font-size: 24px; word-break: keep-all;}
 .main_container .visual .inner .sub_title:first-child, .main_container .visual .inner .title:first-child{margin-bottom: 0;}
 .main_container .visual .inner .custom_tel{margin-bottom: 17px;}
 .main_container .visual .inner .custom_tel .tel{font-weight: bold;}
