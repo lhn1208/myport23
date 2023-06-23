@@ -71,6 +71,7 @@
     .main_container .section .sub_title .mb_block{display: block;}
     
     .case_study .case_links figcaption{font-size: var(--font-14px);word-break: keep-all; text-align: center;}
+    .customer_center .sub_title .tel::after{height: 12px; margin:-4px 2px 0 6px;}
     .support .content_width{overflow: hidden;}
     /*footer*/
     #footer .menu_list li.mb{display: block;}
