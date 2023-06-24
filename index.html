@@ -1,1 +1,587 @@
-<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>vue_portfolio</title><script defer="defer" src="/js/chunk-vendors.c24dcd0e.js"></script><script defer="defer" src="/js/app.6af3cb71.js"></script><link href="/css/app.1c3a5d22.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but vue_portfolio doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>Hana's Portfolio</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  minimum-scale=1, user-scalable=no">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Hana's Portfolio">
+	<meta property="og:description" content="퍼블리셔 이하나 포트폴리오입니다.">
+	<!-- <meta property="og:image" content=""> -->
+	<meta property="og:url" content="https://lhn1208.github.io/myport/">
+	<link rel="stylesheet" href="./include/css/import.css">
+	<script src="./include/js/jquery-1.9.0.min.js"></script>
+	<script src="./include/js/ui.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="progress-container">
+	<div class="progress-bar" id="myBar"></div>
+</div>
+<div class="wrap" id="wrap">
+	<header class="content_header">	
+		<a href="#main" class="quick_link" title="본문 바로가기">
+			<i class="fa-solid fa-circle-down fa-beat-fade"></i>
+		</a>	
+		<div class="header_wrapper">
+			<div class="top_fix">
+				<h1 class="logo"><a href="#wrap"><img src="./img/logo.png" alt="my portfolio 로고"></a></h1>
+			</div>
+			<div class="tit animated s1">Web
+				<div class="message_wrap"> 
+					<div class="message">
+						<div>Coding</div>
+						<div>Creating</div>
+						<div>Publisher</div>
+					</div>
+				</div>
+				<div class="mb">Publisher</div>
+			</div>
+		</div>
+	</header>
+	<main class="main" id="main">	
+		<!--portfolio-->		
+		<section class="sec portfolio_area contents_with">
+			<h2>PORTFOLIO</h2>
+			<div class="tab_menu">
+				<ul>
+					<li><button data-filter="all" class="on">All</button></li>
+					<li><button data-filter="pc">Pc</button></li>
+					<li><button data-filter="mobile">Mobile</button></li>
+					<li><button data-filter="p-m">Pc/Mobile</button></li>
+					<li><button data-filter="responsive">Responsive</button></li>
+				</ul>
+			</div>
+			<ul class="portfolio animated s1">
+				<li class="responsive">
+					<article class="port_box">
+						<a href="./demo/sunbest/html/main.html" target="_blank" title="선베스트 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_sunbest.jpg" alt="선베스트 이미지">
+								<span class="mb_img"><img src="./img/work/mb_sunbest.png" alt="선베스트 이미지"></span>
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[인테리어] 사이트 메인 작업</span></h3>
+								<ul class="desc">
+									<li>반응형</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2023.06~2023.06</li>
+								</ul>
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="pc">
+					<article class="port_box">
+						<a href="./demo/ids/shop/renewal/html/guide.html" target="_blank" title="더샵 PC 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_theshop1.png" alt="더샵 이미지">
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[더샵몰] 약사들의 약국몰</span></h3>
+								<ul class="desc">
+									<li>PC</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2022.12~2023.02</li>
+								</ul>
+								<!-- <a href="https://www.shop.co.kr/front/intro/login" target="_blank" title="약국몰 리얼 새창열림" class="real">Real</a> -->
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="mobile">
+					<article class="port_box">
+						<a href="./demo/ids/shop/mobile/html/main/main.html" target="_blank" title="더샵 모바일 새창열림" class="link">
+							<figure class="img only_mb_img"><img src="./img/work/mb_theshop.png" alt="더샵 모바일 이미지"></figure>
+							<figcaption class="more_detail">
+								<h3><span>[더샵몰] 약사들의 약국몰</span></h3>
+								<ul class="desc">
+									<li>Mobile</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2022.12~2023.02</li>
+								</ul>
+							</figcaption>		
+						</a>
+						<a href="./demo/ids/shop/mobile/html/guide.html" target="_blank" title="약국몰 모바일 데모 새창열림" class="demo">Demo</a>
+					</article>							
+				</li>
+				<li class="pc">
+					<article class="port_box">
+						<a href="#" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_theshop2.png" alt="더샵 이미지">
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[더샵몰] 병원몰/동물병원몰/한의원몰</span></h3>
+								<ul class="desc">
+									<li>PC</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2022.12~2023.02</li>
+								</ul>
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="p-m">
+					<article class="port_box">
+						<a href="https://www.hidoc.co.kr/" target="_blank" title="하이닥 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_hidoc.png" alt="하이닥 이미지">
+								<span class="mb_img"><img src="./img/work/mb_hidoc.png" alt="하이닥 이미지"></span>
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[하이닥] 의학 정보 Site 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>PC, Mobile</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2022.12~2023.02</li>
+								</ul>
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="pc">
+					<article class="port_box">
+						<a href="./demo/ids/hidoc/pro/html/main/main.html" target="_blank" title="하이닥 프로 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_hidoc_pro.png" alt="하이닥 프로 이미지">
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[하이닥 프로]의사 전용 지식 공유</span></h3>
+								<ul class="desc">
+									<li>PC</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2022.12~2023.02</li>
+								</ul>
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="pc">
+					<article class="port_box">
+						<a href="./demo/ids/drville/web/html/guide.html" target="_blank" title="닥터빌 PC 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_drville.png" alt="닥터빌 PC 이미지">
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[닥터빌] 의사 커뮤니티 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>PC</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2022.12~2023.02</li>
+								</ul>
+								<!-- <a href="http://www.doctorville.co.kr/main" target="_blank" title="닥터빌 리얼 새창열림" class="real">Real</a> -->
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="mobile">
+					<article class="port_box">
+						<a href="./demo/ids/drville/mobile/html/guide.html" target="_blank" title="닥터빌 모바일 새창열림" class="link">
+							<figure class="img only_mb_img">
+								<img src="./img/work/mb_drville.png" alt="닥터빌 모바일 이미지">
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[닥터빌] 의사 커뮤니티 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>Mobile</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2022.12~2023.02</li>
+								</ul>
+								<!-- <a href="https://m.doctorville.co.kr/" target="_blank" title="닥터빌 모바일 리얼 새창열림" class="real">Real</a> -->
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="pc">
+					<article class="port_box">
+						<a href="./demo/ids/drville/web/html/webinar/guide.html" target="_blank" title="컨퍼런스빌 PC 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_conferenceville.png" alt="컨퍼런스빌 PC 이미지">
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[컨퍼런스빌] 의료 컨퍼런스 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>PC</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2022.12~2023.02</li>
+								</ul>
+								<!-- <a href="https://www.dvwebinar.co.kr/login" target="_blank" title="컨퍼런스빌 리얼 새창열림" class="real">Real</a> -->
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="mobile">
+					<article class="port_box">
+						<a href="./demo/ids/drville/mobile/html/webinar/guide.html" target="_blank" title="컨퍼런스빌 모바일 새창열림" class="link">
+							<figure class="img only_mb_img">
+								<img src="./img/work/mb_conferenceville.png" alt="컨퍼런스빌 모바일 이미지">
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[컨퍼런스빌] 의료 컨퍼런스 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>Mobile</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2022.12~2023.02</li>
+								</ul>
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="pc">
+					<article class="port_box">
+						<a href="./demo/ids/veterville/web/html/guide.html" target="_blank" title="베터빌 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_vet.png" alt="베터빌 이미지">
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[베터빌] 수의사 커뮤니티 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>PC</li>
+									<li>HTML5 &amp; SASS &amp; JAVASCRIPT</li>
+									<li>Date: 2022.05~2022.06</li>
+								</ul>
+								<!-- <a href="https://www.vetterville.co.kr/login" target="_blank" title="베터빌 리얼 새창열림" class="real">Real</a> -->
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="responsive">
+					<article class="port_box">
+						<a href="./demo/ids/remembered/html/main.html" target="_blank" title="온라인 추모관 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_remembered.png" alt="온라인 추모관 이미지">
+								<span class="mb_img"><img src="./img/work/mb_remembered.png" alt="온라인 추모관 이미지"></span>
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>온라인 추모관 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>반응형</li>
+									<li>HTML5 &amp; CSS &amp; JQUERY</li>
+									<li>Date: 2022.02~2022.03</li>
+								</ul>
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="p-m">
+					<article class="port_box">
+						<a href="http://www.modetour.com/main/" target="_blank" title="모두투어 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_mode_main.png" alt="모두투어 이미지">
+								<span class="mb_img"><img src="./img/work/mb_mode_main.png" alt="모두투어 이미지"></span>
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[모두투어] 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>PC, Mobile</li>
+									<li>HTML5 &amp; SASS&middot;CSS &amp; JQUERY</li>
+									<li>Date: 2017.04~2021.07</li>
+								</ul>
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="p-m">
+					<article class="port_box">
+						<a href="https://www.modetour.com/Flight/AirBooking/main.aspx" target="_blank" title="모두투어 항공 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_mode_air.png" alt="모두투어 항공 이미지">
+								<span class="mb_img"><img src="./img/work/mb_mode_air.png" alt="모두투어 항공 이미지"></span>
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[모두투어] 항공 예약 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>PC, Mobile</li>
+									<li>HTML5 &amp; SASS&middot;CSS &amp; JQUERY</li>
+									<li>Date: 2017.04~2021.07</li>
+								</ul>
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="p-m">
+					<article class="port_box">
+						<a href="https://www.modetour.com/Flight/AirBooking/main.aspx" target="_blank" title="모두투어 호텔 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_mode_hotel.png" alt="모두투어 호텔 이미지">
+								<span class="mb_img"><img src="./img/work/mb_mode_hotel.png" alt="모두투어 호텔 이미지"></span>
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[모두투어] 호텔 예약 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>PC, Mobile</li>
+									<li>HTML5 &amp; SASS&middot;CSS &amp; JQUERY</li>
+									<li>Date: 2017.04~2021.07</li>
+								</ul>
+							</figcaption>		
+						</a>
+					</article>							
+				</li>				
+				<!-- <li class="mobile">
+					<div class="port_box">
+						<a href="https://m.modetour.com/Plan/Default.aspx?MLoc=07" target="_blank" title="모두투어 프로모션 새창열림" class="link">
+							<div class="img">
+								<img src="./img/work/mb_mode_promotion.png" alt="모두투어 프로모션 이미지">
+							</div>
+							<div class="more_detail">
+								<h3><span>프로모션 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>Mobile</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2017.04~2021.07</li>
+								</ul>
+								<a href="./demo/promotion/guide_mb.html" target="_blank" title="프로모션 Demo 새창열림" class="demo">Demo</a>
+							</div>		
+						</a>
+					</div>							
+				</li> -->
+				<li class="pc">
+					<article class="port_box">
+						<a href="https://www.modetour.com/Plan/Default.aspx?MLoc=07" target="_blank" title="모두투어 프로모션 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_mode_promotion.png" alt="모두투어 프로모션 이미지">
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>프로모션 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>PC</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2017.04~2021.07</li>
+								</ul>
+							</figcaption>		
+						</a>
+						<a href="./demo/promotion/guide.html" target="_blank" title="프로모션 Demo 새창열림" class="demo">Demo</a>
+					</article>							
+				</li>
+				<li class="pc">
+					<article class="port_box">
+						<a href="http://www.cruise.co.kr/main.aspx" target="_blank" title="크루즈 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_cruise.png" alt="크루즈 이미지">
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>크루즈 인터내셔널 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>PC</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2020.03~2021.07</li>
+								</ul>
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="mobile">
+					<article class="port_box">
+						<a href="./demo/realhome/mobile/guide.html" target="_blank" title="매물사이트 Mobile 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/mb_house.png" alt="매물사이트 Mobile 이미지">
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>매물사이트 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>Mobile</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2018.02~2018.05</li>
+								</ul>
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="pc">
+					<article class="port_box">
+						<a href="./demo/realhome/pc/dist/html/user/main.html" target="_blank" title="매물사이트 PC 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_house.png" alt="매물사이트 PC 이미지">
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>매물사이트 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>PC</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2018.02~2018.05</li>
+								</ul>								
+							</figcaption>		
+						</a>
+						<a href="./demo/realhome/pc/guide.html" target="_blank" title="매물사이트 Demo 새창열림" class="demo">Demo</a>
+					</article>							
+				</li>
+				<li class="responsive">
+					<article class="port_box">
+						<a href="http://story.modetour.com" target="_blank" title="[모두투어]여행정보 새창열림"  class="link">
+							<figure class="img">
+								<img src="./img/work/pc_mode_info.png" alt="[모두투어]여행정보 이미지">
+								<span class="mb_img"><img src="./img/work/mb_mode_info.png" alt="[모두투어]여행정보 이미지"></span>
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>여행정보 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>반응형</li>
+									<li>BOOTSTRAP &amp; JQUERY</li>
+									<li>Date: 2018.01~2018.06</li>
+								</ul>
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="pc">
+					<article class="port_box">
+						<a href="http://www.modetournetwork.com/" target="_blank" title="[모두투어]회사소개 새창열림"  class="link">
+							<figure class="img">
+								<img src="./img/work/pc_mode_intro.png" alt="[모두투어]회사소개 이미지">
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[모두투어]회사소개 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>PC</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2018.01~2018.06</li>
+								</ul>
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="pc">
+					<article class="port_box">
+						<a href="http://www.modetourint.com" target="_blank" title="모두인터네셔널 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_modeint.png" alt="모두인터네셔널 이미지">
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>모두인터내셔널 글로벌 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>PC</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2017.04~2017.06</li>
+								</ul>								
+							</figcaption>		
+						</a>
+						<a href="./demo/modeinter/guide.html" target="_blank" title="모두인터네셔널 DEMO 새창열림" class="demo">Demo</a>
+					</article>							
+				</li>
+				<li class="responsive">
+					<article class="port_box">
+						<a href="./demo/tourplanner/guide.html" target="_blank" title="모두투어 여행플래너 데모 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_mode_tourplanner.png" alt="모두투어 여행플래너 이미지">
+								<span class="mb_img"><img src="./img/work/mb_mode_tourplanner.png" alt="모두투어 여행플래너 이미지"></span>
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[모두투어] 직원전용 여행플래너</span></h3>
+								<ul class="desc">
+									<li>반응형</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2019.04~2019.12</li>
+								</ul>
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="responsive">
+					<article class="port_box">
+						<a href="http://www.standardchartered.co.kr" target="_blank" title="SC제일은행 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_sc.png" alt="SC제일은행 이미지">
+								<span class="mb_img"><img src="./img/work/mb_sc.png" alt="SC제일은행 이미지"></span>
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[SC제일은행] 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>반응형</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2015.10~2016.11</li>
+								</ul>								
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+				<li class="responsive">
+					<article class="port_box">
+						<a href="http://www.standardchartered.co.kr/np/kr/cms/pl/wb/Breezebanking.jsp" target="_blank" title="SC제일은행 모바일뱅킹 새창열림" class="link">
+							<figure class="img">
+								<img src="./img/work/pc_sc_bank.png" alt="SC제일은행 인터넷 뱅킹 이미지">
+								<span class="mb_img"><img src="./img/work/mb_sc_bank.png" alt="SC제일은행 인터넷 뱅킹 이미지"></span>
+							</figure>
+							<figcaption class="more_detail">
+								<h3><span>[SC제일은행] 인터넷 뱅킹 퍼블리싱</span></h3>
+								<ul class="desc">
+									<li>반응형</li>
+									<li>HTML5 &amp; CSS3 &amp; JQUERY</li>
+									<li>Date: 2014.12~2015.09</li>
+								</ul>
+								<!-- <a href="./demo/sc/guide.html" target="_blank" title="프로모션 Demo 새창열림" class="demo">Demo</a> -->
+							</figcaption>		
+						</a>
+					</article>							
+				</li>
+			</ul>
+		</section>
+		<!--//portfolio-->
+		<!--skill-->
+		<section class="sec content_skill">
+			<!-- <div class="stars_wrap">
+				<img class="stars stars-animation" src="./img/background.png" alt="">
+				<img class="stars stars-animation-two" src="./img/background.png" alt="">
+				<img class="stars stars-animation-three" src="./img/background.png" alt="">
+			</div> -->
+			<h2>SKILL</h2>
+			<div class="skill_area contents_with">
+				<ul class="skill_list">				
+					<li>
+						<div class="front animated s1"><span>HTML5/CSS3/SASS</span></div>
+						<div class="back"><span>W3C에 준수하는 웹표준</span></div>
+					</li>
+					<li>
+						<div class="front animated s2"><span>Jquery/Javascript</span></div>
+						<div class="back"><span>스크립트<br>동작 구현</span></div>
+					</li>
+					<li>
+						<div class="front animated s3"><span>반응형웹</span></div>
+						<div class="back"><span>전 기기 반응하는<br>반응형</span></div>
+					</li>
+					<li>
+						<div class="front animated s4"><span>웹접근성</span></div>
+						<div class="back"><span>모두 접근 가능한<br>접근성</span></div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!--skill-->
+		<!--about-->
+		<section class="sec content_about" id="basic-waypoint">
+			<h2>ABOUT</h2>
+			<div class="about_area">
+				<h3>My Info</h3>
+				<ul class="about animated s1">
+					<li><strong>Name:</strong>&nbsp;이 하 나</li>
+					<li><strong>Email:</strong>&nbsp;lhn1208@naver.com</li>
+					<li class="last"><strong>Tools:</strong>&nbsp;VsCode/Git/Photoshop/Editplus<span class="mb-block">/Websquare</span></li>
+				</ul>	
+				<h3>Career</h3>
+				<ul class="about animated s2">
+					<li><strong>ITANS</strong>/IT Company</li>
+					<li><strong>온앤온정보시스템</strong>/IT Company</li>
+					<li><strong>애드캡슐소프트</strong>/Web Agency</li>
+					<li><strong>모두투어</strong>/Travel Company</li>
+					<li><strong>IDS&Trust</strong>/Dawoong Group</li>
+				</ul>
+			</div>
+		</section>
+		<!--//about-->
+		<button class="bt_top"><i></i></button>		
+	</main>
+	<footer class="footer">COPYRIGHT(c) HANA'S PORTFOLIO ALL RIGHTS RESERVED
+		<i>*해당페이지는 반응형으로 제작되었습니다.<br>웹표준, 웹접근성 검사 완료</i>
+	</footer>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FC919YF7SP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FC919YF7SP');
+</script>
+</body>
+</html>
