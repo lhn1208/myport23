@@ -25,11 +25,12 @@ window.onload=function(){
   });
   //about animation
   // const textItems=document.querySelectorAll('.text_ico_ev i');
-  // let vh;
-  // for(let i=0; i<textItems.length; i++){
-  //   vh=i;
-  //   textItems[i].style.setProperty('--vh', `${vh}`);
-  // }
+  // textItems.forEach((item, i) => {
+  //   let vh = i;
+  //   item.style.setProperty('--vh', `${vh}`);
+  //   i++;
+  // });
+
   window.addEventListener('scroll',(e)=>{
     e.preventDefault();
     

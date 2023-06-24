@@ -85,7 +85,6 @@ body{font-family: "NanumSquare",sans-serif; color: #000;}/*"맑은고딕",Malgun
 .quick_cont .button_wrap button{width: 184px; line-height: 40px; margin-bottom: 10px; border-radius: 10px; background-color: #555; color: #fff; font-size: 12px;}
  /*mobile_menu*/
  .mb_layer{display: none; position:fixed; top:0; left: 0; right:0; bottom:0; background-color: rgba(0, 0, 0, .2); transition: all .2s ease-in;  z-index: 499;}
- /* .mb_layer.active{opacity: 1;} */
  .mobile_menu{position: fixed; top:0; bottom:0; right:-100%; width:350px; padding: 40px; border-left: 1px solid #393939; background-color: #fff; box-sizing: border-box; z-index:500; transition: all .3s ease-in; opacity:0;} 
  .mobile_menu.active{right:0; opacity: 1;}
  .mobile_menu .btn_close{position: absolute; top: 20px; right: 20px; width: 20px; height: 20px; display: block; text-indent: -9999px; font-size: 0;}
