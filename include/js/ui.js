@@ -156,6 +156,9 @@ window.onload=function(){
         'scrollTop': $section.eq(idx).offset().top
       }, 800);
     })
+    $('.btn_close').click(function(){
+      $('.popup').css('display','none');
+    })
     $(window).scroll(function(){
       progressBar();
       quick();

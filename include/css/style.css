@@ -103,6 +103,16 @@ section h2{padding:var(--content-pd) 20px; color: #111; font-size: 38px; box-siz
 /*footer*/
 .footer{height: 116px; padding:var(--content-pd) 0; background: var(--primary-color); color: var(--white-color); text-align: center; box-sizing: border-box;}
 .footer i{display: block; font-size: 12px;}
+/*popup*/
+.popup{position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,.6); z-index: 9999;}
+.btn_close {position: absolute;top: 6px;right: 6px;width: 40px;height: 40px;display: block;text-indent: -9999px;font-size: 0;}
+.btn_close::before,.btn_close:after {content: "";display: block;height: 1px;background-color: #000;transform: rotate(45deg);}
+.btn_close:after {margin-top: -1px;transform: rotate(-45deg)}
+.popup .pop_cont{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 630px; height: 400px; background-color: #fff; display: flex; align-items: center;}
+.popup .pop_cont figure{width: 300px; height: 300px;}
+.popup .pop_cont figure img{height: 100%;}
+.popup .pop_cont figcaption{padding: 20px; padding-left: 30px; font-size: 18px; font-weight: bold; width: 36%;}
+.popup .pop_cont figcaption a{display: block; width: 100px; line-height: 40px; margin-top: 10px; background-color:var(--primary-color); color: #fff; font-size: 14px; text-align: center;}
 /*태블릿 size*/
 @media (max-width: 1024px){
   .contents_with, .content_skill h2{width: 100%;}
@@ -158,4 +168,5 @@ section h2{padding:var(--content-pd) 20px; color: #111; font-size: 38px; box-siz
   .about_area .about{width: 300px; padding-bottom: 16px;}
   .about_area .about li{padding:8px; font-size: 12px;}
   .footer{font-size: 14px;}
+  .popup{display: none;}
 }
