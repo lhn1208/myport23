@@ -28,9 +28,12 @@ section h2{padding:var(--content-pd) 20px; color: #111; font-size: 38px; box-siz
 .quick ul li.on::before{background-color: var(--primary-color);}
 /*Header*/
 .top_fix{position: fixed; top:0; left: 0; bottom: 0; right:0; height: 100px; transition: box-shadow .4s ease-in-out; z-index: 90;}
-.top_fix.fixed{background-color: rgba(255,255,255,.4); box-shadow: 0 6px 10px -5px #d6d6d6;}
-.logo{position: absolute; top: 14px; left: var(--content-pd); z-index: 90;}
+.top_fix.fixed{background-color: #fff; box-shadow: 0 6px 10px -5px #d6d6d6;}
+.top_fix .inner{width: 1200px;  margin:0 auto; display: flex; align-items: center; justify-content: space-between;}
+.logo{left: var(--content-pd); z-index: 90;}
 .logo a{display: block; width: 188px; transition: width .3s ease-in;}
+.top_fix a{display: none; font-weight: bold; font-size: 16px;}
+.top_fix.fixed a{display: block;}
 /*Header*/
 .content_header{position: relative; height: 97vh;}
 .content_header::before,.content_header::after{content: ""; position: absolute; bottom: 0; width: 50%; height: 124px; border-style: solid; border-width: 62px 24.6vw; border-color: transparent transparent var(--white-color) var(--white-color); box-sizing: border-box; z-index: 2;} 
@@ -115,6 +118,7 @@ section h2{padding:var(--content-pd) 20px; color: #111; font-size: 38px; box-siz
 .popup .pop_cont figcaption a{display: block; width: 100px; line-height: 40px; margin-top: 10px; background-color:var(--primary-color); color: #fff; font-size: 14px; text-align: center;}
 /*태블릿 size*/
 @media (max-width: 1024px){
+  .top_fix .inner{width: 100%;}
   .contents_with, .content_skill h2{width: 100%;}
   .content_header::before,.content_header::after{border-width: 62px 25vw;} 
   /*Portfolio*/
@@ -138,6 +142,7 @@ section h2{padding:var(--content-pd) 20px; color: #111; font-size: 38px; box-siz
   section h2{padding:20px; font-size: 26px;}
  
   /*Header*/
+  .top_fix{display: none;}
   .logo{left: 14px;}
   .logo a{width: 120px;}
   .content_header .tit{font-size: 50px;}
