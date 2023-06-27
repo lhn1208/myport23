@@ -17,7 +17,7 @@ $(function() {
     var $btnMb_all=$('#header .btn_mb_all');
     var $mbCont=$('.mobile_menu');
     var $mbCont_clse=$('.mobile_menu .btn_close');
-    
+    var $menuTarget=$mbCont.find('ul li a');
     var $mbLayer=$('.mb_layer');
     $btnMb_all.click(function(){var $subMenu=$('#header .navi .sub_menu');
     var $sub_li=$subMenu.find('ul li')
@@ -25,14 +25,11 @@ $(function() {
         var idx= $(this).index();
         $(this).parent('ul').siblings().find('.link_img').eq(idx).addClass('active').siblings().removeClass('active');
     }); 
-
-    var $menuTarget=$mbCont.find('.menu_list>li button');
     //sub menu
     $menuTarget.click(function(){
-        $(this).next(".mb_sub").stop().slideToggle(200);
-        $(this).parents('li').siblings().find('.mb_sub').slideUp(200);
+       $(this).parents('.menu_list li').siblings().find('ul').slideUp(100);
+       $(this).siblings().slideToggle(100);
     })
-
     $mbCont.addClass('active');
     var timer = setInterval(function() {
         $mbLayer.show();
@@ -68,7 +65,40 @@ $(function() {
            return val.replace("_over.png", ".png");
        });
    })
-    
+    //top_visual 공통
+    var $intro_vis = $('.top_visual');
+    var baseAniTitle = 0; // 초기 애니메이션 값
+    var baseAniText = 0;
+    var aniTitle = baseAniTitle; 
+    var aniText = baseAniText; 
+    function updateAnimation() {
+        $intro_vis.find('.title').css({
+            'transition': 'transform .6s',
+            'transform': (aniTitle > 0) ? `translateY(0) scale(${1 + aniTitle / 50})` : `translateY(${aniTitle}px) scale(${1 - aniTitle / 100})`,
+            'opacity': (aniTitle <= 0) ? 1 : 0.4 // 스크롤 위치가 0보다 작을 때는 opacity를 1로 설정, 그 외에는 0.4로 설정
+        });
+        $intro_vis.find('.text').css({
+            'transition': 'transform .6s', 
+            'transform': (aniText > 0) ? `translateY(${aniText}px) scale(${1 - aniText / 250})` : `translateY(${aniText}px) scale(1)`,
+            'opacity': (aniText <= 0) ? 1 : 0.4
+        });
+    }
+   $(window).scroll(function(){
+        var scrollTop = $(window).scrollTop();
+        if ($intro_vis.length > 0) {
+            aniTitle = Math.max(baseAniTitle - scrollTop, -100); // 최대 -100px까지 애니메이션 값 계산
+            if (scrollTop > 0) {
+               aniText = Math.min(baseAniTitle + scrollTop - 40, 110); // 최대 100px까지 애니메이션 값 계산
+            } else {
+              aniText = 0; // 스크롤 위치가 0 이하일 때 0으로 설정
+            }
+            updateAnimation();
+          } else {
+            aniTitle = baseAniTitle; // 스크롤 위치가 0 이하일 때 기본 애니메이션 값으로 설정
+            aniText = baseAniText;
+            updateAnimation();
+          }
+    });
 })
 
 new Swiper(".visual .swiper",{

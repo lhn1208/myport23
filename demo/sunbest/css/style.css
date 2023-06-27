@@ -82,3 +82,30 @@
 .main_bottom .support .info_list li.ico_fax:before{background-image: url("../img/icon/icon_fax.png");}
 .main_bottom .support .info_list li.ico_email:before{background-image: url("../img/icon/icon_email.png");}
 .main_bottom .support .send_mail{width: 176px; line-height: 48px; margin-top: 50px; color: #000; font-size: 16px; font-weight: bold; display: inline-block; text-align: center;background-color: #fff; }
+/*회사소개*/
+.container{padding-top: 106px;}
+.top_visual{display: flex; align-items: center; justify-content: center; flex-direction: column; height: 253px; color: #fff; text-align: center; background: url("../img/home/subtop_01.jpg") no-repeat 0 90px; background-attachment: fixed;}
+.top_visual .title{font-size: 30px; margin-bottom: 20px;}
+.top_visual p{font-size: 14px;}
+.top_sub_menu{position: relative; background-color: #393939; text-align: center; z-index: 10;}
+.top_sub_menu a{position: relative; padding:0 14px; color:#cecdcd; line-height: 50px; font-size: 16px;font-family: var(--body-font);}
+.top_sub_menu a+a:before{content: ""; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width:1px; height: 16px; background-color: #cecdcd;}
+.content_top{margin-bottom: 100px;}
+.content_top .breadcrumb{text-align: right; padding:10px;}
+.content_top .breadcrumb span{font-size: 12px;}
+.content_top .breadcrumb span+span::before{content:">"; margin:0 4px;}
+.content_top .title_area{margin-top: 30px; text-align: center; color: #333;}
+.content_top .title_area .title{font-size: 64px;}
+.content_top .title_area .sub_title{margin:20px 0; font-size: 32px;}
+.intro_container .links_area{text-align: center;}
+.intro_container .links_area a{display: inline-block; width: 192px; line-height: 48px; margin:0 2px; font-size: 14px; color: #fff; background-color: #aaa; text-align: center; font-family: var(--body-font);}
+.intro_container .links_area a:hover{background-color: #e86976;}
+
+.list_grid_type{margin:20px 0;}
+.list_grid_type ul{display: grid; grid-template-columns: repeat(4, 1fr); gap:20px}
+.list_grid_type a{display: block; position: relative;  overflow: hidden;}
+.list_grid_type li a:hover figure{transform: scale(1.1); transition: all .4s ease;}
+.list_grid_type figcaption>*{display: block;}
+.list_grid_type .title{margin-top: 10px; margin-bottom: 4px; font-size: 16px;} 
+.list_grid_type .text{font-size: 14px;}
+.list_grid_type .t_sm{margin-top: 4px; font-size: 12px; color: #888;}
