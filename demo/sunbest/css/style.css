@@ -82,7 +82,7 @@
 .main_bottom .support .info_list li.ico_fax:before{background-image: url("../img/icon/icon_fax.png");}
 .main_bottom .support .info_list li.ico_email:before{background-image: url("../img/icon/icon_email.png");}
 .main_bottom .support .send_mail{width: 176px; line-height: 48px; margin-top: 50px; color: #000; font-size: 16px; font-weight: bold; display: inline-block; text-align: center;background-color: #fff; }
-/*회사소개*/
+/*sub*/
 .container{padding-top: 106px;}
 .top_visual{display: flex; align-items: center; justify-content: center; flex-direction: column; height: 253px; color: #fff; text-align: center; background: url("../img/home/subtop_01.jpg") no-repeat 0 90px; background-attachment: fixed;}
 .top_visual .title{font-size: 30px; margin-bottom: 20px;}
