@@ -88,7 +88,7 @@
 .top_visual .title{font-size: 30px; margin-bottom: 20px;}
 .top_visual p{font-size: 14px;}
 .top_sub_menu{position: relative; background-color: #393939; text-align: center; z-index: 10;}
-.top_sub_menu a{position: relative; padding:0 14px; color:#cecdcd; line-height: 50px; font-size: 16px;font-family: var(--body-font);}
+.top_sub_menu a{position: relative; padding:0 14px; color:#cecdcd; line-height: 50px; font-size: 16px;font-family: var(--body-font); box-sizing: border-box;}
 .top_sub_menu a+a:before{content: ""; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width:1px; height: 16px; background-color: #cecdcd;}
 .content_top{margin-bottom: 100px;}
 .content_top .breadcrumb{text-align: right; padding:10px;}
