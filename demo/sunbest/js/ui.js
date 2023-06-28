@@ -23,6 +23,7 @@ $(function() {
     $btnMb_all.click(function(){   
         //mb layer
         $mbCont.addClass('active');
+        $('body').addClass('scroll_hidden')
         var timer = setInterval(function() {
             $mbLayer.show();
             clearInterval(timer);
@@ -47,6 +48,7 @@ $(function() {
         $mbCont.removeClass('active');
         $mbCont.find('.mb_sub').slideUp(ms);
         $mbLayer.hide();
+        $('body').removeClass('scroll_hidden')
     })
 
     var windowWidth = $(window).width();  
