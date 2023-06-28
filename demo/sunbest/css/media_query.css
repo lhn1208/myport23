@@ -35,12 +35,9 @@
     .content_top .title_area .title{font-size: 30px;}
     .content_top .title_area .sub_title{font-size: 15px;}
     .intro_container .links_area a{display: block; width: 90vw; margin:2px auto; line-height: 38px; }
-
-    .list_grid_type .content_width{width: var(--mb-content-w);}
 }
 @media all and (max-width:1023px){
-    *:not(.mb_sub){transition: all .4s ease;}  
-    /* width 0.5s, height 0.5s, background-color 0.5s, transform 0.5s */
+    *{transition: 0.5s, height 0.5s, background-color 0.5s, transform 0.5s}  
     /*main*/
     .content_width{width: var(--mb-content-w);}
     .main_container .visual .inner .title{font-size: 24px;} 
@@ -94,7 +91,6 @@
 
     .top_visual{background-size: cover; background-position: 56% 0;}
     .top_visual .text{word-break: keep-all;}
-    .list_grid_type ul{grid-template-columns: repeat(2, 1fr); gap:10px}
 }
 @media all and (max-width:480px){
     /*main*/
