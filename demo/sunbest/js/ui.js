@@ -36,12 +36,12 @@ $(function() {
         $(this).parent('ul').siblings().find('.link_img').eq(idx).addClass('active').siblings().removeClass('active');
     }); 
     //mobile sub menu
-    var ms=80;
+    var ms=200;
     $menuTarget.click(function(e){//.mobile_menu mune_list li a
         var $mb_sub = $(this).next('.mb_sub'); //mune_list li a + mb_sub li a
         var $parent_li = $(this).parent('li');
             $parent_li.siblings().find('.mb_sub').slideUp(ms);
-        $mb_sub.slideToggle(ms);
+            $mb_sub.stop().slideToggle(ms);
     })
     $mbCont_clse.click(function(){ //모바일 닫기 버튼
         $mbCont.removeClass('active');
