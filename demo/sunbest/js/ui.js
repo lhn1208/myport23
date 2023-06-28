@@ -20,27 +20,31 @@ $(function() {
     var $mbCont_clse=$('.mobile_menu .btn_close');
     var $menuTarget=$mbCont.find('.menu_list li a');
     var $mbLayer=$('.mb_layer');
-    $btnMb_all.click(function(){
-        var $subMenu=$('#header .navi .sub_menu');
-        var $sub_li=$subMenu.find('ul li')
-        //pc sub_menu 
-        $sub_li.hover(function(){
-            var idx= $(this).index();
-            $(this).parent('ul').siblings().find('.link_img').eq(idx).addClass('active').siblings().removeClass('active');
-        }); 
-        //mobile sub menu
-        $menuTarget.click(function(){
-            $mbCont.find('.mb_sub').slideUp(100);
-            $(this).next('.mb_sub').slideToggle(100);
-        })
+    $btnMb_all.click(function(){   
+        //mb layer
         $mbCont.addClass('active');
         var timer = setInterval(function() {
             $mbLayer.show();
             clearInterval(timer);
         }, 200);
     });
-    $mbCont_clse.click(function(){
+    var $subMenu=$('#header .navi .sub_menu');
+    var $sub_li=$subMenu.find('ul li')
+    //pc sub_menu 
+    $sub_li.hover(function(){
+        var idx= $(this).index();
+        $(this).parent('ul').siblings().find('.link_img').eq(idx).addClass('active').siblings().removeClass('active');
+    }); 
+    //mobile sub menu
+    $menuTarget.click(function(e){//.mobile_menu mune_list li a
+        var $mb_sub = $(this).next('.mb_sub'); //mune_list li a + mb_sub li a
+        var $parent_li = $(this).parent('li');
+            $parent_li.siblings().find('.mb_sub').slideUp(100);
+        $mb_sub.slideToggle(100);
+    })
+    $mbCont_clse.click(function(){ //모바일 닫기 버튼
         $mbCont.removeClass('active');
+        $mbCont.find('.mb_sub').slideUp(100);
         $mbLayer.hide();
     })
 
@@ -51,6 +55,7 @@ $(function() {
             $quickCont.removeClass('active');
         }else{
             $mbCont.removeClass('active');
+            $mbCont.find('.mb_sub').slideUp(100);
             $mbLayer.hide();
         }
     });
