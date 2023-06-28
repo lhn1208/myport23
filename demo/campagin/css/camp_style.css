@@ -177,7 +177,7 @@ a, button{color: #222; font-family: 'Noto Sans KR', sans-serif; }
 .footer_bottom .button_wrap .global_box a{display: block; padding:6px 20px; line-height: 1.6;  font-size: 14px; color: #222;}
 .footer_bottom .button_wrap .global_box a:hover{color: var(--primary-color);}
 .footer_bottom .button_wrap .global_box a i{display: inline-block; margin-right:6px; vertical-align: middle;}
-.footer_bottom .button_wrap .btn_global:hover .global_box{display: block;}
+/* .footer_bottom .button_wrap .btn_global:hover .global_box{display: block;} */
 .footer_bottom .button_wrap .inquire{background-color: #222; color: #fff;}
 .camp_footer .mb_add_footer{display: none;}
  /*mobile_bottom*/

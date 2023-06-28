@@ -30,6 +30,13 @@ $(document).ready(function(){
             $(this).toggleClass('active');
             $(this).next().toggleClass('active');
         })
+        $btn_global =$('.footer_bottom .btn_global');
+        $btn_global.find('.btn').mouseover(function(){
+            $btn_global.find('.global_box').show();
+        });
+        $btn_global.find('.global_box').mouseleave(function(){
+            $btn_global.find('.global_box').hide();
+        });
         /*top button */
         var windowHeight= $(window).height();
         var $togoBtn= $('.fix_right .togo_top');
