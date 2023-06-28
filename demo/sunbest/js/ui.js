@@ -36,15 +36,16 @@ $(function() {
         $(this).parent('ul').siblings().find('.link_img').eq(idx).addClass('active').siblings().removeClass('active');
     }); 
     //mobile sub menu
+    var ms=80;
     $menuTarget.click(function(e){//.mobile_menu mune_list li a
         var $mb_sub = $(this).next('.mb_sub'); //mune_list li a + mb_sub li a
         var $parent_li = $(this).parent('li');
-            $parent_li.siblings().find('.mb_sub').slideUp(100);
-        $mb_sub.slideToggle(100);
+            $parent_li.siblings().find('.mb_sub').slideUp(ms);
+        $mb_sub.slideToggle(ms);
     })
     $mbCont_clse.click(function(){ //모바일 닫기 버튼
         $mbCont.removeClass('active');
-        $mbCont.find('.mb_sub').slideUp(100);
+        $mbCont.find('.mb_sub').slideUp(ms);
         $mbLayer.hide();
     })
 
@@ -55,7 +56,7 @@ $(function() {
             $quickCont.removeClass('active');
         }else{
             $mbCont.removeClass('active');
-            $mbCont.find('.mb_sub').slideUp(100);
+            $mbCont.find('.mb_sub').slideUp(ms);
             $mbLayer.hide();
         }
     });
