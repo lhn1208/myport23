@@ -114,7 +114,7 @@ a, button{color: #222; font-family: 'Noto Sans KR', sans-serif; }
 .links .click_sort.sns.pc .sort_box label{display: inline-block;}
 .links .click_sort.sns.pc button{display: none;}
 .links .click_sort.sns.pc input+.mark{display: inline-block; line-height: 24px; margin:0 2px; padding: 0 15px; font-size: 14px; border:1px solid #c5c5c5; border-radius: 30px;}
-.links .click_sort.sns.pc input:checked+.mark{border:1px solid var(--primary-color);}
+.links .click_sort.sns.pc input:checked+.mark{border:1px solid var(--primary-color); color:var(--primary-color);}
 .links .click_sort.sns.pc .sort_box{position: relative; border: none; left: auto; top: 0; width: auto; padding: 0;}
 .links .click_sort.sns.pc .input_style{font-size: 14px;}
 .links .sort_box a{display: block; margin-bottom: 6px; font-size: 14px; color: #666;}
