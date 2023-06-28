@@ -7,6 +7,7 @@ $(function() {
         var idx= $(this).index();
         $(this).parent('ul').siblings().find('.link_img').eq(idx).addClass('active').siblings().removeClass('active');
     }); 
+
     //quick
     var $quickBtn=$('#header .btn_quick');
     var $quickCont=$('.quick_cont');
@@ -17,24 +18,26 @@ $(function() {
     var $btnMb_all=$('#header .btn_mb_all');
     var $mbCont=$('.mobile_menu');
     var $mbCont_clse=$('.mobile_menu .btn_close');
-    var $menuTarget=$mbCont.find('ul li a');
+    var $menuTarget=$mbCont.find('.menu_list li a');
     var $mbLayer=$('.mb_layer');
-    $btnMb_all.click(function(){var $subMenu=$('#header .navi .sub_menu');
-    var $sub_li=$subMenu.find('ul li')
-    $sub_li.hover(function(){
-        var idx= $(this).index();
-        $(this).parent('ul').siblings().find('.link_img').eq(idx).addClass('active').siblings().removeClass('active');
-    }); 
-    //sub menu
-    $menuTarget.click(function(){
-       $(this).parents('.menu_list li').siblings().find('ul').slideUp(100);
-       $(this).siblings().slideToggle(100);
-    })
-    $mbCont.addClass('active');
-    var timer = setInterval(function() {
-        $mbLayer.show();
-        clearInterval(timer);
-    }, 200);
+    $btnMb_all.click(function(){
+        var $subMenu=$('#header .navi .sub_menu');
+        var $sub_li=$subMenu.find('ul li')
+        //pc sub_menu 
+        $sub_li.hover(function(){
+            var idx= $(this).index();
+            $(this).parent('ul').siblings().find('.link_img').eq(idx).addClass('active').siblings().removeClass('active');
+        }); 
+        //mobile sub menu
+        $menuTarget.click(function(){
+            $mbCont.find('.mb_sub').slideUp(100);
+            $(this).next('.mb_sub').slideToggle(100);
+        })
+        $mbCont.addClass('active');
+        var timer = setInterval(function() {
+            $mbLayer.show();
+            clearInterval(timer);
+        }, 200);
     });
     $mbCont_clse.click(function(){
         $mbCont.removeClass('active');
