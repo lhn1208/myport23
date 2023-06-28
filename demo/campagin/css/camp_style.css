@@ -253,3 +253,7 @@ a, button{color: #222; font-family: 'Noto Sans KR', sans-serif; }
     .list_grid_type .detail .title{font-size: 14px;}
     .camp_footer address{word-break: keep-all;}
 }
+@media all and (max-width:480px){
+    .fix_right{right:10px;}
+    .footer_bottom .navi a{margin:0 2px;}
+}

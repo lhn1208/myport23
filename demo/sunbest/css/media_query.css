@@ -37,7 +37,7 @@
     .intro_container .links_area a{display: block; width: 90vw; margin:2px auto; line-height: 38px; }
 }
 @media all and (max-width:1023px){
-    *{transition: 0.5s, height 0.5s, background-color 0.5s, transform 0.5s}  
+    *{transition:width .4s, height .4s, background-color .4s, transform .4s;} 
     /*main*/
     .content_width{width: var(--mb-content-w);}
     .main_container .visual .inner .title{font-size: 24px;} 
