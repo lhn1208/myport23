@@ -24,7 +24,7 @@ $(document).ready(function(){
         } else {
             $click_sort_sns.addClass('pc');
         }
-
+        //button
         $sort_box=$('.click_sort button');
         $sort_box.click(function(){
             $(this).toggleClass('active');
@@ -52,9 +52,10 @@ $(document).ready(function(){
             $('html, body').animate({scrollTop: 0}, );
         })
         //mobile menu pop
-        $mb_add_footer=$('.mb_add_footer');
+        $mb_add_footer=$('.mb_add_footer .category');
         $mobile_pop=$('.mobile_pop_wrap');
-        $mb_add_footer.click(function(){    
+        $mb_add_footer.click(function(e){    
+            e.preventDefault();
             $mobile_pop.addClass('visible');
         });
         $mobile_pop.find('.close').click(function(){
