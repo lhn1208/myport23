@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기자단 캠페인</title>
+    <link rel="stylesheet" href="../css/camp_style.css">
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <script src="../js/ui.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <nav id="Index">
+            <a href="#content">본문 바로가기</a>
+        </nav>
+        <header class="camp_header">
+            <div class="content_inner fixed mobile_flex">
+                <div class="cont gnb_area">
+                    <h1 class="logo"><a href="#"><img src="../img/logo-revu-n.svg"></a></h1>
+                    <div class="all_menu">
+                        <button class="btn"><i class="ico"></i>전체 카테고리</button>
+                        <div class="sub_menu_content">
+                            <div class="sub_menu">
+                                <div class="col">
+                                    <ul>
+                                        <li><a href="#"><strong>제품 전체</strong></a></li>
+                                        <li><a href="#">생활</a></li>
+                                        <li><a href="#">서비스</a></li>
+                                        <li><a href="#">유아둥</a></li>
+                                        <li><a href="#">디지털</a></li>
+                                        <li><a href="#">뷰티</a></li>
+                                        <li><a href="#">패션</a></li>
+                                        <li><a href="#">도서</a></li>
+                                        <li><a href="#">식품</a></li>
+                                        <li><a href="#">반려동물</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <li><a href="#"><strong>지역 전체</strong></a></li>
+                                        <li><a href="#">맛집</a></li>
+                                        <li><a href="#">뷰티</a></li>
+                                        <li><a href="#">숙박</a></li>
+                                        <li><a href="#">문화</a></li>
+                                        <li><a href="#">배달</a></li>
+                                        <li><a href="#">테이크아웃</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col ad_sec">
+                                    <figure class="menu_ad">
+                                        <a href="#"><img src="https://files.weble.net/event/REVU1_7e465d874af69adb292f192d037a69bd.jpg?bust=1687874289022"></a>
+                                        <figcaption>
+                                            <strong>6월 신규 회원님! 지니 부르셨나요?</strong>
+                                            원하는 선물을 말씀해 주세요!
+                                        </figcaption>
+                                    </figure>
+                                    <ul>
+                                        <li><a href="#">이벤트</a></li>
+                                        <li><a href="#">커뮤니티</a></li>
+                                        <li><a href="#">고객센터</a></li>
+                                        <li><a href="#">광고문의</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="navi">
+                        <a href="#">오늘오픈</a>
+                        <a href="#">프리미어</a>
+                        <a href="#">기자단</a>
+                        <a href="#">유투브</a>
+                        <a href="#">이벤트</a>
+                        <a href="#">커뮤니티</a>
+                    </nav>
+                </div>
+                 <!--로그인 시-->
+                <ul class="cont member login">
+                    <li>
+                        <button class="ico my_info">
+                            <img src="../img/avatar.svg">
+                        </button>
+                        <div class="info_box">
+                            <strong class="box_title">nickname</strong>
+                            <ul>
+                                <li><a href="#">나의 캠페인</a></li>
+                                <li><a href="#">관심 캠페인</a></li>
+                                <li><a href="#">나의 포인트</a></li>
+                                <li><a href="#">미디어 연결</a></li>
+                                <li><a href="#">내 정보</a></li>
+                                <li><a href="#">로그아웃</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="alarm">
+                        <button class="ico"><i class="num">1</i><img src="../img/ic-alarm.svg"></button>
+                        <div class="info_box">
+                            <strong class="box_title">새로운 알림 <span class="num">1</span></strong>
+                            <a href="#" class="mypage_link">레뷰회원이 되셨습니다.</a>
+                        </div>
+                    </li>
+                    <!--//로그인 시-->
+                </ul>
+                <div class="mobile_header">마이 페이지</div>
+                <div class="mb_mypage_set">
+                    <a href="#"><img src="../img/ic-mypage-alarm.svg"></a>
+                    <a href="#"><img src="../img/ic-mypage-setting.svg"></a>
+                </div>
+                <button class="sch_btn">검색</button>
+               
+            </div>
+             <!--search layer-->
+             <div class="sch_box">
+                <div class="content_inner">
+                    <form action="#">
+                        <fieldset> 
+                            <div class="search">
+                                <span>검색</span>
+                                <input type="text" placeholder="캠페인을 검색하세요">
+                            </div>
+                        </fieldset>
+                    </form>
+                    <button class="btn_close">닫기</button>
+                </div>
+            </div>
+            <!--//search layer-->
+        </header>
+        <!--content [S]-->
+        <section class="mypage_container" id="content">
+            <div class="content_width">
+                <div class="top_right">
+                    <strong class="nickname">nanapuble님 💗  레뷰와 만난 지 3일째</strong>
+                   <button class="attend_chk">출석현황</button>
+                </div>
+                <!--my page info-->
+                <div class="mypage_box">
+                    <div class="col info_area">
+                        <div class="profile">
+                            <div class="inner">
+                                <div class="profile_pic basic"></div>
+                                <label for="file_upload" class="btn_camera"><img src="../img/ic-changephoto-wh.png">
+                                    <input type="file" id="file_upload">
+                                </label>
+                            </div>                            
+                        </div>
+                        <div class="info">
+                            <h2 class="greeting">
+                                안녕하세요
+                                <br><em class="nickname">nanapuble님</em>
+                            </h2>
+                            <span class="grade"><i><img src="../img/new-icon.png"></i>NEW</span>
+                            <div class="info">
+                                <div class="col">
+                                    <strong>포인트</strong>
+                                    <div class="num">0<span>P</span></div>
+                                </div>
+                                <div class="col">
+                                    <div class="pc_block">
+                                        <strong>등록 콘텐츠</strong>
+                                        <div class="num">0<span>개</span></div>
+                                    </div>
+                                    <div class="mb_block">
+                                        <strong>미디어 연결</strong>
+                                        <div class="links_wrap">
+                                            <a href="#"><img src="../img/ic-mypage-blog-off.svg"></a>
+                                            <a href="#"><img src="../img/ic-mypage-insta-off.svg"></a>
+                                            <a href="#"><img src="../img/ic-mypage-youtube-off.svg"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <strong>프리미어</strong>
+                                    <p class="text">프리미어를<br>신청해주세요</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col media">
+                        <h3 class="title">레뷰와 연결된 <br><strong>미디어</strong></h3>
+                        <ul class="connect">
+                            <li><a href="#"><i><img src="../img/ic-mypage-blog-off.svg"></i>블로그를 연결해주세요</a></li>
+                            <li><a href="#"><i><img src="../img/ic-mypage-insta-off.svg"></i>인스타그램를 연결해주세요</a></li>
+                            <li><a href="#"><i><img src="../img/ic-mypage-youtube-off.svg"></i>유튜브를 연결해주세요</a></li>
+                        </ul>
+                    </div>
+                    <div class="col add_info">
+                        <h3 class="title"><strong>추가정보</strong><br>입력을 끝내주세요!</h3>
+                        <span class="text">입력을 완료하시면 캠페인을 추천 받을 수 있어요!</span>
+                        <div class="graph">
+                            <div class="bar"><span class="rate"style="width:30% "></span></div>
+                            완료까지 70%
+                        </div>
+                    </div>
+                </div>
+                <!--//my page info-->
+                <!--my page cont-->
+                <div class="mypage">
+                    <aside class="menu">   
+                        <div class="row">
+                            <h2 class="menu_tit">활동관리</h2>
+                            <ul>
+                                <li><a href="#">나의 캠페인</a></li>
+                                <li><a href="#">관심 캠페인</a></li>
+                                <li><a href="#">등록 콘텐츠</a></li>
+                                <li><a href="#">받은 메시지</a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <h2 class="menu_tit">계정관리</h2>
+                            <ul>
+                                <li><a href="#">내정보</a></li>
+                                <li><a href="#">미디어 연결</a></li>
+                                <li><a href="#">패널티 현황</a></li>
+                                <li><a href="#">나의 포인트</a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <h2 class="menu_tit">고객센터</h2>
+                            <ul>
+                                <li><a href="#">1:1문의하기</a></li>
+                                <li><a href="#">서비스 가이드</a></li>
+                            </ul>
+                        </div>
+
+                    </aside>
+                    <div class="board_wrap">
+                        <div class="board">
+                            <div class="title_area">
+                                <h2 class="title">나의 캠페인</h2>
+                                <a class="link_all">전체보기</a>
+                            </div>
+                            <div class="progres">
+                                <ul>
+                                    <li class="current">신청<span class="mb_none">한 켐페인</span><em>0</em></li>
+                                    <li><a href="#">선정<span class="mb_none">된 켐페인</span> <em>0</em></a></li>
+                                    <li><a href="#">등록<span class="mb_none">한 켐페인</span> <em>0</em></a></li>
+                                    <li><a href="#">종료<span class="mb_none">된 켐페인</span> <em>0</em></a></li>
+                                </ul>
+                            </div>
+                            <div class="links">
+                                <div class="click_sort sns pc">
+                                    <label class="input_style">
+                                        <input type="checkbox" checked><span class="mark">블로그</span>
+                                    </label>
+                                    <label class="input_style">
+                                        <input type="checkbox" checked><span class="mark">인스타그램</span>
+                                    </label>
+                                    <label class="input_style">
+                                        <input type="checkbox"><span class="mark">유튜브</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="none">
+                                <div class="ico_wrap ico_camp">
+                                    <svg viewBox="0 0 160 120" width="160" height="120" preserveAspectRatio="xMidYMid meet" style="content-visibility: visible;"><defs><clipPath id="__lottie_element_118"><rect width="160" height="120" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_118)"><g transform="matrix(1,0,0,1,55.25,58.875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,23,23)"><path fill="rgb(235,235,240)" fill-opacity="1" d=" M0,-23 C12.70199966430664,-23 23,-12.70300006866455 23,0 C23,12.70199966430664 12.70199966430664,23 0,23 C-12.70300006866455,23 -23,12.70199966430664 -23,0 C-23,-12.70300006866455 -12.70300006866455,-23 0,-23z"></path></g></g><g transform="matrix(1,0,0,1,65.50753784179688,71.625)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,2.5199999809265137,2.621999979019165)"><path fill="rgb(180,185,210)" fill-opacity="1" d=" M-1.8240000009536743,1.2960000038146973 C-1.1679999828338623,2.305999994277954 0.18199999630451202,2.5950000286102295 1.194000005722046,1.940999984741211 C2.2049999237060547,1.284000039100647 2.492000102996826,-0.06700000166893005 1.8370000123977661,-1.0789999961853027 C1.1799999475479126,-2.0910000801086426 -0.17000000178813934,-2.378999948501587 -1.1820000410079956,-1.7230000495910645 C-2.193000078201294,-1.0670000314712524 -2.4800000190734863,0.2849999964237213 -1.8240000009536743,1.2960000038146973z"></path></g></g><g transform="matrix(1,0,0,1,82.13253784179688,71.625)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,2.5199999809265137,2.621999979019165)"><path fill="rgb(180,185,210)" fill-opacity="1" d=" M-1.8240000009536743,1.2960000038146973 C-1.1679999828338623,2.305999994277954 0.18199999630451202,2.5950000286102295 1.194000005722046,1.940999984741211 C2.2049999237060547,1.284000039100647 2.492000102996826,-0.06700000166893005 1.8370000123977661,-1.0789999961853027 C1.1799999475479126,-2.0910000801086426 -0.17000000178813934,-2.378999948501587 -1.1820000410079956,-1.7230000495910645 C-2.193000078201294,-1.0670000314712524 -2.4800000190734863,0.2849999964237213 -1.8240000009536743,1.2960000038146973z"></path></g></g><g transform="matrix(1,0,0,1,68.5,83)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,6.699999809265137,1.2999999523162842)"><path fill="rgb(180,185,210)" fill-opacity="1" d=" M-4.599999904632568,-1.149999976158142 C-4.599999904632568,-1.149999976158142 4.599999904632568,-1.149999976158142 4.599999904632568,-1.149999976158142 C5.235000133514404,-1.149999976158142 5.75,-0.6349999904632568 5.75,0 C5.75,0.6349999904632568 5.235000133514404,1.149999976158142 4.599999904632568,1.149999976158142 C4.599999904632568,1.149999976158142 -4.599999904632568,1.149999976158142 -4.599999904632568,1.149999976158142 C-5.235000133514404,1.149999976158142 -5.75,0.6349999904632568 -5.75,0 C-5.75,-0.6349999904632568 -5.235000133514404,-1.149999976158142 -4.599999904632568,-1.149999976158142z"></path></g></g><g transform="matrix(1,0,0,1,109,52.323062896728516)" opacity="0.3335449999989937" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,4.5,7)"><path fill="rgb(235,235,240)" fill-opacity="1" d=" M0,7 C2.4809999465942383,7 4.5,4.99399995803833 4.5,2.5290000438690186 C4.5,-0.5479999780654907 0.9229999780654907,-5.7170000076293945 0,-7 C-0.9229999780654907,-5.7170000076293945 -4.5,-0.5460000038146973 -4.5,2.5290000438690186 C-4.5,4.99399995803833 -2.4809999465942383,7 0,7z"></path></g></g><g transform="matrix(0.5892900228500366,0,0,0.5892900228500366,121.47319793701172,72.74996948242188)" opacity="1" style="display: none;"><g opacity="1" transform="matrix(1,0,0,1,4.5,7)"><path fill="rgb(235,235,240)" fill-opacity="1" d=" M0,7 C2.4809999465942383,7 4.5,4.99399995803833 4.5,2.5290000438690186 C4.5,-0.5479999780654907 0.9229999780654907,-5.7170000076293945 0,-7 C-0.9229999780654907,-5.7170000076293945 -4.5,-0.5460000038146973 -4.5,2.5290000438690186 C-4.5,4.99399995803833 -2.4809999465942383,7 0,7z"></path></g></g></g></svg>
+                                </div>
+                                <p class="text">신청한 캠페인이 없습니다.<br>다양한 레뷰 캠페인에 신청해보세요.</p>
+                                <div class="links_wrap"><a href="#">제품 캠페인 보기</a><a href="#">지역 캠페인 보기</a></div>
+                            </div>
+                        </div>
+                        <div class="board">
+                            <div class="title_area">
+                                <h2 class="title">관심 캠페인 <em>0개</em></h2>
+                                <a class="link_all">전체보기</a>
+                            </div>
+                            <div class="none">
+                                <div class="ico_wrap ico_interest">
+                                    <svg >
+                                        <g opacity="1" transform="matrix(1,0,0,1,40,48)">
+                                            <path fill="rgb(248,248,250)" fill-opacity="1" d=" M-36,-48 C-36,-48 36,-48 36,-48 C38.20899963378906,-48 40,-46.20899963378906 40,-44 C40,-44 40,44 40,44 C40,46.20899963378906 38.20899963378906,48 36,48 C36,48 -36,48 -36,48 C-38.20899963378906,48 -40,46.20899963378906 -40,44 C-40,44 -40,-44 -40,-44 C-40,-46.20899963378906 -38.20899963378906,-48 -36,-48z"></path></g><g opacity="1" transform="matrix(1,0,0,1,40,35.5)"><path fill="rgb(239,240,245)" fill-opacity="1" d=" M-33,-28.5 C-33,-28.5 33,-28.5 33,-28.5 C33,-28.5 33,28.5 33,28.5 C33,28.5 -33,28.5 -33,28.5 C-33,28.5 -33,-28.5 -33,-28.5z"></path></g><g opacity="1" transform="matrix(1,0,0,1,25.5,75)"><path fill="rgb(239,240,245)" fill-opacity="1" d=" M-18.5,-2 C-18.5,-2 18.5,-2 18.5,-2 C18.5,-2 18.5,2 18.5,2 C18.5,2 -18.5,2 -18.5,2 C-18.5,2 -18.5,-2 -18.5,-2z"></path></g><g opacity="1" transform="matrix(1,0,0,1,31,83)"><path fill="rgb(239,240,245)" fill-opacity="1" d=" M-24,-2 C-24,-2 24,-2 24,-2 C24,-2 24,2 24,2 C24,2 -24,2 -24,2 C-24,2 -24,-2 -24,-2z"></path>
+                                        </g>
+                                    </svg>
+                                    <span class="heart">
+                                        <i class="ico main"></i>
+                                        <i class="ico sm up1"></i>
+                                        <i class="ico sm up2"></i>
+                                    </span>
+                                </div>
+                                <p class="text" style="margin-top: 20px;">관심있는 캠페인에있는 하트를 눌러서 추가해 보세요.</p>
+                            </div>
+                        </div>
+                        <div class="board">
+                            <div class="title_area">
+                                <h2 class="title">등록 컨텐츠 <em>0개</em></h2>
+                                <a class="link_all">전체보기</a>
+                            </div>
+                            <div class="none">
+                                <div class="ico_wrap">
+                                    <svg viewBox="0 0 160 120" width="160" height="120" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clipPath id="__lottie_element_82"><rect width="160" height="120" x="0" y="0"></rect></clipPath><clipPath id="__lottie_element_87"><path d="M0,0 L160,0 L160,120 L0,120z"></path></clipPath></defs><g clip-path="url(#__lottie_element_82)"><g transform="matrix(1,0,0,1,24,18)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,30.5,30.5)"><path fill="rgb(248,248,250)" fill-opacity="1" d=" M-26.5,-30.5 C-26.5,-30.5 26.5,-30.5 26.5,-30.5 C28.708999633789062,-30.5 30.5,-28.708999633789062 30.5,-26.5 C30.5,-26.5 30.5,26.5 30.5,26.5 C30.5,28.708999633789062 28.708999633789062,30.5 26.5,30.5 C26.5,30.5 -26.5,30.5 -26.5,30.5 C-28.708999633789062,30.5 -30.5,28.708999633789062 -30.5,26.5 C-30.5,26.5 -30.5,-26.5 -30.5,-26.5 C-30.5,-28.708999633789062 -28.708999633789062,-30.5 -26.5,-30.5z"></path></g><g opacity="1" transform="matrix(1,0,0,1,30.5,21.5)"><path fill="rgb(239,240,245)" fill-opacity="1" d=" M-24.5,-15.5 C-24.5,-15.5 24.5,-15.5 24.5,-15.5 C24.5,-15.5 24.5,15.5 24.5,15.5 C24.5,15.5 -24.5,15.5 -24.5,15.5 C-24.5,15.5 -24.5,-15.5 -24.5,-15.5z"></path></g><g opacity="1" transform="matrix(1,0,0,1,18,43.5)"><path fill="rgb(239,240,245)" fill-opacity="1" d=" M-12,-1.5 C-12,-1.5 12,-1.5 12,-1.5 C12,-1.5 12,1.5 12,1.5 C12,1.5 -12,1.5 -12,1.5 C-12,1.5 -12,-1.5 -12,-1.5z"></path></g><g opacity="1" transform="matrix(1,0,0,1,21.5,50.5)"><path fill="rgb(239,240,245)" fill-opacity="1" d=" M-15.5,-1.5 C-15.5,-1.5 15.5,-1.5 15.5,-1.5 C15.5,-1.5 15.5,1.5 15.5,1.5 C15.5,1.5 -15.5,1.5 -15.5,1.5 C-15.5,1.5 -15.5,-1.5 -15.5,-1.5z"></path></g></g><g clip-path="url(#__lottie_element_87)" transform="matrix(1,0,0,1,10,-0.5)" opacity="1" style="display: block;"><g transform="matrix(1,0,0,1,55.25,58.875)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,23,23)"><path fill="rgb(235,235,240)" fill-opacity="1" d=" M0,-23 C12.70199966430664,-23 23,-12.70300006866455 23,0 C23,12.70199966430664 12.70199966430664,23 0,23 C-12.70300006866455,23 -23,12.70199966430664 -23,0 C-23,-12.70300006866455 -12.70300006866455,-23 0,-23z"></path></g></g><g transform="matrix(1,0,0,1,65.25,71.625)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,2.5199999809265137,2.621999979019165)"><path fill="rgb(180,185,210)" fill-opacity="1" d=" M-1.8240000009536743,1.2960000038146973 C-1.1679999828338623,2.305999994277954 0.18199999630451202,2.5950000286102295 1.194000005722046,1.940999984741211 C2.2049999237060547,1.284000039100647 2.492000102996826,-0.06700000166893005 1.8370000123977661,-1.0789999961853027 C1.1799999475479126,-2.0910000801086426 -0.17000000178813934,-2.378999948501587 -1.1820000410079956,-1.7230000495910645 C-2.193000078201294,-1.0670000314712524 -2.4800000190734863,0.2849999964237213 -1.8240000009536743,1.2960000038146973z"></path></g></g><g transform="matrix(1,0,0,1,81.875,71.625)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,2.5199999809265137,2.621999979019165)"><path fill="rgb(180,185,210)" fill-opacity="1" d=" M-1.8240000009536743,1.2960000038146973 C-1.1679999828338623,2.305999994277954 0.18199999630451202,2.5950000286102295 1.194000005722046,1.940999984741211 C2.2049999237060547,1.284000039100647 2.492000102996826,-0.06700000166893005 1.8370000123977661,-1.0789999961853027 C1.1799999475479126,-2.0910000801086426 -0.17000000178813934,-2.378999948501587 -1.1820000410079956,-1.7230000495910645 C-2.193000078201294,-1.0670000314712524 -2.4800000190734863,0.2849999964237213 -1.8240000009536743,1.2960000038146973z"></path></g></g><g transform="matrix(1,0,0,1,68.5,83)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,6.699999809265137,1.2999999523162842)"><path fill="rgb(180,185,210)" fill-opacity="1" d=" M-4.599999904632568,-1.149999976158142 C-4.599999904632568,-1.149999976158142 4.599999904632568,-1.149999976158142 4.599999904632568,-1.149999976158142 C5.235000133514404,-1.149999976158142 5.75,-0.6349999904632568 5.75,0 C5.75,0.6349999904632568 5.235000133514404,1.149999976158142 4.599999904632568,1.149999976158142 C4.599999904632568,1.149999976158142 -4.599999904632568,1.149999976158142 -4.599999904632568,1.149999976158142 C-5.235000133514404,1.149999976158142 -5.75,0.6349999904632568 -5.75,0 C-5.75,-0.6349999904632568 -5.235000133514404,-1.149999976158142 -4.599999904632568,-1.149999976158142z"></path></g></g><g transform="matrix(1,0,0,1,109,58.75)" opacity="1" style="display: none;"><g opacity="1" transform="matrix(1,0,0,1,4.5,7)"><path fill="rgb(235,235,240)" fill-opacity="1" d=" M0,7 C2.4809999465942383,7 4.5,4.99399995803833 4.5,2.5290000438690186 C4.5,-0.5479999780654907 0.9229999780654907,-5.7170000076293945 0,-7 C-0.9229999780654907,-5.7170000076293945 -4.5,-0.5460000038146973 -4.5,2.5290000438690186 C-4.5,4.99399995803833 -2.4809999465942383,7 0,7z"></path></g></g><g transform="matrix(0.5892900228500366,0,0,0.5892900228500366,121.47319793701172,72.74996948242188)" opacity="1" style="display: none;"><g opacity="1" transform="matrix(1,0,0,1,4.5,7)"><path fill="rgb(235,235,240)" fill-opacity="1" d=" M0,7 C2.4809999465942383,7 4.5,4.99399995803833 4.5,2.5290000438690186 C4.5,-0.5479999780654907 0.9229999780654907,-5.7170000076293945 0,-7 C-0.9229999780654907,-5.7170000076293945 -4.5,-0.5460000038146973 -4.5,2.5290000438690186 C-4.5,4.99399995803833 -2.4809999465942383,7 0,7z"></path></g></g></g></g></svg>
+                                </div>
+                                <p class="text">아직 등록한 콘텐츠가 없어요.<br>캠페인을 신청하고 콘텐츠를 등록해보세요.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--//my page cont-->
+            </div>
+
+        </section>
+        <div class="fix_right">
+            <button class="btn togo_top"><img src="../img/icon-scroll-top.svg"></button>
+            <button class="btn btn_chat"><img src="../img/channeltalk.png"></button>
+            <!--chat-->
+            <div class="chat_box">
+                <iframe style="position:relative;height:100%;width:100%;border:none"></iframe><!--iframe 삽입 시 style적용-->
+            </div>
+            <!--//chat-->
+        </div>
+        <!--content[E]-->
+        <footer class="camp_footer">
+           <div class="content_inner">
+                <div class="left">
+                    <img src="../img/logo-revucorp-g.svg">
+                    <address>
+                        레뷰코퍼레이션<span class="bar"></span>대표이사:장대규<span class="bar"></span>개인정보 보호 최고책임자:이무승<span class="bar"></span>
+                        <br>사업자등록번호 : 261-81-22044 <span class="bar">|</span> 통신판매업신고번호 제2016-서울강남-01523호
+                        <br>주소 : 서울특별시 강남구 논현로 135길 29 (논현동)
+                        <br>메일 : <a href="mailto:help@revu.net">help@revu.net</a> <span class="bar">|</span> 전화 : <a href="tel:15449851">1544-9851</a><span class="bar">|</span>팩스 : 02-877-7995
+                        <p class="copy">&copy; REVU Corporation. All Rights Reserved.</p>
+                    </address>
+                </div>
+                <div class="right">
+                    <a href="tel:15449851" class="tel">1544-9851</a><a href="mailto:help@revu.net" class="mb_email">help@revu.net</a> 
+                    <p class="oprate_time">월-금 9:00-18:00 / 주말, 공휴일 휴무</p>
+                    <div class="sns_links">
+                        <a href="#"><img src="../img/ic-footer-kakaotalk.svg"></a>
+                        <a href="#"><img src="../img/ic-footer-blog.svg"></a>
+                        <a href="#"><img src="../img/ic-footer-insta.svg"></a>
+                        <a href="#"><img src="../img/ic-footer-fb.svg"></a>
+                    </div>
+                </div>
+           </div>
+           <div class="footer_bottom">
+            <div class="content_inner">
+                    <nav class="navi">
+                        <a href="#">레뷰소개</a>
+                        <a href="#">이용약관</a>
+                        <a href="#"><strong>개인정보처리방침</strong></a>
+                        <a href="#">위치기반서비스이용약관</a>
+                        <a href="#">운영정책</a>
+                    </nav>
+                    <div class="count">
+                        <span>Influencer <span class="num">921,815</span></span>
+                        <span>Campaign <span class="num">702,919</span></span>
+                        <span>Contents <span class="num">6,355,858</span></span>
+                    </div>
+                    <div class="button_wrap">
+                        <div class="btn_global">
+                            <button class="btn"><span>대한민국</span></button>
+                            <div class="global_box">
+                                <a href="#"><i><img src="../img/ic-kr.svg" alt=""></i>Korea</a>
+                                <a href="#"><i><img src="../img/ic-vn.svg" alt=""></i>Vietnam</a>
+                                <a href="#"><i><img src="../img/ic-th.svg" alt=""></i>Thailand</a>
+                                <a href="#"><i><img src="../img/ic-id.svg" alt=""></i>Indonesia</a>
+                                <a href="#"><i><img src="../img/ic-tw.svg" alt=""></i>Taiwan</a>
+                                <a href="#"><i><img src="../img/ic-ph.svg" alt=""></i>Philippines</a>
+                                <a href="#"><i><img src="../img/ic-cn.svg" alt=""></i>China</a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn inquire">광고문의</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb_add_footer">
+                <div class="inner">
+                    <a href="#"><div>홈</div></a>
+                    <a href="#" class="category"><div>카테고리</div></a>
+                    <a href="#" class="community"><div>커뮤니티</div></a>
+                    <a href="#" class="support"><div>고객센터</div></a>
+                    <a href="#" class="mypage"><div>마이페이지</div></a>
+                </div>
+            </div>
+            <!--mobile menu layer pop-->
+             <div class="mobile_pop_wrap">
+                <div class="mobile_pop">
+                    <button class="close"></button>
+                    <h1 class="title">카테고리</h1>
+                    <div class="menu_box">
+                        <a href="#"><strong class="menu_title"> 서비스</strong></a>
+                        <ul>
+                            <li><a href="#">오늘오픈</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">유튜브</a></li>
+                            <li><a href="#">기자단</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_box">
+                        <a href="#"><strong class="menu_title">지역</strong></a>
+                        <ul>
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#">맛집</a></li>
+                            <li><a href="#">뷰티</a></li>
+                            <li><a href="#">숙박</a></li>
+                            <li><a href="#">문화</a></li>
+                            <li><a href="#">배달</a></li>
+                            <li><a href="#">테이크아웃</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_box">
+                        <a href="#"><strong class="menu_title">제품</strong></a>
+                        <ul>
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#">생활</a></li>
+                            <li><a href="#">서비스</a></li>
+                            <li><a href="#">유아동</a></li>
+                            <li><a href="#">디지털</a></li>
+                            <li><a href="#">뷰티</a></li>
+                            <li><a href="#">패션</a></li>
+                            <li><a href="#">도서</a></li>
+                            <li><a href="#">식품</a></li>
+                            <li><a href="#">반려동물</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_box">
+                        <a href="#"><strong class="menu_title">프리미어</strong></a>
+                        <ul>
+                            <li><a href="#">블로그</a></li>
+                            <li><a href="#">인스타그램</a></li>
+                            <li><a href="#">네이버인플루언서</a></li>
+                            <li>&nbsp;</li>
+                        </ul>
+                    </div>
+                    <div class="menu_box">
+                        <a href="#"><strong class="menu_title">고객센터</strong></a>
+                        <ul>
+                            <li><a href="#">서비스 가이드</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">광고문의</a></li>
+                            <li>&nbsp;</li>
+                        </ul>
+                    </div>
+                    <div class="mobile_banner">
+                        <a href="#"><img src="../img/mobile-banner.jpg"></a>
+                    </div>
+                </div>
+             </div>
+            <!--//mobile menu layer pop-->
+        </footer>
+    </div>
+</body>
+</html>

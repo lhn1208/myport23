@@ -60,6 +60,7 @@ $(function() {
             $mbCont.removeClass('active');
             $mbCont.find('.mb_sub').slideUp(ms);
             $mbLayer.hide();
+            $('body').removeClass('scroll_hidden')
         }
     });
     //main button hover
