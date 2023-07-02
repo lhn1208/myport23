@@ -352,7 +352,7 @@ a, button{color: #222; font-family: 'Noto Sans KR', sans-serif; }
     .mypage_box>.col{padding:0;}
     .mypage_box .media,.mypage_box .add_info{display: none;}
     .mypage_box .info_area .profile{left:auto; right: 0; width: 80px;}
-    .mypage_box .info_area .profile_pic.basic{width:80px; height: 80px;}
+    .mypage_box .info_area .profile_pic{width:80px; height: 80px;}
     .mypage_box .info_area{padding-left: 0;}
     .mypage_box .info .col .pc_block{display: none;}
     .mypage_box .info .col .mb_block{display: block;}
