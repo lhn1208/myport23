@@ -1,0 +1,163 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+    <!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<div class="cont_head">
+					<h2 class="tit_cate">포인트 내역</h2>
+				</div>
+				<div class="cont_my_v2 my_point_v2">
+					<ul class="list_type">
+						<li>기간 검색 시, 최대 12개월까지 조회 가능합니다.</li>
+					</ul>
+					<!-- 리스트가 하나일 경우 "one_list" 클래스 추가 -->
+					<!-- <div class="box_type1 point_list one_list">
+						<p>제로포인트<span class="point fc_orange"><strong class="txt_num">59,000</strong> p</span></p>
+					</div> -->
+					<div class="box_type1 point_list">
+						<p>제로포인트<span class="point fc_orange"><strong class="txt_num">59,000</strong> p</span></p>
+						<p>복지포인트<span class="point"><strong class="txt_num">59,000</strong> p</span></p>
+						<p>판촉포인트<span class="point"><strong class="txt_num">0</strong> p</span></p>
+						<p>MRO포인트<span class="point"><strong class="txt_num">1,059,000</strong> p</span></p>
+					</div>
+					<!-- 검색영역 [s] -->
+					<div class="box_type1 box_setting">
+						<h3 class="screen_out">이용내역 검색</h3>
+						<div class="cont_setting">
+							<form>
+								<fieldset>
+									<legend class="screen_out">포인트 사용내역 조회 폼</legend>
+									<div class="select_type1 line_type">
+										<select class="list_select">
+											<option selected="selected">진행상태 전체</option>
+											<option>option1</option>
+											<option>option2</option>
+										</select>
+									</div>
+									<div class="frame">
+										<div class="frame_inp calendar_inp">
+											<label for="from">
+												<input type="date" class="inp_oshop" id="from" value="2018-02-14">
+												<span class="ico_oshop ico_calendar">검색 날짜 선택</span>
+											</label>
+										</div>
+										<span class="txt_g">~</span>
+										<div class="frame_inp calendar_inp">
+											<label for="to">
+												<input type="date" class="inp_oshop" id="to" value="2018-02-21">
+												<span class="ico_oshop ico_calendar">검색 날짜 선택</span>
+											</label>
+										</div>
+									</div>
+									<div class="frame">
+										<div class="select_type1 line_type">
+											<select class="list_select">
+												<option selected="selected">포인트 종류</option>
+												<option>option1</option>
+												<option>option2</option>
+											</select>
+										</div>
+										<button type="submit" class="btn_search btn_type5">검색</button>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+					<!-- 검색영역 [e] -->
+					<div class="box_result">
+						<p><strong>총</strong> <span class="txt_num">24 건</span>의 주문이 검색되었습니다.</p>
+					</div>
+					<!-- 리스트 [s] -->
+					<div class="box_type1">
+						<div class="box_my_prod">
+							<div class="tit_my_prod">
+								<span class="desc">2015-10-13</span>
+								<span class="desc">주문번호 M1234456567668</span>
+							</div>
+							<div class="cont_my_prod">
+								<div class="cont">
+									<p class="point_info">
+										<span class="txt">구분</span>
+										<span class=""><strong>구분</strong></span>
+									</p>
+									<p class="point_info">
+										<span class="txt">내용</span>
+										<span class="">제로샵 신규가입 포인트</span>
+									</p>
+								</div>
+								<div class="info">
+									<p class="state fc_blue">적립</p>
+									<span class="txt_num"><strong>10,000</strong>원</span>
+								</div>
+							</div>
+						</div>
+						<div class="box_my_prod">
+							<div class="tit_my_prod">
+								<span class="desc">2015-10-13</span>
+								<span class="desc">주문번호 M1234456567668</span>
+							</div>
+							<div class="cont_my_prod">
+								<div class="cont">
+									<p class="point_info">
+										<span class="txt">구분</span>
+										<strong>제로포인트</strong>
+									</p>
+									<p class="point_info">
+										<span class="txt">내용</span>
+										<span class="">제로샵 신규가입 포인트</span>
+									</p>
+								</div>
+								<div class="info">
+									<p class="price_info">
+										<span class="state fc_blue">적립</span>
+										<span class="txt_num"><strong>1,330,000</strong>원</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="box_my_prod">
+							<div class="tit_my_prod">
+								<span class="desc">2015-10-13</span>
+								<span class="desc">주문번호 M1234456567668</span>
+							</div>
+							<div class="cont_my_prod">
+								<div class="cont">
+									<p class="point_info">
+										<span class="txt">구분</span>
+										<strong>제로포인트</strong>
+									</p>
+									<p class="point_info">
+										<span class="txt">내용</span>
+										<span class="">제로샵 신규가입 포인트</span>
+									</p>
+								</div>
+								<div class="info">
+									<span class="state fc_orange">사용</span>
+									<span class="txt_num"><strong>30,000</strong>원</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 리스트 [e] -->
+					<div class="btns_full btn_more">
+						<button type="button" class="btn_prod_more btn_type3"><span class="ico_oshop"></span> 더 보기 (15)</button>
+					</div>
+				</div>
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a>
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+	<script type="text/javascript">
+		$(function(){
+			var $point = $(".point_list").find("p").length;
+			if($point == 2){
+				$(".point_list p").css("border-bottom","0");
+			}
+		})
+	</script>
+</body>
+</html>

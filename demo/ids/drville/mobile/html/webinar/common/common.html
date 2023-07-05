@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=yes">
+	<title>컨퍼런스빌</title>
+	<link rel="apple-touch-icon-precomposed" href="../../images/ico_ios.png" />
+	<link rel="shortcut icon" href="../../images/ico_android.png" />
+	<!-- 2020-10-28 slick 추가 -->
+	<link rel="stylesheet" type="text/css" href="../../css/mobile/slick.css">
+	<link rel="stylesheet" type="text/css" href="../../css/mobile/webinar.css">
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<script src="../../js/ui.js"></script>
+	<script src="../../js/menu.js"></script>
+	<script src="../../js/jquery.bpopup.min.js"></script>
+	<script src="../../js/slick.min.js"></script><!-- 2020-10-28 slick 추가 -->
+
+</head>
+<body>
+<!-- 스킵내비게이션
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+</div> -->
+<!--전체 페이지를 감싸는 태그 id="app" [s]-->
+<div id="app">
+
+	<script type="text/javascript">
+		// 2017-12-12 TOP 버튼 스크립트 수정
+		$(window).load(function() {
+			var btnTop = $(".btn_top");
+			btnTop.hide();
+			if($(".wrap footer").length != 1){
+				btnTop.css("bottom","20px");
+			//}else {
+				//btnTop.css("bottom","75px");
+				//var fTop = $("footer").offset().top;
+			}
+			$("#container").scroll(function(){
+				btnTop.fadeIn(300);
+				if($("#container").scrollTop()==0 ) {
+					btnTop.fadeOut(300);
+				};
+				//if($("body").height() + $("#container").scrollTop() >= fTop + 50){
+				//	btnTop.css("bottom","80px");
+				//}else {
+				//	btnTop.css("bottom","20px");
+				//}
+			});
+			btnTop.click(function(){
+				$("#container").animate({ scrollTop: 0 }, 500);
+				return false;
+			});
+		})
+	</script>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <include src="../../include/folder_include/set_css.html"></include>
+    <include src="../../include/folder_include/set_js.html"></include>
+    <title>realhouse</title>
+</head>
+<body class="scroll_hidden">
+<div class="wrapper">
+    <div class="main_cover active"></div>
+    <!--카카오로 회원가입-->
+    <div class="layer_member active">
+        <a href="#" class="member_close"><span class="blind">닫기</span></a>
+        <div class="member_section">
+            <h1 class="member_tit">카카오톡으로 회원가입</h1>
+            <div class="member_box">
+                <fieldset>
+                    <legend>이름, 이메일 입력 및 인증번호 전송</legend>
+                    <div class="member_form">
+                        <label for="member_name">
+                            <input id="member_name" type="text" title="이름(실명 입력)" placeholder="이름(실명 입력)" value="홍길동">
+                        </label>
+                    </div> 
+                    <div class="member_form">
+                        <ul class="member_list">
+                            <li>
+                                <label for="member_email" >
+                                    <input id="member_email" class="input_email" type="text" title="이메일 입력" placeholder="이메일 입력" value="test@naver.com">  
+                                </label>
+                                <div class="email_address"></div>
+                            </li>
+                            <li>
+                                <div class="member_select_area" id="select_email">                                
+                                    <a href="#" class="member_select_top">이메일 선택</a>
+                                    <div class="member_select_list">
+                                        <a href="#">naver.com</a>
+                                        <a href="#">daum.net</a>
+                                        <a href="#">hanmail.net</a>
+                                        <a href="#">hotmail.com</a>
+                                        <a href="#">gmail.com</a>
+                                        <a href="#">nate.com</a>
+                                        <a href="#">yahoo.co.kr</a>
+                                        <a href="#">paran.com</a>
+                                        <a href="#">emapas.com</a>
+                                        <a href="#">dreamwiz.com</a>
+                                        <a href="#">lycos.co.kr</a>
+                                        <a href="#">korea.com</a>
+                                        <a href="#" value="direct">직접입력</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="member_form">
+                        <ul class="phone_list">
+                            <li>
+                                <div class="member_select_area">                                
+                                    <a href="#" class="member_select_top">010</a>
+                                    <div class="member_select_list">
+                                        <a href="#">010</a>
+                                        <a href="#">011</a>
+                                        <a href="#">016</a>
+                                        <a href="#">017</a>
+                                        <a href="#">018</a>
+                                        <a href="#">019</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="member_phone">
+                                    <input id="member_phone" class="input_phone" type="text" placeholder="휴대전화번호 입력" value="000-000-0000">
+                                    <!--count--><span class="count">3:00</span>
+                                    <a href="#" class="btn_certify">재전송</a>
+                                </label>
+                            </li>
+                        </ul>
+                    </div> 
+                    <div class="member_form">
+                        <label for="certify">
+                            <input id="certify" type="text" title="인증번호 입력" placeholder="인증번호 입력" value="1234">
+                        </label>
+                    </div> 
+                </fieldset>
+                <!--개인정보처리방침 동의-->
+                <div class="member_agree_area">
+                    <input id="member_agree" type="checkbox" class="checkbox" checked>
+                    <label for="member_agree"><span class="chk_set"></span><em>리얼하우스 이용약관</em> 및 <em>개인정보처리방침</em>에 동의합니다.</label>
+                </div>
+                <!--//개인정보처리방침 동의-->
+            </div>    
+        </div>
+        <div class="member_btn">
+            <button class="btn on">회원가입 완료</button>
+        </div>
+    </div>
+    <!--//카카오로 회원가입-->
+    <include src="../../include/header.html"></include>
+    <div id=main_container class="main_container">  
+        <!--visual-->       
+        <header class="main_visual">
+            <div class="cycle-slideshow" data-cycle-slides=">div" data-cycle-fx="fadeout" data-cycle-timeout="4000" data-cycle-random="true">
+                <div class="slide" style="background-image:url(../../../../images/main/visual1.jpg)"></div>
+                <div class="slide" style="background-image:url(../../../../images/main/visual2.jpg)"></div>
+                <div class="slide" style="background-image:url(../../../../images/main/visual3.jpg)"></div>                
+            </div>
+            <div class="inner">  
+                <div class="content">
+                    <h2 class="tit">헛걸음은 없다<br>허위매물이 근본적으로 차단되는 리얼하우스</h2>
+                    <div class="search_input_area">
+                        <fieldset>
+                            <legend>검색영역</legend>
+                            <label for="search_input" class="search_box">
+                                <input class="search_input" id="search_input" type="text" title="검색" placeholder="지역명 검색">
+                            </label>
+                            <div class="btn_area">
+                                <button class="btn_search">검색</button>
+                            </div>                            
+                        </fieldset>
+                        <div class="auto_complete">
+                            <a href=#>
+                                <dl>
+                                    <dt><em>잠실</em>동</dt>
+                                    <dd>서울시 송파구 잠실동</dd>
+                                </dl>
+                            </a>
+                            <a href=#>
+                                <dl>
+                                    <dt><em>잠실</em>1동</dt>
+                                    <dd>서울시 송파구 잠실1동</dd>
+                                </dl>
+                            </a>
+                            <a href=#>
+                                <dl>
+                                    <dt><em>잠실</em>2동</dt>
+                                    <dd>서울시 송파구 잠실2동</dd>
+                                </dl>
+                            </a>
+                            <a href=#>
+                                <dl>
+                                    <dt><em>잠실</em>3동</dt>
+                                    <dd>서울시 송파구 잠실3동</dd>
+                                </dl>
+                            </a>
+                            <a href=#>
+                                <dl>
+                                    <dt><em>잠실</em>4동</dt>
+                                    <dd>서울시 송파구 잠실4동</dd>
+                                </dl>
+                            </a>
+                            <a href=#>
+                                <dl>
+                                    <dt><em>잠실</em>5동</dt>
+                                    <dd>서울시 송파구 잠실5동</dd>
+                                </dl>
+                            </a>
+                            <a href=#>
+                                <dl>
+                                    <dt><em>잠실</em>6동</dt>
+                                    <dd>서울시 송파구 잠실6동</dd>
+                                </dl>
+                            </a>
+                            <a href=#>
+                                <dl>
+                                    <dt><em>잠실</em>7동</dt>
+                                    <dd>서울시 송파구 잠실7동</dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </div> 
+                </div>                            
+            </div>
+        </header>
+        <!---//visual-->
+        <div class="container_inner">         
+            <div class="intro area_style">
+                <a href="#" class="area type1">
+                    <h4 class="area_tit">오픈 추천이벤트<span class="date">2019.05.31 까지</span></h4>
+                    <div class="content">
+                        10억원 지급 추천이벤트가 1달간 진행됩니다.
+                        <br>포인트는 부동산 중개수수료를 납부하실 수 있습니다.
+                    </div>
+                </a>
+                <a href="#"  class="area type2">
+                    <h4 class="area_tit">리얼하우스는 왜 다른가?</h4>
+                    <div class="content">
+                        허위/미끼매물의 근본적인 차단!!!
+                        <br>이젠, 매물을 보고 일일이 전화하지 않으셔도 됩니다.
+                    </div>
+                </a>
+            </div>
+            <!--최근 본 매물-->
+            <div class="view_area">
+                <div class="content_head1">
+                    <h3 class="tit">최근 본 매물</h3>
+                </div>
+                <div class="view_cont_area">
+                    <div class="cycle-slideshow" data-cycle-slides="> div" data-cycle-fx="scrollHorz" data-cycle-timeout="0"  data-cycle-prev=".prev" data-cycle-next=".next">
+                        <div class="slide_box">
+                            <a href="#" class="item">
+                                <div class="box_border_wrap">
+                                    <span class="img_area"><img src="../../../../images/main/offering_img1.jpg"></span>
+                                    <div class="info">
+                                        <strong class="tit">매매 3억5000</strong>
+                                        <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                        <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>도배</span></p>
+                                        <p class="locate">잠실주공1단지 104동잠실 </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="item">
+                                <div class="box_border_wrap">
+                                    <span class="img_area"><img src="../../../../images/main/offering_img1.jpg"></span>
+                                    <div class="info">
+                                        <strong class="tit">전세 3억5000</strong>
+                                        <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                        <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>도배</span></p>
+                                        <p class="locate">잠실주공1단지 104동잠실 </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="item">
+                                <div class="box_border_wrap">
+                                    <span class="img_area"><img src="../../../../images/main/offering_img1.jpg"></span>
+                                    <div class="info">
+                                        <strong class="tit">전세/월세 3억5000</strong>
+                                        <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                        <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>도배</span></p>
+                                        <p class="locate">잠실주공1단지 104동잠실 </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="item">
+                                <div class="box_border_wrap">
+                                    <span class="img_area"><img src="../../../../images/main/offering_img1.jpg"></span>
+                                    <div class="info">
+                                        <strong class="tit">월세 1억5000/100</strong>
+                                        <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                        <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>도배</span></p>
+                                        <p class="locate">잠실주공1단지 104동잠실 </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide_box">
+                            <a href="#" class="item">
+                                <div class="box_border_wrap">
+                                    <span class="img_area"><img src="../../../../images/main/offering_img1.jpg"></span>
+                                    <div class="info">
+                                        <strong class="tit">매매 3억5000</strong>
+                                        <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                        <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>도배</span></p>
+                                        <p class="locate">잠실주공1단지 104동잠실 </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="item">
+                                <div class="box_border_wrap">
+                                    <span class="img_area"><img src="../../../../images/main/offering_img1.jpg"></span>
+                                    <div class="info">
+                                        <strong class="tit">매매 3억5000</strong>
+                                        <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                        <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>도배</span></p>
+                                        <p class="locate">잠실주공1단지 104동잠실 </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <button class="prev button"><span class="blind">이전</span></button>
+                        <button class="next button"><span class="blind">다음</span></button>
+                    </div>
+                    <a href="#" class="view_all">전체보기(21)</a>
+                </div>
+                <!--매물이 없을때-->
+                <!-- <div class="view_cont_area" style="display: block;">
+                    <div class="offer_none">
+                        <div class="txt_box">
+                            <div class="item box_border_wrap">
+                                마음에 드는<br>매물을<br>관심매물로 등록하고
+                                <span>지도에서 매물찾기</span>
+                            </div>
+                        </div>
+                        <div class="txt_box">
+                            <div class="item box_border_wrap">
+                                평점이 좋은<br>중개사에게<br>중개의뢰하면
+                                <span class="blue">지도에서 매물찾기</span>
+                            </div>
+                        </div>
+                        <div class="txt_box">
+                            <div class="item box_border_wrap">
+                                여러 개의 방문요청한<br>매물을<br>의뢰한 중개사와
+                                <span class="red">지도에서 매물찾기</span>
+                            </div>
+                        </div>
+                        <div class="txt_box box_border_wrap">
+                            <div class="item">
+                                같이 방문하게 되어<br>허위매물이<br>있을 수 없습니다.
+                                <span class="skyblue">지도에서 매물찾기 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!--//매물이 없을때-->
+            </div>
+            <!--//최근 본 매물-->
+            <!--공지사항/뉴스-->
+            <div class="notice area_style">
+                <div class="content_head1">
+                    <h3 class="tit">공지사항/뉴스</h3>
+                </div>
+                <div class="area">
+                    <h4 class="area_tit">공지사항</h4>
+                    <ul class="board">
+                        <li><a href="#"><span>공지사항이 나타납니다.</span><span class="date">2019.11.16</span></a></li>
+                        <li><a href="#"><span>공지사항이 나타납니다.</span><span class="date">2019.11.16</span></a></li>
+                        <li><a href="#"><span>공지사항이 나타납니다.</span><span class="date">2019.11.16</span></a></li>
+                    </ul>
+                    <a class="more" href="#">더보기</a>
+                </div>
+                <div class="area type2">
+                    <h4 class="area_tit">뉴스</h4>
+                    <ul class="board">
+                        <li><a href="#"><span>뉴스가 나타납니다.</span><span class="date">2019.11.16</span></a></li>
+                        <li><a href="#"><span>뉴스가 나타납니다.</span><span class="date">2019.11.16</span></a></li>
+                        <li><a href="#"><span>뉴스가 나타납니다.</span><span class="date">2019.11.16</span></a></li>
+                    </ul>
+                    <a class="more" href="#">더보기</a>
+                </div>
+            </div>
+            <!--//공지사항/뉴스-->
+            <!--앱 다운로드-->
+            <div class="app_download">
+                <div class="box box_border_wrap">
+                    <p class="txt">리얼하우스 앱을 다운받으세요!!!</p>
+                    <div class="app_area">
+                        <a href="#" class="app"><img src="../../../../images/main/app_appstore.png"></a>
+                        <a href="#" class="app"><img src="../../../../images/main/app_google.png"></a>
+                    </div>
+                </div>
+            </div>
+            <!--//앱 다운로드-->
+        </div>
+    </div>
+    <include src="../../include/footer_nav.html"></include>
+    <include src="../../include/footer.html"></include>
+</div>
+</body>
+</html>

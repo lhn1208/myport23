@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <include src="../../include/folder_include/set_css.html"></include>
+    <include src="../../include/folder_include/set_js.html"></include>
+    <title>realhouse</title>
+</head>
+<body>
+<include src="../../include/agent_sub_header2.html"></include>
+<div class="wrapper">
+    <div id=sub_container class="sub_container">  
+        <div class="container_inner">     
+            <div class="request_history">                
+                <div class="sub_intro">
+                    <h3 class="tit">요청 내역</h3>
+                    <div class="txt">온라인 중개의뢰 요청, 매물 확인요청, 현장 방문요청 내역을 확인하실 수 있습니다.</div>
+                  <div class="right_btn btn_round_white btn_close"><button class="btn">닫기</button></div>
+                </div>
+                <!--온라인 중개의뢰 요청-->
+                <div class="agent_box">
+                    <div class="table_style2 type">
+                        <table class="table" summary="온라인 중개의뢰 요청테이블 입니다.">
+                            <caption>온라인 중개의뢰 요청</caption>
+                            <colgroup>
+                                 <col width="18%"> 
+                                 <col width="18%"> 
+                                 <col width="*"> 
+                                 <col width="13%"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="4">온라인 중개의뢰 요청(<span class="cnt">4</span>)</th>
+                                 </tr>
+                           </thead>                           
+                            <tbody>
+                                <tr class="pd_style">
+                                    <td colspan="4" class="no_items">온라인 중개의뢰 요청 내역이 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="detail_view">
+                        ※ 중개의뢰 요청의 빠른 답변에 따라 평점이 증감됩니다. <a href="#" class="link_style">상세보기</a>
+                    </div>
+                    <div class="detail_box active">
+                        <button class="btn_close"><span class="blind">닫기</span></button>
+                        <strong class="txt_blue">답변 시간에 따른 시스템 평점 증감</strong>
+                        <ul>
+                            <li><span class="eval">5분 이내 =>평점</span><span>4점</span></li>
+                            <li><span class="eval">10분 이내 =>평점</span><span>2점</span></li>
+                            <li><span class="eval">30분 이내 =>평점</span><span>0점</span></li>
+                            <li><span class="eval">2시간 이내 =>평점</span><span>-4점</span></li>
+                            <li><span class="eval">2시간 초과 =>평점</span><span>-20점</span></li>
+                        </ul>
+                        <span class="txt_red2">※ 2시간 내로 의뢰를 수락하지 않을 경우 요청된 중개의뢰는 종료되고 다른 공인중개사에게 중개의뢰가 요청됩니다.</span>
+                    </div>
+                 </div>
+                <!--//온라인 중개의뢰 요청-->
+                <!--매물 확인 요청-->
+                <div class="agent_box">
+                    <div class="table_style2 type">
+                        <table class="table" summary="매물 확인 요청테이블 입니다.">
+                            <caption>매물 확인 요청</caption>
+                            <colgroup>
+                                    <col width="18%"> 
+                                    <col width="18%"> 
+                                    <col width="*"> 
+                                    <col width="13%"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="4">매물 확인 요청(<span class="cnt">4</span>)</th>
+                                </tr>
+                            </thead>                           
+                            <tbody>
+                               <tr>
+                                    <td colspan="4" class="no_items">매물 확인요청 내역이 없습니다.</td>
+                               </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="detail_view">
+                        ※ 매물 확인요청의 빠른 답변에 따라 평점이 증감됩니다. <a href="#" class="link_style">상세보기</a>
+                    </div>
+                    <div class="detail_box active">
+                        <button class="btn_close"><span class="blind">닫기</span></button>
+                        <strong class="txt_blue">답변 시간에 따른 시스템 평점 증감</strong>
+                        <ul>
+                            <li><span class="eval">5분 이내 =>평점</span><span>4점</span></li>
+                            <li><span class="eval">10분 이내 =>평점</span><span>2점</span></li>
+                            <li><span class="eval">30분 이내 =>평점</span><span>0점</span></li>
+                            <li><span class="eval">2시간 이내 =>평점</span><span>-4점</span></li>
+                            <li><span class="eval">2시간 초과 =>평점</span><span>-6점</span></li>
+                        </ul>
+                        <span class="txt_red2">※ 2시간 내로 매물 확인요청에 대한 답변을 하지 않을 경우 매물 확인요청은 삭제되어 나타나지 않습니다.</span>
+                    </div>
+                </div>
+                <!--//매물 확인 요청-->
+                <!--현장 방문요청-->
+                <div class="agent_box">
+                    <div class="table_style3 type visit_req_table">
+                        <table class="table" summary="현장 방문요청테이블 입니다.">
+                            <caption>현장 방문요청</caption>
+                            <colgroup>
+                                 <col width="14%"> 
+                                 <col width="*"> 
+                                 <col width="18%"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="3">현장 방문요청(<span class="cnt">4</span>)</th>
+                                 </tr>
+                           </thead>                           
+                            <tbody>
+                                <tr>
+                                    <td colspan="3" class="no_items">현장 방문요청 내역이 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="detail_view">
+                        ※ 매수측 중개사가 문의할 경우 요청번호를 확인하십시오.(방문요청 내역은 2개월간 보관됩니다.)
+                    </div>
+                 </div>
+                <!--//현장 방문요청-->
+            </div>
+        </div>
+    </div>
+</div>
+<include src="../../include/footer.html"></include>
+</body>
+</html>

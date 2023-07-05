@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="/css/common/common_ie6.css" />
+<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, minimal-ui" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>다시 만나고 싶은 여행 - 모두투어</title>
+	<link rel="stylesheet" type="text/css" href="https://m.modetour.com/event/event_18/1211_30th/font.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+   <style>
+
+		body{font-family: "Noto Sans KR",sans-serif,"돋움","Dotum"; }
+		.event_wrap{position:relative; font-weight: 400; padding-bottom: 6.25rem; background-color:#fff; text-align: center; max-width: 700px; margin:0 auto; overflow: hidden;}
+		.event_wrap img{width: 100%;}
+		.event_wrap a{text-decoration:none;}
+		.event_wrap button{border:none; background: transparent;}
+		.event_wrap button:focus{outline: none;}
+		.main{position: relative;}
+		.main img{vertical-align: bottom;}
+		.main_tab{position: absolute; top:676px; left:0; width:100%; background:rgba(0,0,0,0.5); z-index: 100;}
+		.main_tab .tab_inner:after{display: block; content:""; clear: both;}
+		.main_tab .tab_inner{width:90%; margin:0 auto;}
+		.main_tab a{display: block; position: relative; float: left; width: 32.2%; padding:15px 0;}
+		.main_tab a:after{display: block; content: ""; position: absolute; top:50%; right:0; width:1px; height:10px; background: #555149;}
+		.main_tab a:nth-child(3):after,.main_tab a:nth-child(6):after,.main_tab a.on:after{display: none;}
+		.main_tab a .tab_txt{position: relative;}
+		.main_tab a.on .bg{display: inline-block; content:""; position: absolute; width:100%; height:100%; top:-10px; left:0; padding:6px 0; background: linear-gradient( to bottom, #00de92, #00aecf ); border-radius: 10px;}
+		.main_tab a.bottom.on .bg{top:0; bottom:-10px;}
+		
+		.main_tab a em{display: inline-block; width:18%; margin-bottom: 4%;}
+		.main_tab a .txt{font-weight: 300; font-size: 16px; color: #fff;}
+		.main_tab a .txt.en{line-height: 1.5;}
+		.timesale{position: relative; padding: 5.5% 0; background: url("https://img.modetour.com/promotion/190812_ex/mobile/bg_time.jpg") no-repeat; background-size: 100%;}
+		.timesale .tit{width:50%; margin:0 auto;}
+		.timesale .time{margin:2% 0 8%;}
+		.timesale .time .txt{margin-left: -110px; font-size: 16px; font-weight: 300; color: #007d68;}
+		.timesale .time .time_box{position: absolute; top:28%; left: 50%; margin-left: -20px; width:30%; height: 32px; line-height: 1.4; background: url("https://img.modetour.com/promotion/190812_ex/mobile/bg_count.png") no-repeat; background-size: 100%;}
+		.timesale .time .time_box::after{display: block; content: ""; clear: both;}
+		.timesale .time .time_box span{position: relative; display: block; float: left; padding:0 7px; font-size: 20px; font-weight: 400; color: #fff; letter-spacing: 1px}
+		.timesale .time .time_box span::after{position: absolute; top:-2px; left:34px; content: ':'; color: #fff;}
+		.timesale .time .time_box span:first-child{padding-left: 10px;}
+		.timesale .time .time_box span:last-child:after{display: none;}
+		.timesale .swiper-container{overflow:visible; padding-bottom: 16%;}
+		.ev_slide .swiper-slide{position: relative; width:80%;}
+		.timesale .swiper-slide .img{position: absolute; bottom:24px; left:25px; color: #fff; font-size: 22px; font-weight: 400;}
+		.timesale .swiper-container-horizontal>.swiper-pagination-bullets{bottom: 18px;}
+		.swiper-pagination-bullet{width:14px; height: 14px;}
+		.timesale .swiper-pagination-bullet-active{background:#00a9d3;}
+		.trend{position: relative; padding-top:15%; background: url("https://img.modetour.com/promotion/190812_ex/mobile/bg_trend.jpg") no-repeat; background-size: 100%;}
+		.trend .ev_tab{position: relative; margin:7% 0 12%; height: 82px;}
+		.trend .ev_tab .line{display: inline-block; position: absolute; top:70%; left:0; width:100%; height: 1px;  background:#fff; opacity: .5;}
+		.trend .ev_tab .tab_inner{position: relative;}
+		.trend .ev_tab .tab_inner::after{display: block; content:""; clear: both;}
+		.trend .ev_tab button{float: left; width:21%; padding-top:16px;}
+		.trend .ev_tab button:first-child{margin-left: 10px;}
+		.trend .ev_tab button.on{position: relative; width:18%; padding-top:0; }
+		.trend .ev_tab button.on::before{display: block; content: ""; position: absolute; width:87%; height: 95%; border-radius:100%; box-shadow: 10px 6px 20px rgba(0,0,0,0.4); }
+		.trend .items{padding-bottom: 14%;}
+		.trend .ev_slide{display: none;}
+		.trend .ev_slide.on{display: block;}
+		.trend .swiper-container{margin-left: 40px;}
+		.best{position: relative; padding-top: 8%; padding-bottom: 20%; background: url("https://img.modetour.com/promotion/190812_ex/mobile/bg_best.jpg") no-repeat; background-size: 100%;}
+		.best_tab{margin:3% 0 6%;}
+		.best_tab .swiper-slide{width:auto; min-width:24%; margin-left: 8px; padding:0 16px; font-size: 17px; line-height: 2.7; color: #272727; background: #f0f3f4; border-radius: 30px;}	
+		.best_tab .swiper-slide:first-child{margin-left: 12px;}
+		.best_tab .swiper-slide em{margin-right: 14px; font-weight: 400; font-size: 20px; color: #4b4b4b; font-family: Brush Script Std;}
+		.best_tab .swiper-slide.on{font-weight: 400; color: #fff; background: linear-gradient( to right, #00dc94, #00b5c4 ); }
+		.best_tab .swiper-slide.on em{color: #fff;}
+		.best .items .img{display: none; width:90%; margin:0 auto;}
+		.best .items .img.on{display: block;}
+		.best .items .img .link{display: inline-block; width: 90%; margin:4% auto 0;}
+		.link_area{position: relative;}
+		.link_area{display: block;}
+		.link_area span{position: absolute; display: inline-block;   width:87%; height: 41%; border-radius:100%;}
+		.link_area .img1{top:-15px; right:0; width:28%;}
+		.link_area .img2{bottom:-15px; left:0; width:32%;}
+		.benefit{padding-top: 9%; background: url("https://img.modetour.com/promotion/190812_ex/mobile/bg_benefit.jpg") no-repeat; background-size: 100%;}
+		.benefit .tit{width:34%; margin:0 auto 18%;}
+		.benefit .swiper-container{margin-left: 20px; padding-bottom: 20%;}
+		.benefit .swiper-slide{box-shadow:0px 20px 30px -15px rgba(0,0,0,0.2);}
+		.benefit .swiper-slide img{vertical-align: bottom;}
+		.benefit .swiper-pagination-bullet{background: #fff; opacity: .4;}
+		.benefit .swiper-pagination-bullet-active{background:#fff; opacity: 1;}
+		.benefit .swiper-container-horizontal>.swiper-pagination-bullets{bottom: 34px;}
+		.event_wrap .event{padding-top: 6%; background: url("https://img.modetour.com/promotion/190812_ex/mobile/bg_event.jpg") no-repeat; background-size: 100%;}
+		.event_wrap .event .tit{width:40%; margin:0 auto 10%;}
+		.event_wrap .event .swiper-container{margin-left: 40px; padding-bottom: 15%;}
+		.event_wrap .event .swiper-slide{width: 70%;}	
+	</style>
+  </head>
+<body>
+<div class="mobile_container">
+	<div id="body_section">
+		<section id="section" style="height:auto;">
+			<div class="container" style="padding-bottom:0;">
+				<!--event_wrap-->
+				<div class="event_wrap">
+					<!--타임세일-->
+					<div class="timesale" id="timesale">
+						<div class="tit">
+							<img src="https://img.modetour.com/promotion/190812_ex/mobile/tit_time.png" alt="">
+						</div>
+						<div class="time">
+							<span class="txt">남은 시간</span>
+							<div class="time_box">
+								<span>15</span>
+								<span>40</span>
+								<span>30</span>
+							</div>
+						</div>
+						<div class="ev_slide">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<a href="#" class="swiper-slide">
+										<img src="https://img.modetour.com/promotion/190812_ex/mobile/timesale_item1.png" alt="나트랑 리버티 호텔">
+									</a>
+									<a href="#" class="swiper-slide">
+										<img src="https://img.modetour.com/promotion/190812_ex/mobile/timesale_item2.png" alt="나트랑 스완도르 리조트">
+									</a>
+								</div>
+								<!-- Add Pagination -->
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+					<!--//타임세일-->
+					<!--트렌드-->
+					<div class="trend" id="trend">
+						<img src="https://img.modetour.com/promotion/190812_ex/mobile/tit_trend.png" alt="2019 여행 트렌드">
+						<div class="ev_tab">
+							<span class="line"></span>
+							<div class="tab_inner">
+								<button class="on"><img src="https://img.modetour.com/promotion/190812_ex/mobile/tab_trend1_on.png" alt="Relaxation"></button>
+								<button><img src="https://img.modetour.com/promotion/190812_ex/mobile/tab_trend2_off.png" alt="Experience"></button>
+								<button><img src="https://img.modetour.com/promotion/190812_ex/mobile/tab_trend3_off.png" alt="Short time"></button>
+								<button><img src="https://img.modetour.com/promotion/190812_ex/mobile/tab_trend4_off.png" alt="Tour"></button>
+							</div>
+						</div>
+						<div class="items">
+							<div class="ev_slide on">
+								<!--swiper-->
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<a href="#" class="swiper-slide">
+											<img src="https://img.modetour.com/promotion/190812_ex/mobile/trend_item1_1.png" alt="세부 샹그릴라 리조트 4/5일">
+										</a>
+										<a href="#" class="swiper-slide">
+											<img src="https://img.modetour.com/promotion/190812_ex/mobile/trend_item1_2.png" alt="마카오 쉐라톤 4일">
+										</a>
+										<a href="#" class="swiper-slide">
+											<img src="https://img.modetour.com/promotion/190812_ex/mobile/trend_item1_3.png" alt="다낭 반펄리조트 5일">
+										</a>
+									</div>
+								
+								</div>
+							</div>
+							<div class="ev_slide">
+								<div class="swiper-container">
+									<!--swiper-->
+									<div class="swiper-wrapper">
+										<a href="#" class="swiper-slide">
+											<img src="https://img.modetour.com/promotion/190812_ex/mobile/trend_item2_1.png" alt="사이판 4/5일">
+										</a>
+										<a href="#" class="swiper-slide">
+											<img src="https://img.modetour.com/promotion/190812_ex/mobile/trend_item2_2.png" alt="대만 4일">
+										</a>
+										<a href="#" class="swiper-slide">
+											<img src="https://img.modetour.com/promotion/190812_ex/mobile/trend_item2_3.png" alt="라오스 5일">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="ev_slide">
+								<div class="swiper-container">
+									<!--swiper-->
+									<div class="swiper-wrapper">
+										<a href="#" class="swiper-slide">
+											<img src="https://img.modetour.com/promotion/190812_ex/mobile/trend_item3_1.png" alt="보라카이 5일">
+										</a>
+										<a href="#" class="swiper-slide">
+											<img src="https://img.modetour.com/promotion/190812_ex/mobile/trend_item3_2.png" alt="괌 4/5일">
+										</a>
+										<a href="#" class="swiper-slide">
+											<img src="https://img.modetour.com/promotion/190812_ex/mobile/trend_item3_3.png" alt="홍콩 4일">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="ev_slide">
+								<div class="swiper-container">
+									<!--swiper-->
+									<div class="swiper-wrapper">
+										<a href="#" class="swiper-slide">
+											<img src="https://img.modetour.com/promotion/190812_ex/mobile/trend_item4_1.png" alt="미동부 9일">
+										</a>
+										<a href="#" class="swiper-slide">
+											<img src="https://img.modetour.com/promotion/190812_ex/mobile/trend_item4_2.png" alt="북인도 9일">
+										</a>
+										<a href="#" class="swiper-slide">
+											<img src="https://img.modetour.com/promotion/190812_ex/mobile/trend_item4_3.png" alt="하와이">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--//트렌드-->
+					<!--인기지역-->
+					<div class="best" id="best">
+						<img src="https://img.modetour.com/promotion/190812_ex/mobile/tit_best.png" alt="여행박람회 인기지역 TOP10">
+						<div class="best_tab ev_tab">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<button class="on swiper-slide"><em>1.</em>다낭</button>
+									<button class="swiper-slide"><em>2.</em>괌</button>
+									<button class="swiper-slide"><em>3.</em>세부</button>
+									<button class="swiper-slide"><em>4.</em>스페인</button>
+									<button class="swiper-slide"><em>5.</em>장가계</button>
+									<button class="swiper-slide"><em>6.</em>보라카이</button>
+									<button class="swiper-slide"><em>7.</em>하와이</button>
+									<button class="swiper-slide"><em>8.</em>코타키나발루</button>
+									<button class="swiper-slide"><em>9.</em>블라디보스톡</button>
+									<button class="swiper-slide"><em>10.</em>방콕</button>
+								</div>
+							</div>
+						</div>
+						<div class="items">
+							<a href="#" class="img on">
+								<img src="https://img.modetour.com/promotion/190812_ex/mobile/best_item1.jpg" alt="다낭">
+								<span class="link"><img src="https://img.modetour.com/promotion/190812_ex/mobile/btn_best.png" alt="상품 예약하기"></span>
+							</a>
+							<a href="#" class="img">
+								<img src="https://img.modetour.com/promotion/190812_ex/mobile/best_item2.jpg" alt="괌">
+								<span class="link"><img src="https://img.modetour.com/promotion/190812_ex/mobile/btn_best.png" alt="상품 예약하기"></span>
+							</a>
+							<a href="#" class="img">
+								<img src="https://img.modetour.com/promotion/190812_ex/mobile/best_item3.jpg" alt="세부">
+								<span class="link"><img src="https://img.modetour.com/promotion/190812_ex/mobile/btn_best.png" alt="상품 예약하기"></span>
+							</a>
+							<a href="#" class="img">
+								<img src="https://img.modetour.com/promotion/190812_ex/mobile/best_item4.jpg" alt="스페인">
+								<span class="link"><img src="https://img.modetour.com/promotion/190812_ex/mobile/btn_best.png" alt="상품 예약하기"></span>
+							</a>
+							<a href="#" class="img">
+								<img src="https://img.modetour.com/promotion/190812_ex/mobile/best_item5.jpg" alt="장가계">
+								<span class="link"><img src="https://img.modetour.com/promotion/190812_ex/mobile/btn_best.png" alt="상품 예약하기"></span>
+							</a>
+							<a href="#" class="img">
+								<img src="https://img.modetour.com/promotion/190812_ex/mobile/best_item6.jpg" alt="보라카이">
+								<span class="link"><img src="https://img.modetour.com/promotion/190812_ex/mobile/btn_best.png" alt="상품 예약하기"></span>
+							</a>
+							<a href="#" class="img">
+								<img src="https://img.modetour.com/promotion/190812_ex/mobile/best_item7.jpg" alt="하와이">
+								<span class="link"><img src="https://img.modetour.com/promotion/190812_ex/mobile/btn_best.png" alt="상품 예약하기"></span>
+							</a>
+							<a href="#" class="img">
+								<img src="https://img.modetour.com/promotion/190812_ex/mobile/best_item8.jpg" alt="코타키나발루">
+								<span class="link"><img src="https://img.modetour.com/promotion/190812_ex/mobile/btn_best.png" alt="상품 예약하기"></span>
+							</a>
+							<a href="#" class="img">
+								<img src="https://img.modetour.com/promotion/190812_ex/mobile/best_item9.jpg" alt="블라디보스톡">
+								<span class="link"><img src="https://img.modetour.com/promotion/190812_ex/mobile/btn_best.png" alt="상품 예약하기"></span>
+							</a>
+							<a href="#" class="img">
+								<img src="https://img.modetour.com/promotion/190812_ex/mobile/best_item10.jpg" alt="하와이">
+								<span class="link"><img src="https://img.modetour.com/promotion/190812_ex/mobile/btn_best.png" alt="상품 예약하기"></span>
+							</a>
+						</div>
+					</div>
+					<!--인기지역-->
+					<!--지역별 대표상품-->
+					<a href="#" class="link_area" id="area">
+						<span class="img1"><img src="https://img.modetour.com/promotion/190812_ex/mobile/area_img1.png" alt=""></span>
+						<span class="img2"><img src="https://img.modetour.com/promotion/190812_ex/mobile/area_img2.png" alt=""></span>
+						<img src="https://img.modetour.com/promotion/190812_ex/mobile/img_link_area.jpg" alt="지역별 대표상품 보러가기">
+					</a>
+					<!--지역별 대표상품-->
+					<!--혜택 및 이벤트-->
+					<div class="benefit" id="benefit">
+						<div class="tit">
+							<img src="https://img.modetour.com/promotion/190812_ex/mobile/tit_benefit.png" alt="혜택 및 이벤트">
+						</div>
+						<div class="ev_slide">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<a href="#" class="swiper-slide">
+										<img src="https://img.modetour.com/promotion/190812_ex/mobile/benefit_item1.png" alt="더블 마일리지 즉시할인">
+									</a>
+									<a href="#" class="swiper-slide">
+										<img src="https://img.modetour.com/promotion/190812_ex/mobile/benefit_item2.png" alt="모두페이 즉시할인">
+									</a>
+									<a href="#" class="swiper-slide">
+										<img src="https://img.modetour.com/promotion/190812_ex/mobile/benefit_item3.png" alt="카드사 청구할인">
+									</a>
+									<a href="#" class="swiper-slide">
+										<img src="https://img.modetour.com/promotion/190812_ex/mobile/benefit_item4.png" alt="투어마일리지 카드 캐시백">
+									</a>
+									<a href="#" class="swiper-slide">
+										<img src="https://img.modetour.com/promotion/190812_ex/mobile/benefit_item5.png" alt="무이자 할부 행산">
+									</a>
+								</div>
+								<!-- Add Pagination -->
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+					<!--//혜택 및 이벤트-->
+					<!--자유여행 이벤트-->
+					<div class="event" id="free">
+						<div class="tit">
+							<img src="https://img.modetour.com/promotion/190812_ex/mobile/tit_event.png" alt="자유여행 이벤트">
+						</div>
+						<div class="ev_slide">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<a href="#" class="swiper-slide">
+										<img src="https://img.modetour.com/promotion/190812_ex/mobile/ev_item1.png" alt="해외 항공권 카드사 최대 21%할인">
+									</a>
+									<a href="#" class="swiper-slide">
+										<img src="https://img.modetour.com/promotion/190812_ex/mobile/ev_item2.png" alt="해외항공 예약시 해외호텔 7%할인 이벤트">
+									</a>
+									<a href="#" class="swiper-slide">
+										<img src="https://img.modetour.com/promotion/190812_ex/mobile/ev_item3.png" alt="해외 철도/교통 패스,입장권 특별 할인전">
+									</a>
+									<a href="#" class="swiper-slide">
+										<img src="https://img.modetour.com/promotion/190812_ex/mobile/ev_item4.png" alt="개별 여행앱 다운로드 및 여행박람회 SNS 소문내기">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--//자유여행 이벤트-->
+				</div>			
+				<!--//event_wrap-->
+			</div>
+		</section>
+        <footer></footer>
+	</div>
+</div>
+<script type="text/javascript" src="https://js.modetour.com/jQuery/ver/2.1.0.min.js"></script>
+<!-- <script type="text/javascript" src="/Include/Js/Plugin/jquery.easing.min.js"></script>
+<script type="text/javascript" src="/Include/Js/Plugin/swipe.min.js"></script>
+<script type="text/javascript" src="//js.modetour.com/kakao/link.js"></script>
+<script type="text/javascript" src="/Include/Js/Touch/TouchPosition.js"></script>	
+<script type="text/javascript" src="/Include/Js/Number.js"></script>
+<script type="text/javascript" src="/Include/Js/XmlObject.JS"></script>
+<script type="text/javascript" src="/Include/Js/Common/com.modetour.m.min.js?ver=1.1.1"></script>
+<script type="text/javascript" src="//js.modetour.com/Common/String.js"></script><script type="text/javascript" src="//js.modetour.com/Common/Date.js"></script>
+<script type="text/javascript" src="//js.modetour.com/Common/Validator.js?var=0.0.1"></script>
+<script type="text/javascript" src="https://js.modetour.com/jquery/plugin/swiper-3.3.1.min.js"></script>
+<script type="text/javascript" src="/Include/Js/Promotion/countdown.plugin.js?ver=20180430"></script> -->
+<script src="https://js.modetour.com/jquery/ver/1.8.3.min.js"></script>
+
+<script type="text/javascript">
+	jQuery(document).ready(function () {	
+		$('.main_tab a').click(function(){			
+			$(this).addClass('on').siblings().removeClass('on');
+			var t= $(this);
+			var target = this.hash;
+			var $target = $(target);
+
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top
+			}, 500);
+
+		})
+
+		var ev_btn=$('.ev_tab button');
+		ev_btn.click(function(){
+			var idx=$(this).index();
+			$(this).addClass('on').siblings().removeClass('on');			
+
+			$(this).parents('.ev_tab').next().children().eq(idx).addClass('on').siblings().removeClass('on');
+
+		})
+
+		$('.trend').find(ev_btn).click(function(){
+			$('.trend').find(ev_btn).each(function(){
+				$(this).find("img").attr("src" , $(this).find("img").attr("src").replace("_on.png" , "_off.png"));          
+			});
+			$(this).find("img").attr("src" , $(this).find("img").attr("src").replace("_off.png" , "_on.png"));	
+
+		});
+	});
+	//swiper	
+	$('.ev_slide .swiper-container').each(function(index, element){
+		var $this = $(this);
+		$this.addClass('instance-' +index);
+
+		var swiper = new Swiper('.instance-' + index, {
+			observer: true,
+			observeParents: true,
+			slidesPerView: 'auto',
+			spaceBetween: 20,
+			loop: false,
+			pagination: {
+				el: $('.instance-' + index).find('.swiper-pagination'),
+				clickable: true,
+			},
+		});
+	})
+
+	var swiper = new Swiper('.best_tab .swiper-container', {
+		slidesPerView: 'auto',
+		loop: false,
+	});
+	
+</script>
+</body>
+</html>

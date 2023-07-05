@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>더블이벤트 가이드</title>
+    <style type="text/css">
+        /* reset */
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,option,blockquote,th,td,input,select,textarea,button,figure,section,article,main,aside,nav,header,footer,figcaption {margin:0;padding:0}
+        img {vertical-align:top}
+        input,select,textarea,button {vertical-align:middle}
+        button {border:0 none;background-color:transparent;cursor:pointer}
+        ul{list-style:none}
+        /* common */
+        .screen_out {overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px} /* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+        .screen_hide {font-size:0;line-height:0;visibility:hidden}
+    </style>
+    <script type="text/javascript" src="http://www.shop.co.kr/resources/shop-client-web-front/theshop/js/libs/jquery-1.12.1.min.js"></script>
+</head>
+<body>
+
+
+<!-- 2020-04-21 더블이벤트 수정 [s] -->
+<style type="text/css">
+    .double_ev{width:950px}
+    .double_ev .img_comm{display:inline-block;overflow:hidden;font-size:0;line-height:0;background:url(images/img_ev_double.png) no-repeat;vertical-align:middle}
+    .double_ev .ev_guide{position:relative}
+    .double_ev .list_nav{position:absolute;top:-42px;left:90px}
+    .double_ev .list_nav li{float:left;}
+    .double_ev .list_nav a{display:block}
+    .double_ev .list_nav .img_comm{display:block;height:97px;background:url(images/nav_ev_double.png) no-repeat} /* 2018-07-17 수정 */
+    .double_ev .list_nav .img_nav1{width:257px}
+    .double_ev .list_nav .img_nav2{width:261px;background-position:-257px 0}
+    .double_ev .list_nav .img_nav3{width:267px;background-position:-518px 0}
+    .double_ev .on .img_nav1{background-position:0 -100px}
+    .double_ev .on .img_nav2{background-position:-257px -100px}
+    .double_ev .on .img_nav3{background-position:-518px -100px}
+    .double_ev .ev_stamp{background:url(images/bg_double_ev02.jpg) repeat-y} /* 2018-08-23 추가 */
+    .double_ev .stamp_info{padding-bottom:123px;background:url(images/bg_double_ev03.jpg) no-repeat 0 100%} /* 2018-08-23 수정 */
+    .double_ev .stamp_info .chk_num{height:201px;background:url(images/bg_double_ev01.jpg) no-repeat} /* 2018-08-23 수정 */
+    .double_ev .stamp_info .inner_chk{overflow:hidden;width:786px;margin:0 auto;padding-top:86px}
+    .double_ev .info_month{float:left;text-align:left}
+    .double_ev .info_month .txt_month{width:80px;height:43px;background-position:-410px 0}
+    .double_ev .info_month .txt_mystamp{display:block;width:361px;height:42px;margin:9px 0 0 4px;background-position:-410px -50px}
+    .double_ev .info_date{float:right;width:160px;margin-top:30px;border-bottom:8px solid #707070;text-align:right}
+    .double_ev .info_date .img_comm{vertical-align:bottom}
+    .double_ev .info_date .txt_total{float:left;width:28px;height:30px;margin-top:13px;background-position:-410px -100px}
+    .double_ev .info_date .txt_day{width:20px;height:30px;margin-bottom:7px;background-position:-450px -100px}
+    .double_ev .chk_num .month{height:38px;margin-left:2px}
+    .double_ev .chk_num .num_m0{width:26px;background-position:-300px 0}
+    .double_ev .chk_num .num_m1{width:13px;background-position:-300px -40px}
+    .double_ev .chk_num .num_m2{width:24px;background-position:-300px -80px}
+    .double_ev .chk_num .num_m3{width:24px;background-position:-300px -120px}
+    .double_ev .chk_num .num_m4{width:25px;background-position:-300px -160px}
+    .double_ev .chk_num .num_m5{width:24px;background-position:-300px -200px}
+    .double_ev .chk_num .num_m6{width:25px;background-position:-300px -240px}
+    .double_ev .chk_num .num_m7{width:23px;background-position:-300px -280px}
+    .double_ev .chk_num .num_m8{width:26px;background-position:-300px -320px}
+    .double_ev .chk_num .num_m9{width:25px;background-position:-300px -360px}
+    .double_ev .chk_num em{height:50px}
+    .double_ev .chk_num .cnt0{width:33px;background-position:0 0}
+    .double_ev .chk_num .cnt1{width:27px;background-position:0 -50px}
+    .double_ev .chk_num .cnt2{width:31px;background-position:0 -100px}
+    .double_ev .chk_num .cnt3{width:30px;background-position:0 -150px}
+    .double_ev .chk_num .cnt4{width:34px;background-position:0 -200px}
+    .double_ev .chk_num .cnt5{width:30px;background-position:0 -250px}
+    .double_ev .chk_num .cnt6{width:31px;background-position:0 -300px}
+    .double_ev .chk_num .cnt7{width:30px;background-position:0 -350px}
+    .double_ev .chk_num .cnt8{width:31px;background-position:0 -400px}
+    .double_ev .chk_num .cnt9{width:29px;background-position:0 -450px}
+    .double_ev .chk_num .cnt10{width:62px;background-position:-50px 0}
+    .double_ev .chk_num .cnt11{width:60px;background-position:-50px -50px}
+    .double_ev .chk_num .cnt12{width:61px;background-position:-50px -100px}
+    .double_ev .chk_num .cnt13{width:61px;background-position:-50px -150px}
+    .double_ev .chk_num .cnt14{width:62px;background-position:-50px -200px}
+    .double_ev .chk_num .cnt15{width:60px;background-position:-50px -250px}
+    .double_ev .chk_num .cnt16{width:61px;background-position:-50px -300px}
+    .double_ev .chk_num .cnt17{width:61px;background-position:-50px -350px}
+    .double_ev .chk_num .cnt18{width:61px;background-position:-50px -400px}
+    .double_ev .chk_num .cnt19{width:61px;background-position:-50px -450px}
+    .double_ev .chk_num .cnt20{width:65px;background-position:-130px 0}
+    .double_ev .chk_num .cnt21{width:63px;background-position:-130px -50px}
+    .double_ev .chk_num .cnt22{width:64px;background-position:-130px -100px}
+    .double_ev .chk_num .cnt23{width:64px;background-position:-130px -150px}
+    .double_ev .chk_num .cnt24{width:65px;background-position:-130px -200px}
+    .double_ev .chk_num .cnt25{width:63px;background-position:-130px -250px}
+    .double_ev .chk_num .cnt26{width:64px;background-position:-130px -300px}
+    .double_ev .chk_num .cnt27{width:64px;background-position:-130px -350px}
+    .double_ev .chk_num .cnt28{width:64px;background-position:-130px -400px}
+    .double_ev .chk_num .cnt29{width:64px;background-position:-130px -450px}
+    .double_ev .chk_num .cnt30{width:64px;background-position:-210px 0}
+    .double_ev .chk_num .cnt31{width:62px;background-position:-210px -50px}
+    .double_ev .wrap_calendar{position:relative;margin:0 82px;padding-bottom:92px;border-bottom:2px solid #dadada}
+    .double_ev .btn_attendance{position:absolute;left:50%;bottom:-40px;margin-left:-179px}
+    .double_ev .tbl_calendar{width:100%;border-collapse:collapse;border-spacing:0}
+    .double_ev .tbl_calendar th{height:56px;background-color:#707070;text-align:center}
+    .double_ev .tbl_calendar .sun{width:36px;height:16px;background-position:-360px 0}
+    .double_ev .tbl_calendar .mon{width:44px;height:16px;background-position:-360px -30px}
+    .double_ev .tbl_calendar .tue{width:35px;height:16px;background-position:-360px -60px}
+    .double_ev .tbl_calendar .wed{width:43px;height:16px;background-position:-360px -90px}
+    .double_ev .tbl_calendar .thu{width:37px;height:16px;background-position:-360px -120px}
+    .double_ev .tbl_calendar .fri{width:25px;height:16px;background-position:-360px -150px}
+    .double_ev .tbl_calendar .sat{width:33px;height:16px;background-position:-360px -180px}
+    .double_ev .tbl_calendar td{padding:7px 0;text-align:center}
+    .double_ev .tbl_calendar tr:first-child td{padding-top:14px}
+    .double_ev .tbl_calendar td .date_wrap{display:table;position:relative;width:101px;height:101px;margin:0 auto;border-radius:100px;background-color:#e7e7e7;text-align:center}
+    .double_ev .tbl_calendar td .weekend{background-color:#e4eaf1}
+    .double_ev .tbl_calendar td .date{display:table-cell;overflow:hidden;font-size:0;line-height:0;vertical-align:middle}
+    .double_ev .tbl_calendar td .date span{display:inline-block;height:20px}
+    .double_ev .tbl_calendar .txt_num0{width:11px;background-position:-340px 0}
+    .double_ev .tbl_calendar .txt_num1{width:10px;background-position:-340px -30px}
+    .double_ev .tbl_calendar .txt_num2{width:11px;background-position:-340px -60px}
+    .double_ev .tbl_calendar .txt_num3{width:11px;background-position:-340px -90px}
+    .double_ev .tbl_calendar .txt_num4{width:12px;background-position:-340px -120px}
+    .double_ev .tbl_calendar .txt_num5{width:10px;background-position:-340px -150px}
+    .double_ev .tbl_calendar .txt_num6{width:11px;background-position:-340px -180px}
+    .double_ev .tbl_calendar .txt_num7{width:11px;background-position:-340px -210px}
+    .double_ev .tbl_calendar .txt_num8{width:10px;background-position:-340px -240px}
+    .double_ev .tbl_calendar .txt_num9{width:11px;background-position:-340px -270px}
+    .double_ev .tbl_calendar .txt_dot{width:8px;background-position:-340px -300px}
+    .double_ev .tbl_calendar td .badge_attendance{display:none;position:absolute;top:-2px;left:-2px;z-index:1;width:105px;height:105px;background-position:-360px -210px}
+    .double_ev .tbl_calendar td .weekend .badge_attendance{background-position:-360px -320px} /* 2018-07-17 추가 */
+    .double_ev .tbl_calendar .td_check .badge_attendance{display:block}
+    .ev_coupon{position:relative;height:957px}
+    .ev_coupon .chk_num{position:absolute;top:350px;left:89px;width:165px;padding-bottom:2px;border-bottom:4px solid #707070;text-align:left}/* 2019-06-19 수정 */
+    .ev_coupon .tit_giveaway{display:block;width:165px;height:29px;margin-bottom:17px;background-position:-410px -170px}
+    .ev_coupon .num_giveaway{display:inline-block;width:21px;height:23px;margin-top:20px;background-position:-410px -140px;vertical-align:top}
+    .ev_coupon .list_coupon{position:absolute;top:101px;right:122px;}
+    .ev_coupon .list_coupon li{position:relative;width:335px;height:165px;margin-bottom:92px}
+    .ev_coupon .ico_complete{display:none;position:absolute;top:-36px;right:-51px;width:124px;height:124px;background-position:-470px -210px}
+    .ev_coupon .complete .ico_complete{display:block}
+</style>
+<div class="double_ev">
+    <img src="images/double_ev01.jpg" alt="매일매일 찾아오는 더블이벤트">
+    <div id="evGuide" class="ev_guide">
+        <ul class="list_nav">
+            <li class="on"><a href="#evGuide"><span class="img_comm img_nav1">이벤트 참여방법</span></a></li>
+            <li><a href="#evStamp"><span class="img_comm img_nav2">내가 찍은 스탬프</span></a></li>
+            <li><a href="#evGift"><span class="img_comm img_nav3">경품추첨 응모</span></a></li>
+        </ul>
+        <img src="images/double_ev02.jpg" usemap="#mapDoubleEvent01" alt="더블이벤트 참여방법">
+        <map name="mapDoubleEvent01" id="mapDoubleEvent01">
+            <area shape="rect" coords="387,307,566,361" href="#evStamp" alt="스탬프 찍기 이벤트 바로가기">
+            <area shape="rect" coords="691,307,870,361" href="#evGift" alt="경품응모 이벤트 바로가기">
+            <area shape="rect" coords="387,642,566,696" href="#evCoupon" alt="부외품 할인쿠폰 받기 이벤트 바로가기">
+            <area shape="rect" coords="691,642,870,696" href="#evParis" alt="파리바게트 1만원권 응모 이벤트 바로가기">
+        </map>
+    </div>
+    <!-- 스탬프 찍기 -->
+    <div id="evStamp" class="ev_stamp">
+        <strong class="screen_out">이벤트1 더샵에 로그인 하셨나요? 매일 스탬프를 찍어주세요! 매주 스탬프를 다 채우시면 그 주에 해당하는 부외품 깜짝선물을 1원에 담아드립니다! * 공휴일 및 토요일, 일요일은 자동 출석</strong>
+        <img src="images/double_ev03.jpg" alt="">
+        <div class="stamp_info">
+            <div class="chk_num">
+                <div class="inner_chk">
+                    <div class="info_month">
+                        <!-- num_m0~9  -->
+                        <span class="img_comm month num_m9">9</span><span class="img_comm txt_month">월에</span>
+                        <span class="img_comm txt_mystamp">내가찍은 스탬프는?</span>
+                    </div>
+                    <div class="info_date">
+                        <span class="img_comm txt_total">총</span>
+                        <em class="img_comm cnt8" id="eventJoinCnt">8</em><!-- cnt0~cnt31 -->
+                        <span class="img_comm txt_day">일</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap_calendar">
+                <button type="button" class="btn_attendance" style="cursor: pointer;">
+                    <img src="images/btn_stamp.png" alt="스탬프찍기">
+                </button>
+                <table class="tbl_calendar">
+                    <colgroup>
+                        <col style="width: 96px;">
+                        <col style="width: 95px;">
+                        <col style="width: 96px;">
+                        <col style="width: 95px;">
+                        <col style="width: 96px;">
+                        <col style="width: 96px;">
+                        <col style="width: 96px;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col"><span class="img_comm sun">SUN</span></th>
+                        <th scope="col"><span class="img_comm mon">MON</span></th>
+                        <th scope="col"><span class="img_comm tue">TUE</span></th>
+                        <th scope="col"><span class="img_comm wed">WED</span></th>
+                        <th scope="col"><span class="img_comm thu">THU</span></th>
+                        <th scope="col"><span class="img_comm fri">FRI</span></th>
+                        <th scope="col"><span class="img_comm sat">sat</span></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- -----------------------------------------------1주차--------------------------------------------- -->
+                    <tr>
+                        <td class="imp"></td>
+                        <td class="imp"></td>
+                        <td class="imp"></td>
+                        <td class="imp"></td>
+                        <td class="imp"></td>
+                        <td class="imp"></td>
+                        <td class="td_check">
+                            <div class="date_wrap weekend">
+                                <span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num1">1</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- -----------------------------------------------2주차--------------------------------------------- -->
+                    <tr>
+                        <td class="td_check">
+                            <div class="date_wrap weekend">
+                                <span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num2">2</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0108" name="2018.01.08" class="td_check">
+                            <div class="date_wrap">
+								<span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num3">3</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0109" name="2018.01.09" class="td_check">
+                            <div class="date_wrap">
+								<span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num4">4</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0110" name="2018.01.10">
+                            <div class="date_wrap">
+								<span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num5">5</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_01190" name="2018.01.10">
+                            <div class="date_wrap">
+                                <span>
+                                    <img src="images/date_holiday01.png" alt="6/6 현충일">
+                                </span>
+                            </div>
+                        </td>
+                        <td id="td_0112" name="2018.01.12" class="click">
+                            <div class="date_wrap">
+								<span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num7">7</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="date_wrap weekend">
+                                <span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num8">8</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- -----------------------------------------------3주차--------------------------------------------- -->
+                    <tr>
+                        <td>
+                            <div class="date_wrap weekend">
+                                <span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num9">9</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0115" name="2018.01.15">
+                            <div class="date_wrap">
+								<span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num1">1</span>
+                                    <span class="img_comm txt_num0">0</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0116" name="2018.01.16">
+                            <div class="date_wrap">
+								<span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num1">1</span>
+                                    <span class="img_comm txt_num1">1</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0117" name="2018.01.16">
+                            <div class="date_wrap">
+								<span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num1">1</span>
+                                    <span class="img_comm txt_num2">2</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_01179" name="2018.01.17">
+                            <div class="date_wrap">
+                                <span>
+                                    <img src="images/date_holiday02.png" alt="6/13 지방선거">
+                                </span>
+                            </div>
+                        </td>
+                        <td id="td_0119" name="2018.01.19">
+                            <div class="date_wrap">
+								<span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num1">1</span>
+                                    <span class="img_comm txt_num4">4</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="date_wrap weekend">
+                                <span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num1">1</span>
+                                    <span class="img_comm txt_num5">5</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- -----------------------------------------------4주차--------------------------------------------- -->
+                    <tr>
+                        <td>
+                            <div class="date_wrap weekend">
+                                <span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num1">1</span>
+                                    <span class="img_comm txt_num6">6</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0122" name="2018.01.22">
+                            <div class="date_wrap">
+								<span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num1">1</span>
+                                    <span class="img_comm txt_num7">7</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0123" name="2018.01.23">
+                            <div class="date_wrap">
+								<span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num1">1</span>
+                                    <span class="img_comm txt_num8">8</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0124" name="2018.01.24">
+                            <div class="date_wrap">
+								<span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num1">1</span>
+                                    <span class="img_comm txt_num9">9</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0125" name="2018.01.25">
+                            <div class="date_wrap">
+								<span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num2">2</span>
+                                    <span class="img_comm txt_num0">0</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0126" name="2018.01.26">
+                            <div class="date_wrap">
+								<span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num2">2</span>
+                                    <span class="img_comm txt_num1">1</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="date_wrap weekend">
+                                <span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num2">2</span>
+                                    <span class="img_comm txt_num2">2</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- -----------------------------------------------5주차--------------------------------------------- -->
+                    <tr>
+                        <td>
+                            <div class="date_wrap weekend">
+                                <span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num2">2</span>
+                                    <span class="img_comm txt_num3">3</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0129" name="2018.01.29">
+                            <div class="date_wrap">
+								<span class="date">
+									<span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num2">2</span>
+                                    <span class="img_comm txt_num9">4</span>
+								</span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_01299" name="2018.01.29">
+                            <div class="date_wrap">
+								<span class="date">
+									<span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num2">2</span>
+                                    <span class="img_comm txt_num9">5</span>
+								</span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0626" name="2018.01.29">
+                            <div class="date_wrap">
+								<span class="date">
+									<span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num2">2</span>
+                                    <span class="img_comm txt_num9">6</span>
+								</span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0131" name="2018.01.31">
+                            <div class="date_wrap">
+								<span class="date">
+									<span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num2">2</span>
+                                    <span class="img_comm txt_num9">7</span>
+								</span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0629" name="2018.01.31">
+                            <div class="date_wrap">
+								<span class="date">
+									<span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num2">2</span>
+                                    <span class="img_comm txt_num9">8</span>
+								</span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td id="td_0630" name="2018.01.31">
+                            <div class="date_wrap weekend">
+								<span class="date">
+									<span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num2">2</span>
+                                    <span class="img_comm txt_num9">9</span>
+								</span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- -----------------------------------------------6주차--------------------------------------------- -->
+                    <tr>
+                        <td>
+                            <div class="date_wrap weekend">
+                                <span class="date">
+                                    <span class="img_comm txt_num9">9</span>
+                                    <span class="img_comm txt_dot">.</span>
+                                    <span class="img_comm txt_num3">3</span>
+                                    <span class="img_comm txt_num0">0</span>
+                                </span>
+                                <span class="img_comm badge_attendance">스탬프</span>
+                            </div>
+                        </td>
+                        <td class="imp"></td>
+                        <td class="imp"></td>
+                        <td class="imp"></td>
+                        <td class="imp"></td>
+                        <td class="imp"></td>
+                        <td class="imp"></td>
+                    </tr>
+                    <!-- -----------------------------------------------달력 End--------------------------------------------- -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- //스탬프 찍기 -->
+    <!-- 파리바게트 응모하기 -->
+    <form name="applyParis" id="applyParis" method="post">
+        <input type="hidden" name="eventSeq" value="962">
+        <input type="hidden" name="memo" value="applyParis">
+        <input type="hidden" name="parisGoodsCd" value="1000002685"><!-- 파리바게뜨 쿠폰 상품 코드 -->
+        <input type="hidden" name="attendEventMax" id="attendEventMax" value="25"><!-- 참여가능 최대 인원수 -->
+        <input type="hidden" name="attendEventCnt" id="attendEventCnt" value="8">
+    </form>
+    <div id="evParis" class="ev_paris">
+        <img src="images/double_ev04.jpg" usemap="#mapDoubleEvent02" alt="스탬프 완성이후 응모버튼을 눌러주세요!">
+        <p class="screen_out">한달간 스탬프를 모두 완성하신 분들 중 25명 추첨을 통해 파리바게트 1만원권 모바일 쿠폰증정!</p>
+        <map name="mapDoubleEvent02" id="mapDoubleEvent02">
+            <area shape="rect" coords="87,555,403,635" href="javascript:applyParis();" alt="파리바게트 응모하기">
+            <area shape="rect" coords="541,592,674,632" href="javascript:fnPop3('1000002685')" alt="자세히보기">
+            <area shape="rect" coords="683,592,816,632" href="javascript:goodsAlert('1000002685');" alt="당첨자 보기">
+            <area shape="rect" coords="670,726,816,751" href="/mypage/member/modify.do" alt="개인정보 수정하기">
+        </map>
+    </div>
+    <!-- //파리바게트 응모하기 -->
+    <!-- 경품 추천 -->
+    <form name="luckybox" id="luckybox" method="post">
+        <input type="hidden" name="eventSeq" value="962">
+        <input type="hidden" name="memo" value="randomApply">
+        <input type="hidden" name="goodsCd" id="goodsCd" value="">
+        <input type="hidden" name="eventApplyCnt" id="eventApplyCnt" value="0">
+        <input type="hidden" name="discountCoupon1" value="201605004"><!-- 부외품 1000원 쿠폰 -->
+        <input type="hidden" name="discountCoupon2" value="201605005"><!-- 부외품 3000원 쿠폰 -->
+        <input type="hidden" name="discountCoupon3" value="201605006"><!-- 부외품 5000원 쿠폰 -->
+    </form>
+    <div id="evGift" class="ev_gift">
+        <img src="images/double_ev05.jpg" usemap="#mapDoubleEvent03" alt="오늘도 더샵에서 구매를 하셨다면? 경품 추첨에도 응모해주세요!">
+        <p class="screen_out">경품추첨은 주말 및 공휴일에도 평일과 같이 참여가 가능합니다. * 경품은 환불이 되지 않습니다</p>
+        <map name="mapDoubleEvent03" id="mapDoubleEvent03">
+            <area shape="rect" coords="112,678,235,719" href="pop_double_detail01.html" onclick="javascript:window.open(this.href,'pop1','width=520,height=9616,scrollbars=yes'); return false" alt="1등 - 상품 자세히 보기">
+            <area shape="rect" coords="360,678,472,719" href="pop_double_detail02.html" onclick="javascript:window.open(this.href,'pop2','width=510,height=425,scrollbars=no'); return false" alt="2등 - 상품 자세히 보기">
+            <area shape="rect" coords="659,678,771,719" href="pop_double_detail03.html" onclick="javasciprt:window.open(this.href,'pop3','width=550,height=560,scrollbars=no'); return false" alt="3등 - 상품 자세히 보기">
+            <!-- 월마다 상품코드 확인 -->
+            <area shape="rect" coords="476,678,591,719" href="javascript:goodsAlert('1000002797');" alt="2등 - 당첨자 보기">
+            <area shape="rect" coords="775,678,890,719" href="javascript:goodsAlert('1000002742');" alt="3등 - 당첨자 보기">
+            <area shape="rect" coords="305,792,645,872" href="javascript:sendData();" alt="경품 랜덤 응모하기">
+        </map>
+    </div>
+    <!-- //경품 추천 -->
+    <!-- 부외품 할인쿠폰 -->
+    <div id="evCoupon" class="ev_coupon">
+        <img src="images/double_ev06.jpg" alt="경품추천에 꾸준히 응모 하시나요?">
+        <div class="chk_num">
+            <strong class="screen_out">나의 경품횟수</strong>
+            <em class="img_comm cnt20" id="eventApplyJoinCnt">20</em>
+            <span class="img_comm num_giveaway"></span>
+        </div>
+        <p class="screen_out">한달 누적 응모 횟수가 5회/10회/20회 달성시 자동으로 쿠폰혜택!</p>
+        <!-- 달성완료 시 li에 클래스 complete부여  -->
+        <ul class="list_coupon">
+            <li class="complete"><span class="screen_hide">5회 응모시 부외품 할인쿠폰 1,000원 최소 구매금액 5만원 유효기간 : 발급일로부터 3주</span><span class="img_comm ico_complete">달성완료</span></li>
+            <li><span class="screen_hide">10회 응모시 부외품 할인쿠폰 3,000원 최소 구매금액 5만원 유효기간 : 발급일로부터 3주</span><span class="img_comm ico_complete">달성완료</span></li>
+            <li><span class="screen_hide">20회 응모시 부외품 할인쿠폰 5,000원 최소 구매금액 없음 유효기간 : 발급일로부터 3주</span><span class="img_comm ico_complete">달성완료</span></li>
+        </ul>
+    </div>
+    <!-- //부외품 할인 쿠폰 -->
+    <!-- 유의사항 -->
+    <img src="images/double_ev07.jpg" alt="꼭 확인하세요">
+    <div class="screen_out">
+        <strong>이벤트1</strong>
+        <ul>
+            <li>1. 깜짝선물은 해당 부외품 업체의 상품 구매시 함께 배송되며, 해당 부외품 업체의 상품을 구매하지 않을 경우 배송되지 않습니다.</li>
+            <li>2. 깜짝선물은 선착순으로 조기 마감될 수 있으니 소진 전 구매 바랍니다.</li>
+            <li>3. 깜짝선물은 출석체크 이벤트 기간 이후 일주일까지 해당 조건에서 장바구니에 담깁니다.</li>
+            <li>4. 스탬프 완성시 25명 추첨으로 드리는 모바일쿠폰은 익월 초 일괄 발송됩니다.</li>
+        </ul>
+        <strong>이벤트2</strong>
+        <ul>
+            <li>1. 경품 응모는 당일 1회 주문이 있으신 분들에 한하여, 한 ID당 1일 1회 응모 가능합니다.</li>
+            <li>2. 무통장 입금의 경우 주문일과 결제일이 같아야 이벤트 참여가 가능합니다</li>
+            <li>3. 모바일쿠폰을 포함한 경품들은 이벤트 기간 종료 후 일괄배송됩니다.</li>
+            <li>4. 5만원 이상의 경품 제세공과금 22%는 당첨자 부담입니다. </li>
+            <li>5. 경품은 사정에 따라 변경 될 수 있습니다. </li>
+            <li>6. 발급된 부외품 할인쿠폰은 반드시 유효기간을 확인하시고 기간 내에 사용하셔야 합니다.</li>
+            <li>7. 해당 쿠폰은 도매 공급사의 건강기능식품 및 부외품은 쿠폰 적용이 불가합니다.(부외품 업체만 가능)</li>
+            <li>8. 쿠폰은 중복사용이 불가합니다.</li>
+            <li>9. 사은품은 회원정보 내용으로 배송되오니 개인정보를 꼭 확인해주시기 바랍니다.</li>
+        </ul>
+    </div>
+    <!-- //유의사항 -->
+</div>
+<script type="text/javascript">
+    // 더블이벤트 nav
+    $(".double_ev .list_nav li").on("click", function(e){
+        $(this).addClass("on").siblings().removeClass("on");
+        var linkCont = $($(this).find("a").attr("href"));
+        var linkContOffset = linkCont.offset().top - 34;
+        $("html, body").stop().animate({'scrollTop': linkContOffset + 'px'}, 700);
+        e.preventDefault();
+    });
+</script>
+<!-- 2020-04-21 더블이벤트 수정 [e] -->
+
+
+</body>
+</html>

@@ -1,0 +1,443 @@
+	<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>의사 소셜</title>
+	<link rel="shortcut icon" href="../../images/_favicon.ico" type="image/x-icon"><!-- 2016-01-11 파비콘 추가 -->
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<!-- <script src="../../js/jquery.placeholder.js"></script> -->
+	<!-- <script src="../../js/common.js"></script> -->
+	<script src="../../js/ui.js"></script>
+	<script src="../../js/jquery.bpopup.min.js"></script>
+	<script src="../../js/jquery.wmuSlider.min.js"></script>
+	<script src="../../js/jquery.tmpl.min.js"></script>
+	<script src="../../js/jquery.cycle2.min.js"></script>
+	 <!--2022 리뉴얼 js추가-->
+	 <script src="../../js/swiper.min.js"></script> 
+	 
+ <!--리뉴얼 css [s]-->
+	<!-- <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/drv_renewal_sub.css">
+     -->
+ <!--리뉴얼 css [e]-->	
+	<link rel="stylesheet" type="text/css" href="../../css/style_v3.css">
+	 <!--2022 리뉴얼 css추가-->
+	<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../../css/style_v3.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/layout.css" />
+</head>
+<body>
+<div id="Index">
+	<a href="#container">본문 바로가기</a> 	
+</div>
+<div id="wrap" class="member"> <!-- 각 섹션 별 class 명 변경 (common 기본) -->
+	<!-- header [s] -->
+	<header id="header" class="header_wrap">
+	<div class="header_top">
+		<div class="header_inner">
+			<h1><a href="#none" class="ico_comm_v2 tit_drville">DrVille</a></h1>
+			<h2 class="tit_page">&nbsp;</h2>
+			<!-- 로그인시 노출 -->
+			<div class="member_wrap">
+				<ul class="tools">
+					<li class="direct_link">
+						<a href="#">닥터빌 님<span class="ico_comm_v2"></span></a>
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">마이페이지</a>
+								<a href="#">고객센터</a>
+								<a href="#">1:1문의하기</a>
+								<a href="#">공지사항</a> <!--2020-01-14 리스트 추가-->
+								<a href="#">로그아웃</a>
+							</div>
+						</div>
+					</li>
+					<li class="point">
+						<a href="#">1,321,800P</a>
+					</li>
+					<li class="notice new">
+						<a href="#"><span class="ico_comm_v2">알림</span></a>
+					</li>
+				</ul>
+			</div>
+			<!-- 비로그인시 노출 -->
+			<div class="btn_header">
+				<a href="#" class="btn_login">로그인</a>
+				<a href="#" class="btn_join">Mcircle 회원가입</a>
+			</div>
+		</div>
+	</div>
+	<div class="header_btm">
+		<div class="header_inner">
+			<a href="#gnb" class="btn_gnb"><span class="btn_open"><span class="ico_open">전체 메뉴 열기</span></span></a>
+			<div class="location_wrap">
+				<ul class="location tools">
+					<li class="location_home">
+						<a href="#">홈</a>
+					</li>
+					<li class="location_depth1">
+						<a href="#">CME<span class="ico_comm_v2"></span></a>
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">CME</a>
+								<a href="#">해외의학서비스</a>
+								<a href="#">진료가이드</a>
+								<a href="#">병원경영</a>
+								<a href="#">혜택</a>
+								<a href="#">커뮤니티</a>
+								<a href="#">브랜드존</a>
+								<a href="#">포인트샵</a>
+								<a href="#">라이프</a>
+								<a href="#">자료실</a>
+								<a href="#">오픈콜라보레이션</a>
+								<a href="#">학술지원사업</a>
+								<a href="#">경제적이익 지출보고서</a>
+							</div>
+						</div>
+					</li>
+					<li class="location_depth2">
+						<a href="#">라이브세미나<span class="ico_comm_v2"></span></a>
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">라이브세미나</a>
+								<a href="#">다시보기 VOD</a>
+								<a href="#">CME매거진</a>
+								<a href="#">진진영</a>
+								<a href="#">해외학회스케치</a>
+								<a href="#">해외학회스케치 참여신청</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="service_list">
+				<ul>
+					<li><a href="#">라이브세미나</a></li>
+					<li><a href="#">해외의학서비스</a></li>
+					<li><a href="#">드럭인포</a></li>
+					<li><a href="#">자유게시판</a></li>
+					<li><a href="#">포인트샵</a></li>
+					<li><a href="#">피부비만성형포럼</a></li>
+					<!-- 2020-06-24 추가 [s] -->
+					<li><a href="#">닥터빌 아카데미</a></li>
+					<!-- 2020-06-24 추가 [e] -->
+				</ul>
+			</div>
+			<a href="#search_all" class="search_open"><span class="ico_comm_v2">통합검색</span></a>
+		</div>
+		<section id="search_all" class="section_search">
+			<h3 class="screen_out">검색</h3>
+			<div class="header_inner">
+				<form class="form_search" role="search">
+					<fieldset>
+						<legend class="screen_out">검색</legend>
+						<div class="box_search">
+							<input type="text" class="tf_keyword" title="검색어 입력" placeholder="검색할 내용을 입력하세요.">
+							<button type="submit" class="btn_search"><span class="ico_comm_v2">통합검색</span></button>
+						</div>
+					</fieldset>
+				</form>
+				<a href="#search_all" class="search_close"><span class="ico_comm_v2">통합검색 닫기</span></a>
+			</div>
+		</section>
+		<div id="gnb" class="gnb">
+			<div class="gnb_top">
+				<div class="gnb_inner">
+					<!-- 2022-08-31 수정 -->
+					<span class="badge_new_service">Now</span>
+					<a href="#" class="tit_new_service">해외학회스케치</a> 
+
+				</div>
+			</div>
+			<div class="gnb_wrap"> <!--2019-11-18 태그 추가-->
+				<div class="gnb_inner">
+					<ul class="allmenu">
+						<li>
+							<strong>CME</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">세미나편성표<span class="ico_comm_v2 ico_point">point</span></a></li>
+								<li><a href="#">다시보기VOD</a></li>
+								<li><a href="#">닥터빌 ON<span class="ico_comm_v2 ico_play">point</span></a></li>
+								<li><a href="#">CME매거진</a></li>
+								<li><a href="#">진진영</a></li>
+								<li><a href="#">해외학회스케치</a></li>
+								<li><a href="#">해외학회스케치 참여신청</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><strong>해외의학서비스<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">의학논문검색</a></li>
+								<li><a href="#">UpToDate</a></li>
+								<li><a href="#">DynaMed Plus</a></li>
+								<li><a href="#">Smart Imagebase</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>진료가이드</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">드럭인포</a></li>
+								<li><a href="#">학회/연수일정</a></li>
+								<li><a href="#">해외컨퍼런스</a></li>
+								<li><a href="#">해외의학뉴스</a></li>
+								<li><a href="#">처방가이드</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>병원경영</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">병원성공경영가이드<span class="ico_new">NEW</span></a></li> <!--2020-01-28 메뉴 추가-->
+								<li><a href="#">보험인정기준</a></li>
+								<li><a href="#">심사청구</a></li>
+								<li><a href="#">보험심사 청구 컨설팅</a></li>
+								<li><a href="#">개원가 실전 진료 Tip</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>혜택</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">설문<span class="ico_comm_v2 ico_point">point</span></a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="allmenu">
+						<li>
+							<strong>커뮤니티</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">자유게시판</a></li>
+								<li><a href="#">닥라이브<span class="ico_comm_v2 ico_point">point</span></a></li>
+								<li><a href="#">스터디룸</a></li>
+								<li><a href="#">피부비만성형포럼</a></li>
+								<!-- 2020-06-24 추가 [s] -->
+								<li><a href="#">닥터빌 아카데미</a></li>
+								<!-- 2020-06-24 추가 [e] -->
+							</ul>
+						</li>
+						<li>
+							<a href="#"><strong>브랜드존<span class="ico_comm_v2 ico_point">point</span><span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">의약품</a></li>
+								<li><a href="#">의료기기</a></li>
+								<li><a href="#">최신진료장비</a></li> <!-- 2019-12-06 수정 -->
+								<li><a href="#">스페셜라이프</a></li>
+								<li><a href="#">홍보영상</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><strong>포인트샵<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">영화</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">호텔</a></li>
+								<li><a href="#">여행</a></li>
+								<li><a href="#">기프티콘</a></li>
+								<li><a href="#">하늘맛</a></li>
+								<li><a href="#">SERICEO</a></li>
+								<li><a href="#">JArt</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>라이프</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">여행</a></li>
+								<li><a href="#">식신</a></li>
+								<li><a href="#">트렌드</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>자료실</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">서식</a></li>
+								<li><a href="#">케어노트</a></li>
+								<li><a href="#">카드뉴스</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="allmenu">
+						<li class="last_gnb_inner_li"> <!--2020-03-03 Class 추가-->
+							<a href="#"><strong>오픈콜라보레이션<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">IIT 제안</a></li>
+								<li><a href="#">제품개발제안</a></li> <!--2020-01-28 new 뱃지 삭제-->
+							</ul>
+						</li>
+						<li class="support_link last_gnb_inner_li">  <!--2020-03-03 Class 추가-->
+							<a href="#"><strong>학술지원사업<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<!-- 2021-06-28 수정 -->
+								<li><a href="#">해외학술대회 중계</a></li>
+								<li><a href="#">연구지원</a></li>
+								<li><a href="#">학술상</a></li>
+								<li class="seokchun"><a href="#">미래의료 연구지원</a></li>
+							</ul>
+						</li>
+						<li> <!--2020-04-14 수정 -->
+							<a href="#"><strong>경제적이익 지출보고서</strong></a>
+						</li>
+						<li class="last_gnb_inner_li"> <!--2020-04-14 Class 추가-->
+							<a href="#"><strong>자문참여</strong></a>
+						</li>
+						<li class="box">
+							<div class="channel">
+								<span>다양한 채널에서<br>닥터빌의 소식을 전해드립니다!</span>
+								<div class="icon_social">
+									<a href="https://www.youtube.com/channel/UCUOV1IWnqpB69okoWNKQeZQ" target="_blank" class="ico_comm_v2 ico_youtube">유투브</a>
+									<a href="http://pf.kakao.com/_zddxgd" target="_blank" class="ico_comm_v2 ico_kakao">카카오플러스친구</a>
+									<a href="https://www.facebook.com/%EB%8B%A5%ED%84%B0%EB%B9%8C-549462672108716/?ref=aymt_homepage_panel&amp;eid=ARCcUFij5OHuJmsLw9LuoiMg-2G-Eh48BWsaU_SSflZGsF0lu7DupXHoRDofX7sdUsEhMT95BrA64x6F" target="_blank" class="ico_comm_v2 ico_facebkook">페이스북</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="bg_gnb"></div>
+<script>
+	$(function () {
+		// ui 작업물 타이틀 확인용
+		var location = $("#container").data("location")
+			,title = $("#container").data("title");
+		$(".header_wrap .tit_page").text(title);
+		if(location === undefined){
+			$(".location_depth1 > a").html(title + '<span class="ico_comm_v2"></span>');
+			$(".location_depth2").hide();
+		}else{
+			$(".location_depth1 > a").html(location + '<span class="ico_comm_v2"></span>');
+			$(".location_depth2 > a").html(title + '<span class="ico_comm_v2"></span>');
+		}
+
+		// 헤더 고정
+		$(window).on("scroll",function(){
+			var headerTop = $(".header_top").height() + 1,
+				scrollTop = $(window).scrollTop();
+			if(scrollTop<headerTop){
+				$("#wrap").removeClass("fixed");
+			}else{
+				$("#wrap").addClass("fixed");
+			}
+		});
+
+		// 2019-12-06 추가
+		var gnbH = $("#gnb").height()
+			,headerH = $("#header").height(); //header 높이값
+
+		function gnbScroll(){
+			var winH = $(window).height(); // 브라우저 높이값
+			if(winH <= gnbH + headerH){
+				$(".header_wrap .gnb_wrap").scrollTop(0).css("height", winH - headerH - 20);
+			}else{
+				$(".header_wrap .gnb_wrap").scrollTop(0).css("height", gnbH - 47 );
+			}
+			//console.log('win' + winH , 'gnbH' + gnbH, 'headerH' + headerH);
+		}
+		// 2019-12-06
+
+
+
+		// 전체메뉴
+		$(".btn_gnb, .bg_gnb").on("click", function(e){
+			e.preventDefault();
+			if($(".header_wrap").hasClass("open")){
+				$("body").css("overflow-y","auto");
+				$(".header_wrap").removeClass("open");
+				$(".btn_gnb").removeClass("open");
+			}else{
+				gnbScroll();
+				$("body").css("overflow-y","hidden");
+				$(".header_wrap").addClass("open");
+				$(".btn_gnb").addClass("open");
+			}
+		});
+		$(window).on("resize",function(){
+			gnbScroll();
+		});
+
+
+		// 검색
+		$(".search_open, .search_close").on("click",function(e){
+			e.preventDefault();
+			var $search = $($(this).attr("href"));
+			$search.toggle();
+		});
+	});
+</script>
+	<!-- header [e] -->
+	<!-- container [s] -->
+	<main id="container" data-title="회원가입">
+		<div class="contents">
+			<h2>약관동의</h2>
+			<div class="joinBox">
+				<div class="agreeBox_wr">
+					<div class="agreeAll">
+						<p>이용약관, 개인정보 수집 및 이용에 모두 동의합니다.</p>
+						<a href="#" class="ico_comm agreeCheck">선택</a>
+					</div>
+					<div class="agreeBox">
+						<h3>이용약관 동의</h3> <span>(필수)</span>
+						<div class="scrollBox" tabindex="0">
+							<div class="txtBox">
+								<!-- V5 2015-11-23 약관 내용 추가 시작 -->
+								<!--#include virtual="../../html/intro/txt_policy.html" -->
+								<!-- V5 2015-11-23 약관 내용 추가 끝 -->
+							</div>
+						</div>
+						<p class="agree_notice">이용약관에동의해주세요.</p>
+						<a href="#" class="ico_comm agreeCheck on">선택</a> <!--V3 아이콘 이미지 스프라이트 -->
+					</div>
+					<div class="agreeBox">
+						<h3>개인정보 수집 및 이용에 대한 동의</h3> <span>(필수)</span>
+						<div class="scrollBox" tabindex="0">
+							<div class="txtBox">
+								<!-- V5 2015-11-23 약관 내용 추가 시작 -->
+								<!--#include virtual="../../html/intro/txt_userinfo.html" -->
+								<!-- V5 2015-11-23 약관 내용 추가 끝 -->
+							</div>
+						</div>
+						<p class="agree_notice">개인정보수집및이용에동의해주세요.</p>
+						<a href="#" class="ico_comm agreeCheck">선택</a> <!--V3 아이콘 이미지 스프라이트 -->
+					</div>
+					<div class="agreeBox">
+						<h3>제휴서비스 이용 시 개인정보 활용동의</h3> <span>(필수)</span>
+						<div class="scrollBox" tabindex="0">
+							<div class="txtBox">
+								<!-- V5 2015-11-23 약관 내용 추가 시작 -->
+								<!--#include virtual="../../html/intro/txt_withinfo.html" -->
+								<!-- V5 2015-11-23 약관 내용 추가 끝 -->
+							</div>
+						</div>
+						<p class="agree_notice">제휴서비스 이용 시 개인정보 활용에동의해주세요.</p>
+						<a href="#" class="ico_comm agreeCheck">선택</a> <!--V3 아이콘 이미지 스프라이트 -->
+					</div>
+				</div>
+				<div class="joinBtn">
+					<div class="halfBtn">
+						<a href="#" class="btnBlue">동의</a>
+					</div>
+					<div class="halfBtn">
+						<a href="#" class="btnWhite">비동의</a>
+					</div>
+				</div>
+
+		</div>
+    </main>
+    <!-- container [e] -->
+    <hr>
+	<!-- footer [s] -->
+	<!--#include virtual="../../html/common/mini_footer.html" -->
+    <!-- footer [e] -->
+    
+</div>
+
+</body>
+</html>

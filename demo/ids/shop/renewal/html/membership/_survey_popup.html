@@ -1,0 +1,95 @@
+<!-- 2021-09-07 삭제 <div id="popProductLayer" class="pop_center" style="display:none;">
+    <div class="pop_layer pop_type1">
+		<div class="pop_wrap">
+            <div class="product_summary">
+                <p class="name">얇은 포장용 테이프 - <em>멤버십전용</em></p>
+                <p class="ea">48mm*80m / 1EA</p>
+            </div>
+            <table class="supply_table">
+                <colgroup>
+                    <col style="width:30%">
+                    <col style="width:25%">
+                    <col style="width:20%">
+                    <col style="width:25%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <td>공급사명</td>
+                        <td>멤버십회원가</td>
+                        <td>재고</td>
+                        <td>구매수량</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="col">옥산</th>
+                        <td class="right">900원</td>
+                        <td>15747개</td>
+                        <td>
+                            <div class="ctl_prod">
+                                <input type="text" title="상품 수량" class="inp_num" value="9999">
+                                <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">옥산</th>
+                        <td class="right">900원</td>
+                        <td>15747개</td>
+                        <td>
+                            <div class="ctl_prod">
+                                <input type="text" title="상품 수량" class="inp_num" value="9999">
+                                <button type="button" class="btn_plus"><span class="ico_comm ico_plus">+</span></button>
+                                <button type="button" class="btn_minus"><span class="ico_comm ico_minus">-</span></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="supply_summary">
+                <ul>
+                    <li>배송예정일: <em>2021-07-14</em></li>
+                    <li>반품택배비 : 2,500원</li>
+                    <li class="row">공급사 주의사항
+                        <div class="description">주의사항 내용이 들어갑니다.</div>
+                    </li>
+                </ul>
+                <div class="buttons">
+                    <button type="button" class="btn_type1">장바구니 담기</button>
+                    <button type="button" class="btn_type2">즐겨찾기 보기</button>
+                </div>
+            </div>
+		</div>
+		<button type="button" class="btn_comm btn_close fn_close">닫기</button>
+	</div>
+</div> -->
+<div id="popSurveyComplete" class="pop_center" style="display:none;">
+    <div class="pop_layer pop_type1">
+		<div class="pop_wrap">
+            <p class="title">설문에 응답하셨습니다.</p>
+            <p>설문에 참여해 주셔서 감사드리며, <br>감사의 표시로 <em>2만 마일리지</em>를 제공해드렸습니다.<br>마일리지와 관련한 자세한 내용은 마이페이지 > 마일리지에서 확인할 수 있습니다.</p>
+		</div>
+		<button type="button" class="btn_comm btn_close fn_close">닫기</button>
+	</div>
+</div>
+
+<script>
+    $('.product_box').on({
+        click: function(e){
+            e.preventDefault();
+            modalLayer = shopUI.modalLayer($("#popProductLayer"), {
+                closeClass: "btn_close"
+            });
+        }
+    }, '.btn_cart');
+    $('.survey_box').on({
+        click: function(e){
+            e.preventDefault();
+            modalLayer = shopUI.modalLayer($("#popSurveyComplete"), {
+                closeClass: "btn_close"
+            });
+        }
+    }, '.submit');
+    
+</script>

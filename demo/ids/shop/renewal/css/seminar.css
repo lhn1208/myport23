@@ -1,0 +1,796 @@
+@charset "utf-8";
+
+/* common Style */
+.ico_seminar{display:block;overflow:hidden;background:url(../images/seminar/ico_seminar.png) no-repeat;text-indent:-9999px}
+.emph_g{color:#fd490e}
+.emph_g2{color:#ff2400}
+.bg_dimmed{display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:9;background-color:rgba(0,0,0,.5)}
+.plus_seminar section .txt_bar{display:inline-block;width:1px;height:11px;margin:-2px 9px 0;background-color:#c9c9c9;vertical-align:middle}
+.tit_g{font-size:22px;font-family:NanumSquareEB;color:#2a303b}
+.tit_b{margin-bottom:20px;font-size:30px;font-family:NanumSquareEB;color:#2a303b}
+.wrap_g{min-height:41px}
+.wrap_g .tit_g{float:left}
+.wrap_g .txt_g{float:left;padding:8px 0 0 20px;color:#484b50}
+.wrap_br{border-bottom:2px solid #35353f}
+.page_location{position:absolute;top:20px;right:0;color:#b5b5b5}
+.page_location em{color:#484b50}
+.link_seminar{float:left;width:380px;height:350px}
+.link_seminar .ico_onair{position:absolute;top:0;left:0;width:64px;height:64px}
+.select_cate{float:right;position:relative;background-color:#fff}
+.select_cate em{display:none}
+.select_val{display:none}
+.list_cate{overflow:hidden;padding-top:7px}
+.list_cate li{float:left}
+.list_cate li:after{float:left;width:1px;height:11px;margin:4px 10px 0;background-color:#c9c9c9;content:''}
+.list_cate li:last-child:after{display:none}
+.list_cate .btn_cate{float:left;font-size:13px}
+.list_cate .on .btn_cate{border-bottom:3px solid #fd490e;font-weight:bold;color:#ff2400}
+.seminar_favorite{position:absolute;top:23px;right:0;padding:5px}
+.seminar_favorite .ico_favorite{width:16px;height:14px;background-position:0 -70px}
+.seminar_favorite.on .ico_favorite{background-position:-20px -70px}
+.wrap_thumb{overflow:hidden;position:relative;width:100%;height:100%}
+.wrap_thumb img{display:block;width:100%;height:100%}
+.thumb_none{font-size:11px;background-color:#f9f9f9;color:#888;text-align:center}
+.thumb_none:after{border:1px solid #e3e5e8;background:none}
+.thumb_none .ico_none{width:42px;height:42px;margin:22px auto 7px;background-position:-250px 0}
+.box_tag{overflow:hidden;position:absolute;top:0;left:0;z-index:1}
+.box_tag .ico_tag{float:left;width:46px;height:23px;font-size:13px;line-height:23px;background-color:#626262;color:#ff9a4f;text-align:center;letter-spacing:-0.5px}
+.box_tag .ico_tag2{background-color:rgba(0,0,0,.3);color:#fff}
+.list_data{border-top:1px solid #e3e5e8}
+.list_data li{display:table;table-layout:fixed;width:100%;border-bottom:1px solid #e3e5e8}
+.list_data .data_cell{display:table-cell;position:relative;height:153px;vertical-align:middle;box-sizing:border-box}
+.list_data .data_date{width:18%;background-color:#ebf1f5;font-size:11px;color:#06060c;text-align:center}
+.list_data .data_date .txt_num{display:block;font-size:22px}
+.list_data .data_time{width:18%;background-color:#f9f9f9;color:#5681c6;text-align:center}
+.list_data .data_time .txt_num{display:block;font-size:20px}
+.list_data .data_time .txt_num2{font-size:11px}
+.list_data .data_detail{padding-left:27px}
+.list_data li:hover .data_date{background-color:#e6ecf0}
+.list_data li:hover .data_time{background-color:#f4f4f4}
+.list_data li:hover .data_detail{background-color:#fafafa}
+.cate_info{padding:5px 0 10px}
+.cate_info em{font-weight:bold;color:#ff2400}
+.list_data .link_info{display:block;display:-webkit-box;overflow:hidden;max-width:100%;height:43px;margin:0 20px 12px 0;font-weight:bold;font-size:18px;line-height:1.3;color:#484b50;text-overflow:ellipsis;word-break:break-all;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.list_data .link_info:hover{text-decoration:underline}
+.list_data .wrap_txt{overflow:hidden;max-height:22px;line-height:22px}
+.list_data .txt_name{float:left;font-size:13px}
+.list_data .txt_apply{overflow:hidden;color:#999;text-align:right}
+.list_data .num_current{color:#484b50}
+.list_data .txt_state{float:right;width:66px;height:22px;margin-left:10px;background-color:#70cdb4;color:#fff;text-align:center}
+.list_data .txt_state2{background-color:#69abd4}
+.list_data .txt_state3{background-color:#cd70a8}
+.list_data2{margin-bottom:40px;border-top: 0 none}
+.list_data2 li:first-child{border-top:0 none}
+.list_data2 .data_cell{height:125px}
+.list_data2 .data_date, .list_data2 .data_time{width:110px}
+.list_data2 .data_detail{padding-right:260px}
+.list_data2 .link_info{display:block;height:auto;margin-right:0;white-space:nowrap}
+.list_data2 .txt_apply{position:absolute;top:50px;right:50px}
+.list_data2 .num_current{font-weight:normal}
+.list_data2 .num_current .txt_point{display:inline-block;width:80px}
+.list_data2 .txt_state{margin-left:25px}
+.list_data2 .seminar_favorite{top:49px;right:5px}
+.btn_more{display:inline-block;height:30px;padding:0 10px;line-height:30px;border-radius:2px;background-color:#787f8e;color:#fff;text-align:center}
+.btn_more:after{float:right;margin:10px 0 0 5px;border-left:4px solid #fff;border-bottom:4px solid transparent;border-top:4px solid transparent;content:''}
+.btn_more2{display:block;width:187px;height:43px;margin:0 auto;border:1px solid #c0c0c0;border-radius:2px;font-weight:bold;font-size:15px;line-height:43px;text-align:center}
+.list_g{overflow:hidden;height:267px;border-left:1px solid #e3e5e8}
+.list_g li{float:left;width:20%;margin-bottom:-1px;border:1px solid #e3e5e8;border-left:0 none;box-sizing:border-box}
+.list_g .link_g{display:block;padding:35px 0;text-align:center}
+.list_g .tit_name{display:block;padding:15px 0 0;font-size:16px;color:#484b50}
+.list_g .wrap_thumb{width:138px;height:138px;margin:0 auto;border-radius:100%}
+.list_g .wrap_thumb img{border-radius:100%}
+.list_g2{overflow:hidden;height:273px;margin:20px -5px 0}
+.list_g2 li{float:left;width:20%;margin-bottom:40px;padding:0 5px;box-sizing:border-box}
+.list_g2 .link_g{display:block}
+.list_g2 .wrap_thumb{height:110px;margin-bottom:23px}
+.list_g2 .wrap_thumb:after{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(49,49,49,.2);content:''}
+.list_g2 .wrap_thumb img{position:absolute;top:0;left:0;right:0;bottom:0;height:auto;margin:auto}
+.list_g2 .ico_play{position:absolute;left:10px;bottom:10px;z-index:1;width:23px;height:22px;background-position:-110px -50px}
+.list_g2 .tit_info{display:block;display:-webkit-box;overflow:hidden;height:37px;margin:0 25px 10px 0;font-size:14px;line-height:20px;color:#484b50;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.list_g2 .link_g:hover .tit_info{text-decoration:underline}
+.list_g2 .txt_num{display:block;padding-top:3px;font-size:11px;color:#888}
+.list_g3{overflow:hidden;padding:25px 12px}
+.list_g3 li{float:left;width:95px;height:139px;padding:0 2px}
+.list_g3 .link_g{display:block}
+.list_g3 .wrap_thumb{width:95px;height:56px}
+.list_g3 .wrap_thumb:after{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(49,49,49,.2);content:''}
+.list_g3 .wrap_thumb img{position:absolute;top:0;left:0;right:0;bottom:0;height:auto;margin:auto}
+.list_g3 .thumb_none{font-size:0;line-height:0;text-indent:-9999px}
+.list_g3 .thumb_none .ico_none{width:72px;height:26px;margin-top:15px;background-position:0 -130px}
+.list_g3 .tit_info{display:block;display:-webkit-box;overflow:hidden;height:33px;margin:7px 0;font-weight:normal;line-height:16px;color:#484b50;text-overflow:ellipsis;word-break:break-all;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.list_g3 .txt_info{display:block;word-break:break-all;line-height:1.3;letter-spacing:-0.5px}
+.list_more{height:auto}
+.list_apply{height:342px}
+.list_apply .emph_g{display:block;padding:20px 0 5px}
+.list_apply .tit_info{display:block;display:-webkit-box;overflow:hidden;height:40px;margin-bottom:13px;padding:0 10px;font-size:14px;line-height:20px;color:#484b50;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.list_apply .txt_info{display:block;font-size:12px}
+.list_apply .txt_num{font-size:11px;color:#888}
+.list_teacher{overflow:visible;height:auto}
+.list_teacher:after{display:block;clear:both;content:''}
+.list_teacher li{position:relative}
+.list_teacher .on:after{position:absolute;top:-1px;left:-1px;right:-1px;bottom:-1px;z-index:1;border:1px solid #fd490e;content:''}
+.schedule_seminar{position:relative;border-bottom:1px solid #e3e5e8;background-color:#ebf1f5}
+.schedule_seminar .bg_right{position:absolute;top:0;right:0;width:50%;height:89px;background-color:#f9f9f9}
+.wrap_schedule{overflow:hidden;position:relative;z-index:1;width:950px;margin:0 auto;background-color:#f9f9f9}
+.tit_schedule{float:left;position:relative;width:235px;height:57px;font-size:22px;font-family:NanumSquareEB;color:#2a303b}
+.tit_schedule .bg_skew{position:absolute;top:0;left:-30px;width:250px;height:89px;background-color:#ebf1f5;transform:skew(-20deg)}
+.tit_schedule .tit_txt{display:block;position:relative;margin-top:30px;z-index:1}
+.tit_schedule .ico_play{display:inline-block;width:33px;height:25px;margin:3px 12px 0 0;background-position:-170px 0;vertical-align:top}
+.list_schedule{overflow:hidden;height:89px;padding-left:20px}
+.list_schedule li{float:left;width:33.3%}
+.list_schedule .link_schedule{display:block;position:relative;height:89px;padding:0 30px;font-size:13px;color:#484b50}
+.list_schedule .link_schedule:after{position:absolute;top:50%;left:0;width:1px;height:46px;margin-top:-23px;background-color:#e3e5e8;content:''}
+.list_schedule li:first-child .link_schedule:after{display:none}
+.list_schedule .txt_date{display:block;padding-top:14px;font-size:11px;color:#5681c6}
+.list_schedule .txt_num{font-size:22px}
+.list_schedule .tit_txt{display:block;padding-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.box_search{margin-bottom:40px;padding:45px 100px;border-top:1px solid #e3e5e8;border-bottom:1px solid #e3e5e8;background-color:#f9f9f9}
+.box_search .inner_search{position:relative}
+.box_search .select{position:relative;height:35px;padding-left:15px;font-size:13px;line-height:35px;background:#fff url(../images/seminar/ico_arr_search.png) no-repeat 92% 13px}
+.box_search .select strong{height:35px;padding-left:0;line-height:35px}
+.box_search .wrap_inp{overflow:hidden;position:relative;padding:0 80px 0 10px}
+.box_search input[type="text"]{width:100%;height:35px;padding:2px 15px 0;font-size:13px;line-height:35px}
+.box_search .btn_search{position:absolute;top:0;right:0;width:70px;height:35px;padding:0;border:0 none;font-weight:bold;font-size:14px;background-color:#787f8e;color:#fff}
+.data_none{display:table;width:100%;min-height:150px;margin-bottom:40px;padding:50px 10px;border-bottom:1px solid #e3e5e8;text-align:center;box-sizing:border-box}
+.data_none .inner_none{display:table-cell;vertical-align:middle}
+.data_none .ico_none{display:inline-block;width:32px;height:32px;background-position:-70px -50px;vertical-align:middle}
+.data_none .txt_none{display:inline-block;padding:2px 0 0 10px;font-size:13px;line-height:20px;color:#484b50;text-align:left;vertical-align:middle}
+.data_none .tit_txt{display:block;font-size:14px}
+.data_none .txt_detail{display:block;padding-top:10px}
+
+/* 레이아웃 */
+.plus_seminar #header{background-color:#fff}
+.plus_seminar .logo_shopplus .ico_seminar{width:134px;height:30px;background-position:0 -90px}
+.plus_seminar #container{min-width:100%}
+.plus_seminar #content{float:none;height:auto;padding:43px 0 80px}
+.header_search .btn_toggle, .header_search .btn_close{display:none}
+.header_search .bg_dimmed{display:none;position:fixed;top:60px;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.5)}
+.header_search.on .bg_dimmed{display:block}
+.plus_seminar #footer .info_m{display:none}
+
+/* 상단메뉴 */
+.seminar_menu{float:left;width:100%}
+.seminar_menu .btn_allmenu{display:none}
+.seminar_menu .menu_util{float:right;padding-top:20px}
+.seminar_menu .list_3depth{float:left;clear:none}
+.seminar_menu .list_3depth .menu_type2{display:none}
+.seminar_menu .btn_apply{margin-left:10px;padding:9px 13px 7px}
+.seminar_menu .box_util{float:left;position:relative}
+.seminar_menu .box_util .btn_nick{display:block;overflow:hidden;padding:8px;font-weight:bold}
+.seminar_menu .box_util .btn_nick:after{float:right;margin:7px 0 0 8px;border-top:4px solid #aaaeb1;border-right:4px solid transparent;border-left:4px solid transparent;content:''}
+.seminar_menu .box_util .layer_util{display:none;position:absolute;top:33px;right:8px;z-index:10;width:118px;border:1px solid #ff6724;background-color:#fff}
+.seminar_menu .on .layer_util{display:block}
+.seminar_menu .info_nick{display:block;position:relative;margin:20px 11px 15px;padding-right:35px;font-size:14px;color:#666}
+.seminar_menu .tit_nick{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.seminar_menu .btn_edit{position:absolute;top:0;right:0;padding:0 4px;height:18px;border:1px solid #dfdfdd;border-radius:2px;font-size:11px;line-height:18px;color:#8b929c}
+.seminar_menu .txt_point{display:block;padding:0 12px 5px;line-height:16px}
+.seminar_menu .txt_point .num_point{display:block;color:#fd4a0c}
+.seminar_menu .txt_point .txt_num{font-weight:bold}
+.seminar_menu .btn_convert{display:block;width:96px;height:25px;margin:0 auto 15px;border:1px solid #dfdfdd;border-radius:2px;font-weight:bold;font-size:11px;line-height:27px;color:#484b50;text-align:center;letter-spacing:-1px}
+.seminar_menu .link_my{display:block;padding:8px 0;border-top:1px solid #e3e5e8;line-height:16px;color:#7b7e85;text-align:center}
+.seminar_menu .list_my .num_seminar{display:block;color:#666}
+.seminar_menu .list_my .txt_num{font-weight:bold}
+.seminar_menu .list_quick .btn_quick{display:block;height:28px;border-top:1px solid #e3e5e8;font-size:11px;line-height:28px;background-color:#acb2b6;color:#fff;text-align:center}
+.seminar_menu .list_quick .txt_num{font-weight:bold}
+.seminar_menu .btn_close{display:none}
+
+/* 메인 상단 배너 */
+.bnr_seminar .inner_bnr{position:relative;width:950px;margin:0 auto}
+.bnr_seminar iframe{display:block;width:100%;height:135px}
+.bnr_seminar a{display:block;font-size:0;line-height:0}
+.bnr_seminar img{width:100%}
+.bnr_seminar .img_m{display:none}
+.bnr_seminar .btn_close{overflow:hidden;width:26px;height:26px;padding:22px 0 10px 22px;background:rgba(0,0,0,0);text-indent:-9999px}
+.bnr_seminar .ico_close{width:26px;height:26px;background-position:-210px 0}
+.bnr_mobile{display:none}
+
+/* 홈 */
+.data_seminar{overflow:hidden;margin-bottom:24px}
+.data_seminar .box_info{position:absolute;left:0;right:0;bottom:0;padding:20px 25px;background-color:rgba(85,92,106,.7);color:#fff}
+.data_seminar .box_info .tit_info{display:block;overflow:hidden;padding-bottom:4px;font-size:18px;text-overflow:ellipsis;white-space:nowrap;letter-spacing:-0.3px}
+.data_seminar .box_info .txt_bar{display:inline-block;width:1px;height:9px;margin:0 10px;background-color:#848a96}
+.data_seminar .data_info{overflow:hidden;padding-left:20px}
+.data_seminar .list_data{min-height:308px}
+.data_seminar .data_none{min-height:309px;margin:0;border-top:1px solid #e3e5e8;background-color:#f9f9f9}
+.data_seminar .data_none .txt_none{font-weight:bold;font-size:18px}
+.cont_home .wrap_btn{padding-top:12px;text-align:right}
+.teacher_seminar{margin-bottom:24px}
+.teacher_seminar .select_cate{float:left;margin-left:25px}
+.teacher_seminar .data_none{min-height:267px;margin:0;border-top:1px solid #e3e5e8}
+.vod_seminar .wrap_g{border-bottom:1px solid #e3e5e8}
+.vod_seminar .select_cate{float:left;margin-left:25px}
+.vod_seminar .data_none{min-height:253px}
+
+    /* 세미나 검색 */
+.cont_search .tab_menu{margin-bottom:0}
+.cont_search .data_none .ico_none{vertical-align:top}
+
+/* 세미나 리스트 */
+.cont_seminar .list_apply{margin:20px 0 50px}
+.cont_seminar .teacher_seminar{position:relative;margin-bottom:50px}
+.cont_seminar .teacher_seminar .owl-stage-outer{z-index:2;height:533px}
+.cont_seminar .teacher_seminar .owl-nav{top:-39px;right:1px}
+.cont_seminar .teacher_seminar .owl-nav .owl-prev,
+.cont_seminar .teacher_seminar .owl-nav .owl-next{padding:13px 15px}
+.cont_seminar .teacher_seminar .txt_pagination{position:absolute;top:12px;right:85px}
+.cont_seminar .tit_g .tit_txt{display:none}
+.view_teacher{overflow:hidden;margin-top:50px}
+.view_teacher .info_detail{overflow:hidden;padding-left:46px}
+.view_teacher .tit_lecture{display:block;min-height:47px;margin:5px 0 10px;font-size:18px;color:#484b50}
+.view_teacher .tit_name{display:block;padding-bottom:20px;font-size:18px;color:#333}
+.view_teacher .box_info{overflow:hidden;min-height:223px;padding:35px 30px 30px;background-color:#f9f9f9;box-sizing:border-box}
+.view_teacher .tit_info{display:block;padding-bottom:12px;font-size:14px;color:#333}
+.view_teacher .list_info li{margin-bottom:7px}
+.detail_on .tit_g .tit_txt{display:inline}
+.detail_on .select_cate{display:none}
+
+/* 나의 수강내역 */
+.cont_myseminar .txt_apply{right:0;overflow:visible}
+.cont_myseminar .data_none{min-height:267px;margin-bottom:40px}
+
+/* FAQ */
+.cont_faq .tab_type1{margin:-17px 0 30px;border-bottom:1px solid #e3e5e8;text-align:center}
+.cont_faq .tab_type1 li{display:inline-block;float:none;padding:0 5px}
+.cont_faq .th_num{width:10%}
+.cont_faq .th_cate{width:20%}
+.cont_faq .th_hits{width:10%}
+.cont_faq .th_date{width:20%}
+.cont_faq .th_state{width:15%}
+.cont_faq .tbl_type1 td {padding-top:10px;padding-bottom:10px;border-bottom:1px solid #e3e5e8;word-break:break-all}
+.cont_faq .tbl_type1 .txt_complete{color:#2458ff}
+.cont_faq .tbl_type1 .txt_wait{color:#fe5e08}
+.cont_faq .tbl_type1 .emph_g{font-weight:bold}
+.cont_faq .cell_view{display:none}
+.cont_faq .cell_view td{padding:30px;border-bottom:1px #e3e5e8 solid;background-color:#f9fafc;text-align:left}
+.cont_faq .area_qa{display:block;position:relative;padding-left:35px}
+.cont_faq .area_qa .txt_qa{position:absolute;top:0;left:0}
+.cont_faq .area_answer{margin-top:25px}
+
+.cont_faq .qa_btn{padding:20px 0;text-align:right}
+.cont_faq .qa_btn a{display:inline-block;width:60px;height:30px;border-radius:2px;line-height:32px;color:#fff;text-align:center}
+.cont_faq .qa_btn .btn_modify{background-color:#ff6724}
+.cont_faq .qa_btn .btn_del{background-color:#787f8e}
+
+.cont_faq .box_inquiry{overflow:hidden;margin:-30px 0 20px;border-bottom:1px solid #e3e5e8;background-color:#f9fafc;text-align:center}
+.cont_faq .box_inquiry .inner_box{display:inline-block;position:relative;padding:35px 0 40px 85px;text-align:left}
+.cont_faq .box_inquiry .bg_circle{position:absolute;left:0;width:64px;height:64px;margin-right:20px;border-radius:100%;background-color:#ebf1f5}
+.cont_faq .ico_inquiry{width:34px;height:31px;margin:16px auto 0;background-position:-130px 0}
+.cont_faq .tit_inquiry{display:block;padding:7px 0 10px;font-size:14px;color:#2a303b}
+.cont_faq .tbl_write th{width:15%;padding-left:25px;text-align:left}
+.cont_faq .tbl_write td{padding:20px}
+.cont_faq .tbl_write tr:first-child td{padding:10px 20px}
+.cont_faq .tbl_write textarea{height:250px;margin-bottom:15px;padding:10px;box-sizing:border-box}
+.cont_faq .sms_agree{padding-bottom:15px;color:#333}
+.cont_faq .sms_agree input{display:inline-block;width:12px;height:12px;margin:-1px 8px 0 0}
+.cont_faq .sms_agree .txt_num{padding-left:20px;font-weight:bold}
+.cont_faq .txt_sms{line-height:20px}
+.cont_faq .wrap_btn{padding-top:20px;text-align:center}
+.cont_faq .wrap_btn button{width:150px}
+.cont_faq .tit_g{margin-bottom:15px}
+.cont_faq .box_point{overflow:hidden;margin-bottom:35px;border-top:2px solid #35353f;background-color:#f9fafc}
+.cont_faq .box_point > div{width:50%;height:135px;padding:40px 40px 30px;border-bottom:1px solid #e3e5e8;box-sizing:border-box}
+.cont_faq .box_point .f_l{text-align:center;border-right:1px solid #e3e5e8}
+.cont_faq .point_balance{display:inline-block;text-align:left}
+.cont_faq .point_balance .ico_point{float:left;width:49px;height:44px;margin:4px 30px 0 0;background-position:-70px 0}
+.cont_faq .point_balance .tit_point{display:block;overflow:hidden;font-size:18px;line-height:1.4}
+.cont_faq .point_balance .txt_num{font-size:22px;color:#ff6724;letter-spacing:-0.4px}
+.cont_faq .box_point .txt_point{padding-top:4px;font-size:14px;line-height:1.7}
+
+/* 세미나 상세정보 */
+.cont_detail .wrap_g{position:relative}
+.cont_detail .wrap_g .txt_g{color:#999}
+.cont_detail .info_tooltip{display:inline-block;margin-top:3px}
+.cont_detail .btn_tooltip{display:block;padding:5px}
+.cont_detail .btn_tooltip .txt_btn{display:block;width:18px;height:18px;border-radius:18px;font-weight:bold;line-height:18px;background-color:#bbb;color:#fff;text-align:center}
+.cont_detail .layer_tooltip{display:none;position:absolute;top:33px;left:92px;z-index:1;width:285px;height:137px;padding:20px;border:1px solid #fd490e;background-color:#fefedb;box-sizing:border-box}
+.cont_detail .layer_tooltip .emph_g{display:block;padding-bottom:7px}
+.cont_detail .layer_tooltip .txt_info{color:#666}
+.cont_detail .on .layer_tooltip{display:block}
+.cont_detail .wrap_detail{position:relative;padding:30px 275px 0 0}
+.seminar_detail{width:675px}
+.seminar_detail .detail_data{overflow:hidden}
+.seminar_detail .detail_data .wrap_thumb{float:left;width:350px;height:318px}
+.seminar_detail .info_seminar{overflow:hidden;padding-left:25px}
+.seminar_detail .inner_info{min-height:273px;padding-bottom:10px;box-sizing:border-box}
+.seminar_detail .cate_info{overflow:hidden;padding-bottom:20px}
+.seminar_detail .txt_hits{float:left;color:#999}
+.seminar_detail .seminar_favorite{float:left;position:static;margin:-3px 0 0 5px}
+.seminar_detail .tit_seminar{display:block;margin-bottom:45px;padding:0 30px 20px 0;border-bottom:1px solid #e3e5e8;font-size:18px;line-height:1.3;color:#484b50}
+.seminar_detail .txt_name{padding-bottom:3px}
+.seminar_detail .txt_apply{padding-top:10px;color:#999}
+.seminar_detail .num_current{color:#ff2400}
+.seminar_detail .num_current .txt_num{font-size:22px}
+.seminar_detail .txt_end{padding-top:20px;font-weight:bold;font-size:14px;color:#ff2400}
+.seminar_detail .info_seminar .btn_type1{width:100%}
+.seminar_detail .wrap_btn{overflow:hidden}
+.seminar_detail .wrap_btn .btn_detail{float:left;width:49.5%;box-sizing:border-box}
+.seminar_detail .wrap_btn .btn_type2{float:right}
+.seminar_detail .seminar_video{overflow:hidden;position:relative;padding-bottom:56.25%;margin-top:40px}
+.seminar_detail .seminar_video iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+.seminar_detail .detail_bnr{margin-top:40px;background-color:#eee;text-align:center}
+.seminar_detail .detail_bnr img{display:inline-block;max-width:100%}
+.seminar_detail .tab_detail{overflow:hidden;position:relative;margin:40px 0}
+.seminar_detail .tab_detail:after{position:absolute;top:37px;left:0;right:0;z-index:-1;height:1px;background-color:#586680;content:''}
+.seminar_detail .tab_detail li{float:left;width:127px;margin-right:-1px}
+.seminar_detail .tab_detail a{display:block;height:38px;border:1px solid #d1d6d8;border-bottom:1px solid #586680;line-height:38px;background-color:#f9f9f9;color:#999;text-align:center;box-sizing:border-box}
+.seminar_detail .tab_detail .on a{position:relative;border-color:#586680;border-bottom:1px solid #fff;font-weight:bold;background-color:#fff;color:#666}
+.seminar_detail .view_area{background-color:#eee;text-align:center}
+.seminar_detail .view_area img{max-width:100%;height:auto}
+.seminar_detail .tit_qna{display:block;padding-bottom:15px;font-size:14px}
+.seminar_detail .cmt_write{padding:25px 35px 30px;border-top:1px solid #e3e5e8;border-bottom:1px solid #e3e5e8;background-color:#f9fafb}
+.seminar_detail .cmt_write .tit_q{display:block;padding:0 0 15px 30px;position:relative;font-size:14px;line-height:1.4}
+.seminar_detail .cmt_write .txt_q{position:absolute;top:-7px;left:0;font-size:20px;color:#ff2400}
+.seminar_detail .box_write{position:relative;border:1px solid #e3e5e8;background-color:#fff}
+.seminar_detail .box_write .tf_cmt{height:70px;padding:12px 15px;border:0 none}
+.seminar_detail .box_write .txt_byte{padding:0 20px 10px 0;text-align:right;color:#b5b5b5}
+.seminar_detail .box_write .byte_count{color:#666}
+.seminar_detail .cmt_area .wrap_btm{margin-top:20px;height:30px;line-height:30px}
+.seminar_detail .cmt_area input[type="checkbox"]{width:14px;height:14px}
+.seminar_detail .cmt_area label{display:inline-block;padding:3px 5px;vertical-align:middle}
+.seminar_detail .cmt_area .btn_regist{float:right;width:120px;height:30px;padding:0;line-height:30px}
+.seminar_detail .cmt_list li{overflow:hidden;padding-top:20px}
+.seminar_detail .cmt_list > li{border-bottom:1px solid #e3e5e8}
+.seminar_detail .info_cmt{overflow:hidden;margin-bottom:15px}
+.seminar_detail .info_cmt .tit_nick{float:left;margin-top:5px;font-size:14px;color:#484b50}
+.seminar_detail .info_cmt .txt_date{padding-left:8px;font-weight:normal;font-size:12px;color:#b5b5b5}
+.seminar_detail .info_cmt .wrap_btn{float:right}
+.seminar_detail .info_cmt .wrap_btn button{float:left;padding:5px 15px;color:#999}
+.seminar_detail .info_cmt .wrap_btn .btn_del{padding-right:0}
+.seminar_detail .info_cmt .txt_bar{float:left;margin:8px 0 0;background-color:#b5b5b5}
+.seminar_detail .desc_cmt{overflow:hidden;margin-bottom:20px;padding-right:10px}
+.seminar_detail .desc_cmt .txt_num{float:left;margin:-5px 8px 0 0;font-size:18px;color:#ff2400}
+.seminar_detail .desc_cmt .txt_cmt{overflow:hidden;word-break:break-word}
+.seminar_detail .cmt_list .btn_reply{display:inline-block;margin-top:-10px;padding:10px 10px 10px 0}
+.seminar_detail .reply_area{display:none}
+.seminar_detail .reply_on .reply_area{display:block}
+.seminar_detail .reply_area .cmt_write{border-bottom:0 none}
+.seminar_detail .cmt_list .tf_cmt{height:80px}
+.seminar_detail .list_reply li{position:relative;padding-left:35px;border-top:1px solid #e3e5e8}
+.seminar_detail .list_reply li:before{position:absolute;top:27px;left:0;width:10px;height:10px;border:2px solid #e5e5e5;border-top:0;border-right:0;content:''}
+.seminar_detail .modify_cmt{display:none;position:relative;padding-bottom:30px}
+.seminar_detail .modify_cmt .btn_cancel{position:absolute;top:-43px;right:0;padding:5px 0 5px 15px;color:#ff2400}
+.seminar_detail .modify_on > .modify_cmt{display:block}
+.seminar_detail .modify_on > .info_cmt .wrap_btn,
+.seminar_detail .modify_on > .desc_cmt,
+.seminar_detail .modify_on > .btn_reply{display:none}
+.seminar_list{position:absolute;top:30px;right:0;width:225px;height:697px;margin-left:50px;border:1px solid #e3e5e8;box-sizing:border-box}
+.seminar_list .tab_type1{margin-left:14px;border-bottom:1px solid #e3e5e8}
+.seminar_list .tab_type1 li:first-child{padding-left:0}
+.seminar_list .owl-carousel{height:650px}
+.seminar_list .owl-stage{overflow:hidden;height:590px}
+.seminar_list .owl-nav{top:auto;bottom:34px;left:67px}
+.seminar_list .owl-nav .owl-prev{margin-right:40px}
+.seminar_list .txt_pagination{position:absolute;left:92px;bottom:38px;width:40px;text-align:center}
+
+/* 듣고싶은 세미나 신청 레이어 */
+#popSeminarApply .pop_layer{width:610px}
+#popSeminarApply .txt_seminar{padding:15px 0 25px}
+#popSeminarApply .tit_seminar{display:block;padding-bottom:5px}
+#popSeminarApply input{width:100%;margin-bottom:25px}
+#popSeminarApply textarea{height:148px;margin-bottom:30px;padding:10px}
+#popSeminarApply .btn_type1{width:140px}
+
+/* 닉네임 등록 레이어 */
+#popNickEdit .pop_layer{width:360px}
+#popNickEdit .pop_wrap{padding-top:20px;padding-bottom:40px}
+#popNickEdit .wrap_inp{position:relative}
+#popNickEdit .wrap_inp input{width:100%;padding-right:45px}
+#popNickEdit .txt_length{position:absolute;top:6px;right:10px}
+#popNickEdit .list_info{padding:15px 0}
+#popNickEdit .list_info li{position:relative;margin-bottom:5px;padding-left:10px;font-size:11px;color:#888}
+#popNickEdit .list_info li:after{position:absolute;left:0;content:"*"}
+
+/* 포인트 전환 레이어 */
+#pointConvert .point_convert .point_status_body2{display:none}
+
+/* 설문조사 레이어팝업 */
+#popSurvey .pop_wrap{max-height:700px}
+#popSurvey .txt_survey{padding:15px 0 25px}
+#popSurvey .box_survey{margin-bottom:40px}
+#popSurvey .tit_survey{display:block;margin-bottom:20px;font-size:14px;color:#2a303b}
+#popSurvey .tit_survey .txt_ex{display:block;padding-top:5px;font-weight:normal;font-size:12px;color:#999}
+#popSurvey .survey_radio{padding:30px 30px 23px;background-color:#f8fafb}
+#popSurvey .survey_radio .radio_g, #popSurvey .survey_radio .chk_g{display:block;margin-bottom:17px}
+#popSurvey .survey_radio .lab_radio{font-weight:bold}
+#popSurvey .survey_radio .survey_inp{margin:5px 0 0 24px}
+#popSurvey .inp_txt{width:100%;height:37px}
+#popSurvey .tf_txt{height:150px;padding:10px}
+#popSurvey .survey_photo{margin:5px 0 0 24px}
+#popSurvey .survey_photo img{max-width:100%;border:1px solid #e0e5ec;box-sizing:border-box}
+#popSurvey .tbl_survey{border-top:1px solid #d8d8d8}
+#popSurvey .tbl_survey th, #popSurvey .tbl_survey td{padding:15px 0;border-bottom:1px solid #d8d8d8;text-align:center}
+#popSurvey .tbl_survey thead th{font-weight:normal}
+#popSurvey .tbl_survey tbody th{padding-left:25px;text-align:left}
+#popSurvey .tbl_survey tbody tr:first-child th, #popSurvey .tbl_survey tbody tr:first-child td{border-bottom:0 none;background-color:#f8fafb}
+#popSurvey .tbl_survey thead th:last-child, #popSurvey .tbl_survey tbody td:last-child{padding-right:30px}
+#popSurvey .file_attach3 .ico_file{display:inline-block;background-position:-140px -40px;vertical-align:top}
+#popSurvey .file_attach3 .btn_del{background-position:-160px -40px}
+/* 2019-03-14 임시 추가 시작 */
+#popSurvey .tit_poll {display:block;font-size:26px;font-weight:bold;letter-spacing:-2px;line-height:28px}
+#popSurvey .txt_poll {display:block;margin:4px 0;color:#252525;font-size:12px}
+#popSurvey .box_inp{margin-bottom:20px}
+#popSurvey .box_inp .radio_g{display:block}
+#popSurvey .box_inp .inp_txt{display:block;width:494px;margin-left:24px}
+#popSurvey .lab_poll {display:block;margin-bottom:10px;font-weight:bold}
+#popSurvey .inp_poll {display:block;padding:10px;height:18px;border:1px solid #d7d7d7}
+#popSurvey .tf_poll {display:block;height:98px;padding:10px;border:1px solid #d7d7d7}
+#popSurvey .link_recomm {display:inline-block;font-weight:bold;color:#ff702a}
+#popSurvey .inp_rdo {display:inline-block;margin-right:8px}
+#popSurvey  #answerDirect5{max-width:324px}
+#popSurvey .wrap_btn {margin-top:30px;text-align:center}
+#popSurvey .btn_bn {display:inline-block;width:128px;height:36px;padding:8px 10px;border-radius:2px;font-size:12px;font-weight:bold;text-align:center}
+#popSurvey .btn_enter, #popSurvey .btn_confirm, #popSurvey .btn_complete {border:1px solid #f15922;background-color:#ff702a;color:#fff}
+#popSurvey .btn_cancel {border:1px solid #ccc;color:#aaa;background-color:#fff}
+/* 2019-03-14 임시 추가 끝 */
+
+/* 세미나 입장 팝업 */
+.pop_seminar_view {width:100%;height:100%;margin:0;padding:0}
+.pop_seminar_view #wrap {height:100%}
+.pop_seminar_view iframe {width:100%;height:100%;border:0}
+.pop_seminar_view #header {display:block;position:relative;overflow:hidden;min-width:100%;width:100%}
+.pop_seminar_view #header:before{content:"";display:block;position:absolute;top:0;left:0;z-index:-1;width:50%;height:100%;background-color:#ffa247}
+.pop_seminar_view #header:after{content:"";display:block;position:absolute;top:0;right:0;z-index:-1;width:50%;height:100%;background-color:#ff702a}
+.pop_seminar_view #header img{max-width:100%}
+.pop_seminar_view .tit_header {height:95px;background:url(http://img.shop.co.kr/images/seminar/images/bg_pop_liveseminar.gif) no-repeat 50% 0}
+.pop_seminar_view .tit_header .tit_logo{display:block;text-align:center}
+.pop_seminar_view .bnr_pc, .pop_seminar_view .bnr_mobile{position:absolute;top:0;left:0;right:0}
+.pop_seminar_view .bnr_pc a, .pop_seminar_view .bnr_mobile a{display:block;font-size:0;line-height:0;text-align:center}
+.pop_seminar_view .live_view_wrap {min-width:320px;height:calc(100% - 125px);margin:0 auto}
+.pop_seminar_view .section_vod {overflow:hidden;width:100%;height:100%;margin-bottom:0;border-left:0;border-right:0;border-bottom:0}
+.pop_seminar_view .section_vod .vod,
+.pop_seminar_view .section_vod .view,
+.pop_seminar_view .section_vod .talk {height:100%}
+.pop_seminar_view .section_vod .view {float:left;width:calc(100% - 320px);height:100%}
+.pop_seminar_view .section_vod .talk {float:right;width:320px;height:100%}
+
+/* 태블릿 */
+@media all and (max-width:1024px) {
+    /* 공통 */
+    .ico_seminar{background-image:url(../images/seminar/retina/ico_seminar.png);-webkit-background-size:150px 150px;background-size:150px 150px}
+    .tit_g{font-size:19px}
+    .tit_g .tit_txt{display:none}
+    .tit_b{font-size:24px}
+    .page_location{display:none}
+    .link_seminar{width:292px;height:270px}
+    .link_seminar .ico_onair{width:49px;height:49px;background-position:0 -85px}
+    .select_cate{width:117px}
+    .select_cate em{display:block}
+    .select_val{display:block;overflow:hidden;height:30px;padding:0 30px 0 15px;border:1px solid #e1e4e7;line-height:30px;color:#484b50;text-overflow:ellipsis;white-space:nowrap;box-sizing:border-box}
+    .select_val .ico_arr{position:absolute;top:12px;right:10px;border-top:8px solid #aaaeb1;border-right:8px solid transparent;border-left:8px solid transparent}
+    .select_val .ico_arr:after{position:absolute;top:-9px;left:-7px;border-top:7px solid #fff;border-right:7px solid transparent;border-left:7px solid transparent;content:''}
+    .select_cate.on .select_val .ico_arr{border-top:0 none;border-bottom:8px solid #aaaeb1;border-right:8px solid transparent;border-left:8px solid transparent}
+    .select_cate.on .select_val .ico_arr:after{top:2px;left:-7px;border-top:0 none;border-bottom:7px solid #fff;border-right:7px solid transparent;border-left:7px solid transparent;content:''}
+    .list_cate{display:none;position:absolute;left:0;right:0;top:29px;z-index:1;padding:5px 0;border:1px solid #ff6724;background-color:#fff}
+    .select_cate.on .list_cate{display:block}
+    .list_cate li{width:100%}
+    .list_cate li:after{display:none}
+    .list_cate .btn_cate{width:100%;padding:5px 15px;font-size:12px;box-sizing:border-box}
+    .list_cate .on .btn_cate{border:0 none;font-weight:normal;color:#484b50}
+    .seminar_favorite{top:14px;right:-5px}
+    .seminar_favorite .ico_favorite{width:21px;height:18px;background-position:-50px -100px}
+    .seminar_favorite.on .ico_favorite{background-position:-50px -120px}
+    .list_data .data_cell{height:113px}
+    .list_data .data_date .txt_num{font-size:16px}
+    .list_data .data_time .txt_num{font-size:15px}
+    .list_data .data_time .txt_num2{font-size:11px}
+    .list_data .data_detail{padding-left:20px}
+    .list_data .link_info{display:block;height:auto;font-size:15px;white-space:nowrap}
+    .list_data .wrap_txt{max-height:19px;line-height:19px}
+    .list_data .txt_state{width:53px;height:19px;font-size:11px;line-height:20px}
+    .list_data2 .data_date, .list_data2 .data_time{width:80px}
+    .list_data2 .data_detail{padding-right:200px}
+    .list_data2 .txt_apply{right:35px}
+    .list_data2 .txt_state{margin-left:15px}
+    .list_data2 .seminar_favorite{top:46px;right:-5px}
+    .list_g  li{width:25%}
+    .list_g2 li{width:25%}
+    .list_g2 .ico_play{width:21px;height:21px;background-position:0 -60px}
+    .thumb_none .ico_none{width:39px;height:39px;background-position:-50px -60px}
+    .wrap_schedule{width:auto}
+    .tit_schedule{padding-left:20px}
+    .tit_schedule .ico_play{width:30px;height:23px;background-position:-90px -60px}
+    .list_schedule{padding-left:0}
+    .list_schedule li{width:50%}
+    .data_none .ico_none{display:block;float:none;width:39px;height:39px;margin:0 auto 10px;background-position:-50px -60px}
+    .data_none .txt_none{padding-left:0;text-align:center}
+    .data_none .tit_txt{color:#7c828a}
+    .data_none .wrap_txt{display:block}
+    .data_none .txt_detail{display:none}
+
+    /* 레이아웃 */
+    .plus_seminar .left_menu{display:none}
+    .plus_seminar  #header{min-width:100%}
+    .plus_seminar  #header .header_inner{width:auto;padding:25px 20px 0}
+    .plus_seminar .logo_shopplus .ico_seminar{width:134px;height:30px;background-position:0 0}
+    .plus_seminar #content{width:auto;padding:35px 20px 65px}
+    .plus_seminar #footer .footer_cont{min-width:100%}
+    .plus_seminar #footer .footer_cont:first-child{display:none}
+    .plus_seminar #footer .footer_inner{width:100%;padding:0}
+    .plus_seminar #footer.footer_plus .ico_footer_logo{display:none}
+    .plus_seminar #footer .txt_address{margin:25px 0 20px 20px}
+    .plus_seminar #footer .btn_business_info{display:block;width:85px;margin:5px 0 0}
+    .plus_seminar #footer .customer_center{width:auto;padding:25px 20px 0 0}
+    .bnr_seminar .inner_bnr{width:auto;margin:0 20px;text-align:center}
+    .bnr_seminar .ico_close{width:24px;height:24px;background-position:-95px -125px}
+
+    /* 홈 */
+    .data_seminar .list_data{min-height:228px}
+    .data_seminar .data_none{min-height:229px}
+    .cont_home .teacher_seminar{display:none}
+    .vod_seminar .select_cate{float:right;margin-left:0}
+
+    /* 검색 */
+    .plus_seminar .cont_search .data_none{border-bottom:0 none}
+
+    /* 세미나 리스트 */
+    .cont_seminar .teacher_seminar, .cont_seminar .tit_g .tit_txt{display:none}
+    .cont_seminar .select_cate{display:block}
+    .cont_seminar .list_data2 .data_detail{padding-right:230px}
+    .cont_seminar .vod_seminar .wrap_g{border-bottom:2px solid #35353f}
+
+    /* 나의 수강내역 */
+    .cont_myseminar .txt_apply{right:0}
+    #tabSurvey .data_detail .txt_apply{top:60px}
+    #tabSurvey .data_detail .txt_num{width:120px}
+    #tabSurvey .data_detail .emph_g{position:absolute;top:-30px;right:0;margin-right:0;text-align:right}
+
+    /* FAQ */
+    .cont_faq .box_inquiry .inner_box{padding:30px 0 35px 65px}
+    .cont_faq .box_inquiry .bg_circle{width:48px;height:48px}
+    .cont_faq .ico_inquiry{width:25px;height:22px;margin:13px auto 0;background-position:-125px -60px}
+    .cont_faq .tit_inquiry{padding:2px 0 5px}
+    .cont_faq .tbl_write th{padding-left:15px}
+    .cont_faq .txt_sms br{display:none}
+    .cont_faq .box_point > div{height:110px;padding:20px 40px}
+    .cont_faq .box_point .ico_point{width:41px;height:37px;margin-right:20px;background-position:-95px -85px}
+    .cont_faq .point_balance{padding-top:15px}
+    .cont_faq .point_balance .tit_point{font-size:14px}
+    .cont_faq .point_balance .txt_num{font-size:18px}
+    .cont_faq .box_point .txt_point{font-size:12px}
+    .cont_faq .box_point .word_break{display:block}
+
+    /* 세미나 상세정보 */
+    .plus_seminar #content.cont_detail{padding-top:35px}
+    .cont_detail .wrap_g .txt_g{display:block}
+    .cont_detail .layer_tooltip{left:72px}
+    .cont_detail .wrap_detail{padding:25px 0 0}
+    .seminar_detail{width:auto}
+    .seminar_detail .detail_data .wrap_thumb{width:292px;height:266px}
+    .seminar_detail .inner_info{min-height:221px}
+    .seminar_detail .seminar_favorite{margin-top:-5px}
+    .seminar_detail .tit_seminar{margin-bottom:20px;padding-bottom:13px}
+    .seminar_detail .txt_name, .seminar_detail .txt_date{font-size:11px}
+    .seminar_detail .txt_apply{padding-top:5px}
+    .seminar_detail .tab_detail li{width:50%}
+    .seminar_detail .cmt_write{padding:25px 20px 30px}
+    .seminar_list{display:none}
+
+    /* 포인트전환 셀렉트박스 */
+    #pointConvert .point_convert .select{width:120px !important;padding-left:10px;background:url(../images/seminar/retina/ico_arr_point2.png) no-repeat 93% 11px;background-size:10px 6px}
+    #pointConvert .point_convert .select strong{padding-left:0}
+    #pointConvert .point_convert_move .select{background-color:#fffff2}
+
+    /* 설문조사 레이어 */
+    #popSurvey .file_attach3 .ico_file{background-position:-140px -85px}
+    #popSurvey .file_attach3 .btn_del{background-position:-125px -125px}
+
+    /* 탑버튼 */
+    .quick_menu{display:none}
+}
+
+/* 모바일 */
+@media all and (max-width:767px) {
+    /* 공통 */
+    .tit_b{margin:0 -15px 25px;padding:13px 0 10px;font-size:19px;background-color:#ecf1f5;text-align:center}
+    .wrap_g .txt_g{display:none}
+    .list_data li{margin-bottom:15px}
+    .list_data .data_cell{float:left;width:100%;padding:0;height:auto;text-align:left}
+    .list_data .data_date{height:30px;padding:0 10px;line-height:30px}
+    .list_data .data_date .txt_num{float:left;margin-right:10px;font-weight:bold;font-size:14px}
+    .list_data .data_date .txt_week{float:left;padding-top:3px}
+    .list_data .data_time{height:25px;padding:0 10px;line-height:25px}
+    .list_data .data_time .txt_num{float:left;font-size:11px}
+    .list_data .data_detail{padding:15px 0}
+    .list_data .txt_name{font-size:12px}
+    .list_data2{margin:20px 0 25px}
+    .list_data2 .txt_apply{position:static}
+    .list_data2 .seminar_favorite{top:14px}
+    .btn_more{display:block;height:40px;font-size:13px;line-height:40px}
+    .btn_more:after{display:none}
+    .btn_more2{width:100%;height:40px;font-weight:normal;font-size:13px;line-height:40px;box-sizing:border-box}
+    .list_g2 li{width:50%}
+    .list_apply{height:305px}
+    .list_apply li{width:50%}
+    .list_apply .link_g{height:268px;padding-bottom:0}
+    .list_apply .wrap_thumb{width:104px;height:104px}
+    .schedule_seminar{display:none}
+    .box_search{padding:20px}
+    .box_search .select{width:100% !important;padding:0 15px;margin-bottom:5px;line-height:35px;background:#fff url(../images/seminar/retina/ico_arr_search.png) no-repeat 100% 13px;-webkit-background-size:25px 8px;background-size:25px 8px}
+    .box_search .wrap_inp{padding:0 38px 0 0;border:1px solid #e3e5e8;background-color:#fff}
+    .box_search input[type="text"]{height:33px;line-height:33px;border:0 none}
+    .box_search .btn_search{overflow:hidden;width:38px;height:33px;background:url(../images/seminar/retina/ico_search2.png) no-repeat;-webkit-background-size:38px 33px;background-size:38px 33px;text-indent:-9999px}
+    .tab_type3 a{padding:10px 0;font-size:13px}
+    .tab_type3 a > span{display:none}
+    .word_break{display:block} /* 줄바꿈 */
+
+    /* 레이아웃 */
+    body{padding-top:60px;background-color:#f3f4f8}
+    .plus_seminar #header{position:fixed;top:0;left:0;right:0;z-index:10}
+    .plus_seminar #header .header_inner{position:relative;width:100%;height:58px;margin:0;padding:0}
+    .plus_seminar #header .link_logo{float:none;margin:0;padding-top:18px}
+    .plus_seminar #header .link_logo .ico_seminar{position:relative;z-index:1;width:104px;height:23px;margin:0 auto;background-position:0 -35px}
+    .plus_seminar #header .tit{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+    .plus_seminar #content{padding:0 15px 40px;background-color:#fff}
+    .plus_seminar #footer .footer_cont{padding:30px 0 60px;border-top:0 none;text-align:center}
+    .plus_seminar #footer .txt_address, .plus_seminar #footer .customer_center{display:none}
+    .plus_seminar #footer .info_m{display:block;font-size:11px;line-height:18px;color:#848484}
+    .plus_seminar #footer .txt_bar{margin:0 7px;color:#d2d4df}
+    .plus_seminar #footer .txt_copy{display:block;padding:10px 0 15px}
+    .plus_seminar #footer .customer_center_m strong{font-weight:normal}
+    /* 배너 */
+    .bnr_pc{display:none}
+    .bnr_on{padding-top:129px}
+    .bnr_on #header{top:69px}
+    .bnr_on .bnr_mobile{display:block;position:fixed;top:0;left:0;right:0;z-index:10}
+    .bnr_mobile .inner_bnr{margin:0}
+    .bnr_mobile img{width:auto;height:69px}
+    .bnr_mobile .btn_close{width:34px;height:30px;padding:0}
+    .bnr_mobile .img_m{display:inline-block;width:auto;max-width:100%;height:69px}
+    .bnr_mobile .ico_close{width:13px;height:13px;margin:10px auto 0;background-position:-125px -35px}
+
+    /* 메인 검색 */
+    .header_search{float:none;position:absolute;top:0;left:0;right:0;height:58px;width:100%}
+    .header_search .btn_toggle{display:block;position:absolute;top:8px;right:7px;width:22px;height:23px;padding:10px}
+    .header_search .btn_toggle .ico_seminar{width:22px;height:23px;background-position:-25px -60px}
+    .header_search .search_enter{display:none}
+    .search_on .header_search .search_enter{display:block;position:absolute;top:58px;left:0;right:0;z-index:99;padding:0 15px;background-color:#fff}
+    .header_search .search_enter_inner{height:40px;padding:0;border:0 none;border-radius:0;background-color:#eff0f2}
+    .header_search .select{display:none !important}
+    .header_search .search_enter input[type="text"]{width:calc(100% - 54px );height:40px;margin:0;font-size:14px;line-height:40px;background-color:#eff0f2;color:#666}
+    .header_search .search_enter .btn_search{overflow:hidden;width:40px;height:40px;margin:0 8px 0 0;background:url(../images/seminar/retina/ico_search.png) no-repeat;-webkit-background-size:42px 41px;background-size:42px 41px;text-indent:-9999px}
+    .header_search .btn_close{display:block;position:static;width:80px;height:30px;margin:4px auto;font-size:13px;line-height:30px;color:#333;text-align:center}
+    .search_on .bg_dimmed{display:block}
+
+    /* 메인 메뉴 */
+    .seminar_menu{position:absolute;top:8px;left:0;width:auto}
+    .seminar_menu .btn_allmenu{display:block;width:19px;padding:12px 15px;font-size:0;line-height:0}
+    .seminar_menu .inner_btn{display:block;width:19px;height:18px;background-position:-75px -100px}
+    .seminar_menu .wrap_menu{display:none;position:absolute;top:51px;left:0;z-index:200;width:274px;border:1px solid #ff6724;background-color:#fff}
+    .seminar_menu .inner_menu{overflow:hidden;overflow-y:auto}
+    .seminar_menu .menu_util{float:none}
+    .seminar_menu .box_util{float:none;position:static}
+    .seminar_menu .box_util .btn_nick{display:none}
+    .seminar_menu .box_util .layer_util{display:block;position:static;width:100%;border:0 none}
+    .seminar_menu .info_nick{margin:0 15px 15px;font-size:17px}
+    .seminar_menu .btn_edit{padding:0 10px;font-size:12px;height:25px}
+    .seminar_menu .txt_point{position:relative;padding:0 140px 5px 15px}
+    .seminar_menu .txt_point br{display:none}
+    .seminar_menu .txt_point .num_point{position:absolute;bottom:5px;right:15px}
+    .seminar_menu .btn_convert{width:auto;height:38px;margin:10px 15px 5px;font-size:13px;line-height:38px}
+    .seminar_menu .list_my{overflow:hidden}
+    .seminar_menu .list_my li{float:left;width:33.3%;padding:13px 0}
+    .seminar_menu .link_my{display:block;padding:0;border-top:0;border-left:1px solid #e3e5e8;font-size:13px}
+    .seminar_menu .list_my .num_seminar{padding-top:4px;font-size:15px}
+    .seminar_menu .list_quick{display:none}
+    .seminar_menu .list_3depth{overflow:hidden;width:100%;padding-top:0}
+    .seminar_menu .list_3depth li{float:left;width:50%;margin:0}
+    .seminar_menu .list_3depth .menu_type2{display:block}
+    .seminar_menu .list_3depth a{display:block;height:39px;border-top:1px solid #e3e5e8;font-size:13px;font-family:dotum,"돋움",sans-serif;line-height:39px;background-color:#acb2b6;color:#fff;text-align:center}
+    .seminar_menu .list_3depth li:nth-child(even) a{border-left:1px solid #e3e5e8}
+    .seminar_menu .btn_apply{display:none}
+    .seminar_menu .btn_close{display:block;left:auto;right:-46px;width:45px;height:45px}
+    .seminar_menu .btn_close .ico_close{width:13px;height:13px;margin:14px auto;background-position:-110px -35px}
+    .menu_on .seminar_menu .inner_btn{background-position:-75px -120px}
+    .menu_on .seminar_menu .wrap_menu{display:block}
+    .menu_on .bg_dimmed{display:block} 
+
+    /* 홈 */
+    .plus_seminar #content.cont_home{padding:0;background-color:#f3f4f8}
+    .data_seminar{margin-bottom:12px;padding-bottom:30px;border-bottom:1px solid #d3d5dc;background-color:#fff}
+    .data_seminar .link_seminar{width:100%;height:100%}
+    .data_seminar .data_info{padding:30px 15px 5px}
+    .data_seminar .list_data{min-height:auto}
+    .cont_home .wrap_btn{padding:12px 15px 0}
+    .cont_home .vod_seminar{padding:25px 15px 40px;background-color:#fff}
+    .cont_home .vod_seminar .wrap_g{border-bottom:0 none}
+    .cont_home .vod_seminar .list_g2{margin-top:0}
+    .cont_home .vod_seminar .data_none{min-height:233px;border-top:1px solid #e3e5e8}
+
+    /* 세미나 검색 */
+    .plus_seminar #content.cont_search{padding:0 15px 40px}
+
+    /* 세미나 리스트 */
+    .cont_seminar .list_data2 .data_detail{padding-right:0}
+
+    /* 나의 수강내역 */
+    #tabSurvey .data_detail .emph_g{top:18px}
+
+    /* FAQ */
+    .cont_faq .tbl_type1 th{padding:10px 0}
+    .cont_faq .th_num{width:15%}
+    .cont_faq .th_cate{width:20%}
+    .cont_faq .th_hits{width:17%}
+    .cont_faq .th_date{width:27%}
+    .cont_faq .th_state{width:20%}
+    .cont_faq .cell_view td{padding:20px}
+    .cont_faq .box_inquiry{height:auto;margin-bottom:15px}
+    .cont_faq .box_inquiry .inner_box{padding:20px 0 25px 60px}
+    .cont_faq .txt_inquiry{margin:10px 0 0 -60px;text-align:center}
+    .cont_faq .tbl_write th{width:25%;padding:0;background:none}
+    .cont_faq .tbl_write td, .cont_faq .tbl_write tr:first-child td{padding-left:0;padding-right:0}
+    .cont_faq .sms_agree .txt_num{display:block;padding-left:0}
+    .cont_faq .wrap_btn{padding-top:20px}
+    .cont_faq .wrap_btn button{float:left;width:49.3%;box-sizing:border-box}
+    .cont_faq .wrap_btn .btn_type2{float:right}
+    .cont_faq .box_point{padding:0 15px}
+    .cont_faq .box_point > div{width:100%;height:auto;padding:20px 0}
+    .cont_faq .box_point .f_l{border-right:0}
+    .cont_faq .point_balance{padding-top:10px}
+    .cont_faq .box_point .txt_point{padding:0;text-align:center}
+
+    /* 세미나 상세정보 */
+    .cont_detail .wrap_g{height:auto;padding-bottom:10px}
+    .cont_detail .wrap_g .tit_g{float:none}
+    .cont_detail .wrap_g .txt_g{padding-left:0}
+    .cont_detail .layer_tooltip{top:60px;left:0}
+    .seminar_detail .detail_data .wrap_thumb{display:none}
+    .seminar_detail .info_seminar{padding:0}
+    .seminar_detail .inner_info{min-height:auto;padding-bottom:20px}
+    .seminar_detail .wrap_btn .btn_detail{width:100%}
+    .seminar_detail .wrap_btn .btn_type2{display:none}
+    .seminar_detail .seminar_video{margin-top:35px}
+    .seminar_detail .detail_bnr{margin-top:17px}
+    .seminar_detail .tab_detail{margin:35px 0 15px}
+    .seminar_detail .box_write .tf_cmt{height:110px}
+    .seminar_detail .cmt_list .tf_cmt{height:70px}
+
+    /* 팝업 레이어 */
+    .pop_layer{min-width:318px;width:318px !important}
+    .pop_layer .tit_popup{margin:0 12px}
+    .pop_layer .pop_wrap{max-height:429px !important;padding-left:12px;padding-right:12px}
+    .pop_layer .btn_close{right:7px}
+    #pointConvert .pop_wrap{padding:0 12px 30px}
+    #pointConvert .pop_layer .info_box{margin-top:0;padding:17px 12px 20px 36px;border-bottom:1px solid #eee;background-color:#f6f9fa}
+    #pointConvert .info_box .ico_comm{top:17px;left:12px}
+    #pointConvert .point_status_head{padding:12px}
+    #pointConvert .point_status_head .tit{padding-top:3px;font-size:12px}
+    #pointConvert .txt_sum_point{font-size:12px}
+    #pointConvert .txt_sum_point .txt_num{font-size:14px}
+    #pointConvert .txt_point_num{display:block}
+    #pointConvert .point_status_body{position:relative;padding:15px 12px 20px}
+    #pointConvert .point_convert_area{float:left;width:120px;margin:0}
+    #pointConvert .point_convert_move{float:right}
+    #pointConvert .point_convert_move + .point_convert_area{width:100%;margin-top:20px}
+    #pointConvert .point_convert .txt_bar{overflow:hidden;float:left;width:5px;height:9px;margin:35px 0 0 13px;background-image:url(../images/seminar/retina/ico_arr_point.png);background-size:5px 9px;text-indent:-9999px}
+    #pointConvert .point_convert input{width:100% !important}
+    #popSurvey .txt_survey{font-size:11px}
+    #popSurvey .tit_survey{font-size:12px}
+    #popSurvey .tit_survey .txt_ex{font-size:11px}
+    #popSurvey .survey_radio{padding:0;background:none}
+    #popSurvey .survey_radio .radio_g{margin-bottom:10px}
+    #popSurvey .survey_radio .lab_radio{font-weight:normal;font-size:11px;}
+    #popSurvey .inp_txt{height:28px;font-size:11px}
+    #popSurvey .tbl_survey th, #popSurvey .tbl_survey td{font-size:11px}
+    #popSurvey .tbl_survey tbody th{padding-left:10px}
+    #popSurvey .tbl_survey tbody tr:first-child th, #popSurvey .tbl_survey tbody tr:first-child td{}
+    #popSurvey .tbl_survey thead th:last-child, #popSurvey .tbl_survey tbody td:last-child{padding-right:10px}
+    #popSurvey .tf_txt{height:200px;font-size:11px;}
+    #popSurvey .file_attach3{padding-left:0}
+    #popSurvey .file_attach3 label{display:block;position:static;width:103px;height:28px;margin-bottom:5px;font-weight:normal;font-size:11px;line-height:29px}
+    #popSurvey .file_attach3 .inp_file{height:28px}
+    #popSurvey .file_attach3 .ico_file{width:8px;height:13px;margin:7px 5px 0 0;background-position:-140px -105px}
+    #popSurvey .file_attach3 .btn_del{top:39px}
+
+    /* 세미나 입장 배너 */
+    .pop_seminar_view .tit_header, .pop_seminar_view #header img, .pop_seminar_view #header .inner_bnr{height:auto}
+}
+/* 모바일 가로모드 레이어 높이값 지정 */
+@media (max-width: 767px) and (orientation: landscape){
+    .pop_layer .pop_wrap{max-height:269px !important}
+}
+
+/* 2021-04-09 팝업추가 */
+.pop_main {position:absolute;left:0;top:0;z-index:10;border:1px solid #ff6325;background-color:#fff;}
+.pop_main .chk_today_box {height:31px;padding-left:14px;line-height:31px;background-color:#f3f4f8}
+.pop_main .chk_today_box label {font-size:11px;color:#999}
+.pop_main .btn_close {top:auto;bottom:0;width:33px;height:30px;background-position:10px -130px}

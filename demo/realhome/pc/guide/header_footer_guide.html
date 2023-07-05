@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../dist/css/font.min.css">
+        <link rel="stylesheet" href="../dist/css/common.min.css">
+        <link rel="stylesheet" href="../dist/css/style.min.css">
+        <link rel="stylesheet" href="../dist/css/layout.min.css">
+        <title></title>
+        <style>
+          * {margin:0; padding:0; font-size:16px;}
+            body {margin:10px; background-color:#f8f8f8;}
+            .guide_box{margin-bottom: 60px;}
+            h1.guide_tit {padding:10px 25px; margin-bottom: 20px; font-size:18px; color:#000; font-family:'Noto Sans KR Regular'; background:#eee; border-top:2px solid #000; border-bottom:2px solid #000;font-weight:bold;}
+            h2.guide_tit {margin:5px 0px; font-size:12px; color:#000; font-family:dotum;}
+            h1.guide_tit:first-child {margin-top:0;}
+            h4.guide_tit {color:#ff0000; font-weight:bold; font-size:13px; margin-bottom:5px; font-family:'Noto Sans KR Regular'; }
+            .comment {color:#000; margin-bottom:14px; font-size:13px; font-family:'Noto Sans KR Regular';}
+            .comment .txt_red{color:#ff0000;}
+            .radio_btn +label .btn_radio{vertical-align: -3px;}
+            xmp {font-size:12px; font-family:'Noto Sans KR Regular';}
+            #header,.sub_header,.header_section{position: relative;}
+        </style>
+    </head>
+    <body>
+        <div class="guide_box">
+            <h1 class="guide_tit">Main Header Style</h1>
+            <div class="comment">[case1] 사용자</div>
+            <div style="margin-bottom:20px">
+                <header id="header">
+                    <div class="header_inner">
+                        <h1 class="logo"><a href="#"><img src="../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
+                        <div class="h_right">
+                            <nav id="nav">
+                                <ul class="nav_menu">
+                                    <li><a href="#">마이홈</a></li>
+                                    <li><a href="#">매물검색</a></li>
+                                    <li><a href="#">나의 매수</a></li>
+                                    <li><a href="#">나의 매도</a></li>
+                                </ul>
+                            </nav>
+                            <a href="#" class="h_btn">알림2</a>
+                            <a href="#" class="h_btn type">공인중개사</a>
+                            <div class="member_area">
+                                <div class="member" id="member_login">
+                                    <a href="#" class="choose">
+                                        로그인 · 회원가입
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="comment">[case2] 중개사</div>
+            <div style="margin-bottom:20px">
+                <header id="header" class="agent_header">
+                    <div class="header_inner">
+                        <h1 class="logo"><a href="#"><img src="../images/common/agent_logo.png" alt="리얼하우스 로고"></a></h1>
+                        <div class="h_right">
+                            <nav id="nav">
+                                <ul class="nav_menu">
+                                    <li><a href="#">마이홈</a></li>
+                                    <li><a href="#">매물검색</a></li>
+                                    <li><a href="#">나의 매수</a></li>
+                                    <li><a href="#">나의 매도</a></li>
+                                </ul>
+                            </nav>
+                            <a href="#" class="h_btn">알림2</a>
+                            <div class="member_area">
+                                <div class="member" id="member_login">
+                                    <a href="#" class="choose">
+                                        로그인 · 회원가입
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div class="guide_box">
+            <h1 class="guide_tit">Sub Header Style</h1>
+            <div class="comment">[case1] 사용자</div>
+            <div style="margin-bottom:20px">
+                <header class="sub_header header_shadow">
+                    <h1 class="logo"><a href="#"><img src="../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
+                    <div class="header_inner">
+                        <button class="btn_close"><span class="blind">닫기</span></button>
+                    </div>   
+                </header>
+            </div>
+            <div class="comment">[case2] 중개사</div>
+            <div style="margin-bottom:20px">
+                <header class="sub_header">
+                    <h1 class="logo"><a href="#"><img src="../images/common/agent_logo.png" alt="리얼하우스 로고"></a></h1>
+                    <div class="header_inner">
+                        <button class="btn_close"><span class="blind">닫기</span></button>
+                    </div>    
+                </header>
+            </div>
+        </div>   
+        <div class="guide_box">
+            <h1 class="guide_tit">Sub Header Style2</h1>
+            <div class="comment">[case1] 사용자</div>
+            <div style="margin-bottom:20px">
+                <!--header-->
+                <header class="sub_header">
+                    <h1 class="logo"><a href="#"><img src="../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
+                    <div class="header_inner">
+                        <button class="btn_close"><span class="blind">닫기</span></button>
+                        <h2 class="header_tit">매도/임대 중개의뢰</h2>
+                    </div>   
+                </header>
+                <!--//header-->         
+                <div class="header_section" style="top:0">
+                    <div class="header_inner">
+                        <div class="process_idx">
+                            <em class="on">1</em><span>주소 입력</span>
+                            <em>2</em>
+                            <em>3</em>
+                        </div>
+                        <div class="btn_process">
+                            <button class="btn btn_prev">이전</button>
+                            <button class="btn btn_next">다음</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">[case2] 중개사</div>
+            <div style="margin-bottom:20px">
+                <!--header-->
+                <header class="sub_header">
+                    <h1 class="logo"><a href="#"><img src="../images/common/agent_logo.png" alt="리얼하우스 로고"></a></h1>
+                    <div class="header_inner">
+                        <button class="btn_close"><span class="blind">닫기</span></button>
+                        <h2 class="header_tit">매수/임차 중개의뢰</h2>
+                    </div>   
+                </header>
+                    <!--header-->   
+                <div class="header_section" style="top:0">
+                    <div class="header_inner">
+                        <div class="process_idx">
+                            <em class="on">1</em><span>중개의뢰 정보 입력</span>
+                        </div>
+                        <div class="btn_process">
+                            <button class="btn">취소</button>
+                            <button class="btn on">확인</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div> 
+        <div class="guide_box">
+            <h1 class="guide_tit">Sub Header Style3</h1>
+            <div class="comment">[case1] 사용자</div>
+            <header class="sub_header">
+                <h1 class="logo"><a href="#"><img src="../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
+                <div class="header_inner inner2">
+                    <button class="btn_close"><span class="blind">닫기</span></button>
+                    <h2 class="header_tit">관심매물</h2>
+                    <div class="h_right_area">
+                        <div class="select_area">
+                            <a href="#" class="select_top">거래구분 선택</a>
+                            <div class="select_list">
+                                <a href="#">전체</a>
+                                <a href="#">매매</a>
+                                <a href="#">전세</a>
+                                <a href="#">월세</a>
+                                <a href="#">단기임대</a>
+                            </div>
+                        </div>
+                        <div class="select_area">
+                            <a href="#" class="select_top">매물유형 선택</a>
+                            <div class="select_list">
+                                <a href="#">전체</a>
+                                <a href="#">아파트</a>
+                                <a href="#">주상복합</a>
+                                <a href="#">연립/빌라</a>
+                                <a href="#">오피스텔</a>
+                                <a href="#">도시형생활주택</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </header>
+        </div> 
+        <div class="guide_box">
+            <h1 class="guide_tit">Footer Navi</h1>
+            <div class="comment">[case1] 사용자</div>
+            <div style="margin-bottom:20px">
+                <footer id="footer_nav_section">
+                    <div class="footer_nav_area">
+                        <div class="footer_inner">
+                            <h1 class="logo"><a href="#"><img src="../images/common/footer_logo.png" alt="리얼하우스 로고"></a></h1>
+                            <nav id="footer_nav">
+                                <a  href="#">회사소개</a>
+                                <a href="#">이용약관</a>
+                                <a href="#">개인정보처리방침</a>
+                                <a href="#">1대1 문의</a>
+                                <a href="#" class="type">리얼하우스프로 바로가기</a>
+                            </nav>
+                            <div class="sns_links">
+                                <a href="#" class="link"><img src="../images/main/ico_facebook.png"></a>
+                                <a href="#" class="link"><img src="../images/main/ico_naver.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <div class="comment">[case2] 중개사</div>
+            <div style="margin-bottom:20px">
+                <footer id="footer_nav_section" class="agent_footer_nav_section">
+                    <div class="footer_nav_area">
+                        <div class="footer_inner">
+                            <h1 class="logo"><a href="#"><img src="../images/common/footer_logo.png" alt="리얼하우스 로고"></a></h1>
+                            <nav id="footer_nav">
+                                <a  href="#">회사소개</a>
+                                <a href="#">중개사 이용약관</a>
+                                <a href="#">리얼하우스 이용약관</a>
+                                <a href="#">개인정보처리방침</a>
+                                <a href="#">1대1 문의</a>
+                                <a href="#" class="type">리얼하우스프로 바로가기</a>
+                            </nav>
+                            <div class="sns_links">
+                                <a href="#" class="link"><img src="../images/main/ico_facebook.png"></a>
+                                <a href="#" class="link"><img src="../images/main/ico_naver.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div> 
+    </body>
+</html>

@@ -1,0 +1,271 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+        <!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" --> <!-- 2017-03-21 수정 -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<div class="cont_head"><!-- 2017-03-21 class 수정 -->
+					<h2 class="tit_cate">회원정보수정</h2>
+					<!-- 2017-03-21 삭제 <a href="#none" class="link_prev"><span class="ico_oshop ico_prev">이전</span></a> -->
+				</div>
+				<!-- 2017-04-13 수정[s] -->
+				<div class="cont_my cont_my_info">
+					<form>
+						<fieldset>
+							<legend class="screen_out">회원정보수정 폼</legend>
+							<div class="box_type1 wrap_table">
+                                <!-- 2021-03-23 회원정보수정 폼 전반적으로 수정됨 -->
+								<table class="tbl_type1 v2">
+									<caption class="screen_out">회원정보수정</caption>
+									<tbody>
+										<tr>
+											<th scope="row"><label for="group_company">그룹사</label></th>
+											<td><input type="text" id="group_company" class="inp_oshop info_text" readonly value="대웅그룹"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="user_id">아이디</label></th>
+											<td><input type="text" id="user_id" class="inp_oshop info_text" readonly value="00999"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="user_name">이름</label></th>
+											<td><input type="text" id="user_name" class="inp_oshop info_text" readonly value="홍길동"></td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="user_gender">성별</label></th>
+											<td>
+												<div class="radio_wrap">
+													<label class="radio_button">
+														<input type="radio" name="user_gender" value="female" checked disabled>
+														<span>여</span>
+													</label>
+													<label class="radio_button">
+														<input type="radio" name="user_gender" value="male"  disabled>
+														<span>남</span>
+													</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="user_years">생년월일</label></th>
+											<td>
+												<div class="select_type1 select_w40">
+													<select class="list_select" id="user_years" title="태어난 년도">
+														<option>1985</option>
+														<option>1986</option>
+													</select>
+												</div>
+												<div class="select_type1 select_month">
+													<select class="list_select" title="태어난 월">
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+														<option>5</option>
+														<option>6</option>
+														<option>7</option>
+														<option>8</option>
+														<option>9</option>
+														<option>10</option>
+														<option>11</option>
+														<option>12</option>
+													</select>
+												</div>
+												<div class="select_type1 select_day">
+													<select class="list_select" title="태어난 일">
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+														<option>5</option>
+														<option>6</option>
+														<option>7</option>
+														<option>8</option>
+														<option>9</option>
+														<option>10</option>
+														<option>11</option>
+														<option>12</option>
+													</select>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="essen"><label for="user_phone">휴대폰번호</label></th>
+											<td>
+												<div class="frame_inp"><input type="tel" id="user_phone" class="inp_oshop" placeholder="- 없이 숫자만 입력해주세요"></div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="essen"><label for="user_tel">전화번호</label></th>
+											<td>
+												<div class="frame_inp"><input type="tel" id="user_tel" class="inp_oshop" placeholder="- 없이 숫자만 입력해주세요"></div>
+												<p class="txt_guide">※ 휴대폰번호와 전화번호는 이벤트 당첨 시 필요하오니, 꼭 확인해 주시기 바랍니다.</p>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="essen"><label for="user_mail">이메일</label></th>
+											<td class="email email_selector">
+												<div class="frame_inp">
+													<input type="email" id="user_mail" class="inp_oshop" placeholder="">
+												</div>
+												<div class="select_type1">
+													<select class="list_select" id="user_mail_domain" title="메일 선택하세요">
+														<option value="">직접입력</option>
+														<option value="naver.com">naver.com</option>
+														<option value="hanmail.net">hanmail.net</option>
+														<option value="nate.com">nate.com</option>
+														<option value="gmail.com">gmail.com</option>
+														<option value="lycos.co.kr">lycos.co.kr</option>
+														<option value="yahoo.co.kr">yahoo.co.kr</option>
+														<option value="yahoo.com">yahoo.com</option>
+														<option value="empal.com">empal.com</option>
+														<option value="dreamwiz.com">dreamwiz.com</option>
+														<option value="paran.com">paran.com</option>
+														<option value="korea.com">korea.com</option>
+														<option value="chol.com">chol.com</option>
+														<option value="hanmir.com">hanmir.com</option>
+														<option value="hanafos.com">hanafos.com</option>
+														<option value="freechal.com">freechal.com</option>
+														<option value="hotmail.com">hotmail.com</option>
+														<option value="netian.com">netian.com</option>
+													</select>
+												</div>
+											</td>
+										</tr>
+										<!-- 2021-07-22 간편로그인 수정 및 추가 [s] -->
+										<tr>
+											<th scope="row">간편로그인</th>
+											<td>
+												<div class="login_box kakao">
+													<span class="ico_oshop ico_kakao"></span>
+													<label class="toggle_box">
+														<span class="text">카카오 로그인 연결</span>
+														<input type="checkbox" name="">
+														<span class="mark"></span>
+													</label>
+												</div>
+												<div class="login_box apple">
+													<span class="ico_oshop ico_apple"></span>
+													<label class="toggle_box">
+														<span class="text">APPLE 로그인 연결</span>
+														<input type="checkbox" name="">
+														<span class="mark"></span>
+													</label>
+												</div>
+											</td>
+										</tr>
+										<!-- 2021-07-22 간편로그인 수정 및 추가 [e] -->
+										<tr>
+											<td colspan="2" class="marketing">
+												<p class="strong">
+													<label class="field">
+														<input type="checkbox" name=""><span class="mark"></span> 할인쿠폰, 특가 상품, 이벤트 소식 받기
+													</label>
+												</p>
+												<p class="txt_guide">※ 구매정보 관련 이메일/SMS는 수신 동의 여부와 관계없이 발송됩니다.</p>
+												<div class="bg_box">
+													<label class="field">
+														<input type="checkbox" name=""><span class="mark"></span> 이메일
+													</label>
+													<label class="field">
+														<input type="checkbox" name=""><span class="mark"></span> SMS
+													</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="essen">집주소</th>
+											<td class="td_address">
+												<div class="frame_inp"><input type="text" class="inp_oshop" title="주소"></div>
+												<a href="#none" class="btn_type1 link_address">주소검색</a>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="td_code" style="display:none">
+												<div id="zipCode_view" style="display: block; border: 1px solid; width: 100%; height: 466px; margin: 5px 0px; position: relative;">다음 우편번호 서비스 안내 iframe</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="col"><span class="screen_out">상세주소</span></th>
+											<td><div class="frame_inp"><input type="text" class="inp_oshop" value="서울 강남구 삼성동" title="상세주소"></div></td>
+										</tr>
+										<tr>
+											<th scope="col"><span class="screen_out">상세주소</span></th>
+											<td><div class="frame_inp"><input type="text" class="inp_oshop" value="163-1" title="상세주소"></div></td>
+										</tr>
+										<tr>
+											<th scope="row" class="essen">회사주소</th>
+											<td class="td_address">
+												<div class="frame_inp"><input type="text" class="inp_oshop" title="주소"></div>
+												<a href="#none" class="btn_type1 link_address">주소검색</a>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="td_code" style="display:none">
+												<div id="zipCode_view" style="display: block; border: 1px solid; width: 100%; height: 466px; margin: 5px 0px; position: relative;">다음 우편번호 서비스 안내 iframe</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="col"><span class="screen_out">상세주소</span></th>
+											<td><div class="frame_inp"><input type="text" class="inp_oshop" value="서울 강남구 삼성동" title="상세주소"></div></td>
+										</tr>
+										<tr>
+											<th scope="col"><span class="screen_out">상세주소</span></th>
+											<td>
+												<div class="frame_inp"><input type="text" class="inp_oshop" value="163-1" title="상세주소"></div>
+											</td>
+										</tr>
+                                        <tr>
+											<th scope="row"><label for="user_bankname">은행명</label></th>
+											<td>
+                                                <div class="select_type1">
+													<select class="list_select" id="user_mail_domain" title="해당 은행을 선택하세요">
+                                                        <option selected hidden disabled></option>
+														<option>우리은행</option>
+													</select>
+												</div>
+                                            </td>
+										</tr>
+										<tr>
+											<th scope="row"><label for="user_account">환급계좌</label></th>
+											<td>
+                                                <div class="frame_inp"><input type="text" id="user_account" class="inp_oshop" placeholder="계좌번호를 입력해주세요" type="text" pattern="\d*"></div>
+                                            </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="btns_full">
+								<button type="button" class="btn_type1">취소</button>
+								<button type="submit" class="btn_type2">변경</button>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<script>
+                    // 2021-03-23 스크립트 추가
+					$(function() {
+						$(".link_address").click(function() {
+							$(this).parents(".td_address").parents().next().children(".td_code").toggle();
+						});
+						$('.email_selector').on({
+							change:function(e){
+								var input = e.delegateTarget.querySelector('input'),
+									mail = (input.value.indexOf('@') >= 0 ? input.value.split('@')[0] : input.value) + "@" + e.currentTarget.value;
+								input.value = mail;
+								input.focus();
+							}
+						}, 'select');
+					})
+				</script>
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a><!-- 2017-03-21 이미지 넓이,높이값 삭제 -->
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500&subset=korean");
+#body_section.hotel_detail{padding:0; font-family: "Noto Sans KR",sans-serif,"돋움","Dotum"; font-weight: 400; font-size: 13px; color: #333;}
+#body_section.hotel_detail i{font-style: normal;} 
+.hotel_content .header_title{position: fixed; width:100%; height:50px; padding:10px 0 0; z-index: 106; box-sizing: border-box;}
+.hotel_content .header_title .header{position: relative;}
+.hotel_content .header_title h1{margin:0 auto; padding:5px; width:100px;  text-align: center;}
+.hotel_content .header_title .hotel_logo{background-image:url("http://img.modetour.com/modemobile/2019/hotel/logo_hotel.png");}
+.hotel_content .header_title .back{position: absolute; top:7px; left:14px; width:10px; height:19px; background-image: url("http://img.modetour.com/modemobile/2019/hotel/ico_h_back.png"); background-repeat: no-repeat; background-size: 100%;}
+.hotel_content .header_title .mypage{position: absolute; top:7px; right:10px; width:27px; height:25px; text-indent: -9999px; background-image: url("http://img.modetour.com/modemobile/2019/hotel/ico_mypage.png"); background-repeat: no-repeat; background-size: 100%;}
+
+.hotel_content .header_title.slide{background-color: #fff;}
+.hotel_content .header_title.slide .header .hotel_logo{background-image:url("http://img.modetour.com/modemobile/2019/hotel/logo_hotel_slide.png");}
+.hotel_content .header_title.slide .header .back{ background-image: url("http://img.modetour.com/modemobile/2019/hotel/ico_h_back_slide.png");}
+.hotel_content .header_title.slide .header .mypage{ background-image: url("http://img.modetour.com/modemobile/2019/hotel/ico_mypage_slide.png");}
+
+.hotel_content .hotel_img{width:100%; position: fixed; z-index: 60;}
+.hotel_content .hotel_img .swiper-slide{height: 35vh; background-size: cover;}
+.hotel_content .hotel_img .pagination{position: absolute; right:25px; bottom:15px; width:50px; height:23px; line-height: 1.8; font-size: 12px; color:#fff; background-color: rgba(0,0,0,.7); border-radius: 30px; text-align: center; z-index: 50;}
+.hotel_content .hotel_info_box{position: relative; top:195px; width:100%; background-color: #f0f0f0; border-top-left-radius: 30px; border-top-right-radius: 30px; z-index: 80;}
+
+.hotel_content .hotel_info_box.slide_ani1{top:288px}
+.hotel_content .hotel_info_box.slide_ani2{top:0;}
+
+.hotel_info_box .info_header{padding:25px 15px 0; margin-bottom:10px; background-color:#fff; border-bottom:1px solid #f3f3f3; border-top-left-radius: 30px; border-top-right-radius: 30px;}
+.info_header .name{font-size: 20px; font-weight: 700; color: #333;}
+.info_header .en_name{font-size: 13px; color: #999; font-family: Helvetica, Arial, sans-serif;}
+.info_header .extra_info{position: relative; margin-top:12px; padding-bottom:10px; font-size: 13px; border-bottom:1px solid #f3f3f3;}
+.info_header .extra_info .map{display: block;}
+.info_header .extra_info .map:before,.info_header .extra_info .map:after{display: inline-block; content: ""; background-repeat:no-repeat; background-size: 100%;}
+.info_header .extra_info .map:before{width:11px; height:13px; margin-right: 4px; background-image: url("http://img.modetour.com/modemobile/2019/hotel/ico_map.png");}
+.info_header .extra_info .map:after{width:6px; height:11px; margin-left: 4px; background-image: url("http://img.modetour.com/modemobile/2019/hotel/arr_link.png");}
+.info_header .extra_info .facilities{position: absolute; top:0; right:0;}
+.info_header .extra_info .facilities:before,.info_header .extra_info .facilities:after{display: inline-block; content: ""; background-repeat:no-repeat; background-size: 100%;}
+.info_header .extra_info .facilities:after{width:6px; height:11px; margin-left: 4px; background-image: url("http://img.modetour.com/modemobile/2019/hotel/arr_link.png");}
+.info_header .extra_info .facilities.wifi:before{width: 12px; height:11px; margin-right: 4px; background-image: url("http://img.modetour.com/modemobile/2019/hotel/ico_facility1.png");}
+.info_header .review{min-height: 50px; line-height: 3.8; border-bottom:1px solid #f3f3f3;}
+.info_header .review:after{display: block; content:""; clear: both;}
+.info_header .review .trip_grade{float: left; color: #00a680;}
+.info_header .review .trip_grade .eval{color: #333;}
+.info_header .review .trip_grade:before{display: inline-block; content:""; width:23px; height:15px; margin-right: 2px; background:url("http://img.modetour.com/modemobile/2019/hotel/ico_tripadviser.png") no-repeat; background-size: 100%; vertical-align: -4px;}
+.info_header .review .trip_grade .mark{position: relative; display: inline-block; width:58px; height: 13px; text-indent: -9999px; overflow: hidden;}
+.info_header .review .trip_grade .mark:before,.info_header .review .trip_grade .mark:after{position: absolute; left:0; top:50%; display:inline-block; content:""; width:58px; height:13px; margin-top:-6.5px; background-image:url("http://img.modetour.com/modemobile/2018/hotel/sprite@2x_181205.png"); background-size: 400px; vertical-align: middle; overflow: hidden; text-indent: -9999px; white-space: nowrap; line-height: 0;}
+.info_header .review .trip_grade .mark:before{background-position: -210px 0;}
+.info_header .review .trip_grade .mark:after{background-position: -210px -21px;}
+.info_header .review .trip_grade .mark4:after{width:43px;}
+.info_header .review .review_link{float: right; font-size: 13px; color:#178ad6;}
+.info_header .room_nights{min-height: 50px; padding:15px 0; border-bottom:1px solid #f3f3f3; box-sizing: border-box;}
+.info_header .room_nights .nights{display: inline-block; width:35px; margin-right: 8px; font-size: 12px; font-weight: 700; color: #fe5d41; border:1px solid #fe5d41; border-radius: 30px; text-align: center;}
+.info_header .room_nights .bar:before{display: inline-block; margin:0 7px; content:"|"; color: #f3f3f3;}
+.info_header .desc{padding:18px 0;}
+.info_header .desc .desc_box{padding:14px; background-color: #fff4f2; color: #fe5d41;}
+.info_header .desc .desc_box span{font-weight: 700;}
+.hotel_content .hotel_filter{margin-bottom:10px; padding:18px 20px; background-color: #fff; border-bottom:1px solid #f3f3f3;}
+.hotel_content .hotel_filter .ico{min-width:86px; margin-left:3px; padding:9px 11px; border:1px solid #e8e8e8; border-radius: 30px;}
+.hotel_content .hotel_filter .ico:first-of-type{margin-left:0;}
+.hotel_content .hotel_filter .ico:before{display: inline-block; content:""; width:13px; height:9px; margin-right:4px; background-image:url("http://img.modetour.com/modemobile/2019/hotel/bg_ico.png"); background-repeat: no-repeat; background-size:100%; }
+.hotel_content .hotel_filter .ico.on{color: #178ad6;}
+.hotel_content .hotel_filter .ico.on:before{background-image:url("http://img.modetour.com/modemobile/2019/hotel/bg_ico_on.png")}
+.hotel_content .room_info_area{margin-bottom:10px; background-color: #fff; border-bottom:1px solid #f3f3f3;}
+.room_info_area .room_header{min-height: 40px; padding:0 19px; line-height: 2.8; font-size: 15px; color: #fff; background-color: #fe5d41;}
+.hotel_content .room_info{padding:15px; background-color: #fff; }
+.room_info .ico{display: block; width:50px; height:22px; line-height:1.9; margin-bottom:4px; font-size: 12px; font-weight: 700; color: #fe5d41; border:1px solid #fe5d41; border-radius: 30px; text-align: center;}
+.room_info .room_name{display: inline-block; margin-bottom: 14px; font-size: 14px; font-weight: bold; font-family: Helvetica, Arial, sans-serif;}
+.room_info .extra_info{position: relative; color: #00a680;}
+.room_info .extra_info .off{color: #888888;}
+.room_info .extra_info span{display: block;}
+.room_info .extra_info .cancel{color:#00a680;}
+.room_info .extra_info .cancel.off,.room_info .extra_info .cancel.check{color: #888888;}
+.room_info .extra_info span:before,.room_info .extra_info .cancel:before,.room_info .extra_info .cancel:after{display: inline-block; content: ""; width:13px; height:13px; margin-right:4px; background-repeat: no-repeat; background-size: 100%; vertical-align: -2px;}
+.room_info .extra_info .breakfast:before{background-image: url("http://img.modetour.com/modemobile/2019/hotel/ico_breakfast.png");}
+.room_info .extra_info .breakfast.off:before{background-image: url("http://img.modetour.com/modemobile/2019/hotel/ico_breakfast_off.png");}
+.room_info .extra_info .cancel:before{background-image: url("http://img.modetour.com/modemobile/2019/hotel/ico_cancel.png");}
+.room_info .extra_info .cancel:after{width:6px; height:11px; margin-left:4px; background-image: url("http://img.modetour.com/modemobile/2019/hotel/arr_cancel_link.png"); vertical-align: 0;}
+.room_info .extra_info .cancel.off:after{background-image: url("http://img.modetour.com/modemobile/2019/hotel/arr_link.png");}
+.room_info .extra_info .cancel.off:before{background-image: url("http://img.modetour.com/modemobile/2019/hotel/ico_cancel_off.png");}
+.room_info .extra_info .cancel.check:before{width:14px; height:14px; background-image: url("http://img.modetour.com/modemobile/2019/hotel/loading.gif");}
+.room_info .extra_info .cancel.check:after{background: none;}
+.room_info .room_link{position: absolute; right:0; bottom:0; color:#178ad6;}
+.room_info_area .pay_box{position: relative; padding:0 18px; height: 50px; line-height: 3.8; border-top:1px solid #f3f3f3;}
+.room_info_area .pay_box:after{display: block; content:""; clear: both;}
+.room_info_area .pay_box .pay_method{color: #888888; }
+.room_info_area .pay_box .pay_amt{position: absolute; top:-7px; right:18px; color: #fe5d41;}
+.room_info_area .pay_box .pay_amt em{letter-spacing: -1px; font-size: 17px; font-weight: 700; font-family: Helvetica, Arial, sans-serif;}
+.room_info_area .pay_box .pay_amt .btn{margin-left:4px; min-width:56px; height:32px; line-height: 2px; font-size: 14px; color: #fff; background-color: #fe5d41; border:none; border-radius: 5px;}
+.swiper_list .swiper-wrapper .swiper-slide{width:95px;}
+.swiper_list .swiper-wrapper .item:first-of-type{margin-left: 18px;}
+.swiper_list .swiper-wrapper .item .img_area{display: inline-block; width:95px; height: 85px;; border:1px solid #f3f3f3;}
+.swiper_list .swiper-wrapper .item img{max-width: 100%; height: 100%;; vertical-align: middle; border:none;}
+
+@media screen and (max-width: 376px){
+    .info_header .desc .desc_box{font-size: 12px}
+}

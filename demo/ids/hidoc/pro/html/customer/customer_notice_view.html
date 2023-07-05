@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Hidoc</title>
+	<meta content="width=1054" name="viewport" />
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+	<link rel="stylesheet" type="text/css" href="../../css/fullcalendar.css">
+	<script src="../../js/Chart.min.js"></script>
+	<script src="../../js/build/moment.min.js"></script>
+	<script src="../../js/build/html5shiv.min.js"></script>
+	<script src="../../js/build/amcharts.js"></script>
+	<script src="../../js/build/serial.js"></script>
+	<script src="../../js/ui.js"></script>
+
+</head>
+
+
+<body>
+	<div id="hidocIndex"><!-- 접근성 바로가기 -->
+		<a href="#hidocBody">본문 바로가기</a>
+		<a href="#hidocMenu">메뉴 바로가기</a>
+	</div>
+	<section id="wrapper">
+
+		<!-- header -->
+<header class="header">
+	<div class="inner">
+		<h1 class="logo"><a href="../../html/main/main.html"><img src="../../images/logo_hidocpro.png" alt="HiDocPro" /></a></h1>
+		<nav id="hidocMenu" class="navigation">
+			<strong class="screen_out">관련 서비스</strong>
+			<ul class="gnb">
+				<li class="active"><a href="../../html/health/qna_my_reg_list.html">건강Q&A</a>
+					<ul>
+						<li><a href="../../html/health/qna_my_reg_list.html">나에게 등록된 질문</a></li>
+						<li><a href="../../html/health/qna_answer_possible_list.html">답변 가능한 질문</a></li>
+						<li><a href="../../html/health/qna_collection_reply_list.html">내 답변 모음</a></li>
+					</ul>
+				</li>
+				<li><a href="../../html/news/my_write_list.html">건강이야기</a>
+					<ul>
+						<li><a href="../../html/news/my_write_list.html">내 글 모음</a></li>
+						<li><a href="../../html/news/my_write_column.html">칼럼 작성</a></li>
+					</ul>
+				</li>
+				<li><a href="../../html/mypage/hospital_info_view.html">마이페이지</a>
+					<ul>
+						<li><a href="../../html/mypage/hospital_info_view.html">근무처 정보</a></li>
+						<li><a href="../../html/mypage/doctor_info_view.html">프로필</a></li>
+						<li><a href="../../html/mypage/hidoc_point.html">하이닥포인트</a></li>
+					</ul>
+				</li>
+				<li><a href="../../html/customer/customer_notice.html">고객센터</a>
+					<ul>
+						<li><a href="../../html/customer/customer_notice.html">공지사항</a></li>
+						<li><a href="../../html/customer/customer_faq.html">자주 묻는 질문</a></li>
+						<li><a href="../../html/customer/customer_1vs1_list.html">내 문의 현황</a></li>
+						<li><a href="../../html/customer/customer_1vs1.html">1:1 문의</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div class="user_info">
+			<a href="../../html/mypage/doctor_info_view.html"><span class="user_name">김프로님</span></a>
+			<a href="../../html/member/login.html">로그아웃</a>
+		</div>	
+	</div>
+</header>
+<!-- header -->
+</div>
+
+		
+		<section class="container layout_type4 service_pro_customer"><!-- 클래스 명은 서비스별로 동적이여야 합니다. ex) service_서비스이름 -->
+			<!-- <div class="sub_feature"></div> --><!-- 2019-01-18 삭제 -->
+			<div class="container_inner clear_g">
+				<div class="sub_location"><span>홈</span><span class="pro_comm">></span><span>고객센터</span><span class="pro_comm">></span><strong>공지사항</strong></div><!-- 2019-01-18 추가 -->
+				<section id="hidocBody" class="contents">
+					<!-- template 영역 시작 -->
+					<h1 class="screen_out">고객센터</h1><!-- 2019-01-18 수정 -->
+					<div class="box_type1 pro_notice_view">
+						<h2 class="fc_blue tit_notice">공지사항</h2>
+						<div class="view_head">
+							<h3 class="tit_view">하이닥 ‘ 개인정보 취급방침’ 변경사항 안내</h3>
+							<span class="time">등록  2014.07.10 18:23</span>
+						</div>
+						<div class="view_body">
+							안녕하세요. hiDoc입니다.  hiDoc을 이용해주시는 회원 고객님께 감사드리며, ‘개인정보 취급방침’ 변경사항에 대한 안내말씀 드립니다.<br>
+							hiDoc은 회원 고객 여러분의 개인정보를 무엇보다 소중하게 취급하고 있으며, 어떤 사안보다도 우선하여 안전하게 관리하고 있습니다.<br>
+							새롭게 바뀐 ‘개인정보 취급방침’의 변경사항을 확인하시고 서비스이용에 참고하시기 바랍니다.<br><br>
+
+							1. 변경사항<br>
+							회사의 ‘개인정보관리 책임자’가 변경됨에 따라 ‘개인정보 취급방침’내 ‘개인정보관리책임자’ 안내 부분을 다음과 같이 변경하였습니다.<br><br>
+
+							2. 적용시기<br>
+							변경된 ‘개인정보 취급방침’은 안내 부분을 다음과 같이 변경하였습니다.<br><br>
+
+							3. 이의 및 문의제기<br>
+							변경된 ‘개인정보 취급방침’ 내용에 대한 문의사항이 있으신 경우, 저희 담당 고객센터(1577-0781)로 접수해 주시면<br>
+							신속하고 친절하게안내해 드리겠습니다.<br>
+							HiDoc은 앞으로도 회원 고객님의 개인정보를 보다 안전하게 보호할 것을 약속드리며,<br>
+							신뢰받는 서비스로 보답하겠습니다. 감사합니다.  
+						</div>
+						<div class="view_foot">
+							<div class="latest_board">
+								<span class="ico_comm3 ico_prev">이전 글</span>
+								<strong><a href="#none">[공지] 하이닥 공개 상담실 이용약관 개정</a></strong>
+								<span class="time">2014.07.10</span>
+							</div>
+							<div class="latest_board current_board">
+								<span class="fc_blue ico_comm3 ico_current">현재 글</span>
+								<strong><a href="#none">하이닥 ‘개인정보 취급방침’ 변경사항 안내</a></strong>
+								<span class="time">2014.07.10</span>
+							</div>
+							<div class="latest_board">
+								<span class="ico_comm3 ico_next">다음 글</span>
+								<strong><a href="#none">하이닥 로그인&amp;회원가입 이벤트</a></strong>
+								<span class="time">2014.07.10</span>
+							</div>
+						</div>
+						<div class="btns">
+							<a href="../../html/customer/customer_notice.html" class="btn_type2 btn_list">목록</a>
+						</div>
+					</div>
+					<style>
+						/* 하이닥 PRO - 공지사항 VIEW */
+						.pro_notice_view {padding:29px 25px;}
+						.pro_notice_view .tit_notice {padding:0 0 25px;font-size:16px;}
+						.pro_notice_view .view_head {padding:15px 19px 18px;border-top:2px solid #e3e3e4;border-bottom:1px solid #e6e6e6;}
+						.pro_notice_view .view_head .tit_view {font-size:20px;}
+						.pro_notice_view .view_head .time {display:block;padding-top:3px;font-size:11px;color:#888;}
+						.pro_notice_view .view_body {padding:20px 25px;line-height:22px;}
+						.pro_notice_view .view_foot {border-top:1px solid #d8d8d8;border-bottom:1px solid #d8d8d8;}
+						.pro_notice_view .view_foot .latest_board {overflow:hidden;width:100%;padding:12px 0 11px;}
+						.pro_notice_view .view_foot .ico_comm3 {float:left;width:61px;margin-right:28px;padding-left:19px;font-weight:bold;}
+						.pro_notice_view .view_foot .ico_prev {background-position:100% -195px;}
+						.pro_notice_view .view_foot .ico_current {background-position:100% -213px;}
+						.pro_notice_view .view_foot .ico_next {background-position:100% -235px;}
+						.pro_notice_view .view_foot strong {float:left;width:770px;font-weight:normal;}
+						.pro_notice_view .view_foot .current_board {border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;}
+						.pro_notice_view .view_foot .current_board a {font-weight:bold;}
+						.pro_notice_view .view_foot .time {display:inline;float:right;margin-right:20px;}
+						.pro_notice_view .btns {padding-top:20px;text-align:center;}
+						.pro_notice_view .btns .btn_list {font-size:12px;}
+					</style>
+					<!-- // template 영역 끝 -->
+				</section>
+			</div>
+			<!-- 2019-02-28 광고영역 추가 -->
+			<div class="etc_ad">
+				<div class="etc_ad_inner">
+					<script type="text/javascript" src="//white.contentsfeed.com/RealMedia/ads/adstream_jx.ads/www.hidoc.co.kr/pro_main_RB@x12"></script>
+				</div>
+			</div>
+			<!-- //2019-02-28 광고영역 추가 -->
+		</section>
+		<a href="https://www.hidoc.co.kr" id="link_hidoc" target="_blank">하이닥 사이트로 이동</a>
+<button type="button" id="btn_top">상단으로 이동</button>
+<!-- footer -->
+<footer class="footer">	
+	<div class="footer_top">
+		<div class="inner">
+			<div class="navi">
+				<h2 class="screen_out">하이닥PRO 메뉴</h2>
+				<ul class="list_menu">
+					<li><a href="#self">건강Q&A</a>
+						<ul>
+							<li><a href="#self">나에게 등록된 질문</a></li>
+							<li><a href="#self">답변 가능한 질문</a></li>
+							<li><a href="#self">내 답변 모음</a></li>
+						</ul>
+					</li>
+					<li><a href="#self">건강이야기</a>
+						<ul>
+							<li><a href="#self">내 글 모음</a></li>
+							<li><a href="#self">칼럼 작성</a></li>
+						</ul>
+					</li>
+					<li><a href="#self">마이페이지</a>
+						<ul>
+							<li><a href="#self">근무처 정보</a></li>
+							<li><a href="#self">프로필</a></li>
+							<li><a href="#self">하이닥포인트</a></li>
+						</ul>
+					</li>
+					<li><a href="#self">고객센터</a>
+						<ul>
+							<li><a href="#self">공지사항</a></li>
+							<li><a href="#self">자주 묻는 질문</a></li>
+							<li><a href="#self">내 문의 현황</a></li>
+							<li><a href="#self">1:1 문의</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="inner">
+		<div class="copyright">
+			<h1 class="tit_logo"><a href="#none"><img src="../../images/logo_hidoc_foot.png" alt="HiDoc" /></a></h1>
+			<address>
+				(주)엠서클 06170 <span class="txt_bar"> | </span>서울특별시 강남구 봉은사로 114길 12(삼성동) <span class="txt_bar"> | </span> 대표번호: 1577-0781 <br />
+				발행인: 김명석 <span class="txt_bar"> | </span> 편집인: 문현주 <span class="txt_bar"> | </span> 청소년 보호 관리 책임자: 문희탁 <span class="txt_bar"> | </span> 
+				사업자등록번호: 120-86-10499 <br />인터넷신문 제호: 하이닥 <span class="txt_bar"> | </span> 정기간행물 등록번호: 서울 아 01224 <span class="txt_bar"> | </span> 등록일자: 2010.04.28 <span class="txt_bar"> | </span> 발행일자: 2019.01.24<br />
+				하이닥의 모든 콘텐츠(기사)는 저작권법의 보호를 받는 바, 무단 전제, 복사, 배포등을 금합니다.<br/>
+				<span class="txt_copyright">Copyright &copy; </span><a href="http://www.mcircle.co.kr/" target="_blank" class="link_mcircle">Mcircle Corp.</a><span class="txt_copyright"> All rights reserved.</span>
+			</address>
+		</div>
+		<div class="family_site">
+			<h2>하이닥PRO와 함께합니다</h2>
+			<ul class="list_site">
+				<li>
+					<a href="https://www.hidoc.co.kr" target="_blank"><span class="pro_comm ico_hidoc"></span>하이닥</a>
+				</li>
+				<li>
+					<a href="https://www.doctorville.co.kr" target="_blank"><span class="pro_comm ico_doctorville"></span>닥터빌</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!-- //footer -->
+
+<script type="text/javascript">
+// 스크롤Top
+document.getElementById("btn_top").onclick = function(){	
+	function scrollToTop(scrollDuration) {
+		var scrollStep = -window.pageYOffset / (scrollDuration / 15);
+		var scrollInterval = setInterval(function(){
+			if ( window.pageYOffset != 0 ) {
+				window.scrollBy( 0, scrollStep );
+			}
+			else clearInterval(scrollInterval); 
+		},15);
+	};
+	scrollToTop(300);
+}
+</script>
+
+	</section>
+</body>
+</html>

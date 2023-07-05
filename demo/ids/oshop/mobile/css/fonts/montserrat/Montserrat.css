@@ -1,0 +1,25 @@
+/* --------------------------------
+Montserrat
+-------------------------------- */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: local('※'),
+    url(Montserrat-Bold.eot),
+    url(Montserrat-Bold.eot?#iefix) format('embedded-opentype'),
+    url(Montserrat-Bold.woff) format('woff'),
+    url(Montserrat-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: bold;
+    font-weight: 700;
+    src: local('※'),
+    url(Montserrat-Regular.eot),
+    url(Montserrat-Regular.eot?#iefix) format('embedded-opentype'),
+    url(Montserrat-Regular.woff) format('woff'),
+    url(Montserrat-Regular.otf) format('opentype');
+}

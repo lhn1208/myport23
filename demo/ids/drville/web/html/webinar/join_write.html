@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>컨퍼런스빌</title>
+	<link rel="shortcut icon" href="../../images/_favicon.ico" type="image/x-icon">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<!-- <script src="../../js/jquery.placeholder.js"></script> -->
+	<!-- <script src="../../js/common.js"></script> -->
+	<script src="../../js/webinar_ui.js"></script>
+	<script src="../../js/jquery.bpopup.min.js"></script>
+	<script src="../../js/jquery.wmuSlider.min.js"></script>
+	<!-- 2020-10-28 SLICK 추가 -->
+	<script src="../../js/slick.min.js"></script>
+	<script src="../../js/jquery.tmpl.min.js"></script>
+	<script src="../../js/jquery.cycle2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/slick.css"><!-- 2020-10-28 SLICK 추가 -->
+	<link rel="stylesheet" type="text/css" href="../../css/pc/style_v3.css">
+	<link rel="stylesheet" type="text/css" href="../../css/pc/webinar.css">
+</head>
+<body>
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+</div>
+<div id="wrap" class="member"> <!-- 각 섹션 별 class 명 변경 (common 기본) -->
+	<!-- header [s] -->
+	<link rel="stylesheet" type="text/css" href="../../css/pc/webinar_member.css">
+<header id="header" class="header_wrap">
+		<div class="header_inner">
+			<h1><a href="#none" class="tit_drville"><img src="../../images/pc/webinar/header_logo.jpg"></a></h1>
+		</div>
+</header>
+	<!-- header [e] -->
+	<!-- container [s] -->
+	<main id="container" class="webinar_guide sub_page" data-title="회원가입">
+		<div class="contents">
+			<h2>기본정보입력</h2>
+			<div class="joinBox">
+				<span class="txt_must">필수 입력 항목입니다.</span>
+				<div class="inBox">
+					<table>
+						<colgroup>
+							<col width="126">
+							<col width="86">
+							<col width="86">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<td colspan="4">
+									<span class="essen"><input type="text" value="홍길동" readonly style="width:420px;"></span>
+									<span class="alert_name">수정 불가</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="alignC" style="border-right:1px solid #eee;">
+									<div class="box_select">
+										<select name=""  class="opt_select" >
+											<option value="">2000년</option>
+											<option value="">1999년</option>
+											<option value="">1998년</option>
+											<option value="">1997년</option>
+											<option value="">1999년</option>
+											<option value="">1998년</option>
+											<option value="">1997년</option>
+											<option value="">1999년</option>
+											<option value="">1998년</option>
+											<option value="">1997년</option>
+										</select>
+									</div>
+								</td>
+								<td class="alignC" style="border-right:1px solid #eee;">
+									<div class="box_select">
+										<select name="" class="opt_select">
+												<option value="">1월</option>
+												<option value="">2월</option>
+												<option value="">3월</option>
+												<option value="">4월</option>
+												<option value="">5월</option>
+												<option value="">6월</option>
+												<option value="">7월</option>
+												<option value="">8월</option>
+												<option value="">9월</option>
+												<option value="">10월</option>
+												<option value="">11월</option>
+												<option value="">12월</option>
+										</select>
+									</div>
+								</td>
+								<td class="alignC">
+									<div class="box_select">
+										<select name="" class="opt_select">
+											<option value="">1일</option>
+											<option value="">2일</option>
+											<option value="">3일</option>
+											<option value="">4일</option>
+											<option value="">5일</option>
+											<option value="">6일</option>
+											<option value="">7일</option>
+											<option value="">8일</option>
+											<option value="">9일</option>
+											<option value="">10일</option>
+											<option value="">11일</option>
+											<option value="">12일</option>
+											<option value="">13일</option>
+											<option value="">14일</option>
+											<option value="">15일</option>
+											<option value="">16일</option>
+											<option value="">17일</option>
+											<option value="">18일</option>
+											<option value="">19일</option>
+											<option value="">20일</option>
+											<option value="">21일</option>
+											<option value="">22일</option>
+											<option value="">23일</option>
+											<option value="">24일</option>
+											<option value="">25일</option>
+											<option value="">26일</option>
+											<option value="">27일</option>
+											<option value="">28일</option>
+											<option value="">29일</option>
+											<option value="">30일</option>
+										</select>
+									</div>
+								</td>
+								<td>
+									<ul class="radioBox">
+										<li><input type="radio" id="radio1" name="radio" /><label for="radio1">양력</label></li>
+										<li><input type="radio" id="radio2" name="radio" /><label for="radio2">음력</label></li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="inBox">
+					<table>
+						<tbody>
+							<!-- 2021-07-05 아이디 영역 수정 [s] -->
+							<tr>
+								<td class="info_recept">
+									<div class="input_wrap">
+										<label for="checkId" class="essen">이메일 주소 <span>(아이디로 사용됩니다.)</span></label>
+										<p class="alert_error">필수 입력 항목입니다.</p>
+										<a href="#" class="btnRound type2">중복확인</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="info_recept">
+									<div class="input_wrap email">
+										<input type="text" id="checkId" style="width:166px"><span class="at">@</span><input type="text" class="email_domain" style="width:166px" disabled>
+										<div class="box_select">
+											<select name="" id="" class="opt_select opt_path" style="width:140px">
+												<option value="" disabled selected hidden>이메일 선택</option>
+												<option value="naver.com">naver.com</option>
+												<option value="daum.net">daum.net</option>
+												<option value="hanmail.net">hanmail.net</option>
+												<option value="gmail.com">gmail.com</option>
+												<option value="nate.com">nate.com</option>
+												<option value="hotmail.com">hotmail.com</option>
+												<option value="paran.com">paran.com</option>
+												<option value="">직접 입력</option>
+											</select>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<!-- 2021-07-05 아이디 영역 수정 [s] -->
+							<tr>
+								<td>
+									<div class="input_wrap">
+										<span class="essen">
+											<input type="password" name="" class="check_pw" style="width:432px;" title="비밀번호 입력">
+											<span class="txt_essen">비밀번호 <span>( 8~16자 영문 소문자, 숫자 )</span></span>
+										</span>
+										<span class="ico_comm ico_pw wrong"></span><!--  아이콘 스프라이트 right, wrong class추가 시 컬러 변경됨 -->
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="input_wrap">
+										<span class="essen">
+											<input type="password" class="check_pw" name="" style="width:432px;"/>
+											<span class="txt_essen">비밀번호 재확인</span>
+										</span>
+										<p class="alert_error">8~16자 이내로 영문 소문자, 숫자가 필요합니다.</p>
+										<span class="ico_comm ico_check wrong"></span><!--  아이콘 스프라이트 right, wrong class추가 시 컬러 변경됨 -->
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+				<div class="inBox">
+					<table>
+						<colgroup>
+							<col width="126">
+							<col>
+							<col width="103"/>
+						</colgroup>
+						<tbody>
+							<tr>
+								<td style="border-right:1px solid #eee;">
+									<div class="essen"><!-- 필수 항목 제거 class를 not_essen으로 바꿔주세요	-->
+										<div class="box_select">
+											<select name="" class="opt_select" style="width:85px">
+												<option value="">010</option>
+												<option value="">011</option>
+												<option value="">016</option>
+												<option value="">017</option>
+												<option value="">018</option>
+												<option value="">019</option>
+											</select>
+										</div>
+									</div>
+								</td>
+								<td class="phoneNum">
+									<input type="text" name=""  placeholder="2345"> -
+									<input type="text" name="" placeholder="0303">
+								</td>
+								<td>
+									<a href="#" class="btnRound">인증</a>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="input_wrap">
+										<span class="not_essen">
+											<input type="password" class="check_cert" name="" style="width:400px;">
+											<span class="txt_essen">인증번호</span>
+										</span>
+										<p class="alert_code"><span>2</span>분 <span>58</span>초 이내에 인증번호를 입력하세요.</p>
+										<p class="alert_right">※ 카카오 알림톡 혹은 문자로 인증번호 발송</p><!-- 20200918 text 추가 -->
+									</div>
+								</td>
+								<td>
+									<a href="#" class="btnRound">확인</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="inBox">
+					<table>
+						<colgroup>
+							<col width="224">
+							<col/>
+						</colgroup>
+						<tbody>
+						<tr>
+							<td>
+								<div class="input_wrap">
+									<label	for="hospitalTitle" class="essen">근무처</label>
+								</div>
+							</td>
+							<td class="fld_item">
+								<div class="input_wrap">
+									<input type="text" id="hospitalTitle" class="tf_item" style="width:312px" placeholder="현재 근무하고 계신 병원명을 검색해주세요."/>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="input_wrap">
+									<label for="interest" class="essen">근무형태</label>
+								</div>
+							</td>
+							<td class="typical fld_item ">
+								<div class="box_select">
+									<select name="interest" id="interest" class="opt_select opt_path" style="width:312px">
+										<option value="">근무형태를 선택하세요</option>
+										<option value="">개원의</option>
+										<option value="">병원</option>
+										<option value="">요양병원</option>
+										<option value="">종합병원</option>
+										<option value="">보건소(군병원 포함)</option>
+										<option value="">휴직</option>
+									</select>
+								</div>
+								<div class="input_wrap">
+									<input type="text" id="interest_inp" class="tf_item" style="width:312px" placeholder="기타(직접입력)"/>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="input_wrap">
+									<label for="interest" class="not_essen" >면허번호</label>
+								</div>
+							</td>
+							<td class="fld_item">
+								<div class="input_wrap">
+									<input type="text" id="" class="tf_item" style="width:312px" placeholder="면허번호를 입력해주세요"/>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="input_wrap">
+									<label for="clinicalDep" class="essen">진료과</label>
+								</div>
+							</td>
+							<td class="typical">
+								<div class="box_select">
+									<select name="clinicalDep" id="clinicalDep" class="opt_select opt_path" style="width:312px">
+										<option value="">진료과목을 선택하세요</option>
+										<option value="">진료과목1</option>
+										<option value="">진료과목2</option>
+										<option value="">진료과목3</option>
+										<option value="">진료과목4</option>
+										<option value="">진료과목5</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="inBox" style="position:relative;">
+					<table>
+						<colgroup>
+							<col width="312">
+							<col width="295">
+						</colgroup>
+						<tbody>
+							<tr>
+								<td class="info_recept">
+									<div class="layer_wrap">
+										<strong>광고 수신동의</strong>
+									</div>
+								</td>
+								<td>
+									<ul class="info_recept_list">
+										<li>
+											<input type="checkbox" name="" id="sms">
+											<label for="sms">SMS로 정보를 수신 받겠습니다.</label>
+										</li>
+										<li>
+											<input type="checkbox" name="" id="email">
+											<label for="email">이메일로 정보를 수신 받겠습니다.</label>
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="joinBtn">
+					<a href="#" class="btn_join">회원가입</a>
+					<a href="#" class="btn_cancle">취소</a>
+				</div>
+			</div>
+		</div>
+
+		</main>
+		<!-- container [e] -->
+	<!-- footer [s] -->
+	<!-- footer [s] 로그인  -->
+<footer id="footer" class="f_v3">
+	<div class="info_foot btm">
+		<a href="#none" class="ico_comm_v2 tit_doctor">닥터빌 홈 바로가기</a>
+		<div class="inner_info">
+			<ul class="list_footer">
+				<li><a href="policy.html" class="link_footer">이용약관</a><span class="txt_bar">|</span></li>
+				<!-- 2021-06-03 개인정보처리방침 볼드처리 -->
+				<li><a href="userinfo.html" class="link_footer"><strong>개인정보처리방침</strong></a></li>
+			</ul>
+			<!--2023-01-05 수정 [S]-->
+			<div class="wrap_family">
+				<a href="#none" class="btn_family">FAMILY SITE <span class="ico_comm">목록 펼치기</span></a>
+				<ul class="list_family">
+					<li><a href="" target="_blank">FAMILY SITE 1</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 2</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 3</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 4</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 5</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 6</a></li>
+				</ul>
+			</div>
+			<!--2023-01-05 수정 [E]-->
+		</div>
+		<!--2022-12-13 수정[s]-->
+		<address class="inner_info">
+			<div>서울 강남구 봉은사로 114길 12 (삼성동)<span class="txt_bar">|</span>대표자 : 서종원<span class="txt_bar">|</span>사업자번호 : 120-86-10499<br><!--2023-01-05 대표자 변경-->
+			고객센터 : 1522-0209(월-금: 09:30-17:30 / 그 외 행사 운영시간에 따름)<span class="txt_bar">|</span>팩스 : 02-563-8399</div>
+		</address>
+		<!--2022-12-13 수정[e]-->
+		<div class="inner_info copy">
+			<span class="copyright">Copyright <em class="emph_addr">ⓒ Mcircle.</em> All right reserved</span>
+		</div>
+	</div>
+</footer>
+<!-- footer [e] 로그인  -->
+
+<script>
+	//2023-01-05 푸터 추가
+	$(".btn_family").bind("click", function(e){
+		var target = $('.list_family'),
+				state = target.css('display');
+		if(state == "block"){
+			$(this).find(".ico_comm").text('목록 펼치기').removeClass('open');
+			target.hide();
+		}else{
+			$(this).find(".ico_comm").text('목록 접기').addClass('open');
+			target.show();
+		}
+		return false;
+	})
+
+	$(".link_sitemap").on("click", function(e) {
+		e.preventDefault();
+		var link = $(this).attr("href");
+		console.log (link);
+		$("#pop_footAllmenu").toggle();
+	});
+</script>
+
+		<!-- footer [e] -->
+
+</div>
+
+
+<script type="text/javascript">
+$(function() {
+	// 2021-07-05
+	$(".input_wrap.email").on({
+		change:function(e){
+			var val = e.currentTarget.options[e.currentTarget.selectedIndex].value;
+			e.delegateTarget.querySelector('input.email_domain').value = val;
+			if(val == ""){
+				e.delegateTarget.querySelector('input.email_domain').disabled = false;
+				e.delegateTarget.querySelector('input.email_domain').focus();
+			}else {
+				e.delegateTarget.querySelector('input.email_domain').disabled = true;
+			}
+		}
+	}, 'select');
+
+	//  하단 정보수신여부 툴팁레이어 시작
+	$(".link_essen").on("click",function(e){
+		e.preventDefault();
+		$(".layerBox").show();
+	})
+	$(".link_essen").on("mouseleave",function(e){
+		$(".layerBox").hide();
+	})
+	//  하단 정보수신여부 툴팁레이어 끝
+	$(".selected").on("click",function(e){
+		e.preventDefault();
+		$(this).next(".aList").show();
+	})
+	$("#dimm").on("click",function(e) {
+		socialUI.closeLayer();	// 레이어 닫기
+		e.preventDefault();
+	});
+	$("body").on("click",".modal_popup .btn_close",function(e) {
+		socialUI.closeLayer();	// 레이어 닫기
+		e.preventDefault();
+	});
+
+	 /* V6 2015-11-30 이메일 입력시 안내박스 추가 스크립트 수정 */
+	$("input.check_id, input.check_pw, input.check_cert").each(function(){
+		$(this).on("focus", function() {
+			if($(this).hasClass('check_id')) $('.box_notice').show();
+			if($(this).value == '') {
+				$(this).removeClass("blur");
+			} else {
+				$(this).addClass("blur");
+			}
+		});
+		$(this).on("blur", function() {
+			if ( $(this).val() == '' ) $(this).removeClass("blur");
+			if($(this).hasClass('check_id')) $('.box_notice').hide();
+		});
+		/* V6 2015-11-30 이메일 입력시 안내박스 추가 스크립트 수정 끝 */
+
+	});
+
+});
+</script>
+
+</body>
+</html>

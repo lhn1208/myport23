@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <include src="../../include/folder_include/set_css.html"></include>
+    <include src="../../include/folder_include/set_js.html"></include>
+    <title>realhouse</title>
+</head>
+<body class="scroll_hidden">
+<include src="../../include/sub_header2.html"></include>
+<div class="wrapper">
+    <div class="sub_cover active"></div>
+      <!--이메일 변경-->
+    <div class="layer_member active">
+        <a href="#" class="member_close"><span class="blind">닫기</span></a>
+        <div class="member_section">
+            <h1 class="member_tit">이메일 변경</h1>
+            <div class="member_box member_user">
+                <fieldset>
+                    <legend>이메일 변경</legend>
+                    <div class="member_form">
+                        <ul class="member_list">
+                            <li>
+                                <label for="member_email" >
+                                    <input id="member_email" class="input_email" type="text" title="이메일 입력">
+                                    <span class="placeholder">이메일 입력</span>  
+                                </label>
+                                <div class="email_address">@</div>
+                            </li>
+                            <li>
+                                <div class="member_select_area" id="select_email">                                
+                                    <a href="#" class="member_select_top">이메일 선택</a>
+                                    <div class="member_select_list">
+                                        <a href="#">naver.com</a>
+                                        <a href="#">daum.net</a>
+                                        <a href="#">hanmail.net</a>
+                                        <a href="#">hotmail.com</a>
+                                        <a href="#">gmail.com</a>
+                                        <a href="#">nate.com</a>
+                                        <a href="#">yahoo.co.kr</a>
+                                        <a href="#">paran.com</a>
+                                        <a href="#">emapas.com</a>
+                                        <a href="#">dreamwiz.com</a>
+                                        <a href="#">lycos.co.kr</a>
+                                        <a href="#">korea.com</a>
+                                        <a href="#" value="direct">직접입력</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="member_form">
+                        <div class="member_info">
+                            ※ 변경할 이메일을 입력하십시오.
+                        </div>
+                    </div> 
+                </fieldset>
+            </div>    
+        </div>
+        <div class="member_btn">
+            <button class="btn">확인</button>
+        </div>
+    </div>
+    <!--//이메일 변경-->
+    <div id=sub_container class="sub_container">          
+        <div class="container_inner">     
+            <div class="member_setting">
+                <div class="sub_main_container">
+                    <strong class="tit">개인정보 설정</strong>
+                    <div class="desc">개인정보를 변경하실 수 있습니다.</div>
+                    <div class="btn_round_white right_btn btn_close"><button href="#" class="btn">닫기</button></div>
+                </div>
+                <div class="table_style3">
+                    <table class="table" summary="이름,이메일,휴대전화,비밀번호 테이블입니다.">
+                        <caption>개인정보 설정</caption>
+                        <colgroup>  
+                            <col width="14%">
+                            <col width="*">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>이름</th>
+                               <td class="position">홍길동 <div class="btn_right"><button class="btn btn_setting">변경</button></div></td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td class="position">test@naver.com <div class="btn_right"><button class="btn btn_setting">변경</button></div></td>
+                            </tr>
+                            <tr>
+                                <th>휴대전화</th>
+                                <td class="position">000-0000-0000 <div class="btn_right"><button class="btn btn_setting">변경</button></div></td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호</th>
+                                <td class="pw_area position"><input type="password" value="12345" class="member_pw" disabled> <div class="btn_right"><button class="btn btn_setting">변경</button></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a href="#" class="member_withdraw">회원 탈퇴</a>
+            </div>
+        </div>           
+    </div>
+</div>
+<include src="../../include/footer.html"></include>
+</body>
+</html>

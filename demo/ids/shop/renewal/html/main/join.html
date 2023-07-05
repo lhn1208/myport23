@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>theSHOP</title>
+	<link rel="stylesheet" href="../../js/libs/jquery-ui.css">
+	<link rel="stylesheet" href="../../js/libs/owl.carousel.css">
+	<link rel="stylesheet" href="../../css/fonts.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/intro.css">
+	<!--[if lt IE 9]>
+	<script src="../../js/libs/html5shiv.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="../../js/libs/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery-ui.js"></script>
+	<script type="text/javascript" src="../../js/libs/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.bpopup.min.js"></script>
+	<!-- 2020-05-11 ui.js 추가 -->
+	<script type="text/javascript" src="../../js/ui.js"></script>
+</head>
+<body>
+	<header id="header">
+		<div class="header_inner">
+			<h1 class="logo_shop"><a href="#" class="ico_intro">theSHOP</a></h1>
+			<nav id="gnb">
+				<ul>
+					<li class="on"><a href="join.html">회원가입</a></li>
+					<li><a href="benefit_member.html">신규가입 혜택</a></li>
+					<li><a href="benefit_card.html">제휴카드 혜택</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section id="container">
+		<div class="visual_box intro_join">
+			<div class="visual_inner">
+				<h2 class="tit">어느 곳에서 근무하시나요?<strong>지금 바로 가입해 보세요</strong></h2>
+				<p>근무지에 따라 다른 혜택을 확인하실 수 있습니다. 근무지를 선택해주세요.</p>
+				<ul class="join_type">
+					<li class="join_pharm"><a href="#"><span class="ico_box"><span class="ico_intro"></span></span>약국</a></li>
+					<!-- 2020-05-11 modal 링크 markup 추가 -->
+					<li class="join_hospital"><a href="#branchModal" class="js_btn_modal"><span class="ico_box"><span class="ico_intro"></span></span>병원</a></li>
+					<li class="join_acupuncture"><a href="#"><span class="ico_box"><span class="ico_intro"></span></span>한의원</a></li>
+					<li class="join_vet"><a href="#"><span class="ico_box"><span class="ico_intro"></span></span>동물병원</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<div class="foot_menu">
+		<div class="foot_menu_inner">
+			<ul>
+				<li class="menu_join">
+					<div class="inner_box">
+						<strong class="menu_tit">신규가입 혜택</strong>
+						<img src="../../images/intro/img_menu_benefit_join.png" alt="" />
+						어느 곳에서 근무하시나요?<br>근무처를 선택해주시면 다양한 혜택을 자세히 보실 수 있습니다.
+					</div>
+					<a href="benefit_member.html" class="link_menu link_next_menu">이동하기</a>
+				</li>
+				<li class="menu_benefit_join menu_on">
+					<div class="inner_box">
+						<strong class="menu_tit">회원가입</strong>
+						<img src="../../images/intro/img_menu_join.png" alt="" />
+						해당하는 근무처를 선택해주세요.<br>근무처에 따라 가입절차가 다르므로 확인 부탁드립니다.
+					</div>
+				</li>
+				<li class="menu_benefit_card">
+					<div class="inner_box">
+						<strong class="menu_tit">제휴카드 혜택</strong>
+						<img src="../../images/intro/img_menu_benefit_card.png" alt="" />
+						삼성, 신한, 현대, 우리 4가지<br>대표카드 제휴완료! 제휴카드에 대한 다양한 혜택을 자세히 보실 수 있습니다.
+					</div>
+					<a href="benefit_card.html" class="link_menu link_prve_menu">이동하기</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<footer id="footer">
+		<address>copyright (c) 2017 Mcircle. ALL RIGHTS RESERVED.</address>
+	</footer>
+	<!-- 2020-05-11 modal 추가 -->
+	<div id="branchModal">
+		<div class="inner">
+			<div class="branch_wrap columns_wrap">
+				<div class="branch_box column_box business">
+					<a href="#" class="anchor_branch columns_wrap">
+						<div class="image_box column_box">
+							<img src="../../images/intro/join_business.png" alt="">
+						</div>
+						<div class="text_box column_box">
+							<p class="branch_tit">사업자</p>
+							<p class="branch_txt">개인 병원을<br>운영하는 Dr.</p>
+							<p class="branch_btn">가입하기</p>
+						</div>
+					</a>
+					<dl class="detailed_desc">
+						<dt>필요서류</dt>
+						<dd>사업자등록증/의사면허증</dd>
+						<dt>구매가능 품목</dt>
+						<dd>더샵 유통 전체 품목</dd>
+					</dl>
+				</div>
+				<div class="branch_box column_box none_business">
+					<a href="#" class="anchor_branch columns_wrap">
+						<div class="image_box column_box">
+							<img src="../../images/intro/join_none_business.png" alt="">
+						</div>
+						<div class="text_box column_box">
+							<p class="branch_tit">비사업자</p>
+							<p class="branch_txt">개인 병원을<br>운영하지 않는 Dr.</p>
+							<p class="branch_btn">가입하기</p>
+						</div>
+					</a>
+					<dl class="detailed_desc">
+						<dt>필요서류</dt>
+						<dd>의사면허증</dd>
+						<dt>구매가능 품목</dt>
+						<dd><em>의약품 제외</em> 더샵 유통 전체 품목</dd>
+					</dl>
+					<p class="caution">더샵에서 제공, 판매하는 품목 중 <u>의약품의 경우<br>요양기관번호를 소유한 사업자에 한해서만 구매 가능</u>합니다</p>
+				</div>
+			</div>
+			<button type="button" class="btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- 2020-05-11 modal 관련 script 추가 -->
+	<script type="text/javascript">
+		$(function(){
+			$(document.querySelector('.js_btn_modal')).on({
+				click:function(e){
+					var modalLayer = null;
+					modalLayer = shopUI.modalLayer($(e.currentTarget.hash),{
+						closeClass: "btn_close"
+					});
+				}
+			});
+		});
+	</script>
+</body>
+</html>

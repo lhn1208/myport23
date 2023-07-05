@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="shop.co.kr" />
+    <meta name="document-rights" content="Copyrighted shop.co.kr" />
+    <meta name="copyright" content="Copyright (c) shop.co.kr" />
+
+    <title>theSHOP :::</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.shop.co.kr/resources/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="../../css/renew_pop.css" />
+    <script type="text/javascript" src="../../js/libs/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="http://www.shop.co.kr/resources/js/common-front.js"></script>
+    <script type="text/javascript" src="http://www.shop.co.kr/resources/js/cookieUtil.js"></script>
+    <script type="text/javascript" src="http://www.shop.co.kr/resources/js/common.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+				<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N2TSCV5');
+</script>
+
+    <noscript>
+        본 시스템을 사용하시려면 Java Script가 활성화되어 있어야 합니다.<br />
+        Java Script가 비활성화되어 있거나 브라우저에서 지원되지 않는 것 같습니다.<br />
+        표준 보기를 사용하려면 브라우저 옵션을 변경하여 Java Script를 활성화한 다음 다시 시도해 주십시오.
+    </noscript>
+</head>
+
+<body id="popBody" onload='' leftmargin='' topmargin='' scroll='' style=''>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2TSCV5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script>
+dataLayer=[];
+dataLayer.push({
+	'userId':'test02'
+});
+</script>
+
+<div class="prod_detail_img">
+    <div class="summary">
+        <h1 class="name">삼성 Neo QLED 8K Smart TV 189cm KQ75QNA800FXKR (스탠드/벽걸이형 선택)</h1>
+        <ul>
+            <li><strong>제조사</strong>대웅제약</li>
+            <li><strong>규격</strong>2테스트</li>
+            <li><strong>단위</strong>100P(20P*5EA)</li>
+        </ul>
+    </div>
+    <div class="thumbnail_wrap">
+        <div class="thumbnail">
+            <img src="https://img.shop.co.kr/upload/product/ADMIN/201605/286256_01_L.jpg" alt="">
+        </div>
+        <ul class="thumbnail_list">
+            <li class="active">
+                <a href="#">
+                    <img src="https://img.shop.co.kr/upload/product/ADMIN/201605/286256_01_L.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://img.shop.co.kr/upload/product/ADMIN/202105/32471789_01_L.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://img.shop.co.kr/upload/product/SELLER/202007/21543419_01_L.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <button type="button" class="btn_close">닫기</button>
+</div>
+
+<script>
+    $('.thumbnail_wrap').on({
+        click:function(e){
+            e.preventDefault();
+            var url = e.currentTarget.getAttribute('href');
+            if(url == "#") url = e.currentTarget.querySelector('img').getAttribute('src');
+            e.delegateTarget.querySelector('.thumbnail img').setAttribute('src', url);
+
+            $(e.currentTarget).parent().addClass('active').siblings().removeClass('active');
+        }
+    },'.thumbnail_list a');
+    $('.btn_close').on({
+        click:function(){
+            window.close();
+        }
+    })
+</script>
+
+
+</body>
+
+</html>

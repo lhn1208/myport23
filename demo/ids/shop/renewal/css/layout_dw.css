@@ -1,0 +1,82 @@
+@charset 'utf-8';
+
+/* layout_header */
+#header .header_inner {margin:0 auto;padding:54px 0 21px}
+.link_logo {float:left}
+.logo_dw{margin:31px 63px 0 0}
+.logo_dw .ico_dw{width:164px;height:29px}
+.ico_dw{overflow:hidden;display:inline-block;font-size:0;line-height:0;text-indent:100%;background:url(../images/daewoong/ico_dw.png) no-repeat;vertical-align:top}
+.header_search {float:left;width:auto}
+.search_enter {clear:both;margin:10px -23px 0;padding-top:10px}
+.search_enter_inner {position:relative;height:47px;padding:0 0 0 25px;border:2px solid #ff6724;border-radius:30px}
+.search_enter_inner > input[type="text"] {float:left;width:285px;height:47px;margin:0;line-height:38px;border:0;color:#888}
+.search_enter .search_enter_inner > .select {position:relative;padding-left:0;color:#fd490e;line-height:47px;border:0;border-bottom:2px solid #ff6724;font-size:11px;background-position:100% -93px}
+.search_enter .search_enter_inner > .select:after {display:none}
+.search_enter .btn_search {float:right;width:80px;height:47px;margin-right:-1px;padding:0;font-family:'NanumSquareB';font-size:17px;color:#fff;text-align:center;border:0;background-color:#ff6724;border-radius:0 30px 30px 0}
+.header_bnr {overflow:hidden;float:right;width:205px;height:80px;margin-top:10px}
+.header_bnr .item a {display:block;width:205px;height:80px}
+.header_bnr .item img {width:100%;height:100%}
+.header_bnr .owl-nav {top:auto;right:auto;left:0;bottom:0}
+.header_bnr .owl-dots{bottom:0}
+.header_bnr .owl-dots .owl-dot{width:7px;height:7px}
+.header_bnr .owl-dots .owl-dot span{width:7px;height:7px;background-color:#b4babd}
+.header_bnr .owl-dots .owl-dot.active span{background-color:#fd490e}
+#gnb {width:100%;border-top:1px solid #ebeef3}
+#gnb ul {width:950px;margin:0 auto;font-size:0;}
+#gnb ul li {display:inline-block;width:20%;text-align:center;box-sizing:border-box;}
+#gnb ul li:first-child {padding-left:30px;text-align:left;}
+#gnb ul li:last-child {padding-right:30px;text-align:right;}
+#gnb ul a {display:inline-block;padding:17px 10px 16px 10px;}
+#gnb .gnb_comm {height:16px;background:url(../images/daewoong/gnb_dw.png) no-repeat;}
+#gnb .gnb_buy .gnb_comm {width:58px;background-position:0 0;}
+#gnb .gnb_etc .gnb_comm {width:28px;background-position:-90px 0;}
+#gnb .gnb_otc .gnb_comm {width:67px;background-position:-145px 0;}
+#gnb .gnb_subscribe .gnb_comm {width:102px;background-position:-244px 0;}
+#gnb .gnb_return .gnb_comm {width:57px;background-position:-369px 0;}
+#gnb a:hover .gnb_comm,
+#gnb .on .gnb_comm {background-position-y:-48px;}
+
+
+/* layout_content */
+.layout_dw #container {min-height:1500px;background:#fff;}/* 2020-10-20 수정 */
+#content{position:relative;padding-bottom:90px;padding-top:22px;}
+
+/* Status box */
+#status {position:relative;left:0;top:0;z-index:8;width:100%;background:#fff;border-bottom:1px solid #ebebeb;}
+#status .contents_wrap {display:none;}
+#status.open .contents_wrap {display:block;height:auto;}
+#status .status_wrap {position:relative;width:950px;margin:0 auto;}
+#status .contents_wrap {padding:18px 0 0 0;overflow:hidden;}
+#status .status_column {float:left;box-sizing:border-box;}
+#status .btn_type4,
+#status .btn_type6 {width:64px;height:auto;padding:5px 0;font-size:11px;line-height:1;text-align:center;box-sizing:border-box;}
+#status .btn_type4 {color:#000000;}
+#status .btn_type6 {padding:6px 0;}
+#status .column_header {height:21px;margin-bottom:15px;font-size:0;}
+#status .column_header .txt_cell {display:inline-block;vertical-align:top;}
+#status .column_header .btn_cell {float:right;}
+#status .column_header .ico_dw {height:15px;}
+#status .column_header .ico_dw.order_price {width:54px;background-position:0 -40px;}
+#status .column_header .ico_dw.return_price {width:54px;background-position:-100px -40px;}
+#status .column_header .ico_dw.minus {width:84px;background-position:0 -65px;}
+#status .column_header .ico_dw.benefit {width:58px;background-position:-100px -65px;}
+#status .statement th,
+#status .statement td {padding-bottom:5px;font-family:'NanumSquareR';font-size:13px;color:#333333;}
+#status .statement th {padding-left:20px;text-align:left;font-weight:normal;}
+#status .statement th:first-child {padding-left:0;}
+#status .statement td {text-align:right;}
+#status .monthly_order {width:310px;padding:0 25px;}
+#status .monthly_order .month {display:inline-block;padding:0 3px 3px 3px;font-family:'NanumSquareB';font-size:14px;line-height:1;color:#ff6633;border-bottom:2px solid #ff6633;}
+#status .monthly_order .column_header .txt_cell {width:116px;text-align:right;}
+#status .minus_balance {width:365px;padding:0 25px;border-left:1px solid #dadada;border-right:1px solid #dadada;}
+#status .my_benefit {overflow:hidden;width:275px;padding:0 0 0 25px;}
+#status .my_benefit .statement {width:170px;float:left;}
+#status .my_benefit .btn_box {width:64px;margin-top:-3px;float:right;}
+#status .my_benefit .btn_box a {margin-bottom:4px;}
+#status .toggle_btn {position:absolute;right:0;top:100%;width:71px;padding:4px;background:#ff6633;border:1px solid #ebebeb;color:#fff;font-size:11px;letter-spacing:-0.05em;line-height:1;border-radius:0px 0px 4px 4px;}
+#status .toggle_btn:after {content:'OPEN ▼';display:block;}
+#status.open .toggle_btn:after {content:'CLOSE ▲'}
+
+.quick_menu{top:95px}
+.quick_menu_inner{margin-top:0}
+.quick_menu .txt_quick:last-of-type{border-bottom:0 none}

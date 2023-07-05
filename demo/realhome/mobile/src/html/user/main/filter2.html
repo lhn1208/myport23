@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, minimal-ui">
+    <include src="../../include/set_css.html"></include>
+    <include src="../../include/set_js.html"></include>
+    <title>realhouse</title>
+</head>
+<body class="bg_white">
+<!--header-->
+<header class="sub_header">
+    <div class="header_inner">
+        <a href="#" class="btn_perv"><span class="blind">뒤로가기</span></a>  
+        <h1 class="tit">필터</h1>
+    </div>
+</header>
+<!--//header-->
+<div class="wrapper bg_white">
+    <div id=sub_container class="sub_container">  
+        <div class="container_inner">
+            <div class="filter">
+                <div class="filter_area">  
+                    <div class="section_inner">
+                        <div class="content_head type1">
+                            <h2 class="tit">보증금</h2>
+                            <span class="filter_desc">최소~최대</span>
+                        </div>
+                        <div class="filter_scroll_area">
+                            <div class="scroll_inner">
+                                <div class="filter_scroll_bar">
+                                    <a href="#" class="handler"></a>
+                                    <a href="#" class="handler max"></a>
+                                    <div class="slider_range"></div>
+                                </div>
+                            </div>
+                            <div class="filter_amt">
+                                <span>0</span>
+                                <span>5억원</span>
+                                <span>최대</span>
+                            </div>
+                        </div>
+                        <div class="control_area clearfix">
+                            <div class="control">
+                                <button class="minus"><span class="blind">마이너스</span></button>
+                                <label for="control_min">
+                                    <input type="text" id="control_min" class="input_control" placeholder="최소">
+                                </label>
+                                <button class="plus"><span class="blind">플러스</span></button>
+                            </div>
+                            <div class="control max">
+                                <button class="minus"><span class="blind">마이너스</span></button>
+                                <label for="control_max">
+                                    <input type="text" id="control_max" class="input_control" placeholder="최대">
+                                </label>
+                                <button class="plus"><span class="blind">플러스</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_area">  
+                    <div class="section_inner">
+                        <div class="filter_sec">
+                            <div class="content_head type1">
+                                <h2 class="tit">관리비</h2>
+                                <span class="filter_desc">최소~최대</span>
+                            </div>
+                            <div class="filter_scroll_area">
+                                <div class="scroll_inner">
+                                    <div class="filter_scroll_bar">
+                                        <a href="#" class="handler"></a>
+                                        <a href="#" class="handler max"></a>
+                                        <div class="slider_range"></div>
+                                    </div>
+                                </div>
+                                <div class="filter_amt">
+                                    <span>0</span>
+                                    <span>25만원</span>
+                                    <span>최대</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_area">  
+                    <div class="section_inner">
+                        <div class="content_head type1">
+                            <h2 class="tit">전용면적</h2>
+                            <span class="filter_desc">최소~최대</span>
+                        </div>
+                        <div class="filter_scroll_area">
+                            <div class="scroll_inner">
+                                <div class="filter_scroll_bar">
+                                    <a href="#" class="handler" style="left:10%"></a>
+                                    <a href="#" class="handler max"></a>
+                                    <div class="slider_range" style="left:10%; width:90%"></div>
+                                </div>
+                            </div>
+                            <div class="filter_amt">
+                                <span>0</span>
+                                <span class="option">165㎡(50평)</span>
+                                <span>최대</span>
+                            </div>
+                        </div>
+                        <div class="control_area clearfix">
+                            <div class="control">
+                                <button class="minus"><span class="blind">마이너스</span></button>
+                                <label for="control_min">
+                                    <input type="text" id="control_min" class="input_control" placeholder="최소">
+                                </label>
+                                <button class="plus"><span class="blind">플러스</span></button>
+                            </div>
+                            <div class="control max">
+                                <button class="minus"><span class="blind">마이너스</span></button>
+                                <label for="control_max">
+                                    <input type="text" id="control_max" class="input_control" placeholder="최대">
+                                </label>
+                                <button class="plus"><span class="blind">플러스</span></button>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <!--방구조-->
+                <div class="filter_area">  
+                    <div class="section_inner">
+                        <div class="content_head type1">
+                            <h2 class="tit">방 구조</h2>
+                        </div>
+                        <div class="offer_type_area">
+                            <ul class="filter_btn_list">
+                                <li>
+                                    <input type="checkbox" id="room_type1" class="act_btn green" checked><label for="room_type1">전체</label>
+                                    <input type="checkbox" id="room_type2" class="act_btn green"><label for="room_type2">원룸(개방형)</label>
+                                    <input type="checkbox" id="room_type3" class="act_btn green"><label for="room_type3">원룸(분리형)</label>
+                                    <input type="checkbox" id="room_type4" class="act_btn green"><label for="room_type4">2룸</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="room_type5" class="act_btn green"><label for="room_type5">3룸</label>
+                                    <input type="checkbox" id="room_type6" class="act_btn green"><label for="room_type6">4룸</label>
+                                    <input type="checkbox" id="room_type7" class="act_btn green"><label for="room_type7">5룸 이상</label>
+                                    <input type="checkbox" id="room_type8" class="act_btn green"><label for="room_type8">복층</label>
+                                </li>
+                            </ul>
+                        </div>    
+                    </div>
+                </div>
+                <!--//방구조-->    
+                <!--층구분-->
+                <div class="filter_area">  
+                    <div class="section_inner">
+                        <div class="content_head type1">
+                            <h2 class="tit">층 구분</h2>
+                        </div>
+                        <div class="offer_type_area">
+                            <ul class="filter_btn_list">
+                                <li>
+                                    <input type="checkbox" id="satir_type1" class="act_btn green" checked><label for="satir_type1">전체</label>
+                                    <input type="checkbox" id="satir_type2" class="act_btn green"><label for="satir_type2">1층</label>
+                                    <input type="checkbox" id="satir_type3" class="act_btn green"><label for="satir_type3">2층</label>
+                                    <input type="checkbox" id="satir_type4" class="act_btn green"><label for="satir_type4">3~6층</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="satir_type5" class="act_btn green"><label for="satir_type5">7~10층</label>
+                                    <input type="checkbox" id="satir_type6" class="act_btn green"><label for="satir_type6">11층 이상</label>
+                                    <input type="checkbox" id="satir_type7" class="act_btn green"><label for="satir_type7">반지하</label>
+                                    <input type="checkbox" id="satir_type8" class="act_btn green"><label for="satir_type8">옥탑</label>
+                                </li>
+                            </ul>
+                        </div>   
+                    </div>
+                </div> 
+                <!--//층구분-->        
+                <!--건축연도-->
+                    <div class="filter_area">  
+                    <div class="section_inner">
+                        <div class="content_head type1">
+                            <h2 class="tit">건축연도</h2>
+                        </div>
+                        <div class="offer_type_area">
+                            <ul class="filter_btn_list">
+                                <li>
+                                    <input type="checkbox" id="build_year1" class="act_btn green" checked><label for="build_year1">전체</label>
+                                    <input type="checkbox" id="build_year2" class="act_btn green"><label for="build_year2">~1년</label>
+                                    <input type="checkbox" id="build_year3" class="act_btn green"><label for="build_year3">1~2년</label>
+                                    <input type="checkbox" id="build_year4" class="act_btn green"><label for="build_year4">2~5년</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="build_year5" class="act_btn green"><label for="build_year5">5~10년</label>
+                                    <input type="checkbox" id="build_year6" class="act_btn green"><label for="build_year6">10년~20년</label>
+                                    <input type="checkbox" id="build_year7" class="act_btn green"><label for="build_year7">20~30년</label>
+                                    <input type="checkbox" id="build_year8" class="act_btn green"><label for="build_year8">30년 이상</label>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>   
+                <!--//건축연도-->       
+                    <!--옵션-->
+                <div class="filter_area">  
+                    <div class="section_inner">
+                        <div class="content_head type1">
+                            <h2 class="tit">옵션</h2>
+                        </div>
+                        <div class="offer_type_area">
+                            <ul class="filter_btn_list">
+                                <li>
+                                    <input type="checkbox" id="option1" class="act_btn green" checked><label for="option1">엘리베이터</label>
+                                    <input type="checkbox" id="option2" class="act_btn green"><label for="option2">주차 가능</label>
+                                    <input type="checkbox" id="option3" class="act_btn green"><label for="option3">반려 동물</label>
+                                    <input type="checkbox" id="option4" class="act_btn green"><label for="option4">전세자금대출</label>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>   
+                <!--//옵션-->      
+                <!--내부시설 옵션-->
+                <div class="filter_area">  
+                    <div class="section_inner">
+                        <div class="content_head type1">
+                            <h2 class="tit">내부시설 옵션</h2>
+                        </div>
+                        <div class="offer_type_area">
+                            <ul class="filter_btn_list">
+                                <li>
+                                    <input type="checkbox" id="facility_option1" class="act_btn green" checked><label for="facility_option1">에어컨</label>
+                                    <input type="checkbox" id="facility_option2" class="act_btn green"><label for="facility_option2">냉장고</label>
+                                    <input type="checkbox" id="facility_option3" class="act_btn green"><label for="facility_option3">세탁기</label>
+                                    <input type="checkbox" id="facility_option4" class="act_btn green"><label for="facility_option4">가스레인지</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="facility_option5" class="act_btn green"><label for="facility_option5">인덕션</label>
+                                    <input type="checkbox" id="facility_option6" class="act_btn green"><label for="facility_option6">책상</label>
+                                    <input type="checkbox" id="facility_option7" class="act_btn green"><label for="facility_option7">TV</label>
+                                    <input type="checkbox" id="facility_option8" class="act_btn green"><label for="facility_option8">옷장</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="facility_option9" class="act_btn green"><label for="facility_option9">신발장</label>
+                                    <input type="checkbox" id="facility_option10" class="act_btn green"><label for="facility_option10">싱크대</label>
+                                    <input type="checkbox" id="facility_option11" class="act_btn green"><label for="facility_option11">전자도어락</label>
+                                    <input type="checkbox" id="facility_option12" class="act_btn green"><label for="facility_option12">비대</label>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>   
+                <!--//내부시설 옵션-->         
+            </div>
+            <div class="btn_submit offer_submit fixed">
+                <button class="btn">초기화</button>
+                <button class="btn">필터적용(1,234)</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../../js/ui.min.js"></script>
+</html>

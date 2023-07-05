@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, minimal-ui">
+    <include src="../../include/set_css.html"></include>
+    <include src="../../include/set_js.html"></include>
+    <title>realhouse</title>
+</head>
+<body class="bg_white">
+<div class="wrapper">
+    <div class="pop_container">
+        <div class="container_inner">
+            <div class="member_box_area">
+                <i class="close"><span class="blind">닫기</span></i>                
+                <h1 class="tit">이름 변경</h1>
+                <div class="member_box">
+                    <fieldset>
+                        <legend>이메일 입력 및 현재 비밀번호 입력</legend>
+                        <div class="member_form form_area">
+                            <label for="member_email" class="input_form">
+                                <input id="member_email" class="member_input" type="text" placeholder="이메일 입력">  
+                                <button class="delete"><span class="blind">삭제</span></button>
+                            </label>
+                            <label for="member_pw" class="input_form">
+                                <input id="member_pw" class="member_input pw_input" type="password">
+                                <button class="delete"><span class="blind">삭제</span></button>
+                                <!--비밀번호 placeholder--><span class="placeholder">현재 비밀번호 입력</span>
+                            </label>
+                        </div>
+                        <div class="member_info">※ 회원님의 소중한 정보보호를 위해 현재비밀번호를 확인합니다.</div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="btn_submit fixed">
+                <button class="submit process next">다음</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../../js/ui.min.js"></script>
+</html>

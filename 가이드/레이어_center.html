@@ -1,0 +1,7 @@
+var layer= document.getElementsByClassName("layer_pop")[0];
+if (!(layer==null)){
+    var layerH;
+    layerH = layer.offsetHeight;
+    var math_top = Math.ceil((window.innerHeight - layerH)/2);
+    layer.style.top = math_top+"px";
+}

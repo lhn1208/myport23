@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=yes">
+	<title>닥터빌</title>
+	<!-- 2018-10-17 바로가기 아이콘 추가 [s] -->
+	<link rel="apple-touch-icon-precomposed" href="../../images/ico_ios.png" />
+	<link rel="shortcut icon" href="../../images/ico_android.png" />
+	<!-- 2018-10-17 바로가기 아이콘 추가 [e] -->
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<script src="../../js/ui.js"></script>
+
+</head>
+<body>
+<!-- 스킵내비게이션
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+</div> -->
+<!--전체 페이지를 감싸는 태그 id="app" [s]-->
+<div id="app">
+
+	<script type="text/javascript">
+		// 2017-12-12 TOP 버튼 스크립트 수정
+		$(window).load(function() {
+			var btnTop = $(".btn_top");
+			btnTop.hide();
+			if($(".wrap footer").length != 1){
+				btnTop.css("bottom","20px");
+			//}else {
+				//btnTop.css("bottom","75px");
+				//var fTop = $("footer").offset().top;
+			}
+			$("#container").scroll(function(){
+				btnTop.fadeIn(300);
+				if($("#container").scrollTop()==0 ) {
+					btnTop.fadeOut(300);
+				};
+				//if($("body").height() + $("#container").scrollTop() >= fTop + 50){
+				//	btnTop.css("bottom","80px");
+				//}else {
+				//	btnTop.css("bottom","20px");
+				//}
+			});
+			btnTop.click(function(){
+				$("#container").animate({ scrollTop: 0 }, 500);
+				return false;
+			});
+		})
+	</script>
+
+<div class="wrap menu">
+	<!-- header [s] -->
+	<!-- header [s] -->
+	<header id="header">
+		<h1 class="screen_out">닥터빌</h1>
+		<h2 class="h_tit">서비스메뉴</h2>
+	</header>
+	<!-- header [e] -->
+	<!-- container [s] -->
+	<section id="container" class="layer_box">
+		<!--메뉴 전체 수정 2018-08-20 [s]-->
+		<div class="info_head_v2">
+			<div class="my_info">
+				<div class="my_photo"><figure><img src="http://webresource.hidoc.co.kr/design/mobile/images/m640/banner_estimate.gif" alt=""></figure></div>
+				<strong class="name">김닥터</strong>
+				<a href="#" class="nickname">닉네임도김닥터</a>
+			</div>
+			<div class="my_point">
+				<p class="txt"><i class="ico_comm ico_point"></i>사용 가능 포인트</p>
+				<strong class="point">3,000P</strong>
+				<a href="#" class="btn">이용내역</a>
+			</div>
+		</div>
+		<nav id="gnb" class="gnb_v2">
+			<ul class="list_gnb">
+				<li class="menu_top">
+					<a href="#"><i class="ico_comm ico_home"></i>홈</a>
+					<a href="#"><i class="ico_comm ico_attend"></i>출석체크</a>
+				</li>
+				<li>
+					<strong>CME</strong>
+					<ul class="list_lnb">
+						<li><a href="#">라이브세미나</a></li>
+						<li><a href="#">다시보기VOD</a></li>
+						<li><a href="#">해외의학뉴스</a></li>
+						<!--<li><a href="#">학회 여행정보</a></li> 2019-11-20 삭제-->
+						<li><a href="#">MedLine Complete</a></li>
+						<li><a href="#">UpToDate</a></li>
+						<li><a href="#">Dynamed Plus</a></li>
+						<li><a href="#">SmartImageBase</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong>진료가이드</strong>
+					<ul class="list_lnb">
+						<li><a href="#">보험인정기준</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong>커뮤니티</strong>
+					<ul class="list_lnb">
+						<li><a href="#">자유게시판</a></li>
+						<li><a href="#">정치/이슈토론</a></li>
+					</ul>
+				</li>
+				<li>
+					<strong>기타</strong>
+					<ul class="list_lnb">
+						<li><a href="#">이벤트</a></li>
+						<li><a href="#">공지사항</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!--메뉴 전체 수정 2018-08-20 [e]-->
+		<!--삭제 [s] 2018-01-18
+		<div class="center">
+			<div class="inner">
+				<i class="ico_comm ico_pc"></i>
+				<p>PC버전은 닥터빌의 모든 메뉴를<br>	이용하실 수 있습니다.</p>
+			</div>
+		</div>
+		삭제 [e]-->
+		<div class="btn_wrap btn_w50">
+			<a href="#" class=""><i class="ico_comm ico_pcuse"></i>PC버전 이용하기</a>
+			<a href="#" class=""><i class="ico_comm ico_out"></i>로그아웃</a>
+		</div>
+		<a href="#" class="ico_comm btn_close">닫기</a>
+	</section>
+	<!-- container [e] -->
+</div>
+</div>
+<!--전체 페이지를 감싸는 태그 [e]-->
+</body>
+</html>

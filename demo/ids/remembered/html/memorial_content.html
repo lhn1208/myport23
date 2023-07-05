@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리멤버드</title>
+    <script src="../js/jquery-3.6.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <div class="wrap" id="memorialCanvas">
+        <!--header-->
+        <header class="is_memorial">
+            <div class="contents_width">
+            <h1 class="logo"><a href="main.html"><span>MEMORIAL CANVAS</span></a></h1>
+            <div class="header_util">
+                <div class="box_user">
+                <div class="user_sch d-md-none">
+                    <form>
+                    <fieldset>
+                        <legend>고인명검색</legend>
+                        <input type="text" class="sch_input" placeholder="고인명검색" title="고인명을 검색하세요">
+                        <a href="all_search.html" class="ico_sch">검색</a>
+                    </fieldset>
+                    </form>
+                </div>
+                <div class="user-profile">
+                    <ul>
+                    <li class="d-block">
+                        <a href="#">회원가입</a>
+                    </li>
+                    <li class="d-block">
+                        <a href="pop_login.html" target="_blank">로그인</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <nav id="gnbMenuWrap" class="nav">
+                <ul>
+                <li><a href="service.html">서비스소개</a></li>
+                <li><a href="obi_inquiry.html">부고</a></li>
+                <li><a href="memorial_inquiry.html">추모관</a></li>
+                 <!--<li><a href="premium_service.html">조문보</a></li>-->
+                <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <a href="#" class="link_mylife">라이프 캔버스로 이동</a>
+            </nav>
+            <button class="toggle_gnb btn-toggle-gnb"><span class="offscreen">전체메뉴</span></button>
+            <span class="nav-bg"></span>
+            </div>
+        </header>  
+        <!--//header-->     
+        <section class="content_wrap">
+            <div class="visual_wrap"><span class="offscreen">비쥬얼 이미지 영역입니다.</span></div>
+            <div class="detail_content memorial">
+                <div class="visual_memorial">
+                    <div class="portrait"><img src="https://d3lzegcz38cz56.cloudfront.net/photo/5b566281-2f0a-4ff6-9edf-0e3a0ba3fd29명예회장님 사진.jpg" alt=""></div>
+                </div>
+                <div class="memorial_content">
+                    <div class="memorial_info">
+                        <div class="memorial_main">
+                            <h2 class="name">윤영환 명예회장</h2>
+                            <span class="date">1934-03-30 ~ 2022-08-20</span>
+                            <button><i class="ico"></i>추모관 전송</button>
+                        </div>
+                        <div class="memorial_message">
+                            평생을 한국의 제약산업 발전에 이바지하며 의약보국의 신념을 실천하신 석천 윤영환 회장님을 추모합니다.
+                        </div>                        
+                    </div>
+                    <!--tab_area[s]-->
+                    <div class="tab_area">
+                        <ul class="tab_menu" id="tab_menu">
+                            <li class="on"><a href="#">일대기</a></li>
+                            <li class=""><a href="#">추억앨범</a></li>
+                            <li class=""><a href="#">추모의 글</a></li>
+                        </ul>
+                        <div class="tab_cont_wrap">
+                            <div class="tab_cont cont1">
+                               <h3 class="title">추모 영상</h3>
+                               <p class="desc">고인의 삶을 영상으로 담아 추억합니다.</p>
+                                <div class="video_area"><video class="video" poster="https://d3lzegcz38cz56.cloudfront.net/photo/39b48bf9-a7a6-481f-b5a4-bb8e764f2d1a윤영환 명예회장님.png"></video><button></button></div>
+                            </div>
+                            <div class="tab_cont cont2">
+                                <h3 class="title">추억앨범</h3>
+                                <div class="album_box">
+                                    <div class="album_top">
+                                        <strong class="menu">사진</strong>
+                                        <button class="btn_regis">등록</button>
+                                    </div>
+                                    <ul class="album_list">
+                                        <li>
+                                            <a href="#">
+                                                <div class="img" style="cursor: pointer;"><img src="https://d3lzegcz38cz56.cloudfront.net/image/thumbnail/753a8043-41fd-40e4-9210-7a106ddc0420thumbnail70bf8042-9224-4d3d-8626-5b99fce11ace.png" alt=""></div>
+                                                <div class="info">
+                                                    <span>by </span>이재국
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img" style="cursor: pointer;"><img src="https://d3lzegcz38cz56.cloudfront.net/image/thumbnail/753a8043-41fd-40e4-9210-7a106ddc0420thumbnail70bf8042-9224-4d3d-8626-5b99fce11ace.png" alt=""></div>
+                                                <div class="info">
+                                                    <span>by </span>이재국
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img" style="cursor: pointer;"><img src="https://d3lzegcz38cz56.cloudfront.net/image/thumbnail/753a8043-41fd-40e4-9210-7a106ddc0420thumbnail70bf8042-9224-4d3d-8626-5b99fce11ace.png" alt=""></div>
+                                                <div class="info">
+                                                    <span>by </span>이재국
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img" style="cursor: pointer;"><img src="https://d3lzegcz38cz56.cloudfront.net/image/thumbnail/753a8043-41fd-40e4-9210-7a106ddc0420thumbnail70bf8042-9224-4d3d-8626-5b99fce11ace.png" alt=""></div>
+                                                <div class="info">
+                                                    <span>by </span>이재국
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img" style="cursor: pointer;"><img src="https://d3lzegcz38cz56.cloudfront.net/image/thumbnail/753a8043-41fd-40e4-9210-7a106ddc0420thumbnail70bf8042-9224-4d3d-8626-5b99fce11ace.png" alt=""></div>
+                                                <div class="info">
+                                                    <span>by </span>이재국
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img" style="cursor: pointer;"><img src="https://d3lzegcz38cz56.cloudfront.net/image/thumbnail/753a8043-41fd-40e4-9210-7a106ddc0420thumbnail70bf8042-9224-4d3d-8626-5b99fce11ace.png" alt=""></div>
+                                                <div class="info">
+                                                    <span>by </span>이재국
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab_cont cont3 on">
+                                <form action="#"> 
+                                    <fieldset> 
+                                        <legend>추모의 글:</legend> 
+                                        <select class="select">
+                                            <option value="">문구를 선택해주세요</option>
+                                            <option value="옵션2">옵션1</option>
+                                            <option value="옵션2">옵션2</option>
+                                            <option value="옵션3">옵션3</option>
+                                            <option value="옵션4">옵션4</option>
+                                        </select>
+                                        <textarea class="textarea" name="" id="" placeholder="고인을 비방하는 댓글은 예고없이 삭제될 수 있습니다."></textarea>
+                                        <div class="filebox">
+                                            <label for="file">여기에 파일을 드래그 앤 드롭하거나 클릭하여 사진 또는 동영상을 등록할 수 있습니다.</label> 
+                                            <input type="file" id="file">
+                                        </div>
+                                        <div class="file_list_box">
+                                            <ul class="file_list">
+                                                <li>
+                                                    <img src="../images/img_sample3.jpg" alt="">
+                                                    <button class="btn_del"><span class="offscreen">닫기</span></button>
+                                                </li>
+                                                <li>
+                                                    <img src="../images/img_sample3.jpg" alt="">
+                                                    <button class="btn_del"><span class="offscreen">닫기</span></button>
+                                                </li>
+                                                <li>
+                                                    <img src="../images/img_sample3.jpg" alt="">
+                                                    <button class="btn_del"><span class="offscreen">닫기</span></button>
+                                                </li>
+                                                <li class="movie">
+                                                    <img src="../images/img_sample3.jpg" alt="">
+                                                    <button class="btn_del"><span class="offscreen">닫기</span></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="register_form">
+                                            <input type="text" placeholder="작성자명" class="input1">
+                                            <input type="text" placeholder="비밀번호" class="input2">
+                                        </div>
+                                        <div class="register_form">
+                                            <span class="open_opt">공개여부 <span class="switch"></span></span> 
+                                            <button class="btn m-btn">추모글 남기기</button>
+                                        </div>
+                                    </fieldset> 
+                                </form>
+                                <div class="reply_area">
+                                    <div class="content_area">
+                                        <ul>
+                                            <li>
+                                                <div class="name">홍길동홍길동홍길동</div>
+                                                <div class="text_content"><p class="text">삼가 조의 표하오며 고인의 유덕이 후세에 이어져 빛나기를 빕니다.</p></div>
+                                                <button class="btn_del"><span class="offscreen">삭제</span></button>
+                                            </li>
+                                            <li>
+                                                <div class="name">김강수</div>
+                                                <div class="text_content">
+                                                    <p class="text">밖의 비보에 한걸음에 달려가 위로의 말씀과 함께 고인의 가시는 길을 지켜 드려야 하는데 그러지 못하여 죄송합니다. 먼 곳에서나마 진심어린 삼가 조의를 표하오며 고인의 명복을 빕니다.</p>
+                                                    <span class="item img"><img src="../images/thum_01.jpg" alt=""></span>
+                                                    <span class="item movie"><img src="../images/thum_02.jpg" alt=""></span>
+                                                </div>
+                                                <button class="btn_del"><span class="offscreen">삭제</span></button>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//tab_area[e]-->
+                </div>
+            </div>
+        </section>
+        <!--right banner-->
+        <div class="right_banner">
+            <a href="#">문의</a>
+            <a href="#" class="kakao">KAKAO</a>
+        </div>
+        <!--//right banner-->
+        <!--footer-->
+        <footer id="remember_footer" class="remember_footer">
+        <div class="footer_inner">
+            <ul class="term_list">
+            <li><a href="#">이용약관</a><i class="bar"></i></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+            <div class="compay_info">
+            <address>서울시 강남구 봉은사로 114길 12, 7층</address> <i class="bar"></i>대표 서종원 <span class="mb_block">사업자 등록번호 120-86-10499</span> <i class="bar none_type"></i><span class="mb_block">통신판매업신고 2009-서울강남-00290 </span>
+            <span class="customer">고객센터<i class="bar mb_none"></i>tel.02-550-8700 <span class="fax">fax.02-563-8398</span><i class="bar mb_none"></i> <span class="email">Email.tslee0710@mcircle.biz</span><i class="bar none_type"></i><span class="mb_block">상담가능시간  오전 9:00 - 오후 6:00</span></span>
+            </div>
+            <span class="footer_logo"><img src="../images/footer_logo.png"></span>
+            <div class="ico_wrap">
+            <a href="#"><img src="../images/footer_ico1.png"></a>
+            <a href="#"><img src="../images/footer_ico2.png"></a>
+            </div>
+        </div>     
+        </footer>
+        <!--//footer-->
+    </div>
+</body>
+</html>

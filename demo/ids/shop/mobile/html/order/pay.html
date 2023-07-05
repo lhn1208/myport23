@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <title>theSHOP</title>
+    <!-- 2018-05-30 바로가기 아이콘 추가 [s] -->
+    <link rel="apple-touch-icon-precomposed" href="http://websvn.mcircle.co.kr/publish/shop/renewal/mobile/images/ico_ios.png" />
+    <link rel="shortcut icon" href="http://websvn.mcircle.co.kr/publish/shop/renewal/mobile/ico_android.png" />
+    <!-- 2018-05-30 바로가기 아이콘 추가 [e] -->
+    <link rel="stylesheet" href="../../js/libs/jquery-ui.css">
+    <link rel="stylesheet" href="../../js/libs/swiper.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/content.css">
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <script type="text/javascript" src="../../js/libs/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../js/libs/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.countdown.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.bpopup.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/sly.min.js"></script>
+    <script type="text/javascript" src="../../js/ui.js"></script>
+</head>
+
+<body>
+    <!-- header [s] -->
+    <header id="header" class="head_shop">
+        <div class="wrap_tit main_tit">
+    <h1><a href="#" class="link_logo"><span class="ico_comm ico_logo">더샵</span></a></h1>
+    <div class="main_search">
+        <a href="#" class="link_back"><span class="ico_comm ico_back">뒤로</span></a>
+        <form action="../main/search_result.html">
+            <fieldset>
+                <legend class="screen_out">검색어 입력 폼</legend>
+                <input type="text" title="검색어 입력" placeholder="상품명, 상품코드, 보험코드로 검색하세요.">
+                <button type="button" class="btn_del"><span class="ico_comm ico_del">검색어 삭제</span></button>
+                <div class="search_correlate">
+                    <div class="correlate_list">
+                        <p><a href="#none" class="txt">뉴 <em>임팩트</em> 블랙커런트민트</a></p>
+                        <p><a href="#none" class="txt">뉴 <em>임팩트</em> askdjalskjda1lksjdlk jaslkjdaslkjdaslkj</a></p>
+                        <p><a href="#none" class="txt">뉴 <em>임팩트</em> 일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a></p>
+                        <p><a href="#none" class="txt">뉴 <em>임팩트</em> 일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a></p>
+                        <p><a href="#none" class="txt">뉴 <em>임팩트</em> 일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a></p>
+                        <p><a href="#none" class="txt">뉴 <em>임팩트</em> 일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a></p>
+                        <p><a href="#none" class="txt">뉴 <em>임팩트</em> 일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a></p>
+                        <p><a href="#none" class="txt">뉴 <em>임팩트</em> 일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a></p>
+                        <p><a href="#none" class="txt">뉴 <em>임팩트</em> 일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a></p>
+                        <p><a href="#none" class="txt">뉴 <em>임팩트</em> 일이삼사오육칠팔구십</a></p>
+                    </div>
+                    <div class="box_btn">
+                        <a href="#none" class="btn_close">닫기<span class="ico_comm ico_close"></span></a>
+                    </div>
+                </div>
+                <button type="submit" class="btn_search"><span class="ico_comm ico_search">검색</span></button>
+            </fieldset>
+        </form>
+    </div>
+    <a href="../cart/cart.html" class="link_cart"><span class="ico_comm ico_cart">장바구니</span><span class="num_cart">+99</span></a>
+</div>
+<!-- 2018-05-31 수정 시작 -->
+<div class="wrap_rank">
+    <div class="bundle_g">
+        <div class="item">
+            <strong class="tit_sub">더샵 <span class="emph_color">판매랭킹</span></strong>
+        </div>
+        <div class="item">
+            <p class="txt_caution"><span class="ico_comm ico_caution"></span>직전 일주일 누적 판매 기준</p>
+        </div>
+    </div>
+    <ul class="tab_rank">
+        <li class="on"><a href="#prodRank1" class="btn_menu"><span class="inner_btn">#부외품</span></a></li>
+        <li><a href="#prodRank2" class="btn_menu btn_menu2"><span class="inner_btn">#일반의약품</span></a></li>
+        <li><a href="#prodRank3" class="btn_menu btn_menu3"><span class="inner_btn">#건기식</span></a></li>
+    </ul>
+    <div class="tab_cont">
+        <div id="prodRank1" style="display:none">
+            <strong class="screen_out">부외품 판매랭킹 리스트</strong>
+            <ul class="list_rank">
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">1</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">25,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">2</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">25,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">3</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">25,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">4</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">25,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">5</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">6</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">7</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">8</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">9</div>
+                        <strong class="tit_rank">우황청심원현탁액 광동제약 우황청심원현탁액 광동제약</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">10</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="btn_view2">부외품 판매랭킹 더보기<span class="ico_comm ico_arr2"></span></button>
+        </div>
+        <div id="prodRank2" style="display:none">
+            <strong class="screen_out">일반의약품 판매랭킹 리스트</strong>
+            <ul class="list_rank">
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">1</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">25,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">2</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">25,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">3</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">25,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">4</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">25,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">5</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">6</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">7</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">8</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">9</div>
+                        <strong class="tit_rank">우황청심원현탁액 광동제약 우황청심원현탁액 광동제약</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">10</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="btn_view2">일반의약품 판매랭킹 더보기<span class="ico_comm ico_arr2"></span></button>
+        </div>
+        <div id="prodRank3" style="display:none">
+            <strong class="screen_out">건기식 판매랭킹 리스트</strong>
+            <ul class="list_rank">
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">1</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">25,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">2</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">25,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">3</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">25,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">4</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">25,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">5</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">6</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">7</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">8</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">9</div>
+                        <strong class="tit_rank">우황청심원현탁액 광동제약 우황청심원현탁액 광동제약</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../main/prod_detail.html" class="link_prod">
+                        <div class="num_rank">10</div>
+                        <strong class="tit_rank">일이삼사오육칠팔구십</strong>
+                        <div class="txt_price"><span class="num_g">925,369</span>원</div>
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="btn_view2">건기식 판매랭킹 더보기<span class="ico_comm ico_arr2"></span></button>
+        </div>
+    </div>
+</div>
+<!-- 2018-05-31 수정 끝 -->
+<div class="wrap_menu">
+    <h2 class="screen_out">더샵 메인 메뉴</h2>
+    <nav id="gnb">
+        <ul class="list_gnb">
+            <li><a href="../main/main.html" class="link_menu"><span class="inner_link">홈</span></a></li>
+            <li><a href="../special/special.html" class="link_menu"><span class="inner_link">특가상품</span></a></li>
+            <li><a href="../timesale/timesale.html" class="link_menu"><span class="inner_link">타임세일</span></a></li>
+            <li><a href="../order/manage.html" class="link_menu"><span class="inner_link">주문/배송</span></a></li>
+            <li><a href="../reorder/reorder.html" class="link_menu"><span class="inner_link">재구매</span></a></li>
+            <li><a href="../best/best.html" class="link_menu"><span class="inner_link">BEST</span></a></li><!-- 2020-10-23 BEST 메뉴 추가 -->
+            <li><a href="../supply/supply.html" class="link_menu"><span class="inner_link">공급업체 연락처</span></a></li><!-- 2020-03-20 텍스트 수정 -->
+            <li><a href="#" class="link_menu"><span class="inner_link">라이브세미나</span></a></li><!-- 2018-11-12 라이브세미나 메뉴 추가 -->
+        </ul>
+    </nav>
+    <h2 class="screen_out">더샵 카테고리 메뉴</h2>
+    <a href="#none" class="btn_cate"><span class="ico_comm ico_cate">메뉴 펼치기/접기</span></a>
+    <div class="cate_menu">
+        <ul class="tab_g">
+            <li class="on"><a href="#prodCate" class="btn_menu">상품카테고리</a></li>
+            <li><a href="#supplyCate" class="btn_menu">공급사별 보기</a></li>
+            <li><a href="#quasiCate" class="btn_menu">부외품 업체</a></li>
+        </ul>
+        <div class="tab_cont">
+            <div id="prodCate">
+                <strong class="screen_out">상품카테고리</strong>
+                <ul class="list_cate">
+                    <li><a href="../main/search_result.html" class="link_cate">처방의약품<span class="ico_comm ico_arr"></span></a></li>
+                    <li><a href="../main/search_result.html" class="link_cate">일반/비급여<span class="ico_comm ico_arr"></span></a></li>
+                    <li><a href="../main/search_result.html" class="link_cate">동물약품<span class="ico_comm ico_arr"></span></a></li>
+                    <li><a href="../main/search_result.html" class="link_cate">동물용품<span class="ico_comm ico_arr"></span></a></li>
+                    <li><a href="../main/search_result.html" class="link_cate">건강식품<span class="ico_comm ico_arr"></span></a></li>
+                    <li><a href="../main/search_result.html" class="link_cate">의약외상품<span class="ico_comm ico_arr"></span></a></li>
+                    <li><a href="../main/search_result.html" class="link_cate">약국전용화장품관<span class="ico_comm ico_arr"></span></a></li>
+                    <li><a href="../main/search_result.html" class="link_cate">사무소모품<span class="ico_comm ico_arr"></span></a></li>
+                </ul>
+            </div>
+            <div id="supplyCate" style="display:none">
+                <strong class="screen_out">공급사별 보기</strong>
+                <div class="slide_g3">
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">대웅제약<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">건강식품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">의약외상품</a></li>
+                            </ul>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>대웅제약 무료배송</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">대웅바이오<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                            </ul>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>대웅바이오 무료배송</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">한올바이오파마<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">건강식품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">의약외상품</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">서울지오팜<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">건강식품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">의약외상품</a></li>
+                            </ul>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>대웅제약과 함께 구매시 무료배송</p>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>주문마감 전 주문시 묶음 배송 가능</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">청십자약품<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">건강식품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">의약외상품</a></li>
+                            </ul>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>최소주문금액 10만원 무료배송</p>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>주문마감 전 주문시 묶음 배송 가능</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">유진약품<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">건강식품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">의약외상품</a></li>
+                            </ul>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>최소주문금액 10만원 무료배송</p>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>주문마감 전 주문시 묶음 배송 가능</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">복산나이스팜<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">건강식품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">의약외상품</a></li>
+                            </ul>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>최소주문금액 10만원 무료배송</p>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>주문마감 전 주문시 묶음 배송 가능</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">티제이팜<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">건강식품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">의약외상품</a></li>
+                            </ul>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>최소주문금액 10만원 무료배송</p>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>주문마감 전 주문시 묶음 배송 가능</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">미드팜<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">건강식품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">의약외상품</a></li>
+                            </ul>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>최소주문금액 5만원 무료배송</p>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>주문마감 전 주문시 묶음 배송 가능</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">인천약품<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">건강식품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">의약외상품</a></li>
+                            </ul>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>최소주문금액 10만원 무료배송</p>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>주문마감 전 주문시 묶음 배송 가능</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">지오영<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">건강식품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">의약외상품</a></li>
+                            </ul>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>최소주문금액 10만원 무료배송</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">세화약품<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">건강식품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">의약외상품</a></li>
+                            </ul>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>최소주문금액 10만원 무료배송</p>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>주문마감 전 주문시 묶음 배송 가능</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">세화헬스케어<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">건강식품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">의약외상품</a></li>
+                            </ul>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>최소주문금액 10만원 무료배송</p>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>주문마감 전 주문시 묶음 배송 가능</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">백광의약품<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">건강식품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">의약외상품</a></li>
+                            </ul>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>최소주문금액 10만원 무료배송</p>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>주문마감 전 주문시 묶음 배송 가능</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">보덕메디팜<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">건강식품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">의약외상품</a></li>
+                            </ul>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>최소주문금액 10만원 무료배송</p>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>주문마감 전 주문시 묶음 배송 가능</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">한신약품<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">처방의약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">일반/비급여</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">건강식품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">의약외상품</a></li>
+                            </ul>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>최소주문금액 10만원 무료배송</p>
+                            <p class="txt_info"><span class="ico_comm ico_info"></span>주문마감 전 주문시 묶음 배송 가능</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="quasiCate" style="display:none">
+                <strong class="screen_out">부외품 업체</strong>
+                <div class="slide_g3">
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">세금계산서 통합<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">LJ헬스케어</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">대성생활건강</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">더팜</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">데이셀코스메틱</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">마이디코리아</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">맥스케어</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">메디미플러스</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">메디안스</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">메디코어</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">백단케어</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">비오비앙</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">비피도</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">세원피앤씨</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">시셀코리아</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">씨앤케이코스메디칼</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">씨와이바이오솔루션즈</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">알피코프</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">에스비앤에프</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">에프엠코리아</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">우리아기좋은날</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">웰빙메디칼</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">유비케어</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">은성메디케어</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">이내이처</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">이팜</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">재이스타일</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">제이스피앤티</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">제이웰팜</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">제일헬스케어</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">조은제이앤피</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">지케이팜</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">케이엔유</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">탑헬스케어</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">팜스웰</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">팜코리아</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">팜플러스</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">펄헬스케어</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">하우동천</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">한국PMO</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">한국바이오인더스트리</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">한미바이오</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">해외개발</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">헬스인팜</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">헬스투데이</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">히즈클린</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <strong class="tit_slide"><a href="#none" class="btn_slide">세금계산서 업체별 발송<span class="ico_comm ico_arr">목록 펼치기/접기</span></a></strong>
+                        <div class="view_slide" style="display:none">
+                            <ul class="list_supply">
+                                <li><a href="../main/search_result.html" class="link_cate">JK애니멀팜</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">금보메디넷</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">디씨팜</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">성대약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">아신팜</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">엠지메디텍</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">유진비엔피</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">종수약품</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">천지인팜</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">펫비즈</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">하이팜텍</a></li>
+                                <li><a href="../main/search_result.html" class="link_cate">한국약봉투</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        // 검색 - 연관검색어
+        $(".main_search input[type='text']").on("keyup", function(){
+            $(this).parent().parent().parent().addClass("correlate_on");
+            var searchInput = $(".main_search input").val().length;
+            if(searchInput > 0){
+                $(this).next().show();
+            } else{
+                $(this).next().hide();
+            }
+            $(".main_search .btn_del").on("click", function () {
+                $(".main_search input").val("");
+                $(this).hide();
+            });
+        });
+        $(document).on("click", function (e) {
+            var searchLayer = $(".search_correlate");
+            if(searchLayer.css("display") == "block") {
+                $(".search_correlate a").click(function () {
+                    $(".main_search").removeClass("correlate_on")
+                });
+                if(!$('.main_search').has(e.target).length) {
+                    $(".main_search").removeClass("correlate_on")
+                };
+                if(!$('.main_search input').has(e.target).length) {
+                    $(".main_search").removeClass("correlate_on")
+                };
+            };
+        });
+        $(".search_correlate .btn_close").on("click",function (e) {
+            $(this).parent().parent().parent().removeClass("correlate_on");
+            e.preventDefault();
+        });
+        // 판매랭킹 탭 2018-05-28 추가
+        shopUI.tab({
+            "tabs" : $(".tab_rank li"),
+            "contWrap" : $(".tab_cont > div")
+        });
+    })
+</script>
+        <div class="wrap_tit sub_tit">
+            <a href="../main/main.html" class="link_back"><span class="ico_comm ico_back">뒤로</span></a>
+            <h2>주문결제</h2>
+        </div>
+    </header>
+    <!-- header [e] -->
+
+    <!-- content [s] -->
+    <section id="content" class="cont_shop cont_order">
+        <div class="wrap_pay"><!-- 2018-05-24 추가 : wrap_pay 감싸줌 -->
+            <div class="chk_btn"><a href="#" class="btn_g btn_confirm">결제 전 확인사항</a></div><!-- 2018-05-24 추가 -->
+            <div class="top_info">
+                <h3 class="tit_sub2">배송지 정보</h3>
+                <ul class="list_info list_info2">
+                    <li class="info_type2"><strong class="txt_addr">(135-715) 서울 강남구 삼성동 163-3</strong></li>
+                    <li class="info_type2"><strong class="tit_info">받는분</strong><div class="txt_info">최근 1개월</div></li>
+                    <li><strong class="tit_info">휴대폰</strong><div class="txt_info"><span class="num_g">010-1234-5678</span><span class="txt_bar"></span></div></li>
+                    <li><strong class="tit_info">약국전화</strong><div class="txt_info"><span class="num_g">02-5655-6854</span></div></li>
+                </ul>
+            </div>
+            <div class="slide_g2">
+                <h3 class="tit_slide"><a href="#none" class="btn_slide">주문상품 확인<span class="ico_comm ico_arr ico_fold"></span></a></h3><!-- 디폴트가 펼침인 경우 클래스 ico_fold부여 -->
+                <ul class="list_info list_info2">
+                    <li><strong class="tit_info">공급사 수</strong><div class="txt_info">총 5건<span class="txt_bar"></span></div></li>
+                    <li><strong class="tit_info">총 품목 수</strong><div class="txt_info">8건</div></li>
+                    <li class="info_type2"><strong class="tit_info">총 품목 수</strong><div class="txt_price"><strong class="num_g">988,000</strong>원</div></li>
+                </ul>
+                <div class="view_slide">
+                    <div class="box_info">
+                        <strong class="tit_info"><span class="ico_tag ico_tag3">전국도매상</span> 서울지오팜</strong>
+                        <ul class="list_info">
+                            <li><span class="txt_num">품목수 2개</span><div class="txt_price"><span class="txt_total">합계</span><span class="num_g">22,000</span>원</div></li>
+                            <li>멘소래담로숀/75ml/1EA : 1개 3,550원</li>
+                            <li>멘소래담로숀/75ml/1EA : 1개 3,550원</li>
+                        </ul>
+                        <div class="box_inp"><input type="text" class="inp_order" placeholder="업체에 전달할 메시지가 있으면 남겨주세요."></div>
+                    </div>
+                    <div class="box_info">
+                        <strong class="tit_info"><span class="ico_tag ico_tag3">부외품업체</span> 제일헬스케어</strong>
+                        <ul class="list_info">
+                            <li><span class="txt_num">품목수 1개</span><div class="txt_price"><span class="txt_total">합계</span><span class="num_g">22,000</span>원</div></li>
+                            <li>멘소래담로숀/75ml/1EA : 1개 3,550원</li>
+                        </ul>
+                        <div class="box_inp"><input type="text" class="inp_order" placeholder="업체에 전달할 메시지가 있으면 남겨주세요."></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide_g2">
+                <h3 class="tit_slide"><a href="#none" class="btn_slide">할인 정보<span class="ico_comm ico_arr ico_fold"></span></a></h3><!-- 디폴트가 펼침인 경우 클래스 ico_fold부여 -->
+                <div class="view_slide">
+                    <div class="box_info2">
+                        <strong class="tit_g">서울지오팜</strong>
+                        <ul class="list_info">
+                            <li><strong class="tit_info">주문 합계</strong><div class="txt_price txt_price2"><span class="num_g">452,100</span>원</div></li>
+                            <li><strong class="tit_info">현재 보유 업체 마일리지</strong><div class="txt_price txt_price2"><span class="num_g">0</span>원</div></li>
+                            <li><strong class="tit_info">적립 예상 업체 마일리지</strong><div class="txt_price txt_price2"><span class="num_g">24,300</span>원</div>
+                            <li><strong class="tit_info">비용할인</strong><div class="txt_price txt_price2"><span class="num_g">-4,300</span>원</div></li>
+                            <li class="total_price"><strong class="tit_info">결제금액</strong><div class="txt_price txt_price3"><span class="num_g">555,300</span>원</div></li>
+                        </ul>
+                    </div>
+                    <div class="box_info2">
+                        <strong class="tit_g">제일헬스케어</strong>
+                        <ul class="list_info">
+                            <li><strong class="tit_info">주문 합계</strong><div class="txt_price txt_price2"><span class="num_g">999,999</span>원</div></li>
+                            <li><strong class="tit_info">현재 보유 업체 마일리지</strong><div class="txt_price txt_price2"><span class="num_g">0</span>원</div></li>
+                            <li>
+                                <strong class="tit_info"><label for="useMileage">사용할 업체 마일리지</label></strong>
+                                <div class="bundle_g">
+                                    <div class="item"><input type="number" name="useMileage" id="useMileage" class="inp_g" value="999000">원</div>
+                                    <div class="item"><button type="button" class="btn_g4">마일리지 전액사용</button></div>
+                                </div>
+                            </li>
+                            <li><strong class="tit_info">적립 예상 업체 마일리지</strong><div class="txt_price txt_price2"><span class="num_g">0</span>원</div>
+                            <li><strong class="tit_info">비용할인</strong><div class="txt_price txt_price2"><span class="num_g">0</span>원</div></li>
+                            <li class="total_price"><strong class="tit_info">결제금액</strong><div class="txt_price txt_price3"><span class="num_g">999,300</span>원</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slide_g2">
+                <h3 class="tit_slide"><a href="#none" class="btn_slide">마이너스 잔고<span class="ico_comm ico_arr ico_fold"></span></a></h3><!-- 디폴트가 펼침인 경우 클래스 ico_fold부여 -->
+                <div class="view_slide">
+                    <strong class="tit_g tit_dw">대웅제약<a href="#none" class="btn_g3 btn_balance">잔고이동<span class="ico_comm ico_arr"></span></a></strong>
+                    <ul class="list_info">
+                        <li><strong class="tit_info">OTC 주문 합계</strong><div class="txt_price txt_price2"><span class="num_g">999,999</span>원</div></li>
+                        <li><strong class="tit_info">OTC 마이너스 잔고</strong><div class="txt_price txt_price2"><span class="num_g">0</span>원</div></li>
+                        <li>
+                            <strong class="tit_info">사용할 마이너스 잔고</strong>
+                            <div class="bundle_g">
+                                <div class="item"><input type="number" class="inp_g" title="잔고 입력" value="999000">원</div>
+                                <div class="item"><button type="button" class="btn_g5">적용하기</button> <button type="button" class="btn_g4">전액사용</button></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list_info">
+                        <li><strong class="tit_info">OTC 주문 합계</strong><div class="txt_price txt_price2"><span class="num_g">999,999</span>원</div></li>
+                        <li><strong class="tit_info">OTC 마이너스 잔고</strong><div class="txt_price txt_price2"><span class="num_g">0</span>원</div></li>
+                        <li>
+                            <strong class="tit_info">사용할 마이너스 잔고</strong>
+                            <div class="bundle_g">
+                                <div class="item"><input type="number" class="inp_g" title="잔고 입력">원</div>
+                                <div class="item"><button type="button" class="btn_g5">적용하기</button> <button type="button" class="btn_g4">전액사용</button></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list_info">
+                        <li><strong class="tit_info">IP 주문 합계</strong><div class="txt_price txt_price2"><span class="num_g">999,999</span>원</div></li>
+                        <li><strong class="tit_info">IP 마이너스 잔고</strong><div class="txt_price txt_price2"><span class="num_g">0</span>원</div></li>
+                        <li>
+                            <strong class="tit_info">사용할 마이너스 잔고</strong>
+                            <div class="bundle_g">
+                                <div class="item"><input type="number" class="inp_g" title="잔고 입력">원</div>
+                                <div class="item"><button type="button" class="btn_g5">적용하기</button> <button type="button" class="btn_g4">전액사용</button></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list_info">
+                        <li><strong class="tit_info">OTC 주문 합계</strong><div class="txt_price txt_price2"><span class="num_g">999,999</span>원</div></li>
+                        <li><strong class="tit_info">OTC 마이너스 잔고</strong><div class="txt_price txt_price2"><span class="num_g">0</span>원</div></li>
+                        <li class="total_price"><strong class="tit_info">결제금액</strong><div class="txt_price txt_price3"><span class="num_g">200,300</span>원</div></li>
+                    </ul>
+                </div>
+            </div>
+            <h3 class="tit_sub2">쿠폰/예치금</h3>
+            <ul class="list_info">
+                <li>
+                    <strong class="tit_deposit">예치금 사용</strong>
+                    <div class="txt_price txt_price3"><span class="num_g">999,999</span>원</div>
+                    <div class="bundle_g">
+                        <div class="item"><input type="number" class="inp_g" title="잔고 입력" value="999000">원</div>
+                        <div class="item"><button type="button" class="btn_g5">적용하기</button> <button type="button" class="btn_g4">전액사용</button></div>
+                    </div>
+                </li>
+                <li>
+                    <strong class="tit_coupon">쿠폰 사용 <span class="num_g">17</span>장</strong>
+                    <p class="txt_coupon">현재 결제 상태에서 가장 적절한 쿠폰이 자동 선택됩니다.</p>
+                </li>
+                <li>
+                    <!-- 2018-05-25 수정 시작 -->
+                    <div class="bundle_g">
+                        <div class="item"> <strong class="tit_info">부외품 1만원 쿠폰 <span class="txt_price txt_price2"><span class="num_g">-10,000</span>원</span></strong></div>
+                        <div class="item"> <div class="wrap_btn">
+                            <button type="button" class="btn_g btn_coupon">변경</button>
+                            <button type="button" class="btn_g">취소</button>
+                        </div></div>
+                    </div>
+                    <!-- 2018-05-25 수정 끝 -->
+                </li>
+            </ul>
+            <div class="pay_choice"> 
+                <h3 class="tit_sub2">결제수단 선택</h3><!-- 2018-05-24 타이틀 위치 변경 -->
+                <p class="txt_caution">
+                    <span class="ico_comm ico_caution"></span>
+                    <span>모바일에서는 <strong>기존 등록돼있던 간편결제 및 사전등록 카드로만 결제 가능</strong>합니다. 타 결제수단 및 카드등록을 원하시면 더샵 PC 홈페이지를 이용해주세요.</span>
+                </p>
+                <ul class="list_card">
+                    <li class="on"><a href="#samsungCard" class="btn_card"><span class="ico_comm ico_samsung"></span>삼성</a></li>
+                    <li><a href="#shinhanCard" class="btn_card"><span class="ico_comm ico_shinhan"></span>신한</a></li>
+                    <li><a href="#hyundaiCard" class="btn_card"><span class="ico_comm ico_hyundai"></span>현대</a></li>
+                    <li><a href="#beforehandCard" class="btn_card"><span class="ico_comm ico_regist"></span>사전등록</a></li>
+                </ul>
+                <div class="tab_cont">
+                    <div id="samsungCard">
+                        <div class="bundle_g">
+                            <div class="item">
+                                <select name="samsungMonthly" id="samsungMonthly" class="select_g">
+                                    <option value="">할부선택</option>
+                                    <option value="">일시불</option>
+                                    <option value="">일시불</option>
+                                    <option value="">일시불</option>
+                                </select>
+                                <p class="txt_info">5만원 이상 시 할부 가능</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="shinhanCard" style="display:none">
+                        <div class="bundle_g">
+                            <div class="item">
+                                <select name="shinhanMonthly" id="shinhanMonthly" class="select_g">
+                                    <option value="">할부선택</option>
+                                    <option value="">일시불</option>
+                                    <option value="">일시불</option>
+                                    <option value="">일시불</option>
+                                </select>
+                                <p class="txt_info">5만원 이상 시 할부 가능</p>
+                                <div class="chk_g chk_g2">
+                                    <input type="checkbox" name="pointChk" id="pointChk" class="inp_chk" checked="checked">
+                                    <label for="pointChk" class="lab_chk">
+                                        <span class="ico_chkbox"><span class="ico_comm"></span></span>
+                                        <span class="txt_lab">신한카드 포인트 차월 청구에서 차감<br>※ 신한법인, 신한BC, 체크카드는 포인트 차감 결제 불가 (소지 포인트 없을 시, 전액 카드결제 됨.)</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hyundaiCard" style="display:none">
+                        <div class="bundle_g">
+                            <div class="item">
+                                <select name="hyundaiMonthly" id="hyundaiMonthly" class="select_g">
+                                    <option value="">할부선택</option>
+                                    <option value="">일시불</option>
+                                    <option value="">일시불</option>
+                                    <option value="">일시불</option>
+                                </select>
+                                <p class="txt_info">5만원 이상 시 할부 가능</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="beforehandCard" style="display:none">
+                        <div class="bundle_g">
+                            <div class="item">
+                                <select name="cardType" id="cardType" class="select_g">
+                                    <option value="">카드종류 선택</option>
+                                    <option value="">카드1</option>
+                                    <option value="">카드2</option>
+                                </select>
+                                <select name="beforehandMonthly" id="beforehandMonthly" class="select_g">
+                                    <option value="">할부선택</option>
+                                    <option value="">일시불</option>
+                                    <option value="">일시불</option>
+                                    <option value="">일시불</option>
+                                </select>
+                                <p class="txt_info">5만원 이상 시 할부 가능</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 하단 픽스메뉴 [s] -->
+        <div class="fixed_menu">
+            <div class="inner_menu">
+                <button type="button" class="btn_fold"><span class="ico_comm ico_fold">메뉴 펼치기/접기</span></button>
+                <div class="menu_cont">
+                    <strong class="screen_out">주문 정보</strong>
+                    <ul class="list_info">
+                        <li><strong class="tit_info">총 주문금액(총5건)</strong><div class="txt_price txt_price2"><span class="num_g">452,100</span>원</div></li>
+                        <li><strong class="tit_info">비용할인</strong><div class="txt_price txt_price2"><span class="num_g">-120</span>원</div></li>
+                        <li><strong class="tit_info">쿠폰</strong><div class="txt_price txt_price2"><span class="num_g">-120</span>원</div></li>
+                        <li><strong class="tit_info">예치금</strong><div class="txt_price txt_price2"><span class="num_g">-120</span>원</div></li>
+                        <li><strong class="tit_info">마이너스잔고</strong><div class="txt_price txt_price2"><span class="num_g">-120</span>원</div></li>
+                        <li><strong class="tit_info">업체마일리지</strong><div class="txt_price txt_price2"><span class="num_g">-120</span>원</div></li>
+                        <li class="total_price"><strong class="tit_info">최종 결제금액</strong><div class="txt_price txt_price3"><span class="num_g">999,999,100</span>원</div></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn_b3"><span class="num_g">999,999,100</span> 원 결제하기</button>
+            </div>
+        </div>
+        <!-- //하단 픽스메뉴 [e] -->
+
+    </section>
+    <!-- content [e] -->
+
+    <!-- 잔고이동 레이어 [s] -->
+    <div id="popBalance" class="pop_layer" style="display:none">
+        <div class="inner_layer">
+            <strong class="tit_popup">대웅 잔고 이동</strong>
+            <div class="cont_popup">
+                <div class="balance_data">
+                    <div class="box_g">
+                        <strong class="tit_cont">마이너스 잔고 현황</strong>
+                        <ul class="list_info">
+                            <li><strong class="tit_info">[OTC] 일반의약품</strong><div class="txt_price txt_price2"><span class="num_g">-502,100</span>원</div></li>
+                            <li><strong class="tit_info">[ETC] 전문의약품</strong><div class="txt_price txt_price2"><span class="num_g">-992,100</span>원</div></li>
+                            <li><strong class="tit_info">[우루사] 우루사제품군</strong><div class="txt_price txt_price2"><span class="num_g">-992,100</span>원</div></li>
+                            <li><strong class="tit_info">[IP] 임팩타민조제용</strong><div class="txt_price txt_price2"><span class="num_g">-100</span>원</div></li>
+                        </ul>
+                    </div>
+                    <div class="box_g box_move">
+                        <strong class="tit_cont">대웅바이오 마이너스 잔고현황</strong>
+                        <ul class="list_info">
+                            <li><strong class="tit_info">[ETC] 바이오전문의약품</strong><div class="txt_price txt_price2"><span class="num_g">-502,100</span>원</div></li>
+                        </ul>
+                        <strong class="tit_cont tit_cont2">선택가능 제품군</strong>
+                        <div class="radio_g">
+                            <input type="radio" name="choiceProd" id="choiceProd1" class="inp_radio" checked="checked">
+                            <label for="choiceProd1" class="lab_radio">
+                                <span class="ico_radio"><span class="inner_ico"></span></span>
+                                <span class="txt_lab">대웅제약 일반의약품</span>
+                            </label>
+                        </div>
+                        <div class="radio_g">
+                            <input type="radio" name="choiceProd" id="choiceProd2" class="inp_radio">
+                            <label for="choiceProd2" class="lab_radio">
+                                <span class="ico_radio"><span class="inner_ico"></span></span>
+                                <span class="txt_lab">대웅제약 전문의약품</span>
+                            </label>
+                        </div>
+                        <div class="radio_g">
+                            <input type="radio" name="choiceProd" id="choiceProd3" class="inp_radio">
+                            <label for="choiceProd3" class="lab_radio">
+                                <span class="ico_radio"><span class="inner_ico"></span></span>
+                                <span class="txt_lab">대웅제약 우루사제품군</span>
+                            </label>
+                        </div>
+                        <div class="radio_g">
+                            <input type="radio" name="choiceProd" id="choiceProd4" class="inp_radio">
+                            <label for="choiceProd4" class="lab_radio">
+                                <span class="ico_radio"><span class="inner_ico"></span></span>
+                                <span class="txt_lab">대웅제약 임팩타민 조제용</span>
+                            </label>
+                        </div>
+                        <div class="radio_g">
+                            <input type="radio" name="choiceProd" id="choiceProd5" class="inp_radio">
+                            <label for="choiceProd5" class="lab_radio">
+                                <span class="ico_radio"><span class="inner_ico"></span></span>
+                                <span class="txt_lab">대웅 바이오 전문의약품</span>
+                            </label>
+                        </div>
+                        <strong class="tit_cont tit_cont2">이동대상 제품군</strong>
+                        <div class="radio_g">
+                            <input type="radio" name="moveProd" id="moveProd1" class="inp_radio" checked="checked">
+                            <label for="moveProd1" class="lab_radio">
+                                <span class="ico_radio"><span class="inner_ico"></span></span>
+                                <span class="txt_lab">대웅제약 일반의약품</span>
+                            </label>
+                        </div>
+                        <div class="radio_g">
+                            <input type="radio" name="moveProd" id="moveProd2" class="inp_radio">
+                            <label for="moveProd2" class="lab_radio">
+                                <span class="ico_radio"><span class="inner_ico"></span></span>
+                                <span class="txt_lab">대웅제약 전문의약품</span>
+                            </label>
+                        </div>
+                        <div class="radio_g">
+                            <input type="radio" name="moveProd" id="moveProd3" class="inp_radio">
+                            <label for="moveProd3" class="lab_radio">
+                                <span class="ico_radio"><span class="inner_ico"></span></span>
+                                <span class="txt_lab">대웅제약 우루사제품군</span>
+                            </label>
+                        </div>
+                        <div class="radio_g">
+                            <input type="radio" name="moveProd" id="moveProd4" class="inp_radio">
+                            <label for="moveProd4" class="lab_radio">
+                                <span class="ico_radio"><span class="inner_ico"></span></span>
+                                <span class="txt_lab">대웅제약 임팩타민 조제용</span>
+                            </label>
+                        </div>
+                        <div class="radio_g">
+                            <input type="radio" name="moveProd" id="moveProd5" class="inp_radio">
+                            <label for="moveProd5" class="lab_radio">
+                                <span class="ico_radio"><span class="inner_ico"></span></span>
+                                <span class="txt_lab">대웅 바이오 전문의약품</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="data_btm">
+                        <div class="bundle_g">
+                            <div class="item"><label for="movePrice">이동 금액</label></div>
+                            <div class="item"><div class="price_inp"><input type="number" name="movePrice" id="movePrice" class="inp_g" value="1,000"><span class="txt_won">원</span></div></div>
+                        </div>
+                        <div class="wrap_btn">
+                            <button type="button" class="btn_b3">적용하기</button>
+                            <button type="button" class="btn_b4 btn_cancel">적용취소</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn_close"><span class="ico_comm ico_close">닫기</span></button>
+        </div>
+    </div>
+    <!-- 잔고이동 레이어 [e] -->
+
+    <!-- 쿠폰 변경 레이어 [s] -->
+    <div id="popCouponChange" class="pop_layer" style="display:none">
+        <div class="inner_layer">
+            <strong class="tit_popup">보유 쿠폰 선택</strong>
+            <div class="cont_popup">
+                <ul class="list_caution">
+                    <li>쿠폰 적용 대상과 제한 조건 등을 확인하신 후 선택해 주세요.</li>
+                    <li>결제 1번당 1개 쿠폰이 사용가능하며, 주문금액이 쿠폰금액보다
+                        낮을경우 사용이 불가합니다.</li>
+                    <li>부외품 할인쿠폰의 경우 부외품업체 공급사 제품 중 의약품이
+                        포함되어 있어도 사용이 제한됩니다.</li>
+                    <li>쿠폰 사용을 원하실 경우 의약품을 제외하고 결제 해주세요.</li>
+                </ul>
+                <div class="coupon_choice">
+                    <strong class="tit_cont">결제할인</strong>
+                    <div class="box_g">
+                        <div class="radio_g disabled">
+                            <input type="radio" name="payDC" id="payDC1" class="inp_radio" disabled="disabled">
+                            <label for="payDC1" class="lab_radio">
+                                <span class="ico_radio"><span class="inner_ico"></span></span>
+                                <span class="txt_lab">
+                                부외품 1만원 쿠폰(예외) : 이용가능<br>
+                                할인금액 : 1만원 / 적용대상 : 부외품업체<br>
+                                (2015-03-16~2021-03-31)
+                            </span>
+                            </label>
+                        </div>
+                        <div class="radio_g">
+                            <input type="radio" name="payDC" id="payDC2" class="inp_radio">
+                            <label for="payDC2" class="lab_radio">
+                                <span class="ico_radio"><span class="inner_ico"></span></span>
+                                <span class="txt_lab">
+                                카카오톡 친구 추가이벤트 부외품할인쿠폰<br>
+                                5,000원 : 50,000원 이상 구매 시 이용 가능<br>
+                                할인금액 : 5천원 / 적용대상 : 부외품업체<br>
+                                (2017-11-10~2020-12-31)
+                            </span>
+                            </label>
+                        </div>
+                    </div>
+                    <strong class="tit_cont">배송비할인</strong>
+                    <div class="box_g">
+                        <div class="radio_g">
+                            <input type="radio" name="deliveryDC" id="deliveryDC1" class="inp_radio" checked="checked">
+                            <label for="deliveryDC1" class="lab_radio">
+                                <span class="ico_radio"><span class="inner_ico"></span></span>
+                                <span class="txt_lab">
+                               부외품 1만원 쿠폰(예외) : 이용가능<br>
+                                할인금액 : 1만원 / 적용대상 : 부외품업체<br>
+                                (2015-03-16~2021-03-31)
+                            </span>
+                            </label>
+                        </div>
+                        <div class="radio_g">
+                            <input type="radio" name="deliveryDC" id="deliveryDC2" class="inp_radio">
+                            <label for="deliveryDC2" class="lab_radio">
+                                <span class="ico_radio"><span class="inner_ico"></span></span>
+                                <span class="txt_lab">
+                                카카오톡 친구 추가이벤트 부외품할인쿠폰<br>
+                                5,000원 : 50,000원 이상 구매 시 이용 가능<br>
+                                할인금액 : 5천원 / 적용대상 : 부외품업체<br>
+                                (2017-11-10~2020-12-31)
+                            </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- 2018-05-23 삭제
+                    <div class="wrap_btn">
+                        <button type="button" class="btn_b2">쿠폰 적용<span class="ico_comm ico_arr"></span></button>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <button type="button" class="btn_close"><span class="ico_comm ico_close">닫기</span></button>
+        </div>
+    </div>
+    <!-- 쿠폰 변경 레이어 [e] -->
+
+    <!-- 결제 전 확인사항 레이어 [s] 2018-05-24 추가 -->
+    <div id="popPayCheck" class="pop_layer" style="display:none">
+        <div class="inner_layer">
+            <strong class="tit_popup">결제 전 확인사항</strong>
+            <div class="cont_popup">
+                <strong class="tit_cont">결제 전 확인해주세요</strong>
+                <ul class="list_info">
+                    <li>
+                        <strong class="tit_info">예치금</strong>
+                        <div class="txt_info">전공급사 사용가능</div>
+                    </li>
+                    <li>
+                        <strong class="tit_info">대웅제약,<br>대웅바이오<br>마이너스<br>잔고</strong>
+                        <div class="txt_info">대웅제약, 대웅바이오에서 공급하는 품목에 한해 제품군별로 이용가능 (금일 새벽 3시 기준금액으로 사용가능)</div>
+                    </li>
+                    <li>
+                        <strong class="tit_info">업체<br>마일리지</strong>
+                        <div class="txt_info">공급사별로 마일리지가 제공되며, 해당공급사의 품목에 한해 사용가능 (마일리지는 현금으로 환급 불가)</div>
+                    </li>
+                    <li>
+                        <strong class="tit_info">쿠폰</strong>
+                        <div class="txt_info">품목 상관 없이 전체 혹은 공급사에 따라 사용가능 (유효기간내 사용가능, 현금 환불 불가) 공급사에서 발행한 쿠폰, 마일리지는 동시에 사용할 수 없으며, 동일한 쿠폰을 중복사용 불가</div>
+                    </li>
+                </ul>
+                <div class="wrap_btn">
+                    <button type="button" class="btn_b2 btn_cancel">확인 완료</button>
+                </div>
+            </div>
+            <button type="button" class="btn_close"><span class="ico_comm ico_close">닫기</span></button>
+        </div>
+    </div>
+    <!-- 결제 전 확인사항 레이어 [e] -->
+
+    <div class="bg_dimmed"></div>
+
+    <script type="text/javascript">
+        $(function () {
+            shopUI.head(); // 상단메뉴
+            // GNB 활성화
+            var $frame  = $('#gnb');
+            $frame.sly({
+                horizontal: 1,
+                itemNav: 'centered',
+                mouseDragging: 1,
+                touchDragging: 1,
+                releaseSwing: 1,
+                speed: 300,
+                easing: 'easeOutExpo',
+            });
+            // 상품목록 슬라이드
+            $(".slide_g .btn_slide").on("click", function(e){
+                $(this).toggleClass("on");
+                var thisView = $(this).parent().parent().find(".view_slide");
+                if(! thisView.is(':hidden')){
+                    thisView.slideUp();
+                };
+                if(! thisView.is(':visible')){
+                    thisView.slideDown();
+                };
+                e.preventDefault();
+            });
+            // 상품정보 슬라이드
+            $(".slide_g2 .btn_slide").on("click", function(e){
+                $(this).toggleClass("on");
+                var thisView = $(this).parent().parent().find(".view_slide");
+                if(! thisView.is(':hidden')){
+                    thisView.slideUp();
+                };
+                if(! thisView.is(':visible')){
+                    thisView.slideDown();
+                };
+                e.preventDefault();
+            });
+            // 카드 선택버튼
+            $(".list_card .btn_card").on("click", function () {
+                $(this).parent().addClass("on").siblings().removeClass("on");
+            });
+            // 결제수단 선택 탭
+            shopUI.tab({
+                "tabs" : $(".list_card li"),
+                "contWrap" : $(".tab_cont > div")
+            });
+            // 하단 픽스메뉴
+            $(".fixed_menu .btn_fold").on("click", function() {
+                $(this).parent().parent().toggleClass("active");
+            });
+            // 쿠폰 변경 레이어
+            $('body').on("click", ".cont_order .btn_coupon", function() {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popCouponChange"), {
+                    closeClass: "btn_close",
+                    positionStyle: "fixed",
+                });
+            });
+            // 쿠폰 선택 시 레이어 닫힘 2018-05-23 추가
+            $("#popCouponChange .lab_radio").on("click",function () {
+                if(! $(this).prev().is(":disabled")){
+                    $(".btn_close").click();
+                };
+            });
+            $("body").on("click", ".pop_layer .btn_cancel", function() {
+                $(".btn_close").click();
+            });
+            // 잔고이동 레이어
+            $('body').on("click", ".cont_order .btn_balance", function() {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popBalance"), {
+                    closeClass: "btn_close",
+                    positionStyle: "fixed",
+                });
+            });
+            // 결제 전 확인사항 레이어 2018-05-24 추가
+            $('body').on("click", ".cont_order .btn_confirm", function() {
+                var modalLayer = null;
+                modalLayer = shopUI.modalLayer($("#popPayCheck"), {
+                    closeClass: "btn_close",
+                    positionStyle: "fixed",
+                });
+            });
+            shopUI.quick(); // 퀵메뉴
+        });
+    </script>
+</body>
+</html>

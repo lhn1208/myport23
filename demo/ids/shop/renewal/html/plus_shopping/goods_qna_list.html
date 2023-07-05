@@ -1,0 +1,156 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link rel="stylesheet" type="text/css" href="iframe.css" />
+<script type="text/javascript" src="http://www.vipg.co.kr/shop/lib/js/jquery/jquery-1.9.1.min.js"></script>
+<script src="http://www.vipg.co.kr/shop/data/skin/godomarket_G/common.js"></script>
+<script id="qna_chk"></script>
+<script type="text/javascript">
+	<!--
+	var defaultHeight; 
+
+	function popup_register( mode, goodsno, sno )
+	{
+		if ( mode == 'del_qna' ) var win = window.open("goods_qna_del.php?mode=" + mode + "&sno=" + sno,"qna_register","width=400,height=200");
+		else var win = window.open("goods_qna_register.php?mode=" + mode + "&goodsno=" + goodsno + "&sno=" + sno,"qna_register","width=650,height=752,scrollbars=yes");
+		win.focus();
+	}
+
+	var preContent;
+	var IntervarId;
+
+	function view_content(sno)
+	{
+		var obj = document.getElementById('content_id_'+sno);
+		if(obj.style.display == "none"){
+			qna_chk.src = "./goods_qna_chk.php?mode=view&sno="+sno;
+		}else{
+			obj.style.display = "none";
+		}
+	}
+
+	function popup_pass(sno){
+		var win = window.open("goods_qna_pass.php?sno=" + sno,"qna_register","width=400,height=200");
+	}
+
+	function resizeFrame()
+	{
+		var oBody = document.body;
+		var oFrame = parent.document.getElementById("inqna");
+		var i_height = oBody.scrollHeight + (oFrame.offsetHeight-oFrame.clientHeight)+"px";
+		oFrame.style.height = i_height;
+
+		if ( IntervarId ) clearInterval( IntervarId );
+	}
+
+	function reszieFrameReset(){
+		var oBody = document.body;
+		var oFrame = parent.document.getElementById("inqna");
+			oFrame.style.height = defaultHeight+"px";
+	}
+
+	function viewQna(sno){
+		if($('#qnaContents_'+sno).css('display')=="none"){
+			$("[id^='qnaContents_']").hide();
+			reszieFrameReset();
+
+			$('#qnaContents_'+sno).show();
+			IntervarId = setInterval( 'resizeFrame()', 100 );
+		}else{
+			$("[id^='qnaContents_']").hide();
+			reszieFrameReset();
+		}		
+	}
+
+	$(document).ready(function(){ 
+		var defaultBody = document.body;
+		var defaultFrame = parent.document.getElementById("inqna");
+		defaultHeight = defaultBody.scrollHeight + (defaultFrame.offsetHeight-defaultFrame.clientHeight);
+	});
+	//-->
+</script>
+</head>
+<body onLoad="setTimeout('resizeFrame()',1)" >
+	<div id="shopping_view_detail_title" class="pb30 mt50">
+		<p class="shopping_view_title_name"><img src="../../images/shopplus/shopping_title_view_qa.jpg" alt="상세정보"/></p><!-- 2017-08-28 alt값 수정 -->
+	</div>
+
+	<div id="table_list_iframe"><!-- 2017-08-29 class 제거 --> 
+		<p class="epil_write">
+		<span class="black12"><strong>1</strong>/0페이지, 총 <span class="blue11_bold">0</span>건</span> <!-- 2017-08-29 class 수정/tag추가 -->
+		<a href="javascript:;" onClick="popup_register( 'add_qna', '1213142' )"><img src="../../images/shopplus/board_btn_qa_write.jpg" alt="상품문의"/></a></p>
+
+		<table class="tbl_type1" id="qnaTable" cellpadding="0" cellspacing="0"><!-- 2017-08-29 class 수정 -->
+			<colgroup>
+				<!-- 2017-08-29 col style 변경[s] -->
+				<col style="width:10%">
+				<col style="width:10%">
+				<col>
+				<col style="width:10%">
+				<col style="width:15%">
+				<!-- 2017-08-29 col style 변경[e] -->
+			</colgroup>
+			<thead>
+				<tr class="iframe_table_th">
+					<!-- 2017-08-29 class 삭제[s] -->
+					<th>번호</th>
+					<th>답변상태</th>
+					<th>문의 내용</th>
+					<th>작성자</th>
+					<th>작성일</th>
+					<!-- 2017-08-29 class 삭제[e] -->
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="txt_center">
+					<td>1</td>
+					<td><img src="../../images/shopplus/board_btn_receipt_ok.gif" alt="답변완료"></td><!-- 2017-08-28 alt값 수정 -->
+					<td class="txt_left"><a href="#" onclick="viewQna(0)">가격 관련하여 문의드립니다.</a></td>
+					<td>김은</td>
+					<td>2017-07-31</td>
+				</tr>
+				<tr id="qnaContents_0" style="display:table-row; padding:10px">
+					<td class="concierge_table_view" colspan="5">
+						<div id="table_list_concierge_view"><!-- 2017-08-29 inline style 삭제 -->
+							<dl class="shopping_view_review_q">
+								<dt><img src="http://lounge.shop.co.kr/shop/vipg/images/board/board_qa_question.gif" alt="질문사항 시작"> <span><p>제가 하는&nbsp;약국은 월 평균 처방전이 2000장 조금 안되는 곳인데요.</p><p>1500-2700 구간에 들어가기엔 비용이 많이 드네요.</p><p>처방전량을 고려해서 금액을 좀 조정받을 수 없을까요?</p></span></dt>
+								<dd><img src="http://lounge.shop.co.kr/shop/vipg/images/board/board_qa_answer.gif" alt="답변내용 시작"> <span>[VIPG]답변 드립니다<br><p>안녕하세요 VIPG 운영자 입니다.</p><p><br></p><p>해당 내용 업체 측으로 내용 전달 하였으며,</p><p><br></p><p>빠른 시일 내 답변&nbsp;드릴 수 있도록 하겠습니다.</p><p><br></p><p>감사합니다.</p></span></dd>
+							</dl>
+							<p></p>
+							<p></p>
+						</div><!-- table_list_concierge_view 끝 -->				
+						<div style="text-align:right; padding:0 0 10px 0;" class="p10">
+						</div>						
+					</td>
+				</tr>
+				<tr class="txt_center">
+					<td>2</td>
+					<td><img src="../../images/shopplus/board_btn_receipt.gif" alt="미답변"></td><!-- 2017-08-28 alt값 수정 -->
+					<td class="txt_left"><a href="#" onclick="viewQna(1)">삭제된 게시물 입니다.</a></td>
+					<td>장해수</td>
+					<td>2015-07-07</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- 2017-08-29 수정[s] -->
+		<div class="paging_nav">
+			 <a href="#" class="btn_prev">이전</a>
+			 <a href="#">1</a>
+			 <a href="#">2</a>
+			 <a href="#">3</a>
+			 <a href="#">4</a>
+			 <a href="#">5</a>
+			 <span>6</span>
+			 <a href="#">7</a>
+			 <a href="#">8</a>
+			 <a href="#">9</a>
+			 <a href="#">10</a>
+			 <a href="#" class="btn_next">다음</a>
+		 </div>
+		<!-- 2017-08-29 수정[e] -->
+	</div><!-- table_list_iframe 끝 -->
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html class="ie7 no-js" lang="ko-KR"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8 no-js" lang="ko-KR"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9 no-js" lang="ko-KR"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="ko"> <!--<![endif]-->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>문서 제목</title>
+	<link rel="Shortcut Icon" href="https://img.modetour.co.kr/Modetour.ico" />
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/Include/css/warp.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/Include/css/warp.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="https://www.modetour.com/Include/css/Modetour/Modetour.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/Include/css/Modetour/common/common.css" /> -->
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/Include/css/Modetour/common/GNB.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/Include/css/Modetour/common.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/include/css/modetour/jquery.mCustomScrollbar.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/include/css/modetour/header.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/Include/Css/Modetour/hotproduct/event.css" />
+	<script src="https://js.modetour.com/jquery/ver/1.8.3.min.js"></script>
+	<script src="https://js.modetour.com/jquery/plugin/easing.js"></script>
+	<script src="https://js.modetour.com/jquery/plugin/cycle2.js"></script>
+	<script src="https://js.modetour.com/jquery/plugin/cycle2.scrollVert.js"></script>
+	<script src="https://js.modetour.com/jquery/plugin/effect.js"></script>
+	<script src="https://js.modetour.com/jquery/plugin/mousewheel.js"></script>
+	<script src="https://js.modetour.com/jquery/plugin/Custom.scrollbar.js"></script>
+	<script src="https://js.modetour.com/jquery/plugin/selectbox.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://www.modetour.com/Event/Plan/Css/PC/promotion.css" />
+	<style type="text/css">
+		.blind {position:absolute; top:0; left:0; width:0; height:0; font-size:0; line-height:0; visibility:hidden; overflow:hidden;}
+		.follow_section.aside,
+		#divQuickTop{ display:none !important; }
+		#Containerwrap,
+		#EventwarpBody { margin:0 !important; width:100% !important; }
+		#EventwarpBody { margin:0 auto; }
+		#EventwarpBody .fullwidth .container { position:relative; margin:0 auto; width:1180px; height:auto;  }
+		#EventwarpBody .fullwidth .eventarea { position:relative; width:1180px; }
+		#EventwarpBody .fullwidth .temp { padding-top:30px; }
+	</style>
+</head>
+<body>
+	<div id="EventwarpBody">
+		<div class="promotion_container">
+			<div class="promotion-img">
+				<!-- [시작]: 여기서부터시작 -->			
+				<style type="text/css">
+					.event_wrap {position: relative; min-width:800px; margin:0 auto;}
+                    .event_wrap .main{position: relative; background:url("https://img.modetour.com/promotion/10912/bg_main.jpg") no-repeat center 0;}
+                    .tab_wrap{height: 130px;}
+                    .ev_tab {width:100%; background:url("https://img.modetour.com/promotion/10912/bg_tab.jpg") no-repeat center 0;}
+                    .ev_tab.fixed{position: fixed; top:0; z-index: 999;}
+                    .ev_tab .tab{width:800px; margin:0 auto;}
+                    .ev_tab .tab::after{display: block; content: ""; clear: both;}
+                    .ev_tab .tab>a{width: 266px; height: 130px; float: left;}
+                    .event_wrap .section{position: relative; background-repeat: no-repeat; background-position: center 0;}
+                    .event_wrap .cont1{ background-image: url("https://img.modetour.com/promotion/10912/bg_cont1.jpg");}
+                    .cont1 .cycle_area{position: absolute; top:206px; left: 50%; margin-left: -550px;}
+                    .cont1 .cycle>div{width:100%; background-repeat: no-repeat; background-position: center 0;}
+                    .cont1 .cycle_area .arr{position: absolute; top:238px; left: 50%; z-index: 120;}
+                    .cont1 .cycle_area .arr #prev{margin-left: -376px;}
+                    .cont1 .cycle_area .arr #next{margin-left: 653px;}
+                    .event_wrap .cont2{ background-image: url("https://img.modetour.com/promotion/10912/bg_cont2.jpg");}
+                    .event_wrap .cont3{ background-image: url("https://img.modetour.com/promotion/10912/bg_cont3.jpg");}
+                    .event_wrap .cont3 .movie{position: absolute; top:262px; left: 50%; margin-left: -382px; width:755px; height: 424px;}
+                    .event_wrap .cont3 .movie iframe{width: 100%; height: 100%;}
+                </style>
+                 <script type="text/javascript">
+					(function($){							
+						$(document).ready(function(){
+                            var tab=$('.ev_tab');
+                            var tab_link=tab.find('a');
+                            var section=$('.section');		
+                            var tabH= tab.outerHeight();
+                            var tabTop = tab.offset().top;
+
+                            tab_link.click(function(){
+                                var idx=$(this).index();
+                                $('html, body').stop().animate({
+                                    'scrollTop': section.eq(idx).offset().top -tabH
+                                }, 1000);													
+                                return false;
+                            });			
+
+                            function fix(){
+                                var scTop = $(window).scrollTop();
+                                if(scTop>974){							
+                                    tab.addClass('fixed');						
+                                }else{
+                                    tab.removeClass('fixed');
+                                }
+                            }
+
+                            function menuOn(){
+                                var scT=$(window).scrollTop();
+                                section.each(function(){
+                                    var idx=$(this).index()-2;
+                                    var offst=$(this).offset().top - tabH -15;
+                                    if(offst <= scT){
+                                        tab_link.each(function(i){
+                                            tab_link.eq(i).find("img").attr("src" , tab_link.eq(i).find("img").attr("src").replace("_on.jpg" , "_off.jpg"));    
+                                        });
+                                        tab_link.eq(idx).find("img").attr("src" , tab_link.eq(idx).find("img").attr("src").replace("_off.jpg" , "_on.jpg"));    
+                                    }
+                                    
+                                });
+                            }
+                            
+                            $(window).scroll(function(){
+                                fix();
+                                menuOn();
+                            });
+						
+						});
+					})(jQuery);
+				</script>
+				<div class="event_wrap">
+                    <div class="main">
+                        <img src="https://img.modetour.com/promotion/10912/img_main.jpg" alt="" usemap="#map">
+                        <map name="map" id="map">
+                            <area shape="rect" coords="336,880,574,960" href="/package/Item.aspx?PCode=&amp;Idx=518587" target="_blank" alt="">
+                        </map>
+                    </div>
+                    <div class="tab_wrap">
+                        <div class="ev_tab">
+                            <div class="tab">
+                                <a href="#" class="tab1"><img src="https://img.modetour.com/promotion/10912/tab1_on.jpg"></a>
+                                <a href="#" class="tab2"><img src="https://img.modetour.com/promotion/10912/tab2_off.jpg"></a>
+                                <a href="#" class="tab3"><img src="https://img.modetour.com/promotion/10912/tab3_off.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section cont1">
+                        <img src="https://img.modetour.com/promotion/10912/img_cont1.jpg" alt="">
+                        <div class="cycle_area">
+                            <div class="cycle cycle-slideshow"
+                            data-cycle-fx="fadeout" 
+                            data-cycle-timeout="3000"
+                            data-cycle-slides=">div"
+                            data-cycle-next="#next"
+                            data-cycle-prev="#prev">
+                                <div><img src="https://img.modetour.com/promotion/10912/img_rol1.jpg" alt=""></div>
+                                <div><img src="https://img.modetour.com/promotion/10912/img_rol2.jpg" alt=""></div>
+                                <div><img src="https://img.modetour.com/promotion/10912/img_rol3.jpg" alt=""></div>
+                                <div><img src="https://img.modetour.com/promotion/10912/img_rol4.jpg" alt=""></div>
+                                <div><img src="https://img.modetour.com/promotion/10912/img_rol5.jpg" alt=""></div>
+                                <div><img src="https://img.modetour.com/promotion/10912/img_rol6.jpg" alt=""></div>
+                            </div>
+                            <div class=arr>
+                                <a href=# id=prev><img src="https://img.modetour.com/promotion/10912/arr_prev.png" alt=""></a>
+                                <a href=# id=next><img src="https://img.modetour.com/promotion/10912/arr_next.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section cont2">
+                        <img src="https://img.modetour.com/promotion/10912/img_cont2.jpg" alt="">
+                    </div>
+                    <div class="section cont3">
+                        <img src="https://img.modetour.com/promotion/10912/img_cont3.jpg" alt="">
+                        <div class="movie">
+                            <iframe src="https://www.youtube.com/embed/dVQ3ndjRb8g?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+				</div><!-- event_wrap -->				               
+				<!-- [끝]: 여기까지 -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>

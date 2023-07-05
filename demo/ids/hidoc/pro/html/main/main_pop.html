@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Hidoc</title>
+	<meta content="width=1054" name="viewport" />
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+	<link rel="stylesheet" type="text/css" href="../../css/fullcalendar.css">
+	<script src="../../js/Chart.min.js"></script>
+	<script src="../../js/build/moment.min.js"></script>
+	<script src="../../js/build/html5shiv.min.js"></script>
+	<script src="../../js/build/amcharts.js"></script>
+	<script src="../../js/build/serial.js"></script>
+	<script src="../../js/ui.js"></script>
+
+</head>
+
+
+<body>
+	<div id="hidocIndex"><!-- 접근성 바로가기 -->
+		<a href="#hidocBody">본문 바로가기</a>
+		<a href="#hidocMenu">메뉴 바로가기</a>
+	</div>
+	<section id="wrapper">
+	<style>
+	canvas{
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	/* 2022-02-10 회원통합 레이어 팝업*/
+	.layer_dim{position: fixed; top:0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, .4); z-index: 9995;}
+	.layer_pop_wrap{position: absolute; top:150px; left: 50%; margin-left: -225px; z-index: 9999;}
+	.layer_pop_wrap .btn_area{height: 60px; display: flex;}
+	.layer_pop_wrap .btn_area button{width: 50%; height: 100%; display: inline-block; letter-spacing: -0.02em; color: #00212e; font-size: 18px; background-color: #dbe1e3; font-weight: bold; font-family:'NanumGothic';}
+	.layer_pop_wrap .btn_area .close{background-color: #00b5f1; color: #fff;}
+	</style>
+
+		<!-- header -->
+<header class="header">
+	<div class="inner">
+		<h1 class="logo"><a href="../../html/main/main.html"><img src="../../images/logo_hidocpro.png" alt="HiDocPro" /></a></h1>
+		<nav id="hidocMenu" class="navigation">
+			<strong class="screen_out">관련 서비스</strong>
+			<ul class="gnb">
+				<li class="active"><a href="../../html/health/qna_my_reg_list.html">건강Q&A</a>
+					<ul>
+						<li><a href="../../html/health/qna_my_reg_list.html">나에게 등록된 질문</a></li>
+						<li><a href="../../html/health/qna_answer_possible_list.html">답변 가능한 질문</a></li>
+						<li><a href="../../html/health/qna_collection_reply_list.html">내 답변 모음</a></li>
+					</ul>
+				</li>
+				<li><a href="../../html/news/my_write_list.html">건강이야기</a>
+					<ul>
+						<li><a href="../../html/news/my_write_list.html">내 글 모음</a></li>
+						<li><a href="../../html/news/my_write_column.html">칼럼 작성</a></li>
+					</ul>
+				</li>
+				<li><a href="../../html/mypage/hospital_info_view.html">마이페이지</a>
+					<ul>
+						<li><a href="../../html/mypage/hospital_info_view.html">근무처 정보</a></li>
+						<li><a href="../../html/mypage/doctor_info_view.html">프로필</a></li>
+						<li><a href="../../html/mypage/hidoc_point.html">하이닥포인트</a></li>
+					</ul>
+				</li>
+				<li><a href="../../html/customer/customer_notice.html">고객센터</a>
+					<ul>
+						<li><a href="../../html/customer/customer_notice.html">공지사항</a></li>
+						<li><a href="../../html/customer/customer_faq.html">자주 묻는 질문</a></li>
+						<li><a href="../../html/customer/customer_1vs1_list.html">내 문의 현황</a></li>
+						<li><a href="../../html/customer/customer_1vs1.html">1:1 문의</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div class="user_info">
+			<a href="../../html/mypage/doctor_info_view.html"><span class="user_name">김프로님</span></a>
+			<a href="../../html/member/login.html">로그아웃</a>
+		</div>	
+	</div>
+</header>
+<!-- header -->
+</div>
+
+		<!-- 2022-06-22 회원통합 레이어 팝업 [s]-->
+		<div class="layer_dim"></div>
+		<div class="layer_pop_wrap">
+			<img src="../../images/event/oneid_pop_pc1.jpg" usemap="#popMap">
+			<map id="popMap" name="popMap">
+				<area shape="rect" coords="0, 380, 224, 450" alt="오늘 다시 보지 않기" href="#">
+				<area shape="rect" coords="320, 380, 450, 450" alt="닫기" href="#">
+			</map>
+		</div>
+		<!-- //2022-06-22 회원통합 레이어 팝업 [e] -->
+		<section class="container layout_main service_pro_main"><!-- 클래스 명은 서비스별로 동적이여야 합니다. ex) service_서비스이름 -->
+			<section id="hidocBody" class="contents">
+				<h2 class="screen_out">하이닥PRO 대시보드</h2>
+				<div class="layout_type4">
+					<div class="container_inner main_top">
+						<div class="link_bnr">
+							<h3 class="screen_out">광고영역</h3>
+							<!-- 애드서버 영역 -->
+							<a href="#self"><img src="../../images/temp/banner_01.jpg" alt="의사정보 업데이트하고 200포인트 받으세요! 업데이트 해주시는 모든 선생님들께 200포인트가 지급됩니다." /></a>
+							<!-- //애드서버 영역 -->
+						</div>
+						<a href="#self" class="link_faq">
+							<h3 class="txt_tit">자주묻는 질문</h3>
+							<p>나에게 들어온 질문은 어떻게 확인하고 답변하나요? 비공개로도 답변할 수 있나요? 답변 안하면 어떻게 되나요?</p>
+						</a>
+					</div>
+				</div>
+				<div class="layout_type2">
+					<div class="container_inner">
+						<div class="main_dsbd">
+							<div class="box_type1 card_l">
+								<div class="dsbd_graph">
+									<h3>이번 주 답변</h3>
+									<div class="clear_g">
+										<a href="#self" class="txt_count">32</a>
+										<p class="txt_info">지난주 대비 <em>10건 감소</em></p>
+									</div>
+									<canvas id="chartdiv" style="width:270px;height:120px"></canvas>
+								</div>
+								<ul class="dsbd_count">
+									<a href="#self" class="count_item">
+										<h3>질문전체</h3>
+										<strong class="txt_count">2,540</strong>
+										<p class="txt_info">전문가의 답변을<br> 애타게 기다립니다.</p>
+										<span class="pro_comm ico_arrow"></span>
+									</a>
+									<a href="#self" class="count_item">
+										<h3>나에게 등록된 질문</h3>
+										<strong class="txt_count">5</strong>
+										<p class="txt_info"><span>김닥터</span>님의 답변을<br> 애타게 기다립니다.</p>
+										<span class="pro_comm ico_arrow"></span>
+									</a>
+									<a href="#self" class="count_item">
+										<h3>지금까지</h3>
+										<strong class="txt_count">36,142</strong>
+										<p class="txt_info">건의 하이닥 회원의 고민을<br> 해결해주셨습니다.</p><!-- 2019-03-13 텍스트 수정 -->
+										<span class="pro_comm ico_arrow"></span><!-- 2019-03-13 추가 -->
+									</a>
+								</ul>
+							</div>
+							<div class="box_type1 card_m dsbd_column">
+								<h3>하이닥 전문가 칼럼</h3>
+								<p class="txt_desc">
+									<em>글쓰기 한번으로 <br />더 많은 홍보 효과 누려보세요!</em>
+									하이닥PRO에서 작성한 칼럼은 하이닥 뿐만 아니라 <br />포털 사이트 네이버, 다음, ZUM에도 동시에 게재됩니다.
+								</p>
+								<a href="#self" class="btn_type2">의학기자 신청하기</a>
+							</div>
+							<div class="box_type1 card_s">
+								<h3>질문 전체</h3>
+								<strong class="txt_count">105 </strong><span class="txt_info">건의</span>
+								<p class="txt_info">질문이 전문가의 답변을 애타게 <br />기다립니다.</p>
+								<a href="#self" class="btn_type2">Q&A 활동 시작하기</a>
+							</div>
+							<div class="box_type1 card_s">
+								<h3>작성한 칼럼</h3>
+								<a href="#self" class="link_count"><strong class="txt_count">105</strong><span class="pro_comm ico_arrow"></span></a>
+								<div class="column_list">
+									<h4><span class="txt_tit">최근 칼럼</span></h4>
+									<a href="#self" class="link_tit">명절증후군을 효과적으로 극복하는 3가지 방법</a>
+									<div class="column_state">
+										<em class="badge_return">반려</em>
+										<em class="badge_end">승인</em>
+										<em class="badge_ing">검토중</em>
+										<span class="txt_date">2019-01-05</span><!-- 2019-02-28 추가 -->
+									</div>
+								</div>
+							</div>
+							<div class="box_type1 card_s">
+								<h3>작성한 칼럼</h3>
+								<a href="#self" class="link_count"><strong class="txt_count">0</strong><span class="pro_comm ico_arrow"></span></a>
+								<div class="column_list">
+									<h4><span class="txt_tit">하이닥의학기자로 활동해보세요!</span></h4>
+									<p>대한민국대표 건강 전문가 하이닥PRO에서 <br/>건강정보 알리고 내 이름도 홍보하세요.</p><!-- 2019-03-13 class 삭제 -->
+								</div>
+							</div>
+							<!-- 2020-05-20 :: add -->
+							<div class="box_type1 card_s">
+								<h3>마이 포인트</h3>
+								<a href="#self" class="link_count"><strong class="txt_point">9,504,999P</strong><span class="pro_comm ico_arrow"></span></a>
+								<div class="column_list">
+									<h4><span class="txt_tit">포인트를 쌓아보세요!</span></h4>
+									<p>활동한 만큼 포인트가 쌓이면,<br>포인트를 모아서 리워드를 선택할 수 있어요.</p>
+									<a href="#" class="view_point">&gt; 하이닥 포인트 알아보기</a>
+								</div>
+							</div>
+							<!-- // 2020-05-20 :: add -->
+						</div>
+					</div>
+				</div>
+				<div class="layout_type4">
+					<div class="container_inner main_cs">
+						<div class="main_notice">
+							<h2>공지사항</h2>
+							<ul class="list_notice">
+								<li><a href="#slef"><span class="txt_tit">[하이닥 의학기자] 칼럼 등록 시 [동의] 사항 추가 경품 당첨 변경사항 안내</span><span class="txt_date">2019.01.17</span></a></li>
+								<li><a href="#slef"><span class="txt_tit">[당첨자발표] 2017년 전문가 만족도조사 경품 당첨자 안내</span><span class="txt_date">2019.01.17</span></a></li>
+								<li><a href="#slef"><span class="txt_tit">네이버 지식iN 전문가 상담 서비스 변경사항 안내</span><span class="txt_date">2019.01.17</span></a></li>
+								<li><a href="#slef"><span class="txt_tit">[하이닥 의학기자] 칼럼 등록 시 [동의] 사항 추가 안내</span><span class="txt_date">2019.01.17</span></a></li>
+							</ul>
+							<a href="#self" class="btn_more">더보기<span class="pro_comm ico_arrow"></a>
+						</div>
+						<a href="#self" class="link_bnr"><img src="../../images/temp/bnr_reward01.gif" alt="활동할수록 모인다 하이닥리워드 기대해주세요." /></a>
+						<div class="info_cs">
+							<h2><span class="pro_comm ico_cs"></span>고객센터</h2>
+							<strong class="txt_tel">1577-0781</strong>
+							<p class="txt_info">평일 09:00 ~ 18:00<br> 월~금, 공휴일 제외</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+				var config = {
+					type: 'line',
+					data: {
+						labels : ['월', '화', '수', '목', '금', '토', '일'],
+						datasets: [{
+							backgroundColor: 'rgb(234, 242, 255)',
+							borderColor: 'rgb(43, 100, 239)',
+							data : [45, 25, 20, 10, 10, 10, 0],
+							fill: true,
+							pointRadius: '0',
+							lineTension : '0'
+						}]
+					},
+					options: {
+						responsive: false,
+						title: {
+							display: false,
+							text: '이번주 답변'
+						},
+						tooltips: {
+							mode: 'index',
+							intersect: false,
+						},
+						hover: {
+							mode: 'nearest',
+							intersect: true
+						},
+						scales: {
+							xAxes: [{
+								display: true,
+								scaleLabel: {
+									display: false
+								},
+								gridLines: {
+									color: "rgba(0, 0, 0, 0)",
+								}
+							}],
+							yAxes: [{
+								display: false
+							}]
+						},
+						 legend: {
+							display: false
+						}
+					}
+				};
+
+				window.onload = function() {
+					var ctx = document.getElementById('chartdiv').getContext('2d');
+					window.myLine = new Chart(ctx, config);
+				};
+
+				// 자주묻는 질문 글자수 체크 2019-03-13 추가
+				var linkFaqTxt = document.querySelector(".link_faq p");
+				if( linkFaqTxt.innerHTML.length >= 48) {
+					var faqTxtCrop = linkFaqTxt.innerHTML.substr(0,48)+"...";
+					linkFaqTxt.innerHTML = faqTxtCrop;
+				};
+			</script>
+		</section>
+		<a href="https://www.hidoc.co.kr" id="link_hidoc" target="_blank">하이닥 사이트로 이동</a>
+<button type="button" id="btn_top">상단으로 이동</button>
+<!-- footer -->
+<footer class="footer">	
+	<div class="footer_top">
+		<div class="inner">
+			<div class="navi">
+				<h2 class="screen_out">하이닥PRO 메뉴</h2>
+				<ul class="list_menu">
+					<li><a href="#self">건강Q&A</a>
+						<ul>
+							<li><a href="#self">나에게 등록된 질문</a></li>
+							<li><a href="#self">답변 가능한 질문</a></li>
+							<li><a href="#self">내 답변 모음</a></li>
+						</ul>
+					</li>
+					<li><a href="#self">건강이야기</a>
+						<ul>
+							<li><a href="#self">내 글 모음</a></li>
+							<li><a href="#self">칼럼 작성</a></li>
+						</ul>
+					</li>
+					<li><a href="#self">마이페이지</a>
+						<ul>
+							<li><a href="#self">근무처 정보</a></li>
+							<li><a href="#self">프로필</a></li>
+							<li><a href="#self">하이닥포인트</a></li>
+						</ul>
+					</li>
+					<li><a href="#self">고객센터</a>
+						<ul>
+							<li><a href="#self">공지사항</a></li>
+							<li><a href="#self">자주 묻는 질문</a></li>
+							<li><a href="#self">내 문의 현황</a></li>
+							<li><a href="#self">1:1 문의</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="inner">
+		<div class="copyright">
+			<h1 class="tit_logo"><a href="#none"><img src="../../images/logo_hidoc_foot.png" alt="HiDoc" /></a></h1>
+			<address>
+				(주)엠서클 06170 <span class="txt_bar"> | </span>서울특별시 강남구 봉은사로 114길 12(삼성동) <span class="txt_bar"> | </span> 대표번호: 1577-0781 <br />
+				발행인: 김명석 <span class="txt_bar"> | </span> 편집인: 문현주 <span class="txt_bar"> | </span> 청소년 보호 관리 책임자: 문희탁 <span class="txt_bar"> | </span> 
+				사업자등록번호: 120-86-10499 <br />인터넷신문 제호: 하이닥 <span class="txt_bar"> | </span> 정기간행물 등록번호: 서울 아 01224 <span class="txt_bar"> | </span> 등록일자: 2010.04.28 <span class="txt_bar"> | </span> 발행일자: 2019.01.24<br />
+				하이닥의 모든 콘텐츠(기사)는 저작권법의 보호를 받는 바, 무단 전제, 복사, 배포등을 금합니다.<br/>
+				<span class="txt_copyright">Copyright &copy; </span><a href="http://www.mcircle.co.kr/" target="_blank" class="link_mcircle">Mcircle Corp.</a><span class="txt_copyright"> All rights reserved.</span>
+			</address>
+		</div>
+		<div class="family_site">
+			<h2>하이닥PRO와 함께합니다</h2>
+			<ul class="list_site">
+				<li>
+					<a href="https://www.hidoc.co.kr" target="_blank"><span class="pro_comm ico_hidoc"></span>하이닥</a>
+				</li>
+				<li>
+					<a href="https://www.doctorville.co.kr" target="_blank"><span class="pro_comm ico_doctorville"></span>닥터빌</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!-- //footer -->
+
+<script type="text/javascript">
+// 스크롤Top
+document.getElementById("btn_top").onclick = function(){	
+	function scrollToTop(scrollDuration) {
+		var scrollStep = -window.pageYOffset / (scrollDuration / 15);
+		var scrollInterval = setInterval(function(){
+			if ( window.pageYOffset != 0 ) {
+				window.scrollBy( 0, scrollStep );
+			}
+			else clearInterval(scrollInterval); 
+		},15);
+	};
+	scrollToTop(300);
+}
+</script>
+
+	</section>
+	<script>
+
+	</script>
+</body>
+</html>

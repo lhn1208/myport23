@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>의사 소셜</title>
+	<link rel="shortcut icon" href="../../images/_favicon.ico" type="image/x-icon"><!-- 2016-01-11 파비콘 추가 -->
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<!-- <script src="../../js/jquery.placeholder.js"></script> -->
+	<!-- <script src="../../js/common.js"></script> -->
+	<script src="../../js/ui.js"></script>
+	<script src="../../js/jquery.bpopup.min.js"></script>
+	<script src="../../js/jquery.wmuSlider.min.js"></script>
+	<script src="../../js/jquery.tmpl.min.js"></script>
+	<script src="../../js/jquery.cycle2.min.js"></script>
+	 <!--2022 리뉴얼 js추가-->
+	 <script src="../../js/swiper.min.js"></script> 
+	 
+ <!--리뉴얼 css [s]-->
+	<!-- <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/drv_renewal_sub.css">
+     -->
+ <!--리뉴얼 css [e]-->	
+	<link rel="stylesheet" type="text/css" href="../../css/style_v3.css">
+	 <!--2022 리뉴얼 css추가-->
+	<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+
+<link rel="stylesheet" type="text/css" href="../../css/guide.css" />
+</head>
+<body>
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+	<a href="#gnb">메뉴 바로가기</a>
+</div>
+<div id="wrap" class="guide guide_view">
+	<!-- header [s] -->
+	<header id="header" class="header_wrap">
+	<div class="header_top">
+		<div class="header_inner">
+			<h1><a href="#none" class="ico_comm_v2 tit_drville">DrVille</a></h1>
+			<h2 class="tit_page">&nbsp;</h2>
+			<!-- 로그인시 노출 -->
+			<div class="member_wrap">
+				<ul class="tools">
+					<li class="direct_link">
+						<a href="#">닥터빌 님<span class="ico_comm_v2"></span></a>
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">마이페이지</a>
+								<a href="#">고객센터</a>
+								<a href="#">1:1문의하기</a>
+								<a href="#">공지사항</a> <!--2020-01-14 리스트 추가-->
+								<a href="#">로그아웃</a>
+							</div>
+						</div>
+					</li>
+					<li class="point">
+						<a href="#">1,321,800P</a>
+					</li>
+					<li class="notice new">
+						<a href="#"><span class="ico_comm_v2">알림</span></a>
+					</li>
+				</ul>
+			</div>
+			<!-- 비로그인시 노출 -->
+			<div class="btn_header">
+				<a href="#" class="btn_login">로그인</a>
+				<a href="#" class="btn_join">Mcircle 회원가입</a>
+			</div>
+		</div>
+	</div>
+	<div class="header_btm">
+		<div class="header_inner">
+			<a href="#gnb" class="btn_gnb"><span class="btn_open"><span class="ico_open">전체 메뉴 열기</span></span></a>
+			<div class="location_wrap">
+				<ul class="location tools">
+					<li class="location_home">
+						<a href="#">홈</a>
+					</li>
+					<li class="location_depth1">
+						<a href="#">CME<span class="ico_comm_v2"></span></a>
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">CME</a>
+								<a href="#">해외의학서비스</a>
+								<a href="#">진료가이드</a>
+								<a href="#">병원경영</a>
+								<a href="#">혜택</a>
+								<a href="#">커뮤니티</a>
+								<a href="#">브랜드존</a>
+								<a href="#">포인트샵</a>
+								<a href="#">라이프</a>
+								<a href="#">자료실</a>
+								<a href="#">오픈콜라보레이션</a>
+								<a href="#">학술지원사업</a>
+								<a href="#">경제적이익 지출보고서</a>
+							</div>
+						</div>
+					</li>
+					<li class="location_depth2">
+						<a href="#">라이브세미나<span class="ico_comm_v2"></span></a>
+						<div class="link_box">
+							<div class="link_list">
+								<a href="#">라이브세미나</a>
+								<a href="#">다시보기 VOD</a>
+								<a href="#">CME매거진</a>
+								<a href="#">진진영</a>
+								<a href="#">해외학회스케치</a>
+								<a href="#">해외학회스케치 참여신청</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="service_list">
+				<ul>
+					<li><a href="#">라이브세미나</a></li>
+					<li><a href="#">해외의학서비스</a></li>
+					<li><a href="#">드럭인포</a></li>
+					<li><a href="#">자유게시판</a></li>
+					<li><a href="#">포인트샵</a></li>
+					<li><a href="#">피부비만성형포럼</a></li>
+					<!-- 2020-06-24 추가 [s] -->
+					<li><a href="#">닥터빌 아카데미</a></li>
+					<!-- 2020-06-24 추가 [e] -->
+				</ul>
+			</div>
+			<a href="#search_all" class="search_open"><span class="ico_comm_v2">통합검색</span></a>
+		</div>
+		<section id="search_all" class="section_search">
+			<h3 class="screen_out">검색</h3>
+			<div class="header_inner">
+				<form class="form_search" role="search">
+					<fieldset>
+						<legend class="screen_out">검색</legend>
+						<div class="box_search">
+							<input type="text" class="tf_keyword" title="검색어 입력" placeholder="검색할 내용을 입력하세요.">
+							<button type="submit" class="btn_search"><span class="ico_comm_v2">통합검색</span></button>
+						</div>
+					</fieldset>
+				</form>
+				<a href="#search_all" class="search_close"><span class="ico_comm_v2">통합검색 닫기</span></a>
+			</div>
+		</section>
+		<div id="gnb" class="gnb">
+			<div class="gnb_top">
+				<div class="gnb_inner">
+					<!-- 2022-08-31 수정 -->
+					<span class="badge_new_service">Now</span>
+					<a href="#" class="tit_new_service">해외학회스케치</a> 
+
+				</div>
+			</div>
+			<div class="gnb_wrap"> <!--2019-11-18 태그 추가-->
+				<div class="gnb_inner">
+					<ul class="allmenu">
+						<li>
+							<strong>CME</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">세미나편성표<span class="ico_comm_v2 ico_point">point</span></a></li>
+								<li><a href="#">다시보기VOD</a></li>
+								<li><a href="#">닥터빌 ON<span class="ico_comm_v2 ico_play">point</span></a></li>
+								<li><a href="#">CME매거진</a></li>
+								<li><a href="#">진진영</a></li>
+								<li><a href="#">해외학회스케치</a></li>
+								<li><a href="#">해외학회스케치 참여신청</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><strong>해외의학서비스<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">의학논문검색</a></li>
+								<li><a href="#">UpToDate</a></li>
+								<li><a href="#">DynaMed Plus</a></li>
+								<li><a href="#">Smart Imagebase</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>진료가이드</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">드럭인포</a></li>
+								<li><a href="#">학회/연수일정</a></li>
+								<li><a href="#">해외컨퍼런스</a></li>
+								<li><a href="#">해외의학뉴스</a></li>
+								<li><a href="#">처방가이드</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>병원경영</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">병원성공경영가이드<span class="ico_new">NEW</span></a></li> <!--2020-01-28 메뉴 추가-->
+								<li><a href="#">보험인정기준</a></li>
+								<li><a href="#">심사청구</a></li>
+								<li><a href="#">보험심사 청구 컨설팅</a></li>
+								<li><a href="#">개원가 실전 진료 Tip</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>혜택</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">설문<span class="ico_comm_v2 ico_point">point</span></a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="allmenu">
+						<li>
+							<strong>커뮤니티</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">자유게시판</a></li>
+								<li><a href="#">닥라이브<span class="ico_comm_v2 ico_point">point</span></a></li>
+								<li><a href="#">스터디룸</a></li>
+								<li><a href="#">피부비만성형포럼</a></li>
+								<!-- 2020-06-24 추가 [s] -->
+								<li><a href="#">닥터빌 아카데미</a></li>
+								<!-- 2020-06-24 추가 [e] -->
+							</ul>
+						</li>
+						<li>
+							<a href="#"><strong>브랜드존<span class="ico_comm_v2 ico_point">point</span><span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">의약품</a></li>
+								<li><a href="#">의료기기</a></li>
+								<li><a href="#">최신진료장비</a></li> <!-- 2019-12-06 수정 -->
+								<li><a href="#">스페셜라이프</a></li>
+								<li><a href="#">홍보영상</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><strong>포인트샵<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">영화</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">호텔</a></li>
+								<li><a href="#">여행</a></li>
+								<li><a href="#">기프티콘</a></li>
+								<li><a href="#">하늘맛</a></li>
+								<li><a href="#">SERICEO</a></li>
+								<li><a href="#">JArt</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>라이프</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">여행</a></li>
+								<li><a href="#">식신</a></li>
+								<li><a href="#">트렌드</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>자료실</strong>
+							<ul class="menu_depth2">
+								<li><a href="#">서식</a></li>
+								<li><a href="#">케어노트</a></li>
+								<li><a href="#">카드뉴스</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="allmenu">
+						<li class="last_gnb_inner_li"> <!--2020-03-03 Class 추가-->
+							<a href="#"><strong>오픈콜라보레이션<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<li><a href="#">IIT 제안</a></li>
+								<li><a href="#">제품개발제안</a></li> <!--2020-01-28 new 뱃지 삭제-->
+							</ul>
+						</li>
+						<li class="support_link last_gnb_inner_li">  <!--2020-03-03 Class 추가-->
+							<a href="#"><strong>학술지원사업<span class="ico_arrow">&gt;</span></strong></a>
+							<ul class="menu_depth2">
+								<!-- 2021-06-28 수정 -->
+								<li><a href="#">해외학술대회 중계</a></li>
+								<li><a href="#">연구지원</a></li>
+								<li><a href="#">학술상</a></li>
+								<li class="seokchun"><a href="#">미래의료 연구지원</a></li>
+							</ul>
+						</li>
+						<li> <!--2020-04-14 수정 -->
+							<a href="#"><strong>경제적이익 지출보고서</strong></a>
+						</li>
+						<li class="last_gnb_inner_li"> <!--2020-04-14 Class 추가-->
+							<a href="#"><strong>자문참여</strong></a>
+						</li>
+						<li class="box">
+							<div class="channel">
+								<span>다양한 채널에서<br>닥터빌의 소식을 전해드립니다!</span>
+								<div class="icon_social">
+									<a href="https://www.youtube.com/channel/UCUOV1IWnqpB69okoWNKQeZQ" target="_blank" class="ico_comm_v2 ico_youtube">유투브</a>
+									<a href="http://pf.kakao.com/_zddxgd" target="_blank" class="ico_comm_v2 ico_kakao">카카오플러스친구</a>
+									<a href="https://www.facebook.com/%EB%8B%A5%ED%84%B0%EB%B9%8C-549462672108716/?ref=aymt_homepage_panel&amp;eid=ARCcUFij5OHuJmsLw9LuoiMg-2G-Eh48BWsaU_SSflZGsF0lu7DupXHoRDofX7sdUsEhMT95BrA64x6F" target="_blank" class="ico_comm_v2 ico_facebkook">페이스북</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="bg_gnb"></div>
+<script>
+	$(function () {
+		// ui 작업물 타이틀 확인용
+		var location = $("#container").data("location")
+			,title = $("#container").data("title");
+		$(".header_wrap .tit_page").text(title);
+		if(location === undefined){
+			$(".location_depth1 > a").html(title + '<span class="ico_comm_v2"></span>');
+			$(".location_depth2").hide();
+		}else{
+			$(".location_depth1 > a").html(location + '<span class="ico_comm_v2"></span>');
+			$(".location_depth2 > a").html(title + '<span class="ico_comm_v2"></span>');
+		}
+
+		// 헤더 고정
+		$(window).on("scroll",function(){
+			var headerTop = $(".header_top").height() + 1,
+				scrollTop = $(window).scrollTop();
+			if(scrollTop<headerTop){
+				$("#wrap").removeClass("fixed");
+			}else{
+				$("#wrap").addClass("fixed");
+			}
+		});
+
+		// 2019-12-06 추가
+		var gnbH = $("#gnb").height()
+			,headerH = $("#header").height(); //header 높이값
+
+		function gnbScroll(){
+			var winH = $(window).height(); // 브라우저 높이값
+			if(winH <= gnbH + headerH){
+				$(".header_wrap .gnb_wrap").scrollTop(0).css("height", winH - headerH - 20);
+			}else{
+				$(".header_wrap .gnb_wrap").scrollTop(0).css("height", gnbH - 47 );
+			}
+			//console.log('win' + winH , 'gnbH' + gnbH, 'headerH' + headerH);
+		}
+		// 2019-12-06
+
+
+
+		// 전체메뉴
+		$(".btn_gnb, .bg_gnb").on("click", function(e){
+			e.preventDefault();
+			if($(".header_wrap").hasClass("open")){
+				$("body").css("overflow-y","auto");
+				$(".header_wrap").removeClass("open");
+				$(".btn_gnb").removeClass("open");
+			}else{
+				gnbScroll();
+				$("body").css("overflow-y","hidden");
+				$(".header_wrap").addClass("open");
+				$(".btn_gnb").addClass("open");
+			}
+		});
+		$(window).on("resize",function(){
+			gnbScroll();
+		});
+
+
+		// 검색
+		$(".search_open, .search_close").on("click",function(e){
+			e.preventDefault();
+			var $search = $($(this).attr("href"));
+			$search.toggle();
+		});
+	});
+</script>
+	<!-- header [e] -->
+	<!-- container [s] -->
+	<main id="container" data-location="진료가이드" data-title="처방가이드">
+		<!-- contents [s] -->
+		<!-- 2017-04-10 수정 [s] -->
+		<h2 class="screen_out">처방가이드</h2>
+		<section class="contents">
+			<div class="view_head">
+				<div class="view_tit">
+					<span class="category">내분비계질환</span>
+					<strong>당뇨병 <span>Diabetes Mellitus</span></strong>
+				</div>
+				<div class="tail">
+					<div class="f_l">
+						<span><span class="ico_comm2 ico_2015"></span>2015처방가이드</span>
+						<span class="date">2015-06-30</span>
+						<span class="hits">조회수 <em>5</em></span> <!-- 2017-04-11 수정 -->
+					</div>
+					<div class="f_r">
+						<a href="#" class="btn_comm btn_print">인쇄</a>
+					</div>
+				</div>
+			<!-- 2017-04-10 수정 [e] -->
+				<div class="guide_list">
+					<div class="list_cont">
+						<span>목차</span>
+						<ul>
+							<li><a href="#">분류</a></li>
+							<li><a href="#">진단기준</a></li>
+							<li><a href="#">검사실 검사</a></li>
+							<li><a href="#">선별검사 기준</a></li>
+							<li><a href="#">선별검사</a></li>
+							<li><a href="#">혈당조절의 목표</a></li>
+							<li><a href="#">기타 관리 목표</a></li>
+							<li><a href="#">혈당조절의 모니터링 및 평가</a></li>
+							<li><a href="#">운동요법</a></li>
+							<li><a href="#">영양요법</a></li>
+							<li><a href="#">비인슐인 제제</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 수정영역 [e] -->
+			<article class="edit_view">
+				<h4>분류</h4>
+				<ul>
+					<li>제 1형 당뇨병 : 췌장 베타세포 파괴에 의한 인슐린 결핍으로 발생한 당뇨병, 면역 매개성, 특발성</li>
+					<li>제 2형 당뇨병 : 인슐린 분비 및 작용의 결함에 의해 발생한 당뇨병</li>
+					<li>기타 당뇨병 : 베타세포 기능의 유전적 결함, 인슐린 작용의 유전적 결함 (A형 인슐린저항성 등)</li>
+					<li>임신성 당뇨병 : 임신 중 진단된 당뇨병</li>
+				</ul>
+				<a href="#" class="btn_save"><span class="btn_comm btn_down"><img src="../../images/guide/print_bg_down.gif" alt="" class="print_bg"/></span>당뇨병분류.pdf</a> 
+				<h4>진단기준</h4>
+				<ul>
+					<li>당뇨병: 다음 중 하나라도 해당
+						<ol>
+							<li>① 공복 ≥126mg/dL</li>
+							<li>② 당뇨병의 증상(다뇨, 다음, 다식) 및 임의 혈당 ≥200mg/dL</li>
+						</ol>
+						<p class="txt01">* 명백하지 않는 고혈당 또는 스트레스 상태에서는 다른 날 재검하여 확인</p>
+					</li>
+				</ul>
+				<table class="type01">
+					<colgroup>
+						<col style="width:25%;">
+						<col style="width:25%;">
+						<col style="width:25%;">
+						<col style="width:25%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>&nbsp;</th>
+							<th>HbA1c</th>
+							<th>공복</th>
+							<th>식후 2시간</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>정상</td>
+							<td>≤ 5.6</td>
+							<td>≤ 99</td>
+							<td>≤ 139</td>
+						</tr>
+						<tr>
+							<td>당뇨병 전기</td>
+							<td>5.7 - 6.4<br>고위험군</td>
+							<td>100 - 125<br>공복혈당장애</td>
+							<td>140 - 199<br>내당능장애</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4>비인슐린 제제</h4>
+				<p>Biguanide</p>
+				<ul>
+					<li>작용기전 : 간 당생성 억제, 말초인슐린감수성 개선, 공복 혈당 및 인슐린 농도 감소, 지질개선</li>
+					<li>주의 : GFR &lt; 60mL/min, 고령, 감염, 탈수, 심폐부전, 간부전</li>
+				</ul>
+				<p class="img01"><img src=" http://placehold.it/615x200" alt=""></p>
+				<p class="img01"><img src=" http://placehold.it/350x150" alt=""></p>
+			</article>
+			<div class="info_view">
+				<p class="notice"><span class="ico_comm2"><img src="../../images/guide/print_bg_notice.gif" alt="" class="print_bg"/></span>본 콘텐츠의 저작권은 저자 또는 제공처에 있으며 이를 무단으로 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.<br>외부 저작권자가 제공한 콘텐츠는 닥터빌의 입장과 다를 수 있습니다.
+				</p>
+				<p class="btn"><!-- click -> class="on" 추가 -->
+					<a href="#" class="btn_like">
+						<span class="png_comm"></span>
+						<span class="txt_b">도움됐어요</span>
+						<em>32</em>
+					</a>
+					<a href="#" class="btn_favorite">
+						<span class="png_comm"></span>
+						<span class="txt_b">관심</span>
+						<em>32</em>
+					</a>
+				</p>
+			</div>
+			<!-- 2017-04-11 목록버튼 추가 [s] -->
+			<div class="btn_wrap">
+				<span class="f_r">
+					<a href="main.html" class="btn_list">목록</a>
+				</span>
+			</div>
+			<!-- 2017-04-11 목록버튼 추가 [e] -->
+		</section>
+		<!-- contents [e] -->
+
+		<!-- right_section [s] -->
+		<aside  id="rightAside" class="right_section">
+			<!-- aside_list slide [s] -->
+			<section class="box_aside box_aside_list slide_1"> <!-- 2017-04-20 두개이상일때 "slide_숫자" class 추가 -->
+				<h3 class="box_tit">관련 처방가이드</h3>
+				<ul class="aside_slide notail">
+					<li>
+						<div class="list_aside">
+							<!-- 제목 + 내용 -->
+							<a href="#none" class="list_cont type3">
+								<div class="">
+									<div class="list_tit">
+										<strong>고혈압</strong>
+									</div>
+									<div class="txt ellipse">1운동요법 -유산소 운동 : 걷기, 조깅, 자전거, 테니스, 배구, 에어로빅, 조깅, 자전거, 테니스, 배구, 에어로빅, 조깅, 자전거, 테니스, 배구, 에어로빅 </div>
+								</div>
+							</a>
+							<!-- 제목 + 썸네일 + 내용 class="img" 추가-->
+							<a href="#none" class="list_cont type3">
+								<figure><img src="http://placehold.it/52x52" alt="" /></figure>
+								<div class="img">
+									<div class="list_tit">
+										<strong>당뇨병</strong>
+									</div>
+									<div class="txt ellipse">분류 - 제 1형 당뇨병 일반인들이 흔히 사용하 당뇨병 일반인들이 흔히 사용하 당뇨병 일반인들이 흔히 사용하</div>
+								</div>
+							</a>
+							<!-- 제목 + 내용 -->
+							<a href="#none" class="list_cont type3">
+								<div class="">
+									<div class="list_tit">
+										<strong>위선암</strong>
+									</div>
+									<div class="txt ellipse">정의 : 소아당뇨병이란 질병명은 없으며 일반인들이 흔히 사용하지 소아당뇨병이란 질병명은 없으며 일반인들이 흔히 사용하지</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="list_aside">
+							<!-- 제목 + 내용 -->
+							<a href="#none" class="list_cont type3">
+								<div class="">
+									<div class="list_tit">
+										<strong>고혈압</strong>
+									</div>
+									<div class="txt ellipse">2운동요법 -유산소 운동 : 걷기, 조깅, 자전거, 테니스, 배구, 에어로빅, 조깅, 자전거, 테니스, 배구, 에어로빅, 조깅, 자전거, 테니스, 배구, 에어로빅 </div>
+								</div>
+							</a>
+							<!-- 제목 + 썸네일 + 내용 class="img" 추가-->
+							<a href="#none" class="list_cont type3">
+								<figure><img src="http://placehold.it/52x52" alt="" /></figure>
+								<div class="img">
+									<div class="list_tit">
+										<strong>당뇨병</strong>
+									</div>
+									<div class="txt ellipse">분류 - 제 1형 당뇨병 일반인들이 흔히 사용하 당뇨병 일반인들이 흔히 사용하 당뇨병 일반인들이 흔히 사용하</div>
+								</div>
+							</a>
+							<!-- 제목 + 내용 -->
+							<a href="#none" class="list_cont type3">
+								<div class="">
+									<div class="list_tit">
+										<strong>위선암</strong>
+									</div>
+									<div class="txt ellipse">정의 : 소아당뇨병이란 질병명은 없으며 일반인들이 흔히 사용하지 소아당뇨병이란 질병명은 없으며 일반인들이 흔히 사용하지</div>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+				<div class="control">
+					<a href="#" class="btn_comm prev">이전</a>
+					<a href="#" class="btn_comm next">다음</a>
+				</div>
+			</section>
+			<!-- aside_list [e] -->
+
+			<section class="box_aside box_aside_list one_link">
+				<h3 class="box_tit">보험안정기준</h3>
+				<div class="list_aside">
+					<strong>'편두통'</strong>
+					<a href="#none" class="link_txt">보험인정기준보기 &gt;</a>
+				</div>
+			</section>
+
+			<!-- aside_list slide [s] -->
+			<section class="box_aside box_aside_list slide_2"> <!-- 2017-04-20 두개이상일때 "slide_숫자" class 추가 -->
+				<h3 class="box_tit">관련 VOD</h3>
+				<ul class="aside_slide notail">
+					<li>
+						<div class="list_aside">
+							<!-- class="img" 추가 -->
+							<a href="#none" class="list_cont type2">
+								<figure><img src="http://placehold.it/52x52" alt="" /></figure>
+								<div class="img">
+									<div class="list_tit">
+										<span class="category">의료학술</span>
+										<strong>1심방세동 원인과 질환의 이해</strong>
+									</div>
+								</div>
+							</a>
+							<!-- class="img" 추가 -->
+							<a href="#none" class="list_cont type2">
+								<figure><img src="http://placehold.it/52x52" alt="" /></figure>
+								<div class="img">
+									<div class="list_tit">
+										<span class="category">의료학술</span>
+										<strong>심방세동 원인과 질환의 이해</strong>
+									</div>
+								</div>
+							</a>
+							<!-- class="img" 추가 -->
+							<a href="#none" class="list_cont type2">
+								<figure><img src="http://placehold.it/52x52" alt="" /></figure>
+								<div class="img">
+									<div class="list_tit">
+										<span class="category">의료학술</span>
+										<strong>심방세동 원인과 질환의 이해</strong>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="list_aside">
+							<!-- class="img" 추가 -->
+							<a href="#none" class="list_cont type2">
+								<figure><img src="http://placehold.it/52x52" alt="" /></figure>
+								<div class="img">
+									<div class="list_tit">
+										<span class="category">의료학술</span>
+										<strong>2심방세동 원인과 질환의 이해</strong>
+									</div>
+								</div>
+							</a>
+							<!-- class="img" 추가 -->
+							<a href="#none" class="list_cont type2">
+								<figure><img src="http://placehold.it/52x52" alt="" /></figure>
+								<div class="img">
+									<div class="list_tit">
+										<span class="category">의료학술</span>
+										<strong>심방세동 원인과 질환의 이해</strong>
+									</div>
+								</div>
+							</a>
+							<!-- class="img" 추가 -->
+							<a href="#none" class="list_cont type2">
+								<figure><img src="http://placehold.it/52x52" alt="" /></figure>
+								<div class="img">
+									<div class="list_tit">
+										<span class="category">의료학술</span>
+										<strong>심방세동 원인과 질환의 이해</strong>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+				<div class="control">
+					<a href="#" class="btn_comm prev">이전</a>
+					<a href="#" class="btn_comm next">다음</a>
+				</div>
+			</section>
+			<!-- aside_list [e] -->
+			<section class="box_aside box_ad">
+				<script type="text/javascript" src="http://white.contentsfeed.com/RealMedia/ads/adstream_jx.ads/www.doctorville.co.kr/doctorville_guide_RB@Right"></script>
+			</section>
+			<!-- aside_list [e] -->
+		</aside>
+		<!-- right_section [e] -->
+
+	</main>
+	<!-- 탑버튼 -->
+	<a href="#none" class="btn_comm btn_top" style="display: none">TOP</a>
+	<!-- container [e] -->
+	<!-- footer [s] 로그인  -->
+<footer id="footer" class="f_v3"> <!-- class="f_v3" 추가 -->
+	<h2 class="screen_out">회사 및 서비스 이용정보</h2>
+	<div class="info_foot top">
+		<div class="inner_info">
+			<strong class="tit_notice">공지사항<span class="txt_bar">|</span></strong>
+			<ul class="cycle-slideshow  list_notice" data-cycle-fx="scrollHorz" data-cycle-timeout="0" data-cycle-slides="> li" data-cycle-prev=".btn_noticePrev" data-cycle-next=".btn_noticeNext">
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관변경 1닥터빌 회원의 이용약관 변경 1닥터빌 회원의 이용약관 변경 1</a></li>
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관 변경 2</a></li>
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관 변경 3</a></li>
+				<li><a href="" class="link_footer">닥터빌 회원의 이용약관 변경 4</a></li>
+			</ul>
+			<div class="wrap_btn">
+				<a href="#none" class="btn_comm btn_noticePrev">이전</a>
+				<a href="#none" class="btn_comm btn_noticeNext">다음</a>
+			</div>
+			<!--<a href="#pop_footAllmenu" class="link_sitemap">서비스 전체보기<span class="ico_comm2"></span></a> 삭제-->
+		</div>
+	</div>
+	<div class="info_foot btm">
+		<a href="#none" class="ico_comm_v2 tit_doctor">닥터빌 홈 바로가기</a>
+		<div class="inner_info">
+			<ul class="list_footer">
+				<li><a href="#none" class="link_footer">회사소개</a><span class="txt_bar">|</span></li>
+				<li class=""><a href="#none" class="link_footer">고객센터</a><span class="txt_bar">|</span></li>
+				<li><a href="../intro/with.html" class="link_footer">제휴문의</a><span class="txt_bar">|</span></li>
+				<li><a href="../intro/policy.html" class="link_footer">이용약관</a><span class="txt_bar">|</span></li>
+				<!-- 2021-06-03 개인정보처리방침 볼드처리 -->
+				<li><a href="../intro/userinfo.html" class="link_footer"><strong>개인정보처리방침</strong></a><span class="txt_bar">|</span></li>
+				<li><a href="#none" class="link_footer link_tuor">서비스투어</a></li>
+			</ul>
+			<div class="wrap_family">
+				<a href="#none" class="btn_family">FAMILY SITE <span class="ico_comm">목록 펼치기</span></a>
+				<ul class="list_family">
+					<li><a href="" target="_blank">FAMILY SITE 1</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 2</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 3</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 4</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 5</a></li>
+					<li><a href="" target="_blank">FAMILY SITE 6</a></li>
+				</ul>
+			</div>
+		</div>
+		<address class="inner_info">
+			<div>서울 강남구 봉은사로 114길 12 (삼성동)<span class="txt_bar">|</span>대표자 : 김명석<span class="txt_bar">|</span>사업자번호 : 120-86-10499<br>
+			대표전화 : 1522-0209<span class="txt_bar">|</span>팩스 : 02-563-8399</div> <!-- 2019-02-12 팩스번호 변경 -->
+			<div class="icon_social">
+				<a href="https://www.youtube.com/channel/UCUOV1IWnqpB69okoWNKQeZQ" target="_blank" class="ico_comm_v2 ico_youtube">유투브</a>
+				<a href="http://pf.kakao.com/_zddxgd" target="_blank" class="ico_comm_v2 ico_kakao">카카오플러스친구</a>
+				<a href="https://www.facebook.com/%EB%8B%A5%ED%84%B0%EB%B9%8C-549462672108716/?ref=aymt_homepage_panel&eid=ARCcUFij5OHuJmsLw9LuoiMg-2G-Eh48BWsaU_SSflZGsF0lu7DupXHoRDofX7sdUsEhMT95BrA64x6F" target="_blank" class="ico_comm_v2 ico_facebkook">페이스북</a>
+			</div>
+		</address>
+		<div class="inner_info copy">
+			<span class="copyright">Copyright <em class="emph_addr">ⓒ Mcircle.</em> All right reserved</span>
+			<span class="copyright">VERIFIED & SECURED Site</span>
+		</div>
+	</div>
+</footer>
+<!-- footer [e] 로그인  -->
+
+<!-- footer [s] 프로필, 처방노트
+<footer id="footer" class="f_v3">
+	<h2 class="screen_out">회사 및 서비스 이용정보</h2>
+	<div class="info_foot btm">
+		<a href="#none" class="ico_comm_v2 tit_doctor">닥터빌 홈 바로가기</a>
+		<div class="inner_info copy">
+			<span class="copyright">Copyright <em class="emph_addr">ⓒ Mcircle.</em> All right reserved</span>
+			<span class="copyright">VERIFIED & SECURED Site</span>
+		</div>
+	</div>
+</footer>-->
+<!-- footer [e] 프로필, 처방노트 -->
+	<script>
+		$(".btn_family").bind("click", function(e){
+			var target = $('.list_family'),
+				 state = target.css('display');
+			if(state == "block"){
+				$(this).find(".ico_comm").text('목록 펼치기').removeClass('open');
+				target.hide();
+			}else{
+				$(this).find(".ico_comm").text('목록 접기').addClass('open');
+				target.show();
+			}
+			return false;
+		})
+		$(".list_family  a").bind("click",function(){
+			$(".btn_family").trigger('click');
+		})
+		$(".link_sitemap").on("click", function(e) {
+			e.preventDefault();
+			var link = $(this).attr("href");
+			console.log (link);
+			$("#pop_footAllmenu").toggle();
+		});
+	</script>
+
+
+	<!-- V5 이미지 확대보기 레이어 -->
+	<div class="imgLayer" style="display:none">
+		<span class="wrap_img"></span>
+		<button type="button" class="btn_comm btn_close" title="닫기">닫기</button>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	$(function() {
+		// 우측영역 두개이상 슬라이드 추가
+		var num = 0;
+		var speed = 200;
+		var max = $('.aside_slide li').length; 
+		$(".aside_slide").css("width",(213 *max) +"px");
+		$('.box_aside_list .prev').click(function() {
+			$(this).parents().siblings("ul").css('margin-left', '-213px');
+			$(this).parents().siblings("ul").prepend($(this).parent().siblings("ul").children("li:last").clone());
+			$(this).parents().siblings("ul").children("li:last").remove();
+			$(this).parents().siblings("ul").stop(true).animate({'marginLeft' : '0'}, speed, function() {
+				if(num == 0) { num = max; }
+			});
+			return false;
+		});
+		$('.box_aside_list.slide_1 .next').click(function() {
+			$('.slide_1 .aside_slide').animate({'marginLeft' : '-213px'}, speed, function() {
+				$('.slide_1 .aside_slide').append($('.slide_1 .aside_slide li:first').clone());
+				$('.slide_1 .aside_slide li:first').remove();
+				$('.slide_1 .aside_slide').css('margin-left', '0');
+			});
+			return false;
+		});
+		$('.box_aside_list.slide_2 .next').click(function() {
+			$('.slide_2 .aside_slide').animate({'marginLeft' : '-213px'}, speed, function() {
+				$('.slide_2 .aside_slide').append($('.slide_2 .aside_slide li:first').clone());
+				$('.slide_2 .aside_slide li:first').remove();
+				$('.slide_2 .aside_slide').css('margin-left', '0');
+			});
+			return false;
+		});
+
+
+		$(".btn_print").click(function(e) {
+			window.print();
+			e.preventDefault();
+		});
+		$(".info_view .btn a, .btn_favorite").click(function(e) {
+			$(this).toggleClass("on");
+			e.preventDefault();
+		});
+
+		/* V5 이미지 확대보기 [s] */
+		var _target = $(".imgLayer"),
+			_sImg = $(".edit_view img"),
+			_body = $("body");
+
+		_body.on('click',function(){
+			_target.trigger('click');
+		})
+		$.each(_sImg, function(i,val){
+			$(this).on('error', function (){
+				$(this).attr("src","http://placehold.it/350x150?text=이미지를+로드할+수+없습니다.")
+				$(this).data("load",false)
+			})
+		})
+		_sImg.on('click',function(e){
+			e.stopPropagation();
+			if($(this).data("load")==false) return;
+			var src = $(this).attr("src");
+			var img = document.createElement('img');
+			img.src = src;
+			img.width =  (img.width > 1024)?1024:img.width;
+			_target.css("width",img.width)
+			_target.find($(".wrap_img")).html('').append(img);
+			socialUI.openLayer({"lyName" :_target});
+		})
+		_target.on('click',function(e){
+			e.stopPropagation();
+			_target.hide()
+			_target.find($(".wrap_img")).html('');
+		})
+		/* V5 이미지 확대보기 [e] */
+
+		/* 탑버튼 시작 [s] */
+		$(window).on('scroll',function(){
+			var scrollTop = $(window).scrollTop(),
+				maxY = $(document).height() - $(window).height()- $("#footer").height();
+			if(scrollTop == 0) {
+				$('.btn_top').fadeOut();
+			}else {
+				$('.btn_top').fadeIn();
+			}
+			if (scrollTop > maxY) {
+				$('.btn_top').css({"bottom": $("#footer").height()+10});
+			}else {
+				$('.btn_top').css("bottom", 10);
+			}
+		})
+		$('.btn_top').on('click', function (e) {
+			$("body, html").animate({'scrollTop' : 0},300);
+			return false;
+		})
+		/* 탑버튼 수정 [e] */
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<div class="quick_menu">
+	<div class="quick_menu_inner">
+		<strong>의약품</strong>
+		<p class="txt_quick txt_bold">보덕메디팜</p>
+	</div>
+	<div class="quick_menu_inner">
+		<strong>부외품</strong>
+		<p class="txt_quick txt_bold">이팜</p>
+	</div>
+	<div class="quick_menu_inner">
+		<strong>나의 혜택</strong>
+		<p class="txt_quick">예치금<br><span class="txt_num">2,154,351</span>원</p>
+		<p class="txt_quick">마일리지<br><span class="txt_num">2,154,351</span>원</p>
+	</div>
+	<a href="#" class="btn_top2"><span class="btn_comm">TOP</span></a><!-- 2018-12-11 수정 -->
+</div>
+<script type="text/javascript">
+	$(function () {
+		var floatPosition = parseInt($(".quick_menu").css('top'));
+		$(window).scroll(function() {
+			var scrollTop = $(window).scrollTop();
+			var newPosition = scrollTop + floatPosition + "px";
+			$(".quick_menu").stop().animate({
+				"top" : newPosition
+			}, 500)
+		});
+		/* 2018-12-11 수정 */
+		$(".quick_menu .btn_top2").on("click", function(e){
+			e.preventDefault();
+			$("html, body").animate({scrollTop: 0});
+		});
+	});
+</script>

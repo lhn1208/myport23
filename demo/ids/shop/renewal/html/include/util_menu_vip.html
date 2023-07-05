@@ -1,0 +1,161 @@
+<div class="util_menu">
+	<ul>
+		<li><a href="#">로그아웃</a></li>
+		<li><a href="#">장바구니</a></li>
+		<li><a href="#">주문내역/배송현황</a></li>
+		<li><a href="#" class="btn_setup">접속 페이지설정</a></li>
+		<li class="util_pop"><a href="#" class="btn_prodview">담은상품 보기 <span class="btn_comm btn_open">열기</span></a></li>
+		<li><a href="#" class="btn_shop">더샵 바로가기 <span class="btn_comm btn_go"></span></a></li>
+	</ul>
+</div>
+
+<!-- 접속 페이지 설정 [s] -->
+<div id="popPageSetup" style="display:none;">
+	<div class="pop_layer pop_type1" style="width:360px;">
+		<strong class="tit_popup">환경설정</strong>
+		<div class="pop_wrap">
+			<strong class="tit_setup">더샵 접속 시 전용몰로 바로 접속하기</strong>
+			<div class="box_radio">
+				<div class="radio_g">
+					<input type="radio" name="pageSetup" id="pageSetup" class="inp_radio" checked="checked">
+					<label for="pageSetup" class="lab_radio">
+						<span class="ico_comm ico_radio"></span>
+						<span class="txt_lab">예</span>
+					</label>
+				</div>
+				<div class="radio_g">
+					<input type="radio" name="pageSetup" id="pageSetup2" class="inp_radio">
+					<label for="pageSetup2" class="lab_radio">
+						<span class="ico_comm ico_radio"></span>
+						<span class="txt_lab">아니오</span>
+					</label>
+				</div>
+			</div>
+			<div class="btn_wrap">
+				<button type="button" class="btn_type1">설정 저장</button>
+				<button type="button" class="btn_type2 btn_cancel">닫기</button>
+			</div>
+		</div>
+		<button type="button" class="btn_comm btn_close">닫기</button>
+	</div>
+</div>
+<!-- 접속 페이지 설정 [e] -->
+
+<!-- 담은상품 보기 [s] -->
+<div id="popProdView" style="display:none;">
+	<div class="pop_layer pop_type1" style="width:950px;">
+		<strong class="tit_popup">담은상품 보기 <span class="txt_tit">(협력 도매상 담은 품목을 미리 볼 수 있습니다.)</span></strong>
+		<div class="pop_wrap">
+			<div class="tbl_scroll_wrap">
+				<div>
+					<table class="tbl_type1">
+						<caption>담은상품 상세 안내</caption>
+						<colgroup>
+							<col style="width:110px">
+							<col style="width:120px">
+							<col style="width:270px">
+							<col style="width:90px">
+							<col style="width:115px">
+							<col style="width:70px">
+							<col style="width:135px">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">구분</th>
+								<th scope="col">공급사</th>
+								<th scope="col">상품명</th>
+								<th scope="col">단위</th>
+								<th scope="col">제조사</th>
+								<th scope="col">수량</th>
+								<th scope="col">금액</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>부외품업체</td>
+								<td>(주)한국얀센</td>
+								<td class="txt_left">울트라셋이알서방정_(1정)/1</td>
+								<td>1EA</td>
+								<td>(주)한국얀센</td>
+								<td class="txt_num">100</td>
+								<td><strong class="txt_num">39,999</strong>원</td>
+							</tr>
+							<tr>
+								<td>부외품업체</td>
+								<td>한국희귀의약품센터</td>
+								<td class="txt_left">5-에이치티피캅셀(5-하이드록시트립토판(옥시트립탄))_(0.1g/1캡슐)/1</td>
+								<td>1000T</td>
+								<td>한국희귀의약품센터</td>
+								<td class="txt_num">99,999</td>
+								<td><strong class="txt_num">9,999,999</strong>원</td>
+							</tr>
+							<tr>
+								<td>부외품업체</td>
+								<td>(주)비티오제약</td>
+								<td class="txt_left">메자이캡슐(상황균사체엑스)/1</td>
+								<td>1EA</td>
+								<td>(주)비티오제약</td>
+								<td class="txt_num">10</td>
+								<td><strong class="txt_num">9,999</strong>원</td>
+							</tr>
+							<tr>
+								<td>부외품업체</td>
+								<td>(주)비티오제약</td>
+								<td class="txt_left">메자이캡슐(상황균사체엑스)/1</td>
+								<td>1EA</td>
+								<td>(주)비티오제약</td>
+								<td class="txt_num">10</td>
+								<td><strong class="txt_num">9,999</strong>원</td>
+							</tr>
+							<tr>
+								<td>부외품업체</td>
+								<td>(주)비티오제약</td>
+								<td class="txt_left">메자이캡슐(상황균사체엑스)/1</td>
+								<td>1EA</td>
+								<td>(주)비티오제약</td>
+								<td class="txt_num">10</td>
+								<td><strong class="txt_num">9,999</strong>원</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="box_result">
+				<div class="result_tit">
+					<strong class="tit_sum">품목 <span class="txt_price"><span class="txt_num">5</span>개</span></strong>
+					<strong class="tit_sum">주문금액 <span class="txt_price"><span class="txt_num">11,265,000</span>원</span></strong>
+					<span class="ico_comm ico_minus">-</span>
+					<strong class="tit_sum">비용할인 <span class="txt_price"><span class="txt_num">5,000</span>원</span></strong>
+					<span class="ico_comm ico_equals">=</span>
+					<strong class="tit_total">총 합계 <span class="txt_price"><span class="txt_num">11,260,000</span>원</span></strong>
+				</div>
+				<div class="result_btn">
+					<a href="#none" class="btn_type1">장바구니 바로가기</a>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="btn_comm btn_close">닫기</button>
+	</div>
+</div>
+<!-- 담은상품 보기 [e] -->
+
+<script type="text/javascript">
+	$(function () {
+		// 모달 레이어
+		$('body').on("click", ".util_menu .btn_prodview", function() {
+			var modalLayer = null;
+			modalLayer = shopUI.modalLayer($("#popProdView"), {
+				closeClass: "btn_close"
+			});
+		});
+		$('body').on("click", ".util_menu .btn_setup", function() {
+			var modalLayer = null;
+			modalLayer = shopUI.modalLayer($("#popPageSetup"), {
+				closeClass: "btn_close"
+			});
+			$("body").on("click", ".btn_cancel", function() {
+				$(".btn_close").click();
+			});
+		});
+	})
+</script>

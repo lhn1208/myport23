@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리멤버드</title>
+    <script src="../js/jquery-3.6.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <!--gnb-->
+    <div id="remember_gnb" class="remember_gnb sub_gnb">
+        <div class="gnb_inner">
+          <h1 class="logo"><a href="#">리멤버드</a></h1>
+          <nav class="gnb">
+            <ul>
+              <li><a href="#">리멤버드</a></li>
+              <li><a href="#">서비스소개</a></li>
+              <li><a href="#">부고</a></li>
+              <li><a href="#">추모관</a></li>
+              <li><a href="#">조문보</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+          <div class="right">
+            <div class="gnb_search_form">
+              <form>
+                <fieldset>
+                  <legend>고인명검색</legend>
+                  <input type="text" class="search_input" placeholder="고인명검색">
+                </fieldset>
+                <a href="all_search.html" class="ico_sch">검색</a>
+              </form>
+            </div>
+            <div class="log_info">
+              <!-- <a href="pop_login.html" target="_blank">로그인</a> -->
+             <a href="#">로그아웃</a>
+           </div>     
+            <a href="#" class="member">마이페이지</a>                 
+            <a href="#" class="menu">메뉴</a>
+          </div>
+        </div>
+    </div>
+    <!--//gnb-->    
+    <div class="content_wrap bg_type">
+        <div class="mouming_content">
+            <h2 class="content_title">디지털<span class="block">화환</span></h2>
+            <div class="mouming_inner">
+                <div class="text_top">디지털화환의 모든 금액은 상주에게 전해지며<br />봉사단체 또는 장례비용, 온라인제사, 고인의 자녀 등에 쓰입니다.</div>
+                <div class="list_content_area">
+                    <ul class="content_list">
+                        <li class="type01 on">
+                            <div class="img_icon"><img src="../images/list_img_01.png" alt="" /></div>
+                            <p class="text_01">일반</p>
+                            <p class="text_02">50,000원</p>
+                            <div class="bottom_position"><a href="#" class="sell_btn">구매하기</a></div>
+                        </li>
+                        <li class="type02">
+                            <div class="img_icon"><img src="../images/list_img_02.png" alt="" /></div>
+                            <p class="text_01">고급</p>
+                            <p class="text_02">70,000원</p>
+                            <div class="bottom_position"><a href="#" class="sell_btn">구매하기</a></div>
+                        </li>
+                        <li class="type03">
+                            <div class="img_icon"><img src="../images/list_img_03.png" alt="" /></div>
+                            <p class="text_01">프리미엄</p>
+                            <p class="text_02">100,000원</p>
+                            <div class="bottom_position"><a href="#" class="sell_btn">구매하기</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list_input_area">
+                    <h3>구매자 정보 입력</h3>
+                    <div class="register">
+                        <select class="select">
+                            <option value="">회사명/모임명</option>
+                            <option value="옵션2">옵션1</option>
+                            <option value="옵션2">옵션2</option>
+                            <option value="옵션3">옵션3</option>
+                            <option value="옵션4">옵션4</option>
+                        </select>
+                        <div class="input_area">
+                            <input type="text" class="w_100" placeholder="남겨주실 문구 선택">
+                        </div>
+                    </div>
+                </div>
+                <div class="list_input_area">
+                    <h3>최종결제금액</h3>
+                    <div class="price_box">
+                        <h4>주문상품</h4>
+                        <div class="text_box type01">
+                            <span class="text"><strong>일반</strong>타입</span>
+                            <span class="price_num">50,000<strong>원</strong></span>
+                        </div>
+                        <div class="text_box type02">
+                            <span class="text"><strong>고급</strong>타입</span>
+                            <span class="price_num">70,000<strong>원</strong></span>
+                        </div>
+                        <div class="text_box type03">
+                            <span class="text">총 결제금액</span>
+                            <span class="price_num">120,000<strong>원</strong></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_input_area">
+                    <h3>결제 수단</h3>
+                    <div class="measure_box">
+                        <span><input type="radio" name="radio-group" id="test1"><label for="test1">신용카드</label></span>
+                        <span><input type="radio" name="radio-group" id="test2"><label for="test2">무통장</label></span>
+                        <span><input type="radio" name="radio-group" id="test3"><label for="test3">간편결제</label></span>
+                    </div>
+                    <div class="text_area_box">
+                        <div class="check_item">
+                            <input type="checkbox" name="" class="check agree_chk" id="agree_chk1">
+                            <label for="agree_chk1">결제 진행 필수 동의</label>
+                        </div>
+                        <div class="access_box">
+                            <span class="text">전자금융거래 이용약관</span>
+                            <span class="view_btn"><a href="#">내용보기</a></span>
+                        </div>
+                        <div class="access_box">
+                            <span class="text">개인정보 수집 및 이용안내</span>
+                            <span class="view_btn"><a href="#">내용보기</a></span>
+                        </div>
+                        <div class="access_box">
+                            <span class="text">개인정보 제3자 제공/위탁안내</span>
+                            <span class="view_btn"><a href="#">내용보기</a></span>
+                        </div>
+                    </div>
+                    <div class="text_area_box">
+                        <div class="check_item">
+                            <input type="checkbox" name="" class="check agree_chk" id="agree_chk2">
+                            <label for="agree_chk2" class="text">주문할 상품의 상품명, 상품가격, 주문처리목적을 확인하였습니다. (전자상거래법 제 0조 0항)</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bottom_btn_area"><a href="#" class="sell_btn">결제하기</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!--right banner-->
+    <div class="right_banner">
+      <a href="#">문의</a>
+      <a href="#" class="kakao">KAKAO</a>
+    </div>
+    <!--//right banner-->
+    <!--footer-->
+    <footer id="remember_footer" class="remember_footer">
+      <div class="footer_inner">
+        <ul class="term_list">
+          <li><a href="#">이용약관</a><i class="bar"></i></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+        <div class="compay_info">
+          <address>서울시 강남구 봉은사로 114길 12, 7층</address> <i class="bar"></i>대표 서종원 <span class="mb_block">사업자 등록번호 120-86-10499</span> <i class="bar none_type"></i><span class="mb_block">통신판매업신고 2009-서울강남-00290 </span>
+          <span class="customer">고객센터<i class="bar mb_none"></i>tel.02-550-8700 <span class="fax">fax.02-563-8398</span><i class="bar mb_none"></i> <span class="email">Email.tslee0710@mcircle.biz</span><i class="bar none_type"></i><span class="mb_block">상담가능시간  오전 9:00 - 오후 6:00</span></span>
+        </div>
+        <span class="footer_logo"><img src="../images/footer_logo.png"></span>
+        <div class="ico_wrap">
+          <a href="#"><img src="../images/footer_ico1.png"></a>
+          <a href="#"><img src="../images/footer_ico2.png"></a>
+        </div>
+      </div>     
+    </footer>
+    <!--//footer-->
+  
+</body>
+</html>

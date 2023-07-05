@@ -1,0 +1,79 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+    <!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<div class="cont_head">
+					<h2 class="tit_cate">환불 정보 입력</h2>
+				</div>
+				
+                <div class="cont_my_v2 v3 cancel_info">
+                    <div class="box_desc">
+						<p>환불 받을 은행 정보를 입력해주세요.</p>
+					</div>
+					<div class="box_type1">
+						<form action="" class="refund_form">
+                            <table class="tbl_type1 v2">
+                                <caption class="screen_out">무통장 입금 환불 폼</caption>
+                                <colgroup>
+                                    <col style="width:110px">
+                                </colgroup>
+                                <thead class="price">
+                                    <tr>
+                                        <th scope="row">환불 예정 금액</th>
+                                        <td><span class="txt_price"><strong class="txt_num">20,000</strong>원</span></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    <tr>
+                                        <th scope="row"><label for="accountBank">은행선택</label></th>
+                                        <td>
+                                            <div class="select_type1 select_w100">
+                                                <select class="list_select" id="user_years">
+                                                    <option value="" selected hidden disabled>선택하세요.</option>
+                                                    <option value="">국민은행</option>
+                                                    <option value="">우리은행</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="accountNumber">계좌번호</label></th>
+                                        <td>
+                                            <div class="frame_inp">
+                                                <input type="text" id="accountNumber" class="inp_oshop" placeholder="-를 제외하고 입력해주세요.">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="accountName">예금주명</label></th>
+                                        <td>
+                                            <div class="frame_inp">
+                                                <input type="text" id="accountName" class="inp_oshop" placeholder="예금주명을 입력해주세요.">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul class="orange">
+                                <li>* 입력한 정보는 환불에만 사용됩니다.</li>
+                                <li>* 주문자와 예금주는 동일해야 환불 신청이 가능합니다.</li>
+                                <li>* 환불예정금액은 쿠폰, 포인트 사용액등을 제외한 실 입금 금액입니다.</li>
+                            </ul>
+                        </form>
+					</div>
+					<div class="btns_full">
+						<button type="button" class="btn_type1">뒤로가기</button>
+						<button type="submit" class="btn_type2">주문 취소</button>
+					</div>
+                </div>
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a>
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+</body>
+</html>

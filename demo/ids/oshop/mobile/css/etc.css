@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+.form_layout {padding:20px 15px 45px 15px;background:#fff;min-height:100%;position:relative;box-sizing:border-box;overflow:hidden;}
+
+.form_layout.healience .form_header .title {color:#8b7052;border-color:#8b7052;}
+.form_layout.healience em,
+.form_layout.healience .em {color:#8b7052 !important;}
+.form_layout.healience .message {color:#8b7052;}
+.form_layout.healience .field input[type="checkbox"]:checked + .mark {background:#fff;border-color:#8b7052 !important;}
+.form_layout.healience .field input[type="checkbox"]:checked + .mark:after {border-color:#8b7052;}
+.form_layout.healience .btn_type2 {background-color:#8b7052;}
+
+.form_layout .title {font-weight:700;font-size:13px;word-break: keep-all;margin-top:1.25em;margin-bottom:0.75em;letter-spacing:-0.05em;}
+.form_layout .title:first-child,
+.form_layout legend + .title {margin-top:0;}
+.form_layout fieldset {margin:1.5em 0;}
+.form_layout .message {text-indent:-1.15em;padding-left:1.15em;margin:0.75em 0;font-size:11px;letter-spacing:-0.05em;word-break: keep-all;line-height:1.552em !important;}
+.form_layout .message.em {color:#ef4545 !important;}
+.form_layout .message.sub {font-size:11px;text-indent:-0.75em;padding-left:0.75em;color:#525252;}
+.form_layout .message.sub.dimmed {color:#b1b1b1;}
+.form_layout .frame_inp {margin:0;border-radius: 0.25em;}
+.form_layout .frame_inp .inp_oshop {letter-spacing:-0.05em;font-size:12px;}
+.form_layout .field_row {display:flex;width:100%;}
+.form_layout .message + .field_row,
+.form_layout .field_row + .field_row {margin-top:0.75em;}
+.form_layout .field_row > div:first-child {flex:1 0 auto;margin-right:5px;}
+.form_layout .field_row .frame_inp + .frame_inp {margin-top:0.5em;}
+.form_layout .field_row .column {display:flex;flex-direction: column;justify-content: space-between}
+.form_layout .field_row .btn {flex:0 0 auto;width:95px;padding:0 5px;max-width:95px;word-break: keep-all;border-radius:0.25em;letter-spacing:-0.05em;line-height:1.324em;}
+.form_layout .field {font-size:12px;}
+.form_layout .field input[type="checkbox"] + .mark {width:24px;height:24px;margin-top:-2px;border-radius: 50%;}
+.form_layout .field input[type="checkbox"]:checked + .mark {background:#fff;border-color:#000 !important;}
+.form_layout .field input[type="checkbox"]:checked + .mark:after {border-color:#000;}
+.form_layout .form_header {text-align:center;}
+.form_layout .form_header .title {padding-bottom:0.75em;font-size:16px;font-weight:700;letter-spacing:-0.02em;border-bottom:1px solid #8b7052;}
+.form_layout .form_header .desc {padding:0 15px;font-size:12px;word-break: keep-all;}
+.form_layout .agreement .field_row {margin-top:1.25em;}
+.form_layout .agreement .desc {font-size:12px;}
+.form_layout .agreement_box {padding:15px 13px;margin-bottom:1.75em;border:1px solid #e5e5e5;}
+.form_layout .agreement_box p {margin-bottom:1em;font-size:12px;word-break: keep-all;line-height:1.353em;}
+.form_layout .agreement_box p:last-child {margin-bottom:0;}
+.form_layout .agreement_box table {margin:1em 0;border-top:1px solid #8b7052;text-align:left;color:#222;}
+.form_layout .agreement_box table tr > * {padding:10px;line-height:1.353em;font-size:12px;border-bottom:1px solid #c5c5c5;}
+.form_layout .agreement_box table th {border-right:1px solid #c5c5c5;background:#fbf3e9;font-weight:normal;color:#8b7052;}
+.form_layout .agreement_box .message {color:#767676;}
+.form_layout .button_wrap {display:flex;margin:0 -15px;position:absolute;left:0;right:0;bottom:0;}
+.form_layout .button_wrap button {width:50%;height:43px;margin-top:0.5em;display:block;color:#fff;font-weight:700;font-size:13px;background:#aaa;}
+.form_layout .button_wrap .submit {background:#8b7052;}
+.form_layout .btn_expanded {width:100%;margin-top:0.75em;border-radius:0.25em;}

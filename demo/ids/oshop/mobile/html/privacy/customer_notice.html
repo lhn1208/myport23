@@ -1,0 +1,108 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+        <!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" --> <!-- 2017-03-21 수정 -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<div class="cont_head"><!-- 2017-03-21 class 수정 -->
+					<h2 class="screen_out">고객센터</h2>
+					<h3 class="tit_cate">공지사항</h3>
+					<!-- 2017-03-21 삭제 <a href="#none" class="link_prev"><span class="ico_oshop ico_prev">이전</span></a> -->
+				</div>
+				<div class="cont_customer cont_notice">
+					<!-- 2017-04-13 삭제
+					<ul class="list_location">
+						<li>고객센터<span class="ico_oshop"></span></li>
+						<li>공지사항</li>
+					</ul> -->
+					<div class="head_customer">
+						<form>
+							<fieldset>
+								<legend class="screen_out">검색 폼</legend>
+								<div class="select_type1">
+									<select class="list_select">
+										<option selected="selected">제목</option>
+										<option>option1</option>
+										<option>option2</option>
+									</select>
+								</div>
+								<div class="box_search">
+									<div class="frame_search">
+										<input type="text" class="inp_search">
+										<button type="submit" class="btn_type3 btn_search">검색</button><!-- 2017-04-13 class 추가 -->
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+
+					<div class="body_customer">
+						<strong class="screen_out">공지사항 리스트</strong>
+						<ul class="list_dot_type2">
+							<li><a href="#none" class="link_dot"><p class="txt">[제로샵 체험단5기] 대웅 프리미엄 유산균 락피대웅 프리미엄 유산균대웅 프리미엄 유산균대웅 프리미엄 유산균</p><span class="txt_date">2015.02.02</span></a></li>
+							<li><a href="#none" class="link_dot"><p class="txt">[제로샵 체험단5기] 대웅 프리미엄 유산균 락피</p><span class="txt_date">2015.02.02</span></a></li>
+							<li><a href="#none" class="link_dot"><p class="txt">[제로샵 체험단5기] 대웅 프리미엄 유산균 락피</p><span class="txt_date">2015.02.02</span></a></li>
+							<li><a href="#none" class="link_dot"><p class="txt">[제로샵 체험단5기] 대웅 프리미엄 유산균 락피</p><span class="txt_date">2015.02.02</span></a></li>
+							<li><a href="#none" class="link_dot"><p class="txt">[제로샵 체험단5기] 대웅 프리미엄 유산균 락피</p><span class="txt_date">2015.02.02</span></a></li>
+							<li><a href="#none" class="link_dot"><p class="txt">[제로샵 체험단5기] 대웅 프리미엄 유산균 락피대웅 프리미엄 유산균대웅 프리미엄 유산균대웅 프리미엄 유산균</p><span class="txt_date">2015.02.02</span></a></li>
+							<li><a href="#none" class="link_dot"><p class="txt">[제로샵 체험단5기] 대웅 프리미엄 유산균 락피</p><span class="txt_date">2015.02.02</span></a></li>
+							<li><a href="#none" class="link_dot"><p class="txt">[제로샵 체험단5기] 대웅 프리미엄 유산균 락피</p><span class="txt_date">2015.02.02</span></a></li>
+							<li><a href="#none" class="link_dot"><p class="txt">[제로샵 체험단5기] 대웅 프리미엄 유산균 락피</p><span class="txt_date">2015.02.02</span></a></li>
+							<li><a href="#none" class="link_dot"><p class="txt">[제로샵 체험단5기] 대웅 프리미엄 유산균 락피</p><span class="txt_date">2015.02.02</span></a></li>
+						</ul>
+						<a href="#none" class="btn_type3 btn_more">더보기</a><!-- 2017-04-13 수정 -->
+					</div>
+				</div>
+
+				<div id="popDetail" style="display:none">
+					<div class="popup_type1 popup_type1_view">
+						<div class="inner">
+							<strong class="tit_popup">공지사항</strong>
+							<div class="popup_body">
+								<!-- 2017-04-13 수정[s] -->
+								<div class="page">
+									<img src="http://www.0shop.kr/zeroshop/data/lime/goods/content/201502/1425012108358.jpg" class="thumb_detail" alt="">
+								</div>
+								<!-- 2017-04-13 수정[e] -->
+
+								<!-- 2017-03-21 삭제
+								<div class="btns_zoom">
+									<a href="#none" class="btn_zoom btn_out">축소</a>
+									<a href="#none" class="btn_zoom btn_in">확대</a>
+								</div>
+								 -->
+								<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a><!-- 2017-03-21 이미지 넓이,높이값 삭제 -->
+							</div>
+							<a href="#none" class="btn_close"><span class="ico_oshop ico_close">닫기</span></a>
+						</div>
+					</div>
+				</div>
+
+				<script>
+					$(function() {
+						// 상품상세보기 팝업
+						oshopUI.popUp({
+							"clickBtn" : $(".list_dot_type2 .link_dot"),
+							"popupLayer" : $("#popDetail"),
+							"Contents" : $(".cont_notice"), // 2017-04-13 수정
+							"callback" : function() {
+								window.scroll(0, 0);
+							}
+						});
+
+						// 상품확대축소
+						//oshopUI.imgZoom(); 2017-04-13 삭제
+					});
+				</script>
+
+
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a><!-- 2017-03-21 이미지 넓이,높이값 삭제 -->
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+</body>
+</html>

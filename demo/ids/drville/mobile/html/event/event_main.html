@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=yes">
+	<title>닥터빌</title>
+	<!-- 2018-10-17 바로가기 아이콘 추가 [s] -->
+	<link rel="apple-touch-icon-precomposed" href="../../images/ico_ios.png" />
+	<link rel="shortcut icon" href="../../images/ico_android.png" />
+	<!-- 2018-10-17 바로가기 아이콘 추가 [e] -->
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<script src="../../js/ui.js"></script>
+
+</head>
+<body>
+<!-- 스킵내비게이션
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+</div> -->
+<!--전체 페이지를 감싸는 태그 id="app" [s]-->
+<div id="app">
+
+	<script type="text/javascript">
+		// 2017-12-12 TOP 버튼 스크립트 수정
+		$(window).load(function() {
+			var btnTop = $(".btn_top");
+			btnTop.hide();
+			if($(".wrap footer").length != 1){
+				btnTop.css("bottom","20px");
+			//}else {
+				//btnTop.css("bottom","75px");
+				//var fTop = $("footer").offset().top;
+			}
+			$("#container").scroll(function(){
+				btnTop.fadeIn(300);
+				if($("#container").scrollTop()==0 ) {
+					btnTop.fadeOut(300);
+				};
+				//if($("body").height() + $("#container").scrollTop() >= fTop + 50){
+				//	btnTop.css("bottom","80px");
+				//}else {
+				//	btnTop.css("bottom","20px");
+				//}
+			});
+			btnTop.click(function(){
+				$("#container").animate({ scrollTop: 0 }, 500);
+				return false;
+			});
+		})
+	</script>
+
+<div class="wrap">
+	<!-- header [s] -->
+	<header id="header" class="main_header">
+		<a href="#" class="link_home">
+			<h1 class="screen_out">닥터빌</h1>
+			<h2 class="h_tit">이벤트</h2>
+		</a>
+		<a href="#" class="ico_comm btn_menu">메뉴</a>
+	</header>
+	<!-- header [e] -->
+	<!-- container [s] -->
+	<section id="container">
+		<div class="event">
+			<!--리스트 [s]-->
+			<div class="content_box">
+				<h3 class="screen_out">이벤트 리스트</h3>
+				<!-- <p class="nodata">목록이 없습니다.</p> 목록이 없을시 노출-->
+				<div class="image_list">
+					<a href="#" class="list_detail">
+						<div class="list_cont">
+							<strong class="tit">포인트 공동구매 2차 이벤트 </strong>
+							<span class="tail">2017-11-16 ~ 2017-12-20</span>
+						</div>
+						<figure class="img"><img src="../../images/temp/temp_event.gif" alt=""></figure>
+					</a>
+					<a href="#" class="list_detail">
+						<div class="list_cont">
+							<strong class="tit">포인트 공동구매 2차 이벤트 </strong>
+							<span class="tail">2017-11-16 ~ 2017-12-20</span>
+						</div>
+						<figure class="img"><img src="../../images/temp/temp_event.gif" alt=""></figure>
+					</a>
+					<a href="#" class="list_detail">
+						<div class="list_cont">
+							<strong class="tit">포인트 공동구매 2차 이벤트 </strong>
+							<span class="tail">2017-11-16 ~ 2017-12-20</span>
+						</div>
+						<figure class="img"><img src="../../images/temp/temp_event.gif" alt=""></figure>
+					</a>
+					<a href="#" class="list_detail">
+						<div class="list_cont">
+							<strong class="tit">포인트 공동구매 2차 이벤트 </strong>
+							<span class="tail">2017-11-16 ~ 2017-12-20</span>
+						</div>
+						<figure class="img"><img src="../../images/temp/temp_event.gif" alt=""></figure>
+					</a>
+					<a href="#" class="list_detail">
+						<div class="list_cont">
+							<strong class="tit">포인트 공동구매 2차 이벤트 </strong>
+							<span class="tail">2017-11-16 ~ 2017-12-20</span>
+						</div>
+						<figure class="img"><img src="../../images/temp/temp_event.gif" alt=""></figure>
+					</a>
+				</div>
+			</div>
+			<!--리스트 [e]-->
+		</div>
+	</section>
+	<!-- footer [s] -->
+	<footer id="footer">
+	<div class="footer_menu">
+		<a href="../member/terms_policy.html" class="txt">이용약관</a>
+		<span class="txt_bar">|</span>
+		<!-- 2021-06-03 개인정보처리방침 볼드 처리 -->
+		<a href="../member/terms_userinfo.html" class="txt"><strong>개인정보처리방침</strong></a>
+		<span class="txt_bar">|</span>
+		<span class="txt">고객센터</span>
+		<a href="tel:02-1522-0209" class="txt link_num">1522-0209</a>
+	</div>
+	<address>Copyright &copy;Mcircle. All right reserved</address> <!--2017-12-14 수정-->
+</footer>
+	<!-- footer [e] -->
+	<!-- container [e] -->
+	<a href="#" class="ico_comm btn_top">상단으로 이동</a> <!--top 버튼-->
+
+	<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+	<script src="../../js/swiper.min.js"></script>
+	<script>
+		$(function() {
+			var swiper = new Swiper('.swiper-container', {
+				autoplay: {
+					delay: 2000,
+				},
+				loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+			});
+		})
+	</script>
+</div>
+</div>
+<!--전체 페이지를 감싸는 태그 [e]-->
+</body>
+</html>

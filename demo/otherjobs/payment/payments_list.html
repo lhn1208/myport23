@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<title>HTML LIST</title>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="../js/jquery-treeview/lib/jquery.js"></script>
+
+<style>
+*{margin:0;padding:0;font-size:12px;}
+h1{min-width:600px;padding:30px 20px;font-size:20px;background-color: #03dac5;letter-spacing:-0.05em; color: #fff;}
+img {margin-right:20px;vertical-align: middle;}
+table {min-width:600px;width:100%;max-width:800px;border-collapse: collapse;border-top:2px solid #666;}
+p{margin:10px 0;}
+table th, table td{padding:3px 2px 3px 5px;border-left:1px solid #ccc;border-bottom:1px solid #aaa;}
+table td:first-child, th:first-child {border-left:none;}
+.screen > table td:first-child {color: #000; font-weight: bold;}
+table th{padding:6px;font-size:13px;background:#f0f0f0;vertical-align: middle;}
+table td {height:17px;letter-spacing: -0.01em; }
+table .line {height:auto;padding:0;background: #ccc;}
+a {text-decoration: none;color:blue}
+a:hover {text-decoration: underline;}
+.page {color:#0065b3;font-weight:bold; }
+.pop {color:#4c4c4c;font-weight:bold; }
+.pop_dimed {color:#adadad;font-weight:bold; }
+.outside {color:#adadad;font-weight:bold;text-decoration-line:line-through;}
+.air_tab { display:flex;min-width:700px;max-width:800px;min-width:250px;height:40px; padding:10px 20px 0px 20px; line-height: 40px; list-style: none; }
+.air_tab:after { content: ""; display: block; clear: both; }
+.air_tab li { flex:1;height: 100%; }
+.air_tab li a { display: block; width: 100%; height: 100%; padding: 0 10px; box-sizing: border-box; color: #999999; font-size: 16px; text-align: center; overflow: hidden; white-space: nowrap; border:1px solid #fff; border-bottom-color: #8113f2;}
+.air_tab li.current a { color: #ef8ccf; background: #fff; font-weight: bold; border:1px solid #990eb7; border-bottom:none; }
+.tab_content {width:800px; padding:10px 20px; }
+/* 가이드 */
+.list {padding:0 0 0 30px;}
+.list li{padding:5px 0;}
+.terminal {padding:20px;background:#000;color:#fff;}
+</style>
+</head>
+
+<body>
+    <h1>모두페이 리스트</h1>
+    <div class="tab_wrap">
+        <div class="tab_content screen">
+            <table>
+                <colgroup>
+                    <col width="30%">
+                    <col width="35%">
+                    <col width="35%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>작업내역</th>
+                        <th>경로</th>
+                        <th>모바일확인경로</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>결제메인</td>
+                        <td><a href="Payments_new.html" target="ifrhowl">Payments_new.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_new.html" target="_blank">Payments_new.html</a></td>
+                    </tr>
+                    <tr>
+                        <td>상품권</td>
+                        <td><a href="payment_gift.html" target="ifrhowl">payment_gift.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/payment_gift.html" target="_blank">payment_gift.html</a></td>
+                    </tr>
+                    <tr>
+                        <td>다른결제수단</td>
+                        <td><a href="pay_option.html" target="ifrhowl">pay_option.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/pay_option.html" target="_blank">pay_option.html</a></td>
+                    </tr>
+                    <tr>
+                        <td>모두페이 결제 일반</td>
+                        <td><a href="Payments_new_gen.html" target="ifrhowl">Payments_new_gen.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_new_gen.html" target="_blank">Payments_new_gen.html</a></td>
+                    </tr>
+                    <tr>
+                        <td>모두페이 결제 - 버튼 활성화</td>
+                        <td><a href="Payments_new_step2_ok.html" target="ifrhowl">Payments_new_step2_ok.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_new_step2_ok.html" target="_blank">Payments_new_step2_ok.html</a></td>
+                    </tr>
+                    <tr>
+                        <td>모두페이 결제 - 금액오류</td>
+                        <td><a href="Payments_new_step2_error.html" target="ifrhowl">Payments_new_step2_error.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_new_step2_error.html" target="_blank">Payments_new_step2_error.html</a></td>
+                    </tr>    
+                    <tr>
+                        <td>결제페이지 완료</td>
+                        <td><a href="Payments_new_finish.html" target="ifrhowl">Payments_new_finish.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_new_finish.html" target="_blank">Payments_new_finish.html</a></td>
+                    </tr>       
+                    <tr>
+                        <td>결제페이지 완료(실패)</td>
+                        <td><a href="Payments_new_finish(fail).html" target="ifrhowl">Payments_new_finish(fail).html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_new_finish(fail).html" target="_blank">Payments_new_finish(fail).html</a></td>
+                    </tr>   
+                    <tr>
+                        <td>결제페이지 로딩</td>
+                        <td><a href="Payments_new_loading.html" target="ifrhowl">Payments_new_loading.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_new_loading.html" target="_blank">Payments_new_loading.html</a></td>
+                    </tr>  
+                    <tr>
+                        <td>결제페이지 안내팝업</td>
+                        <td><a href="Payments_new_popup.html" target="ifrhowl">Payments_new_popup.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_new_popup.html" target="_blank">Payments_new_popup.html</a></td>
+                    </tr>    
+                    <tr>
+                        <td>결제수단 팝업 바로보여짐</td>
+                        <td><a href="Payments_new_gen_ver2.html" target="ifrhowl">Payments_new_gen_ver2.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_new_gen_ver2.html" target="_blank">Payments_new_gen_ver2.html</a></td>
+                    </tr>  
+                    <tr>
+                        <td>계좌관리 index</td>
+                        <td><a href="Payments_management.html" target="ifrhowl">Payments_management.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_management.html" target="_blank">Payments_management.html</a></td>
+                    </tr>    
+                    <tr>
+                        <td>결제계좌 관리</td>
+                        <td><a href="Payments_management_1.html" target="ifrhowl">Payments_management_1.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_management_1.html" target="_blank">Payments_management_1.html</a></td>
+                    </tr>  
+                    <tr>
+                        <td>결제계좌가 없는 경우</td>
+                        <td><a href="Payments_management_1-1.html" target="ifrhowl">Payments_management_1-1.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_management_1-1.html" target="_blank">Payments_management_1-1.html</a></td>
+                    </tr> 
+                    <tr>
+                        <td>모두페이 사용내역</td>
+                        <td><a href="Payments_management_2.html" target="ifrhowl">Payments_management_2.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_management_2.html" target="_blank">Payments_management_2.html</a></td>
+                    </tr> 
+                    <tr>
+                        <td>모두페이 사용내역 없는경우</td>
+                        <td><a href="Payments_management_2-1.html" target="ifrhowl">Payments_management_2-1.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_management_2-1.html" target="_blank">Payments_management_2-1.html</a></td>
+                    </tr>   
+                    <tr>
+                        <td>계좌관리 이벤트</td>
+                        <td><a href="Payments_management_3.html" target="ifrhowl">Payments_management_3.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_management_3.html" target="_blank">Payments_management_3.html</a></td>
+                    </tr>  
+                    <tr>
+                        <td>계좌관리 꼭 읽어보세요!</td>
+                        <td><a href="Payments_management_4.html" target="ifrhowl">Payments_management_4.html</a></td>
+                        <td><a href="//webpublisher.modetour.com:3351/modetour/Mobile/2018/mypage/Payments_management_4.html" target="_blank">Payments_management_4.html</a></td>
+                    </tr>               
+                </tbody>
+            </table>
+        </div>  
+    </div> 
+</body>
+</html>

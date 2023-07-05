@@ -1,0 +1,303 @@
+.right_area{
+    position: relative;
+    .mar_b50{
+        margin-bottom: 50px !important;
+    }
+	.r_banner{
+		display: block;
+		margin-bottom: 6px;
+	}
+	.r_contents{
+		margin-bottom: 30px;
+		.recomm_list a{
+			display: flex;
+			.info_area{
+				width: 170px;
+				margin-left: 12px;
+				line-height: 1.2;
+			}
+			.info_tit{
+				font-size: 14px;		
+				margin-bottom: 4px;		
+				@include ellipsis_2line();
+			}
+			.recomm_sub_txt{
+				font-size: 12px;
+			}
+			&:hover .info_tit{
+				text-decoration: underline;
+			}
+		}
+        
+	}
+    .r_contents{
+        .r_cont_title{
+            margin-bottom: 17px;
+            .count{
+                margin-left: 10px;
+                color: $c_g_6;
+                font-size: 12px;
+            }
+        }
+        a{
+            display: flex;
+            margin-bottom: 14px;
+            .info_area{
+                width: 152px;
+                margin-left: 13px;
+                .cate_class{
+                    display: block;
+                    margin-bottom: 4px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #A1A1A2;
+                }
+                .info_tit{
+                    font-size: 14px;
+                    @include ellipsis_2line();
+                }
+            }
+            &:hover{
+                .info_tit{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .case_movie{
+            width: 270px;
+            max-height: 376px;
+            padding: 12px 15px;
+            overflow-y: scroll;
+            border: 1px solid $c_g_e6;
+            box-sizing: border-box;
+           
+            &::-webkit-scrollbar{
+                width: 4px;
+                background-color: #EAEAEA;
+            }
+            &::-webkit-scrollbar-thumb{
+                background-color: #D6D6D6;
+            }
+        }
+    }
+}
+.vet_container{
+    .right_area{
+		width: 270px;
+		.r_cont_title{
+			margin-bottom: 27px;
+			font-size: 18px;
+			font-weight: 600;
+		}
+        .r_mb_srvice{
+            margin-top: 36px;
+            border-top: 1px solid #ccc;
+            li{                
+                border-bottom: 1px solid #ccc;
+                a{
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    padding:16px 0 ; 
+                    font-weight: 600;
+                    &::after{
+                        @include pos_right(22px,20px);                       
+                        @include imag_elem(5px,10px);
+                        @include bg_ico(-98px, -4px);
+                    }
+                }                
+            }
+        }
+	}
+}
+//게시판
+.board_cont_wrap{
+    %button{
+        width: 130px;
+        padding:8px 0;
+        text-align: center;
+        @include btn_style(36px,$c_blue,$rd_val:6px);
+        font-weight: 600;
+        &::before{
+            @include imag_elem(16px,16px);
+            @include bg_ico(-140px,-117px);
+            margin-right: 8px;
+            vertical-align: -2px;
+        }
+    }
+    .nick_box{
+        width: 270px;
+        margin-bottom: 20px;       
+        border-radius: 6px;
+        border:1px solid $c_g_c;        
+        box-sizing: border-box;        
+        box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+        .nick_info{
+            padding: 26px 30px;
+            line-height: 1.6;
+            font-size: 14px;
+            border-bottom: 1px solid $c_g_c; 
+            .btn_nick{
+                margin-top: 8px;
+                font-weight: 600;
+                span{
+                    vertical-align: 2px;
+                    font-size: 8px;
+                    font-weight: bold;
+                    font-family: "돋움", dotum, sans-serif;
+                }
+            }     
+            .my_policy{
+                margin-top: 10px;
+                .f_green{
+                    color: #0EB653;
+                }
+                .ico_tooltip{
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    vertical-align: 13px;
+                    @include bg_ico(-32px, -144px);
+                    @include txtHidden2();
+                }
+            }
+            .tooltip_box{
+                display: none;
+                position: absolute;
+                top: 110px;
+                right: -47px;
+                width:200px;
+                padding:17px;
+                padding-bottom: 10px;
+                border:1px solid #BBC1CD;
+                background-color: #fff;
+                box-sizing: border-box;
+                z-index: 10;
+                &.active{
+                    display: block;
+                }
+                strong{
+                    display: block;
+                    margin-bottom: 12px;
+                }
+                p{
+                    padding-bottom: 6px;
+                    margin-bottom: 6px;
+                    color: $c_g_6;
+                    border-bottom: 0.5px solid $c_g_c;
+                    &:last-of-type{
+                        line-height: 1.4;
+                        margin-bottom: 0;
+                        padding-bottom: 0; 
+                        border-bottom: none;  
+                    }
+                    span{
+                        display: block;
+                        &.f_green{
+                            color: #0EB653;
+                        }
+                        &.f_orange{
+                            color: #FF9D00;
+                        }
+                        &.f_red{
+                            color: #FF4343;
+                        }
+                    }
+                }
+            }
+           
+        }        
+        .info_my_btn{
+            text-align: center;
+            padding:8px 0;
+            a{
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }      
+    }   
+    .btn_write{
+        margin-bottom: 60px;
+        @extend %button;
+        background-color: $c_blue;       
+        color: #fff;
+        border:none;
+        &::before{
+            vertical-align: -4px;
+            background-position-x: -170px;
+        }
+        &.disable{
+            background-color: #B4B4B5;           
+        }
+    }
+    .aside_list{
+        margin-bottom: 45px;
+       a{
+            position: relative;
+            margin-bottom: 12px;
+            padding-left: 10px;
+            line-height: 1.6;
+            font-size: 16px;
+            .txt{
+                width: 270px;
+                @include ellipsis();
+            }
+            .tail{
+                color: $c_g_6;
+            }
+            &::before{
+                @include imag_elem(4px,3px);
+                position: absolute;
+                top:10px;
+                left: 0;
+                border-radius: 50%;
+                background-color: #c8c8c8;
+            }
+       }
+    }
+}
+.right_area{
+    .r_contents{
+        &.popular_cont{
+            .r_cont_title{
+                font-size: 16px;
+            }
+         }
+         .popular_board{
+             a .info_area{
+                 width: 200px;
+                 .info_tit{
+                     margin-bottom: 4px;
+                     line-height: 1.4;
+                     @include ellipsis_2line();
+                 }
+             }
+         }
+     }
+     .case_link{
+         position: relative;
+         display: block;
+        margin-bottom: 34px;
+        padding:10px 20px;
+        border:1px solid $c_blue;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 600;
+        color: $c_blue;
+        border-radius: 6px;
+        &::before{
+            @include imag_elem(16px,17px);
+            margin-right: 6px;
+            vertical-align: -3px;
+            background: url("../images/sub/ico/ico_folder.png") no-repeat;
+        }
+        .arr{
+            position: absolute;
+            top: 11px;
+            right: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: '돋움',dotum,sans-serif;
+        }
+     }     
+}

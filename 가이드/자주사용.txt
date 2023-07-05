@@ -1,0 +1,142 @@
+<script src="https://www.shop.co.kr/resources/shop-client-web-front/theshop/js/libs/jquery-1.12.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+background: linear-gradient(to right, #904cd5 , #624eb0);
+box-shadow:0px 20px 30px -15px rgba(0,0,0,0.2);
+transform:translate(-50%,-50%)
+transform: rotate(45deg);
+.blind {position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
+폰트안보이기
+font-size:0;  line-height:0;  text-indent:-9999px;
+테이블
+table {border-collapse: collapse; border-spacing:0;}
+
+ usemap="#evmap"
+ <map name="eventMap" id="eventMap">
+						 <area shape="rect" coords="98,1287,350,1368" alt="아카데미 둘러보기" href="http://www.doctorville.co.kr/forum/main">						
+					 </map>
+
+글 오버시 히든
+text-overflow:ellipsis; white-space:nowrap; overflow: hidden;
+
+word-wrap: break-word; word-break:keep-all;
+두줄 말줄임
+display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow:hidden
+
+플렉스
+display:flex, justify-content:space-between;  align-items:center
+flex: 0 0 560px
+transform:translateX(2%);
+
+커스텀
+.check_item .check{display: none;}
+.check_item .check + label::before {display: inline-block; width:24px; height: 24px; margin-right: 8px; vertical-align: -6px; border: 1px solid #BBC4D7; background-color: #fff; background-repeat: no-repeat; cursor: pointer; content:""; box-sizing: border-box;}
+.check_item .check:checked + label:before {border: none; background: url('http://img.shop.co.kr/images/event/202206/bg_check_on.png') #0C1622 no-repeat center; background-size: 53%;}
+
+ <div class="check_item">
+                    <input type="checkbox" name="" class="check" id="txt_check">
+                    <label for="txt_check">디지털화환을 신청하지 않습니다.</label>
+                </div>
+셀렉트박스
+.search_list .select{position: relative; width: 100px; height: 34px; padding:8px; letter-spacing: -0.05em; border: 1px solid #ced5e4; border-left-: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;  background: url("../images/common/select_bg_off.png") 92% 50% no-repeat;}
+.search_list .select::-ms-expand {display: none;}
+.search_list .select:after{ content: '▼';position: absolute; top: 7px; right: 10px; transform: none; border: 0;}
+파일찾기
+.filebox input[type="file"]{position: absolute; width: 0; height: 0; overflow: hidden; border: 0;}
+<div class="filebox">
+                           
+                                <input type="text" id="pic" class="upload_input" placeholder="영정사진을 등록해 주세요." >
+                                <label for="file">파일찾기</label>
+                                <input type="file" id="file">
+                            </div>
+ <button class="member_btn" onclick="window.open('https://www.healience.co.kr/info/sub03_0101')">
+
+sass --watch sass:css
+sass sass:css --style compressed
+
+폰트
+ font-family:'NotoSans',serif; font-weight: bold, dotum,"돋음",sans-serif; 
+screen_out
+
+스크롤
+(function ($) {
+	
+			 $(document).ready(function () {
+				 $(".event_cont .top_btn").click(function(){
+					 $('html, body').stop().animate({
+						 scrollTop: $( $(".event_cont") ).offset().top
+					 }, 1000);													
+					 return false;
+				 })
+			 });
+		 })(jQuery);
+
+닫기버튼
+#popRenewalAlert .btn_close_org::before,#popRenewalAlert .btn_close_org:after{content: ""; display: block; width: 2px; height: 30px; position: absolute; left: 50%; top: 50%; background-color: #fff;}
+#popRenewalAlert .btn_close_org::before{transform: translate(-50%,-50%) rotate(45deg);}
+#popRenewalAlert .btn_close_org::after{transform: translate(-50%,-50%) rotate(135deg);}
+
+ display: inline-block;content: "\00d7"; font-size:24pt; 
+
+$(this).attr("href")
+
+ $('.tab_box').on({
+                click:function(e){
+                    e.preventDefault();
+                    $(e.currentTarget).closest('li').addClass('active').siblings().removeClass('active');
+                    if($(e.currentTarget.hash).length > 0) {
+                        $(e.currentTarget.hash).addClass('active').siblings().removeClass('active');
+                    }
+                }
+            }, '.tab_buttons a');
+
+<select name="" style="width:160px;">
+ <option value="">카드 선택</option>															
+</select>
+
+화살
+::after{content: ""; display: inline-block; width: 8px; height: 8px; border-right: 2px solid #FF6724; border-bottom: 2px solid #FF6724; transform: rotate(-45deg); margin-top: 0.2em; margin-left: 0.5em; vertical-align: 1px;}
+
+$("input[name='card_num']").change(function(){
+        if($("input[name='card_num']:checked").val() == '일반신용카드'){
+			$('.input_cd_num_area').hide();
+			$('#normalCard').show();
+		}	
+    });
+
+git reset HEAD^
+git checkout -b  dev
+<p>
+  <img src="image.jpg" alt="missing" />
+  <em>Caption goes here</em>
+</p>
+img + em {
+  display: block;
+}
+modalLayer = shopUI.modalLayer($("#pointConvertMbGift"), {
+				closeClass: "fn_close"
+			});
+
+
+외부여역 닫기
+https://wisesilver.tistory.com/9
+
+//2022-11-23 카드 무이자 할부 안내 추가
+		jQuery('.btn_interes_free').click(function(){
+			jQuery('.pop_dim').css('display','block');
+
+		})
+		jQuery('.card_benefit .btn_close').click(function(){
+			jQuery('.pop_dim').css('display','none');
+		})
+		//외부 영역 클릭시 닫기
+		var body = document.querySelector("body");
+		body.addEventListener('mouseup', clickBodyEvent);
+		function clickBodyEvent(event) {	
+			var target = event.target;
+			if(target == event.currentTarget.querySelector(".card_benefit") )
+			return;
+			//pop 닫기
+			var pop_dim = document.querySelector(".pop_dim");	
+			pop_dim.style.display = "none";
+		}   

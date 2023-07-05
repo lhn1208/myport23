@@ -1,0 +1,284 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+    <!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<div class="cont_head">
+					<h2 class="tit_cate">정기배송 관리</h2>
+				</div>
+				<div class="cont_my_v2 cont_subscription">
+					<div class="subscription_info">
+						<p><strong>오는 <span class="txt_num">14</span>일에 자동 신청!</strong></p>
+						<button type="button" class="btn_type3 btn_change btn_date_change"><span class="ico_oshop ico_calendar"></span>정기일자 변경</button>
+
+						<!-- 2020-03-23 수정[s] -->
+						<div class="calendar_box">
+							<div class="calendar_head">
+								<strong class="calendar_tit"><span class="txt_num">2020</span>.<span class="txt_num">03</span></strong>
+								<button type="button" class="btn_month btn_month_prev" disabled><span class="ico_oshop">이전 달</span></button>
+								<button type="button" class="btn_month btn_month_next"><span class="ico_oshop">다음 달</span></button>
+							</div>
+							<table class="calendar_body">
+								<caption>달력</caption>
+								<thead>
+								<tr>
+									<th scope="col">일</th>
+									<th scope="col">월</th>
+									<th scope="col">화</th>
+									<th scope="col">수</th>
+									<th scope="col">목</th>
+									<th scope="col">금</th>
+									<th scope="col">토</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+									<td>6</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>9</td>
+									<td>10</td>
+									<td>11</td>
+									<td>12</td>
+									<td>13</td>
+									<td>14</td>
+								</tr>
+								<tr>
+									<td>15</td>
+									<td>16</td>
+									<td>17</td>
+									<td>18</td>
+									<td>19</td>
+									<td class="today"><a href="#none">20</a></td>
+									<td><a href="#none">21</a></td>
+								</tr>
+								<tr>
+									<td><a href="#none">22</a></td>
+									<td><a href="#none">23</a></td>
+									<td><a href="#none">24</a></td>
+									<td><a href="#none">25</a></td>
+									<td class="select"><a href="#none">26</a></td>
+									<td><a href="#none">27</a></td>
+									<td><a href="#none">28</a></td>
+								</tr>
+								<tr>
+									<td><a href="#none">29</a></td>
+									<td><a href="#none">30</a></td>
+									<td><a href="#none">31</a></td>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+								</tr>
+								</tbody>
+							</table>
+							<div class="btn_wrap">
+								<button type="button" class="btn_type7">취소</button>
+								<button type="submit" class="btn_type2">선택</button>
+							</div>
+						</div>
+						<!-- 2020-03-23 수정[e] -->
+					</div>
+
+					<!-- 2020-04-13 추가[s] -->
+					<ul class="list_type">
+						<li>신청 후 첫 배송인 경우에는 정기신청일 변경이 불가합니다.</li>
+						<li>오늘기준 한달 이내의 일자로만 변경 가능합니다.</li>
+						<li>장기간 배송을 미루고 싶은 경우에는, 하단의 개별 상품 이미지 클릭하여 건너뛰기로 일정 변경 바랍니다.</li>
+					</ul>
+					<!-- 2020-04-13 추가[e] -->
+
+					<div class="box_type2">
+						<h3 class="tit_s">정기배송 정보변경</h3>
+						<div class="box_my_prod">
+							<div class="prod_head">
+								<h4 class="tit_s">배송지</h4>
+								<a href="../my/my_address.html" class="btn_type3 btn_change"><span class="ico_oshop ico_delivery"></span>배송지 변경</a>
+							</div>
+							<div class="cont_my_tbl">
+								<table class="tbl_type1">
+									<caption>수령자정보</caption>
+									<colgroup>
+										<col style="width:18%;">
+										<col style="width:32%;">
+										<col style="width:18%;">
+										<col style="width:32%;">
+									</colgroup>
+									<tbody>
+									<tr>
+										<th scope="row">주문자</th>
+										<td>홍길동</td>
+										<th scope="row">휴대폰</th>
+										<td>010-1234-5678</td>
+									</tr>
+									<tr>
+										<th scope="row">주소</th>
+										<td colspan="3">06170 서울 강남구 봉은사로 644 (삼성동, 대웅제약 빌딩) 7층</td>
+									</tr>
+									<tr>
+										<th scope="row">배송요청사항</th>
+										<td colspan="3">연락 주세요</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="box_my_prod">
+							<div class="prod_head">
+								<h4 class="tit_s">결제정보</h4>
+								<button type="button" class="btn_type3 btn_change"><span class="ico_oshop ico_card"></span>결제정보 변경</button>
+							</div>
+							<div class="box_order">
+								<div class="frame_radio">
+									<div class="radio_oshop">
+										<input type="radio" id="pay3" name="pay" class="inp_vote">
+										<label for="pay3" class="lab_vote">
+											<span class="ico_oshop ico_rdo"></span>
+											<span class="txt_rdo"><span class="ico_oshop ico_naverpay"></span>네이버페이</span>
+										</label>
+									</div>
+								</div>
+								<div class="frame_radio">
+									<div class="radio_oshop">
+										<input type="radio" id="pay5" name="pay" class="inp_vote">
+										<label for="pay5" class="lab_vote">
+											<span class="ico_oshop ico_rdo"></span>
+											<span class="txt_rdo"><span class="ico_oshop ico_payco">페이코</span></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<ul class="list_type">
+								<li>네이버페이 2% 적립 (최소 100원 이상 결제 가능합니다.)</li>
+								<li>PAYCO는 온/오프라인 쇼핑은 물론 송금, 멤버십 적립까지 가능한 통합 서비스입니다. 휴대폰과 카드 명의자가 동일해야 결제 가능하며, 결제금액 제한은 없습니다. (지원카드: 모든 국내 신용/체크카드)</li>
+								<li>제로샵에서는 일부 상품에 대해 구매수량을 제한하고 있으며, 구매 후 재판매를 금지하고 있습니다.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="box_order">
+						<h3 class="tit">2020-03-04 (월) 신청 상품</h3>
+						<button class="btn_order_close" type="button">접기 <span class="ico_oshop ico_open"></span></button>
+						<div class="box_type1">
+							<div class="box_prod">
+								<a href="#none" class="cont_body">
+									<em class="bg_prod bg_cancel">해지</em>
+									<span class="link_item">
+										<img src="http://www.0shop.kr:80/zeroshop/data/lime/goods/middle/sissel/sissel_SP14003ss_0518copy.jpg" class="thumb_g" width="100" height="100" alt="">
+									</span>
+									<div class="prod_name">
+										<span class="lab_vote">[리퍼S]시셀 컴포트 베갯잇</span>
+										<p class="prod_option">옵션: 아트토이</p>
+										<span class="txt_num txt_subscript_discount"><span class="ico_oshop">할인</span>3%</span>
+										<p class="prod_price">
+											<span class="txt_price"><strong class="txt_num">12,000</strong>원</span>
+											<span class="txt_bar">|</span>
+											수량 : 1개
+										</p>
+									</div>
+								</a>
+							</div>
+							<div class="box_prod">
+								<a href="subscription_prod.html" class="cont_body">
+									<em class="bg_prod bg_skip">건너뛰기</em>
+									<span class="link_item">
+										<img src="http://www.0shop.kr:80/zeroshop/data/lime/goods/middle/s_heali01/seonee_181107_0101100911-1.jpg" class="thumb_g" width="100" height="100" alt="">
+									</span>
+									<div class="prod_name">
+										<span class="lab_vote">무항생제 돈마루한돈plus 항정살 500g</span>
+										<span class="txt_num txt_subscript_discount"><span class="ico_oshop">할인</span>3%</span>
+										<p class="prod_price">
+											<span class="txt_price"><strong class="txt_num">15,000</strong>원</span>
+											<span class="txt_bar">|</span>
+											수량 : 1개
+										</p>
+									</div>
+								</a>
+							</div>
+							<div class="box_prod">
+								<a href="subscription_prod.html" class="cont_body">
+									<em class="bg_prod bg_soldout2">Sold Out</em>
+									<span class="link_item">
+										<img src="http://www.0shop.kr:80/zeroshop/data/lime/goods/middle/s_bullsonecom/nono55129experience_20190903170205.jpg" class="thumb_g" width="100" height="100" alt="">
+									</span>
+									<div class="prod_name">
+										<span class="lab_vote">[불스원] 멀티액션 플러스 차량용 공기청정기(필터 총 2개)</span>
+										<span class="txt_num txt_subscript_discount"><span class="ico_oshop">할인</span>3%</span>
+										<p class="prod_price">
+											<span class="txt_price"><strong class="txt_num">207,000</strong>원</span>
+											<span class="txt_bar">|</span>
+											수량 : 1개
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="box_order">
+						<h3 class="tit">2020-03-14 (금) 신청 상품</h3>
+						<button class="btn_order_close" type="button">접기 <span class="ico_oshop ico_open"></span></button>
+						<div class="box_type1">
+							<div class="box_prod">
+								<a href="subscription_prod.html" class="cont_body">
+									<span class="link_item">
+										<img src="http://www.0shop.kr:80/zeroshop/data/lime/goods/middle/s_bullsonecom/nono55129experience_20190903170205.jpg" class="thumb_g" width="100" height="100" alt="">
+									</span>
+									<div class="prod_name">
+										<span class="lab_vote">[불스원] 멀티액션 플러스 차량용 공기청정기(필터 총 2개)</span>
+										<p class="prod_option">옵션 : 블랙</p>
+										<span class="txt_num txt_subscript_discount"><span class="ico_oshop">할인</span>3%</span>
+										<p class="prod_price">
+											<span class="txt_price"><strong class="txt_num">207,000</strong>원</span>
+											<span class="txt_bar">|</span>
+											수량 : 3개
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					$(function(){
+						// 신청상품 리스트
+						$(".btn_order_close").on("click", function(){
+							if($(this).hasClass("btn_all")){
+								$(this).siblings(".box_type1").slideDown();
+								$(this).removeClass("btn_all").html('접기 <span class="ico_oshop ico_open"></span>');
+							} else {
+								$(this).siblings(".box_type1").slideUp();
+								$(this).addClass("btn_all").html('열기 <span class="ico_oshop ico_open"></span>');
+							}
+						});
+
+						// 정기결제 캘린더 2020-03-23 추가
+						$(function(){
+							$(".btn_date_change").on("click", function(){
+								$(this).siblings(".calendar_box").addClass("open");
+							});
+							$(".calendar_box .calendar_body a").on("click", function(){
+								$(".calendar_box .calendar_body td").removeClass("select");
+								$(this).parent("td").addClass("select");
+							});
+						});
+						$(".calendar_box .btn_type7").on("click", function(){
+							$(this).parent().parent().removeClass("open");
+						});
+					})
+				</script>
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a>
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+</body>
+</html>

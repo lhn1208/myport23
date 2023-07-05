@@ -1,0 +1,73 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper">
+		<!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" -->
+		<section class="container">
+			<div class="landing_container landing_zeroshop">
+				<div class="landing_contents">
+					<img src="../../images/landing_zeroshop01.jpg" alt="">
+				</div>
+				<div class="landing_contents contents_navigator">
+					<!-- <img src="../../images/landing_zeroshop02.jpg" alt=""> -->
+					<a href="#cont01" class="active btn_move">
+						<p>늘 함께하는<br><strong>부담없는 가격</strong></p>
+					</a>
+					<a href="#cont02" class="btn_move">
+						<p>편리하게, 특별하게<br><strong>정기배송 혜택</strong></p>
+					</a>
+					<a href="#cont03" class="btn_move">
+						<p>가장먼저 경험하는<br><strong>참여사의 신제품 </strong></p>
+					</a>
+					<a href="#cont04" class="btn_move">
+						<p>지금만 누릴 수 있는<br><strong>스페셜한 타임혜택</strong></p>
+					</a>
+				</div>
+				<div class="landing_contents">
+					<img src="../../images/landing_zeroshop02_1.jpg" alt="">
+				</div>
+				<div class="landing_contents" id="cont01">
+					<img src="../../images/landing_zeroshop02_2.jpg" alt="">
+				</div>
+				<div class="landing_contents" id="cont02">
+					<img src="../../images/landing_zeroshop03.jpg" alt="">
+				</div>
+				<div class="landing_contents">
+					<a href="https://www.0shop.kr/zeroM/eventview/eventviewInfo?operation=eventviewDetailList&screenId=eventviewDetailList&searchBean.eventDetailId=20200330051141741837&searchBean.viewYn=n" class="link_btn">
+						<img src="../../images/landing_zeroshop04.jpg" alt="">
+					</a>
+				</div>
+				<div class="landing_contents">
+					<img src="../../images/landing_zeroshop05.jpg" alt="">
+				</div>
+				<div class="landing_contents" id="cont03">
+					<img src="../../images/landing_zeroshop05_1.jpg" alt="">
+				</div>
+				<div class="landing_contents">
+					<a href="https://www.0shop.kr/zeroM/eventview/eventviewInfo?operation=eventviewDetailList&screenId=eventviewDetailList&searchBean.eventDetailId=2020071310451632945&searchBean.viewYn=n" class="link_btn">
+						<img src="../../images/landing_zeroshop06.jpg" alt="지난 신제품 체험단후기">
+					</a>
+				</div>
+				<div class="landing_contents" id="cont04">
+					<img src="../../images/landing_zeroshop07.jpg" alt="">
+				</div>
+			</div>
+		</section>
+	</section>
+	<script>
+		$('.contents_navigator a').on({
+			click: function (e) {
+				e.preventDefault();
+				$(e.currentTarget).addClass('active').siblings().removeClass('active');
+				$('html,body').animate({
+					scrollTop: $(e.currentTarget.hash).offset().top - 92
+				});
+			}
+		});
+		if(window.location.hash){
+            $('html,body').animate({
+                scrollTop: $(window.location.hash).offset().top - 92
+            }, 1000);
+        }
+	</script>
+</body>

@@ -1,0 +1,1001 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>theSHOP</title>
+	<link rel="stylesheet" href="../../js/libs/jquery-ui.css">
+	<link rel="stylesheet" href="../../js/libs/owl.carousel.css">
+	<link rel="stylesheet" href="../../css/fonts.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<!--[if lt IE 9]>
+	<script src="../../js/libs/html5shiv.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="../../js/libs/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery-ui.js"></script>
+	<script type="text/javascript" src="../../js/libs/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.bpopup.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/fn-tag-fakeselect.js"></script>
+	<script type="text/javascript" src="../../js/ui.js"></script>
+	<link rel="stylesheet" href="content.css"><!-- 기존 VIPG css -->
+	<link rel="stylesheet" href="../../css/layout_shopplus.css">
+	<link rel="stylesheet" href="../../css/shopplus.css">
+</head>
+<body class="shopplus">
+	<nav id="Index">
+		<a href="#content">본문 바로가기</a>
+		<a href="#header">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</nav>
+	<header id="header">
+		<div class="header_inner">
+			<h1 class="link_logo logo_shopplus"><a href="#" class="ico_comm">the SHOP+</a></h1>
+			<h2 class="tit">쇼핑/기획전</h2>
+			<div class="header_search">
+				<div class="search_enter">
+					<div class="search_enter_inner">
+						<select class="select" style="width:80px">
+							<option>선택</option>
+							<option>경영노하우</option>
+						</select>
+						<input type="text" title="검색어 입력">
+						<button type="submit" class="btn_search">검색</button>
+					</div>
+				</div>
+			</div>
+			<ul class="list_3depth">
+				<li class="on"><a href="#">오늘의 특가</a></li>
+				<li><a href="#">가전</a></li>
+				<li><a href="#">디지털</a></li>
+				<li><a href="#">상품권</a></li>
+				<li><a href="#">생활</a></li>
+				<li><a href="#">식품</a></li>
+				<li><a href="#">유아용품</a></li>
+				<li><a href="#">취미</a></li>
+				<li><a href="#">패션/뷰티</a></li>
+				<li><a href="#">기획전</a></li>
+			</ul>
+			<div class="etc_box">
+				<p>장바구니 <a href="#" class="txt_link"><em class="txt_num">5</em>개</a></p>
+				<p>나의후기 <a href="#" class="txt_link"><em class="txt_num">5</em>개</a></p>
+			</div>
+		</div>
+	</header>
+	<section id="container" class="cont_top_bnr"><!-- sub 상단 배너 있을때 class="cont_top_bnr" 추가 -->
+		<div class="sub_top_bnr sub_appliance">
+			<a href="#" class="inner">
+				<strong class="tit">가전</strong>
+				<img class="bg_img" src="../../images/bg_shopping_appli.jpg" alt="독일 슈퍼파워 진공청소기 미켈란젤로 68% 할인">
+			</a>
+		</div>
+		<div id="content">
+			<div id="content_min">
+				<div id="mypage_sendmoney_top"><!-- 2017-08-29 class 제거 -->
+					<div id="shopping_view_visual">
+						<p class="mb20">							
+							<span onclick="popup('goods_popup_large.php?goodsno=1213142',800,600)" style="cursor:pointer">
+							<!--디테일뷰수정-->
+							<img src="http://www.vipg.co.kr/shop/data/goods/1489734742m0.jpg" width="298" height="298" id="objImg" onerror="this.src='http://www.vipg.co.kr/shop/data/skin/godomarket_G/img/common/shopping_img_ing.gif'">
+							<!--디테일뷰수정-->
+							</span>							
+							<span class="shopping_view_detail"><a href="#" onclick="popup('goods_popup_large.php?goodsno=1213142',800,600)" style="cursor:pointer"><img src="../../images/shopplus/board_btn_expend.jpg" alt="제품 확대보기"></a></span><!-- 2017-08-28 alt값 수정 -->
+						</p>
+
+						<form name="frmView" method="post" onsubmit="return false">
+							<input type="hidden" id="mode" name="mode" value="addItem">
+							<input type="hidden" id="goodsno" name="goodsno" value="1213142">
+							<input type="hidden" id="goodsCoupon" name="goodsCoupon" value="0">
+
+							<ul>
+								<li class="mr5"><img src="http://www.vipg.co.kr/shop/data/goods/t/1489734742m0.jpg" width="43" height="43" onmouseover="chgImg(this)" class="hand" onerror="this.src='http://www.vipg.co.kr/shop/data/skin/godomarket_G/img/common/shopping_img_ing.gif'"></li>
+							</ul>
+						</form>
+					</div>
+					<!-- shopping_view_visual 끝 -->
+
+					<div id="shopping_view_list" class="pl20"> <span class="black11"></span>
+						<h3 class="black16_bold_tahoma pb10">
+						<!--{/**=companyname**/}-->미켈란젤로 UV 침구청소기 컴팩트킬러(ARO-UV400)
+						</h3>
+						<table border="0">
+							<tbody>
+								<tr class="shopping_view_price black11">
+									<th>판매금액</th>
+									<td><p><span class="orange40_bold_tahoma">64</span> <span class="orange22_tahoma">%</span></p><!-- 2017-08-29 class 수정 -->
+										<ul>
+											<li class="line_through">220,000원</li>
+											<li><span class="txt_num">79,000</span>원</li><!-- 2017-08-28 li class 수정 및 tag 추가 -->
+										</ul>
+									</td>
+								</tr>
+								<tr class="black11">
+									<th>원산지</th>
+									<td>중국</td>
+								</tr>
+								<tr class="black11">
+									<th>상품코드</th>
+									<td class="blue11_bold">1213142</td>
+								</tr>
+								<tr class="black11">
+									<th>배송비</th>
+									<td>						
+									<span class="blue11">무료배송
+									</span></td>
+								</tr>
+								<tr class="black11">
+									<th>배송일</th>
+									<td>평균 1일이내 발송(3일이내 100%/토,일,공휴일 제외)</td>
+								</tr>
+								<tr class="black11">
+									<th>연락처</th>
+									<td>010-6234-4670&nbsp;</td>
+								</tr>
+								<!-- 필수 옵션 일체형 -->
+								<tr class="black11 total">
+									<th></th>
+									<td style="word-break:break-all;">
+										<select name="opt[]" onchange="chkOption(this);chkOptimg();nsGodo_MultiOption.set();" required="" msgr=" 선택을 해주세요" style="width:300px;">
+											<option value="">== 옵션선택 ==</option>
+											<option value="화이트">화이트</option>
+											<option value="핑크">핑크</option>
+										</select>
+									</td>
+								</tr>
+								<!-- 필수 옵션 분리형 -->
+
+								<!-- 추가 옵션 -->
+								<input type="hidden" id="ea" name="ea" value="1">
+
+								<!-- ? 옵션 있으면
+								<script type="text/javascript">
+								<!--
+								var nsGodo_MultiOption = function() {
+									function size(e) {
+										var cnt = 0;
+										var type = '';
+
+										for (var i in e) {
+											cnt++;
+										}
+
+										return cnt;
+									}
+
+									return {
+										_soldout : false,
+										data : [],
+										data_size : 0,
+										_optJoin : function(opt) {
+
+											var a = [];
+
+											for (var i=0,m=opt.length;i<m ;i++)
+											{
+												if (typeof opt[i] != 'undefined' && opt[i] != '')
+												{
+													a.push(opt[i]);
+												}
+											}
+
+											return a.join(' / ');
+
+										},
+										getFieldTag : function (name, value) {
+											var el = document.createElement('input');
+											el.type = "hidden";
+											el.name = name;
+											el.value = value;
+
+											return el;
+
+										},
+										clearField : function() {
+											var form = document.getElementsByName('frmView')[0];
+
+											var el;
+
+											for (var i=0,m=form.elements.length;i<m ;i++) {
+												el = form.elements[i];
+												if (typeof el == 'undefined' || el.tagName == "FIELDSET") continue;
+												if (/^multi\_.+/.test(el.name)) {
+													el.parentNode.removeChild(el);
+													i--;
+												}
+
+											}
+
+										},
+										addField : function(obj, idx) {
+
+											var _tag;
+											var form = document.getElementsByName('frmView')[0];
+
+											for(var k in obj) {
+
+												if (typeof obj[k] == 'undefined' || typeof obj[k] == 'function' || (k != 'opt' && k != 'addopt' && k != 'ea')) continue;
+
+												switch (k)
+												{
+													case 'ea':
+														_tag = this.getFieldTag('multi_'+ k +'['+idx+']', obj[k]);
+														form.appendChild(_tag);
+
+														break;
+													case 'opt':
+													case 'addopt':
+														for(var k2 in obj[k]) {
+														if (typeof obj[k][k2] == 'function') continue;
+															_tag = this.getFieldTag('multi_'+ k +'['+idx+'][]', obj[k][k2]);
+															form.appendChild(_tag);
+														}
+
+														break;
+													default :
+														continue;
+														break;
+												}
+											}
+										},
+										set : function() {
+
+											var add = true;
+
+											var opt = document.getElementsByName('opt[]');
+											var addopt = document.getElementsByName('addopt[]');
+
+											var opt = document.getElementsByName('opt[]');
+
+											for (var i=0,m=opt.length;i<m ;i++ )
+											{
+												if (typeof(opt[i])!="undefined") {
+													if (opt[i].value == '') add = false;
+												}
+											}
+
+											// 추가 옵션?
+											var addopt = document.getElementsByName('addopt[]');
+											for (var i=0,m=addopt.length;i<m ;i++ )
+											{
+												if (typeof(addopt[i])!="undefined") {
+													if (addopt[i].value == '' /*&& addopt[i].getAttribute('required') != null*/) add = false;
+												}		
+											}
+
+											if (add == true)
+											{
+												this.add();
+											}
+										},
+										del : function(key) {
+
+											this.data[key] = null;
+											var tr = document.getElementById(key);
+											tr.parentNode.removeChild(tr);
+											this.data_size--;
+
+											// 총 금액
+											var totprice = 0;
+											for (var i in this.data)
+											{
+												totprice += this.data[i] != null ? this.data[i].opt_price : 0;
+											}
+
+											document.getElementById('el-multi-option-total-price').innerText = comma(totprice);
+
+										},
+										add : function() {
+											var self = this;
+
+											if (self._soldout)
+											{
+												alert("품절된 상품입니다.");
+												return;
+											}
+
+											var form = document.frmView;
+											if(!(form.ea.value>0))
+											{
+												alert("구매수량은 1개 이상만 가능합니다");
+												return;
+											}
+											if (chkGoodsForm(form)) {
+												var _data = {};
+
+												_data.ea = document.frmView.ea.value;
+												_data.opt = new Array;
+												_data.addopt = new Array;
+
+												// 기본 옵션
+												var opt = document.getElementsByName('opt[]');
+												if (opt.length > 0) {
+													_data.opt[0] = opt[0].value;
+													_data.opt[1] = '';
+													if (typeof(opt[1]) != "undefined") _data.opt[1] = opt[1].value;
+
+													var key = _data.opt[0] + (_data.opt[1] != '' ? '|' + _data.opt[1] : '');
+
+													// 가격
+													if (opt[0].selectedIndex == 0) key = fkey;
+													key = key.replace('"','&quot;');
+													if (typeof(price[key])!="undefined"){
+														_data.price = price[key];
+														_data.reserve = reserve[key];
+														_data.consumer = consumer[key];
+														_data.realprice = realprice[key];
+														_data.couponprice = couponprice[key];
+														_data.coupon = coupon[key];
+														_data.cemoney = cemoney[key];
+														_data.memberdc = memberdc[key];
+													}
+												}
+												else {
+													// 옵션이 없는 경우(or 추가 옵션만 있는 경우) 이므로 멀티 옵션 선택은 불가.
+													// 옵션 추가 값 노출이 안되서 스크립트 추가 2014-02
+													var goodsPrice = '79000';
+													var addValue = $("#addopt option:selected").val();
+													var addValueTmp = addValue.split("^");
+													var totalPrice;
+													if(addValueTmp[3]){
+														totalPrice = parseInt(goodsPrice)+parseInt(addValueTmp[3]);
+													}
+													document.getElementById('el-multi-option-total-price').innerText = comma(totalPrice);
+
+													return;
+												}
+
+												// 추가 옵션
+												var addopt = document.getElementsByName('addopt[]');
+
+												for (var i=0,m=addopt.length;i<m ;i++ ) {
+
+													if (typeof addopt[i] == 'object') {
+														_data.addopt.push(addopt[i].value);
+													}
+
+												}
+
+												// 이미 추가된 옵션인지
+												if (self.data[key] != null)
+												{
+													alert('이미 추가된 옵션입니다.');
+													return false;
+												}
+
+												// 옵션 박스 초기화
+												for (var i=0,m=addopt.length;i<m ;i++ )
+												{
+													if (typeof addopt[i] == 'object') {
+														addopt[i].selectedIndex = 0;
+													}
+												}
+												//opt[0].selectedIndex = 0;
+												//subOption(opt[0]);
+												$('#optionSelect').show();
+												document.getElementById('el-multi-option-display').style.display = 'block';
+
+												// 행 추가
+												var childs = document.getElementById('el-multi-option-display').childNodes;
+												for (var k in childs)
+												{
+													if (childs[k].tagName == 'TABLE') {
+														var table = childs[k];
+														break;
+													}
+												}
+
+												var td, tr = table.insertRow();
+												var html = '';
+
+												tr.id = key;
+
+												// 옵션명
+												td = tr.insertCell(-1);
+												html = '<div style="font-size:11px;color:#666;padding:3px 0 0 8px;">'; // 2017-08-29 color 수정
+												html += self._optJoin(_data.opt);
+												html += '</div>';
+
+												// 추가 옵션명
+												html += '<div style="font-size:11px;color:#A0A0A0;padding:3px 0 0 8px;">';
+												var tmp,tmp_addopt = [];
+												for (var i=0,m=_data.addopt.length;i<m ;i++ )
+												{
+													tmp = _data.addopt[i].split('^');
+													if (tmp[2]) tmp_addopt.push(tmp[2]);
+												}
+												html += self._optJoin(tmp_addopt);
+												html += '</div>';
+												td.innerHTML = html;
+
+												// 수량
+												td = tr.insertCell(-1);
+												html = '';
+												html += '<span class="input"><input type=text name=_multi_ea[] id="el-ea-'+key+'" size=2 value='+ _data.ea +' onkeyup="nsGodo_MultiOption.ea(\'set\',\''+key+'\',this.value);"></span>';
+												html += '<span class="total"><img src="/shop/data/skin/godomarket_G/img/board/shopping_btn_total_up.jpg" onClick="nsGodo_MultiOption.ea(\'up\',\''+key+'\');" style="cursor:pointer">';
+												html += '<img src="/shop/data/skin/godomarket_G/img/board/shopping_btn_total_down.jpg" onClick="nsGodo_MultiOption.ea(\'down\',\''+key+'\');" style="cursor:pointer"></span>';
+												td.innerHTML = html;
+
+												// 옵션가격
+												_data.opt_price = _data.price - _data.coupon;
+
+												for (var i=0,m=_data.addopt.length;i<m ;i++ )
+												{
+													tmp = _data.addopt[i].split('^');
+													if (tmp[3]) _data.opt_price = _data.opt_price + parseInt(tmp[3]);
+												}
+												td = tr.insertCell(-1);
+												td.style.cssText = 'padding-right:10px;text-align:right;font-weight:bold;color:#666;'; // 2017-08-29 color 수정
+												html = '';
+												html += '<span id="el-price-'+key+'">'+comma( _data.opt_price *  _data.ea) + '원</span> ';  // 2017-08-29 끝에 공백 생성
+												html += '<a href="javascript:void(0);" onClick="nsGodo_MultiOption.del(\''+key+'\');return false;"><img src="/shop/data/skin/godomarket_G/img/board/board_btn_x.gif"></a>';
+												td.innerHTML = html;
+
+												self.data[key] = _data;
+												self.data_size++;
+
+												// 총 금액
+												self.totPrice();
+											}
+										},
+										ea : function(dir, key,val) {	// up, down
+
+											var min_ea = 0, max_ea = 0;
+
+											if (document.frmView.min_ea) min_ea = parseInt(document.frmView.min_ea.value);
+											if (document.frmView.max_ea) max_ea = parseInt(document.frmView.max_ea.value);
+
+											if (dir == 'up') {
+												this.data[key].ea = (max_ea != 0 && max_ea <= this.data[key].ea) ? max_ea : parseInt(this.data[key].ea) + 1;
+											}
+											else if (dir == 'down')
+											{
+												if ((parseInt(this.data[key].ea) - 1) > 0)
+												{
+													this.data[key].ea = (min_ea != 0 && min_ea >= this.data[key].ea) ? min_ea : parseInt(this.data[key].ea) - 1;
+												}
+
+											}
+											else if (dir == 'set') {
+
+												if (val && !isNaN(val))
+												{
+													val = parseInt(val);
+
+													if (max_ea != 0 && val > max_ea)
+													{
+														val = max_ea;
+													}
+													else if (min_ea != 0 && val < min_ea) {
+														val = min_ea;
+													}
+													else if (val < 1)
+													{
+														val = 1;
+													}
+
+													this.data[key].ea = val;
+
+												}
+												else {
+													alert('수량은 1 이상의 숫자로만 입력해 주세요.');
+													return;
+												}
+											}
+
+											document.getElementById('el-ea-'+key).value = this.data[key].ea;
+											document.getElementById('el-price-'+key).innerText = comma(this.data[key].ea * this.data[key].opt_price) + '원';
+
+											// 총금액
+											this.totPrice();
+
+										},
+										totPrice : function() {
+											var self = this;
+											var totprice = 0;
+											for (var i in self.data)
+											{
+												if (self.data[i] !== null && typeof self.data[i] == 'object') totprice += self.data[i].opt_price * self.data[i].ea;
+											}
+
+											document.getElementById('el-multi-option-total-price').innerText = comma(totprice);
+										}
+									}
+								}();
+
+								function chkGoodsForm(form) {
+
+									if (form.min_ea)
+									{
+										if (parseInt(form.ea.value) < parseInt(form.min_ea.value))
+										{
+											alert('최소구매수량은 ' + form.min_ea.value+'개 입니다.');
+											return false;
+										}
+									}
+
+									if (form.max_ea)
+									{
+										if (parseInt(form.ea.value) > parseInt(form.max_ea.value))
+										{
+											alert('최대구매수량은 ' + form.max_ea.value+'개 입니다.');
+											return false;
+										}
+									}
+
+									return chkForm(form);
+								}
+								//->
+								</script> -->
+								<tr id="optionSelect" style="display:table-row;">
+									<th colspan="2"> 
+										<div id="el-multi-option-display" class="goods-multi-option" style="display: block;">
+											<table class="shopping_total_option">
+												<tr id="1,500장 이하/3년"><td><div style="font-size:11px;color:#666;padding:3px 0 0 8px;">1,500장 이하/3년</div><div style="font-size:11px;color:#A0A0A0;padding:3px 0 0 8px;"></div></td><td><span class="input"><input type="text" name="_multi_ea[]" id="el-ea-1,500장 이하/3년" size="2" value="1" onkeyup="nsGodo_MultiOption.ea('set','1,500장 이하/3년',this.value);"></span><span class="total"><img src="../../images/shopplus/shopping_btn_total_up.jpg" onclick="nsGodo_MultiOption.ea('up','1,500장 이하/3년');" style="cursor:pointer"><img src="../../images/shopplus/shopping_btn_total_down.jpg" onclick="nsGodo_MultiOption.ea('down','1,500장 이하/3년');" style="cursor:pointer"></span></td><td style="padding-right: 10px; text-align: right; font-weight: bold; color: #666;"><span id="el-price-1,500장 이하/3년">534,600원</span> <a href="javascript:void(0);" onclick="nsGodo_MultiOption.del('1,500장 이하/3년');return false;"><img src="http://www.vipg.co.kr/shop/data/skin/godomarket_G/img/board/board_btn_x.gif"></a></td></tr>
+											</table>
+										</div>
+									</th>
+								</tr>
+								<tr class="black11">
+									<th></th>
+									<td class="txt_right">총 상품금액 : 
+										<span class="orange16_bold_tahoma" id="el-multi-option-total-price">79,000</span> 원<!-- 2017-08-29 class 수정 -->
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="btn_wrap"><!-- 2017-08-29 tag / class 수정 -->
+							<a href="javascript:act('../order/order');"><img src="../../images/shopplus/board_btn_buy.jpg"></a>
+							<a href="javascript:act('goods_cart');"><img src="../../images/shopplus/shopping_btn_basket.jpg"></a>
+						</div><!-- 2017-08-29 tag 수정 -->
+					</div>
+					<!-- shopping_view_list 끝 -->
+				</div>
+				<!-- table_list_concierge 끝 -->
+
+				<div id="shopping_view_detail_view" class="pt30">
+					<div id="shopping_view_detail_title">
+						<p class="shopping_view_title_name"><img src="../../images/shopplus/shopping_title_view_data.jpg" alt="상세정보"></p><!-- 2017-08-28 alt값 수정 -->
+					</div><!-- shopping_view_detail_title 끝 -->
+					<p class="txt_center"><!-- 2017-08-29 class 수정 -->
+						<img src="http://www.vipg.co.kr/shop/data/editor/1489734700.jpg">
+					</p><!-- 상품 사용기 -->
+					<iframe id="inreview" src="goods_review_list.html"></iframe><!-- 2017-08-28 attribute 수정 -->
+					<!-- 상품 질문과답변 -->
+					<iframe id="inqna" src="goods_qna_list.html"></iframe><!-- 2017-08-28 attribute 수정 -->
+				</div><!-- shopping_view 끝 -->
+			</div>
+		</div>
+	</section>
+	
+	<!-- left [s] -->
+	<div class="left_menu v2"><!-- 2020-10-06 v2 클래스 추가 -->
+		<!--2022-11-07 menu_wrap 클래스 추가-->
+		<div class="menu_wrap">
+			<div class="s_menu" style="display: block;">
+				<ul class="left_menu_inner">
+					<!-- 2020-10-06 수정 [s] -->
+					<li class="btn_alarm alarm_box">
+						<a href="#" class="btn_ico">
+							<span class="btn_comm ico_lnb"></span>
+							<span class="menu_name">알림</span>
+							<span class="txt_num">99</span>
+						</a>
+						<div class="tooltip_box" style="width:250px;display:none;"><!-- 2020-10-28 width 수정 -->
+							<!-- 2020-10-28 체크박스 추가 -->
+							<label class="checkbox_wrap">
+								<input type="checkbox" name="">오늘 하루 다시 열지 않음
+							</label>
+							<iframe id="ad_banner_sec_s" src="http://realmedia.hidoc.co.kr/RealMedia/ads/adstream_sx.ads/shop.co.kr/theshop_pharm_left_live1@Left1" width="100%" height="100%" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+							<button type="button" class="btn_comm btn_close">닫기</button>
+						</div>
+					</li>
+					<li class="btn_home">
+						<a href="#" class="btn_ico">
+							<span class="btn_comm ico_lnb"></span>
+							<span class="menu_name">홈</span>
+						</a>
+						<div class="tooltip_box" style="width:150px">
+							<p><span class="ico_comm"></span> 아이콘 클릭 시 <br>더샵 메인 화면으로 <br>이동합니다. </p>
+						</div>
+					</li>
+					<li class="btn_mypage">
+						<a href="#" class="btn_ico">
+							<span class="btn_comm ico_lnb"></span>
+							<span class="menu_name">내정보</span>
+						</a>
+						<div class="tooltip_box" style="width:250px">
+							<p><span class="ico_comm"></span> 주문/배송/반품 등을 조회하실 수 있는<br>더샵 마이페이지입니다. <br>아이콘 클릭 시 이동합니다.</p>
+						</div>
+					</li>
+					<li class="btn_mileage">
+						<a href="#" class="btn_ico"> 
+							<span class="btn_comm ico_lnb"></span>
+							<span class="menu_name">마일리지</span>
+						</a>
+						<div class="tooltip_box" style="width:200px">
+							<p><span class="ico_comm"></span> 마일리지 조회 및 사용이 가능한 패밀리존 페이지입니다. <br>아이콘 클릭 시 이동합니다.</p>
+						</div>
+					</li>
+					<li class="btn_point">
+						<a href="#" class="btn_ico">
+							<span class="btn_comm ico_lnb"></span>
+							<span class="menu_name">포인트</span>
+						</a>
+						<div class="tooltip_box" style="width:250px">
+							<p><span class="ico_comm"></span> 더샵플러스 관련 주문 및 포인트 내역을<br>조회하실 수 있는 더샵플러스 마이페이지<br>입니다. 아이콘 클릭 시 이동합니다.</p>
+						</div>
+					</li>
+					<li class="btn_shopplus">
+						<a href="#" class="btn_ico">
+							<span class="btn_comm ico_lnb"></span>
+						</a>
+						<div class="tooltip_box" style="width:245px">
+							<p><span class="ico_comm"></span> 더샵플러스는 의약품 주문 이외의 모든<br>혜택을 이용할 수 있는 곳입니다. 아이콘<br>클릭 시 메뉴가 펼쳐지며, 각 하위 메뉴<br>클릭 시 이동합니다.</p>
+						</div>
+					</li>
+					<li class="btn_customer">
+						<a href="#" class="btn_ico">
+							<span class="btn_comm ico_lnb"></span>
+							<span class="menu_name">문의</span>
+						</a>
+						<div class="tooltip_box" style="width:130px">
+							<p><span class="ico_comm"></span> 고객만족센터로<br>아이콘 클릭 시 <br>이동합니다.</p>
+						</div>
+					</li>
+					<li class="btn_allmenu">
+						<a href="#" class="btn_ico">
+							<span class="btn_comm ico_lnb"></span>
+						</a>
+						<div class="tooltip_box" style="width:210px">
+							<p><span class="ico_comm"></span> 더샵 및 더샵플러스 전체 메뉴를<br>보실 수 있습니다. 아이콘 클릭 시<br>메뉴확인 가능합니다.</p>
+						</div>
+						<div class="allmenu_box">
+							<ul class="allmenu_inner">
+								<li><strong>더샵 주문</strong>
+									<ul>
+										<li><a href="#">마이페이지</a></li>
+										<li><a href="#">특가상품</a></li>
+										<li><a href="#">이벤트</a></li>
+										<li><a href="#">부가서비스</a></li>
+										<li><a href="#">제휴카드</a></li>
+										<li><a href="#">고객만족센터</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="allmenu_inner">
+							<li><strong>라이브세미나</strong>
+								<ul>
+									<li><a href="#">홈</a></li>
+									<li><a href="#">나의세미나</a></li>
+									<li><a href="#">다시보기 VOD</a></li>
+								</ul>
+							</li>
+						</ul>
+							<ul class="allmenu_inner">
+								<li><a href="#">포인트몰</a></li>
+								<li><a href="#">빅데이터</a></li>
+								<li><a href="#">지식공유</a></li>
+								<li><a href="#">의약품정보 <span class="ico_kims">KIMS</span></a></li>
+								<!-- 2021-05-12 팝업 스크립트 추가 -->
+								<li><a href="../popup/error_11st.html" onclick="javascript:window.open(this.href,'pop1','width=352,height=352,scrollbars=no'); return false">엔터테인먼트</a></li>
+							</ul>
+							<ul class="allmenu_inner">
+								<li><a href="#">포인트 이용내역</a></li>
+								<li><a href="#">포인트 충전하기</a></li>
+								<li><a href="#">서비스 알람설정</a></li>
+								<li><a href="#">고객센터</a></li>
+							</ul>
+							<button type="button" class="btn_comm btn_close">닫기</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="b_menu" style="display:none;">
+				<div class="mypage_box">
+					<p class="user_name"><strong>박가진</strong> 약사님</p>
+					<span class="user_id">dhop1234</span>
+					<!-- 2020-10-06 수정 [s] -->
+					<!-- 알림 영역 [s] -->
+					<div class="alarm_box">
+						<a href="#" class="link_alarm">
+							<span class="btn_comm ico_lnb">알림</span>
+							<em class="txt_num">5</em>
+						</a>
+					</div>
+					<!-- 알림 영역 [e] -->
+					<div class="info_box shop_point act_none">
+						<p>나의 등급</p>
+						<em class="txt_emph">VIP</em>
+					</div>
+					<div class="info_box shop_point">
+						<p><a href="http://www.shop.co.kr/front/theshop/event/familyZone/familyzone_main">더샵 마일리지 <span class="btn_comm ico_link">이동</span></a></p>
+						<em class="txt_num">550,000</em>
+					</div>
+					<div class="info_box shop_point">
+						<p><a href="http://www.shop.co.kr/front/theshopplus/mypage/point">더샵 플러스 포인트 <span class="btn_comm ico_link">이동</span></a></p>
+						<em class="txt_num">550,000</em>
+					</div>
+					<div class="info_box shop_point">
+						<p><a href="http://www.shop.co.kr/mypage/coupon/couponList.do">쿠폰 <span class="btn_comm ico_link">이동</span></a></p>
+						<em class="txt_num">14<span class="unit">장</span></em>
+					</div>
+					<div class="info_box shop_point">
+						<p><a href="http://www.shop.co.kr/mypage/mileage/mileageList.do">업체 마일리지 <span class="btn_comm ico_link">이동</span></a></p>
+						<em class="txt_num">100,360,107,217</em>
+					</div>
+					<div class="info_box shop_point">
+						<p><a href="http://www.shop.co.kr/mypage/reserveAmt/reserveAmtDetailList.do">예치금 <span class="btn_comm ico_link">이동</span></a></p>
+						<em class="txt_num">100,360,107,217</em>
+					</div>
+					<div class="btn_wrap">
+						<a href="http://www.shop.co.kr/event/raEvent.do" class="btn_balance"><span class="btn_comm ico_balance"></span> 예치금 선구매</a>
+					</div>
+					<!-- 2020-10-06 수정 [e] -->
+				</div>
+				<ul class="left_menu_inner">
+					<!-- 2020-10-06 수정 [s] -->
+					<li class="btn_home"><a href="#" class="btn_ico"><span class="btn_comm ico_lnb"></span>더샵 홈<span class="btn_comm ico_link">이동</span></a></li>
+					<li class="btn_shopplus"><a href="#" class="btn_ico"><span class="btn_comm ico_lnb"></span>더샵플러스<span class="btn_comm ico_down">열림</span></a>
+						<ul class="depth">
+							<li class="btn_seonmall"><a href="https://seoneemall.com/"><span class="btn_comm"></span>선이몰</a></li> <!--2022-01-18 추가-->
+							<li class="btn_remembered"><a href="#"><span class="btn_comm"></span>마이라이프캔버스</a></li> <!--2022-09-27 추가-->
+							<li class="btn_plus_pharmacy"><a href="#"><span class="btn_comm"></span>약국경영</a></li>
+							<li class="btn_plus_shopping"><a href="#"><span class="btn_comm"></span>쇼핑/기획전</a></li>
+							<li class="btn_plus_pop"><a href="#"><span class="btn_comm"></span>약국추천 POP</a></li><!-- 2021-06-18 수정 -->
+							<li class="btn_plus_bigdata"><a href="#"><span class="btn_comm"></span>판매가동향</a></li><!-- 2021-06-18 수정 -->
+							<li class="btn_plus_knowledge"><a href="#"><span class="btn_comm"></span>지식공유</a></li>
+							<li class="btn_plus_kims"><a href="#"><span class="btn_comm"></span>의약품정보</a></li>
+							<li class="btn_plus_giftcon"><a href="#"><span class="btn_comm"></span>기프티콘</a></li><!-- 2021-06-18 수정 -->
+						</ul>
+					</li>
+					<li class="btn_customer"><a href="#" class="btn_ico"><span class="btn_comm ico_lnb"></span>더샵문의<span class="btn_comm ico_link">이동</span></a></li>
+					<li class="btn_allmenu"><a href="#" class="btn_ico"><span class="btn_comm ico_lnb"></span>전체메뉴<span class="btn_comm ico_link">이동</span></a>
+						<div class="allmenu_box">
+							<ul class="allmenu_inner">
+								<li><strong>더샵 주문</strong>
+									<ul>
+										<li><a href="#">마이페이지</a></li>
+										<li><a href="#">특가상품</a></li>
+										<li><a href="#">이벤트</a></li>
+										<li><a href="#">부가서비스</a></li>
+										<li><a href="#">제휴카드</a></li>
+										<li><a href="#">고객만족센터</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="allmenu_inner">
+								<li><strong>라이브세미나</strong>
+									<ul>
+										<li><a href="#">홈</a></li>
+										<li><a href="#">나의세미나</a></li>
+										<li><a href="#">다시보기 VOD</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="allmenu_inner">
+								<li><a href="#">포인트몰</a></li>
+								<li><a href="#">빅데이터</a></li>
+								<li><a href="#">지식공유</a></li>
+								<li><a href="#">의약품정보 <span class="ico_kims">KIMS</span></a></li>
+								<!-- 2021-05-12 팝업 스크립트 추가 -->
+								<li><a href="../popup/error_11st.html" onclick="javascript:window.open(this.href,'pop1','width=352,height=352,scrollbars=no'); return false">엔터테인먼트</a></li>
+							</ul>
+							<ul class="allmenu_inner">
+								<li><a href="#">포인트 이용내역</a></li>
+								<li><a href="#">포인트 충전하기</a></li>
+								<li><a href="#">서비스 알람설정</a></li>
+								<li><a href="#">고객센터</a></li>
+							</ul>
+							<button type="button" class="btn_comm btn_close">닫기</button>
+						</div>
+					</li>
+					<!-- 2020-10-06 수정 [e] -->
+				</ul>
+			</div>
+			<button type="button" class="btn_unfold open"><span class="btn_comm">펼치기</span></button>
+		</div>
+	</div>
+	
+	<div id="pointConvert" style="display:none;">
+		<div class="pop_layer pop_type1" style="width:610px;">
+			<strong class="tit_popup">더샵 마일리지 포인트 전환</strong>
+			<div class="pop_wrap">
+				<div class="info_box">
+					<span class="ico_comm"></span>
+					<!-- 2020-06-25 수정 [s] -->
+					<p><em>더샵 마일리지를 더샵플러스포인트로 전환</em></p>
+					<p><em>더샵 1 마일리지 = 더샵플러스 1포인트</em>로 교환가능합니다.</p>
+					<p>더샵플러스 포인트는 포인트몰에서만 사용 가능하며, <strong>더샵 마일리지 재전환은 불가</strong>합니다.</p>
+					<!-- 2020-06-25 수정 [e] -->
+				</div>
+				<div class="point_status">
+					<div class="point_status_head">
+						<!-- 2020-06-25 수정 -->
+						<strong class="tit">더샵 마일리지 보유 현황</strong>
+						<p class="txt_sum_point">총 <span class="txt_num">3,000</span>점</p>
+					</div>
+					<div class="point_status_body">
+						<!-- 2020-06-25 수정 -->
+						<p class="txt_point">더샵 마일리지 보유 현황 <em class="txt_point_num"><span class="txt_num">3,000</span>점</em></p>
+					</div>
+				</div>
+				<div class="point_status">
+					<div class="point_status_head">
+						<strong class="tit">더샵플러스 포인트 보유 현황</strong>
+						<p class="txt_sum_point">총 <em class="txt_num"><span>6,000</span>P</em></p>
+					</div>
+					<div class="point_status_body">
+						<div class="txt_point">
+							<p class="type"><span>포인트몰, 라이브세미나, 엔터테인먼트 전용</span></p><!-- 2017-11-08 텍스트 수정 -->
+							<em class="txt_point_num txt_num"><span>3,000</span>P</em>
+						</div>
+					</div>
+				</div>
+				<div class="point_status point_convert">
+					<div class="point_status_head">
+						<strong class="tit">더샵플러스 포인트 전환</strong><!-- 2020-06-12 수정 -->
+					</div>
+					<div class="point_status_body">
+						<div class="point_convert_area"><!-- 2018-07-16 span -> div로 변경 -->
+							<em class="tit">선택 포인트(마일리지)</em>
+							<!-- 2018-07-23 수정 -->
+							<select class="select" style="width:155px;">
+								<option>선택</option>
+								<option>더샵 마일리지</option>
+							</select>
+							<!-- //2018-07-23 수정 -->
+						</div>
+						<span class="txt_bar">&gt;</span>
+						<div class="point_convert_area point_convert_move"><!-- 2018-07-16 span -> div로 변경 -->
+							<em class="tit">이동할 포인트</em>
+							<!-- 2018-07-23 수정 -->
+							<select class="select" style="width:155px;">
+								<option>선택</option>
+								<option>약국경영, 쇼핑 전용 포인트</option>
+								<option>라이브세미나, 엔터테인먼트 전용 포인트</option>
+							</select>
+							<!-- //2018-07-23 수정 -->
+						</div>
+						<div class="point_convert_area"><!-- 2018-07-16 span -> div로 변경 -->
+							<label class="tit" for="inp_point">포인트 입력</label>
+							<input type="text" id="inp_point" style="width:157px;">
+						</div>
+					</div>
+				</div>
+				<div class="btn_wrap">
+					<button type="submit" class="btn_type1 btn_convert">포인트 전환하기</button>
+					<button type="reset" class="btn_type2 btn_cancel">취소</button>
+				</div>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		$(function(){
+			var sMenu = $(".left_menu .s_menu");
+			var bMenu = $(".left_menu .b_menu");
+			//2022-11-07 추가
+			$(".left_menu .btn_unfold").on("click", function(e){
+				e.preventDefault();
+				if(!$(this).hasClass("open")){
+					$(this).addClass("open").find(".btn_comm").text("펼치기");
+					sMenu.show();
+					bMenu.hide();
+					$(".btn_allmenu").removeClass("on");
+					$(".allmenu_box").hide();
+				} else {
+					$(this).removeClass("open").find(".btn_comm").text("접기");
+					sMenu.hide();
+					bMenu.show();
+					$(".btn_allmenu").removeClass("on");
+					$(".allmenu_box").hide();
+				}
+			});
+			$(".left_menu .btn_close_box .btn_close").on("click", function(e){
+				e.preventDefault();
+				$(".btn_unfold").addClass("open").find(".btn_comm").text("펼치기");
+				sMenu.show();
+				bMenu.hide();
+				$(".allmenu_box").hide();
+			});
+	
+			// 포인트 전환하기 팝업
+			$("body").on("click", ".left_menu .btn_point_convert", function(e) {
+				e.preventDefault();
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#pointConvert"), {
+					closeClass: "btn_close"
+				});
+				// 모달레이어 close 이벤트 추가
+				$("body").on("click", "#pointConvert .btn_cancel", function() {
+					// modalLayer.close();
+					$(".btn_close").click();
+				});
+			});
+			$("body").on("click", "#pointConvert .btn_convert", function(e) {
+				e.preventDefault();
+				shopUI.modalLayerComm({
+					"type": "2",
+					"title": "더샵 마일리지 포인트 전환",
+					"description": "마일리지 <em>3,000점이 차감</em>됩니다.<br>더샵플러스 포인트로 교환하시겠습니까?"
+				});
+			});
+			// 디자인형 셀렉트박스 2018-07-16 추가
+			// shopUI.selectBoxDesign(); 2018-07-23 삭제
+	
+			// 전체메뉴 click
+			$(".left_menu .btn_allmenu > a").on("click", function(e){			
+				e.preventDefault();
+				if($(this).siblings(".allmenu_box").is(":visible")){
+					$(".btn_allmenu").removeClass("on");
+					$(this).siblings(".allmenu_box").fadeToggle();
+				} else {
+					$(".btn_allmenu").addClass("on");
+					$(this).siblings(".allmenu_box").fadeToggle();
+				}
+			});
+			$(".left_menu .allmenu_box .btn_close").on("click", function(e){
+				e.preventDefault();
+				$(".btn_allmenu").removeClass("on");
+				$(this).parent().fadeOut();
+			});
+	
+			// 왼쪽 하위메뉴 노출
+			$(".left_menu .b_menu li a").on("click", function(e){			
+				//e.preventDefault();
+				if(!$(this).next(".depth").length == 0){
+					$(this).next(".depth").slideToggle(function(){
+						if($(this).is(":visible")){
+							$(this).prev().find(".ico_down").addClass("ico_up").removeClass("ico_down").text("접음");						
+						} else {
+							$(this).prev().find(".ico_up").addClass("ico_down").removeClass("ico_up").text("열림");
+							$('.left_menu .shop_point').not('.act_none').show();//2022-11-07 추가
+						}
+					});
+				}
+			});
+			//2022-11-07 추가[s]
+			$(".left_menu .btn_shopplus").on("click", function(e){
+				$('.left_menu .shop_point').not('.act_none').hide();
+			});
+			//2022-11-07 추가[e]
+			$(".left_menu .s_menu .btn_shopplus").on("click", function(e){
+				e.preventDefault();			
+				$(".btn_unfold").removeClass("open").find(".btn_comm").text("접기");
+				sMenu.hide();
+				bMenu.show();
+				bMenu.find(".btn_shopplus ul").show().prev().find(".ico_down").addClass("ico_up").removeClass("ico_down").text("접음");
+				$(".btn_allmenu").removeClass("on");
+				$(".allmenu_box").hide();
+			});
+	
+			// 알람 레이어
+			// 2020-10-21 추가
+			$(".left_menu .alarm_box .btn_close").on("click", function(e){
+				$('.left_menu .alarm_box .tooltip_box').addClass('hidden');
+			});
+			$(".left_menu .alarm_box .btn_ico, .left_menu .alarm_box .link_alarm").on("click", function(e){
+				$('.left_menu .alarm_box .tooltip_box').removeClass('hidden');
+			});
+			$(".left_menu .link_alarm_list").on("click", function(e){
+				$(this).parent().next(".alarm_all_list").show();
+				e.preventDefault();
+			});
+			$(".left_menu .alarm_all_list .btn_close").on("click", function(e){
+				$(this).parent(".alarm_all_list").hide();
+				e.preventDefault();
+			});
+			// 2018-05-03 배너 레이어 활성화 시
+			$(".bnr_on .tooltip_box .btn_close").on("click", function () {
+				$(this).parent().parent().removeClass("bnr_on")
+			})
+		});
+	</script>
+	<!-- left [e] -->
+	
+	<!-- footer [s] -->
+	<!--#include virtual="/publish/shop/renewal/html/include/footer_plus.html" -->
+	<!-- footer [e] -->
+</body>
+</html>

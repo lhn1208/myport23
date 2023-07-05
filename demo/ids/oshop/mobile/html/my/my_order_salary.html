@@ -1,0 +1,131 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+        <!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" --> <!-- 2017-03-21 수정 -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<div class="cont_head"><!-- 2017-03-21 class 수정 -->
+					<h2 class="tit_cate">급여차감내역</h2>
+					<!-- 2017-03-21 삭제 <a href="#none" class="link_prev"><span class="ico_oshop ico_prev">이전</span></a> -->
+				</div>
+				<!-- 2017-04-13 수정[s] -->
+				<div class="cont_my">
+					<ul class="list_type">
+						<li>기간 검색시 최대 12개월까지 조회가 가능합니다.</li>
+					</ul>
+
+					<div class="box_type1 box_point">
+						<strong class="tit_box">급여차감</strong>
+						<p>결제금액 <em class="txt_num">6,000</em></p>
+						<p>환급금액(미차감) <em class="txt_num">6,000</em></p>
+						<p>차감누적금액 <em class="txt_num">6,000</em></p>
+					</div>
+
+					<div class="box_type1 box_setting">
+						<a href="#none" class="tit_setting">급여차감내역조회<span class="ico_oshop ico_down">닫기</span></a>
+						<div class="cont_setting">
+							<form>
+								<fieldset>
+									<legend class="screen_out">기간 조회 폼</legend>
+									<div class="frame">
+										<div class="select_type1">
+											<select class="list_select">
+												<option selected="selected">기간설정</option>
+												<option>option1</option>
+												<option>option2</option>
+											</select>
+										</div>
+									</div>
+									<div class="frame">
+										<ul class="tab_type2">
+											<li class="on"><a href="#none" class="link_tab">오늘</a></li>
+											<li><a href="#none" class="link_tab">3일간</a></li>
+											<li><a href="#none" class="link_tab">7일간</a></li>
+											<li><a href="#none" class="link_tab">30일간</a></li>
+										</ul>
+									</div>
+									<div class="frame">
+										<div class="frame_inp"><input type="text" class="inp_oshop"></div>
+										<span class="txt_g">-</span>
+										<div class="frame_inp"><input type="text" class="inp_oshop"></div>
+									</div>
+									<div class="frame_btn">
+										<button type="submit" class="btn_type2">검색</button>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+
+					<div class="box_result">
+						<p>총 <span class="txt_num">55</span>건의 주문이 검색되었습니다.</p>
+					</div>
+
+					<div class="point_zero">
+						<table class="tbl_point">
+							<caption>급여차감내역</caption>
+							<colgroup>
+								<col style="width:40%;">
+								<col style="width:40%;">
+								<col style="width:20%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">날자/주문번호</th>
+									<th scope="col">내용</th>
+									<th scope="col">지급/사용</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2017-03-20<br>M17032010395799580</td>
+									<td>급여차감 사용</td>
+									<td>420,000</td>
+								</tr>
+								<tr>
+									<td>2017-03-20<br>M17032010395799580</td>
+									<td>취소 환불</td>
+									<td>-3,000p</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<script>
+					$(function() {
+						// 아코디언
+						$(".box_setting .tit_setting").on("click",function(){
+							$(this).next(".cont_setting").slideToggle(function(){
+								if($(this).is(':visible')){
+									$(this).prev().children(".ico_up").text("닫기");
+									$(this).prev().children(".ico_up").addClass("ico_down");
+									$(this).prev().children(".ico_up").removeClass("ico_up");
+								} else{
+									$(this).prev().children(".ico_down").text("열기");
+									$(this).prev().children(".ico_down").addClass("ico_up");
+									$(this).prev().children(".ico_down").removeClass("ico_down");
+								}
+							});
+							return false;
+						});
+
+						// 탭
+						oshopUI.tab({
+							"tabs" : $(".box_setting .tab_type2 .link_tab"),
+							"tabList" : $(".box_setting .tab_type2 li"),
+							"activeClass" : "on"
+						});
+					});
+				</script>
+				<!-- 2017-04-13 수정[e] -->
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a><!-- 2017-03-21 이미지 넓이,높이값 삭제 -->
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+
+</body>
+</html>

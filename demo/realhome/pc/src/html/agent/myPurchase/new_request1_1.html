@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <include src="../../include/folder_include/set_css.html"></include>
+    <include src="../../include/folder_include/set_js.html"></include>
+    <title>realhouse</title>
+</head>
+<body>
+<!--header-->
+<header class="sub_header">
+    <h1 class="logo"><a href="#"><img src="../../../../images/common/agent_logo.png" alt="리얼하우스 로고"></a></h1>
+    <div class="header_inner">
+        <button class="btn_close"><span class="blind">닫기</span></button>
+        <h2 class="header_tit">매수/임차 중개의뢰</h2>
+    </div>   
+</header>
+    <!--header-->   
+<div class="header_section fixed">
+    <div class="header_inner">
+        <div class="process_idx">
+            <em class="on">1</em><span>중개의뢰 정보 입력</span>
+        </div>
+        <div class="btn_process">
+            <button class="btn">취소</button>
+            <button class="btn on">확인</button>
+        </div>
+    </div>
+</div>  
+<div class="wrapper">
+    <div id=sub_container class="sub_container">          
+        <div class="container_inner">     
+            <div class="new_request">
+                <!--의뢰구분-->
+                <div class="content_section">
+                    <div class="content_head3">
+                        <h2 class="tit">의뢰구분</h2>
+                        <span class="right_area"><span class="txt_red">*</span>필수 사항</span>
+                    </div>
+                    <div class="table_style3">
+                        <table class="table" summary="거래구분,매물유형,안내 테이블 입니다.">
+                            <caption>의뢰구분 선택</caption>
+                            <colgroup>  
+                                <col width="14%">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                 <tr>
+                                    <th>거래구분<span class="txt_red">*</span></th>
+                                    <td>
+                                        <input id="deal_type1" type="radio" name="deal" class="radio_btn"   >
+                                        <label for="deal_type1"><span class="btn_radio">전세</span></label>
+                                        <input id="deal_type2" type="radio" name="deal" class="radio_btn">
+                                        <label for="deal_type2"><span class="btn_radio">월세</span></label>
+                                        <input id="deal_type3" type="radio" name="deal" class="radio_btn">
+                                        <label for="deal_type3"><span class="btn_radio">매매</span></label>
+                                        <input id="deal_type4" type="radio" name="deal" class="radio_btn" checked>
+                                        <label for="deal_type4"><span class="btn_radio layout">단기임대</span></label>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <th>매물유형<span class="txt_red">*</span></th>
+                                    <td>
+                                        <div class="click_ev">
+                                            <button class="btn_type1 on">아파트</button>
+                                            <button class="btn_type1">주상복합</button>
+                                            <button class="btn_type1">연립/빌라</button>
+                                            <button class="btn_type1">오피스텔</button>
+                                            <button class="btn_type1">도시형</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="pd_style">
+                                    <th>안내</th>
+                                    <td class="info">※ 거래구분은 하나만 선택이 가능하며 매물유형은 복수로 선택이 가능합니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--//의뢰구분-->
+                <!--의뢰정보-->
+                <div class="content_head3">
+                    <h2 class="tit">의뢰정보</h2>
+                </div>
+                <div class="table_style3 request_entry">
+                    <table class="table" summary="의뢰인 이름, 휴대전화, 방문시간 선택, 비공개 메모, 안내 테이블 입니다.">
+                        <caption>방문시간 선택</caption>
+                        <colgroup>  
+                            <col width="14%">
+                            <col width="*">
+                            <col width="14%">   
+                            <col width="36%">
+                        </colgroup>
+                        <tbody>
+                             <tr class="pd_style">
+                                <th><label for="client_name">의뢰인 이름<span class="txt_red">*</span></label></th>
+                                <td class="input_area">
+                                    <input id="client_name" type="text" class="input_name" placeholder="이름 입력">
+                                </td>
+                                <th>휴대전화<span class="txt_red">*</span></th>
+                                <td>
+                                    <label for="client_phone">
+                                        <input id="client_phone" type="text" class="input_phone" placeholder="휴대전화번호 입력" value="000-0000-0000">
+                                    </label>
+                                </td>
+                            </tr>
+                             <tr class="pd_style">
+                                <th>방문시간 선택</th>
+                                <td colspan="3">
+                                    <div class="select_visit_area">
+                                        <div class="select_area">
+                                            <a href="#" class="select_top">방문일 선택</a href="#">
+                                            <div class="select_list">
+                                                <div class="desc">금일포함 <span class="txt_red2">7일</span>까지 선택 가능</div>
+                                                <a href="#">2018.06.09(월)</a>
+                                                <a href="#">2018.06.10(화)</a>
+                                                <a href="#">2018.06.11(수)</a>
+                                                <a href="#">2018.06.12(목)</a>
+                                                <a href="#">2018.06.13(금)</a>  
+                                                <a href="#">2018.06.14(토)</a>
+                                                <a href="#">2018.06.15(<span class="sunday">일</span>)</a>
+                                            </div>
+                                        </div>
+                                        <!--시간 select-->
+                                        <div class="select_area select_visit">
+                                            <a href="#" class="select_top">시간 선택</a href="#">
+                                            <div class="select_time">
+                                                <div class="btn_hour">
+                                                    <div class="header">시간 선택</div>
+                                                    <input id="" type="radio" name="hour" class="radio_time" value="7시" checked>
+                                                    <label for=""><span class="btn_radio">7시</span></label>
+                                                    <input id="" type="radio" name="hour" class="radio_time">
+                                                    <label for=""><span class="btn_radio">8시</span></label>
+                                                    <input id="" type="radio" name="hour" class="radio_time">
+                                                    <label for=""><span class="btn_radio">9시</span></label>
+                                                    <input id="" type="radio" name="hour" class="radio_time">
+                                                    <label for=""><span class="btn_radio">10시</span></label>
+                                                    <input id="" type="radio" name="hour" class="radio_time">
+                                                    <label for=""><span class="btn_radio">11시</span></label>
+                                                    <input id="" type="radio" name="hour" class="radio_time">
+                                                    <label for=""><span class="btn_radio">12시</span></label>
+                                                    <input id="" type="radio" name="hour" class="radio_time">
+                                                    <label for=""><span class="btn_radio">13시</span></label>
+                                                    <input id="" type="radio" name="hour" class="radio_time">
+                                                    <label for=""><span class="btn_radio">14시</span></label>
+                                                    <input id="" type="radio" name="hour" class="radio_time">
+                                                    <label for=""><span class="btn_radio">15시</span></label>
+                                                    <input id="" type="radio" name="hour" class="radio_time">
+                                                    <label for=""><span class="btn_radio">16시</span></label>
+                                                    <input id="" type="radio" name="hour" class="radio_time">
+                                                    <label for=""><span class="btn_radio">17시</span></label>
+                                                    <input id="" type="radio" name="hour" class="radio_time">
+                                                    <label for=""><span class="btn_radio">18시</span></label>
+                                                    <input id="" type="radio" name="hour" class="radio_time">
+                                                    <label for=""><span class="btn_radio">19시</span></label>
+                                                    <input id="" type="radio" name="hour" class="radio_time">
+                                                    <label for=""><span class="btn_radio">20시</span></label>
+                                                    <input id="" type="radio" name="hour" class="radio_time">
+                                                    <label for=""><span class="btn_radio">21시</span></label>
+                                                </div>
+                                                <div class="btn_minute">
+                                                    <div class="header">분 선택</div>
+                                                    <input id="" type="radio" name="minute" class="radio_time" checked>
+                                                    <label for=""><span class="btn_radio">00분</span></label>
+                                                    <input id="" type="radio" name="minute" class="radio_time">
+                                                    <label for=""><span class="btn_radio">10분</span></label>
+                                                    <input id="" type="radio" name="minute" class="radio_time">
+                                                    <label for=""><span class="btn_radio">20분</span></label>
+                                                    <input id="" type="radio" name="minute" class="radio_time">
+                                                    <label for=""><span class="btn_radio">30분</span></label>
+                                                    <input id="" type="radio" name="minute" class="radio_time">
+                                                    <label for=""><span class="btn_radio">40분</span></label>
+                                                    <input id="" type="radio" name="minute" class="radio_time">
+                                                    <label for=""><span class="btn_radio">50분</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--//시간 select-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="secret_memo">비공개 메모</label></th>
+                                <td colspan="3" class="input_area">
+                                    <div class="text_area_box">
+                                        <textarea class="text_area" id="secret_memo" placeholder="비공개 메모를 등록하시면 중개의뢰 현황의 메모에 나타납니다.&#13;&#10;&#13;&#10;비공개 메모는 등록자만 확인 가능합니다.">전세와 함께 월세도 알아봐 달라고 함</textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="pd_style">
+                                <th>안내</th>
+                                <td colspan="3" class="info">
+                                    ※  의뢰 구분과 의뢰 정보를 모두 입력하시면 [확인]이 활성화되며 [확인]을 클릭하면 매수/임차 중개의뢰가 등록됩니다.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>           
+    </div>
+</div>
+<include src="../../include/footer.html"></include>
+</body>
+</html>

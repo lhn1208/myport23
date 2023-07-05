@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=yes">
+	<title>닥터빌</title>
+	<!-- 2018-10-17 바로가기 아이콘 추가 [s] -->
+	<link rel="apple-touch-icon-precomposed" href="../../images/ico_ios.png" />
+	<link rel="shortcut icon" href="../../images/ico_android.png" />
+	<!-- 2018-10-17 바로가기 아이콘 추가 [e] -->
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<script src="../../js/ui.js"></script>
+
+</head>
+<body>
+<!-- 스킵내비게이션
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+</div> -->
+<!--전체 페이지를 감싸는 태그 id="app" [s]-->
+<div id="app">
+
+	<script type="text/javascript">
+		// 2017-12-12 TOP 버튼 스크립트 수정
+		$(window).load(function() {
+			var btnTop = $(".btn_top");
+			btnTop.hide();
+			if($(".wrap footer").length != 1){
+				btnTop.css("bottom","20px");
+			//}else {
+				//btnTop.css("bottom","75px");
+				//var fTop = $("footer").offset().top;
+			}
+			$("#container").scroll(function(){
+				btnTop.fadeIn(300);
+				if($("#container").scrollTop()==0 ) {
+					btnTop.fadeOut(300);
+				};
+				//if($("body").height() + $("#container").scrollTop() >= fTop + 50){
+				//	btnTop.css("bottom","80px");
+				//}else {
+				//	btnTop.css("bottom","20px");
+				//}
+			});
+			btnTop.click(function(){
+				$("#container").animate({ scrollTop: 0 }, 500);
+				return false;
+			});
+		})
+	</script>
+
+<div class="wrap">
+	<!-- header [s] -->
+	<header id="header">
+		<h1 class="screen_out">닥터빌</h1>
+		<h2 class="h_tit">약관동의</h2>
+		<a href="#" class="ico_comm btn_back">이전</a>
+	</header>
+	<!-- header [e] -->
+	<!-- container [s] -->
+	<section id="container" class="member_container">
+		<h3 class="screen_out">이용약관, 개인정보수집 및 이용에 대한 동의</h3>
+		<span class="inp_chk_circle agree_all_chk"><input type="checkbox" id="agree_all"><label for="agree_all">약관에 모두 동의</label></span>
+		<div class="agree_box terms_content">
+			<!--class 명 변경-->
+			<span class="inp_chk_circle"><input type="checkbox" id="agree1"><label for="agree1">이용약관 동의 <span>(필수)</span></label></span>
+			<div class="txt_box">
+				<!--#include virtual="/publish/drville/o/web/html/intro/txt_policy.html" -->
+			</div>
+		</div>
+		<div class="agree_box terms_content">
+			<!--class 명 변경-->
+			<span class="inp_chk_circle"><input type="checkbox" id="agree2"><label for="agree2">개인정보 수집 및 이용에 대한 동의 <span>(필수)</span></label></span>
+			<div class="txt_box">
+				<!--#include virtual="/publish/drville/o/web/html/intro/txt_userinfo.html" -->
+			</div>
+		</div>
+		<div class="agree_box terms_content">
+			<!--class 명 변경-->
+			<span class="inp_chk_circle"><input type="checkbox" id="agree3"><label for="agree3">제휴서비스 이용 시 개인정보 활용동의 <span>(필수)</span></label></span>
+			<div class="txt_box">
+				<!--#include virtual="/publish/drville/o/web/html/intro/txt_withinfo.html" -->
+			</div>
+		</div>
+		<div class="btn_wrap">
+			<a href="join02.html" class="btn_type2">동의합니다</a>
+			<a href="join02.html" class="btn_type2 btn_blue">동의합니다</a> <!-- 모두 체크시 "btn_blue" class 추가-->
+		</div>
+	</section>
+	<!-- container [e] -->
+	<script type="text/javascript">
+	$(function() {
+		$("#agree_all").change(function(){
+			if ($(this).is(":checked") == true){
+				$(".btn_type2").addClass("btn_blue");
+			}else {
+				$(".btn_type2").removeClass("btn_blue");
+			}
+		})
+	})
+	</script>
+</div>
+</div>
+<!--전체 페이지를 감싸는 태그 [e]-->
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>Modetour International</title>
+	<!--[if lt IE 9]>
+		<script language="javascript" type="text/javascript" src="../js/html5shiv-printshiv.js"></script>
+	<![endif]-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="../css/kr/style.css" rel="stylesheet">	
+	<script src="https://js.modetour.com/jquery/ver/1.8.3.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/sub.js"></script>
+	<script src="../js/plugin/cycle2.js"></script>	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var calcBox=$(".calc_box");
+			$(".date_form").click(function(){
+				if(calcBox.hasClass("block")){
+					calcBox.removeClass("block")
+				}else{
+					calcBox.addClass("block")
+				}
+				return false;
+			})
+			$(".calc tbody td a").click(function(){
+				calcBox.removeClass("block");
+				return false;
+			});
+		});
+	</script>
+</head>
+<body>	
+<!--submain-->
+<div class="wrap">
+	<header id="header" class="header_style">
+		<a href="#container" class="skip">본문 바로가기</a>
+		<!--navi-->
+		<nav class="navi" id="navi">
+			<header class="navi_header">
+				<a href="#" id="close" class=close><span class="blind">닫기</span></a>
+			</header>
+			<div class="navi_inner">
+				<ul class="menu">
+					<li><a href="./mice/mice_main.html">MICE</a>
+						<ul class="sub_menu">
+							<li><a href="./mice/meeting.html">회의</a></li>
+							<li><a href="./mice/insentour.html">인센티브투어</a></li>
+							<li><a href="./mice/event.html">이벤트</a></li>
+						</ul>
+					</li>
+					<li><a href="./theme/theme_main.html">테마관광</a>
+						<ul class="sub_menu">
+							<li><a href="./theme/theme_medical.html">의료관광</a></li>
+							<li><a href="./theme/theme_korea.html">한류관광</a></li>
+							<li><a href="./theme/theme_wedding.html">웨딩관광</a></li>
+						</ul>
+					</li>
+					<li class="pack_menu"><a href="./package/pack_main01.html">패키지</a>
+						<ul class="sub_menu">
+							<li><a  href="./package/pack_main01.html">일반패키지</a>
+								<ul class="sub_menu">
+									<li><a href="./package/basic_beauty.html">- K-뷰티투어</a></li>
+									<li><a href="./package/basic_well.html">- 서울 웰니스투어</a></li>
+									<li><a href="./package/basic.html">- 서울 3박4일(일반형)</a></li>
+									<li><a href="./package/basic_luxury.html">- 서울 3박4일(고급형)</a></li>
+									<li><a href="./package/basic_seoul_outside.html">- 서울근교 4박 5일</a></li>
+									<li><a href="./package/basic_outside_seorak.html">- 서울근교 + 설악산 5박 6일</a></li>
+									<li><a href="./package/basic_jeju.html">- 제주 3박4일</a></li>									
+									<li><a href="./package/basic_seou_jeju.html">- 서울 + 제주 4박5일</a></li>
+									<li><a href="./package/basic_busan_kyeong.html">- 부산 + 경주 4박5일</a></li>
+									<li><a href="./package/basic_busan_daegu.html">- 부산 + 대구 3박4일</a></li>
+								</ul>
+							</li>
+							<li class="type"><a  href="./package/pack_main02.html">1DAY투어</a>
+								<ul class="sub_menu">
+									<li><a href="./package/day1_tour_a.html">- 서울시티투어 A</a></li>
+									<li><a href="./package/day1_tour_b.html">- 서울시티투어 B</a></li>
+									<li><a href="./package/day1_tour_c.html">- 서울시티투어 C</a></li>
+									<li><a href="./package/day1_tour_d.html">- 서울시티투어 D</a></li>
+									<li><a href="./package/day1_tour_namisland.html">- 남이섬 1일투어</a></li>
+									<li><a href="./package/day1_tour_night.html">- 서울 야경투어</a></li>
+									<li><a href="./package/day1_tour_food.html">- 음식체험 + 노량진 수산시장</a></li>
+									<li><a href="./package/day1_tour_ski_jjim.html">- 스키 + 찜질방 1일투어</a></li>
+								</ul>
+							</li>
+							<li><a  href="./package/pack_main03.html">DMZ투어</a>
+								<ul class="sub_menu">
+									<li><a href="./package/dmz_tour01.html">- DMZ 안보투어</a></li>
+									<li><a href="./package/dmz_tour02.html">- DMZ 안보투어 + 파주아울렛</a></li>
+								</ul>
+							</li>
+							<li><a  href="./package/pack_main04.html">외국인 테마관광</a>
+								<ul class="sub_menu">
+									<li><a href="./package/ex_theme_village.html">- 양평 외갓집 농촌체험</a></li>
+									<li><a href="./package/ex_theme_ridding.html">- 제주환상&amp; 1100라이딩</a></li>
+									<li><a href="./package/ex_theme_cherrybloss.html">- 벚꽃 시즌투어</a></li>
+									<li><a href="./package/ex_theme_ski.html">- 스키투어</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="pack_menu"><a href="./corp/corp_intro.html">회사소개</a>
+						<ul class="sub_menu depth2">
+							<li><a  href="./corp/corp_intro.html">기업정보</a></li>
+							<li><a  href="./corp/corp_history.html">기업연혁</a></li>
+							<li><a  href="./corp/ceo_greeting.html">CEO 인사말</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="navi_intro_area">
+					<ul class="navi_intro">
+						<li>
+							<a href="./history_event/history_event.html">
+								<p class="link_tit">Best of Best</p>
+								<div class="link_btn_area">
+									<button class="link_btn"></button>
+								</div>
+							</a>
+						</li>
+						<li><a href="./reserve/reserve_list.html"><p class="link_tit">입장권 예매</p>
+								<div class="link_btn_area">
+									<button class="link_btn"></button>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--문의사항 수정-->
+				<div class="inq_area">					
+					<ul class="inquiry">
+						<li>평일<span class="green">09:00~18:00</span></li>
+						<li><div class="inq_tit pkg">· 패키지</div> 
+							 <div class="inq_cont"><sapn class="green tel">02-3788-4841</sapn><br><span class="email">gumong1221@modetourint.com</span></div>
+						</li>
+						<li><div class="inq_tit">· Mice,<br>테마관광</div>
+							<div class="inq_cont"><span class="tel">02-3788-4807</span><br><span class="email">lucyhan@modetourint.com</span></div>
+						</li>
+					</ul>
+					<div class="inq_btn"><a href="./inquiry.html" class="btn">문의하기</a></div>
+				</div>
+				<!--//문의사항 수정-->
+			</div>
+			<footer class="navi_footer">
+				<div class="container">
+					<div class="foo_content">
+						<a href="./terms/terms_trip.html" target="_blank">여행약관</a>
+						<a href="./terms/use_terms.html" target="_blank">이용약관</a>
+						<a href="./terms/privacy_terms.html" target="_blank" class="point">개인정보 처리방침</a>
+					</div>
+					<address>
+						서울시 중구 을지로 16 프레지던트호텔(구 백남빌딩) 6층 601호(우 04533) 
+						<br>사업자 등록번호 : 104-86-15264  |  대표이사 : 손호권
+						<br>COPYRIGHT(C)2018 MODETOUR INTERNATIONAL. ALL RIGHT RESERVED.
+					</address>
+				</div>
+			</footer>
+		</nav>
+		<!--//navi-->
+		<div class="menu_wrap"></div>		
+		<h1 class="logo"><a href="./main.html" ><img src="https://img.modetour.com/modewebagent/2018/modeinter/common/logo.png" alt="Modetour International"></a></h1>
+		<!--global-->
+		<div class="global_area">
+			<a href="#" class="global">KOR</a>
+			<ul class="global_lst">
+				<li><a href="../page_ch/main.html">CHI</a></li>
+				<li><a href="../page_en/main.html">ENG</a></li>
+			</ul>
+		</div>
+		<!--//global-->
+		<div class="navi_open" id="navOpen">
+			<button class="btn"><span class="blind">메뉴펼치기</span></button>
+		</div>	
+	</header>		
+	<!--container-->
+	<div class="container" id="container">				
+		<section class="section02">
+		<!--visual-->
+		<div class="sub_visual02 inquiry">
+			<dl class="txt_visual">
+				<dt>문의하기</dt>
+				<dd>문의하실 내용과 회신 받으실 연락처를 남겨 주시면, 3일 이내에 성심 성의껏 답변해드리겠습니다.</dd>
+			</dl>
+		</div>
+		<!--//visual-->
+			<div class="inner">
+				<div class="inq_area">
+					<div class="inq_form"> 
+						<h2 class="tit">기본정보</h2>
+						<div class="desc"><span class="point">*</span> 표시는 필수 입력 항목입니다.</div>
+						<div class="inq_tb_box bar">
+							<!--달력-->
+							<div class="calc_box">
+								<div class="calc_form">
+									<div class="calc_header">날짜 선택</div>		
+									<div class="calc_area">
+										<div class="calc_title">
+											<select class="year">
+												<option value="">2018</option>
+												<option value="">2017</option>
+												<option value="">2016</option>
+											</select>
+											<select class="month">
+												<option value="">3</option>
+												<option value="">4</option>
+												<option value="">5</option>
+											</select>
+										</div>
+										<table class="calc">
+											<thead>
+												<tr>
+													<th>일</th>
+													<th>월</th>
+													<th>화</th>
+													<th>수</th>
+													<th>목</th>
+													<th>금</th>
+													<th>토</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>													
+													<td><a href="#">1</a></td>
+													<td><a href="#">2</a></td>
+													<td><a href="#">3</a></td>
+													<td><a href="#">4</a></td>
+													<td><a href="#">5</a></td>
+													<td><a href="#">6</a></td>
+													<td><a href="#">7</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">8</a></td>
+													<td><a href="#">9</a></td>
+													<td><a href="#">10</a></td>
+													<td><a href="#">11</a></td>
+													<td><a href="#">12</a></td>
+													<td><a href="#">13</a></td>
+													<td><a href="#">14</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">15</a></td>
+													<td><a href="#">16</a></td>
+													<td><a href="#">17</a></td>
+													<td><a href="#">18</a></td>
+													<td><a href="#">19</a></td>
+													<td><a href="#">20</a></td>
+													<td><a href="#">21</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">22</a></td>
+													<td><a href="#">23</a></td>
+													<td><a href="#">24</a></td>
+													<td><a href="#">25</a></td>
+													<td><a href="#">26</a></td>
+													<td><a href="#">27</a></td>
+													<td><a href="#">28</a></td>
+												</tr>
+												<tr>
+													<td><a href="#">29</a></td>
+													<td><a href="#" class="current">30</a></td>
+													<td><a href="#">31</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!--달력-->
+							<table class="inq_tb">
+								<colgroup>
+									<col width="165px">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr> 
+										<th>성명 <span class="point">*</span></th>
+										<td><input type="text" class="form"></td>
+									</tr>
+									<tr> 
+										<th>메일주소 <span class="point">*</span></th>
+										<td>
+											<input type="text" class="form">@<input type="text" class="form">
+											<select class="form">
+												<option value="">선택하세요</option>
+											</select>
+										</td>
+									</tr>
+									<tr> 									
+										<th>연락처 <span class="point">*</span></th>
+										<td>
+											<select class="form w137">
+												<option value="">010</option>
+												<option value="">011</option>
+												<option value="">018</option>
+											</select>
+											-
+											<input type="text" class="form w137">-<input type="text" class="form w137">
+										</td>
+									</tr>
+									<tr>
+										<!--180426 수정--> 									
+										<th>손님 국적 <span class="point">*</span></th>
+										<!--//180426 수정-->
+										<td>
+											<select class="form">
+												<option value="">한국</option>
+												<option value="">일본</option>
+												<option value="">중국</option>
+											</select>									
+										</td>
+									</tr>
+									<tr> 									
+										<th>출발일 <span class="point">*</span></th>
+										<td>
+											<a class="form date_form" href="#"><span class="s_date"></span></a>					
+										</td>
+									</tr>
+									<tr> 									
+										<th>인원 <span class="point">*</span></th>
+										<td>
+											<input type="text" class="form w137"">명
+										</td>
+									</tr>
+									<tr> 									
+										<th>문의내용</th>
+										<td>
+											<textarea class="inq_reg"></textarea>							
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="agree_form"> 
+						<h2 class="tit">개인정보수집동의</h2>
+						<div class="agree_chk">
+							<input type="checkbox" class="chk" id="chk01"><label for="chk01"><span class="chk_set"></span><em>동의합니다</em></label>
+						</div>
+						<div class="agree_cont"> 
+							&#39;모두투어인터내셔널&#39;은 (이하 &#39;회사&#39;는) 고객님의 개인정보를 중요시하며, &quot;정보통신망이용촉진 및 정보보호&quot;에 관한 법률을 준수하고 있습니다.
+							<br>회사는 개인정보취급방침을 통하여 고객님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 
+							<br>위해지고 있는지 알려 드립니다. 회사는-개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지 할 것입니다.
+							<br>본 방침은 : 2018 년 3 월 20 일 부터 시행됩니다.
+							<br>1. 수집하는 개인정보의 항목
+							<br>수집항목 : 성명,이메일,연락처,국적
+						</div>
+					</div>
+					<div class="inq_form_btn"><a href="#" class="btn">문의 남기기</a></div>
+				</div>
+			</div>
+		</section>			
+	</div>
+	<!--//container-->
+	<!--Top버튼-->
+	<a href="#" class="btn_top"><span>TOP</span></a>
+	<!--//Top버튼-->
+</div>
+<!--//submain-->	
+<!--footer-->
+<footer id="footer">	
+	<div class="inquiry_section">
+		<div class="inner">
+			<div class="reserv_inq">
+				<strong class="tit">예약문의</strong>
+				<ul class="inq_info">
+					<li><span class="inq_tit">· 패키지</span><span class="tel">02-3788-4841</span><span class="email">gumong1221@modetourint.com</span></li>
+					<li><span class="inq_tit">· 마이스,테마관광</span><span class="tel">02-3788-4807</span><span class="email">lucyhan@modetourint.com</span></li>
+				</ul>
+			</div>
+			<div class="inq_time">
+				<strong class="tit">운영시간</strong>
+				<span class="time">평일 9:00~18:00</span>
+				<div class="inq_btn foo_inq"><a href="./inquiry.html" class="btn">문의하기</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_inner">
+		<h1 class="logo"><a href="./main.html"><img src="https://img.modetour.com/modewebagent/2018/modeinter/common/logo.png" alt="Modetour International"></a></h1>
+		<div class="foo_section">
+			<div class="foo_content">
+				<a href="./corp/corp_intro.html" target="_blank">회사소개</a>
+				<a href="./terms/terms_trip.html" target="_blank">여행약관</a>
+				<a href="./terms/use_terms.html" target="_blank">이용약관</a>
+				<a href="./terms/privacy_terms.html" target="_blank" class="point">개인정보 처리방침</a>
+			</div>
+			<address>
+				서울시 중구 을지로 16 프레지던트호텔(구 백남빌딩) 6층 601호(우 04533) 
+				<br>사업자 등록번호 : 104-86-15264  |  대표이사 : 손호권
+				<br>COPYRIGHT(C)2018 MODETOUR INTERNATIONAL. ALL RIGHT RESERVED.
+			</address>
+			<div class="foo_btn_area">
+				<button class="btn">패밀리 사이트</button>
+				<div class="family_form">
+					<ul class="family_list">
+						<li><a href="https://www.modetour.com/" target="_blank">모두투어</a></li>
+						<li><a href="https://jm.modetour.com/Premium/default.aspx" target="_blank">JM스페셜</a></li>
+						<li><a href="https://www.dramatour.co.kr/default/" target="_blank">투어엔터테인먼트</a></li>
+						<li><a href="https://www.cruise.co.kr/" target="_blank">크루즈</a></li>
+						
+						<li><a href="https://www.jeonbuk.go.kr/index.jeonbuk" target="_blank">전라북도</a></li>
+						<li><a href="https://www.bookingm.com/" target="_blank">Booking M</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--//footer-->
+</body>
+</html>
+
+
+

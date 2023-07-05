@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>theSHOP</title>
+	<link rel="stylesheet" href="../../js/libs/jquery-ui.css">
+	<link rel="stylesheet" href="../../js/libs/owl.carousel.css">
+	<link rel="stylesheet" href="../../css/fonts.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/intro.css">
+	<!--[if lt IE 9]>
+	<script src="../../js/libs/html5shiv.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="../../js/libs/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery-ui.js"></script>
+	<script type="text/javascript" src="../../js/libs/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/jquery.bpopup.min.js"></script>
+	<script type="text/javascript" src="../../js/libs/fn-tag-fakeselect.js"></script>
+	<script type="text/javascript" src="../../js/ui.js"></script>
+	<style>
+		body {margin:20px;}
+		body > a {margin-right:15px;font-size:14px;}
+	</style>
+</head>
+<body>
+	<a href="#popInfoReceive" class="btn_type1 btn_info_receive">정보수신 동의여부 안내</a>
+	<a href="#popDormancyAccount1" class="btn_type1 btn_dormancy_account1">휴면계정 처리 해제 안내 step1</a>
+	<a href="#popDormancyAccount2" class="btn_type1 btn_dormancy_account2">휴면계정 처리 해제 안내 step2</a>
+	
+	<!-- 공통 팝업[s] -->
+	<div id="modalType1" style="position:absolute;display:none;">
+		<div class="pop_layer pop_type1">
+			<strong class="tit_popup"></strong>
+			<div class="pop_wrap">
+				<p class="desc_popup"><span class="desc_inner"></span></p>
+				<div class="btn_wrap">
+					<button type="button" class="btn_type1 btn_confirm">확인</button>
+				</div>
+				<button type="button" class="btn_comm btn_close">닫기</button>
+			</div>
+		</div>
+	</div>
+	<div id="modalType2" style="position:absolute;display:none;">
+		<div class="pop_layer pop_type1">
+			<strong class="tit_popup"></strong>
+			<div class="pop_wrap">
+				<p class="desc_popup"><span class="desc_inner"></span></p>
+				<div class="btn_wrap">
+					<button type="button" class="btn_type1 btn_confirm">확인</button>
+					<button type="button" class="btn_type2 btn_cancel">취소</button>
+				</div>
+				<button type="button" class="btn_comm btn_close" title="닫기">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- 공통 팝업[e] -->
+
+	<!-- 정보수신 동의여부 안내[s] -->
+	<div id="popInfoReceive" style="display:none;">
+		<div class="pop_layer pop_type1" style="width:450px;">
+			<p class="pop_logo"><span class="ico_comm">the SHOP</span></p>
+			<strong class="tit_popup">정보수신 동의여부 안내</strong>
+			<div class="pop_wrap">
+				<p class="txt"><strong>고객님은 <em>2017년 10월 24일</em> 정보수신에 동의하셨습니다.</strong></p>
+				<p class="txt">정보통신법 제 50조에 의거하여 정보수신에 대한 여부를<br>재설정 부탁드립니다.</p>
+				<div class="box_chk">
+					<!-- input의 id값과 label의 for값을 동일하게 맞춰주세요 -->
+					<input type="radio" name="agree" id="agree1" checked>
+					<label for="agree1">동의합니다.</label>
+					<span class="txt_bar">|</span>
+					<input type="radio" name="agree" id="agree2">
+					<label for="agree2">거부합니다.</label>
+				</div>
+				<div class="btn_wrap">
+					<button type="submit" class="btn_type1">확인</button>
+					<button type="submit" class="btn_type2 btn_cancel">취소</button>
+				</div>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- 정보수신 동의여부 안내[e] -->
+	
+	<!-- 휴면계정 처리 해제 안내 step1 [s] -->
+	<div id="popDormancyAccount1" style="display:none;">
+		<div class="pop_layer pop_type1" style="width:550px;">
+			<p class="pop_logo"><span class="ico_comm">the SHOP</span></p>
+			<strong class="tit_popup">휴면계정 처리 해제 안내</strong>
+			<div class="pop_wrap">
+				<p class="txt"><strong>고객님의 계정은 <em>휴면처리</em> 되었습니다.</strong></p>
+				<p class="txt">본인인증 절차를 거친 후 기존처럼 theSHOP 서비스를 이용하실수 있습니다.</p>
+				<div class="box_chk">
+					<!-- input의 id값과 label의 for값을 동일하게 맞춰주세요 -->
+					<input type="radio" name="member_info" id="member_id_info1" data-index="1" checked>
+					<label for="member_id_info1">핸드폰번호로 인증</label>
+					<span class="txt_bar">|</span>
+					<input type="radio" name="member_info" id="member_id_info2" data-index="2">
+					<label for="member_id_info2">아이핀(i-pin)으로 인증</label>
+					
+					<div class="info_box" id="dormancyPhone">
+						<span class="ico_comm"></span>
+						<p><em>핸드폰 인증이란?</em></p>
+						<p>핸드폰 본인인증은 방송통신위원회에서 주관하는 주민등록번호 대체수단<br>입니다. 본인명의 핸드폰 번호로 확인 인증하여 정보가 제공됩니다.</p>
+					</div>
+					<div class="info_box" id="dormancyIpin" style="display:none;">
+						<span class="ico_comm"></span>
+						<p><em>아이핀(I-Pin)이란?</em></p>
+						<p>인터넷 시에서 주민등록번호를 대신하여 본인임을 확인 받을 수 있는<br>사이버 신원 확인 번호입니다.</p>
+						<a href="#">아이핀 이용방법 &gt;</a>
+					</div>
+				</div>
+				<div class="btn_wrap">
+					<button type="submit" class="btn_type1 btn_account">핸드폰 인증</button>
+				</div>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- 휴면계정 처리 해제 안내 step1 [e] -->
+	
+	<!-- 휴면계정 처리 해제 안내 step2 [s] -->
+	<div id="popDormancyAccount2" style="display:none;">
+		<div class="pop_layer pop_type1" style="width:550px;">
+			<p class="pop_logo"><span class="ico_comm">the SHOP</span></p>
+			<strong class="tit_popup">휴면계정 처리 해제 안내</strong>
+			<div class="pop_wrap">
+				<p class="txt"><strong>핸드폰번호로 인증</strong></p>
+				<div class="box_chk">
+					<!-- input의 id값과 label의 for값을 동일하게 맞춰주세요 -->
+					<table class="tbl_type2">
+						<caption>핸드폰번호 인증 절차 개인정보 입력</caption>
+						<colgroup>
+							<col style="width:110px">
+							<col>
+						</colgroup>
+						<tr>
+							<th scope="row"><label for="account1">이름</label></th>
+							<td>
+								<input type="text" id="account1" style="width:240px;">
+								<span>(한글/영문 대문자)</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="account2">핸드폰번호</label></th>
+							<td>
+								<input type="text" id="account2" title="핸드폰번호 앞자리" style="width:100px;">
+								<span class="txt_bar">-</span>
+								<input type="text" title="핸드폰번호 중간자리" style="width:100px;">
+								<span class="txt_bar">-</span>
+								<input type="text" title="핸드폰번호 끝자리" style="width:100px;">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">이동통신사</th>
+							<td>
+								<input type="radio" id="account3_1" name="account3">
+								<label for="account3_1">SKT</label>
+								<input type="radio" id="account3_2" name="account3">
+								<label for="account3_2">KT</label>
+								<input type="radio" id="account3_3" name="account3">
+								<label for="account3_3">LG U+</label>
+								<input type="radio" id="account3_4" name="account3">
+								<label for="account3_4">알뜰폰</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">생년월일</th>
+							<td>
+								<input type="text" id="account4_1" style="width:80px;">
+								<label for="account4_1">년</label>
+								<input type="text" id="account4_2" style="width:80px;">
+								<label for="account4_2">월</label>
+								<input type="text" id="account4_3" style="width:80px;">
+								<label for="account4_3">일</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">성별</th>
+							<td>
+								<input type="radio" id="account5_1" name="account5">
+								<label for="account5_1">남자</label>
+								<input type="radio" id="account5_2" name="account5">
+								<label for="account5_2">여자</label>
+							</td>
+						</tr>
+					</table>
+					
+					<div class="info_box">
+						<span class="ico_comm"></span>
+						<p>* 본인 명의의 핸드폰 정보를 정확히 입력하여 주시기 바랍니다.</p>
+						<p>* <strong>본인인증 5회 실패</strong> 시 당일 핸드폰 인증이 제한됩니다.</p>
+						<p>* 본인인증은 무료 서비스로 결제 및 과금이 발생하지 않습니다.</p>
+					</div>
+				</div>
+				<div class="btn_wrap">
+					<button type="submit" class="btn_type1">인증확인</button>
+					<button type="submit" class="btn_type2 btn_cancel">취소</button>
+				</div>
+			</div>
+			<button type="button" class="btn_comm btn_close">닫기</button>
+		</div>
+	</div>
+	<!-- 휴면계정 처리 해제 안내 step2 [e] -->
+
+	<script type="text/javascript">
+		$(function(){
+			// 정보수신 동의여부 안내 팝업
+			$("body").on("click", ".btn_info_receive", function() {
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popInfoReceive"), {
+					closeClass: "btn_close"
+				});
+				// close 이벤트 추가
+				$("body").on("click", "#popInfoReceive .btn_cancel", function() {
+					// modalLayer.close();
+					$(".btn_close").click();
+				});
+			});
+
+			// 휴면계정 처리 해제 안내 step1 팝업
+			$("body").on("click", ".btn_dormancy_account1", function() {
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popDormancyAccount1"), {
+					closeClass: "btn_close"
+				});
+				// close 이벤트 추가
+				$("body").on("click", "#popDormancyAccount1 .btn_cancel", function() {
+					// modalLayer.close();
+					$(".btn_close").click();
+				});
+			});
+
+			$("body").on("click", "#popDormancyAccount1 .btn_account", function() {
+				shopUI.modalLayerComm({
+					"type": "1",
+					"title": "웹페이지 메시지",
+					"description": "<em>아이핀 인증이</em>완료되었습니다."
+				});
+			});
+
+			$("#popDormancyAccount1 .box_chk input[name='member_info']").on("change", function(){
+				if($(this).data("index") == "1"){
+					$(this).siblings(".info_box").hide();
+					$("#dormancyPhone").show();
+					$(".btn_account").text("핸드폰 인증");
+				} else {
+					$(this).siblings(".info_box").hide();
+					$("#dormancyIpin").show();
+					$(".btn_account").text("아이핀 인증");
+				}
+			});
+			
+			// 휴면계정 처리 해제 안내 step2 팝업
+			$("body").on("click", ".btn_dormancy_account2", function() {
+				var modalLayer = null;
+				modalLayer = shopUI.modalLayer($("#popDormancyAccount2"), {
+					closeClass: "btn_close"
+				});
+				// close 이벤트 추가
+				$("body").on("click", "#popDormancyAccount2 .btn_cancel", function() {
+					// modalLayer.close();
+					$(".btn_close").click();
+				});
+			});
+		});
+	</script>
+</body>
+</html>

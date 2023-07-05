@@ -1,0 +1,80 @@
+﻿#body_section { padding-top:0 !important; }
+
+/* 최근본상품 2017 */
+.recentItems {min-width:320px;min-height:250px;background:#fff;}
+.recentItems fieldset{min-width:100%;}
+.recentItems .tab_nav {position:relative;-webkit-display:flex;display:flex;padding:10px 13px 0;box-sizing:border-box;font-size:13px;color:#303030;text-align:center;background:#f0f0f0;}
+.recentItems .tab_nav:before {position:absolute;left:0;bottom:0;width:100%;height:1px;content:'';background:#dcdada;}
+.recentItems .tab_nav li {-webkit-flex:1;flex:1;height:36px;margin:0 2.5px 0 2.5px;line-height:37px;border:1px solid #dcdada;border-bottom-color:#fff;border-radius:3px 3px 0 0;background:#f7f7f9;}
+.recentItems .tab_nav li a {display:block;width:100%;height:100%;color:#919191;text-decoration:none;letter-spacing:-0.05em;}
+.recentItems .tab_nav li.current {position:relative;background:#fff;}
+.recentItems .tab_nav li.current a {color:#303030;}
+.recentItems .tab_conts .cont {display:none;}
+.recentItems .sec_util {height:44px;padding:8px 15px;box-sizing:border-box;line-height:28px;background:#fff;border-bottom:1px solid #dcdada;}
+.recentItems .sec_util .total {float:left;font-size:13px;font-weight:bold;}
+.recentItems .sec_util .btn {float:right;min-width:50px;height:27px;margin-left:6px;line-height:27px;color:#fff;border:none;border-radius:2px;font-size:13px;background:#323441}
+.recentItems .sec_util .delete {background:#f75759;}
+.recentItems .checkbox {position:relative;display:inline-block;width:20px;height:20px;margin-right:5px;border-radius:100%;vertical-align:middle;background:rgba(0,0,0,.3);border:none;}
+.recentItems .checkbox:before {position:absolute;left:5px;top:9px;display:block;width:4px;height:2px;content:'';background:rgba(255,255,255,.6);-webkit-transform:rotate(45deg);transform:rotate(45deg);}
+.recentItems .checkbox:after {position:absolute;left:7px;top:9px;display:block;width:9px;height:2px;content:'';background:rgba(255,255,255,.6);-webkit-transform:rotate(-45deg);transform:rotate(-45deg);} 
+.recentItems .checkbox:checked {background:rgba(51,173,112,1);z-index:1;}
+.recentItems .checkbox:checked:before {position:absolute;left:6px;top:8px;display:block;width:0px;height:2px;content:'';background:rgba(255,255,255,1);-webkit-transform-origin:left;transform-origin:left;-webkit-animation: chkAniBefore .1s ease .1s forwards;animation: chkAniBefore .1s ease .1s forwards;}
+.recentItems .checkbox:checked:after {position:absolute;left:9px;top:12px;display:block;width:0px;height:2px;content:'';background:rgba(255,255,255,1);-webkit-transform-origin:left;transform-origin:left;-webkit-animation: chkAniAfter .1s ease .1s forwards;animation: chkAniAfter .1s ease .1s forwards;}
+@keyframes chkAniBefore {
+	from {width: 0%;}
+	   to {width: 6px;}
+}
+@-webkit-keyframes chkAniBefore {
+	from {width: 0%;}
+	   to {width: 6px;}
+}
+@keyframes chkAniAfter {
+	from {width: 0%;}
+	   to {width: 9px;}
+}
+@-webkit-keyframes chkAniAfter {
+	from {width: 0%;}
+	   to {width: 9px;}
+}
+.recentItems .lst_items {min-height:250px;padding:15px 20px 0;margin-bottom:15px;list-style:none;background:url('http://img.modetour.com/ModeLiveBooking/mobile/hotel/2017/bg_item_no.png') no-repeat center 30px;background-size:155px;}
+.recentItems .lst_items.fav_items {min-height:250px;padding:15px 20px 0;margin-bottom:15px;list-style:none;background:url('http://img.modetour.com/ModeLiveBooking/mobile/hotel/2017/bg_item_no2.png') no-repeat center 30px;background-size:155px;}
+.recentItems .lst_items li {position:relative;min-height:85px;box-sizing:border-box;margin-bottom:15px;padding:0 0 15px 100px;border-bottom:1px solid #bbb;background:#fff;}
+.recentItems .lst_items li:after {position:absolute;left:0;bottom:-16px;width:100%;height:15px;background:#fff;content:'';}
+.recentItems .lst_items .img {position:absolute;left:0;top:50%;display:block;width:90px;height:70px;margin-top:-42px;z-index:1;}
+.recentItems .lst_items .img img {z-index:1;position:relative;}
+.recentItems .lst_items .img:before{position:absolute;left:50%;top:50%;content:"";box-sizing:border-box;text-align:center;color:#fff;display:inline-block;width:26.5px;height:31px;background-image:url(//img.modetour.com/modemobile/2018/itinerary/sprite@2x_191014.png);background-size:466.5px 436.5px;margin:-13px 0 0 -15px;overflow:hidden;background-position:-390.5px 0;}
+.recentItems .lst_items .img:after{position:absolute;left:0;top:0;content:"";width:100%;height:100%;box-sizing:border-box;border:1px solid #e1e1e1;}
+.recentItems .lst_items .checkbox {position:absolute;right:7px;top:7px;margin:0;background:rgba(0,0,0,.5);}
+.recentItems .lst_items .checkbox:checked {background:rgba(51,173,112,1);}
+.recentItems .lst_items .checkbox:checked + label {position:relative;display:block;}
+.recentItems .lst_items .checkbox:checked + label:after {position:absolute;left:0;top:0;display:block;width:100%;height:100%;box-sizing:border-box;border:3px solid #33ad70;content:'';background:rgba(0,0,0,.5);}
+.recentItems .lst_items img {width:90px;height:70px;vertical-align:top;}
+.recentItems .lst_items a {display:block;text-decoration:none;}
+.recentItems .lst_items .tit {display:block;width:100%;height:20px;line-height:20px;padding-top:2px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-weight:bold;color:#000;font-size:15px;}
+.recentItems .lst_items .info {display:block;height:17px;line-height:17px;color:#919191;font-size:13px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.recentItems .lst_items .info span {position:relative;padding:0 11px 0 6px;margin-left:-6px;}
+.recentItems .lst_items .info span:before {position:absolute;left:0;top:50%;margin-top:-6px;display:block;width:1px;height:12px;content:'';background:#b6b6b6;}
+.recentItems .lst_items .info2 {position:absolute;right:0;bottom:17px;display:block;width:100%;box-sizing:border-box;padding:0 0 0 100px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.recentItems .lst_items .price {float:right;font-weight:bold;color:#e14b4c;}
+.recentItems .lst_items .ico_state {float:left;width:55px;height:20px;line-height:20px;text-align:center;font-size:12px;color:#fff;vertical-align:middle;background:#32ac6f;overflow:hidden;}
+.recentItems .lst_items .ico_wait {float:left;width:55px;height:20px;line-height:20px;text-align:center;font-size:12px;color:#fff;vertical-align:middle;background:#949399;overflow:hidden;}
+.recentItems .lst_items .ico_fixed {float:left;width:55px;height:20px;line-height:20px;text-align:center;font-size:12px;color:#fff;vertical-align:middle;background:#e54b4d;overflow:hidden;}
+.recentItems .lst_items .ico_finish {float:left;width:55px;height:20px;line-height:20px;text-align:center;font-size:12px;color:#fff;vertical-align:middle;background:#fff;box-sizing:border-box;border:1px solid #999;color:#999;overflow:hidden;}
+.recentItems .lst_items .ico_star5 {float:left;width:85px;height:16px;background:url('http://img.modetour.com/ModeLiveBooking/mobile/hotel/2017/ico_rating_star_s.png') repeat-x 0 0;background-size:auto 100%;vertical-align:middle;text-indent:-9999em;}
+.recentItems .lst_items .ico_star4_5 {float:left;width:77px;height:16px;background:url('http://img.modetour.com/ModeLiveBooking/mobile/hotel/2017/ico_rating_star_s.png') repeat-x 0 0;background-size:auto 100%;vertical-align:middle;text-indent:-9999em;}
+.recentItems .lst_items .ico_star4 {float:left;width:68px;height:16px;background:url('http://img.modetour.com/ModeLiveBooking/mobile/hotel/2017/ico_rating_star_s.png') repeat-x 0 0;background-size:auto 100%;vertical-align:middle;text-indent:-9999em;}
+.recentItems .lst_items .ico_star3_5 {float:left;width:60px;height:16px;background:url('http://img.modetour.com/ModeLiveBooking/mobile/hotel/2017/ico_rating_star_s.png') repeat-x 0 0;background-size:auto 100%;vertical-align:middle;text-indent:-9999em;}
+.recentItems .lst_items .ico_star3 {float:left;width:51px;height:16px;background:url('http://img.modetour.com/ModeLiveBooking/mobile/hotel/2017/ico_rating_star_s.png') repeat-x 0 0;background-size:auto 100%;vertical-align:middle;text-indent:-9999em;}
+.recentItems .lst_items .ico_star2_5 {float:left;width:43px;height:16px;background:url('http://img.modetour.com/ModeLiveBooking/mobile/hotel/2017/ico_rating_star_s.png') repeat-x 0 0;background-size:auto 100%;vertical-align:middle;text-indent:-9999em;}
+.recentItems .lst_items .ico_star2 {float:left;width:34px;height:16px;background:url('http://img.modetour.com/ModeLiveBooking/mobile/hotel/2017/ico_rating_star_s.png') repeat-x 0 0;background-size:auto 100%;vertical-align:middle;text-indent:-9999em;}
+.recentItems .lst_items .ico_star1_5 {float:left;width:26px;height:16px;background:url('http://img.modetour.com/ModeLiveBooking/mobile/hotel/2017/ico_rating_star_s.png') repeat-x 0 0;background-size:auto 100%;vertical-align:middle;text-indent:-9999em;}
+.recentItems .lst_items .ico_star1 {float:left;width:17px;height:16px;background:url('http://img.modetour.com/ModeLiveBooking/mobile/hotel/2017/ico_rating_star_s.png') repeat-x 0 0;background-size:auto 100%;vertical-align:middle;text-indent:-9999em;}
+.recentItems .lst_items .ico_star0_5 {float:left;width:9px;height:16px;background:url('http://img.modetour.com/ModeLiveBooking/mobile/hotel/2017/ico_rating_star_s.png') repeat-x 0 0;background-size:auto 100%;vertical-align:middle;text-indent:-9999em;}
+.recentItems .lst_items .ico_star0 {float:left;width:0px;height:16px;background:url('http://img.modetour.com/ModeLiveBooking/mobile/hotel/2017/ico_rating_star_s.png') repeat-x 0 0;background-size:auto 100%;vertical-align:middle;text-indent:-9999em;}
+/* .recentItems .lst_items .ico_ticket {float:left;width:65px;height:20px;line-height:20px;text-align:center;font-size:12px;border:1px solid #00a8ff;color:#00a8ff;overflow:hidden;}
+.recentItems .lst_items .ico_voucher {float:left;width:65px;height:20px;line-height:20px;text-align:center;font-size:12px;border:1px solid #ffc600;color:#ffc600;overflow:hidden;}
+.recentItems .lst_items .ico_realvoucher {float:left;width:65px;height:20px;line-height:20px;text-align:center;font-size:12px;border:1px solid #ff5a00;color:#ff5a00;overflow:hidden;}
+.recentItems .lst_items .ico_e-ticket {float:left;width:65px;height:20px;line-height:20px;text-align:center;font-size:12px;border:1px solid #d649ff;color:#d649ff;overflow:hidden;} */
+.recentItems .lst_items .ico_local {float:left;width:65px;height:20px;line-height:20px;text-align:center;font-size:12px;border:1px solid #00a8ff;color:#00a8ff;overflow:hidden;}
+.recentItems .lst_items .ico_enter {float:left;width:65px;height:20px;line-height:20px;text-align:center;font-size:12px;border:1px solid #ff5a00;color:#ff5a00;overflow:hidden;}
+.recentItems .lst_items .ico_pass {float:left;width:65px;height:20px;line-height:20px;text-align:center;font-size:12px;border:1px solid #d649ff;color:#d649ff;overflow:hidden;}

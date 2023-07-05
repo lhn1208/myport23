@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Hidoc</title>
+	<meta content="width=1054" name="viewport" />
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+	<link rel="stylesheet" type="text/css" href="../../css/fullcalendar.css">
+	<script src="../../js/Chart.min.js"></script>
+	<script src="../../js/build/moment.min.js"></script>
+	<script src="../../js/build/html5shiv.min.js"></script>
+	<script src="../../js/build/amcharts.js"></script>
+	<script src="../../js/build/serial.js"></script>
+	<script src="../../js/ui.js"></script>
+
+</head>
+
+
+<body>
+	<div id="hidocIndex"><!-- 접근성 바로가기 -->
+		<a href="#hidocBody">본문 바로가기</a>
+		<a href="#hidocMenu">메뉴 바로가기</a>
+	</div>
+	<section id="wrapper">
+
+		<!-- header -->
+<header class="header">
+	<div class="inner">
+		<h1 class="logo"><a href="../../html/main/main.html"><img src="../../images/logo_hidocpro.png" alt="HiDocPro" /></a></h1>
+		<nav id="hidocMenu" class="navigation">
+			<strong class="screen_out">관련 서비스</strong>
+			<ul class="gnb">
+				<li class="active"><a href="../../html/health/qna_my_reg_list.html">건강Q&A</a>
+					<ul>
+						<li><a href="../../html/health/qna_my_reg_list.html">나에게 등록된 질문</a></li>
+						<li><a href="../../html/health/qna_answer_possible_list.html">답변 가능한 질문</a></li>
+						<li><a href="../../html/health/qna_collection_reply_list.html">내 답변 모음</a></li>
+					</ul>
+				</li>
+				<li><a href="../../html/news/my_write_list.html">건강이야기</a>
+					<ul>
+						<li><a href="../../html/news/my_write_list.html">내 글 모음</a></li>
+						<li><a href="../../html/news/my_write_column.html">칼럼 작성</a></li>
+					</ul>
+				</li>
+				<li><a href="../../html/mypage/hospital_info_view.html">마이페이지</a>
+					<ul>
+						<li><a href="../../html/mypage/hospital_info_view.html">근무처 정보</a></li>
+						<li><a href="../../html/mypage/doctor_info_view.html">프로필</a></li>
+						<li><a href="../../html/mypage/hidoc_point.html">하이닥포인트</a></li>
+					</ul>
+				</li>
+				<li><a href="../../html/customer/customer_notice.html">고객센터</a>
+					<ul>
+						<li><a href="../../html/customer/customer_notice.html">공지사항</a></li>
+						<li><a href="../../html/customer/customer_faq.html">자주 묻는 질문</a></li>
+						<li><a href="../../html/customer/customer_1vs1_list.html">내 문의 현황</a></li>
+						<li><a href="../../html/customer/customer_1vs1.html">1:1 문의</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div class="user_info">
+			<a href="../../html/mypage/doctor_info_view.html"><span class="user_name">김프로님</span></a>
+			<a href="../../html/member/login.html">로그아웃</a>
+		</div>	
+	</div>
+</header>
+<!-- header -->
+</div>
+
+
+		<section class="container layout_type3 service_pro_qna"><!-- 클래스 명은 서비스별로 동적이여야 합니다. ex) service_서비스이름 -->
+			<!-- <div class="sub_feature"></div> --><!-- 2019-01-18 삭제 -->
+			<div class="container_inner clear_g">
+				<div class="sub_location"><span>홈</span><span class="pro_comm">></span><span>건강Q&amp;A</span><span class="pro_comm">></span><strong>답변 가능한 질문</strong></div><!-- 2019-01-18 추가 -->
+				<section id="hidocBody" class="contents">
+					<!-- template 영역 시작 -->
+					<h1 class="screen_out">건강Q&amp;A</h1><!-- 2019-01-18 수정 -->
+					<div class="pro_qna_list box_type1">
+						<h2 class="fc_blue hd2_tit">답변 가능한 질문</h2>
+						<!-- 검색영역 -->
+						<form action="">
+							<fieldset>
+								<legend class="screen_out">검색어 입력</legend>
+								<div class="content_search">
+									<input type="text" class="cont_inp_search" placeholder="답변을 원하시는 질문의 주제나 내용을 검색할 수 있습니다." />
+									<button type="submit" class="btn_type2">검색</button>
+								</div>
+							</fieldset>
+						</form>
+						<!-- //검색영역 -->
+						<!-- 관심키워드 -->
+						<div class="search_result">
+							<div class="setting_kwd">
+								<h3 class="hd2_tit">등록된 관심키워드</h3>
+								<a href="#self" class="btn_setting" title="설정"><span class="ico_comm2 ico_setting">등록</span></a>
+								<ul class="list_kwd">
+									<li><a href="#self">코성형</a></li>
+									<li><a href="#self">코재수술</a></li>
+									<li><a href="#self">윤곽수술</a></li>
+									<li><a href="#self">쌍커풀</a></li>
+									<li><a href="#self">성형외과</a></li>
+									<li><a href="#self">b형간염</a></li>
+								</ul>
+							</div>
+							<div class="result_txt">
+								<p class="result_desc">
+									<span class="txt_tit">검색 키워드 : </span>
+									<span class="txt_result"><strong>b형간염</strong></span>
+									<span class="txt_bar">|</span>
+									<span class="txt_tit">검색결과 : </span>
+									<span class="txt_result"><strong>246</strong>건</span>
+								</p>
+								<ul class="list_result">
+									<li><a href="#none">전체 목록</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- //관심키워드 -->
+						<div class="board_list_type1">
+							<p id="tableSummary" class="screen_out">답변 가능한 질문을 번호, 제목, 답변 수, 등록일로 정보를 제공합니다.</p>
+							<table class="tbl tbl_list qna_list_3" aria-describedby="tableSummary">
+								<colgroup>
+									<col class="col1">
+									<col class="col2">
+									<col class="col3">
+									<col class="col4">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">번호</th>
+										<th scope="col">제목</th>
+										<th scope="col">답변 수</th>
+										<th scope="col">등록일</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="num">2341</td>
+										<td class="subject"><a href="../../html/health/qna_answer_possible_reply.html">위염증상으로 고생하고있습니다.누웠을때 숨쉬기가 힘듭니다.</a></td>
+										<td class="reply">20</td>
+										<td class="date">2014.07.08</td>
+									</tr>
+									<tr>
+										<td class="num">2341</td>
+										<td class="subject"><a href="../../html/health/qna_answer_possible_reply.html">위염증상으로 고생하고있습니다.누웠을때 숨쉬기가 힘듭니다.</a></td>
+										<td class="reply">20</td>
+										<td class="date">2014.07.08</td>
+									</tr>
+									<tr>
+										<td class="num">2341</td>
+										<td class="subject"><a href="../../html/health/qna_answer_possible_reply.html">위염증상으로 고생하고있습니다.누웠을때 숨쉬기가 힘듭니다.</a></td>
+										<td class="reply">20</td>
+										<td class="date">2014.07.08</td>
+									</tr>
+									<tr>
+										<td class="num">2341</td>
+										<td class="subject"><a href="../../html/health/qna_answer_possible_reply.html">위염증상으로 고생하고있습니다.누웠을때 숨쉬기가 힘듭니다.</a></td>
+										<td class="reply">20</td>
+										<td class="date">2014.07.08</td>
+									</tr>
+									<tr>
+										<td class="num">2341</td>
+										<td class="subject"><a href="../../html/health/qna_answer_possible_reply.html">위염증상으로 고생하고있습니다.누웠을때 숨쉬기가 힘듭니다.</a></td>
+										<td class="reply">20</td>
+										<td class="date">2014.07.08</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="paging_type1">
+							<span class="paging_inner">
+								<a href="#none" class="ico_comm btn_prev" title="이전">이전</a>
+								<a href="#none" class="num_page">1</a>
+								<strong><span class="screen_out">현재 페이지</span>2</strong>
+								<a href="#none" class="num_page">3</a>
+								<a href="#none" class="num_page">4</a>
+								<a href="#none" class="num_page">5</a>
+								<a href="#none" class="num_page">6</a>
+								<a href="#none" class="num_page">7</a>
+								<a href="#none" class="num_page">8</a>
+								<a href="#none" class="num_page">9</a>
+								<a href="#none" class="num_page">10</a>
+								<a href="#none" class="ico_comm btn_next" title="다음">다음</a>
+							</span>
+						</div>
+					</div>
+					<!-- 관심키워드 설정 팝업 -->
+					<div id="popSetKeyword" class="pop_modal"><!-- 2019-01-18 팝업 class 추가 -->
+						<div class="popup_type1 popup_set_kwd"><!-- 2019-03-14 팝업 type 수정 -->
+							<div class="inner">
+								<strong class="fc_blue tit_popup">관심키워드 설정하기</strong>
+								<div class="board_write_type2">
+									<table class="tbl tbl_write">
+										<caption class="screen_hide">글 쓰기 입력 테이블</caption>
+										<colgroup>
+											<col style="width:124px">
+											<col style="width:auto">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">알림받을 키워드</th>
+												<td>
+													<form>
+														<fieldset>
+															<legend class="screen_out">관심키워드 설정</legend>
+															<input type="text" class="inp_comm" /><button type="submit" class="btn_type2">추가</button>
+														</fieldset>
+													</form>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">등록된 키워드</th>
+												<td>
+													<ul class="list_kwd">
+														<li><span class="txt_kwd">코성형</span><a href="#self" class="btn_comm btn_delete" title="삭제">삭제</a></li>
+														<li><span class="txt_kwd">코재수술</span><a href="#self" class="btn_comm btn_delete" title="삭제">삭제</a></li>
+														<li><span class="txt_kwd">윤곽수술</span><a href="#self" class="btn_comm btn_delete" title="삭제">삭제</a></li>
+														<li><span class="txt_kwd">쌍커풀</span><a href="#self" class="btn_comm btn_delete" title="삭제">삭제</a></li>
+														<li><span class="txt_kwd">성형외과</span><a href="#self" class="btn_comm btn_delete" title="삭제">삭제</a></li>
+														<li><span class="txt_kwd">b형간염</span><a href="#self" class="btn_comm btn_delete" title="삭제">삭제</a></li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="btns"><!-- 2019-03-14 버튼 추가 -->
+										<button type="submit" class="btn_type2 btn_setting">설정</button>
+									</div>
+								</div>
+								<!-- <button type="button" class="btn_comm btn_close" title="닫기">닫기</button> --><!-- 2019-03-14 삭제 -->
+							</div>
+						</div>
+						<div class="overlay"></div><!--2019-01-18 추가-->
+					</div>
+					<!-- //관심키워드 설정 팝업 -->
+					<script>
+						// 팝업 2019-01-18
+						var popSetKeyword = document.querySelectorAll(".setting_kwd .btn_setting");
+						for (i = 0; i < popSetKeyword.length; i++){
+							popSetKeyword[i].onclick = function(){
+								var modalLayer = null;
+								modalLayer = hidocUI.modalLayer({
+									"popId": "popSetKeyword",
+									"openBtn":".setting_kwd .btn_setting",
+									"closeBtn": "#popSetKeyword .btn_setting"
+								});
+							}
+						};
+
+						// 관심 키워드 삭제 2019-01-18 수정
+						var keywordDelete = document.querySelectorAll('.popup_set_kwd .btn_delete');
+						for(var i = 0; i < keywordDelete.length; i++) {
+							keywordDelete[i].onclick = function() {
+								var keyword = this.parentNode;
+								keyword.remove();
+							}
+						}
+					</script>
+
+					<!-- // template 영역 끝 -->
+				</section>
+						<!-- user_info -->
+		<aside class="aside">
+			<h2 class="screen_out">사용자 정보</h2>
+			<div class="user_info">
+				<!-- 2014-12-06 이미지 라운드 처리 시작 -->
+				<div class="clear_g">
+					<div class="thumb_img">
+						<span class="frame_thumb"></span>
+						<img src="http://www.hidoc.co.kr/Library/modules/portalconsult/DoctorImages/%EC%9D%B4%EC%9A%A9%EC%9E%AC(100_100).jpg" width="60" height="60" alt="의사이름">
+					</div>
+					<strong class="name">김연아 교수</strong>
+				</div>
+				<!-- 2014-12-06 이미지 라운드 처리 끝 -->
+				<ul class="list_treatment">
+					<li>
+						<em class="emph">진료과목:</em>
+						<span class="desc">가정의학과</span>
+					</li>
+					<li>
+						<em class="emph">진료분야:</em>
+						<span class="desc"><span>성장장애</span>, <span>간염</span>, <span>갑상선 질환</span>, <span>갑상선 질환</span>, <span>갑상선 </span>, <span>갑상선 질환</span></span>
+					</li>
+				</ul>
+				<div class="user_count reply_count">
+					<h3 class="hd_tit">등록 답변 수</h3>
+					<ul class="list_ranking">
+						<li>
+							<div class="clear_g">
+								<em class="txt txt_hidoc">
+									하이<span class="txt_em">닥</span>
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,569</span></span>
+							</div>
+							<div class="clear_g">
+								<em class="txt txt_rank">
+									진료과 순위
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,000위</span>/2500명</span>
+							</div>
+						</li>
+						<li>
+							<div class="clear_g">
+								<em class="txt txt_naver">
+									네이버
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,569</span></span>
+							</div>
+							<div class="clear_g">
+								<em class="txt txt_rank">
+									진료과 순위
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,000위</span>/2500명</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="user_count hit_count">
+					<h3 class="hd_tit">누적 조회 수</h3>
+					<ul class="list_ranking">
+						<li>
+							<div class="clear_g">
+								<em class="txt txt_hidoc">
+									하이<span class="txt_em">닥</span>
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,569</span></span>
+							</div>
+							<div class="clear_g">
+								<em class="txt txt_rank">
+									진료과 순위
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,000위</span>/2500명</span>
+							</div>
+						</li>
+						<li>
+							<div class="clear_g">
+								<em class="txt txt_naver">
+									네이버
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,569</span></span>
+							</div>
+							<div class="clear_g">
+								<em class="txt txt_rank">
+									진료과 순위
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,000위</span>/2500명</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="user_count recom_count">
+					<h3 class="hd_tit">누적 추천 수</h3>
+					<ul class="list_ranking">
+						<li>
+							<div class="clear_g">
+								<em class="txt txt_hidoc">
+									하이<span class="txt_em">닥</span>
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,569</span></span>
+							</div>
+							<div class="clear_g">
+								<em class="txt txt_rank">
+									진료과 순위
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,000위</span>/2500명</span>
+							</div>
+						</li>
+						<li>
+							<div class="clear_g">
+								<em class="txt txt_naver">
+									네이버
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,569</span></span>
+							</div>
+							<div class="clear_g">
+								<em class="txt txt_rank">
+									진료과 순위
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,000위</span>/2500명</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="etc_info">
+					<h3 class="screen_out">기타정보</h3>
+					<div class="naver_link"><span class="ico_comm3 ico_nhn"></span><a href="#">네이버 지식IN으로 <br>이동 <span class="ico_comm3 ico_arr"></span></a></div>
+					<div class="inquiry">
+						<strong>서비스 문의</strong>
+						<span class="tel">1588-0781</span>
+						<span class="time"> 9:00 - 18:00 (월~금)</span>
+					</div>
+				</div>
+				<!-- 2015-04-21 광고영역 추가 시작 -->
+				<div class="aside_bnr_pro">
+					<script type="text/javascript" src="http://realmedia.hidoc.co.kr/RealMedia/ads/adstream_jx.ads/www.hidoc.co.kr/pro_main_RB@x11"></script>
+				</div>
+				<!-- 2015-04-21 광고영역 추가 끝 -->
+			</div>
+		</aside>
+		<!-- //user_info -->
+			</div>
+			<!-- 2019-02-28 광고영역 추가 -->
+			<div class="etc_ad">
+				<div class="etc_ad_inner">
+					<script type="text/javascript" src="//white.contentsfeed.com/RealMedia/ads/adstream_jx.ads/www.hidoc.co.kr/pro_main_RB@x12"></script>
+				</div>
+			</div>
+			<!-- //2019-02-28 광고영역 추가 -->
+		</section>
+		<a href="https://www.hidoc.co.kr" id="link_hidoc" target="_blank">하이닥 사이트로 이동</a>
+<button type="button" id="btn_top">상단으로 이동</button>
+<!-- footer -->
+<footer class="footer">	
+	<div class="footer_top">
+		<div class="inner">
+			<div class="navi">
+				<h2 class="screen_out">하이닥PRO 메뉴</h2>
+				<ul class="list_menu">
+					<li><a href="#self">건강Q&A</a>
+						<ul>
+							<li><a href="#self">나에게 등록된 질문</a></li>
+							<li><a href="#self">답변 가능한 질문</a></li>
+							<li><a href="#self">내 답변 모음</a></li>
+						</ul>
+					</li>
+					<li><a href="#self">건강이야기</a>
+						<ul>
+							<li><a href="#self">내 글 모음</a></li>
+							<li><a href="#self">칼럼 작성</a></li>
+						</ul>
+					</li>
+					<li><a href="#self">마이페이지</a>
+						<ul>
+							<li><a href="#self">근무처 정보</a></li>
+							<li><a href="#self">프로필</a></li>
+							<li><a href="#self">하이닥포인트</a></li>
+						</ul>
+					</li>
+					<li><a href="#self">고객센터</a>
+						<ul>
+							<li><a href="#self">공지사항</a></li>
+							<li><a href="#self">자주 묻는 질문</a></li>
+							<li><a href="#self">내 문의 현황</a></li>
+							<li><a href="#self">1:1 문의</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="inner">
+		<div class="copyright">
+			<h1 class="tit_logo"><a href="#none"><img src="../../images/logo_hidoc_foot.png" alt="HiDoc" /></a></h1>
+			<address>
+				(주)엠서클 06170 <span class="txt_bar"> | </span>서울특별시 강남구 봉은사로 114길 12(삼성동) <span class="txt_bar"> | </span> 대표번호: 1577-0781 <br />
+				발행인: 김명석 <span class="txt_bar"> | </span> 편집인: 문현주 <span class="txt_bar"> | </span> 청소년 보호 관리 책임자: 문희탁 <span class="txt_bar"> | </span> 
+				사업자등록번호: 120-86-10499 <br />인터넷신문 제호: 하이닥 <span class="txt_bar"> | </span> 정기간행물 등록번호: 서울 아 01224 <span class="txt_bar"> | </span> 등록일자: 2010.04.28 <span class="txt_bar"> | </span> 발행일자: 2019.01.24<br />
+				하이닥의 모든 콘텐츠(기사)는 저작권법의 보호를 받는 바, 무단 전제, 복사, 배포등을 금합니다.<br/>
+				<span class="txt_copyright">Copyright &copy; </span><a href="http://www.mcircle.co.kr/" target="_blank" class="link_mcircle">Mcircle Corp.</a><span class="txt_copyright"> All rights reserved.</span>
+			</address>
+		</div>
+		<div class="family_site">
+			<h2>하이닥PRO와 함께합니다</h2>
+			<ul class="list_site">
+				<li>
+					<a href="https://www.hidoc.co.kr" target="_blank"><span class="pro_comm ico_hidoc"></span>하이닥</a>
+				</li>
+				<li>
+					<a href="https://www.doctorville.co.kr" target="_blank"><span class="pro_comm ico_doctorville"></span>닥터빌</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!-- //footer -->
+
+<script type="text/javascript">
+// 스크롤Top
+document.getElementById("btn_top").onclick = function(){	
+	function scrollToTop(scrollDuration) {
+		var scrollStep = -window.pageYOffset / (scrollDuration / 15);
+		var scrollInterval = setInterval(function(){
+			if ( window.pageYOffset != 0 ) {
+				window.scrollBy( 0, scrollStep );
+			}
+			else clearInterval(scrollInterval); 
+		},15);
+	};
+	scrollToTop(300);
+}
+</script>
+
+	</section>
+</body>
+</html>

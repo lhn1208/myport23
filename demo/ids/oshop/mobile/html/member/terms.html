@@ -1,0 +1,140 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body class="fixed_height">
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+		<!--#include virtual="/publish/oshop/mobile/html/common/header_type2.html" -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents terms_body">
+				<!-- template 영역 시작 -->
+				<h2 class="screen_out">이용동의</h2>
+				<div class="cont_head cont_head_login"><!-- 2017-03-29 수정 -->
+					<h3 class="tit_cate">이용동의</h3>
+					<a href="#none" class="link_prev"><span class="ico_oshop ico_prev">이전</span></a>
+				</div>
+				<div class="cont_member cont_terms">
+					<h4 class="terms_tit">개인정보 확인</h4>
+					<span class="privacy_area">
+						<input type="text" value="대웅그룹" disabled="disabled" />
+						<input type="text" value="엠서클" disabled="disabled" />
+					</span>
+					<span class="privacy_area">
+						<input type="text" value="00841" disabled="disabled" />
+						<input type="text" value="이미영" disabled="disabled" />
+					</span>
+					<!-- 2016-08-09 추가[s] -->
+					<span class="privacy_area">
+						<input type="password" placeholder="비밀번호" />
+						<input type="password" placeholder="비밀번호 확인" />
+					</span>
+					<!-- 2016-08-09 추가[e] -->
+
+					<!-- 2017-04-12 추가[s] -->
+					<div class="certify_area email_area">
+						<input type="text" placeholder="이메일" />
+						<button type="button" class="btn_type4">중복확인</button>
+					</div>
+					<div class="certify_area birth_area">
+						<input type="text" placeholder="생년월일 (ex. 19931231)" />
+					</div>
+					<div class="certify_area gender_area">
+						<div class="radio_oshop">
+							<input type="radio" id="gender1" name="gender" class="inp_vote">
+							<label for="gender1" class="lab_vote">
+								<span class="ico_oshop ico_chk"></span>
+								<span class="txt_chk">남자</span>
+							</label>
+						</div>
+						<div class="radio_oshop">
+							<input type="radio" id="gender2" name="gender" class="inp_vote">
+							<label for="gender2" class="lab_vote">
+								<span class="ico_oshop ico_chk"></span>
+								<span class="txt_chk">여자</span>
+							</label>
+						</div>
+					</div>
+					<div class="certify_area identity_area">
+						<input type="text" placeholder="핸드폰 번호" />
+						<button type="button" class="btn_type4">본인인증</button>
+
+						<div class="certify_num_area">
+							<input type="text" placeholder="인증번호 3분이내로 입력" />
+							<a href="#" class="btn_type5">재전송</a>
+							<button type="button" class="btn_type4">확인</button>
+						</div>
+					</div>
+					<!-- 2017-04-12 추가[e] -->
+
+					<!-- 2017-10-18 추가[s] -->
+					<h4 class="terms_tit">이메일 / SMS 수신여부</h4>
+					<div class="reception_box">
+						<p>제로샵에서 제공하는 쇼핑 이벤트와 혜택에 대한 다양한 소식 등을 받으실 수 있습니다.<br><span class="stxt">(거래 정보-주문/결제/배송 등과 회사의 주요 정책 관련 메시지는 수신동의 여부와 관계없이 발송됩니다.)</span></p>
+						<div class="reception_type">
+							<strong>이메일</strong>
+							<div class="radio_oshop">
+								<input type="radio" id="agree_email1" name="agree_email" class="inp_vote" checked>
+								<label for="agree_email1" class="lab_vote">
+									<span class="ico_oshop ico_chk"></span>
+									<span class="txt_chk">수신</span>
+								</label>
+							</div>
+							<div class="radio_oshop">
+								<input type="radio" id="agree_email2" name="agree_email" class="inp_vote">
+								<label for="agree_email2" class="lab_vote">
+									<span class="ico_oshop ico_chk"></span>
+									<span class="txt_chk">수신 안 함</span>
+								</label>
+							</div>
+						</div>
+						<div class="reception_type">
+							<strong>SMS</strong>
+							<div class="radio_oshop">
+								<input type="radio" id="agree_sms1" name="agree_sms" class="inp_vote" checked>
+								<label for="agree_sms1" class="lab_vote">
+									<span class="ico_oshop ico_chk"></span>
+									<span class="txt_chk">수신</span>
+								</label>
+							</div>
+							<div class="radio_oshop">
+								<input type="radio" id="agree_sms2" name="agree_sms" class="inp_vote">
+								<label for="agree_sms2" class="lab_vote">
+									<span class="ico_oshop ico_chk"></span>
+									<span class="txt_chk">수신 안 함</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<!-- 2017-10-18 추가[e] -->
+
+					<div class="terms_agree">
+						<div class="frame_check"><!-- 2017-04-13 class 수정 -->
+							<div class="check_oshop"><!-- 2017-04-13 class 수정 -->
+								<input type="checkbox" id="agree1" class="inp_vote">
+								<label for="agree1" class="lab_vote">
+									<span class="ico_oshop ico_chk"></span>
+									<span class="txt_chk">이용약관(필수)</span>
+								</label>
+							</div>
+						</div>
+						<div class="terms_area"><iframe src="consign01.html" title="이용약관" frameborder="0"></iframe></div>
+					</div>
+
+					<div class="terms_agree">
+						<div class="frame_check"><!-- 2017-04-13 class 수정 -->
+							<div class="check_oshop"><!-- 2017-04-13 class 수정 -->
+								<input type="checkbox" id="agree2" class="inp_vote">
+								<label for="agree2" class="lab_vote">
+									<span class="ico_oshop ico_chk"></span>
+									<span class="txt_chk">개인정보 보호 취급방침(필수)</span>
+								</label>
+							</div>
+						</div>
+						<div class="terms_area"><iframe src="consign02.html" title="개인정보 보호 취급방침" frameborder="0"></iframe></div>
+					</div>
+				</div>
+				<button type="submit" class="btn_type2 btn_agree">이용동의</button>
+				<!-- // template 영역 끝 -->
+			</section>
+		</section>
+	</section>
+</body>
+</html>

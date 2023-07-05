@@ -1,0 +1,142 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+		<!--#include virtual="/publish/oshop/mobile/html/common/header_sub.html" --> <!-- 2017-03-21 수정 -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<!--#include virtual="/publish/oshop/mobile/html/common/cont_head.html" -->
+				<div class="cont_preview">
+
+					<div class="box_type2 box_preview">
+						<em class="state">체험단 모집중</em>
+						<h3 class="tit_cate">[체험단] 대웅 락피더스 체험단</h3>
+						<ul class="list_dot_type">
+							<li>모집대상 : 장건강을 원하는 여성 누구나</li>
+							<li>모집인원 : 총 40명 추첨</li>
+							<li>모집기간 : <span class="state">03월 06일(금)~11일(수) 오후 5시까지</span></li>
+							<li>선정발표 : 03월 12일(목) 개별 또는 공지 안내</li>
+							<!-- 발표기간일때
+							<li>선정발표 : <span class="open">03월 12일(목) 개별 또는 공지 안내</span></li>
+							-->
+							<li>제품수령 : 03월 13일(금)</li>
+							<li>후기등록기간 : 03월 14일(토) ~ 4월 19일(일)</li>
+							<!-- 후기등록기간일때
+							<li>후기등록기간 : <span class="review">03월 14일(토) ~ 4월 19일(일)</span></li>
+							-->
+							<li>베스트체험단선정 : 04월 26일(금)</li>
+						</ul>
+						<a href="#none" class="btn_detail btn_type1"><span class="txt">내용 자세히보기</span><span class="ico_oshop ico_more"></span></a>
+					</div>
+
+					<h4 class="preview_join">참여하기</h4>
+					<form>
+						<fieldset>
+							<legend class="screen_out">체험단 참여하기 폼</legend>
+							<div class="box_type2 box_preview">
+								<strong class="tit_cate">[모니터요원] 제로 서포터즈 1기 모집 안내</strong>
+								<ul class="list_survey">
+									<li>
+										<p class="txt_survey">1. 귀하의 연령대는 어떻게 되십니까?(객관식) 필수</p>
+										<div class="radio_oshop">
+											<input type="radio" id="survey1" name="survey" class="inp_vote">
+											<label for="survey1" class="lab_vote">
+												<span class="ico_oshop ico_chk"></span>
+												<span class="txt_chk">20대</span>
+											</label>
+										</div>
+										<div class="radio_oshop">
+											<input type="radio" id="survey2" name="survey" class="inp_vote">
+											<label for="survey2" class="lab_vote">
+												<span class="ico_oshop ico_chk"></span>
+												<span class="txt_chk">30대</span>
+											</label>
+										</div>
+										<div class="radio_oshop">
+											<input type="radio" id="survey3" name="survey" class="inp_vote">
+											<label for="survey3" class="lab_vote">
+												<span class="ico_oshop ico_chk"></span>
+												<span class="txt_chk">40대</span>
+											</label>
+										</div>
+										<div class="radio_oshop">
+											<input type="radio" id="survey4" name="survey" class="inp_vote">
+											<label for="survey4" class="lab_vote">
+												<span class="ico_oshop ico_chk"></span>
+												<span class="txt_chk">50대</span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<p class="txt_survey">2. 위 내용 중 '기타'라고 응답하신 경우, 활동하고 계시는 SNS를 기재해 주세요.(주관식) </p>
+										<div class="frame_inp"><input type="text" class="inp_oshop"></div>
+									</li>
+								</ul>
+								<div class="info_privacy">
+									<strong class="tit_privacy">&#60;개인정보 이용동의-필수사항&#62;</strong>
+									<p class="txt_privacy">
+									체험단을 진행하시는 동안 진행일정 또는 정보제공을 위하여
+									정보이용에 동의해 주셔야 합니다. <br>
+									<strong>개인정보 취급방침 및 SMS/E-mail</strong> 수신에 동의하십니까? 
+									</p>
+									<div class="radio_oshop">
+										<input type="checkbox" id="agree" class="inp_vote">
+										<label for="agree" class="lab_vote">
+											<span class="ico_oshop ico_chk"></span>
+											<span class="txt_chk">동의합니다.</span>
+										</label>
+									</div>
+								</div>
+								<button type="submit" class="btn_type1">체험단 신청하기</button>
+							</div>
+						</fieldset>
+					<form>
+				</div>
+
+				<div id="popDetail" style="display:none;">
+					<div class="popup_type1 popup_type1_view">
+						<div class="inner">
+							<strong class="tit_popup">체험단 상세보기</strong>
+							<div class="popup_body">
+								<img src="http://pmoeshop.speedgabia.com/display/5221_img.jpg" class="thumb_detail" alt="">
+								<div class="btns_zoom">
+									<a href="#none" class="btn_zoom btn_out">축소</a>
+									<a href="#none" class="btn_zoom btn_in">확대</a>
+								</div>
+								<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a><!-- 2017-03-21 이미지 넓이,높이값 삭제 -->
+							</div>
+							<a href="#none" class="btn_close"><span class="ico_oshop ico_close">닫기</span></a>
+						</div>
+					</div>
+				</div>
+
+				<script>
+				$(function() {
+
+					// 체험단상세보기 팝업
+					oshopUI.popUp({
+						"clickBtn" : $(".box_preview .btn_detail"),
+						"popupLayer" : $("#popDetail"),
+						"Contents" : $(".cont_preview"),
+						"callback" : function() {
+							window.scroll(0, 0); 
+						}
+					});
+
+					// 상품확대축소
+					oshopUI.imgZoom();
+
+
+				});
+				</script>
+
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a><!-- 2017-03-21 이미지 넓이,높이값 삭제 -->
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+
+</body>
+</html>

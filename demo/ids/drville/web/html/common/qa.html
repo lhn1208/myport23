@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>QA 수정사항</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <style>
+        body {padding:30px;}
+        h1 { border-left:4px solid #000; font-size:28px;line-height:30px; padding-left:10px; margin-bottom:10px;}
+        h2 { font-size:16px;padding-left:10px;letter-spacing:-1px; margin-bottom:20px;}
+        table { margin-bottom:20px}
+        a:hover { text-decoration:underline}
+        table th, table td { border:1px solid #e4e4e4; text-align:center; font-size:13px;letter-spacing:-1px;padding:10px; vertical-align:middle;}
+        table td { text-align:left}
+        table td:last-child { text-align:left;}
+        table td span { font-size:12px;padding-left:10px;font-weight:bold;color:#666; }
+        table a {text-align:center;text-decoration:none; color:#19a0f9;}
+        table a.link_dev {color:#ec7d07}
+        .ok { text-decoration:line-through;}
+        xmp {margin:0;padding:10px;color:#000;font-family:"Malgun Gothic"; background:#eee;letter-spacing:0}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>UI QA 수정사항</h1>
+    <table id="tblEditList">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>UI링크</th>
+                <th>dev링크</th>
+                <th>수정내용</th>
+                <th>개발팀적용사항</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="5" style="font-weight:bold;background:#C8DEF7"> ======= [↓↓&nbsp;&nbsp;&nbsp;QA 2015-12-03 으로 주석표기 ] ======= </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/guide/guide_main.html" target="_blank">처방가이드메인</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/prescribe/main" target="_blank" class="link_dev">처방가이드메인</a></td>
+                <td>처방가이드 체험하기 배너 IE링크 안됨</td>
+                <td>- 이미지 맵으로 된 부분을 a태그로 대체</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/guide/guide_main.html" target="_blank">처방가이드메인</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/prescribe/main" target="_blank" class="link_dev">처방가이드메인</a></td>
+                <td>2015처방가이드 작성자 노출 형태 수정</td>
+                <td><xmp><div class="push"><span class="ico_comm2 ico_note"></span>권가진, 2015-11-03</div></xmp></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>ui페이지 없음</td>
+                <td><a href="http://dev.doctorville.co.kr:8000/prescribe/prescribeNote/1000151" target="_blank" class="link_dev">내처방노트</a></td>
+                <td>내처방노트 수정시 첨부파일 아이콘이 없음</td>
+                <td>
+                    - 파일명 앞에 아래와 같이 span태그 추가해 주세요
+<xmp><a href="javascript:;" class="link_file attachFileSaveCls">
+    <span class="btn_comm btn_down"></span>파일명.pdf
+</a>
+</xmp></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/guide/guide_main.html" target="_blank">처방가이드상세</a></td>
+                <td>
+                    <a href="http://dev.doctorville.co.kr:8000/prescribe/2015/prescribe2015Info/D000005" target="_blank" class="link_dev">처방가이드상세</a>
+                    <a href="http://dev.doctorville.co.kr:8000/seminar/seminarDetail?seminarId=318" target="_blank" class="link_dev">라이브세미나QA</a>
+                </td>
+                <td>댓글 수정시 취소버튼 위치 겹침(수정완료)</td>
+                <td>없음</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/profile_new/myContacts_copy.html" target="_blank">프로필CV업로드</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/profile/profileView/1000151" target="_blank" class="link_dev">프로필CV업로드</a></td>
+                <td>파일첨부 기능 수정</td>
+                <td>
+                    -  파일첨부 스크립트 추가, 파일첨부 html 수정(프로필QA / win8, IE11 / 11번항목)
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>공통푸터</td>
+                <td>공통푸터</td>
+                <td>푸터 패밀리사이트 이동시 자동 닫힘</td>
+                <td>
+                    <a href="/publish/drville/o/web/js/ui.js">ui.js</a>
+                    - ui.js 맨 마지막에 2015-12-07 로 주석처리함
+                    - (회원가입,로그인QA / win7, IE11 / 46번항목)
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/seminar/vod_home.html" target="_blank">다시보기VOD</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/seminar/seminarVodReplayList" target="_blank" class="link_dev">다시보기VOD</a></td>
+                <td>검색결과가 없을 경우 blank메세지 추가</td>
+                <td>
+                    blank메세지 추가(라이브세미나QA / win7, IE11 / 293번항목)
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="font-weight:bold;background:#C8DEF7"> ======= [↓↓&nbsp;&nbsp;&nbsp;QA 2015-12-07 으로 주석표기 ] ======= </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/mypage/mp01_03_01.html" target="_blank">서비스알림설정</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/my/memberInfo/alarmReceive" target="_blank" class="link_dev">서비스알림설정</a></td>
+                <td>default 펼침상태로</td>
+                <td>
+                    하단 스크립트 수정
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html//intro/intro.html" target="_blank">인트로</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/intro?redirect=%2Fmain" target="_blank" class="link_dev">인트로</a></td>
+                <td>해상도에 맞춰 전면 사이즈 및 배경 수정</td>
+                <td> html 및 스크립트 수정됨 (주석표시)</td>
+            </tr>
+            <tr>
+                <td colspan="5" style="font-weight:bold;background:#C8DEF7"> ======= [↓↓&nbsp;&nbsp;&nbsp;QA 2015-12-08 으로 주석표기 ] ======= </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/event/event_front.html" target="_blank">이벤트홈</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/event/main" target="_blank" class="link_dev">이벤트홈</a></td>
+                <td>
+                    - 메인배너이미지교체<br>
+                    - 메인배너 버튼, 페이징 교체<br>
+                    - 신규회원감사이벤트 텍스트 없음 이미지배너형태로 수정<br>
+                    - 신규회원감사이벤트 폰트컬러 수정
+                </td>
+                <td>
+                    - 메인배너이미지교체<br>
+                    - 신규회원감사이벤트 html 수정</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/member/memeber_cert_ok.html" target="_blank">가입신청완료</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/userRegFrm" target="_blank" class="link_dev">가입신청완료</a></td>
+                <td>
+                    - 전체 문구 수정<br>
+                </td>
+                <td>
+                    - 전체 문구 수정<br>
+                    - 하단 안내문구가  리스트 형태로 수정됨 <br>
+                 </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/member/member02.html" target="_blank">회원정보입력</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/userRegFrm" target="_blank" class="link_dev">회원정보입력</a></td>
+                <td>
+                    - 의사정보입력추가<br>
+                </td>
+                <td>
+                    - 의사정보입력추가<br>
+                    - 의사인증파일 업로드 스크립트 추가<br>
+                    - 가입하기 --> 완료하기 버튼 문구 변경
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/member/memeber_cert.html" target="_blank">의사인증심사</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/userRegFrm" target="_blank" class="link_dev">의사인증심사</a></td>
+                <td>
+                    - 의사정보입력 부분 삭제<br>
+                    - 심사중 안내문구 및 처음으로 이동 버튼 추가<br>
+                </td>
+                <td>
+                    - 의사정보입력 부분 삭제<br>
+                    - 심사중 안내문구 및 처음으로 이동 버튼 추가<br>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/email/email_cert.html" target="_blank">의사인증이메일폼</a></td>
+                <td>-</td>
+                <td>
+                   - 회원가입완료 및 의사인증 안내 메일발송 폼<br>
+                </td>
+                <td>
+                    - 회원가입완료 및 의사인증 안내 메일발송 폼<br>
+                    - 신규페이지
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="font-weight:bold;background:#C8DEF7"> ======= [↓↓&nbsp;&nbsp;&nbsp;QA 2015-12-09 으로 주석표기 ] ======= </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/seminar/seminar_home.html" target="_blank">라이브세미나홈</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/seminar/main" class="link_dev" target="_blank">라이브세미나홈</a></td>
+                <td>
+                    - 강사소개 배너이미지 교체 <br>
+                    - 강사소개 레이어 추가
+                </td>
+                <td>
+                    - 강사소개 배너이미지 교체, a태그도 추가됨<br>
+                    - 페이지 하단 강사소개 레이어 html, 스크립트 추가
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/notice/save.html" target="_blank">소식보관함</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/noti/notiList?saveFd=Y" class="link_dev" target="_blank">소식보관함</a></td>
+                <td>
+                    -  보관함에 소식이 없을경우 blank메세지 추가<br>
+                    - 우측 전체일정보기 버튼을 박스영역 밖으로 분리
+                </td>
+                <td>
+                    -  보관함에 소식이 없을경우 blank메세지 추가<br>
+                    - 전체일정보기 버튼을 div 밖으로 옮겨주세요
+<xmp><div class ="box_aside">
+</div>
+<a href="#none" class="btn_all">전체일정보기</a>
+</xmp>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="font-weight:bold;background:#C8DEF7"> ======= [↓↓&nbsp;&nbsp;&nbsp;QA 2015-12-11 으로 주석표기 ] ======= </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/notice/save.html" target="_blank">소식보관함</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/noti/notiList?saveFd=Y" class="link_dev" target="_blank">소식보관함</a></td>
+                <td>
+                    - 우측 전체일정보기 버튼을 박스영역 안으로
+                </td>
+                <td>
+                    - 전체일정보기 버튼을 다시 div 안으로 옮겨주세요
+                    <xmp><div class ="box_aside">
+    <a href="#none" class="btn_all">전체일정보기</a>
+</div>
+                    </xmp>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/seminar/vod_home.html" target="_blank">VOD다시보기</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/seminar/main" class="link_dev" target="_blank">VOD다시보기</a></td>
+                <td>
+                    - 재생시간 삭제로 리스트 간격조정<br>
+                </td>
+                <td>
+                    table의 colgroup 값이 바뀌었습니다.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="font-weight:bold;background:#C8DEF7"> ======= [↓↓&nbsp;&nbsp;&nbsp;QA 2015-12-14 으로 주석표기 ] ======= </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <a href="/publish/drville/o/web/html/event/event_front.html" target="_blank">이벤트홈</a>
+                    <a href="/publish/drville/o/web/html/event/event_new.html" target="_blank">신규가입이벤트</a>
+                    <a href="/publish/drville/o/web/html/event/event_sub02.html" target="_blank">의사인증이벤트</a>
+                    <a href="/publish/drville/o/web/html/event/event_addinfo.html" target="_blank">부가정보등록이벤트</a>
+                    <a href="/publish/drville/o/web/html/event/event_sub01.html" target="_blank">출석체크</a>
+                </td>
+                <td>
+                    <a href="http://dev.doctorville.co.kr:8000/event/main" class="link_dev" target="_blank">이벤트홈</a>
+                    <a href="http://dev.doctorville.co.kr:8000/event/thankEventList/join" class="link_dev" target="_blank">신규가입이벤트</a>
+                    <a href="http://dev.doctorville.co.kr:8000/event/thankEventList/join" class="link_dev" target="_blank">의사인증이벤트</a>
+                    <a href="http://dev.doctorville.co.kr:8000/event/thankEventList/join" class="link_dev" target="_blank">부가정보등록이벤트</a>
+                    <a href="http://dev.doctorville.co.kr:8000/event/attend" class="link_dev" target="_blank">출석체크</a>
+                </td>
+                <td>
+                    - 이미지 교체 및 문구 수정<br>
+                    - 부가정보 등록레이어 관심사, 유입경로 삭제
+                </td>
+                <td>
+                    - 이벤트 홈 : 메인배너 이미지 교체, 진행중이벤트 배너 이미지 및 문구 교체<br>
+                    - 신규가입 : 2번혜택 & 꼭 읽어보세요 문구수정<br>
+                    - 의사인증 : 2번혜택 문구수정, 부가정보등록 레이어 관심사, 유입경로 삭제<br>
+                    - 의사인증 : 부가정보등록 레이어에 닫기 버튼 누락  div class="btns" 밑에 아래 태그 추가<br>
+<xmp> <button type="button" class="btn_comm btn_close" title="닫기">닫기</button></xmp>
+                    - 부가정보등록 : 1,2번 혜택 문구 수정 <br>
+                    - 출석체크 : 상단배너 문구수정, 왼쪽 이벤트리스트 썸네일 교체<br>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <a href="/publish/drville/o/web/html/event/event_front.html" target="_blank">메인</a>
+                    <a href="/publish/drville/o/web/html/event/event_new.html" target="_blank">처방가이드홈</a>
+                    <a href="/publish/drville/o/web/html/event/event_sub02.html" target="_blank">세미나홈</a>
+                </td>
+                <td>
+                    <a href="http://dev.doctorville.co.kr:8000/main" class="link_dev" target="_blank">메인</a>
+                    <a href="http://dev.doctorville.co.kr:8000/prescribe/main" class="link_dev" target="_blank">처방가이드홈</a>
+                    <a href="http://dev.doctorville.co.kr:8000/seminar/main" class="link_dev" target="_blank">세미나홈</a>
+                </td>
+                <td>
+                    - 닉네임 수정, 등록버튼 추가<br>
+                    - 닉네임 등록레이어 추가
+                </td>
+                <td>
+                    - 닉네임 수정, 등록버튼 추가(수정버튼은 주석처리 되어 있음)<br>
+                    - 닉네임 등록레이어 html, script 추가<br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="font-weight:bold;background:#C8DEF7"> ======= [↓↓&nbsp;&nbsp;&nbsp;QA 2015-12-16 으로 주석표기 ] ======= </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/profile_new/myContacts_none.html" target="_blank">프로필내동료</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/profile/friendshipList/1000151" class="link_dev" target="_blank">프로필내동료</a></td>
+                <td>
+                    - 동료가 없을 경우 blank 메세지 추가
+                </td>
+                <td>
+                    - 동료가 없을 경우 blank 메세지 추가
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <a href="/publish/drville/o/web/html/guide/guide_2015_01.html" target="_blank">처방가이드상세</a>
+                    <a href="/publish/drville/o/web/html/guide/guide_note_view.html" target="_blank">처방노트</a>
+                </td>
+                <td><a href="http://dev.doctorville.co.kr:8000/prescribe/2015/prescribe2015Info/D000003" class="link_dev" target="_blank">처방가이드상세</a></td>
+                <td>
+                    - 탑버튼 위치 및 이미지 수정<br>
+                </td>
+                <td>
+                    - html 태그 위치 변경<br>
+                    - 하단 탑버튼 스크립트 수정<br>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <a href="/publish/drville/o/web/html/guide/guide_note_write.html" target="_blank">처방노트등록</a>
+                </td>
+                <td><a href="http://dev.doctorville.co.kr:8000/prescribe/prescribeNote/1000151" class="link_dev" target="_blank">처방노트등록</a></td>
+                <td>
+                    - 파일 업로드 프로그레스바 레이어 추가<br>
+                </td>
+                <td>
+                    - 파일 업로드 프로그레스바 레이어 추가<br>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="/publish/drville/o/web/html/seminar/seminar_home.html" target="_blank">라이브세미나홈</a></td>
+                <td><a href="http://dev.doctorville.co.kr:8000/seminar/main" class="link_dev" target="_blank">라이브세미나홈</a></td>
+                <td>
+                    - 강사소개 레이어 이미지로 수정<br>
+                </td>
+                <td>
+                    - 강사소개 레이어 이미지로 수정<br>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    (function(){
+        var tblEditList=document.getElementById("tblEditList"),
+                tblEditListTr = tblEditList.rows,
+                cnt = 0;
+        for(var i=1;i<tblEditList.rows.length;i++){
+            if (!(tblEditListTr[i].cells[0].getAttribute('colspan'))) {
+                tblEditListTr[i].cells[0].innerHTML = i-cnt;
+            }else {
+                cnt++;
+            }
+        }
+    })();
+</script>
+</body>
+</html>

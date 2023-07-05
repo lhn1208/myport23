@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>마커 겹침 처리</title>
+	<script type="text/javascript" src="../../js/libs/jquery-1.12.1.min.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=23HSkWZlm01P94mprtmk&callback=initMap"></script>
+	<script type="text/javascript" src="../../js/libs/MarkerOverlappingRecognizer.js"></script>
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/layout_shopplus.css">
+	<link rel="stylesheet" href="../../css/bigdata.css">
+</head>
+<body>
+<script type="text/javascript">
+	//23HSkWZlm01P94mprtmk
+	// 마커 표시할 위치 data
+	var pharmacyInfo = [
+		{id:'00', addr:'서울특별시 금천구 시흥대로153길 99 2층 (가산동)', tel:'02-869-8275', lat:37.475785731, lng:126.893359265, title:'마디엔신경외과약국', divide:'p'}
+		,{id:'01', addr:'서울특별시 금천구 시흥대로 244 (시흥동)', tel:'02-804-0002', lat:37.4556847, lng:126.9005605, title:'희명약국', divide:'p'}
+		,{id:'02', addr:'서울특별시 금천구 시흥대로 239 (시흥동)', tel:'02-891-1801', lat:37.4552088, lng:126.8999416, title:'뉴연세여성약국', divide:'p'}
+		,{id:'03', addr:'서울특별시 금천구 시흥대로139길 8 (독산동)', tel:'1577-7015', lat:37.4730534, lng:126.8976579, title:'새움약국', divide:'p'}
+		,{id:'04', addr:'서울특별시 금천구 시흥대로 230 5,6,7층 (시흥동)', tel:'02-896-2114', lat:37.4544288, lng:126.9012494, title:'서울대효약국', divide:'p'}
+		,{id:'05', addr:'서울특별시 금천구 시흥대로 421 (독산동, 건국빌딩)', tel:'02-2111-9700', lat:37.4712467, lng:126.8977195, title:'서울바른세상약국', divide:'p'}
+		,{id:'06', addr:'서울특별시 금천구 가산로 122 (가산동)', tel:'02-867-7056', lat:37.4765965, lng:126.8928813, title:'성지약국', divide:'p'}
+		,{id:'07', addr:'서울특별시 금천구 시흥대로114길 5 (독산동)', tel:'02-858-0067', lat:37.4680843, lng:126.8985518, title:'아카시아약국', divide:'p'}
+		,{id:'08', addr:'서울특별시 금천구 남부순환로 1400 지하1층,4~9층 (독산동)', tel:'838-5558', lat:37.4667616, lng:126.8940975, title:'금천수요양약국', divide:'p'}
+		,{id:'09', addr:'서울특별시 금천구 시흥대로 202 3,4층 (시흥동, 대의빌딩)', tel:'02-1544-2708', lat:37.4667616, lng:126.8940975, title:'녹십자요양약국', divide:'p'}
+		,{id:'10', addr:'서울특별시 금천구 독산로 362 (독산동)', tel:'02-857-2001', lat:37.4667616, lng:126.8940975, title:'서울예수요양약국', divide:'p'}
+		,{id:'11', addr:'서울특별시 금천구 범안로 1191 (독산동)', tel:'02-805-6797', lat:37.4667616, lng:126.8940975, title:'성신고려요양약국', divide:'p'}
+		,{id:'12', addr:'서울특별시 금천구 시흥대로 352 (독산동, 삼미뉴타워)', tel:'02-894-7582', lat:37.4648253, lng:126.897932, title:'(사)대한교통장애인연합회 사랑나눔약국', divide:'p'}
+		,{id:'13', addr:'서울특별시 금천구 가산디지털1로 186 401-403호 (가산동, 제이플라츠)', tel:'02-2635-8668', lat:37.482024, lng:126.881692, title:'(재)이랜드재단이랜드약국', divide:'p'}
+		,{id:'14', addr:'서울특별시 금천구 탑골로3가길 22 (시흥동)', tel:'02-802-9311', lat:37.4526202, lng:126.9107552, title:'(재)천주교서울대교구유지재단 전진상약국', divide:'p'}
+		,{id:'15', addr:'서울특별시 금천구 시흥대로 473 2,4층 (독산동)', tel:'02-861-4081', lat:37.475937, lng:126.8980579, title:'(재)한국산업의학연구소부설그린약국', divide:'p'}
+		,{id:'16', addr:'서울특별시 금천구 가산디지털1로 186 2,3층 (가산동, 제이플라츠)', tel:'02-864-1275', lat:37.482024, lng:126.881692, title:'가산신경외과약국', divide:'p'}
+		,{id:'17', addr:'서울특별시 금천구 가산디지털1로 168 1층 106호 (가산동)', tel:'02-862-0098', lat:37.4798515, lng:126.882596, title:'가산안과약국', divide:'p'}
+		,{id:'18', addr:'서울특별시 금천구 가산디지털1로 186 4층 403호 (가산동, 제이플라츠)', tel:'2026-0001', lat:37.482024, lng:126.881692, title:'가산연합약국', divide:'p'}
+		,{id:'19', addr:'서울특별시 금천구 가산디지털1로 186 4층 403호 (가산동, 제이플라츠)', tel:'02-862-2411', lat:37.482024, lng:126.881692, title:'가산약국', divide:'p'}
+		,{id:'20', addr:'서울특별시 금천구 시흥대로 228 2층 (시흥동)', tel:'02-893-8546', lat:37.4542254, lng:126.9012166, title:'강피부과약국', divide:'p'}
+		,{id:'21', addr:'서울특별시 금천구 시흥대로 230 4층 (시흥동, 서평빌딩)', tel:'02-803-9700', lat:37.4544288, lng:126.9012494, title:'고려고든정형외과약국', divide:'p'}
+		,{id:'22', addr:'서울특별시 금천구 독산로14길 3 (시흥동)', tel:'02-802-6555', lat:37.4523998, lng:126.9069591, title:'고상덕산부인과약국', divide:'p'}
+		,{id:'23', addr:'서울특별시 금천구 시흥대로 214 6층 (시흥동, 비즈메드)', tel:'02-803-8051', lat:37.4530461, lng:126.9017609, title:'고은나라약국', divide:'p'}
+		,{id:'24', addr:'서울특별시 금천구 시흥대로 214 501호 (시흥동, 비즈메드)', tel:'02-805-2700', lat:37.4530461, lng:126.9017609, title:'굿아이금천이안과약국', divide:'p'}
+		,{id:'25', addr:'서울특별시 금천구 시흥대로 381 (독산동)', tel:'02-3286-8008', lat:37.4676043, lng:126.8974227, title:'금천대윤정형외과의원', divide:'h'}
+		,{id:'26', addr:'서울특별시 금천구 독산로 347 3층 (독산동)', tel:'02-857-1775', lat:37.4778152, lng:126.9035014, title:'금천수의원', divide:'h'}
+		,{id:'27', addr:'서울특별시 금천구 독산로 210 3층 (독산동)', tel:'02-805-3330', lat:37.4657282, lng:126.9023275, title:'금천연세내과의원', divide:'h'}
+		,{id:'28', addr:'서울특별시 금천구 금하로 705 205호 (시흥동, 카멜리아)', tel:'02-891-8275', lat:37.4515795, lng:126.9083512, title:'금천연세마취통증의학과의원', divide:'h'}
+		,{id:'29', addr:'서울특별시 금천구 금하로 724-1 (시흥동)', tel:'02-809-7622', lat:37.4504133, lng:126.9101526, title:'금천연세정형외과의원', divide:'h'}
+		,{id:'30', addr:'서울특별시 금천구 시흥대로 403 5,6층 (독산동, 셈프레팜)', tel:'02-851-0075', lat:37.4697959, lng:126.897515, title:'금천하나의원', divide:'h'}
+		,{id:'31', addr:'서울특별시 금천구 독산로 174 (독산동)', tel:'02-802-0919', lat:37.4628391, lng:126.9042512, title:'김내과의원', divide:'h'}
+		,{id:'32', addr:'서울특별시 금천구 시흥대로 198 (시흥동, 두성빌딩)', tel:'02-896-2528', lat:37.4516062, lng:126.9021552, title:'김병수이비인후과의원', divide:'h'}
+		,{id:'33', addr:'서울특별시 금천구 독산로 142 2,3층 (시흥동)', tel:'02-803-0700', lat:37.4600861, lng:126.9050951, title:'김성진정형외과의원', divide:'h'}
+		,{id:'34', addr:'서울특별시 금천구 금하로 707 2층 (시흥동)', tel:'02-806-4339', lat:37.4512447, lng:126.9087314, title:'김승국소아과의원', divide:'h'}
+		,{id:'35', addr:'서울특별시 금천구 금하로 632 3층 (시흥동)', tel:'02-893-4796', lat:37.4546519, lng:126.9013439, title:'김안과의원', divide:'h'}
+		,{id:'36', addr:'서울특별시 금천구 독산로 139 2층 (시흥동)', tel:'02-805-7575', lat:37.4597065, lng:126.904758, title:'김용호소아청소년과의원', divide:'h'}
+		,{id:'37', addr:'서울특별시 금천구 금하로 763 201호 (시흥동, 벽산2차 중심상가)', tel:'02-802-7503', lat:37.4503688, lng:126.9145755, title:'김재연내과의원', divide:'h'}
+		,{id:'39', addr:'서울특별시 금천구 시흥대로 92 (시흥동)', tel:'02-803-0461', lat:37.4422508, lng:126.9039822, title:'김재은의원', divide:'h'}
+		,{id:'40', addr:'서울특별시 금천구 독산로 271 (독산동)', tel:'02-830-7575', lat:37.4709772, lng:126.9027885, title:'김현우산부인과의원', divide:'h'}
+		,{id:'41', addr:'서울특별시 금천구 시흥대로 202 2층 (시흥동, 대의빌딩)', tel:'02-805-6124', lat:37.4519639, lng:126.9021454, title:'김홍열내과의원', divide:'h'}
+		,{id:'42', addr:'서울특별시 금천구 시흥대로 214 602호 (시흥동, 비즈메디빌딩)', tel:'02-802-3180', lat:37.4530461, lng:126.9017609, title:'나래정신건강의학과의원', divide:'h'}
+		,{id:'43', addr:'서울특별시 금천구 독산로85길 13 (독산동)', tel:'02-855-8688', lat:37.4723107, lng:126.9023865, title:'남문내과의원', divide:'h'}
+		,{id:'44', addr:'서울특별시 금천구 금하로 720 307호 (시흥동, 에벤에셀프라자 )', tel:'802-7555', lat:37.4504437, lng:126.9095098, title:'내일내과의원', divide:'h'}
+		,{id:'45', addr:'서울특별시 금천구 시흥대로 403 (독산동, 셈프레팜)', tel:'02-861-0610', lat:37.4697959, lng:126.897515, title:'네오의원', divide:'h'}
+		,{id:'46', addr:'서울특별시 금천구 시흥대로 239 (시흥동)', tel:'02-802-0303', lat:37.4552088, lng:126.8999416, title:'뉴연세의원', divide:'h'}
+		,{id:'47', addr:'서울특별시 금천구 시흥대로 399 201~203, 221호 (독산동, 시티렉스)', tel:'02-892-7100', lat:37.4697959, lng:126.897515, title:'다나은마취통증의학과의원', divide:'h'}
+		,{id:'48', addr:'서울특별시 금천구 남부순환로 1372 (독산동)', tel:'02-855-3482', lat:37.4795047, lng:126.9033902, title:'독산내과의원', divide:'h'}
+		,{id:'49', addr:'서울특별시 금천구 남부순환로 1290 (가산동)', tel:'02-868-2659', lat:37.4783705, lng:126.8940764, title:'동인외과의원', divide:'h'}
+		,{id:'50', addr:'서울특별시 금천구 시흥대로 403 7층 (독산동)', tel:'02-862-1119', lat:37.4697959, lng:126.897515, title:'두리이비인후과의원', divide:'h'}
+	];
+	// marker image set
+	var map = null;
+	var lat = 37.4685225;
+	var lng = 126.8943311;
+	var markerImgUrl = '../../images/ico_map.png';	//기본 이미지
+	var markerImgUrlOver = '../../images/ico_map_over.png';	//over 이미지
+	var markerArray = []; //여러 마커를 넣을 변수
+	var infoArray = []; //여러 인포윈도우를 넣을 변수
+	var uniqMarker = {};
+	var mapOptions = {
+		center: new naver.maps.LatLng(lat, lng),
+		zoom: 10,
+		minZoom:8
+	};
+	var initMap = function() {
+		map = new naver.maps.Map('map', mapOptions);
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(lat, lng),
+			title :'init포인트',
+			map: map
+		});
+		markAroundPoi(new naver.maps.LatLng(lat, lng));
+		// naver.maps.Event.addListener(map, 'dragend', function(e) {
+		//	// 드레그가 끝나는 시점에 센터를 기준으로 마커 표기
+		//	var centerPoint = map.getCenter();
+		//	$("#message").text(centerPoint.x+", "+centerPoint.y);
+		//	markAroundPoi(centerPoint);
+		// });
+	}
+	var checkNewMarker = function(key){
+		if(uniqMarker[key])
+			return false;
+		else
+			return true;
+	}
+	//겹침 마커 객체생성
+	var recognizer = new MarkerOverlappingRecognizer({
+		highlightRect: false, // 해당 지역 표시여부
+		tolerance: 5, // 최대 겹침 가능한 마커수
+		intersectNotice: true,// 겹침마커 마우스 올렸을때 정보표시여부 선택
+		// 겹침마커 마우스 올렸을때 정보표시 html
+		intersectNoticeTemplate: '<div class="info_box"><strong class="txt_num txt_green">{{count}}</strong>개의 결과가 있습니다.</div>',
+		intersectList: true,// 겹치마커 클릭했을때 리스트 표시여부 선택
+		// 겹치마커 클릭했을때 리스트 표시 html
+		intersectListTemplate: '<div class="info_box">'
+							+ '<ul>'
+							+ '{{#repeat}}'
+							+ '<li class="map_result_list"><a href="#"><strong class="txt_num txt_green">{{order}}</strong> {{title}}</a></li>'
+							+ '{{/#repeat}}'
+							+ '</ul>'
+							+ '</div>'
+	});
+	var markAroundPoi = function(latlng){
+	// 지도에 marker 표시(pharmacyInfo의 개수만큼 반복)
+	for(var i=0;i<pharmacyInfo.length;i++){
+		// 중복마커 체크
+		if(!checkNewMarker(pharmacyInfo[i].id))
+			continue;
+		// 마커 마우스 오버 효과
+		function highlightMarker(marker) {
+			var icon = marker.getIcon();
+			if (icon.url !== markerImgUrlOver) {
+				icon.url = markerImgUrlOver;
+				marker.setIcon(icon);
+			}
+			marker.setZIndex(1000);
+		}
+		// 마커 마우스 아웃 효과
+		function unhighlightMarker(marker) {
+			var icon = marker.getIcon();
+			if (icon.url === markerImgUrlOver) {
+				icon.url = markerImgUrl;
+				marker.setIcon(icon);
+			}
+			marker.setZIndex(100);
+		}
+		// 마커를 찍을 좌표값
+		var markerLatLng = new naver.maps.LatLng(pharmacyInfo[i].lat,pharmacyInfo[i].lng);
+		var markerDivide = (pharmacyInfo[i].divide);
+		var markerOptions;
+		var resultMarker = 0;
+		for(var j=0;j<pharmacyInfo.length;j++){
+			if (pharmacyInfo[i].lng == pharmacyInfo[j].lng && pharmacyInfo[i].lat == pharmacyInfo[j].lat) {
+				resultMarker ++;
+			}
+			if ("h" == markerDivide) { // 병원 아이콘
+				if (resultMarker > 1) {
+					markerOptions = {
+						map: map,
+						position: markerLatLng,
+						title : pharmacyInfo[i].title,
+						icon: {	url: markerImgUrl,
+							size: new naver.maps.Size(30, 30),
+							anchor: new naver.maps.Point(11, 30),
+							origin: new naver.maps.Point(50, 0)
+						}
+					}
+				} else {
+					markerOptions = {
+						map: map,
+						position: markerLatLng,
+						title : pharmacyInfo[i].title,
+						icon: {	url: markerImgUrl,
+							size: new naver.maps.Size(22, 30),
+							anchor: new naver.maps.Point(11, 30),
+							origin: new naver.maps.Point(0, 0)
+						}
+					};
+				}
+			} else {
+				if (resultMarker > 1) {
+					markerOptions = {
+						map: map,
+						position: markerLatLng,
+						title : pharmacyInfo[i].title,
+						icon: {	url: markerImgUrl,
+							size: new naver.maps.Size(30, 30),
+							anchor: new naver.maps.Point(11, 30),
+							origin: new naver.maps.Point(85, 0)
+						}
+					}
+				} else {
+						markerOptions = {// 약국
+							map: map,
+							position: markerLatLng,
+							title : pharmacyInfo[i].title,
+							icon: {	url: markerImgUrl,
+								size: new naver.maps.Size(22, 30),
+								anchor: new naver.maps.Point(11, 30),
+								origin: new naver.maps.Point(25, 0)
+							}
+						};
+					}
+				};
+			}
+
+			// 내 위치 아이콘
+			var markerLatLngMy = new naver.maps.LatLng(lat, lng);
+			var defaultMarker = new naver.maps.Marker({
+				map: map,
+				position: markerLatLngMy,
+				title : pharmacyInfo[i].title,
+				icon: {
+					url: markerImgUrl,
+					size: new naver.maps.Size(30, 41),
+					anchor: new naver.maps.Point(15, 41),
+					origin: new naver.maps.Point(120, 0)
+				}
+			});
+			var marker = new naver.maps.Marker(markerOptions);
+
+			var contentString = '<div class="info_box bg_anchor">';
+				contentString += '<strong>'+pharmacyInfo[i].title+'</strong>';
+				contentString += '<p class="info_txt">'+pharmacyInfo[i].addr+'</p>';
+				contentString += '<p class="info_txt">'+pharmacyInfo[i].tel+'</p>';
+				contentString += '<a href="#none" class="btn_close">닫기</a>';
+				contentString += '</div>';
+
+			//info window
+			var infoWindow = new naver.maps.InfoWindow({
+				content: contentString,
+				borderWidth: 0,
+				pixelOffset: new naver.maps.Point(0, -18),
+				disableAnchor: true
+			});
+			recognizer.add(marker);
+			//window.MARKER = marker;
+			markerArray.push(marker);
+			infoArray.push(infoWindow);
+			uniqMarker[pharmacyInfo[i].id] = true;
+
+			//겹침 마커 지도에 적용
+			recognizer.setMap(map);
+			var overlapCoverMarker = null;
+			naver.maps.Event.addListener(recognizer, 'overlap', function(list) {
+				if (overlapCoverMarker) {
+					unhighlightMarker(overlapCoverMarker);
+				}
+				overlapCoverMarker = list[0].marker;
+				/* naver.maps.Event.once(overlapCoverMarker, 'mouseout', function() {
+					highlightMarker(overlapCoverMarker);
+				}); */
+			});
+			naver.maps.Event.addListener(recognizer, 'clickItem', function(e) {
+				recognizer.hide();
+				if (overlapCoverMarker) {
+					unhighlightMarker(overlapCoverMarker);
+					overlapCoverMarker = null;
+				}
+			});
+			var updateMarkers = function(map, markerArray) {
+				var mapBounds = map.getBounds();
+				var marker, position;
+				for (var i = 0; i < markerArray.length; i++) {
+					marker = markerArray[i]
+					position = marker.getPosition();
+					if (mapBounds.hasLatLng(position)) {
+						showMarker(map, marker);
+					} else {
+						hideMarker(map, marker);
+					}
+				}
+			}
+			var showMarker = function(map, marker) {
+				if (marker.setMap()) return;
+				marker.setMap(map);
+			}
+			var hideMarker = function(map, marker) {
+				if (!marker.setMap()) return;
+				marker.setMap(null);
+			}
+			naver.maps.Event.addListener(recognizer, 'clickItem', function(e) {
+				recognizer.hide();
+				if (overlapCoverMarker) {
+					unhighlightMarker(overlapCoverMarker);
+					overlapCoverMarker = null;
+				}
+			});
+
+			// 마커 마우스 클릭시 컬러 변환 [s]
+			marker.addListener('click', function(e) {
+				var m = e.overlay;
+				infoWindow.close();
+			});
+			marker.addListener('click', function(e) {
+				$.each(markerArray, function(i, v) {
+					unhighlightMarker(v);
+				});
+				highlightMarker(e.overlay);
+			});
+			// 마커 마우스 클릭시 컬러 변환 [e]
+
+			//마커 마우스 오버시 컬러 변환 [s]
+			//marker.addListener('mouseover', function(e) {
+			//	highlightMarker(e.overlay);
+			//});
+			//marker.addListener('mouseout', function(e) {
+			//	unhighlightMarker(e.overlay);
+			//});
+			//마커 마우스 오버시 컬러 변환 [e]
+
+		};
+		//마커들에 클릭 이벤트 적용
+		for (var i=0, ii=markerArray.length; i<ii; i++) {
+			naver.maps.Event.addListener(markerArray[i], 'click', getClickHandler(i));
+		}
+	}
+	//마커 클릭했을때 info window 보이기/숨기기
+	function getClickHandler(seq) {
+		return function(e) {
+			var marker = markerArray[seq]
+				, infoWindow = infoArray[seq];
+			if (infoWindow.getMap()) {//info window가 열려있는 마커 다시 클릭
+				infoWindow.close();
+			} else {//info window가 열려있지 않은 마커 클릭
+				infoWindow.open(map, marker);
+			}
+			$(".btn_close").on("click",function(){
+				infoWindow.close();
+			});
+		}
+	}
+	$(function (){
+		$("#goCenter").on("click", function(e) {
+			map.setCenter(new naver.maps.LatLng(lat, lng));
+		});
+	});
+</script>
+<style type="text/css">
+	.buttons { position:absolute;top:0;left:0;z-index:1000;padding:5px; }
+	.buttons .control-btn { margin:0 5px 5px 0; }
+</style>
+<div id="map" style="width:634px;height:506px;margin:50px auto;">
+	<div class="buttons">
+		<input type="button" id="goCenter" value="Go센터" class="control-btn"/>
+	</div>
+</div>
+
+메세지 : <div id="message"></div>
+</body>
+</html>

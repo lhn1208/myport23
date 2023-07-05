@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <title>theSHOP</title>
+    <!-- 2018-05-30 바로가기 아이콘 추가 [s] -->
+    <link rel="apple-touch-icon-precomposed" href="http://websvn.mcircle.co.kr/publish/shop/renewal/mobile/images/ico_ios.png" />
+    <link rel="shortcut icon" href="http://websvn.mcircle.co.kr/publish/shop/renewal/mobile/ico_android.png" />
+    <!-- 2018-05-30 바로가기 아이콘 추가 [e] -->
+    <link rel="stylesheet" href="../../js/libs/jquery-ui.css">
+    <link rel="stylesheet" href="../../js/libs/swiper.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/content.css">
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <script type="text/javascript" src="../../js/libs/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../js/libs/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.countdown.js"></script>
+    <script type="text/javascript" src="../../js/libs/jquery.bpopup.min.js"></script>
+    <script type="text/javascript" src="../../js/libs/sly.min.js"></script>
+    <script type="text/javascript" src="../../js/ui.js"></script>
+</head>
+
+<body>
+    <!-- header [s] -->
+    <header id="header" class="head_shop">
+        <div class="wrap_tit">
+			<h1><span class="screen_out">더샵</span></h1>
+			<h2>회원정보 입력</h2>
+            <a href="#self" class="link_back"><span class="ico_comm ico_back">뒤로</span></a>
+            <a href="#self" class="link_close"><span class="ico_comm ico_close">닫기</span></a>
+        </div>
+    </header>
+    <!-- header [e] -->
+
+    <!-- content [s] -->
+    <section id="content" class="cont_shop cont_join">
+        <strong class="tit_sub">회원정보 입력</strong>
+        <form action="#none">
+			<fieldset>
+				<div class="tbl_type1 box_inner">
+					<table>
+						<caption>회원가입을 위한 정보 입력</caption>
+						<colgroup>
+							<col style="width:82px">
+							<col style="width:auto">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row"><label for="userId">* 아이디</label></th>
+								<td>
+									<span class="inp_btn">
+										<input type="text" name="userId" id="userId" class="inp_g" />
+										<button type="button" class="btn_g btn_type2">중복확인</button>
+									</span>
+									<p class="txt_info">※ 사용 가능한 ID 입니다.</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="userPw">* 비밀번호</label></th>
+								<td>
+									<input type="password" name="userPw" id="userPw" class="inp_g" placeholder="6~20자의 영문과 숫자의 조합" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="userPwConfirm">* 비밀번호확인</label></th>
+								<td>
+									<input type="password" name="userPwConfirm" id="userPwConfirm" class="inp_g" placeholder="비밀번호 확인" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="userName">* 성명</label></th>
+								<td>
+									<input type="text" name="userName" id="userName" class="inp_g" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="hosName">* 병의원명</label></th>
+								<td>
+									<input type="text" name="hosName" id="hosName" class="inp_g" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">* 사업자번호</th>
+								<td>
+									<span class="inp_btn">
+										<input type="text" name="corpNum" id="corpNum" class="inp_g" placeholder="'-' 제외" />
+										<button type="button" class="btn_g btn_type2">중복확인</button>
+									</span>
+									<div class="inp_file">
+										<input type="text" id="fileName1" class="inp_g" value="" readonly>
+										<label for="addFile1" class="btn_file">이미지 첨부</label>
+										<input type="file" id="addFile1" name="addFile" accept="image/*" onchange="javascript:document.getElementById('fileName').value = this.value"/>
+									</div>
+									<p class="txt_info">※ 사용 가능한 사업자번호 입니다.</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">* 면허번호</th>
+								<td>
+									<input type="text" name="licenseNum" id="licenseNum" class="inp_g" />
+									<div class="inp_file">
+										<input type="text" id="fileName2" class="inp_g" value="" readonly>
+										<label for="addFile2" class="btn_file">이미지 첨부</label>
+										<input type="file" id="addFile2" name="addFile" accept="image/*" onchange="javascript:document.getElementById('fileName2').value = this.value"/>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label class="n_essential" for="careNum">요양기관번호</label></th>
+								<td>
+									<input type="text" name="careNum" id="careNum" class="inp_g" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">* 병의원주소</th>
+								<td>
+									<span class="inp_btn">
+										<input type="text" name="hosAddress1" id="hosAddress1" title="병의원 주소 우편번호" class="inp_g" readonly />
+										<a href="#self" class="btn_g btn_type3">우편번호 찾기</a>
+									</span>
+									<input type="text" name="hosAddress2" id="hosAddress2" title="병의원 나머지 주소" class="inp_g" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">* 병의원전화</th>
+								<td>
+									<span class="inp_tel">
+										<select name="hosTel" id="hosTel1" class="select_g" title="지역번호 선택">
+											<option value="">선택</option>
+											<option value="">02</option>
+											<option value="">031</option>
+										</select>
+										<span>-</span>
+										<input type="text" name="hosTel" id="hosTel2" maxlength="4" class="inp_g" title="전화번호 국번" />
+										<span>-</span>
+										<input type="text" name="hosTel" id="hosTel3" maxlength="4" class="inp_g" title="전화번호 뒷자리" />
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" class="n_essential">휴대폰번호</th>
+								<td>
+									<span class="inp_tel">
+										<select name="phone" id="phone1" class="select_g" title="휴대폰번호 첫번째자리 선택">
+											<option value="">선택</option>
+											<option value="">010</option>
+										</select>
+										<span>-</span>
+										<input type="text" name="phone" id="phone2" maxlength="4" class="inp_g" title="휴대폰 가운데 번호" />
+										<span>-</span>
+										<input type="text" name="phone" id="phone3" maxlength="4" class="inp_g" title="휴대폰 뒷번호" />
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" class="cell_2line"><label for="email">* 이메일주소<span>(세금계산서용)</span></label></th>
+								<td>
+									<input type="text" name="email" id="email" class="inp_g" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label class="n_essential" for="rcmndName">추천인</label></th>
+								<td>
+									<input type="text" name="rcmndName" id="rcmndName" class="inp_g" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="box_info">* 표시는 필수값입니다.</p>
+				</div>
+				<button type="submit" class="btn_full btn_type1">가입 신청하기</button>
+			</fieldset>
+		</form>
+    </section>
+    <!-- content [e] -->
+
+</body>
+</html>

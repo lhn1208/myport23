@@ -1,0 +1,76 @@
+<!-- nav_util -->
+<section class="header_top">
+	<div class="header_inner">
+		<h1 class="screen_out"><a href="#none">dr.Ville</a></h1>
+		<ul class="nav_util">
+			<!-- 현재메뉴 활성화 : class="current" -->
+			<li class=""><a href="../cme/seminar_main.html">CME</a></li>
+			<li class=""><a href="../guide/foreignservice.html">진료가이드</a></li>
+			<li class=""><a href="../management/hira_list.html">병원경영</a></li>
+			<li class=""><a href="../community/free_board.html">커뮤니티</a></li>
+			<li class=""><a href="../pr_v2/main.html">브랜드존</a></li>
+			<li class=""><a href="../entertainment/main_v2.html">포인트샵</a></li>
+			<li class=""><a href="../life/culture_list.html">라이프</a></li>
+			<li class=""><a href="../event/event_front.html">이벤트</a></li>
+			<li class=""><a href="../survey/main.html">설문</a></li>
+		</ul>
+		<div id="myMenu" class="nav_mymenu">
+			<h2 class="screen_out">사용자 메뉴 및 전체메뉴</h2>
+			<ul class="list_mymenu">
+				<li class="ico_my"><a href="#pop_profile"><em>닥터빌</em>님</a></li>
+				<!-- 새로운 알림이 있을시 class="new" -->
+				<li class="new"><a href="#pop_notice"><span class="ico_comm_v2 ico_notice">알림</span></a></li>
+				<li><a href="#pop_headallmenu" class="ico_comm_v2 ico_allmenu">전체메뉴</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+<script type="text/javascript">
+	$(function() {
+		// UI 확인용 스크립트
+		if($("#container").attr("data-menu-number") > 0){
+			var menuNum = $("#container").attr("data-menu-number");
+			$(".list_lnb li").removeClass("current");
+			$(".list_lnb li:nth-child("+ menuNum +")").addClass("current");
+		}
+		// 3depth 여부
+		if ($(".current").find("ul").length == 1){
+			$("#header").addClass("adddepth");
+		}
+		$(".list_lnb > li").on("click",function(e){
+			$(this).siblings("li").removeClass("current");
+			$(this).addClass("current");
+			if ($(this).find("ul").length == 1){
+				$("#header").addClass("adddepth");
+			}else{
+				$("#header").removeClass("adddepth");
+			}
+			//e.preventDefault();
+		})
+		// 사용자메뉴
+		$(document).on("click",".list_mymenu li",function(e){
+			e.preventDefault();
+			var $targetId = $($(this).find("a").attr("href"));
+			var $allTarget = $(".head_pop");
+			if($targetId.hasClass("open")){
+				$targetId.removeClass("open").slideUp();
+			}else{
+				$allTarget.removeClass("open").hide();
+				$targetId.addClass("open").slideDown();
+			}
+		})
+		// 통합검색
+		$(".search_open").on("click",function(e){
+			e.preventDefault();
+			var $search = $($(this).attr("href"));
+			$search.slideDown();
+			$(this).hide();
+		})
+		$(".search_close").on("click",function(e){
+			e.preventDefault();
+			var $search = $($(this).attr("href"));
+			$search.slideUp();
+			$(".search_open").show();
+		})
+	});
+</script>

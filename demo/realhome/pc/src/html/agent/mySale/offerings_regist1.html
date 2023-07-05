@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <include src="../../include/folder_include/set_css.html"></include>
+    <include src="../../include/folder_include/set_js.html"></include>
+    <title>realhouse</title>
+</head>
+<body>
+<!--header-->
+<header class="sub_header">
+    <h1 class="logo"><a href="#"><img src="../../../../images/common/agent_logo.png" alt="리얼하우스 로고"></a></h1>
+    <div class="header_inner">
+        <button class="btn_close"><span class="blind">닫기</span></button>
+        <h2 class="header_tit">매물 등록/수정</h2>
+    </div>   
+</header>
+<!--//header-->         
+<div class="header_section fixed">
+    <div class="header_inner">
+        <div class="process_idx">
+            <em class="on">1</em><span>주소 입력</span>
+            <em>2</em>
+            <em>3</em>
+        </div>
+        <div class="btn_process">
+            <button class="btn btn_prev">이전</button>
+            <button class="btn btn_next">다음</button>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div id=sub_container class="sub_container">          
+        <div class="container_inner">     
+            <div class="new_request">
+                <!--메물주소-->
+                <div class="content_head3">
+                    <h2 class="tit">매물주소</h2>
+                </div>
+                <div class="mysale_adress">
+                    <div class="table_style3">
+                        <table class="table" summary="주소검색,도로명,지번 테이블 입니다.">
+                            <caption>메물주소</caption>
+                            <colgroup>  
+                                <col width="14%">
+                                <col width="*">
+                                <col width="34%">
+                            </colgroup>
+                            <tbody>
+                                <tr class="pd_style">
+                                    <th rowspan="2"><label for="sale_address">주소검색</label></th>
+                                    <td class="pd_r0">
+                                        <input type="text" id="sale_address" class="input_sale_address border" placeholder="예) 잠실동 23-2, 송파구 잠실동">
+                                        <button class="btn_type1 on">주소검색</button>
+                                    </td>
+                                    <!--지도영역-->
+                                    <td rowspan="4" class="mysale_map_area">
+                                        <div class="mysale_map">
+                                            <div class="map_desc">
+                                                주소를 검색하면
+                                                <br>해당 위치의 주소가 지도에 표시됩니다.
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <!--//지도영역-->
+                                </tr>
+                                <tr>
+                                    <td class="info">
+                                        ※ 도로명, 지번, 건물명 등 통합검색이 가능합니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>도로명</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>지명</th>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--//메물주소-->
+                <!--최근 등록 부동산-->
+                <div class="content_head3">
+                    <h2 class="tit">최근 등록 부동산(<span class="txt_red2">3</span>)</h2>
+                </div>
+                <div class="history_property">
+                    <div class="table_style2 type">                       
+                        <table class="table" summary="최근 등록 부동산 테이블 입니다.">
+                            <caption>최근 등록 부동산</caption>
+                            <colgroup>  
+                                <col width="14%">
+                                <col width="*">
+                                <col width="12%">
+                            </colgroup>
+                            <tbody>
+                                <tr class="pd_style">
+                                    <th>아파트</th>
+                                    <td>
+                                        서울시 송파구 잠실동 321(잠실삼익그린아파트) 301동 102호
+                                    </td>                   
+                                    <td><button class="btn">선택</button></td>            
+                                </tr>
+                                <tr class="pd_style">
+                                    <th>단독주택</th>
+                                    <td>
+                                        서울시 송파구 잠실동 321 102호
+                                    </td>     
+                                    <td><button class="btn">선택</button></td>       
+                                </tr>
+                                <tr class="pd_style">
+                                    <th>아파트</th>
+                                    <td>
+                                        서울시 송파구 잠실동 321(잠실삼익그린아파트) 301동 102호
+                                    </td>  
+                                    <td><button class="btn">선택</button></td>          
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--//최근 등록 부동산-->
+                <!--최근 등록 부동산 없을 경우-->
+                <div class="content_head3">
+                    <h2 class="tit">최근 등록 부동산(<span class="txt_red2">3</span>)</h2>
+                </div>
+                <div class="history_property">
+                    <div class="table_style2 type no_items">                       
+                        <table class="table" summary="최근 등록 부동산 테이블 입니다.">
+                            <caption>최근 등록 부동산</caption>
+                            <colgroup>  
+                                <col width="14%">
+                                <col width="*">
+                                <col width="12%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                        최근 등록한 부동산이 없습니다. 상단에서 주소나 단지를 검색하십시오
+                                    </td>                   
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--//최근 등록 부동산-->
+            </div>
+        </div>           
+    </div>
+</div>
+<include src="../../include/footer.html"></include>
+</body>
+</html>

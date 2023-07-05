@@ -1,0 +1,61 @@
+<header id="header">
+	<div class="header_inner">
+		<h1 class="link_logo logo_dw"><span class="ico_dw">대웅 전용관</span></h1>
+		<div class="header_search">
+			<div class="search_enter">
+				<div class="search_enter_inner">
+					<select class="select" style="width:80px">
+						<option>상품명</option>
+						<option>보험코드</option>
+						<option>상품코드</option>
+						<option>제조사</option>
+						<option>포함성분</option>
+					</select>
+					<input type="text" title="검색어 입력" value="[기획10+1]무조무알파에어로솔☞">
+					<button type="submit" class="btn_search">검색</button>
+				</div>
+			</div>
+		</div>
+		<div class="header_bnr">
+			<div class="owl-carousel">
+				<div class="item"><a href="#"><img src="../../images/temp/h_bnr_img1.jpg" alt="대웅제약 OTC전용관 주문하기1" /></a></div>
+				<div class="item"><a href="#"><img src="../../images/temp/h_bnr_img1.jpg" alt="대웅제약 OTC전용관 주문하기2" /></a></div>
+				<div class="item"><a href="#"><img src="../../images/temp/h_bnr_img1.jpg" alt="대웅제약 OTC전용관 주문하기3" /></a></div>
+			</div>
+		</div>
+	</div>
+	<nav id="gnb">
+		<ul>
+			<!-- 선택된 메뉴에는 li에 on class 추가해주세요 -->
+			<li class="gnb_buy"><a href="/publish/shop/renewal/html/daewoong/main.html"><span class="gnb_comm">자주구매</span></a></li>
+			<li class="gnb_etc"><a href="/publish/shop/renewal/html/daewoong/etc.html"><span class="gnb_comm">ETC</span></a></li>
+			<li class="gnb_otc"><a href="/publish/shop/renewal/html/daewoong/otc.html"><span class="gnb_comm">OTC/기타</span></a></li><!-- 2020-07-09 수정 -->
+			<li class="gnb_subscribe"><a href="/publish/shop/renewal/html/daewoong/subscribe.html"><span class="gnb_comm">정기배송서비스</span></a></li>
+			<li class="gnb_return"><a href="/publish/shop/renewal/html/daewoong/return.html"><span class="gnb_comm">반품신청</span></a></li>
+		</ul>
+	</nav>
+	<div class="util_menu">
+	<ul>
+		<li><a href="#">로그아웃</a></li>
+		<li><a href="#">장바구니</a></li>
+		<li><a href="#">주문내역/배송현황</a></li>
+		<li><a href="#" class="btn_shop">더샵 바로가기 <span class="btn_comm btn_go"></span></a></li>
+	</ul>
+</div>
+</header>
+
+<script type="text/javascript">
+	$(function(){
+		shopUI.navigation();
+		// header 상단 배너
+		$('.header_bnr .owl-carousel, .search_popular .owl-carousel').owlCarousel({
+			items: 1,
+			autoplay: true,
+			loop: true,
+			nav: false,
+			dots: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true
+		});
+	});
+</script>

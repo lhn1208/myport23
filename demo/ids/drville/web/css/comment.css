@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* comment */
+.comment {position:relative;width:100%;margin-top:15px;}
+.comment h3 {margin-bottom:10px;font-size:15px;}
+.comment h3 span {font-size:12px;color:#ff2e2e}
+.comment .info_append {display:block;overflow:hidden;width:calc(100% - 110px);height:20px;padding-bottom:5px;font-size:11px;clear:both;}
+.comment .info_append strong {display:block;float:left;color:#1f71c6;font-weight:normal;font-size:13px;}
+.comment .info_append strong span {margin-left:10px;font-weight:normal;color:#adadad;font-size:12px}
+.comment .info_append .txt_byte {display:block;float:right;margin-left:10px;color:#848484;line-height:19px;}
+.comment .info_append .tf_secret {float:left;margin:3px 0 0 10px;}
+.comment .info_append .tf_secret + label {float:left;margin:2px 0 0 5px;color:#848484;}
+.comment .cmt_write {position:relative;width:100%;padding:19px 20px;border:1px solid #ededed;background:#f4f4f7;box-sizing:border-box;}
+.comment .cmt_write .tf_cmt {position:relative;float:left;overflow-y:auto;padding:10px 15px;width:calc(100% - 145px);height:70px;border:1px solid #ededed;border-right:0;resize:none;box-sizing:border-box;z-index:1}
+.comment .cmt_write .imgfile {position:relative;float:left;width:40px;height:70px;margin-left:-1px;margin-right:105px;background-color:#fff;border:1px solid #ededed;border-left:0;box-sizing:border-box;}
+/* 2021-08-11 */
+.comment .cmt_write .imgfile .inpfile {position:absolute;top:-9999px;left:-9999px;width:40px;height:58px;text-indent:-999px;opacity:0;}
+.comment .cmt_write .imgfile .btn_comm {position:absolute;bottom:25px;right:10px;width:23px;height:18px;background-position:-180px -355px;cursor:pointer;}
+.comment .cmt_write .list_file_thumb {display:inline-block;overflow:hidden;position:relative;width:80px;padding-top:10px;margin-right:5px;clear:both;}
+.comment .cmt_write .list_file_thumb img {width:80px;height:48px;}
+.comment .cmt_write .list_file_thumb .btn_comm {position:absolute;top:10px;right:0;width:15px;height:15px;background-position:-210px -355px;}
+.comment .cmt_write .btn_regist {position:absolute;top:45px;right:20px;width:98px;height:70px;border:1px solid #189add;background-color:#14afff;color:#fff;font-size:14px;font-weight:bold;}
+.comment .cmt_write .comment_guide {clear:both;padding-top:10px;margin:0;vertical-align:middle;color:#848484;}
+.comment .cmt_write .comment_guide .ico_comm2{width:14px;height:14px;margin:2px 5px 0 0;background-position:0 -1300px;}
+.comment .cmt_write + .cmt {margin-top:30PX;border-top:1px solid #ededed;}
+/* 댓글영역 */
+.comment .cmt {border-bottom:1px solid #ededed;}
+.comment .cmt .clBox {position:relative;padding:20px 0;zoom:1}
+.comment .cmt .clBox .cmt_write {display:none}
+.comment .cmt .cmt_view .txt {width:100%;color:#666666;font-size:13px;word-break:break-all}
+.comment .cmt .cmt_view .txt img {max-width:260px;margin:10px 0;cursor:pointer;}
+.comment .cmt .btn_comment {display:block;width:67px;margin-top:25px;padding:5px 0;border:1px solid #d1d1d1;color:#666666;text-align:center}
+.comment .cmt .btn_comment em {color:#f45118;}
+.comment .cmt .cmt_write .btn {right:20px;}
+.comment .cmt .btn {display:none;position:absolute;top:20px;right:0;width:auto;font-size:12px;line-height:1.5;z-index:1;}
+.comment .cmt .btn a {display:inline-block;color:#c4c4c4}
+.comment .cmt .btn a:hover {text-decoration:underline;}
+.comment .cmt .btn .txt_bar {margin:0 10px;color:#c4c4c4}
+.comment .cmt .my_comment .btn {display:block;}
+/* 답글영역 */
+.comment .cmt_reply {display:none;overflow:hidden;width:100%;padding:10px 10px 10px 45px;border-top:1px solid #ededed;border-bottom:1px solid #ededed;background-color:#fbfbfc;box-sizing:border-box;}
+.comment .cmt_reply .clBox {border-bottom:0;border-top:1px solid #ededed}
+.comment .cmt_reply .clBox:after {content:"";display:block;height:0;font-size:0;line-height:0;overflow:hidden;clear:both}
+.comment .cmt_reply .clBox:first-child {border-top:0}
+.comment .cmt_reply .cmt_write .tf_cmt {width:calc(100% - 110px);border-right:1px solid #ededed;}
+.comment .cmt_reply .cmt_write:after,
+.comment .cmt_reply .cmt_view:after {position:absolute;top:16px;left:-20px;content:'';width:11px;height:11px;border-left:1px solid #bebebe;border-bottom:1px solid #bebebe;}
+.comment .commentMore {height:24px;padding-top:14px;margin-top:30px;border:1px solid #ededed;background:#fbfbfd;font-size:13px;line-height:14px;text-align:center}
+.comment .commentMore .ico_comm {width:10px;height:14px;background-position:-50px -355px}
+/* 수정버튼 클릭시  */
+.comment .cmt .clBox.modify .cmt_write {display:block;background-color:#fff;}
+.comment .cmt .clBox.modify .cmt_write .tf_cmt:focus{background-color:#fbfbfc;}
+.comment .cmt .clBox.modify .imgfile {background-color:transparent;}
+.comment .cmt .clBox.modify .cmt_view,
+.comment .cmt .clBox.modify .txt_bar,
+.comment .cmt .clBox.modify .btn_del {display:none;}
+.comment .cmt .clBox.modify .btn {top:40px;right:30px;}
+.comment .cmt .clBox.modify .btn a {color:#333}
+/* text_type comment */
+.text_type .cmt_write .imgfile {display:none}
+.text_type .cmt_write .tf_cmt {width:calc(100% - 110px);width:calc(100% - 110px);border-right:1px solid #ededed;}
+.text_type .cmt_write .list_file_thumb {display:none}
+.text_type .cmt_view img {display:none}
+
+/* 이미지 확대보기 */
+.imgLayer {position:absolute;left:50%;margin-top:-20px;padding:40px 4px 4px;background:#fff;border:1px solid #ededed;z-index:99;-webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);-moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);-webkit-border-radius:5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;border-radius:5px 5px 5px 5px;z-index:200}
+.imgLayer .wrap_img {display:block;overflow-y:auto;}
+.imgLayer .btn_close {position:absolute;right:12px;top:10px;width:15px;height:15px; background-position:-170px -205px}
+
+/*layer*/

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <include src="../../include/folder_include/set_css.html"></include>
+    <include src="../../include/folder_include/set_js.html"></include>
+    <title>realhouse</title>
+</head>
+<body>
+<!--header-->
+<header class="sub_header">
+    <h1 class="logo"><a href="#"><img src="../../../../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
+    <div class="header_inner">
+        <button class="btn_close"><span class="blind">닫기</span></button>
+        <h2 class="header_tit">매수/임차 중개의뢰</h2>
+    </div>   
+</header>
+<!--//header-->    
+<div class="header_section fixed">
+    <div class="header_inner">
+        <div class="process_idx">
+            <em>1</em>
+            <em>2</em>
+            <em>3</em>
+            <em class="on">4</em><span>방문시간 선택</span>
+        </div>
+        <div class="btn_process">
+            <button class="btn btn_prev">이전</button>
+            <button class="btn on">확인</button>
+            <!--버튼 비활성화--><!--<button class="btn off">확인</button>-->
+        </div>
+    </div>
+</div>  
+<div class="wrapper">   
+    <div id=sub_container class="sub_container">           
+        <div class="container_inner">     
+            <div class="new_request">
+                <div class="table_style1">
+                    <table class="table" summary="방문시간,안내 테이블 입니다.">
+                        <caption>방문시간 선택</caption>
+                        <colgroup>  
+                            <col width="14%">
+                            <col width="*">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>방문시간 선택</th>
+                                <td>
+                                    <div class="select_visit_area">
+                                        <div class="select_area">
+                                            <a href="#" class="select_top">방문일 선택</a href="#">
+                                            <div class="select_list">
+                                                <div class="desc">금일포함 <span class="txt_red2">7일</span>까지 선택 가능</div>
+                                                <a href="#">2018.06.09(월)</a>
+                                                <a href="#">2018.06.10(화)</a>
+                                                <a href="#">2018.06.11(수)</a>
+                                                <a href="#">2018.06.12(목)</a>
+                                                <a href="#">2018.06.13(금)</a>  
+                                                <a href="#">2018.06.14(토)</a>
+                                                <a href="#">2018.06.15(<span class="sunday">일</span>)</a>
+                                            </div>
+                                        </div>
+                                        <div class="select_visit">
+                                            <a href="#" class="select_top">시간 선택</a href="#">
+                                            <!-- <div class="select_time">
+                                                <div class="btn_hour">
+                                                    <div class="header">시간 선택</div>
+                                                    <input id="hour_type1" type="radio" name="hour" class="radio_time" value="7시" checked>
+                                                    <label for="hour_type1"><span class="btn_radio">7시</span></label>
+                                                    <input id="hour_type2" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type2"><span class="btn_radio">8시</span></label>
+                                                    <input id="hour_type3" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type3"><span class="btn_radio">9시</span></label>
+                                                    <input id="hour_type4" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type4"><span class="btn_radio">10시</span></label>
+                                                    <input id="hour_type5" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type5"><span class="btn_radio">11시</span></label>
+                                                    <input id="hour_type6" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type6"><span class="btn_radio">12시</span></label>
+                                                    <input id="hour_type7" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type7"><span class="btn_radio">13시</span></label>
+                                                    <input id="hour_type8" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type8"><span class="btn_radio">14시</span></label>
+                                                    <input id="hour_type9" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type9"><span class="btn_radio">15시</span></label>
+                                                    <input id="hour_type10" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type10"><span class="btn_radio">16시</span></label>
+                                                    <input id="hour_type11" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type11"><span class="btn_radio">17시</span></label>
+                                                    <input id="hour_type12" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type12"><span class="btn_radio">18시</span></label>
+                                                    <input id="hour_type13" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type13"><span class="btn_radio">19시</span></label>
+                                                    <input id="hour_type14" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type14"><span class="btn_radio">20시</span></label>
+                                                    <input id="hour_type15" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type15"><span class="btn_radio">21시</span></label>
+                                                </div>
+                                                <div class="btn_minute">
+                                                    <div class="header">분 선택</div>
+                                                    <input id="minute_type1" type="radio" name="minute" class="radio_time" checked>
+                                                    <label for="minute_type1"><span class="btn_radio">00분</span></label>
+                                                    <input id="minute_type2" type="radio" name="minute" class="radio_time">
+                                                    <label for="minute_type2"><span class="btn_radio">10분</span></label>
+                                                    <input id="minute_type3" type="radio" name="minute" class="radio_time">
+                                                    <label for="minute_type3"><span class="btn_radio">20분</span></label>
+                                                    <input id="minute_type4" type="radio" name="minute" class="radio_time">
+                                                    <label for="minute_type4"><span class="btn_radio">30분</span></label>
+                                                    <input id="minute_type5" type="radio" name="minute" class="radio_time">
+                                                    <label for="minute_type5"><span class="btn_radio">40분</span></label>
+                                                    <input id="minute_type6" type="radio" name="minute" class="radio_time">
+                                                    <label for="minute_type6"><span class="btn_radio">50분</span></label>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>안내</th>
+                                <td class="info">
+                                    <em class="txt_red">※ 중개사무소 방문일은 당일을 피하시는 것이 좋습니다.</em>
+                                    <ul>
+                                        <li>1. 공인중개사가 전문가의 입장에서 좋은 매물을 추천합니다.</li>
+                                        <li>2. 추천매물을 확인 후, 마음에 드는 매물을 추가 방문요청하십시오.(나의 매수에서 추가 방문요청 가능)</li>
+                                        <li>3. 방문일시에 중개사무소를 방문하면 여러 개의 매물을 한번에 확인할 수 있어 빠르게 계약하실 수 있습니다.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--방문시간 선택시 : 해당 style속성 무시해주세요-->
+               <div class="table_style1" style="padding-top:80px;">
+                    <table class="table" summary="방문시간,안내 테이블 입니다.">
+                        <caption>방문시간 선택</caption>
+                        <colgroup>  
+                            <col width="14%">
+                            <col width="*">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>방문시간 선택</th>
+                                <td>
+                                    <div class="select_visit_area">
+                                        <div class="select_area">
+                                            <a href="#" class="select_top">방문일 선택</a href="#">
+                                            <div class="select_list">
+                                                <div class="desc">금일포함 <span class="txt_red2">7일</span>까지 선택 가능</div>
+                                                <a href="#">2018.06.09(월)</a>
+                                                <a href="#">2018.06.10(화)</a>
+                                                <a href="#">2018.06.11(수)</a>
+                                                <a href="#">2018.06.12(목)</a>
+                                                <a href="#">2018.06.13(금)</a>  
+                                                <a href="#">2018.06.14(토)</a>
+                                                <a href="#">2018.06.15(<span class="sunday">일</span>)</a>
+                                            </div>
+                                        </div>
+                                        <div class="select_visit time_open">
+                                            <a href="#" class="select_top">시간 선택</a href="#">
+                                            <div class="select_time">
+                                                <div class="btn_hour">
+                                                    <div class="header">시간 선택</div>
+                                                    <input id="hour_type1" type="radio" name="hour" class="radio_time" value="7시" checked>
+                                                    <label for="hour_type1"><span class="btn_radio">7시</span></label>
+                                                    <input id="hour_type2" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type2"><span class="btn_radio">8시</span></label>
+                                                    <input id="hour_type3" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type3"><span class="btn_radio">9시</span></label>
+                                                    <input id="hour_type4" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type4"><span class="btn_radio">10시</span></label>
+                                                    <input id="hour_type5" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type5"><span class="btn_radio">11시</span></label>
+                                                    <input id="hour_type6" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type6"><span class="btn_radio">12시</span></label>
+                                                    <input id="hour_type7" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type7"><span class="btn_radio">13시</span></label>
+                                                    <input id="hour_type8" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type8"><span class="btn_radio">14시</span></label>
+                                                    <input id="hour_type9" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type9"><span class="btn_radio">15시</span></label>
+                                                    <input id="hour_type10" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type10"><span class="btn_radio">16시</span></label>
+                                                    <input id="hour_type11" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type11"><span class="btn_radio">17시</span></label>
+                                                    <input id="hour_type12" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type12"><span class="btn_radio">18시</span></label>
+                                                    <input id="hour_type13" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type13"><span class="btn_radio">19시</span></label>
+                                                    <input id="hour_type14" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type14"><span class="btn_radio">20시</span></label>
+                                                    <input id="hour_type15" type="radio" name="hour" class="radio_time">
+                                                    <label for="hour_type15"><span class="btn_radio">21시</span></label>
+                                                </div>
+                                                <div class="btn_minute">
+                                                    <div class="header">분 선택</div>
+                                                    <input id="minute_type1" type="radio" name="minute" class="radio_time" checked>
+                                                    <label for="minute_type1"><span class="btn_radio">00분</span></label>
+                                                    <input id="minute_type2" type="radio" name="minute" class="radio_time">
+                                                    <label for="minute_type2"><span class="btn_radio">10분</span></label>
+                                                    <input id="minute_type3" type="radio" name="minute" class="radio_time">
+                                                    <label for="minute_type3"><span class="btn_radio">20분</span></label>
+                                                    <input id="minute_type4" type="radio" name="minute" class="radio_time">
+                                                    <label for="minute_type4"><span class="btn_radio">30분</span></label>
+                                                    <input id="minute_type5" type="radio" name="minute" class="radio_time">
+                                                    <label for="minute_type5"><span class="btn_radio">40분</span></label>
+                                                    <input id="minute_type6" type="radio" name="minute" class="radio_time">
+                                                    <label for="minute_type6"><span class="btn_radio">50분</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>안내</th>
+                                <td class="info">
+                                    <em class="txt_red">※ 중개사무소 방문일은 당일을 피하시는 것이 좋습니다.</em>
+                                    <ul>
+                                        <li>1. 공인중개사가 전문가의 입장에서 좋은 매물을 추천합니다.</li>
+                                        <li>2. 추천매물을 확인 후, 마음에 드는 매물을 추가 방문요청하십시오.(나의 매수에서 추가 방문요청 가능)</li>
+                                        <li>3. 방문일시에 중개사무소를 방문하면 여러 개의 매물을 한번에 확인할 수 있어 빠르게 계약하실 수 있습니다.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//방문시간 선택시-->
+            </div>
+        </div>           
+    </div>
+</div>
+<include src="../../include/footer.html"></include>
+</body>
+</html>

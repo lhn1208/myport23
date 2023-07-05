@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,button,i {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+body{font-family: "Spoqa Han Sans","돋움","Dotum","Helvetica Neue","Helvetica,Arial","sans-serif"; color: #4e4e4e; font-size: 18px; line-height: 1.5; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display: block;}
+ol, ul { list-style: none; }
+a {display: block; text-decoration:none; color:#4e4e4e;}
+button{border: none; box-sizing: border-box; cursor: pointer;}
+table{border-spacing:0px; border-collapse:collapse; width:100%;}
+strong{font-weight: 600;  font-family: "Spoqa Han Sans Bold","돋움","Dotum","sans-serif"; }
+.point{color: #00b763; font-family: 'Spoqa Han Sans Regular';}
+.blind{overflow: hidden; position: absolute; left: -9999px !important; top:0; width: 1px; height: 1px; line-height: 0;}
+/*header*/
+#header a{display: block;}
+#header a.skip{display: block; height: 0; font-size: 0; line-height: 0;}
+#header a.skip:focus, .header a.skip:active, .header a.skip:hover{width:100%; height: 20px; line-height:1.4; background-color: #00b763; color: #fff; font-size: 12px;  text-align: center; z-index: 9999;  opacity: 1;}
+#header{position: relative;}
+#header .logo{position: absolute; left:50px; top:40px;}
+#header .global_area{position: absolute; top:40px; left:268px; z-index: 100; font-size: 16px;  font-family:"Spoqa Han Sans Bold";}
+#header .global_area.on{display: inline-block; width: 78px; outline:1px solid #818080; background:#f9f9f9;}
+#header .global_area.on .global{color: #00b763; background-image:url("https://img.modetour.com/modewebagent/2018/modeinter/common/global_arrow_on.png");}
+#header .global_area.on .global_lst{display: block;}
+#header .global{position: relative;  padding:6px 16px; background-image:url("https://img.modetour.com/modewebagent/2018/modeinter/common/global_arrow_off.png"); background-repeat:no-repeat; background-position: 52px 50%;}
+#header .global{color: #696464;}
+#header .global.white{color: #fff; background-image:url("https://img.modetour.com/modewebagent/2018/modeinter/common/global_arrow_off_white.png");}
+#header .global_lst{display: none;}
+#header .global_lst li{padding: 6px 16px;}
+#header .global_lst li a{color: #696464;}
+#header .global_lst li:hover{background:#e6e6e6; }
+#header .global_lst li:hover a{color: #00b763;}
+.menu_wrap{display: none; position: fixed; top:0; left: 0; right: 0; bottom: 0; background: url("https://img.modetour.com/modewebagent/2018/modeinter/common/bg_cover.png"); z-index: 99990;}
+/*navi*/
+.navi_open{position: fixed; top:50px; right: 50px; background: none;  z-index: 9999; }
+.navi_open .btn{display: block; width: 40px; height: 24px; background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/nav_ico.png");}
+.navi{position: fixed; top:0; right: -524px; width: 524px; height: 100%; overflow-y: auto; z-index: 100000;  background: #fff; box-sizing: border-box;}
+.navi_header{position: relative; width: 100%; height: 75px; background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/navi_head_bg.jpg") 50% 0;}
+#navi #close{position: absolute; top:18px; right: 40px; width:35px; height: 35px; background: url("https://img.modetour.com/modewebagent/2018/modeinter/common/navi_close.png");}
+.navi .navi_inner{padding:25px 35px 0; width: 444px;}
+.navi .menu{width: 444px;}
+.navi .menu:after{display: block; content: ""; clear: both;}
+.navi .menu>li:first-child{padding-right: 16px;}
+.navi .menu>li{float: left;  width: 219px; padding-bottom: 16px;}
+.navi .menu>li>a{position: relative; padding-bottom: 5px; width: 100%; color: #424242; font-size: 23px; font-weight: 600;  font-family: "Spoqa Han Sans Bold","돋움","Dotum","sans-serif"; border-bottom: 1px solid #c8c8c8;}
+.navi .menu>li>a:after{display: block; content: ""; position: absolute; top:15px; right: 0; width: 15px; height: 15px; background-image:url("https://img.modetour.com/modewebagent/2018/modeinter/common/navi_link_bg_off.png"); background-position: 4px 4px; background-repeat: no-repeat; border:1px solid #05b866;}
+.navi .menu>li>a:hover:after{background-color: #00b763; background-image:url("https://img.modetour.com/modewebagent/2018/modeinter/common/navi_link_bg_on.png"); transition: background .8s;}
+.navi li.pack_menu{width: 444px; padding-bottom: 0;}
+.menu>li>.sub_menu{padding-top: 13px;}
+.sub_menu>li>a{color: #00b763; font-size: 17px; font-family: 'Spoqa Han Sans Regular'; letter-spacing: -1px;}
+.sub_menu li a:hover{text-decoration: underline;}
+.sub_menu>li .sub_menu li a{font-size: 15px;}
+.pack_menu>.sub_menu:after{display: block; content: ""; clear: both;}
+.pack_menu>.sub_menu>li{float: left; width: 216px;}
+.pack_menu>.sub_menu>li.type{height: 258px;}
+.pack_menu .sub_menu .sub_menu li.line2{text-indent: -8px; padding-left: 8px;}
+.pack_menu>.sub_menu.depth2>li{padding-bottom: 0;}
+.pack_menu .sub_menu .sub_menu a{color: #595959;}
+.pack_menu .sub_menu .sub_menu{padding-top: 5px;}
+.navi_intro_area{width: 444px; padding-top: 20px; padding-bottom: 30px; text-align: center;}
+.navi_intro_area .navi_intro:after{display: block; content: ""; clear: both;}
+.navi_intro li:first-child{margin-left: 0; background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/navi_intro_best.jpg");}
+.navi_intro li{float: left; width: 215px; height: 66px; margin-left: 14px; background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/navi_intro_ticket.jpg");}
+.navi_intro li a{position: relative; width: 100%; height: 100%; overflow:hidden;}
+.navi_intro li:hover a{background:rgba(0,0,0,0.4);}
+.navi_intro li .link_tit{padding-top: 20px; color: #fff; font-weight: 600; font-family: "Spoqa Han Sans Bold","돋움","Dotum","sans-serif";}
+.navi_intro li:hover .link_tit{display: none;}
+.navi_intro li .link_btn_area{position: absolute; top:90px; left: 0; width: 100%; height: 100%;}
+.navi_intro li .link_btn{width: 42px; height: 42px; background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/navi_hover_ico.png") no-repeat;}
+.navi_intro li .link_tit:after{display: block; content: ""; width: 23px; height: 2px; margin-top: 2px; margin-left: 97px; background-color: #01b764;}
+.navi .navi_tit{position: relative; margin-bottom: 26px; font-size: 20px; color: #424242; font-weight: 600; font-family: "Spoqa Han Sans Bold","돋움","Dotum","sans-serif";}
+.navi .navi_tit.line:after{display: block; content: ""; position: absolute; left: 82px; bottom:6px; width: 360px; border-bottom: 1px solid #c8c8c8;}
+.navi .inq_area{width: 444px;}
+.navi .inquiry{position: relative; padding-bottom: 20px;}
+.navi .inquiry li:first-child{position: absolute; top:0; left: 0; width: 97px; margin-left: 10px; padding-top: 57px; font-size: 14px; background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/navi_inquiry.png") 25px 4px no-repeat;}
+.navi .inquiry li{margin-left: 128px; margin-bottom: 6px; line-height: 1.2; color: #414141; font-size: 15px; font-family: 'Spoqa Han Sans Regular';}
+.navi .inquiry li:after{display: block; content: ""; clear: both;}
+.navi .inquiry li .inq_tit{display: inline-block; float: left; width: 92px; padding-top: 6px; text-indent: -12px;}
+.navi .inquiry li .inq_tit.pkg{padding-top: 14px;}
+.navi .inquiry li .inq_cont{display: inline-block; float: left;}
+.navi .inquiry li .green{color:#00b763;}
+.navi .inquiry li .tel{font-size: 22px; font-weight: 600;  font-family: "Spoqa Han Sans Bold","돋움","Dotum","sans-serif"; }
+.navi .inquiry li .email{font-size: 14px; color: #818181;}
+.navi .inq_area .inq_btn{padding-bottom: 30px;}
+.inq_btn .btn{width: 198px; height: 40px; line-height: 38px; margin: 0 auto; padding-right: 15px; color: #11bc6d; font-size: 16px; text-align: center; border:1px solid #00b763; border-radius: 20px; font-family: 'Spoqa Han Sans Regular'; background-image:url("https://img.modetour.com/modewebagent/2018/modeinter/common/navi_inq_ico.png"); background-repeat: no-repeat; background-position: 124px 12px; }
+.inq_btn .btn:hover{color: #fff; background-image:url("https://img.modetour.com/modewebagent/2018/modeinter/common/navi_inq_ico_on.png"); background-color: #00b763; transition: background-color .5s; }
+.navi_footer{background-color: #f1f1f1;}
+.navi_footer .container{padding:30px 32px;}
+#header .navi_footer .foo_content a{display: inline-block;}
+.navi_footer address{font-size: 14px; font-style: normal; color: #7a7a7a; }
+/*main*/
+.main_wrap #header .navi_open .btn{background-position-y: -126px;}
+#main{position: relative;}
+#main .main_bg{position: fixed; top:0; left: 0; right: 0; bottom: 0; z-index: -1;  background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/main_bg.jpg") no-repeat 50% 0;}
+.main_sec{width: 992px; margin:0 auto 30px; padding-top: 144px;}
+.main_inner{position: relative; text-align: center;}
+.main_sec .main_txt{position: absolute; top:-32px; left: 0; color: #424242; font-size: 20px;}
+.main_sec .txt{position: relative; color: #fff; font-size: 26px; font-weight: 600;  font-family: "Spoqa Han Sans Bold","돋움","Dotum","sans-serif";}
+.main_sec .txt:after{display: block; content: "";  position: absolute; top:48px; left: 50%; margin-left: -12px; width: 24px; height: 2px; background-color: #fff;} 
+.main_sec  a{width: 100%; height: 100%;}
+.main_sec .package{position: absolute; top:0; left: 0; width: 327px; height: 560px; padding-top: 50px; background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/main_package_bg.jpg") no-repeat;}
+.main_sec .package li{width: 100%;}
+.main_sec .package li div{height: 442px; text-align: center;}
+.main_sec .package .txt{position: relative; margin-bottom: 48px;}
+.main_sec .desc{padding:6px 0 24px; line-height: 1.3; color: #575757; font-size: 14px; font-family: "Spoqa Han Sans Regular";}
+.main_sec a .ico{padding:13px 16px 11px; border-radius: 26px; background:rgba(0,0,0,0.3); z-index: 10;}
+.main_sec a:hover .ico{background:rgba(0,0,0,0.6); transition: background .5s}
+.pager{height: 8px; padding-top: 40px; z-index: 110;}
+.pager span{display: inline-block; width: 8px; height: 8px; margin-right: 4px; text-indent: -9999px; background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/main_roll_ico.png") no-repeat;}
+.pager .cycle-pager-active{width: 28px; background-position-x: -53px;}
+.main_sec .sec_list:after{display: block; content: ""; clear: both;}
+.main_sec .sec_list{margin-left: 337px; text-align: center;}
+.main_sec .sec_list>li{float: left; position: relative; width: 327px; height: 280px;}
+.sec_list li.best{padding-top: 100px;  background:url("https://img.modetour.com/modewebagent/2018/modeinter/en/common/main_best_bg.png") no-repeat 98% 0;}
+.sec_list li.best .txt{color: #424242; font-size: 24px;}
+.sec_list li.best .txt:after{display: none;}
+.sec_list li.mice{padding-top:48px;  background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/main_mice_bg.jpg") no-repeat;}
+.sec_list li.mice .txt{margin-bottom: 8px; color: #494740; font-size: 32px;}
+.sec_list li.theme{width: 654px;}
+.sec_list li.theme .theme_fix{position: absolute; top:6px; left: 14px; color: #fff; font-size: 18px;}
+.sec_list li.theme{height: 280px; color: #fff;}
+.sec_list li.theme .layout{position: absolute; top:60px; left: 217px; width: 436px;}
+.sec_list li.theme .txt:after{display: none;}
+.sec_list li.theme .desc{color: #fff;}
+.sec_list li.theme a.btn{display: inline-block; width: 164px; height: 43px; line-height: 43px; color: #fff; font-size: 16px; background: #00b763; }
+.sec_list li.theme a:hover.btn{background: #00743f; transition: background .5s; z-index: 10;}
+.theme .pager{position: absolute; top:10px; right: 10px; padding-top: 0px;}
+.theme .pager span{background-position-y: -10px;}
+.theme .pager .cycle-pager-active{width: 33px; background-position: -49px -10px;}
+.main_inq_area{position: fixed; right: 50px; top:790px; width: 102px; height: 102px; background: #00b763; border-radius: 50px;}
+.main_inq_area:hover{background: #00743f; transition: background .5s;}
+.main_inq_area .main_inq{padding-top: 58px; text-align: center;  color: #fff; font-size: 16px; font-family: "Spoqa Han Sans Regular"; background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/main_inq_quick_ico.png") 40px 24px no-repeat;}
+.main_reserv_area{position: fixed; top:280px; right: 0; width: 65px; height: 295px;  background: #cb3a27; border-top-left-radius: 30px; border-bottom-left-radius: 30px;}
+.main_reserv_area:hover{width: 80px; transition: all .5s;}
+.main_reserv_area .main_reserv{width: 100%; height: 100%; padding-top: 124px; color: #fff; font-size: 18px;  line-height: 1;/* background: url("https://img.modetour.com/modewebagent/2018/modeinter/common/reserv_ico.png") no-repeat 50% 77px;*/}
+.main_reserv_area .main_reserv .ico{position: absolute; top:77px; right: 11px;}
+.main_reserv .main_reserv_in{position: absolute; top:173px;  right: -27px; margin:0 auto; -ms-transform: rotate(-90deg);  -webkit-transform: rotate(-90deg); transform: rotate(-90deg);}
+#main_footer{width: 992px; margin:0 auto; font-family: "Spoqa Han Sans Regular";}
+.main_foo_sec:after{display: block; content: ""; clear: both;}
+.main_foo_sec .inquiry{float: left; width: 535px; height: 50px; padding-left: 60px; line-height: 1.2; color: #2c2c2c; background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/main_inquiry_ico.png") no-repeat;}
+.main_foo_sec .inquiry .inq_list{display: inline-block; font-size: 14px; }
+.main_foo_sec .inquiry .inq_list span{display: inline-block;}
+.main_foo_sec .inquiry .inq_list .inq_tit{width: 114px; letter-spacing: -1px;}
+.main_foo_sec .inquiry .inq_list .tel{margin-right: 8px; color: #00b763; font-weight: 600;  font-family: "Spoqa Han Sans Bold","돋움","Dotum","sans-serif"; font-size: 18px;}
+.main_foo_sec .inquiry .inq_list .email{color: #818181;}
+.main_foo_sec .main_foo_terms{float: right; width: 457px; text-align: right; line-height: 1;}
+.main_foo_sec .foo_content a{color: #fff;}
+.main_foo_sec .foo_content a.point{color: #00b763;}
+.main_foo_sec .foo_content a:after{top:1px; background-color:#fff;}
+.main_foo_sec .copy{color:#fff; font-size: 13px; font-family: "Spoqa Han Sans";}
+.slick-slider{margin:30px auto 50px;}
+.slick-list{position: relative; display: block; overflow: hidden;margin:0; padding:0;}
+.slick-track{position: relative; top:0; left: 0; display: block;}
+.slick-slide{display: none; float: left; height: 100%; min-height: 1px;}
+.slick-initialized .slick-slide{display: block;}
+/*Top버튼*/
+.btn_top{display: none; position: fixed; right: 70px; bottom: 71px; width: 60px; height: 60px; padding-top: 30px; font-size: 12px; text-align: center;  z-index: 999; background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/btn_top.png") no-repeat 50% 14px #fff; border:1px solid #b4b4b4; }
+/*sub*/
+.wrap{position: relative; min-width: 1100px;}
+.sub_visual{height: 384px;  background-repeat: no-repeat; background-position: 50% 0; background-attachment: fixed;}
+.sub_visual.mice{background-image:url("https://img.modetour.com/modewebagent/2018/modeinter/sub/mice/mice_visual_bg.jpg");}
+.sub_visual.meet{background-image:url("https://img.modetour.com/modewebagent/2018/modeinter/sub/mice/meet_visual_bg.jpg");}
+.sub_visual.insen_tour{background-image:url("https://img.modetour.com/modewebagent/2018/modeinter/sub/mice/insen_visual_bg.jpg");}
+.sub_visual.event{background-image:url("https://img.modetour.com/modewebagent/2018/modeinter/sub/mice/event_visual_bg.jpg");}
+.sub_visual.history_event{background-image:url("https://img.modetour.com/modewebagent/2018/modeinter/sub/history_event/history_event_visual_bg.jpg");}
+.txt_visual {padding-top:120px; text-align: center;}
+.txt_visual dt{padding-bottom: 24px; color: #fffefe; font-size: 68px; line-height: 70px; font-weight: 600; font-family: "Spoqa Han Sans Bold","돋움","Dotum","sans-serif";}
+.txt_visual dd{color: #fffefe; font-size: 18px; font-family: "Spoqa Han Sans Regular";}
+/*top menu*/
+.top_menu{position: absolute; top:356px; width: 100%;}
+.top_menu .menu_lst{position: absolute; right: 0; height: 56px; z-index: 9992; text-align: left;}
+.top_menu .menu_lst:after{display: block; content: ""; clear: both;}
+.top_menu .menu_lst>li{position: relative; float: left;}
+.top_menu .menu_lst>li.home a{width: 70px; height: 56px;  padding:0; background-image: linear-gradient(to right, #30c54f, #00b763);  background-color: #00b763; border-left: none;}
+.top_menu .menu_lst>li.home .bg{display: block; width: 100%; height: 100%; background: url("https://img.modetour.com/modewebagent/2018/modeinter/common/home_ico.png") no-repeat 50%;}
+.top_menu .menu_lst>li button{display: block; width: 182px; height: 56px; line-height: 56px; padding-left:24px; color: #fff; font-size: 18px; text-align: left; background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/top_arrow_off.png") 86% 27px no-repeat  #00b763; border-left:1px solid #66d4a1; font-family: Spoqa Han Sans Regular}
+.top_menu .menu_lst>li.mice_last button{width: 188px;}
+.top_menu .menu_lst>li.theme_last button{width: 190px;}
+.top_menu .menu_lst>li.company_last button{width: 272px;}
+.top_menu .menu_lst>li.package_last button{width: 232px;}
+.top_menu .menu_lst>li:hover button{background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/top_arrow_on.png") 86% 27px no-repeat  #00b763;}
+.top_menu .menu_lst .sub_list{display: none; position: absolute; top:56px; left: 0; width: 100%; background-color: #9e9e9e;}
+.top_menu .menu_lst .sub_list li a{padding:10px 24px;  color: #fff; font-family: "Spoqa Han Sans Regular";}
+.top_menu .menu_lst .sub_list li:hover a{background:#555;}
+.top_menu .menu_lst>li:hover .sub_list{display: block;}
+.top_menu .menu_lst>li.last .sub_list{border-left: 1px solid #e0e0e0;}
+.wrap .visual_bg{position: absolute; top:248px; left: 50%; margin-left: -614px; width: 233px; height: 243px; z-index: 9992; background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/visual_pattern01.png") no-repeat; transition: all 1.0s ease; -webkit-transition:all 1.0s ease;}
+.wrap .visual_bg.type{position: absolute; top:213px; left: 50%; margin-left: -614px; width: 309px; height: 243px; background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/visual_pattern02.png") no-repeat;}
+.tit_area .tit{position: relative;  padding-bottom: 50px; color:#383838; font-size: 35px; font-weight: 600; font-family: "Spoqa Han Sans Bold","돋움","Dotum","sans-serif"; }
+.tit_area .tit:after{display: block; content: ""; position: absolute; top:65px; left: 50%; margin-left: -23px; width: 46px; height: 3px; background:#00b763;}
+.tit_area .txt{position: relative; padding-bottom: 50px; font-size: 18px;}
+.deco_bar{position: relative; padding-top: 84px;}
+.deco_bar:after{display: block; content: ""; position: absolute; top:0px; left: 50%; width: 2px; height: 35px; background:#00b763;}
+/*tab*/
+.tab_style1{width: 1100px; margin:0 auto 45px; text-align: center; box-sizing: border-box;}
+.tab_style1:after{display: block; content: ""; clear: both;}
+.tab_style1 li{float: left; width: 274px; height: 52px; line-height: 52px;}
+.tab_style1 li:first-child a{border-left: 1px solid  #00b763;}
+.tab_style1 li a{height: 100%; border:1px solid  #00b763; border-left: none;}
+.tab_style1 li.on a{color: #fff; background: #00b763;}
+.tab_style_area{position: absolute; top:241px; left: 0; width:100%;}
+.tab_style2{width:1100px; margin:0 auto;}
+.tab_style2 li:after{display: block; content: ""; clear: both;}
+.tab_style2 li{float:left; width: 50%;}
+.tab_style2 li a{width: 100%; height: 70px; line-height: 70px; color:#fff; font-size: 20px; font-weight: 600; font-family: "Spoqa Han Sans Bold","돋움","Dotum","sans-serif"; background-color:#00b763;}
+.tab_style2 li.on a{color:#4e4e4e; background-color:#fff;}
+/*footer*/
+#footer{min-width: 1100px; background: #f4f4f4; z-index: 9990; letter-spacing: 0}
+#footer .inquiry_section{background:#fff; height: 116px; padding: 28px 0 30px; border-top:1px solid #dadada; font-family: "Spoqa Han Sans Regular";}
+.inquiry_section:after,.inquiry_section .reserv_inq:after{display: block; content: ""; clear: both;}
+.inquiry_section .reserv_inq{float: left;}
+.inquiry_section .inq_time{float: right;}
+.inquiry_section .tit{display: inline-block; float: left; padding:14px 0 15px 73px; color: #2ab56b;  font-size: 18px; font-weight: 600; font-family: "Spoqa Han Sans Bold","돋움","Dotum","sans-serif"; background:url("https://img.modetour.com/modewebagent/2018/modeinter/common/reserv_inquiry.png") no-repeat;}
+.reserv_inq .inq_info{float: left; text-align: left; margin-left: 28px;}
+.reserv_inq .inq_info span{display: inline-block;}
+.reserv_inq .inq_info .inq_tit{width: 150px; font-size: 15px; color: #4b4b4b; font-family: "Spoqa Han Sans Regular";}
+.reserv_inq .inq_info .tel{padding-right: 22px; color: #00b763; font-size: 21px;  font-weight: 600; font-family: "Spoqa Han Sans Bold","돋움","Dotum","sans-serif"; }
+.reserv_inq .inq_info .email{position: relative; padding-left: 12px; font-size: 16px; color: #414141; vertical-align: 3px;}
+.inq_time .time{position: relative; display: inline-block; margin-left: 10px; padding-left: 12px; font-size: 16px; vertical-align: 2px;}
+.inq_time .tit{padding:0; background:none; font-size: 16px;}
+.inq_time .foo_inq{margin-top: 8px; height: 32px;}
+.inq_time .foo_inq .btn{height: 32px; line-height: 30px; font-size: 15px; background-image: url("https://img.modetour.com/modewebagent/2018/modeinter/common/foo_inq_ico.png"); background-position:126px 9px;}
+.inq_time .foo_inq .btn:hover{background-image: url("https://img.modetour.com/modewebagent/2018/modeinter/common/foo_inq_ico_on.png");}
+.reserv_inq .inq_info .email:after,.inq_time .time:after{display: inline-block; content: ""; position: absolute; top:7px; left: 0; width: 1px; height: 13px; background: #8b8b8b;}
+.inq_time .time:after{top:6px;}
+#footer .footer_inner{position: relative;  width: 1100px; margin:0 auto;}
+#footer .logo{position: absolute; top:40px; left: 0;}
+#footer .foo_section{margin-left: 272px; padding-top: 35px; padding-bottom: 40px;}
+.foo_content a{display: inline-block; zoom: 1; *display: inline; position: relative;  padding:0 3px 8px 7px; font-size: 14px; font-family: "Spoqa Han Sans Regular";}
+.foo_content a:first-child{padding-left: 0;}
+.foo_content a:first-child:after{background: none;}
+.foo_content a:after{display: block; content: ""; position: absolute; top:5px; left: 0; width: 1px; height: 12px; background-color: #a5a5a5;}
+#footer address{font-size: 14px; font-style: normal;}
+.foo_btn_area{position: absolute; top:42px; right: 0;}
+.foo_btn_area .btn{position: relative; padding:10px 72px 10px 20px; border:1px  solid #7a7a7a; font-size: 13px; line-height: 1; font-family: "Spoqa Han Sans Regular","돋움","Dotum","sans-serif";  background: none;}
+.foo_btn_area .btn:after{display: block; content: ""; position: absolute; top:0; right: 0; width: 32px; height: 33px; border-left: 1px solid #7a7a7a; background: url("https://img.modetour.com/modewebagent/2018/modeinter/common/foo_arrow_on.png") no-repeat 50%; cursor: pointer;}
+.foo_btn_area.active .btn:after{background: url("https://img.modetour.com/modewebagent/2018/modeinter/common/foo_arrow_off.png") no-repeat 50%;}
+.foo_btn_area .family_form{display: none; width: 100%; position: absolute;  bottom: 35px; left: 0; z-index: 9992;}
+.foo_btn_area.active .family_form{display: block;}
+.family_form .family_list{border:1px solid #7a7a7a; font-size: 13px; border-bottom: none;  background: #fff;} 
+.family_form .family_list li a{display: block; padding:5px 20px;}
+.family_form .family_list li:hover a{color: #00b763; background: #ececec;}
+.banner_area{padding-top: 30px;}
+.banner_list:after{display: block; content: ""; clear: both;}
+.banner_list{padding:0 20px; background: url("https://img.modetour.com/modewebagent/2018/modeinter/common/bg_hotel_list.png"); border-radius: 50px}
+.banner_list li{position: relative; float: left; width: 190px; height: 76px;}
+.banner_list li{background: url("https://img.modetour.com/modewebagent/2018/modeinter/common/main_hotel_list.png");}
+.banner_list li.tab02{background-position-x:-190px;}
+.banner_list li.tab03{background-position-x:-380px;}
+.banner_list li.tab04{background-position-x:-570px;}
+.banner_list li.tab05{background-position-x:-760px;}
+.banner_list li:hover{background-position-y: -76px;}
+.banner_list li a{width: 100%; height: 100%; }

@@ -1,0 +1,401 @@
+<!-- 메뉴 open/close - #wrapper에 "menu_on" 클래스 toggle -->
+<section id="menu" class="menu_wrap "><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+	<h2 class="screen_out">카테고리 전체보기</h2>
+	<!-- 메뉴 상단 -->
+	<div class="menu_head">
+		<strong>엠서클 홍길동 님</strong>
+		<a href="#none" class="ico_oshop ico_close">메뉴 닫기</a>
+	</div>
+	<div class="menu_cont">
+		<ul class="my_menu">
+			<li><a href="#none"><span class="ico_oshop ico_my"></span>마이페이지</a></li>
+			<li><a href="#none"><span class="ico_oshop ico_order"></span>주문배송조회</a></li>
+			<li><a href="#none">포인트<span class="txt_num">6,000p</span></a></li>
+			<li><a href="#none">관심상품<span class="txt_num">10</span></a></li>
+		</ul>
+		<div class="tab_area">
+			<ul class="menu_tab">
+				<li class="active"><a href="#menuZero" class="link_tab">전체 카테고리</a></li>
+				<li><a href="#menuBrand" class="link_tab">브랜드</a></li>
+			</ul>
+			<!-- 카테고리 보기 [s] -->
+			<div id ="menuZero" class="menu_view">
+				<h3 class="tit_cont">카테고리 <span class="txt_num">9</span></h3>
+				<ul class="depth_1 menu_list icon_type">
+					<li class="icon_line01"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_zero07"></span>건강&middot;스포츠</a>
+						<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li class="all_product"><a href="#self" class="link_txt">건강/스포츠 전체 상품보기</a></li>
+							<li><a href="#self" class="link_txt">건강기능식품</a></li>
+							<li><a href="#self" class="link_txt">다이어트보조식품</a></li>
+							<li><a href="#self" class="link_txt">안마/찜질</a></li>
+							<li><a href="#self" class="link_txt">비데</a></li>
+							<li><a href="#self" class="link_txt">건강측정</a></li>
+							<li><a href="#self" class="link_txt">가정의료</a></li>
+							<li><a href="#self" class="link_txt">건강기능</a></li>
+							<li><a href="#self" class="link_txt">골프</a></li>
+							<li><a href="#self" class="link_txt">헬스/요가/필라테스</a></li>
+							<li><a href="#self" class="link_txt">자전거/보드/스키</a></li>
+							<li><a href="#self" class="link_txt">수영</a></li>
+							<li><a href="#self" class="link_txt">캠핑/낚시/등산</a></li>
+							<li><a href="#self" class="link_txt">스포츠의류/잡화</a></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="icon_line01"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_zero01"></span>뷰티</a>
+						<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li class="all_product"><a href="#self" class="link_txt">뷰티 전체 상품보기</a></li>
+							<li><a href="#self" class="link_txt">스킨케어</a></li>
+							<li><a href="#self" class="link_txt">선케어/메이크업</a></li>
+							<li><a href="#self" class="link_txt">클렌징/필링/팩</a></li>
+							<li><a href="#self" class="link_txt">헤어/바디케어</a></li>
+							<li><a href="#self" class="link_txt">구강/면도용품</a></li>
+							<li><a href="#self" class="link_txt">향수</a></li>
+							<li><a href="#self" class="link_txt">네일케어</a></li>
+							<li><a href="#self" class="link_txt">뷰티소품</a></li>
+						</ul>
+					</li>
+					<li class="icon_line01"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_zero02"></span>패션</a>
+						<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li class="all_product"><a href="#self" class="link_txt">패션 전체 상품보기</a></li>
+							<li><a href="#self" class="link_txt">의류</a></li>
+							<li><a href="#self" class="link_txt">가방</a></li>
+							<li><a href="#self" class="link_txt">신발</a></li>
+							<li><a href="#self" class="link_txt">패션잡화</a></li>
+							<li><a href="#self" class="link_txt">쥬얼리/시계/악세서리</a></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="icon_line02"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_zero03"></span>식품</a>
+						<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li class="all_product"><a href="#self" class="link_txt">식품 전체 상품보기</a></li>
+							<li><a href="#self" class="link_txt">과일/견과</a></li>
+							<li><a href="#self" class="link_txt">채소</a></li>
+							<li><a href="#self" class="link_txt">쌀/잡곡</a></li>
+							<li><a href="#self" class="link_txt">정육/수산/건어물</a></li>
+							<li><a href="#self" class="link_txt">양념/식용유/밀가루</a></li>
+							<li><a href="#self" class="link_txt">밥/면/반찬류</a></li>
+							<li><a href="#self" class="link_txt">과자/빵/초콜릿/간식류</a></li>
+							<li><a href="#self" class="link_txt">생수/커피/차/음료</a></li>
+							<li><a href="#self" class="link_txt">우유/치즈/유제품</a></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="icon_line02"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_zero04"></span>유아동</a>
+						<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li class="all_product"><a href="#self" class="link_txt">유아동 전체 상품보기</a></li>
+							<li><a href="#self" class="link_txt">분유/유아식</a></li>
+							<li><a href="#self" class="link_txt">출산/유아용품</a></li>
+							<li><a href="#self" class="link_txt">유아동패션잡화</a></li>
+							<li><a href="#self" class="link_txt">장난감/교구/완구</a></li>
+							<li><a href="#self" class="link_txt">유아동잡화</a></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="icon_line02"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_zero05"></span>리빙</a>
+						<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li class="all_product"><a href="#self" class="link_txt">리빙 전체 상품보기</a></li>
+							<li><a href="#self" class="link_txt">화장지/물티슈/위생용품</a></li>
+							<li><a href="#self" class="link_txt">세탁/섬유유연제/표백제</a></li>
+							<li><a href="#self" class="link_txt">주방/욕실/청소세제</a></li>
+							<li><a href="#self" class="link_txt">청소용품</a></li>
+							<li><a href="#self" class="link_txt">욕실용품</a></li>
+							<li><a href="#self" class="link_txt">방향제/살충제</a></li>
+							<li><a href="#self" class="link_txt">식기/냄비/프라이팬</a></li>
+							<li><a href="#self" class="link_txt">조리보조도구</a></li>
+							<li><a href="#self" class="link_txt">보관/밀폐용기</a></li>
+							<li><a href="#self" class="link_txt">침구/커튼</a></li>
+							<li><a href="#self" class="link_txt">가구/수납</a></li>
+							<li><a href="#self" class="link_txt">인테리어 소품</a></li>
+							<li><a href="#self" class="link_txt">차량관리용품</a></li>
+							<li><a href="#self" class="link_txt">차량편의용품</a></li>
+						</ul>
+					</li>
+					<li class="icon_line03"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_zero06"></span>가전&middot;디지털</a>
+						<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li class="all_product"><a href="#self" class="link_txt">가전/디지털 전체 상품보기</a></li>
+							<li><a href="#self" class="link_txt">일반가전</a></li>
+							<li><a href="#self" class="link_txt">주방가전</a></li>
+							<li><a href="#self" class="link_txt">계절가전</a></li>
+							<li><a href="#self" class="link_txt">생활/미용가전</a></li>
+							<li><a href="#self" class="link_txt">컴퓨터/노트북/태블릿</a></li>
+							<li><a href="#self" class="link_txt">카메라/게임기</a></li>
+							<li><a href="#self" class="link_txt">디지털 주변기기/저장장치</a></li>
+							<li><a href="#self" class="link_txt">휴대폰/주변기기</a></li>
+							<li><a href="#self" class="link_txt">음향기기</a></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="icon_line03"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_zero08"></span>취미&middot;교육</a>
+						<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li class="all_product"><a href="#self" class="link_txt">취미/교육 전체 상품보기</a></li>
+							<li><a href="#self" class="link_txt">사료/간식</a></li>
+							<li><a href="#self" class="link_txt">반려동물용품</a></li>
+							<li><a href="#self" class="link_txt">교육</a></li>
+							<li><a href="#self" class="link_txt">도서</a></li>
+							<li><a href="#self" class="link_txt">문구</a></li>
+							<li><a href="#self" class="link_txt">사무용품</a></li>
+							<li><a href="#self" class="link_txt">캐릭터상품</a></li>
+							<li><a href="#self" class="link_txt">디자인문구</a></li>
+							<li><a href="#self" class="link_txt">조립/퍼즐/피규어</a></li>
+							<li><a href="#self" class="link_txt">소품</a></li>
+						</ul>
+					</li>
+					<li class="icon_line03"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_zero09"></span>여행&middot;서비스</a>
+						<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li class="all_product"><a href="#self" class="link_txt">여행/서비스 전체 상품보기</a></li>
+							<li><a href="#self" class="link_txt">여행상품</a></li>
+							<li><a href="#self" class="link_txt">여행용품</a></li>
+							<li><a href="#self" class="link_txt">티켓/공연</a></li>
+							<li><a href="#self" class="link_txt">상품권/e쿠폰</a></li>
+							<li><a href="#self" class="link_txt">꽃배달</a></li>
+							<li></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- 카테고리 보기 [s] -->
+			<!-- 브랜드 보기 [s] -->
+			<div id ="menuBrand" class="menu_view" style="display:none;">
+				<h3 class="tit_cont">브랜드존 <span class="txt_num">10</span></h3>
+				<ul class="depth_1 menu_list icon_type">
+					<li class="icon_line04"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_brand02"></span>대웅</a>
+						<ul class="depth_2 no_all_list"> <!-- 전체 상품이 있을경우 "no_all_list"클래스 추가, "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li><a href="#none">대웅제약</a></li>
+							<li><a href="#none">DNC화장품</a></li>
+							<li><a href="#none">시셀</a></li>
+							<li><a href="#none">대웅생명과학</a></li>
+							<li><a href="#none">DMD대웅경영개발원</a></li>
+							<li><a href="#none">엠디월</a></li>
+							<li><a href="#none">힐리언스</a></li>
+							<li><a href="#none">RP코프</a></li>
+						</ul>
+					</li>
+					<li class="icon_line04"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_brand04"></span>매일유업</a>
+						<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li class="all_product"><a href="#self" class="link_txt">매일유업 전체 상품보기</a></li>
+							<li><a href="#none">매일유업</a></li>
+							<li><a href="#none">토미티피</a></li>
+							<li><a href="#none">Y볼루션</a></li>
+							<li><!--<a href="#none">궁중비책</a>--></li>
+						</ul>
+					</li>
+					<li class="icon_line04"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_brand05"></span>불스원</a>
+						<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li class="all_product"><a href="#self" class="link_txt">불스원 전체 상품보기</a></li>
+							<li><a href="#none">엔진케어존</a></li>
+							<li><a href="#none">에어케어존</a></li>
+							<li><a href="#none">글래스케어존</a></li>
+							<li><a href="#none">서피스케어존</a></li>
+							<li><a href="#none">악세서리존</a></li>
+							<li><a href="#none">세트</a></li>
+							<li><a href="#none">센틀리에</a></li>
+							<li><!--<a href="#none">불스원미러</a>--></li>
+						</ul>
+					</li>
+					<li class="icon_line05"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_brand06"></span>샘표</a>
+						<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li class="all_product"><a href="#self" class="link_txt">샘표 전체 상품보기</a></li>
+							<li><a href="#none">간장</a></li>
+							<li><a href="#none">간장소스</a></li>
+							<li><a href="#none">요리에센스 연두</a></li>
+							<li><a href="#none">고추장/된장/쌈장</a></li>
+							<li><a href="#none">백년동안 흑초</a></li>
+							<li><a href="#none">식초/요리초/소금</a></li>
+							<li><a href="#none">샐러드드레싱/오일</a></li>
+							<li><a href="#none">수프/파스타소스</a></li>
+							<li><a href="#none">소면/즉석조리면</a></li>
+							<li><a href="#none">통조림/반찬 통조림</a></li>
+							<li><a href="#none">식수차/티백차</a></li>
+							<li><a href="#none">질러</a></li>
+							<li><a href="#none">한식양념</a></li>
+							<li><a href="#none">육수</a></li>
+						</ul>
+					</li>
+					<li class="icon_line05"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_brand07"></span>애경</a>
+						<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li class="all_product"><a href="#self" class="link_txt">애경 전체 상품보기</a></li>
+							<li><a href="#none">세탁세제/섬유유연제</a></li>
+							<li><a href="#none">세정제/제거제</a></li>
+							<li><a href="#none">구강용품/칫솔</a></li>
+							<li><a href="#none">바디케어</a></li>
+							<li><a href="#none">헤어케어</a></li>
+							<li><a href="#none">화장품</a></li>
+							<li><a href="#none">선물세트</a></li>
+							<li><a href="#none">건강기능식품</a></li>
+							<li><a href="#none">애경클리어런스</a></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="icon_line05"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_brand08"></span>유닉스</a>
+						<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li class="all_product"><a href="#self" class="link_txt">유닉스 전체 상품보기</a></li>
+							<li><a href="#none">드라이어</a></li>
+							<li><a href="#none">아이론(고데기,매직기)</a></li>
+							<li><a href="#none">남성용</a></li>
+							<li><!--<a href="#none">기타</a>--></li>
+						</ul>
+					</li>
+					<li class="icon_line06"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_brand09"></span>풀무원</a>
+						<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li class="all_product"><a href="#self" class="link_txt">풀무원 전체 상품보기</a></li>
+							<li><a href="#none">건강생활</a></li>
+							<li><a href="#none">풀무원 식품</a></li>
+							<li><a href="#none">더스킨</a></li>
+							<li><a href="#none">아미오</a></li>
+							<li><a href="#none">샘물</a></li>
+							<li><a href="#none">올가홀푸드</a></li>
+						</ul>
+					</li>
+					<li class="icon_line06"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_brand01"></span>네이버</a>
+						<ul class="depth_2 no_all_list"> <!-- 전체 상품이 있을경우 "no_all_list"클래스 추가, "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li><a href="#none">네이버</a></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="icon_line06"> <!-- li .icon_line0~ 3개씩 class 묶음-->
+						<a href="#none" class="link_txt"><span class="ico_oshop ico_brand03"></span>라인프렌즈</a>
+						<ul class="depth_2 no_all_list"> <!-- 전체 상품이 있을경우 "no_all_list"클래스 추가, "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+							<li><a href="#none">라인프렌즈</a></li>
+							<li></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- 브랜드 보기 [e] -->
+		</div>
+		<!-- 대웅제약 [s] -->
+		<div class="menu_sapan">
+			<h3 class="tit_cont">대웅제약 <span class="txt_num">2</span></h3>
+			<ul class="menu_list text_type">
+				<li><a href="#none">의약품</a></li>
+				<li><a href="#none">의약외품/건강기능식품</a></li>
+			</ul>
+		</div>
+		<!-- 대웅제약 [e] -->
+		<!-- 외식매장 할인 [s] -->
+		<div class="menu_alliance">
+			<h3 class="tit_cont">외식매장 할인 <span class="txt_num">6</span></h3>
+			<ul class="menu_list text_type depth_1">
+				<li class="text_line04">
+					<a href="#none" class="link_txt">국순당</a>
+					<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+						<li><a href="#none">국순당</a></li>
+						<li><a href="#none">백세주마을</a></li>
+					</ul>
+				</li>
+				<li class="text_line04">
+					<a href="#none" class="link_txt">원앤원 주식회사</a>
+					<ul class="depth_2"> <!-- 전체 상품이 있을경우 "li"갯수 홀수 유지, 없을시 짝수 유지 -->
+						<li><a href="#none">원할머니 보쌈족발</a></li>
+						<li><a href="#none">박가부대찌개</a></li>
+						<li><a href="#none">모리샤브</a></li>
+						<li><a href="#none">족발중심</a></li>
+					</ul>
+				</li>
+			</ul>
+			<a href="#none" class="btn_useinfo">이용내역 등록하기</a>
+		</div>
+		<!-- 외식매장 할인 [e] -->
+		<!-- 사무용품mro [s] -->
+		<ul class="menu_list text_type menu_mro">
+			<li><a href="#none">사무용품 &middot; MRO</a></li>
+			<li><a href="#none">영업사원</a></li>
+		</ul>
+		<!-- 사무용품mro [e] -->
+		<!-- 고객센터 공지사항 [s] -->
+		<ul class="zero_etc">
+			<li><a href="#none" class="customer">고객센터</a></li>
+			<li><a href="#none" class="news">공지사항</a></li>
+		</ul>
+		<!-- 고객센터 공지사항 [e] -->
+	</div>
+</section>
+<div class="bg_dimmd"></div>
+<script type="text/javascript">
+	$(function(){
+		// 2depth 열기 닫기
+		$(".link_txt").on("click", function () {
+			var depthP = $(this).parent("li").attr("class");
+			var depthS = $(this).siblings("ul").height() - 1;
+			if($(this).hasClass("active")){
+				depthClose();
+			}else {
+				depthClose();
+				$(this).addClass("active");
+				$(this).siblings("ul").slideDown(300);
+				$("." + depthP).animate({"padding-bottom":depthS},300);
+			}
+		})
+		function depthClose() {
+			$(".depth_2").hide();
+			$(".depth_1 li").css("padding-bottom",0);
+			$(".link_txt").removeClass("active");
+		}
+		// 2depth 열기 닫기
+		// $(".link_txt").on("click", function () {
+		// 	var depthH = $(this).siblings("ul").height() + 31;
+		// 	if($(this).hasClass("active")){
+		// 			$(".depth_2").slideUp(300);
+		// 			$(".depth_1 li").animate({"padding-bottom":0},300);
+		// 			$(".link_txt").removeClass("active");
+		// 	}else {
+		// 			menuClose();
+		// 			$(this).addClass("active");
+		// 			$(this).siblings("ul").slideDown(500);
+		// 			$(this).parent("li").animate({"padding-bottom":depthH},500);
+		// 	}
+		// })
+		// function menuClose() {
+		// 	$(".depth_2").hide();
+		// 	$(".depth_1 li").css("padding-bottom",0);
+		// 	$(".link_txt").removeClass("active");
+		// }
+		//메뉴 열기
+		$(".link_menu").on("click", function(){
+			$("#wrapper").addClass("menu_on");
+			//$(".bg_dimmd").fadeIn(500);
+		})
+		//메뉴 닫기
+		$(".menu_head .ico_close, .bg_dimmd").on("click", function(){
+			$("#wrapper").removeClass("menu_on");
+			//$(".bg_dimmd").fadeOut(500);
+		})
+		//메뉴 열기
+		// $(".link_menu").on("click", function(){
+		// 	$(".menu").animate({left:"0"},500);
+		// 	$(".bg_dimmd").fadeIn(500);
+		// 	$("body").css("overflow","hidden");
+    //
+		// })
+		// //메뉴 닫기
+		// $(".menu_head .ico_close, .bg_dimmd").on("click", function(){
+		// 	$(".menu").animate({left:"-100%"},500);
+		// 	$(".bg_dimmd").fadeOut(500);
+		// 	$("body").css("overflow","inherit");
+		// })
+		// 메뉴 탭
+		oshopUI.tab({
+			"tabs" : $(".menu_tab li"),
+			"tabList" : $(".menu_tab li"),
+			"activeClass" : "active",
+			"activeContents" : $(".menu_view")
+		});
+	})
+</script>

@@ -1,0 +1,97 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+		<!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" -->
+		<section class="container clear_g">
+			<!-- 2017-03-21 삭제
+			#@include virtual="/publish/oshop/mobile/html/common/sidebar.html" -->
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<h2 class="screen_out">브랜드체험존</h2>
+				<div class="cont_head">
+					<h3 class="tit_cate">썬팩타민 체험단 신청</h3>
+				</div>
+				<div class="cont_survey">
+					<ul class="list_type">
+						<li>비타민D가 필요한 이유 적고 썬팩타민 체험단이 되세요!</li>
+						<li>신청기간 : 2017.7.5(수) - 7.20(목)</li>
+						<li>당첨자발표 : 2017.7.24(월)</li>
+						<li class="color_primary">*표는 필수입력 항목입니다.</li>
+					</ul>
+
+					<div class="survey_box">
+						<p class="txt_question"><em class="txt_essen">필수</em><label for="survey1">1. 썬팩타민이 필요한 사람은 누구인가요?</label></p>
+						<div class="frame_inp">
+							<textarea id="survey1" class="inp_oshop" rows="3"></textarea>
+						</div>
+					</div>
+					<div class="survey_box">
+						<p class="txt_question"><em class="txt_essen">필수</em><label for="survey2">2. 썬팩타민이 필요한 이유는 무엇인가요? (나이, 성별, 증상, 임신/수유여부, 기존 복용 비타민D 후기 등 관련내용을 자세히 적을수록 당첨 확률 up!)</label></p>
+						<div class="frame_inp">
+							<textarea id="survey2" class="inp_oshop" rows="3"></textarea>
+						</div>
+					</div>
+					<div class="survey_box">
+						<p class="txt_question"><em class="txt_essen">필수</em>3. 썬팩타민을 먹어본 경험이 있나요?</p>
+						<div class="radio_oshop">
+							<input type="radio" id="survey3_1" name="survey3" class="inp_vote">
+							<label for="survey3_1" class="lab_vote">
+								<span class="ico_oshop ico_rdo"></span>
+								<span class="txt_rdo">네</span>
+							</label>
+						</div>
+						<div class="radio_oshop">
+							<input type="radio" id="survey3_2" name="survey3" class="inp_vote">
+							<label for="survey3_2" class="lab_vote">
+								<span class="ico_oshop ico_rdo"></span>
+								<span class="txt_rdo">아니오(5번으로 이동)</span>
+							</label>
+						</div>
+					</div>
+					<div class="survey_box">
+						<p class="txt_question"><em class="txt_essen">필수</em><label for="survey4">4. 이름을 정확히 입력해주세요.</label></p>
+						<div class="frame_inp"><input type="text" id="survey4" class="inp_oshop"></div>
+					</div>
+					<div class="survey_box">
+						<p class="txt_question"><label for="survey5">5. 미션 수행 의지를 남겨주세요.</label></p>
+						<div class="frame_inp">
+							<textarea id="survey5" class="inp_oshop" rows="3"></textarea>
+						</div>
+					</div>
+					<div class="survey_box">
+						<p class="txt_question"><em class="txt_essen">필수</em>6. 썬팩타민을 어디서 들어보셨나요?</p>
+						<div class="check_oshop">
+							<input type="checkbox" id="survey6_1" name="survey6" class="inp_vote">
+							<label for="survey6_1" class="lab_vote">
+								<span class="ico_oshop ico_chk"></span>
+								<span class="txt_chk">TV</span>
+							</label>
+						</div>
+						<div class="check_oshop">
+							<input type="checkbox" id="survey6_2" name="survey6" class="inp_vote">
+							<label for="survey6_2" class="lab_vote">
+								<span class="ico_oshop ico_chk"></span>
+								<span class="txt_chk">인터넷</span>
+							</label>
+						</div>
+						<div class="check_oshop">
+							<input type="checkbox" id="survey6_3" name="survey6" class="inp_vote">
+							<label for="survey6_3" class="lab_vote">
+								<span class="ico_oshop ico_chk"></span>
+								<span class="txt_chk">잡지</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="btns_full">
+						<button type="button" class="btn_type1">취소</button>
+						<button type="submit" class="btn_type2">설문완료</button>
+					</div>
+				</div>
+				<!-- // template 영역 끝 -->
+			</section>
+		</section>
+	</section>
+</body>
+</html>

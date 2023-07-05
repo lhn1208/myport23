@@ -1,0 +1,298 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+    <!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<div class="cont_head">
+					<h2 class="tit_cate">주문/배송조회</h2>
+				</div>
+				<!-- 2021-03-25 주문배송조회 리스트 수정 -->
+				<div class="cont_my_v2 v3"><!-- v3 추가 -->
+					<ul class="list_type none_bullet"><!-- none_bullet 추가 -->
+						<li>주문번호를 탭하면 상세 내역을 조회할 수 있습니다.</li>
+						<li>기간 검색 시, 최대 12개월까지 조회 가능합니다.</li>
+						<li><strong>배송지 변경</strong>은 <strong>주문접수 상태</strong>에서만 <strong>가능</strong>합니다.</li>
+					</ul>
+					<!-- 검색영역 [s] -->
+					<div class="box_type1 box_setting">
+						<h3 class="screen_out">기간 검색</h3>
+						<div class="cont_setting">
+							<form>
+								<fieldset>
+									<legend class="screen_out">주문/배송 조회 폼</legend>
+									<div class="select_type1"><!-- line_type 삭제 -->
+										<select class="list_select">
+											<option selected="selected">주문상태 전체</option>
+											<option>option1</option>
+											<option>option2</option>
+										</select>
+									</div>
+									<div class="frame">
+										<div class="frame_inp calendar_inp">
+											<label for="from">
+												<input type="date" class="inp_oshop" id="from" value="2018-02-14">
+												<span class="ico_oshop ico_calendar">검색 날짜 선택</span>
+											</label>
+										</div>
+										<span class="txt_g">~</span>
+										<div class="frame_inp calendar_inp">
+											<label for="to">
+												<input type="date" class="inp_oshop" id="to" value="2018-02-21">
+												<span class="ico_oshop ico_calendar">검색 날짜 선택</span>
+											</label>
+										</div>
+									</div>
+									<div class="frame_search">
+										<div class="frame_inp"><input type="text" class="inp_oshop" placeholder="검색어를 입력해 주세요"></div>
+										<button type="submit" class="btn_search"><span class="ico_oshop">검색</span></button>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+					<!-- 검색영역 [s] -->
+					<div class="box_result">
+						<p><strong>총</strong> <span class="txt_num">24 건</span>의 주문이 검색되었습니다.</p>
+					</div>
+					<!-- 리스트 [s] -->
+
+					<div class="box_type3"><!-- box_type3 클래스 변경 -->
+						<div class="box_my_prod">
+							<a href="#none" class="tit_my_prod">
+								<span class="status">구매확정</span>
+								<span class="desc">주문번호 M14101310530992500</span>
+								<span class="ico_oshop">상세보기</span>
+							</a>
+							<!-- 버튼 영역으로 인한 마크업 구조 수정 -->
+							<div class="cont_my_prod">
+								<img src="https://www.0shop.kr:443/zeroshop/data/lime/goods/big/s_maeil/104660343KakaoTalk_20200616_100149400o.jpg" class="thumb" alt="" />
+								<div class="cont">
+									<p class="date">2019.03.04</p>
+									<!-- 제품명만 a 태그로 감싸도록 변경됨 -->
+									<a href="#">
+										<p class="prod_tit"><span class="prod_txt">[100셋트 한정] 이지듀 DW-EGF크림 50ml (3+1)</span> 외 5건</p>
+									</a>
+									<!-- 제품 가격 / 옵션 영역 수정 [s] -->
+									<div class="prod_option">
+										<div class="price"><strong class="txt_num">600,000</strong>원</div><span class="prod_num"><em>수량</em> 1개</span>
+									</div>
+									<!-- 제품 가격 / 옵션 영역 수정 [e] -->
+								</div>
+							</div>
+						</div>
+
+						<div class="box_my_prod">
+							<a href="#none" class="tit_my_prod">
+								<span class="status">배송중</span>
+								<span class="desc">주문번호 M14101310530992500</span>
+								<span class="ico_oshop">상세보기</span>
+							</a>
+							<!-- 버튼 영역으로 인한 마크업 구조 수정 -->
+							<div class="cont_my_prod">
+								<img src="https://www.0shop.kr:443/zeroshop/data/lime/goods/big/s_maeil/104660343KakaoTalk_20200616_100149400o.jpg" class="thumb" alt="" />
+								<div class="cont">
+									<p class="date">2019.03.04</p>
+									<!-- 제품명만 a 태그로 감싸도록 변경됨 -->
+									<a href="#">
+										<p class="prod_tit"><span class="prod_txt">[100셋트 한정] 이지듀 DW-EGF크림 50ml (3+1)</span> 외 5건</p>
+									</a>
+									<!-- 제품 가격 / 옵션 영역 수정 [s] -->
+									<div class="prod_option">
+										<div class="price"><strong class="txt_num">600,000</strong>원</div><span class="prod_num"><em>수량</em> 1개</span>
+										<div class="option">
+											<span class="prod_num"><em>옵션</em> <span class="name">1. 시원한 쿨아쿠아</span></span>
+										</div>
+									</div>
+									<!-- 제품 가격 / 옵션 영역 수정 [e] -->
+									<!-- 배송조회 링크 추가 -->
+									<a href="#" class="btn_link">배송조회</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="box_my_prod">
+							<a href="#none" class="tit_my_prod">
+								<span class="status">배송완료</span>
+								<span class="desc">주문번호 M14101310530992500</span>
+								<span class="ico_oshop">상세보기</span>
+							</a>
+							<!-- 버튼 영역으로 인한 마크업 구조 수정 -->
+							<div class="cont_my_prod">
+								<img src="https://www.0shop.kr:443/zeroshop/data/lime/goods/big/s_maeil/104660343KakaoTalk_20200616_100149400o.jpg" class="thumb" alt="" />
+								<div class="cont">
+									<p class="date">2019.03.04</p>
+									<!-- 제품명만 a 태그로 감싸도록 변경됨 -->
+									<a href="#">
+										<p class="prod_tit"><span class="prod_txt">[100셋트 한정] 이지듀 DW-EGF크림 50ml (3+1)</span> 외 5건</p>
+									</a>
+									<!-- 제품 가격 / 옵션 영역 수정 [s] -->
+									<div class="prod_option">
+										<div class="price"><strong class="txt_num">600,000</strong>원</div><span class="prod_num"><em>수량</em> 1개</span>
+										<div class="option">
+											<span class="prod_num"><em>옵션</em> <span class="name">1. 시원한 쿨아쿠아</span></span>
+										</div>
+									</div>
+									<!-- 제품 가격 / 옵션 영역 수정 [e] -->
+									<!-- 배송조회 링크 추가 -->
+									<a href="#" class="btn_link">배송조회</a>
+								</div>
+							</div>
+							<!-- 버튼 영역 마크업 변경 -->
+							<p class="order_button">
+								<a href="#" class="btn_type3 btn_refund">교환/환불신청</a>
+								<a href="#" class="btn_type4 btn_confirm">구매확정</a>
+							</p>
+						</div>
+
+						<div class="box_my_prod">
+							<a href="#none" class="tit_my_prod">
+								<span class="status">교환/환불신청</span>
+								<span class="desc">주문번호 M14101310530992500</span>
+								<span class="ico_oshop">상세보기</span>
+							</a>
+							<!-- 버튼 영역으로 인한 마크업 구조 수정 -->
+							<div class="cont_my_prod">
+								<img src="https://www.0shop.kr:443/zeroshop/data/lime/goods/big/s_maeil/104660343KakaoTalk_20200616_100149400o.jpg" class="thumb" alt="" />
+								<div class="cont">
+									<p class="date">2019.03.04</p>
+									<!-- 제품명만 a 태그로 감싸도록 변경됨 -->
+									<a href="#">
+										<p class="prod_tit"><span class="prod_txt">[100셋트 한정] 이지듀 DW-EGF크림 50ml (3+1)</span> 외 5건</p>
+									</a>
+									<!-- 제품 가격 / 옵션 영역 수정 [s] -->
+									<div class="prod_option">
+										<div class="price"><strong class="txt_num">600,000</strong>원</div><span class="prod_num"><em>수량</em> 1개</span>
+									</div>
+									<!-- 제품 가격 / 옵션 영역 수정 [e] -->
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- 리스트 [e] -->
+					<div class="btns_full btn_more">
+						<!-- 더보기 버튼 변경 -->
+						<button type="button" class="btn_prod_more btn_type3">더보기</button>
+					</div>
+					<!-- 2018-07-11 광고영역 추가 [s] -->
+					<div class="ad_bnr">
+						<script type="text/javascript" SRC="http://realmedia.hidoc.co.kr/RealMedia/ads/adstream_jx.ads/0shop.kr/0shop_mobile_order@Bottom"></script>
+					</div>
+					<!-- 2018-07-11 광고영역 추가 [e] -->
+				</div>
+				<!-- 상품평 추가  2018-11-01  -->
+				<!-- 상품 Review 팝업 [s]-->
+				<div id="popReview" style="display:none;">
+					<div class="popup_type1 popup_new">
+						<div class="inner">
+							<strong class="tit_popup">상품평 작성</strong>
+							<div class="page">
+								<form>
+									<fieldset>
+										<legend class="screen_out">상품평 폼</legend>
+										<div class="pop_head">
+											<strong class="form_tit">상품명</strong>
+											<div class="select_type1 line_type">
+												<select class="list_select">
+													<option selected="selected">[단독구성특가] 샘표 캠핑 삼시세끼 캠핑 삼시세끼 캠핑 삼시세끼</option>
+													<option>option1</option>
+													<option>option2</option>
+												</select>
+											</div>
+										</div>
+										<div class="popup_body">
+											<ul class="write_area">
+												<li>
+													<label for="titReview" class="screen_out">제목</label>
+													<div class="frame_inp"><input type="text" id="titReview" class="inp_oshop" placeholder="제목을 입력해 주세요."></div>
+												</li>
+												<li>
+													<strong class="form_tit">별점평</strong>
+													<div class="purchase result star">
+														<div class="ico_oshop ico_star"><!-- 디폴트인 회색 별 -->
+															<div class="ico_oshop on_star">별점</div> <!-- 노란색 별 -->
+														</div>
+														<div class="btn">
+															<a href="#" class="btn_star">별1점</a>
+															<a href="#" class="btn_star">별2점</a>
+															<a href="#" class="btn_star">별3점</a>
+															<a href="#" class="btn_star">별4점</a>
+															<a href="#" class="btn_star">별5점</a>
+														</div>
+													</div>
+												</li>
+												<li>
+													<label for="txtQna" class="screen_out">내용</label>
+													<div class="frame_inp"><textarea id="txtQna" class="tf_oshop" placeholder="내용을 입력해 주세요."></textarea></div>
+												</li>
+												<li>
+													<strong class="form_tit">사진추가 <span>최대 2장까지 첨부 가능합니다.</span></strong>
+													<div class="inp_file_box">
+														<label for="getfile" class="la_file"><span class="ico_oshop ico_imgadd"></span></label>
+														<input type="file" id="getfile" accept="image/*" class="link_file">
+														<div id="imgThumbnail" class="img"></div>
+													</div>
+													<div class="inp_file_box">
+														<label for="getfile" class="la_file"><span class="ico_oshop ico_imgadd"></span></label>
+														<input type="file" id="getfile" accept="image/*" class="link_file">
+														<div id="imgThumbnail" class="img"></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="pop_foot">
+											<ul class="list_type">
+												<li>작성하신 상품평은 등록 즉시 사이트에 게재되며, 등록 후 수정, 삭제가 가능합니다.</li>
+												<li>고객님께서 작성해주시는 상품평은 다른분들께 소중한 정보가 됩니다.</li>
+												<li>작성해주신 상품평은 모두 공개함을 원칙으로 하되, 법률에 위배되는 경우 관리자가 임의로 삭제할 수 있습니다.</li>
+											</ul>
+										</div>
+										<div class="btns_full">
+											<button type="submit" class="btn_type2"><span class="txt">상품평 등록하기</span></button>
+										</div>
+									</fieldset>
+								</form>
+								<a href="#none" class="btn_close"><span class="ico_oshop ico_close">닫기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 상품 Review 팝업 [e] -->
+				<script>
+					$(function() {
+						// 상품평 팝업
+						oshopUI.popUp({
+							"clickBtn" : $(".btns_order .btn_review"),
+							"popupLayer" : $("#popReview"),
+							"Contents" : $(".cont_my_v2"),
+							"callback" : function() {
+								window.scroll(0, 0);
+							}
+						});
+						// 상품평 별점 설정
+						$(".btn .btn_star").on("click",function(e){
+							e.preventDefault();
+							var idx = $(this).index() + 1;  //클릭한 버튼의 index
+							var score = idx * 20; //
+							$(".on_star").css("width",score+"%");
+						})
+						// 상품평 파일박스(썸네일)
+						oshopUI.fileBoxThumbnail();
+						$(".inp_file_box .del").click(function() {
+						 $(this).parent('.inp_file_box').addClass('add');
+						});
+					})
+					</script>
+					<!-- //상품평 추가  2018-11-01  -->
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a>
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+@import './import';
+.vet_container{
+    .visual{
+        height: 294px;
+        margin-bottom: 40px;
+        background: url('../images/sub/visual/visual_news.jpg');
+        .visual_inner{
+            padding-top: 130px;
+            padding-bottom: 68px;
+            color: #fff;
+            @include cont_with();
+        }
+        .title{
+            padding-bottom: 25px;
+            margin-bottom: 16px;
+            font-size: 30px;
+            font-weight: 700;
+            border-bottom: 0.5px solid $c_white;
+            .font_type{
+                @include font_Bry();   
+            }
+        }
+        &.report{
+            background: url('../images/sub/visual/visual_report.jpg');
+        }
+        &.drag_info{
+            background: url('../images/sub/visual/visual_drag.jpg');
+        }
+        &.board{
+            background: url('../images/sub/visual/visual_board.jpg');
+        }&.tip{
+            background: url('../images/sub/visual/visual_tip.jpg');
+        }&.case{
+            background: url('../images/sub/visual/visual_case.jpg');
+        }&.calc{
+            background: url('../images/sub/visual/visual_calc.jpg');
+        }
+    }
+    
+    .paging{   
+        .pag_control{
+            float: left;
+            width: 48px;
+            %arr_style{
+                display: inline-block;
+                @include  ico_arr();
+                vertical-align: 2px;
+                color: $c_g_6;
+            }
+            &.btn_prev{
+                span{
+                    @extend %arr_style;
+                    margin-right:8px;                   
+                }
+            }
+            &.btn_next{
+                margin-left: 15px;
+                span{
+                    @extend %arr_style;
+                    margin-left:8px;
+                }
+            }
+        }
+        .num_page{
+            float: left;
+            width: 32px;
+            height: 24px;
+            text-align: center;
+            font-size: 14px;
+        }
+        strong{
+            @extend .num_page;
+            color: $c_blue;
+        }
+        .paging_inner{      
+            display: block;
+            @include cont_with(446px);     
+            &::after{
+                @include clear();
+            }
+        }         
+    }
+    .catalog{
+        &::before{
+            @include imag_elem(10px,10px);
+            margin-right: 8px;
+            @include bg_ico(0,-118px)
+
+        }
+        width: 78px;
+        padding:5px 0;
+        @include btn_style(30px,#E1E1E1);
+        font-size: 14px;
+        text-align: center;
+    }
+}
+.content_wrap{
+    position: relative;	
+    .list_set{
+        @include pos_right();
+        .sort_txt{
+            padding:0 6px;
+            color: #666;
+            font-size: 14px;
+            &.on{
+                font-weight: bold;
+            }
+        }
+        .opt{
+            width: 14px;
+            height: 14px;
+            margin-left: 10px;
+            vertical-align: -2px;
+            @include bg_ico(0,-30px);
+            &.on{
+                background-position-x: -22px;
+            }
+            &.album{
+                background-position-x: -44px;
+                &.on{
+                    background-position-x: -67px;
+                }
+            }
+        }
+    }
+	.content_top{
+		position: relative;
+		margin-bottom: 16px;
+		font-size: 16px;
+		.cont_top_title{
+			font-size: 16px;
+			font-weight: 500;
+			font-family: Pretendard, sans-serif; 
+		}		
+	}	
+}
+
+//논문검색
+@import './pages/community/report_sch';
+//계산기
+@import './pages/community/calc';
+
+//자유게시판
+@import './pages/community/board';
+//이벤트
+@import './pages/community/event';
+
+//뉴스
+.news_cont{    
+    .cont_search {
+            margin:0;
+            .search_list li .select{
+                width: 94px;
+            }
+            .sch_input_area .sch_input{
+            width: 452px;
+        }
+    }
+    .news_list{
+        margin-bottom: 45px;
+        li{
+            padding:14px 0;
+            border-bottom: 1px solid $c_g_c;
+            a{
+                font-size: 16px;                
+                .date{
+                    display: inline-block;
+                    width: 100px;
+                    padding-left:10px;
+                    color: #B4B4B5;
+                    font-size: 14px;
+                    vertical-align: 4px;
+                    box-sizing: border-box;
+                }    
+                .txt{
+                    width: 736px;
+                    display: inline-block;
+                    padding-left: 14px;
+                    @include ellipsis();
+                }          
+            }
+        }   
+    }    
+}

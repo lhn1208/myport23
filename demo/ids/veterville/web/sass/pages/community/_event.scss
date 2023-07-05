@@ -1,0 +1,129 @@
+.ev_container{
+    min-height: 500px;
+    background-color: #F6F6F7;   
+    .cont_title{
+        margin-bottom: 34px;
+        font-size: 26px;
+    }
+    .event_wrap{
+        @include cont_with();
+        padding:24px 0;
+        .event_list{
+            li{
+                width: 348px;
+                float: left;
+                margin-left: 63px;
+                margin-bottom: 40px;                
+                box-sizing: border-box;
+                &:nth-child(3n+1){
+                    margin-left: 0;
+                }
+                a{
+                    display: block;
+                    position: relative;
+                    width: 100%;                   
+                    border: 1px solid $c_g_c;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    background-color: #fff;
+                    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+                    .layer_end{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 156px;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        z-index: 30;
+                        padding-top: 66px;
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 18px;
+                        text-align: center;
+                        box-sizing: border-box;
+                    }
+                    img{
+                        display: inline-block;
+                        position: relative;
+                        height: 157px;
+                        display: block;                       
+                    }
+                    .ev_info{
+                        padding: 23px 30px;
+                        height: 114px;
+                        box-sizing: border-box;
+                        strong{
+                            display: block;
+                            margin-bottom: 6px;
+                            font-weight: 500;
+                            font-size: 18px;
+                            @include ellipsis_2line();
+                        }
+                        .date{
+                            font-size: 14px;
+                            color: $c_g_6;
+                        }
+                    }
+                }
+            }
+            &::after{
+                @include clear();
+            }
+        }
+        .no_event{
+            margin: 180px 0;
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+    .event_detail{
+        @include cont_with();
+        display: flex;
+        padding-top: 24px;
+        .left_aside{
+            width: 270px;
+            margin-right: 70px;
+        }
+        .event_cate{
+            margin-bottom: 50px;
+            .sub_tit{
+                margin-bottom: 20px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            ul{
+                li{
+                    margin-bottom: 20px;
+                    figure{
+                        float: left;
+                        border:1px solid $c_g_c;
+                    }
+                    .txt{
+                        float: left;
+                        width: 196px;
+                        margin-left: 14px;
+                        font-size: 12px;
+                        strong{
+                            display: block;
+                            margin-bottom: 4px;                            
+                            font-weight: 600;
+                        }
+                        p{
+                            width: 100%;
+                            @include ellipsis_2line();
+                        }
+                    }
+                    &::after{
+                        @include clear();
+                    }
+                }
+            }
+        }
+        .event_content{
+            margin-top: 74px;
+            margin-bottom: 80px;
+            width: 865px;
+        }
+        
+    }
+}

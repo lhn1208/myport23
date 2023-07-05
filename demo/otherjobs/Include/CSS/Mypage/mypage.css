@@ -1,0 +1,873 @@
+@charset "utf-8";
+/*
+	Copyright Modetour. All Rights Reserved.
+	The following software licensing rules apply:
+	- Name : Modetour Mobile Mypage
+*/
+/* 공통 컨텐츠 */
+#body_section { padding-top:0 !important; }
+#body_section .section_title { z-index:1; }
+.mypage h3.bullet { margin:10px 0 0; font-weight:bold; font-size:13px; }
+.mypage h3.bullet:before { content:""; display:block; float:left; margin:0 5px 0 0; width:16px; height:16px; background:url("http://img.modetour.co.kr/modelivebooking/mobile/ico_mypage_set.png") no-repeat 0 -84px; background-size:17px auto; }
+.mypage .alert_messeage { position:relative; padding:15px 15px 15px 55px; font-size:12px; color:#666666; overflow:hidden; }
+.mypage .alert_messeage:before { content:""; position:absolute; left:10px; top:50%; margin:-15px 0 0; width:32px; height:32px; vertical-align:top; background:url('http://img.modetour.co.kr/modelivebooking/mobile/ico_alert_messeage.png') no-repeat 0 0; background-size:32px 32px; }
+.mypage .alert_messeage.orange { color:#FF3502; }
+.mypage .alert_messeage.orange:before { background-image:url('http://img.modetour.co.kr/modemobile/2014/icon/ico_notify_messages.png'); }
+.mypage .alert_messeage b { font-size:12px; color:#FF3502; }
+.mypage .contents ol li { margin:20px 0 0; }
+.mypage .contents ol li:first-child { margin:0; }
+.mypage .contents ol ul { margin:0 0 0 12px; list-style-position:outside; }
+.mypage .contents ol ul p { margin:0 0 0 10px; }
+.mypage .contents ol ul li:before { content:"-"; float:left; display:inline-block; }
+.mypage .contents ol ul li:after { content:""; clear:both; overflow:hidden; }
+.mypage .contents ul li { position:relative; margin:0 0 20px; }
+.mypage .contents ul.bullet li { position:relative; margin:20px 0 0; padding:0 0 0 5px; font-size:11px; }
+.mypage .contents ul.bullet li:first-child { margin:0; }
+.mypage .contents ul.bullet li:before { content:""; position:absolute; left:0; top:6px; width:2px; height:2px; background-color:#737373; overflow:hidden; }
+.mypage .contents ol.narrow li,
+.mypage .contents ul.narrow li { margin:8px 0 0; }
+.mypage .contents ol.narrow li:first-child,
+.mypage .contents ul.narrow li:first-child { margin-top:0; }
+.mypage .notify_comments { padding:11px 15px; font-size:13px; border-bottom:1px solid #D9D9D9; background-color:#F2F2F2; }
+.mypage .notify_messages { margin:15px 0 0; font-size:13px; }
+.mypage .notify_messages .warning { padding:10px 0 0; font-size:10px; color:#666; border-top:1px solid #BAB5B5; }
+.mypage .notify_messages .warning b { color:#F53036; }
+.mypage .notify_messages .contents { padding:10px; border-top:2px solid #BAB5B5; background-color:#FFF; }
+
+.mypage .sort_option { padding:15px 10px; box-shadow:0 5px 5px #BBB; background-color:#FFF; }
+.mypage .sort_option .term { overflow:hidden; }
+.mypage .sort_option .term li { float:left; width:20%; }
+.mypage .sort_option .term li label { display:block; margin:0 2px; font-size:13px; line-height:32px; color:#666; text-align:center; border-radius:4px; background-color:#E6E6E6; }
+.mypage .sort_option .term li label input[type="radio"] { position:absolute; top:0; left:0; width:0; height:0; font-size:0; line-height:0; visibility:hidden; overflow:hidden; }
+.mypage .sort_option .term li label.active { color:#FFF; background-color:#34AD70; }
+.mypage .sort_option .custom { margin:5px 0 0; }
+.mypage .sort_option .custom .form { float:left; position:relative; width:80%; }
+.mypage .sort_option .custom .form .from,
+.mypage .sort_option .custom .form .to { float:left; width:50%; }
+.mypage .sort_option .custom .form .horizon { position:absolute; top:0; left:50%; margin:0 0 0 -10px; width:20px; line-height:32px; text-align:center; }
+.mypage .sort_option .custom .form .from .io_date { margin:0 10px 0 2px; }
+.mypage .sort_option .custom .form .to .io_date { margin:0 2px 0 10px; }
+.mypage .sort_option .custom .submit { float:right; width:20%; }
+.mypage .sort_option .custom .submit p { margin:0 2px; }
+.mypage .sort_option .custom .submit input[type="button"] { display:block; width:100%; height:32px; font-size:13px; line-height:32px; color:#FFF; text-align:center; border:0; border-radius:5px; background-color:#6E7789; -webkit-appearance:none; }
+.mypage .sort_option .custom .submit input[type="button"]:hover,
+.mypage .sort_option .custom .submit input[type="button"]:active,
+.mypage .sort_option .custom .submit input[type="button"]:focus { color:#FFF; background-color:#333; }
+
+.mypage .terms .item { position:relative; margin:-2px 0 0; }
+.mypage .terms .item:first-child { margin:0; }
+.mypage .terms .item:first-child h2 { border-top:0; }
+.mypage .terms .item h2 { padding:10px; font-size:13px; color:#2B2B2B; border-top:2px solid #959595; border-bottom:1px solid #A7A7A7; background-color:#F0F0F0; }
+.mypage .terms .item .contents.hide,
+.mypage .terms .item .function.hide { display:none; }
+.mypage .terms .item .contents { padding:10px; font-size:12px; color:#8F8F8F; background-color:#FFF; }
+.mypage .terms .item .contents b { color:#565656; }
+.mypage .terms .item .do_check { position:absolute; right:10px; top:12px; }
+.mypage .terms .item .function { padding:10px; background-color:#FFF; }
+.mypage .terms .item .function button { width:60%; height:30px; color:#FFF; border:0; border-radius:5px; background-color:#74858D; }
+.mypage .terms .notify { padding:10px; font-size:13px; color:#478999; }
+.mypage .terms .function { padding:10px 8px; }
+.mypage .terms .function:after { content:""; clear:both; display:block; overflow:hidden; }
+.mypage .terms .function .aside { float:left; padding:0 2px; width:50%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.mypage .terms .function .aside button { color:#787878; background-color:#DBDBDB; }
+.mypage .terms .function .bside { float:right; padding:0 2px; width:50%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.mypage .terms .function .bside button { color:#FFF; background-color:#35AD70; }
+.mypage .terms .function button { width:100%; height:30px; font-size:14px; border:0; border-radius:5px; }
+
+.mypage .history_list { background-color:#253443; }
+.mypage .history_list li { border-top:1px solid #1C2833; }
+.mypage .history_list li:first-child { border:0; }
+.mypage .history_list a { position:relative; display:block; padding:16px 25px 14px; color:#FFF; text-decoration:none; z-index:1; }
+.mypage .history_list a:after { content:""; position:absolute; right:26px; top:50%; display:block; margin:-5px 0 0; width:8px; height:13px; background:url("http://img.modetour.co.kr/modelivebooking/mobile/ico_mypage_r_arrow.png") no-repeat; background-size:100% 100%; }
+.mypage .history_list a i.icon { float:left; display:inline-block; margin:3px 10px 0 0; width:17px; height:16px; background:url("http://img.modetour.co.kr/modelivebooking/mobile/ico_mypage_set.png") no-repeat 0 0; background-size:17px auto; overflow:hidden; }
+.mypage .history_list a i.icon.trip_item { background-position:0 0; }
+.mypage .history_list a i.icon.ticket { background-position:0 -16px; }
+.mypage .history_list a i.icon.hotel { background-position:0 -33px;  }
+.mypage .history_list a i.icon.pass_rail { background-position:0 -49px; }
+.mypage .history_list a code { display:inline-block; margin:3px 0 0; padding:2px 8px; font-size:10px; color:#FFF; vertical-align:top; border-radius:10px; background-color:#425D78; }
+.mypage .booking_center a { display:block; padding:8px 25px; color:#FFF; text-decoration:none; background-color:#1C2833; overflow:hidden; }
+.mypage .booking_center span:first-child { float:left; color:#8595a6; font-size:13px; padding-top:3px; }
+.mypage .booking_center span:last-child { float:right; position:relative; z-index:1; }
+.mypage .booking_center span:last-child:before { content:""; display:inline-block; margin:0 3px 0 0; width:17px; height:17px; vertical-align:top; background:url("http://img.modetour.co.kr/modelivebooking/mobile/ico_mypage_set.png") no-repeat 0 -67px; background-size:17px auto; }
+.mypage .booking_center span.booking { color:#333333; padding-top:0; }
+.mypage .booking_faq { margin:0; padding:10px; font-size:14px; }
+.mypage .booking_faq dl { margin:10px 0 0; border:1px solid #BDBEBF; }
+.mypage .booking_faq dl dt { border-top:1px solid #BDBEBF; background-color:#F0F1F2; }
+.mypage .booking_faq dl dt a { display:block; position:relative; padding:15px 35px 15px 15px; font-size:12px; letter-spacing:-0.5px; color:#333333; text-decoration:none; z-index:1; }
+.mypage .booking_faq dl dt a:before { content:"Q."; margin:0 5px 0 0; color:#34AD70; }
+.mypage .booking_faq dl dt a:after { content:""; position:absolute; right:15px; top:50%; display:block; margin:-2.5px 0 0; width:0px; height:0px; border-width:5px; border-style:solid; border-color:#666 transparent transparent transparent; }
+.mypage .booking_faq dl dt.active a:after { content:""; position:absolute; right:15px; top:50%; display:block; margin:-7.5px 0 0; width:0px; height:0px; border-width:5px; border-style:solid; border-color:transparent transparent #666 transparent; }
+.mypage .booking_faq dl dt:first-child { border:0; }
+.mypage .booking_faq dl dd { display:none; padding:15px; color:#666; border-top:1px solid #BDBEBF; background-color:#FFF; font-size:12px; }
+.mypage .booking_faq dl dd:before { content:"A."; float:left; margin:0 5px 0 0; color:#0065B3; }
+.mypage .booking_faq dl dd a { color:#de2525; text-decoration:underline; }
+.mypage .booking_faq dl dd span { color:#666666; }
+
+.mypage .tab_container { position:relative; padding:40px 0 0; }
+.mypage .tab_container .contents h2 { position:absolute; top:0; width:50%; }
+.mypage .tab_container .contents h2 button { margin:0; padding:0; width:100%; height:40px; color:#313131; border:0; border-bottom:1px solid #CBCBCB; background-color:#E5E5E5; overflow:hidden;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.mypage .tab_container .contents h2 button:first-child { border-right:1px solid #CBCBCB; }
+.mypage .tab_container .contents h2 button:hover,
+.mypage .tab_container .contents h2 button:focus,
+.mypage .tab_container .contents h2 button:active,
+.mypage .tab_container .contents h2 button.active { border-bottom:0; background-color:#FFF; }
+.mypage .tab_container .content { padding:10px; font-size:14px; color:#676767; border-bottom:1px solid #E1E1E1; background-color:#FFF; }
+.mypage .tab_container .content table { margin:5px 0; width:100%; border-top:2px solid #6C6C6C; border-left:1px solid #DADADA; }
+.mypage .tab_container .content table th,
+.mypage .tab_container .content table td { padding:10px; font-size:13px; color:#333; border-bottom:1px solid #BDBEBF; border-right:1px solid #BDBEBF; }
+.mypage .tab_container .content table th { width:80px; background-color:#F8F8F8; }
+.mypage .tab_container .content .time { padding:10px 0; font-size:16px; color:#010101; }
+.mypage .tab_container .meeting h2 { left:0; }
+.mypage .tab_container .guide h2 { left:50%; }
+.mypage .tab_container .guide .content { display:none; }
+
+.mypage .booking_history .outline { padding:10px 10px 30px; }
+.mypage .booking_history .outline2 { border-bottom:1px solid #bab5b5; }
+.mypage .booking_history .item { position:relative; margin:10px 0 0; border:1px solid #C4C4C4; border-top-color:#46576C ; background-color:#FFF; }
+.mypage .booking_history .item .booking_num { padding:10px; font-size:15px; color:#737373; border-bottom:1px solid #C4C4C4; background-color:#F3F2F3; }
+.mypage .booking_history .item .booking_num code { color:#34495E; font-weight:bold; }
+.mypage .booking_history .item .booking_detail { position:relative; padding:10px; }
+.mypage .booking_history .item .booking_detail:before { content:""; position:absolute; display:block; width:10px; height:10px; left:20px; top:-5px; border-left:1px solid #D6D6D6; border-top:1px solid #D6D6D6; background-color:#F3F2F3;
+	-webkit-transform:rotate(-135deg);
+	-moz-transform:rotate(-135deg);
+	-o-transform:rotate(-135deg);
+	transform:rotate(-135deg);
+}
+.mypage .booking_history .item .booking_detail .date { padding:5px 0; font-size:16px; color:#2A2A2A; }
+.mypage .booking_history .item .booking_detail .subject { font-size:13px; color:#2B87B6; }
+.mypage .booking_history .item .total_cost { padding:10px; font-size:18px; text-align:right; border-top:1px solid #9F9F9F; }
+.mypage .booking_history .item .total_cost b { color:#FE3501; }
+.mypage .booking_history .item .status { position:absolute; top:10px; right:10px; padding:1px 5px; font-size:11px; color:#f3454a; border-radius:50px; border:1px solid #F3454A; }
+.mypage .booking_history .item .status.unsettled { color:#F3454A; border-color:#F3454A; }
+.mypage .booking_history .item .status.done { color:#47B67C; border-color:#47B67C; }
+.mypage .booking_history .infinity { width:100%; background:#e3e4e6; border-top:1px solid #bab5b5; border-bottom:1px solid #bab5b5; }
+.mypage .booking_history .infinity button { display:block; margin:0; padding:7px 0; width:100%; text-align:center; font-size:13px; border:0; background:none; }
+.mypage .booking_history .infinity button span { position:relative; display:inline-block; color:#333333; padding-right:14px; }
+.mypage .booking_history .infinity button span:after { content:""; position:absolute; display:block; top:5px; right:0; width:8px; height:5px; background:url("http://img.modetour.co.kr/ModeLiveBooking/mobile/ico_schedule.png") no-repeat -36px -24px; background-size:44px 40px; }
+.mypage .booking_history .guide_messeage { padding:10px; background-color:#F0F0F0; }
+.mypage .booking_history .guide_messeage .title { font-size:11px; }
+.mypage .booking_history .guide_messeage .messeage { margin:5px 0 0; font-size:10px; color:#666; }
+.mypage .booking_history .guide_messeage .link { margin:5px 0 0; text-align:right; }
+.mypage .booking_history .guide_messeage .link a { position:relative; display:inline-block; width:90px; padding:5px 0 5px 7px; font-size:10px; line-height:1em; color:#333; text-align:left; text-decoration:none; border-radius:4px; border:1px solid #BAB5B5; background-color:#FFFFFF; box-sizing:border-box; }
+.mypage .booking_history .guide_messeage .link a:after { content:""; position:absolute; right:10px; top:50%; display:block; margin:-3px 0 0; width:3px; height:3px; border:1px solid #333; border-left-width:0; border-bottom-width:0; transform:rotate(45deg); -webkit-transform:rotate(45deg); }
+.mypage .booking_history .no_data { padding:50px 0; text-align:center; }
+.mypage .booking_history .no_data img { margin:20px; width:100px; height:100px; }
+.mypage .booking_history .no_data p.txt { font-size:15px; color:#000000; }
+
+.mypage .passengers { padding:0 10px; }
+.mypage .passengers .order { line-height:150%; }
+.mypage .passengers .order ol { margin:0; list-style-type:upper-roman; }
+.mypage .passengers .order ol li { margin:0; color:#666; }
+.mypage .passengers .order > li:last-child { margin:0; }
+.mypage .passengers .client_list { margin:10px 0 0; }
+.mypage .passengers .client_list dl { margin:10px 0 0; }
+.mypage .passengers .client_list dl dt { margin:-1px 0 0; border:1px solid #717880; background-color:#8A9199; }
+.mypage .passengers .client_list dl dt a { display:block; position:relative; padding:6px 30px 6px 15px; font-weight:bold; color:#FFF; text-decoration:none; z-index:1; }
+.mypage .passengers .client_list dl dt a > b { font-weight:bold; }
+.mypage .passengers .client_list dl dt a:after { content:""; position:absolute; right:15px; top:50%; display:block; margin:-2px 0 0; width:0px; height:0px; border-width:5px; border-style:solid; border-color:#333 transparent transparent transparent; }
+.mypage .passengers .client_list dl dt.active a:after { content:""; position:absolute; right:15px; top:50%; display:block; margin:-7px 0 0; width:0px; height:0px; border-width:5px; border-style:solid; border-color:transparent transparent #333 transparent; }
+.mypage .passengers .client_list dl dt:first-child+dd { display:block; }
+.mypage .passengers .client_list dl dt a b { color:#333; }
+.mypage .passengers .client_list dl dt a b:after { content:" | "; color:#5C6166; }
+.mypage .passengers .client_list dl dd { display:none; padding:14px; color:#666; border:1px solid #BDBEBF; border-top:0; border-bottom:0; background-color:#FFF; }
+.mypage .passengers .client_list dl dd:last-child {  border-bottom:1px solid #bdbebf; }
+.mypage .passengers .client_list dl dd a.info { margin:3px 0 0; }
+.mypage .passengers .client_list dl dd .caption { padding:5px 0; color:#34495E; font-weight:bold; border-bottom:1px solid #34495E; }
+.mypage .passengers .client_list dl dd .table { border:0; }
+.mypage .passengers .client_list dl dd .table th { padding:5px 0; width:100px; line-height:30px; color:#333; vertical-align:middle; border-left:0; background-color:#FFF; }
+.mypage .passengers .client_list dl dd .table td { padding:5px 0; line-height:30px; color:#333; border-right:0; background-color:#FFF; }
+.mypage .passengers .client_list .narrow li > p { margin:0 0 5px; font-size:14px; color:#34495E; }
+.mypage .passengers .client_list .narrow li > p:before { content:""; display:inline-block; margin:-2px 3px 0 0; width:16px; height:16px; vertical-align:top; background:url("http://img.modetour.co.kr/modelivebooking/mobile/ico_mypage_set.png") no-repeat 0 -84px; background-size:17px auto; }
+.mypage .passengers .client_list .outline { padding:10px 0; font-size:12px; color:#34495E; border:1px solid #D9D9D9; background-color:#F2F2F2; }
+.mypage .passengers .client_list .outline .bullet li b { display:inline-block; min-width:120px; color:#333; font-size:11px; }
+.mypage .passengers .client_list .outline .bullet li a { color:#9F6247; text-decoration:underline; }
+.mypage .passengers .client_list .outline .bullet li a:after { content:""; display:inline-block; margin:-3px 3px 0 0; width:3px; height:3px; vertical-align:middle; border:1px solid #9F6247; border-left-width:0; border-bottom-width:0; transform:rotate(45deg); -webkit-transform:rotate(45deg); }
+.mypage .passengers .client_list .outline .file_attach { margin:0; }
+.mypage .passengers .client_list .outline .file_attach .file label { padding:0 10px; background-color:transparent; }
+.mypage .passengers .file_attach { margin:5px 0 0; color:#666; background-color:#F3F3F3; }
+.mypage .passengers .file_attach .file label { display:block; font-size:12px; padding:10px; color:#333333; background-color:#D7D7D9; }
+.mypage .passengers .file_attach .file label:before { content:""; display:block; float:left; margin:0 5px 0 0; width:14px; height:14px; border-radius:10px; border:1px solid #CCCCCC; background-color:#FFF; }
+.mypage .passengers .file_attach .messeage { padding:10px; font-size:10px; }
+.mypage .passengers .file_attach .messeage b { color:#9F6247; }
+.mypage .passengers .client_contact .table { margin:5px 0; border:0; }
+.mypage .passengers .client_contact .table th { padding:5px 0; width:100px; font-size:13px; line-height:30px; color:#333; vertical-align:middle; border:0; border-top:1px solid #BDBEBF; background-color:transparent; }
+.mypage .passengers .client_contact .table td { padding:5px 0; font-size:13px; line-height:30px; color:#333; border:0; border-top:1px solid #BDBEBF; background-color:transparent; }
+.mypage .passengers .client_contact .agreement { padding:9px; font-size:13px; border:1px solid #A6A6A6; background-color:#C3C3C3; overflow:hidden; }
+.mypage .passengers .client_contact .agreement .aside { float:left; }
+.mypage .passengers .client_contact .agreement .bside { float:right; }
+.mypage .passengers .client_contact .agreement .aside p:before { content:""; display:block; float:left; margin:8px 5px 0 0; width:2px; height:2px; background-color:#111; }
+.mypage .passengers .client_contact .agreement label { display:block; line-height:16px; }
+.mypage .passengers .client_contact .agreement label:before { content:""; float:left; display:block; margin:0 5px 0 0; width:16px; height:16px; background:url("http://img.modetour.co.kr/ModeLiveBooking/mobile/ico_mypage_chk.png") no-repeat 0 -32px;  background-size:16px 48px; }
+.mypage .passengers .client_contact .agreement input[type="checkbox"]:checked + label:before { background-position:0 -16px;  }
+.mypage .passengers .client_contact .io_text { background-color:#FFF; }
+.mypage .passengers .request { padding:15px; border:1px solid #BDBEBF; border-top:0; }
+.mypage .passengers .request textarea { width:100%; height:90px; font-size:14px; line-height:130%; color:#666; border:0; background-color:transparent; overflow:hidden; overflow-y:auto; }
+
+.mypage .booking_confirm { padding:10px; }
+.mypage .booking_confirm .table { margin:5px 0 20px; border-top:2px solid #34495E; border-bottom:1px solid #BDBEBF; }
+.mypage .booking_confirm .table.cols th { width:80px; border-left:1px solid #BDBEBF; background-color:#F0F0F0; }
+.mypage .booking_confirm .table.cols td { color:#666; border-right:1px solid #BDBEBF; background-color:#FFFFFF; }
+.mypage .booking_confirm .table.cols th,
+.mypage .booking_confirm .table.cols td { font-size:13px; padding:9px; text-align:left; border-top:1px solid #DDDDDD; }
+.mypage .booking_confirm .table tr.last-child th,
+.mypage .booking_confirm .table tr.last-child td { border-bottom:1px solid #bdbebf;}
+.mypage .booking_confirm .table.cols tr:first-child th,
+.mypage .booking_confirm .table.cols tr:first-child td { border-top:0; }
+.mypage .booking_confirm .table.cols tr.single td { text-align:left; border-left:1px solid #BDBEBF; }
+.mypage .booking_confirm .table.cols tr.single td b { color:#34495E; }
+.mypage .booking_confirm .comments { margin:5px 0 0; border-top:2px solid #34495E; background-color:#FFF; }
+.mypage .booking_confirm .comments .request { padding:10px; border:1px solid #bdbebf; border-top:0 none; }
+.mypage .booking_confirm .comments .request p { font-size:13px; color:#666; }
+
+.mypage .booking_staff { padding:10px; }
+.mypage .booking_staff .table { margin:5px 0 20px; border-top:2px solid #34495E; border-bottom:1px solid #BDBEBF; }
+.mypage .booking_staff .table.cols th { width:80px; border-left:1px solid #BDBEBF; background-color:#F0F0F0; }
+.mypage .booking_staff .table.cols td { color:#666; border-right:1px solid #BDBEBF; background-color:#FFFFFF; }
+.mypage .booking_staff .table.cols th,
+.mypage .booking_staff .table.cols td { font-size:13px; padding:9px; text-align:left; border-top:1px solid #DDDDDD; }
+.mypage .booking_staff .table tr.last-child th,
+.mypage .booking_staff .table tr.last-child td { border-bottom:1px solid #bdbebf;}
+.mypage .booking_staff .table.cols tr:first-child th,
+.mypage .booking_staff .table.cols tr:first-child td { border-top:0; }
+.mypage .booking_staff .table.cols tr.single td { text-align:left; border-left:1px solid #BDBEBF; }
+.mypage .booking_staff .table.cols tr.single td b { color:#34495E; }
+.mypage .booking_staff .function a,
+.mypage .booking_staff .function input[type="button"] { display:inline-block; padding:10px; width:60%; font-weight:bold; font-size:15px; color:#FFF; text-decoration:none; border-radius:5px; border:0; background-color:#34AD70;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.mypage .alert_messeage { background-color:#FFF; }
+.mypage .booking_status .less_info { font-size:12px; border-top:2px solid #BDBDBD; border-bottom:2px solid #BDBDBD; background-color:#F1F1F1; }
+.mypage .booking_status .less_info .subject { border-bottom:1px solid #D7D7D7; }
+.mypage .booking_status .less_info .subject a { position:relative; display:block; padding:15px 35px 15px 10px; color:#676767; text-decoration:none; }
+.mypage .booking_status .less_info .subject a:after { content:""; position:absolute; right:10px; top:50%; display:block; margin:-4px 0 0; width:12px; height:8px;background:url("http://img.modetour.co.kr/ModeMobile/2014/icon/ico_toggle_switch.png") no-repeat 0 -8px; background-size:12px auto; }
+.mypage .booking_status .less_info .number_status { overflow:hidden; }
+.mypage .booking_status .less_info .number { float:left; padding:10px; }
+.mypage .booking_status .less_info .number b { color:#FE4D3D; }
+.mypage .booking_status .less_info .status { float:right; padding:10px; }
+.mypage .booking_status .less_info .status span { display:inline-block; margin:-2px 0 0; padding:2px 10px; color:#FFF; font-size:12px; vertical-align:top; border-radius:5px; }
+.mypage .booking_status .less_info .status span.ok { background-color:#FD4E3D; }
+.mypage .booking_status .less_info .departure { display:none; padding:10px; border-top:1px solid #D7D7D7; }
+.mypage .booking_status .less_info .departure b { color:#FE4D3D; }
+.mypage .booking_status .less_info .aircraft { display:none; padding:10px; color:#656565; border-top:1px solid #D7D7D7; }
+.mypage .booking_status .less_info .aircraft .air { margin:0 10px 0 0; }
+.mypage .booking_status .less_info .aircraft .air:before { content:""; display:inline-block; width:20px; height:10px; background:url("http://img.modetour.co.kr/modemobile/2014/icon/ico_categories.png") no-repeat -25px 0; background-size:100px auto; overflow:hidden; }
+.mypage .booking_status .less_info .aircraft .user:before { content:""; display:inline-block; width:20px; height:12px; background:url("http://img.modetour.co.kr/modemobile/2014/icon/ico_categories.png") no-repeat -50px 0; background-size:100px auto; overflow:hidden; }
+.mypage .booking_status .less_info.active .subject a:after {
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+.mypage .booking_status .less_info.active .departure,
+.mypage .booking_status .less_info.active .aircraft { display:block; }
+.mypage .booking_status .less_info+.notify_messages { background-color:#FFF; }
+.mypage .booking_status .schedule { background-color:#FFF; }
+.mypage .booking_status .tour_cost { padding:10px 35px 10px 10px; }
+.mypage .booking_status .tour_cost:first-child { padding-bottom:15px; background:url("http://img.modetour.co.kr/modemobile/2014/bg/bg_booking_status_cost.png") repeat-x 0 100%; background-size:5px auto; }
+.mypage .booking_status .tour_cost .subject { position:relative; }
+.mypage .booking_status .tour_cost .subject .aside { font-size:14px; color:#2A2A2A; }
+.mypage .booking_status .tour_cost .subject .bside { font-size:20px; color:#292929; }
+.mypage .booking_status .tour_cost .subject a:after { content:"."; clear:both; display:block; height:0; overflow:hidden; }
+.mypage .booking_status .tour_cost .subject.switch:after { content:""; position:absolute; right:-25px; top:50%; margin:-7px 0 0; width:14px; height:14px; background:url("http://img.modetour.co.kr/modemobile/2014/icon/ico_booking_status_cost.png") no-repeat 0 0; background-size:14px auto; }
+.mypage .booking_status .tour_cost .sub_list { display:none; font-size:12px; color:#666; }
+.mypage .booking_status .tour_cost .sub_list li { clear:both; margin:2px 0; padding:0 0 0 5px; overflow:hidden; }
+.mypage .booking_status .tour_cost .sub_list li .aside:before { content:""; display:inline-block; margin:3px 3px 0 0; width:5px; height:5px; border-left:1px solid #666; border-bottom:1px solid #666; vertical-align:top; }
+.mypage .booking_status .tour_cost .aside { float:left; }
+.mypage .booking_status .tour_cost .bside { float:right; }
+.mypage .booking_status .total_cost { padding:10px 35px 10px 10px; font-size:20px; color:#FD3600; text-align:right; border-top:1px solid #F1654C; border-bottom:1px solid #F1654C; background-color:#FFE5E6; overflow:hidden; }
+.mypage .booking_status .total_cost:before { float:left; content:"합계"; font-size:20px; color:#333; }
+.mypage .booking_status .payment_info { padding:10px 10px 0; font-size:13px; }
+.mypage .booking_status .payment_info li { color:#656565; }
+.mypage .booking_status .payment_info li b { color:#2A86B7; }
+.mypage .booking_status .payment_info li:before { content:""; display:inline-block; margin:7px 3px 0 0; width:3px; height:3px; vertical-align:top; border-radius:3px; background-color:#2A86B7; overflow:hidden; }
+.mypage .booking_status .warning { position:relative; margin:10px; padding:10px 10px 10px 30px; font-size:12px; background-color:#F0F0F0; }
+.mypage .booking_status .warning:before { content:""; position:absolute; left:10px; top:10px; width:15px; height:15px; background:url("http://img.modetour.co.kr/modemobile/2014/icon/ico_booking_status_notify.png") no-repeat 0 0; background-size:15px auto; }
+.mypage .booking_status .warning b { color:#FF3500; }
+.mypage .booking_status .schedule { }
+.mypage .booking_status .schedule dt { border-top:1px solid #717880; }
+.mypage .booking_status .schedule dt a { position:relative; display:block; padding:15px 10px; font-size:12px; color:#FFF; text-decoration:none; background-color:#8A9199; }
+.mypage .booking_status .schedule dt a:after { content:""; position:absolute; right:10px; top:50%; display:block; margin:-5px 0 0; width:12px; height:8px;background:url("http://img.modetour.co.kr/ModeMobile/2014/icon/ico_toggle_switch.png") no-repeat 0 0; background-size:12px auto; }
+.mypage .booking_status .etc_link { width:100%; border:1px solid #757C84; border-left:0; border-right:0; background-color:#8A9199; overflow:hidden; }
+.mypage .booking_status .etc_link ul { display:table; width:100%; }
+.mypage .booking_status .etc_link li:first-child { width:30%; }
+.mypage .booking_status .etc_link li { position:relative; display:table-cell; padding:10px 15px 10px 5px; width:35%; border-right:1px solid #757C84; vertical-align:middle;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.mypage .booking_status .etc_link li a { position:relative; display:block; padding:5px; font-size:12px; color:#FFF; text-decoration:none; }
+.mypage .booking_status .etc_link li a.online { font-size:12px; }
+.mypage .booking_status .etc_link li a:after { content:""; position:absolute; right:-5px; top:50%; display:block; margin:-5px 0 0; width:12px; height:8px;background:url("http://img.modetour.co.kr/ModeMobile/2014/icon/ico_toggle_switch.png") no-repeat 0 0; background-size:12px auto; }
+.mypage .booking_status .notify_messages { margin:0; padding:10px; font-size:12px; color:#666666; }
+
+
+/* booking */
+.booking .passenger_input .selected_item { padding:10px; background-color:#FFF; }
+.booking .passenger_input .selected_item:after { content:""; clear:both; display:block; overflow:hidden; }
+.booking .passenger_input .selected_item .photo { float:left; width:140px; height:140px; }
+.booking .passenger_input .selected_item .photo img { width:100%; height:100%; vertical-align:top; }
+.booking .passenger_input .selected_item .subject { margin:0 0 0 150px; font-size:13px; color:#909090; }
+.booking .passenger_input .selected_item .info { margin:5px 0 0 150px; padding:10px; font-size:13px; color:#333; border:1px solid #DEDEDE; background-color:#F3F3F3; }
+.booking .passenger_input .selected_item .info li b { display:inline-block; width:50px; }
+.booking .passenger_input .contents dt { position:relative; clear:both; padding:15px 42px 15px 15px; font-size:12px; border-top:1px solid #D9D9D9; background-color:#9E9E9E; overflow:hidden; }
+.booking .passenger_input .contents dt:after { content:""; position:absolute; top:50%; right:15px; display:block; margin:-6px 0 0; width:8px; height:13px; background:url("http://img.modetour.co.kr/ModeMobile/2014/icon/ico_package.png") no-repeat -100px -50px; background-size:400px auto;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	transform:rotate(-90deg);
+}
+.booking .passenger_input .contents dt.active:after {
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+	transform:rotate(90deg);
+}
+.booking .passenger_input .contents dt a { display:block; color:#FFF; text-decoration:none; }
+.booking .passenger_input .contents dt a:after { content:""; clear:both; display:block; overflow:hidden; }
+.booking .passenger_input .contents dt a .aside { float:left; font-size:14px; }
+.booking .passenger_input .contents dt a .bside { float:right; font-size:16px; color:#FFF94D; }
+.booking .passenger_input .contents dt a b { color:#ACFF13; }
+.booking .passenger_input .contents dl dd { display:none; color:#666; border:1px solid #BDBEBF; border-top:0; border-bottom:0; background-color:#FFF; }
+.booking .passenger_input .contents dl dd:last-child {  border-bottom:1px solid #bdbebf; }
+.booking .passenger_input .contents dl dd a.info { margin:3px 0 0; }
+.booking .passenger_input .contents dl dd .notify { padding:10px; color:#34495E; }
+.booking .passenger_input .contents dl dd .notify p { padding:8px 0 0; font-size:11px; color:#BA543B; text-align:right; }
+.booking .passenger_input .contents dl dd .notify p:first-child { padding:0 0 8px; text-align:left; border-bottom:1px solid #E2E2E2; }
+.booking .passenger_input .contents dl dd .table { margin:-10px 0 0; padding:0 10px; }
+.booking .passenger_input .contents dl dd .table.cols th { width:80px; }
+.booking .passenger_input .contents dl dd .table.cols td { color:#666; }
+.booking .passenger_input .contents dl dd .table.cols th,
+.booking .passenger_input .contents dl dd .table.cols td { font-size:13px; padding:9px 0; text-align:left; border-top:1px solid #DDDDDD; }
+.booking .passenger_input .contents dl dd .table tr.last-child th,
+.booking .passenger_input .contents dl dd .table tr.last-child td { border-bottom:1px solid #bdbebf;}
+.booking .passenger_input .contents dl dd .table.cols tr:first-child th,
+.booking .passenger_input .contents dl dd .table.cols tr:first-child td { border-top:0; }
+.booking .passenger_input .contents .cost_option { border-bottom:1px solid #E1E1E1; background-color:#FFF; overflow:hidden;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.booking .passenger_input .contents .cost_option .passenger { position:relative; float:left; padding:5px 33px 5px 5px; width:33%; text-align:center;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.booking .passenger_input .contents .cost_option .passenger:first-child { width:34% !important; }
+.booking .passenger_input .contents .cost_option .passenger .gubun { font-size:12px; }
+.booking .passenger_input .contents .cost_option .passenger .count input { width:100%; font-size:20px; text-align:center; vertical-align:top; border:0; background-color:#FFF; }
+.booking .passenger_input .contents .cost_option .passenger .cost { font-size:11px; }
+.booking .passenger_input .contents .cost_option .passenger button { position:absolute; right:-2px; margin:0; padding:0; width:30px; height:51%; font-size:18px; line-height:1em; color:#5D5D5D; border:1px solid #D3D3D3; border-bottom:0; background-color:#F6F6F6;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.booking .passenger_input .contents .cost_option .passenger button:hover,
+.booking .passenger_input .contents .cost_option .passenger button:focus,
+.booking .passenger_input .contents .cost_option .passenger button:active { color:#FFF; border-color:#D3D3D3; background-color:#D3D3D3; }
+.booking .passenger_input .contents .cost_option .passenger button.plus { top:-1px; }
+.booking .passenger_input .contents .cost_option .passenger button.minus { bottom:0; }
+.booking .passenger_input .contents .product_cost { padding:10px; font-size:11px; color:#2D2D2D; background-color:#F7F7F7; }
+.booking .passenger_input .contents .product_cost p:before { content:""; display:inline-block; margin:1px 3px 0 0; width:12px; height:11px; vertical-align:top; }
+.booking .passenger_input .contents .product_cost p:first-child { color:#42A3E8; }
+.booking .passenger_input .contents .product_cost p:first-child:before { content:""; background:url("http://img.modetour.co.kr/modemobile/2014/icon/ico_package.png") no-repeat -350px -100px; background-size:400px auto; }
+.booking .passenger_input .contents .sex:after { content:""; clear:both; display:block; overflow:hidden; }
+.booking .passenger_input .contents .sex .aside { float:left; padding:8px 0 0; }
+.booking .passenger_input .contents .sex .aside .io_radio { margin:0 5px 0 0; }
+.booking .passenger_input .contents .sex .bside { float:right; }
+.booking .passenger_input .contents .sex .selector { display:inline-block; vertical-align:top; }
+.booking .passenger_input .contents .file_attach { margin:5px 0 0; color:#666; }
+.booking .passenger_input .contents .file_attach .file label { display:block; }
+.booking .passenger_input .contents .file_attach .file label:before { content:""; display:block; float:left; margin:0 5px 0 0; width:14px; height:14px; border-radius:10px; border:1px solid #CCCCCC; background-color:#FFF; }
+.booking .passenger_input .contents .passenger_info { padding:10px; }
+.booking .passenger_input .contents .passenger_info .notify { padding:0; border:0; }
+.booking .passenger_input .contents .passenger_info .notify p:first-child { padding:0 0 8px; font-size:11px; color:#BA543B; text-align:right; border:0; }
+.booking .passenger_input .contents .passenger_info .client_list dt { padding:0; border-top:2px solid #9E9E9E; background-color:#E2E2E2; }
+.booking .passenger_input .contents .passenger_info .client_list dt:after { content:none; }
+.booking .passenger_input .contents .passenger_info .client_list dt a { display:block; position:relative; padding:10px 30px 10px 15px; color:#333; z-index:1; }
+.booking .passenger_input .contents .passenger_info .client_list dt a:after { content:""; position:absolute; right:15px; top:50%; display:block; margin:-2px 0 0; width:0px; height:0px; border-width:5px; border-style:solid; border-color:transparent transparent #333 transparent; }
+.booking .passenger_input .contents .passenger_info .client_list dt.active a:after { content:""; position:absolute; right:15px; top:50%; display:block; margin:-7px 0 0; width:0px; height:0px; border-width:5px; border-style:solid; border-color:#333 transparent transparent transparent; }
+.booking .passenger_input .contents .passenger_info .client_list dt a b { color:#333; }
+.booking .passenger_input .contents .passenger_info .client_list dt a b:after { content:" | "; color:#333; }
+.booking .passenger_input .contents .passenger_info .client_list dd { border-color:#E2E2E2; }
+.booking .passenger_input .contents .passenger_info .client_list dd .table { margin:0; padding:0; }
+.booking .passenger_input .contents .passenger_info .client_list dd .table th,
+.booking .passenger_input .contents .passenger_info .client_list dd .table td { padding:9px; }
+.booking .passenger_input .contents .passenger_info .client_list dd .table td .outline { position:relative; float:left; padding:0 2px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.booking .passenger_input .contents .passenger_info .client_list dd .table td .outline:first-child { padding:0 2px 0 0; width:30%; }
+.booking .passenger_input .contents .passenger_info .client_list dd .table td .outline:first-child:before { content:none; }
+.booking .passenger_input .contents .passenger_info .client_list dd .table td .outline:last-child { padding:0 0 0 2px; width:70%;}
+.booking .passenger_input .contents .passenger_info .client_list .equal { padding:9px 9px 0; text-align:right; }
+.booking .passenger_input .contents .partner_find { padding:10px; font-size:12px; color:#6D6D6D; }
+.booking .passenger_input .contents .partner_find .content strong { display:block; margin:0 0 5px; color:#282828; }
+.booking .passenger_input .contents .partner_find .content table { margin:5px 0 0; width:100%; border-padding:0; border-spacing:0; border-top:1px solid #DBDBDB; border-left:1px solid #DBDBDB; }
+.booking .passenger_input .contents .partner_find .content table th,
+.booking .passenger_input .contents .partner_find .content table td { padding:10px; color:#555; border-bottom:1px solid #DBDBDB; border-right:1px solid #DBDBDB; }
+.booking .passenger_input .contents .partner_find .content table th { width:80px; background-color:#F8F8F8; }
+.booking .passenger_input .contents .partner_find .content table td a { color:#555; text-decoration:none; }
+.booking .passenger_input .contents .partner_find .no_partner .function button { width:60%; color:#FFF; background-color:#A5A5A5; }
+.booking .passenger_input .contents .partner_find .is_partner .function .aside { width:50%; }
+.booking .passenger_input .contents .partner_find .is_partner .function .bside { width:50%; }
+.booking .passenger_input .contents .partner_find .is_partner .function button { color:#FFF; background-color:#A5A5A5; }
+.booking .passenger_input .contents .partner_find .is_partner .function button.enable { background-color:#7CC200; }
+.booking .passenger_input .function { padding:10px 8px; }
+.booking .passenger_input .function:after { content:""; clear:both; display:block; overflow:hidden; }
+.booking .passenger_input .function .aside { float:left; padding:0 2px; width:40%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.booking .passenger_input .function .aside button { color:#787878; background-color:#DBDBDB; }
+.booking .passenger_input .function .bside { float:right; padding:0 2px; width:60%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.booking .passenger_input .function .bside button { color:#FFF; background-color:#7CC200; }
+.booking .passenger_input .function button { width:100%; height:30px; font-size:14px; border:0; border-radius:5px; }
+
+.complete_message { padding:10px; }
+.complete_message .thanks { margin:0 0 20px; font-size:12px; color:#8F8F8F; text-align:center; }
+.complete_message .thanks strong { display:block; padding:30px 0 10px; font-size:30px; color:#2D2D2D; }
+.complete_message .booking_info h2 { font-size:14px; color:#2A2A2A; }
+.complete_message .booking_info h2:before { content:""; display:inline-block; margin:3px 3px 0 0; width:12px; height:8px; vertical-align:top; background:url("http://img.modetour.co.kr/modemobile/2014/icon/ico_bullet_modetour.png") no-repeat 0 0; background-size:12px auto; overflow:hidden; }
+.complete_message .content { position:relative; margin:5px 0 20px; border-top:2px solid #6C6C6C; overflow:hidden; }
+.complete_message .content table { margin:-1px 0 0; width:100%; font-size:13px; border-padding:0; border-spacing:0; border-top:1px solid #DBDBDB; border-left:1px solid #DBDBDB; }
+.complete_message .content table th,
+.complete_message .content table td { padding:10px; color:#555; border-bottom:1px solid #DBDBDB; border-right:1px solid #DBDBDB; }
+.complete_message .content table th { width:80px; color:#282828; background-color:#F8F8F8; }
+.complete_message .content table td { background-color:#FFF; }
+.complete_message .content table td a { color:#555; text-decoration:none; }
+.complete_message .function { padding:10px 8px; }
+.complete_message .function:after { content:""; clear:both; display:block; overflow:hidden; }
+.complete_message .function .aside { float:left; padding:0 2px; width:40%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.complete_message .function .aside button { color:#787878; background-color:#DBDBDB; }
+.complete_message .function .bside { float:right; padding:0 2px; width:60%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.complete_message .function .bside button { color:#FFF; background-color:#7CC200; }
+.complete_message .function button { width:100%; height:30px; font-size:14px; border:0; border-radius:5px; }
+
+
+/* [S] 2014.12.02 결제 */
+.payments { background-color:#e3e4e6; }
+.payments h3.bullet { margin:10px 0 0; font-weight:bold; font-size:13px; }
+.payments h3.bullet:before { content:""; display:block; float:left; margin:0 5px 0 0; width:16px; height:16px; background:url("http://img.modetour.co.kr/modelivebooking/mobile/ico_mypage_set.png") no-repeat 0 -84px; background-size:17px auto; }
+.payments table { width:100%; box-sizing:border-box; }
+.payments input[type="text"],
+.payments input[type="tel"],
+.payments input[type="email"] { width:100%; height:30px; border:1px solid #ddd; border-radius:5px; background-color:rgba(255,255,255,1); padding-left:7px; box-sizing:border-box; }
+.payments .select label { display:block; position:relative; font-size:12px; line-height:21px; }
+.payments .select label:before {
+	content:'';
+	margin:0 5px 0 0;
+	display:block;
+	float:left;
+	width:16px;
+	height:16px;
+	border-radius:4px;
+	border:1px solid #ccc;
+}
+.payments .select label:after {
+	content: '';
+	display:block;
+	width:7px;
+	height:4px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	border: 2px solid #0065b3;
+	border-top: none;
+	border-right: none;
+	background: transparent;
+	opacity:0;
+	-webkit-transform: rotate(-45deg);
+    	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+ }
+.payments .select label span.addinfo { color:#999; }
+.payments .select input[type="radio"]:checked + label:before,
+.payments .select input[type="checkbox"]:checked + label:before { border-color:#0065b3;}
+.payments .select input[type="radio"]:checked + label:after,
+.payments .select input[type="checkbox"]:checked + label:after{ opacity:1; }
+.payments .total_price { margin:10px 0; position:relative; display:table; width:100%; box-sizing:border-box; }
+.payments .total_price .cols { padding:10px; border:1px solid #e5a8aa; background-color:#f2eae9; display:table-cell; width:50%; font-size:15px; box-sizing:border-box; }
+.payments .total_price .cols.th { border-right:0; }
+.payments .total_price .cols.td { text-align:right; }
+.payments .total_price .cols.td.none { border-left:0; }
+.payments .total_price .cols.td b { color:#f53036; font-weight:bold; font-family:verdana; letter-spacing:-1px;  }
+.payments .territory { padding:10px 5% 0; }
+.payments .territory .vowel { background-color:#fff; }
+.payments .territory .caption { margin-bottom:5px; font-size:11px; color:#f53036; text-align:right; }
+.payments .territory .vowel .select { padding:10px; border:1px solid #bfbfbf; border-top:0; border-bottom:0; overflow:hidden; }
+/* .payments .territory .vowel .select li { float:left; margin:0 0 0 14px; } */
+.payments .territory .vowel .select li { float:left; margin:0 14px 0 0; height: 21px; }
+.payments .territory .vowel .select li:first-child{margin-left:0;}
+.payments div.table { position:relative; margin:5px 0 0; border-top:2px solid #34495e; }
+.payments div.table table.data th,
+.payments div.table table.data td { padding:9px; font-size:13px; color:#666; border-top:1px solid #ddd; box-sizing:border-box; }
+.payments div.table table.data th { background-color:#f0f0f0; border-left:1px solid #bdbebf; }
+.payments div.table table.data td { border-right:1px solid #bdbebf; }
+.payments div.table table.data tr:first-child th,
+.payments div.table table.data tr:first-child td { border-top:0; }
+.payments div.table table.data tr:last-child th,
+.payments div.table table.data tr:last-child td { border-bottom:1px solid #bdbebf; }
+.payments div.table table tr.single td { text-align:left; color:#34495e; border-left:1px solid #bdbebf; }
+.payments div.table table tr.total_pay td { padding:10px; font-size:15px; text-align:right; color:#333; border:1px solid #e5a8aa; background-color:#f2eae9; }
+.payments div.table table tr.total_pay:last-child td { border-color:#e5a8aa; }
+.payments div.table table tr.total_pay td b { font-weight:bold; font-family:verdana; letter-spacing:-1px; color:#f53036; }
+.payments .selector { padding:0; border-radius:5px;}
+.payments table caption { display:none; }
+.payments .input_payment { display:none; background-color:#fff; box-sizing:border-box; }
+.payments .input_payment table th,
+.payments .input_payment table td { padding:5px 5% 10px; font-size:12px; border:1px solid #bdbebf; border-top:0; border-bottom-color:#d9d9d9; box-sizing:border-box; }
+.payments .input_payment table tbody th { border-right:0; }
+.payments .input_payment table tbody tr:first-child th,
+.payments .input_payment table tbody tr:first-child td { border-top:1px solid #bdbebf; }
+.payments .input_payment table tbody tr:last-child th,
+.payments .input_payment table tbody tr:last-child td { border-bottom-color:#bdbebf; }
+.payments .input_payment table tbody td { border-left:0; }
+.payments .input_payment table tbody td p { color:#666; text-align:right; }
+.payments #card_box.input_payment  table tr:first-child th,
+.payments #card_box.input_payment  table tr:first-child td { border-color:#99b5d7; background-color:#ebf1f8; }
+.payments #card_box.input_payment  table tr:first-child td label { display:block; font-weight:bold; border:1px solid #99b5d7; border-radius:5px; background:#fff; }
+.payments #card_box.input_payment  table tr:first-child td label input { padding:0; width:80%; color:#000; text-align:right; border:0 none; }
+.payments #card_box.input_payment  table tr:first-child td p{ font-size:11px; }
+
+.payments #samsungpay_box.input_payment  table tr:first-child th,
+.payments #samsungpay_box.input_payment  table tr:first-child td { border-color:#99b5d7; background-color:#ebf1f8; }
+.payments #samsungpay_box.input_payment  table tr:first-child td label { display:block; font-weight:bold; border:1px solid #99b5d7; border-radius:5px; background:#fff; }
+.payments #samsungpay_box.input_payment  table tr:first-child td label input { padding:0; width:80%; color:#000; text-align:right; border:0 none; }
+.payments #samsungpay_box.input_payment  table tr:first-child td p{ font-size:11px; }
+
+.payments .input_payment .email:after{ content:''; display:block; clear:both; }
+.payments .input_payment .email .email_input { padding-left:24px; position:relative; float:left; width:60%; box-sizing:border-box; }
+.payments .input_payment .email .email_input:before { position:absolute; top:4px; left:5px; width:12px; font-size:14px; content:'@'; text-align:center; }
+.payments .input_payment .email .email_input:first-child { padding-left:0; width:40%; }
+.payments .input_payment .email .email_input:first-child:before { content:none; }
+.payments .input_payment .email .email_input.one { width:100%; }
+.payments .input_payment .cellphone { overflow:hidden; }
+.payments .input_payment .cellphone select { padding:0 9px 0 0; }
+.payments .input_payment .cellphone .cols { position:relative; padding-right:10px; float:left; display:block; width:33.333%; box-sizing:border-box; }
+.payments .input_payment .cellphone .cols:after{ position:absolute; right:2px; top:50%; width:5px; height:1px; display:block; background:#666; content:''; }
+.payments .input_payment .cellphone .cols:last-child { padding:0; }
+.payments .input_payment .cellphone .cols:last-child:after { content:none; }
+.payments .function { margin:20px 0 0; padding:0 5%; text-align:center; overflow:hidden; }
+.payments .function .cols { float:left; width:50%; box-sizing:border-box; }
+.payments .function .cols:first-child { border-right:2px solid transparent;}
+.payments .function .cols:last-child { border-left:2px solid transparent;}
+.payments .function .cols.cols4 { width:40%; }
+.payments .function .cols.cols6 { width:60%; }
+.payments .function a,
+.payments .function input[type="button"],
+.payments .function button { padding:10px 0; display:inline-block; width:100%; font-weight:bold; font-size:15px; text-align:center; color:#fff; border-radius:5px; border:0 none; box-sizing:border-box; }
+.payments .function a,
+.payments .function input[type="button"]{ padding:10px 50px; background-color:#34ad70;}
+.payments .function button.btn_cancel { background-color:#c2c2c2; color:#7a7a7a; }
+.payments .function button.btn_payment { background-color:#253443; }
+.payments .alert_messeage { position:relative; overflow:hidden; padding:20px 15px 20px 55px; font-size:12px; color:#333; background-color:#fff; }
+.payments .alert_messeage:before { content:""; position:absolute; top:50%; left:15px; display:block; margin:-15px 10px 0 0; width:30px; height:30px; background:url('http://img.modetour.co.kr/modelivebooking/mobile/ico_alert_messeage.png') no-repeat 0 0; background-size:30px 30px; }
+
+.guide_text { padding:15px; display:none; background:#f0f0f0; border-top:1px solid #bab5b5;}
+.guide_text p { font-size:10px; color:#666666; margin-bottom:20px; }
+.guide_text p.title { font-size:11px; color:#333333; margin-bottom:5px; }
+.guide_text > ul > li { position:relative; padding-left:6px; color:#666666; font-size:9px; line-height:13px; margin-bottom:6px; }
+.guide_text > ul > li:before { position:absolute; top:5px; left:0; display:block; width:1px; height:1px; background:url("http://img.modetour.co.kr/ModeLiveBooking/mobile/liststyle_disc_gray_s.png") no-repeat; content:""; }
+
+@media screen and (max-width:400px){
+	.passenger_input .selected_item .photo { width:90px; height:90px; }
+	.passenger_input .selected_item .subject { margin:0 0 0 100px; font-size:13px; }
+	.passenger_input .selected_item .info { margin:5px 0 0 100px; font-size:11px; }
+
+	.selector:after { right:5px; }
+	.selector select { font-size:11px; }
+	.payments .input_payment table th, .payments .input_payment table td { padding:5px 3% 10px; }
+}
+
+
+ /* [E]2014.12.02 결제 */
+
+
+/* 2016-03-08 결제 방식 - 투어 마일리지 추가 : 김선영 */
+
+#mileage_box{border:1px solid #bdbebf;}
+#mileage_box a{color:#000;text-decoration:none;}
+#mileage_box .color-1,.auth .color-1{color:#34ad70;}
+#mileage_box .row{padding:15px 10px;}
+.mileage-owner{border-bottom:1px solid #bdbebf;}
+.mileage-owner .desc{margin-top:13px;font-size:12px;color:#666;line-height:1.3;}
+#mileage_box .mileage-use{padding:20px 10px;}
+.mileage-input{position:relative;margin-top:20px;padding-left:80px;}
+.mileage-input:first-child{margin-top:0;}
+.mileage-input>*{font-size:14px;}
+.mileage-input *{line-height:100%;}
+.btn-max-desc a,.btn-max-desc .ico-desc{display:inline-block;vertical-align:middle;}
+.mileage-input>dt{position:absolute;top:50%;left:0;margin-top:-7px;}
+.btn-max-desc .ico-desc{position:relative;margin-top:-2px;width:17px;height:16px;background:url("http://img.modetour.co.kr/ModeLiveBooking/mobile/ico_mypage_set.png") -3px -367px no-repeat;background-size:23px auto;z-index:2;}
+.btn-max-desc .ico-desc:after{display:none;}
+.btn-max-desc.is-open .ico-desc:after{display:block;position:absolute;top:23px;left:1px;width:13px;height:8px;background:url("http://img.modetour.co.kr/ModeLiveBooking/mobile/obj_pointer.gif") no-repeat;background-size:13px 8px;content:"";}
+.mileage-input .floater-desc{display:none;position:absolute;top:28px;left:0;padding:15px;width:230px;background-color:#fff;border:1px solid #bdbebf;z-index:1;}
+.mileage-input>dd{text-align:right;}
+.mileage-input .floater-desc .btn-close{display:block;position:absolute;top:10px;right:10px;width:12px;height:12px;overflow:hidden;text-indent:-9999em;background:url("http://img.modetour.co.kr/ModeLiveBooking/mobile/btn_close01.png") no-repeat;background-size:12px 12px;}
+.mileage-input .floater-desc dt{margin-bottom:10px;font-size:13px;font-weight:600;color:#333;}
+.mileage-input .floater-desc dd{font-size:12px;color:#666;line-height:1.4;}
+.mileage-input .frame{padding:7px;border:1px solid #ccc;border-radius:5px;}
+#mileage_box b{font-weight:600;}
+.mileage-desc{font-size:12px;color:#666;background-color:#f2f2f2;}
+.mileage-desc dt{margin-bottom:5px;color:#000;}
+
+.auth{text-align:center;}
+.auth.function .cols{display:inline-block;float:none;}
+.auth .h{margin:10px 0 20px;}
+.auth .h dt{margin-bottom:10px;font-size:15px;font-weight:600;color:#333;}
+.auth .h dd{font-size:13px;color:#666;line-height:1.6;}
+.auth-list{overflow:hidden;}
+.auth-list .list{overflow:hidden;margin-left:-3%;}
+.auth-list li{float:left;width:47%;margin-left:3%;background-color:#fff;border:1px solid #bdbebf;border-radius:5px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.auth-list a{display:block;padding:65px 0 30px;font-size:16px;color:#333;font-weight:600;line-height:100%;text-decoration:none;background:url("http://img.modetour.co.kr/ModeLiveBooking/mobile/ico_auth02.png") center 20px no-repeat;background-size:21px 31px;}
+.auth-list li:first-child a{background:url("http://img.modetour.co.kr/ModeLiveBooking/mobile/ico_auth01.png") center 21px no-repeat;background-size:21px 31px;}
+/* .auth-list input{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);} */
+.section_title .btn-close{display:block;position:absolute;top:50%;right:10px;margin-top:-7px;width:14px;height:14px;overflow:hidden;text-indent:-9999em;background:url("http://img.modetour.co.kr/ModeLiveBooking/mobile/btn_close02.png") no-repeat;background-size:14px 14px;}
+
+.is-active-payment{background-color:#e3e4e6;}
+.is-active-payment header,.is-active-payment footer{display:none;}
+.is-active-payment .section_title{top:0;}
+.is-active-payment #body_section{padding-top:40px;}
+
+.mileage-input .frame input{width:100%;padding:7px;padding-right:38px;text-align:right;color:#34ad70;font-weight:600;border:none;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.mileage-input .frame .desc{position:absolute;top:50%;margin-top:-7px;right:7px;}
+
+/* 2017-03-27 예약페이지 추가 : 박현경 */
+.mypage .tab_content{display: none;}
+.mypage .my-booking-list{padding: 10px 0;}
+
+/* 탭 */
+.mypage .booking_tabs{height: 40px;}
+.mypage .booking_tabs li{width: 20%; float: left; background: #e3e4e6; text-align: center; height: 40px; line-height: 40px; border-left: 1px #d5d5d5 solid; border-bottom: 2px #d5d5d5 solid; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box;}
+.mypage .booking_tabs li:first-child{border-left: 0;}
+.mypage .booking_tabs li.on{background: #FFF; border-bottom: 2px #34ad70 solid;}
+.mypage .booking_tabs li.on a{color: #34ad70;}
+.mypage .booking_tabs li a{font-size: 12px; color: #222222; text-decoration: none; display: inline-block; width: 100%; height: 100%; font-weight: bold; float: left;}
+/* 스와이퍼 */
+/*.mypage .booking_tabs{background: #e3e4e6; position: relative; border-bottom: 1px #d9d9d9 solid;}
+.mypage .booking_tabs .swiper-container{width: 85%; margin: 0 auto; }
+.mypage .booking_tabs .swiper-slide{background: none; text-align: center; height: 40px; line-height: 40px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box;}
+.mypage .booking_tabs .swiper-slide.on{border-bottom: 2px #3ba67a solid;}
+.mypage .booking_tabs .swiper-slide a{font-size: 13px; color: #222222; text-decoration: none; display: inline-block; width: 100%; height: 100%; font-weight: bold;}
+.mypage .booking_tabs .swiper-slide.on a{color: #3ba67a;}
+.mypage .booking_tabs .swiper-button-prev{background:url("http://img.modetour.com/ModeLiveBooking/mobile/2017/ico_tab_arrow.png") no-repeat;background-size:20px auto; width: 10px; height: 16px; }
+.mypage .booking_tabs .swiper-button-next{background:url("http://img.modetour.com/ModeLiveBooking/mobile/2017/ico_tab_arrow.png") -10px 0 no-repeat;background-size:20px auto; width: 10px; height: 16px;} */
+
+.mypage .booking_history .esta .booking_detail:before{content:''; width: 0; height: 0;}
+.mypage .booking_history .esta .title{font-size: 15px; color: #333333; font-weight: bold; letter-spacing: -0.05em;}
+.mypage .booking_history .esta .booking_detail .date{font-size: 12px; color: #333333; position: relative; padding-left: 5px;}
+.mypage .booking_history .esta .booking_detail .date:before{content: '';display: inline-block; width: 2px; height: 2px; background: #666666; position: absolute; left: 0; top: 12px;}
+.mypage .booking_history .esta .date span{color: #666666;}
+.mypage .booking_history .esta .total_cost{text-align: left; padding: 0; border: none; font-size: 13px; font-weight: bold; position: relative; padding-left: 14px;}
+.mypage .booking_history .esta .total_cost:before{content:''; display: inline-block; background:url("http://img.modetour.com/ModeLiveBooking/mobile/2017/ico_money.png") no-repeat; background-size: 11px auto; width: 11px; height: 13px; position: absolute; left: 0; top: 3px;}
+.mypage .booking_history .esta .total_cost strong{font-weight: bold; color: #f53036;}
+
+/* Payco 간편결제 */
+.payco_box { background-color:#fff; padding:1em 5%; }
+.payco_box h4 { margin-bottom:1em; font-weight:bold; font-size:14px; }
+.payco_box h3 { margin-top:0.8em; font-size:13px; }
+.payco_box label { margin-bottom:5px; display:block; width:100%; font-size:0; }
+.payco_box input[type=text] { display:inline-block; width:80%; font-size:13px; color:#000; }
+.payco_box .krw { padding-left:5px; display:inline-block; width:20%; font-size:13px ; text-align:left; box-sizing:border-box; }
+.payco_box .note { font-size:12px; }
+.payco_box .note strong { color:#ff0000; }
+@media only all and (max-width:320px){
+	.mypage .booking_tabs .swiper-slide a{font-size: 11px;}
+}
+
+/*마이페이지 쿠폰 사용조건보기 버튼*/
+.my_coupon .coupon_list .gray-bt{position: absolute; top:8%; right: 7.3%;}
+.my_coupon .coupon_list .gray-bt a{display: inline-block; line-height: 18px; padding:0 6px; text-decoration: none; font-size:9px; color:#fff; background:#464b55;}
+
+/*사용조건보기 팝업*/
+.gray-bg{background-color: #f0f0f0;}
+.coupon-apply-layer .contents.terms{border:0;}
+.coupon-apply-layer .terms .info .info-box{text-align:center; background: #00c0a7; color:#fff; padding:15px 5px;}
+.coupon-apply-layer .terms .info .info-box strong{display: inline-block; padding-bottom: 8px; font-size: 15px;}
+.coupon-apply-layer .terms .info .info-box .sub-txt{text-align:center; color:#fff; font-size: 12px;}
+.coupon-apply-layer .terms .terms-area{background: #F0F0F0; padding-bottom:5px;}
+.coupon-apply-layer .terms .cont-box{margin-bottom: 10px; background: #fff; }
+.coupon-apply-layer .terms .cont-box .header{padding:16px; border-top: 1px solid #dadada; border-bottom: 1px solid #dadada; }
+.coupon-apply-layer .terms .cont-box .header h2{font-size: 15px;}
+.coupon-apply-layer .terms .cont-box .cont{ border-bottom: 1px solid #dadada; }
+.coupon-apply-layer .terms .terms-list{padding:15px;  font-size: 12px; color:#888;}
+.coupon-apply-layer .terms .terms-list li{display: table; line-height: 1.5;}
+.coupon-apply-layer .terms .terms-list strong{display: table-cell; color:#333; min-width: 66px; }
+.coupon-apply-layer .terms .terms-list.type li strong{min-width: 42px;}
+.coupon-apply-layer .terms .cont-box .limit{width:125px; height: 33px; line-height: 33px; padding-left:34px; font-size:13px; background:url("http:http://img.modetour.com/ModeMobile/2017/mypage/terms-bg01.png") no-repeat 15px center #ecf3f4; box-sizing: border-box;}
+.coupon-apply-layer .terms .cont-box .limit.type01{background: url("http:http://img.modetour.com/ModeMobile/2017/mypage/terms-bg02.png") no-repeat 15px center #fbeeee;}
+.coupon-apply-layer .terms .header{position: relative;}
+.coupon-apply-layer .terms .header .device-ico{position: absolute; top:15px; left:88px;}
+.device-ico span{display: inline-block; padding: 0px 6px; font-size: 11px; border:1px solid #f76b6b; box-sizing: border-box; margin-right:4px; line-height: 22px;}
+.device-ico span.web{color: #f76b6b}
+.device-ico span.mobileweb{border:1px solid #3a9bd9; color: #3a9bd9}
+.device-ico span.mobileapp{border:1px solid #2aa685; color: #2aa685}
+.coupon-apply-layer .terms .cont-box .arrow{position: absolute; top:20px; right: 3.5%; width: 13px; height: 8px; border: none; background:url("http:http://img.modetour.com/ModeMobile/2017/mypage/terms-arrow.png") no-repeat; background-position-y: -8px; cursor: pointer;}
+.coupon-apply-layer .terms .cont-box .arrow.on{background-position-y: 0;}
+
+/*170906 OK캐쉬백 결제 추가*/
+
+.okcashbag_box{position: relative; margin-top:50px; padding:1em 5%; border: 1px solid #bdbebf;}
+.okcashbag_box h4{    margin-bottom: 1em;  font-weight: bold;  font-size: 14px;}
+
+.okcashbag_box .row{position: relative; padding:0 0 0 100px;margin: 0 0 7px 0; }
+.okcashbag_box .h{position: absolute; left:0; top:5px; font-size: 12px; color: #666; text-align: right;}
+.okcashbag_box .row .h{ width: 94px; }
+.okcashbag_box  input{font-size: 12px;color: #999;}
+.okcashbag_box .row {}
+.okcashbag_box .pw_font{font-size: 11px; color: #666; display: block; margin:8px 0; font-weight: bold;
+    letter-spacing: -0.3px; }
+.okcashbag_box .btn-1{display: inline-block; font-size: 13px; color: #fff; padding:0 20px; height: 35px; line-height: 35px; background-color: #666; text-align: center; text-decoration: none;}
+
+.okcashbag_box  .line{border-bottom: 2px solid #d9d9d9; padding-bottom: 10px;}
+
+.okcashbag_box .row-1{position: relative;  padding:0 0 22px 65px; margin:0 90px 0 0 ; }
+.okcashbag_box .row-1 .p{position: absolute; right:-10px; top:9px; color: #666;font-size: 12px; }
+.okcashbag_box .row-1 input{background-color: #d9d9d9;}
+.okcashbag_box .row-1 input:focus{background:none;}
+.okcashbag_box .pointP{position: absolute; width: 150px; left:65px; bottom:0; font-size: 11.5px; color:#315a98; letter-spacing: -0.25px; }
+
+.okcashbag_box .cashbag-point{position: absolute; font-size: 12px; color: #666; right:-85px; top:6px;}
+
+.okcashbag_box .cashbag-point label{display: block; position: relative; font-size: 12px; line-height: 21px}
+.okcashbag_box .cashbag-point label:before {content:'';margin:0 5px 0 0;display:block;float:left;width:16px;
+	height:16px;	border-radius:4px;	border:1px solid #ccc;}
+.okcashbag_box .cashbag-point label:after {	content: '';display:block;	width:7px;height:4px;	position: absolute;	top: 5px;	left: 5px;	border: 2px solid #0065b3;	border-top: none;	border-right: none;	background: transparent;	opacity:0;	-webkit-transform: rotate(-45deg);    	-ms-transform: rotate(-45deg);	transform: rotate(-45deg); }
+
+.okcashbag_box.cashbag-point  input[type="checkbox"]:checked + label:before{ border-color: #0065b3;}
+.okcashbag_box .cashbag-point  input[type="checkbox"]:checked + label:after{opacity:1;}
+
+.okcashbag_info{position: absolute; right:13px; top:17px; }
+.okcashbag_info a{color: #000; text-decoration: none; display: inline-block; color: #666; font-size: 13px;}
+.okcashbag_info ul li{position: relative; padding-left: 7px;font-size: 13px; line-height: 17px; color: #666; margin-top: 10px;     text-align: justify;}
+.okcashbag_info ul li:after{position: absolute; display: block;content: ""; width: 4px; height: 4px; background-color: #656565; left:-2px; top:6px;} 
+
+.okcashbag_info .floater-desc{display: none; position: absolute; top: 30px; left: -155px;  padding: 15px;  width: 230px;    background-color: #fff;    border: 1px solid #bdbebf;    z-index: 1;}
+
+.okcashbag_info .floater-desc .btn-close{display:block;position:absolute;top:10px;right:10px;width:12px;height:12px;overflow:hidden;text-indent:-9999em;background:url("http://img.modetour.com/ModeLiveBooking/mobile/btn_close01.png") no-repeat;background-size:12px 12px;}
+
+/* 171205 ocb 추가 */
+.payments .input_payment .cashbag_box .cellphone select{padding:0 9px;}
+.cashbag_box .ocb_cell{margin-bottom: 	;}
+.cashbag_box .ocb_txt{padding:15px 2%;}
+.cashbag_box .ocb_txt li{font-size: 11px; line-height: 15px; } 
+.cashbag_box .ocb_btn{text-align: center;	}
+
+#okcashbag_box .ocb_article{padding-top: 	35px;}
+#okcashbag_box .ocb_article .cashbag_box{padding-bottom: 	15px; margin-bottom: 	15px;border-bottom: 2px solid #d9d9d9; }
+
+.ocb_tab{position: absolute;	 left:0; right:0; top:-44px;}
+.ocb_tab ul li 	{float: left;	 width: 	50%;  }
+.ocb_tab ul li 	a{display: block;	width: 	100%; height: 	44px; font-size: 14px; color: #2d2d2d; letter-spacing:-0.025em; line-height: 44px;text-align: center;text-decoration: none; background-image: url(http://img.modetour.com/modemobile/2017/mypage/ocb_off.png); -webkit-background-size: cover; 
+background-size: cover;  border: 1px solid #bdbebf; 
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px; box-sizing: border-box;    background-size: 100% 100%;   }
+.ocb_tab ul li 	a.is-current{background-image: url(http://img.modetour.com/modemobile/2017/mypage/ocb_on.png); }
+.ocb_article .cashbag_box{display: none;	}
+
+.ocb_layerpop{position: absolute;	 top:140px; margin:0 auto; left:0; right:0; width: 80%; background:#fff; border: 1px solid #bdbebf; display: none;	z-index: 	150;	}
+.ocb_layerpop .ocb_layer_in{position: relative;	padding:15px; text-align: center;	}
+.ocb_layerpop .ocb_layer_in h3{font-size: 14px; font-weight: 	bold; color: #000; letter-spacing:-0.025em; margin-bottom: 	15px;}
+.ocb_layerpop .ocb_layer_in p{ font-size: 12px; line-height: 20px; letter-spacing: -0.05em; margin-bottom: 20px;}
+.ocb_layerpop .ocb_layer_btn{display: inline-block;	width: 	33%; height: 35px; line-height: 35px; background: #325a98; color: #fff; font-size: 	12px; text-decoration: 	none; 	}
+.ocb_layerpop .ocb_layer_btn.ocb_cls_btn{background: #bbb;}
+
+section>i.dim{ display: none;	position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+    background: url(http://img.modetour.com/modemobile/2017/mypage/bg_dim.png); z-index: 120;}
+
+/* 180110 kakaopay 추가 */
+
+.payments .paybiz_ico i{display: inline-block;	background: 	url("http://img.modetour.com/modemobile/2017/mypage/payment_ico.png") no-repeat; }
+.payments .paybiz_ico.kkop i{background-position: -5px -12px; width: 	65px; height: 	21px;}
+.payments .select ul li img{max-width: 	100%; height: 	auto; vertical-align: middle;}
+/* 180222 카카오 페이 할인 관련 이미지 수정*/
+.payments .select ul li.kkop img{width: 65px;}
+/*.payments .select ul li.kkop img{width: 37px;}*/
+.payments .select ul li.pco img{width: 	41px;}
+.payments .select ul li.ssp img{width: 	76px;}
+.payments .select ul li.ocb img{width: 	64px; margin-top:-5px;}
+
+.payments #kakaopay_box.input_payment table tr:first-child th, .payments #kakaopay_box.input_payment table tr:first-child td {border-color: #afb6ca; background-color: #eaf1f9;}
+.payments #kakaopay_box.input_payment table tr:first-child td label {display: block; font-weight: bold; border: 1px solid #99b5d7; border-radius: 5px; background: #fff;}
+.payments #kakaopay_box.input_payment table tr:first-child td label input { padding: 0; width: 80%; color: #000; text-align: right;  border: 0 none;}
+.payments #kakaopay_box.input_payment table tr:first-child td p { font-size: 11px;}
+.payments #kakaopay_box .kakao_promotion_con{background-color: #fff; width: 	100%; min-height:60px; box-sizing:border-box; padding:10px 5%;}
+.payments #kakaopay_box .ex_btn{display: block;	 font-size: 	12px; color: #333;}
+
+.kkop_layerpop{position: absolute;	top:140px;width:250px; left:50%; margin-left:-125px;background:transparent; z-index: 150; color: #fff; display: none;		}
+.kkop_layerpop .kkop_layer_in{position: relative;	 padding:13px; text-align: center;	}
+.kkop_layerpop .kkop_layer_in p{ font-size: 16px; line-height: 24px;margin-bottom: 15px; letter-spacing: 	-0.02em;}
+.kkop_layerpop .kkop_layer_in span{display: inline-block;	 color: #fcd107; letter-spacing:-0.2em;}
+.kkop_layerpop .kkop_layer_in a{display: inline-block;	width: 	100%; height:65px; background:#fcd107;  color: #4a3131; font-size: 	16px; line-height: 	65px; text-decoration: none; font-weight: 	700;}
+
+
+/* 180618 카카오페이 비회원결제시 추가 */
+.kakaopay_box .ex_btn{display: block; text-decoration: none; }
+.kkop_layerpop1{position: absolute; left:0; right:0; top:110px; margin:0 3%; height: 150px; border-radius: 6px; -webkit-border-radius: 6px; -moz-border-radius: 6px; background: #fff; text-align: center; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; display: none; z-index: 130;  }
+.kkop_layerpop1 .layer_in{position: relative;  padding-top: 18px;}
+.kkop_layerpop1 p{font-size: 14px; letter-spacing: -0.05em; color: #111; line-height: 22px;}
+.kkop_layerpop1 p.txt_r{font-size: 12px; color: #d52222; letter-spacing: -0.05em; line-height: 100%; padding-top: 13px; padding-bottom: 25px;}
+.kkop_layerpop1 .layer_btn a{float: left; width: 50%; line-height:38px; height: 38px; color: #fff; font-size: 14px; letter-spacing: -0.05em; background: #a1a8ad; text-decoration: none;  border-radius:0 0 6px 0;  -webkit-border-radius:0 0 6px 0; -moz-border-radius:0 0 6px 0;  }
+.kkop_layerpop1 .layer_btn a.login_btn{background: #049050; border-radius:0 0 0 6px; -webkit-border-radius:0 0 0 6px; -moz-border-radius:0 0 0 6px; }
+
+/* 1801005 결제창 하단배너 */
+
+.payments .territory .bn_bot{background: #f5efe2 url() 0 0 no-repeat;border:1px solid #bdbebf; margin-top: -1px;}
+.payments .territory .bn_bot a{position: relative;  display: block; width: 100%;}
+.payments .territory .bn_bot a img{display: block; max-width:100%; width: 100%;}

@@ -1,0 +1,63 @@
+<div id="mainPopup">
+    <div class="popup_content">
+        <div class="popup_slide">
+            <div class="pop-swiper-container">
+                <div class="swiper-wrapper" id="imageView">
+                    <!-- 2020-07-28 #27973 문제 안내 팝업 swiper-slide [s] -->
+                    <div class="popup-slide swiper-slide">
+                        <div class="inner">
+                            <p class="popup-header">제로샵공지사항</p>
+                            <div class="visual">
+                                <img src="../../images/m640/img_notice_popup.gif" alt="">
+                            </div>
+                            <div class="popup-textbox">
+                                <p class="popup-title">제로샵 OOO <br>문제 안내</p>
+                                <p class="popup-desc">안녕하세요. <br>제로샵 담당자 입니다. <br>000으로 인한 문제로 불편을 드려 죄송합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2020-07-28 #27973 문제 안내 팝업 swiper-slide [e] -->
+                    <div class="swiper-slide">
+                        <a href="https://www.0shop.kr/zeroM/eventview/eventviewInfo?operation=eventviewDetailList&amp;screenId=eventviewDetailList&amp;searchBean.eventDetailId=20200722104011279802&amp;searchBean.viewYn=n"><img src="https://www.0shop.kr/zeroshop/data/lime/popup/200716_pop_up_m.jpg" alt="상품이미지"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://www.0shop.kr/zeroshop/data/lime/popup/500_750.jpg" alt="상품이미지">
+                    </div>
+                </div>
+                <div class="pop-swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- popup 고정 닫기버튼[s] -->
+        <div class="btn_pop_close">
+            <a href="javascript:popupClose();"><span class="ico_oshop"></span> 닫기</a>
+            <a href="javascript:popupCookie();"><span class="ico_oshop"></span> 오늘은 그만 보기</a>
+        </div>
+        <!-- popup 고정 닫기버튼[e] -->
+    </div>
+    <span class="bg_main_popup"></span>
+</div>
+
+<script type="text/javascript">
+$(function(){
+    $("#imageView img:last").on("load",function(){
+        if(popupCnt > 0 ){
+            mainVisual.stopAutoplay();
+            $('#mainPopup').show();
+            if($(".pop-swiper-container .swiper-slide").length > 1){
+                var mySwiper = new Swiper('.pop-swiper-container', {
+                    autoplay:3500,
+                    autoplayDisableOnInteraction:true,
+                    speed:300,
+                    pagination: '.pop-swiper-pagination',
+                    paginationClickable: true,
+                    autoHeight:false,
+                    loop: true
+                });
+            }
+            var popHeight = $("#mainPopup .popup_slide").outerHeight(true) + $(".btn_pop_close").outerHeight(true);
+            $("#mainPopup .popup_content").height(popHeight);
+        }
+    });
+});
+</script>

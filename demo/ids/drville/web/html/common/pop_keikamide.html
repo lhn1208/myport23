@@ -1,0 +1,29 @@
+<!-- 라이브세미나 2016-12-22 팝업삭제  -->
+<!-- 라이브세미나 2016-10-12 한국어 동시 통역 진행 팝업 시작  -->
+<style>
+	#popLive{display:none;position:absolute;top:400px;left:50%;margin-left:75px;}
+	.pop_keikamide{display:block;overflow:hidden;position:relative;width:398px;height:518px;padding:0;border:1px solid #eaeaea;background:url(../../images/bg_keikamide.jpg) no-repeat;z-index:99}
+	.desc_inner{font-size:0;line-height:0;text-indent:-9999px;}
+	.pop_keikamide .btn_keikamide_go{display:block;position:absolute;left:0;bottom:22px;}
+	.pop_keikamide .btn_keikamide{position:absolute;top:20px;right:20px;width:17px;height:17px;background-position:-151px -323px}
+	.pop_keikamide .input_area{position:absolute;left:0;bottom:0;width:390px;padding-right:10px;background-color:#3e3e3e;text-align:right;line-height:22px;font-size:11px;color:#fff}
+</style>
+<div id="popLive">
+	<div class="popup pop_keikamide">
+		<p class="desc_inner"></p>
+		<a href="http://www.doctorville.co.kr/seminar/seminarDetail?seminarId=372" class="btn_keikamide_go"><img src="../../images/btn_keikamide_go.gif" alt="세미나 신청하러 가기"/></a>
+		<button type="button" class="btn_comm btn_keikamide" title="닫기">닫기</button>
+		<div class="input_area">
+			<input type="checkbox" id="no_view">
+			<label for="no_view">오늘 하루 보지 않기</label>
+		</div>
+	</div>
+</div>
+
+<script>
+$(function(){
+	$("#popLive .btn_keikamide").on("click", function(){
+		$(".pop_keikamide").hide();
+	})
+});
+</script>

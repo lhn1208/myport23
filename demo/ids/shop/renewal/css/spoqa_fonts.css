@@ -1,0 +1,24 @@
+﻿@font-face {
+    font-family: 'SpoqaHanSans';
+    font-weight: bold;
+    src: local('※'),
+    url('../font/SpoqaHanSansBold.eot');
+	src:url('../font/SpoqaHanSansBold.woff') format('woff'),
+    url('../font/SpoqaHanSansBold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'SpoqaHanSans';
+    font-weight: normal;
+    src: local('※'),
+    url('../font/SpoqaHanSansRegular.eot');
+	src:url('../font/SpoqaHanSansRegular.woff') format('woff'),
+    url('../font/SpoqaHanSansRegular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'SpoqaHanSansLight';
+    font-weight: normal;
+    src: local('※'),
+    url('../font/SpoqaHanSansLight.eot');
+	src:url('../font/SpoqaHanSansLight.woff') format('woff'),
+    url('../font/SpoqaHanSansLight.otf') format('opentype');
+}

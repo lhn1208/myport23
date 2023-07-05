@@ -1,0 +1,102 @@
+@charset "utf-8";
+:root{
+    --body-font:"NotoSans",sans-serif;
+    --border-color:#e8e8e8;
+}
+.main_containe{padding-top: 106px;}
+.main_container .visual{position: relative;}
+.main_container .visual .content_width{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 105; text-align: center;}
+.main_container .visual .inner .title{color: rgba(255, 255, 255, .9);  margin-bottom: 14px;  font-size: 36px;}
+.main_container .visual .inner .sub_title{display: block; margin-bottom: 14px; color: rgba(255, 255, 255, .8); font-size: 24px; word-break: keep-all;}
+.main_container .visual .inner .sub_title:first-child, .main_container .visual .inner .title:first-child{margin-bottom: 0;}
+.main_container .visual .inner .custom_tel{margin-bottom: 17px;}
+.main_container .visual .inner .custom_tel .tel{font-weight: bold;}
+.main_container .visual .inner .tel{padding: 6px 10px; color: #fff; background-color: #000; border-radius: 12px; font-size: 17px;}
+.main_container .visual .swiper-slide img{object-fit: cover;}
+.main_container .visual .swiper-button-next, .main_container .visual .swiper-button-prev{width:30px; height: 30px; background-color: rgba(255, 255, 255, .4); border-radius: 50%;}
+.main_container .visual .swiper-button-next:after, .main_container .visual .swiper-button-prev:after{content: ""; width: 7px; height: 7px; border-left:4px solid rgba(0, 0, 0, .4); border-bottom:4px solid rgba(0, 0, 0, .4); border-radius: 4px; background: none;}
+.main_container .visual .swiper-button-next:after{transform: rotate(223deg); margin-right: 3px;}
+.main_container .visual .swiper-button-prev:after{transform: rotate(45deg);}
+.main_container .visual .swiper-pagination-bullet{--swiper-pagination-bullet-size:10px; background: transparent; border:2px solid #fff; box-sizing: border-box;}
+.main_container .section{padding:80px 0; text-align: center; overflow: hidden; border-bottom: 1px solid var(--border-color);}
+.main_container .section .title{font-size: 80px; margin-bottom: 20px; text-transform: uppercase; color: #333;}
+.main_container .section .sub_title{margin-bottom: 30px; font-size: 32px; font-weight: 100; word-break: keep-all; font-family: var(--body-font);}
+/*best contents*/
+.best_contents .best_img{display: flex; justify-content: space-between; gap: 1%;}
+.best_contents .best_img li>div{border:1px solid var( --border-color); transition: all .5s ease-out 0s;}
+.best_contents .best_img li{cursor: pointer; width: 23%; overflow: hidden; position: relative;}
+.best_contents .best_img li .flip{opacity: 0; transform: rotateY(-180deg); position: absolute; top:0; left: 0;}
+.best_contents .best_img li:hover .front{opacity: 0; transform: rotateY(-180deg);}
+.best_contents .best_img li:hover .flip{opacity: 1; transform: rotateY(0);}
+/*product type*/
+.product_type .text_area{position: absolute; top: 0; left: 50%; margin-left: -6%; text-align: left; }
+.product_type .text_area .product_title{margin-bottom: 4px; font-size: 32px;}
+.product_type .text_area p{font-size: 24px;}
+.product_type a{display: block;}
+.product_type .content_width{padding: 0;}
+.product_type .swiper-slide img{width:100%}
+.product_type .swiper{position: relative;}
+.product_type .swiper-wrapper{padding-top: 80px;}
+.product_type .swiper-pagination{display: block; --swiper-pagination-top:0; --swiper-pagination-bottom:auto}
+.product_type .swiper-pagination .swiper-pagination-bullet{width: 153px; height: 44px; line-height: 42px; border:2px solid #000; border-radius: 0; background:#fff; font-size: 15px; opacity:1; box-sizing: border-box;}
+.product_type .swiper-pagination .swiper-pagination-bullet:hover{border-color: #ff8400;}
+.product_type .swiper-pagination span{display: inline-block; color: #000; font-size: 15px; font-weight: bold; box-sizing: border-box;}
+.product_type .swiper-pagination span:hover:before{color: #ff8400;}
+.product_type .swiper-pagination span:nth-child(1):before{content: "#스카이어닝";}
+.product_type .swiper-pagination span:nth-child(2):before{content: "#시스템파고라";}
+.product_type .swiper-pagination span:nth-child(3):before{content: "#박스어닝";}
+.product_type .swiper-pagination span:nth-child(4):before{content: "#접이식어닝";}
+.product_type .swiper-pagination span:nth-child(5):before{content: "#폴딩도어";}
+.product_type .swiper-pagination span:nth-child(6):before{content: "#인테리어";}
+.product_type  .type_mb{display: none;}
+.product_type  .type_mb .product_title{font-size: 20px;}
+.product_type  .type_mb a{margin-bottom: 20px;}
+/*customer center*/
+.customer_center .sub_title .tel::after{content: ""; width: 2px; height:28px; margin:-5px 8px 0; background-color: #000; display: inline-block; vertical-align: middle;}
+.customer_center .sub_title .email{display: block;}
+.customer_center .customer_links{display: flex; gap:20px; width: 1000px; margin:80px auto 0;}
+.customer_center .customer_links a{display: block; width: 33.3%;}
+/*최근 시공사례*/
+.case_study .title{margin-bottom: 60px;}
+.case_study .case_links{display: flex; flex-wrap: wrap;}
+.case_study .case_links li{width: 33.3%;}
+.case_study .case_links li a{display: block; margin-left: 10px;}
+.case_study .case_links li:nth-child(3n+1) a{margin-left: 0;}
+.case_study .case_links figcaption{padding-top: 10px; margin-bottom: 20px; font-size: 16px; text-align: left;}
+.case_study .case_links a:hover figcaption{color: #39f;}
+/*main bootm*/
+.main_bottom, .main_bottom a{color: #fff;}
+.main_bottom .customer_sec{height: 450px; padding: 60px 0; background: url("../img/main/bottom_top.png") no-repeat; background-size: cover; text-align: center; font-size: 20px; box-sizing: border-box;}
+.main_bottom .customer_sec a{display: inline-block; margin:0 4px; font-size: 20px;}
+.main_bottom .customer_sec .logo{margin-bottom: 30px;}
+.main_bottom .customer_sec .links{margin-bottom: 20px;}
+.main_bottom .customer_sec .account{display: block;}
+.main_bottom .support{ background-color: #303030;}
+.main_bottom .support .content_width{width: 1000px; display: flex; justify-content: space-between; padding:75px 0;}
+.main_bottom .support .title{margin-bottom: 15px; font-size: 28px;}
+.main_bottom .support .sub_title{margin-bottom: 25px; font-size: 17px;}
+.main_bottom .support .info_list li{margin-bottom: 15px; font-size: 14px;}
+.main_bottom .support .info_list li:before{content: ""; width:15px; height: 15px; vertical-align: middle; margin-top: -2px; margin-right: 4px; background-repeat: no-repeat; display: inline-block;}
+.main_bottom .support .info_list li.ico_map:before{background-image: url("../img/icon/icon_map.png");}
+.main_bottom .support .info_list li.ico_tel:before{background-image: url("../img/icon/icon_tel.png");}
+.main_bottom .support .info_list li.ico_fax:before{background-image: url("../img/icon/icon_fax.png");}
+.main_bottom .support .info_list li.ico_email:before{background-image: url("../img/icon/icon_email.png");}
+.main_bottom .support .send_mail{width: 176px; line-height: 48px; margin-top: 50px; color: #000; font-size: 16px; font-weight: bold; display: inline-block; text-align: center;background-color: #fff; }
+/*sub*/
+.container{padding-top: 106px;}
+.top_visual{display: flex; align-items: center; justify-content: center; flex-direction: column; height: 253px; color: #fff; text-align: center; background: url("../img/home/subtop_01.jpg") no-repeat 0 90px; background-attachment: fixed;}
+.top_visual .title{font-size: 30px; margin-bottom: 20px;}
+.top_visual p{font-size: 14px;}
+.top_sub_menu{position: relative; background-color: #393939; text-align: center; z-index: 10;}
+.top_sub_menu a{position: relative; padding:0 14px; color:#cecdcd; line-height: 50px; font-size: 16px;font-family: var(--body-font); box-sizing: border-box;}
+.top_sub_menu a+a:before{content: ""; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width:1px; height: 16px; background-color: #cecdcd;}
+.content_top{margin-bottom: 100px;}
+.content_top .breadcrumb{text-align: right; padding:10px;}
+.content_top .breadcrumb span{font-size: 12px;}
+.content_top .breadcrumb span+span::before{content:">"; margin:0 4px;}
+.content_top .title_area{margin-top: 30px; text-align: center; color: #333;}
+.content_top .title_area .title{font-size: 64px;}
+.content_top .title_area .sub_title{margin:20px 0; font-size: 32px;}
+.intro_container .links_area{text-align: center;}
+.intro_container .links_area a{display: inline-block; width: 192px; line-height: 48px; margin:0 2px; font-size: 14px; color: #fff; background-color: #aaa; text-align: center; font-family: var(--body-font);}
+.intro_container .links_area a:hover{background-color: #e86976;}

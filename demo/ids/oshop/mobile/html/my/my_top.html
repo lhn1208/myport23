@@ -1,0 +1,90 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+        <!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" --> <!-- 2017-03-21 수정 -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<div class="cont_head"><!-- 2017-03-21 class 수정 -->
+					<h2 class="tit_cate">마이페이지</h2>
+				</div>
+				<!-- 2017-04-13 수정[s] -->
+				<div class="cont_my">
+					<div class="box_type1 box_my_top">
+						<img class="thumb" src="../../images/m640/img_my.gif" alt="" />
+						<p><strong>제로샵</strong>님, 환영합니다.</p>
+						<a href="#" class="btn_type2">주문내역/배송조회</a>
+						<a href="#" class="btn_type1">회원정보수정</a>
+					</div>
+					<div class="box_type1 box_my_order">
+						<a href="#" class="tit_mymenu">
+							<span class="ico_oshop ico_my_order"></span> My 주문관리
+							<span class="ico_oshop ico_down">닫기</span>
+						</a>
+						<ul class="list_mymenu">
+							<li><a href="#none" class="link_my">의약품 청약내역</a></li>
+							<li><a href="#none" class="link_my">포인트 내역</a></li>
+							<li><a href="#none" class="link_my">급여차감내역</a></li>
+							<li><a href="#none" class="link_my">반품/교환 신청</a></li>
+						</ul>
+					</div>
+					<div class="box_type1">
+						<a href="#" class="tit_mymenu">
+							<span class="ico_oshop ico_my_prod"></span> My 상품/활동관리
+							<span class="ico_oshop ico_down">닫기</span>
+						</a>
+						<ul class="list_mymenu">
+							<li><a href="#none" class="link_my">관심상품</a></li>
+							<li><a href="#none" class="link_my">장바구니</a></li>
+							<li><a href="#none" class="link_my">나의 1:1상담내역</a></li>
+						</ul>
+					</div>
+					<div class="box_type1">
+						<a href="#" class="tit_mymenu">
+							<span class="ico_oshop ico_my_info"></span> My 정보관리
+							<span class="ico_oshop ico_down">닫기</span>
+						</a>
+						<ul class="list_mymenu">
+							<li><a href="#none" class="link_my">신용카드 간편결제 관리</a></li>
+							<li><a href="#none" class="link_my">주소록 관리</a></li>
+							<li><a href="#none" class="link_my">로그아웃</a></li>
+						</ul>
+					</div>
+				</div>
+				<script>
+					$(function() {
+                        // 아코디언
+						$(".cont_my .tit_mymenu").on("click",function(){
+							$(this).next("ul").slideToggle(function(){
+								if($(this).is(':visible')){
+									$(this).prev().children(".ico_up").text("닫기");
+									$(this).prev().children(".ico_up").addClass("ico_down");
+									$(this).prev().children(".ico_up").removeClass("ico_up");
+								} else{
+									$(this).prev().children(".ico_down").text("열기");
+									$(this).prev().children(".ico_down").addClass("ico_up");
+									$(this).prev().children(".ico_down").removeClass("ico_down");
+								}
+							});
+							return false;
+						});
+
+						// 탭
+						oshopUI.tab({
+							"tabs" : $(".box_setting .tab_type2 .link_tab"),
+							"tabList" : $(".box_setting .tab_type2 li"),
+							"activeClass" : "on"
+						});
+					});
+				</script>
+				<!-- 2017-04-13 수정[e] -->
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a><!-- 2017-03-21 이미지 넓이,높이값 삭제 -->
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+
+</body>
+</html>

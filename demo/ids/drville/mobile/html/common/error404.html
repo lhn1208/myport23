@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=yes">
+	<title>닥터빌</title>
+	<!-- 2018-10-17 바로가기 아이콘 추가 [s] -->
+	<link rel="apple-touch-icon-precomposed" href="../../images/ico_ios.png" />
+	<link rel="shortcut icon" href="../../images/ico_android.png" />
+	<!-- 2018-10-17 바로가기 아이콘 추가 [e] -->
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<script src="../../js/ui.js"></script>
+
+</head>
+<body>
+<!-- 스킵내비게이션
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+</div> -->
+<!--전체 페이지를 감싸는 태그 id="app" [s]-->
+<div id="app">
+
+	<script type="text/javascript">
+		// 2017-12-12 TOP 버튼 스크립트 수정
+		$(window).load(function() {
+			var btnTop = $(".btn_top");
+			btnTop.hide();
+			if($(".wrap footer").length != 1){
+				btnTop.css("bottom","20px");
+			//}else {
+				//btnTop.css("bottom","75px");
+				//var fTop = $("footer").offset().top;
+			}
+			$("#container").scroll(function(){
+				btnTop.fadeIn(300);
+				if($("#container").scrollTop()==0 ) {
+					btnTop.fadeOut(300);
+				};
+				//if($("body").height() + $("#container").scrollTop() >= fTop + 50){
+				//	btnTop.css("bottom","80px");
+				//}else {
+				//	btnTop.css("bottom","20px");
+				//}
+			});
+			btnTop.click(function(){
+				$("#container").animate({ scrollTop: 0 }, 500);
+				return false;
+			});
+		})
+	</script>
+
+<div class="wrap">
+	<!-- header [s] -->
+	<header id="header">
+		<h1 class="screen_out">닥터빌</h1>
+		<h2 class="h_tit">안내</h2>
+		<a href="#" class="ico_comm btn_menu">메뉴</a>
+	</header>
+	<!-- header [e] -->
+	<!-- container [s] -->
+	<section id="container" class="member_container">
+		<div class="center">
+			<div class="inner">
+				<h3 class="s_tit">요청하신 페이지를	찾을 수 없습니다</h3>
+				<span class="ico_comm ico_error"></span>
+				<p class="txt_info txt_bl">페이지의 주소가 잘못 입력되었거나 변경, 삭제되었습니다<br>	주소를 다시 확인해주세요!</p>
+				<p class="txt_info">궁금한 점이 있으면 고객센터로 문의바랍니다<a href="tel:02-1522-0209" class="tel">1522-0209</a></p>
+			</div>
+		</div>
+		<div class="btn_wrap">
+			<a href="join03.html" class="btn_type1">닥터빌로 이동하기</a>
+		</div>
+	</section>
+	<!-- container [e] -->
+</div>
+</div>
+<!--전체 페이지를 감싸는 태그 [e]-->
+</body>
+</html>

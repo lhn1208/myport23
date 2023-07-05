@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Hidoc</title>
+	<meta content="width=1054" name="viewport" />
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+	<link rel="stylesheet" type="text/css" href="../../css/fullcalendar.css">
+	<script src="../../js/Chart.min.js"></script>
+	<script src="../../js/build/moment.min.js"></script>
+	<script src="../../js/build/html5shiv.min.js"></script>
+	<script src="../../js/build/amcharts.js"></script>
+	<script src="../../js/build/serial.js"></script>
+	<script src="../../js/ui.js"></script>
+
+</head>
+
+
+<body>
+	<div id="hidocIndex"><!-- 접근성 바로가기 -->
+		<a href="#hidocBody">본문 바로가기</a>
+		<a href="#hidocMenu">메뉴 바로가기</a>
+	</div>
+	<section id="wrapper">
+
+		<!-- header -->
+<header class="header">
+	<div class="inner">
+		<h1 class="logo"><a href="../../html/main/main.html"><img src="../../images/logo_hidocpro.png" alt="HiDocPro" /></a></h1>
+		<nav id="hidocMenu" class="navigation">
+			<strong class="screen_out">관련 서비스</strong>
+			<ul class="gnb">
+				<li class="active"><a href="../../html/health/qna_my_reg_list.html">건강Q&A</a>
+					<ul>
+						<li><a href="../../html/health/qna_my_reg_list.html">나에게 등록된 질문</a></li>
+						<li><a href="../../html/health/qna_answer_possible_list.html">답변 가능한 질문</a></li>
+						<li><a href="../../html/health/qna_collection_reply_list.html">내 답변 모음</a></li>
+					</ul>
+				</li>
+				<li><a href="../../html/news/my_write_list.html">건강이야기</a>
+					<ul>
+						<li><a href="../../html/news/my_write_list.html">내 글 모음</a></li>
+						<li><a href="../../html/news/my_write_column.html">칼럼 작성</a></li>
+					</ul>
+				</li>
+				<li><a href="../../html/mypage/hospital_info_view.html">마이페이지</a>
+					<ul>
+						<li><a href="../../html/mypage/hospital_info_view.html">근무처 정보</a></li>
+						<li><a href="../../html/mypage/doctor_info_view.html">프로필</a></li>
+						<li><a href="../../html/mypage/hidoc_point.html">하이닥포인트</a></li>
+					</ul>
+				</li>
+				<li><a href="../../html/customer/customer_notice.html">고객센터</a>
+					<ul>
+						<li><a href="../../html/customer/customer_notice.html">공지사항</a></li>
+						<li><a href="../../html/customer/customer_faq.html">자주 묻는 질문</a></li>
+						<li><a href="../../html/customer/customer_1vs1_list.html">내 문의 현황</a></li>
+						<li><a href="../../html/customer/customer_1vs1.html">1:1 문의</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div class="user_info">
+			<a href="../../html/mypage/doctor_info_view.html"><span class="user_name">김프로님</span></a>
+			<a href="../../html/member/login.html">로그아웃</a>
+		</div>	
+	</div>
+</header>
+<!-- header -->
+</div>
+
+
+		<section class="container layout_type3 service_pro_qna"><!-- 클래스 명은 서비스별로 동적이여야 합니다. ex) service_서비스이름 -->
+			<!-- <div class="sub_feature"></div> --><!-- 2019-01-18 삭제 -->
+			<div class="container_inner clear_g">
+				<div class="sub_location"><span>홈</span><span class="pro_comm">></span><span>건강Q&amp;A</span><span class="pro_comm">></span><strong>답변 가능한 질문</strong></div><!-- 2019-01-18 추가 -->
+				<section id="hidocBody" class="contents">
+					<!-- template 영역 시작 -->
+					<h1 class="screen_out">건강Q&amp;A</h1><!-- 2019-01-18 수정 -->
+					<div class="pro_qna box_type1">
+						<h2 class="fc_blue hd2_tit">답변 가능한 질문</h2>
+						<div class="view_question">
+							<h2 class="ico_comm ico_question">질문</h2>
+							<div class="inner">
+								<strong class="tit">미세먼지 주의보가 나왔을때 어린아이와 외출을 하면 안될까요?</strong>
+								<div class="user_info">
+									<span class="txt_time">2014.09.01</span>
+									<span class="txt_bar">|</span>
+									<span class="txt_hits">조회 <span class="num">20,122</span></span>
+								</div>
+								<div class="tag_box">SMART TAG : <span class="tag_desc"><a href="#none">여성, </a><a href="#none">산부인과</a>, <a href="#none">비뇨생식기계</a>, <a href="#none">임신</a>, <a href="#none">불임</a></span></div>
+								<div class="desc">
+									<p>이제 6주고 애기집까지 본 상태인데요. 임신이란걸 알고 몸이 너무 힘들어요. 괜히 숨쉬는 것도 힘든 것 괜히 생각했다가 헛구역질도 하고, 심리적인 현상인지 아니면 원래 그런 것인지 너무 6주고 애기집까지 본 상태인데요. 임신이란걸 알고 몸이 궁금합니다 생각했다가 헛구역질도 하고, 심리적인 현상인지 아니면 원래 그런 것인지 너무 6주고 애기집까지 본 상태인데요. 임신이란걸 알고 몸이 너무 힘들어요. 괜히 숨쉬는 것도 힘든 것 괜히 생각했다가 헛구역질도 하고, 심리적인 현상인지 아니면 원래 그런 것인지 너무 궁금합니다.</p>
+								</div>
+								<div class="info_box">
+									<span class="item"><span class="term">성별 : </span> 여성 <span class="txt_bar">|</span></span>
+									<span class="item"><span class="term">나이 : </span> 1985년생 <span class="txt_bar">|</span></span>
+									<span class="item"><span class="term">1985년생 : </span> 158cm/55kg <span class="txt_bar">|</span></span>
+									<span class="item"><span class="term">음주 : </span> 거의마시지 않음 <span class="txt_bar">|</span></span>
+									<span class="item"><span class="term">가족력 : </span> 없음 <span class="txt_bar">|</span></span>
+									<span class="item"><span class="term">과거력 : </span> 유산1회 <span class="txt_bar">|</span></span>
+									<span class="item"><span class="term">현재병력(임신포함) : </span> 임신2개월 <span class="txt_bar">|</span></span>
+									<span class="item"><span class="term">알레르기 : </span> 없음 <span class="txt_bar">|</span></span>
+									<span class="item"><span class="term">기타 : </span> 철분, 엽산제 복용</span> <!-- 마지막 item에는  <span class="txt_bar">|</span> 삭제 -->
+								</div>
+
+							</div>
+						</div>
+						<form action="test" method="POST" enctype="multipart/form-data">
+							<fieldset>
+								<legend><span class="screen_out">답변 등록하기</span></legend>
+								<!--2019-05-27 추가[s]-->
+								<div class="answer_reward">
+									<!-- 2019-08-08 수정[s] -->
+									<a href="https://pro.hidoc.co.kr/customer/notice/B0000002476" class="link_answer_reward">
+										<span class="ico_comm2"></span>
+										하이닥 <em>답변활동</em>하시고, <em>리워드</em> 받으세요!
+										<span class="txt_info">자세히보기 ></span>
+									</a>
+									<!-- 2019-08-08 수정[s] -->
+								</div>
+								<!--2019-05-27 추가[e]-->
+								<div class="view_answer">
+									<div class="clear_g answer_tit">
+										<h2 class="ico_comm ico_answer">답변</h2>
+										<input type="text" class="inp_comm inp_txt" title="답변" value="Re : 미세먼지 주의보가 나왔을때 어린아이와 외출을 하면 안될까요?">
+									</div>
+								</div>
+								<div class="reply_write">
+									<div class="board_write_type1">
+										<table class="tbl tbl_write">
+											<caption class="screen_out">글 쓰기 입력 테이블</caption>
+											<colgroup>
+												<col class="col1">
+												<col class="col2">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row"><label for="cont">내용</label></th>
+													<td>
+														<textarea cols="50" rows="5" id="cont" class="tf_cont">이제 </textarea>
+														<p class="txt_count">글자수 : 0</p><!-- 2019-06-05 추가 -->
+													</td>
+												</tr>
+												<!--2019-05-27 수정[s]-->
+												<tr>
+													<th scope="row"><label for="file">첨부파일</label></th>
+													<td>
+														<!-- 2019-06-11 수정[s] -->
+														<div class="inp_file_area">
+															<div class="inp_file_type1 inp_file_img">
+																<a href="#file" class="link_file link_file_img">
+																	<div class="inner">
+																		<span class="ico_comm2"></span>
+																		<span class="txt_add_file">이미지</span>
+																	</div>
+																</a>
+																<span class="answer_inp"></span>
+																<ul>
+																	<li class="file_img"><span class="ico_comm2"></span><span class="txt_file_name" title="01. GOOD BOY.jpg">01. GOOD BOY.jpg</span><a href="#none" class="btn_comm btn_delete" title="첨부파일 삭제">첨부파일 삭제</a></li>
+																	<li class="file_img"><span class="ico_comm2"></span><span class="txt_file_name" title="01. GOOD BOY.jpg">01. GOOD BOY.jpg</span><a href="#none" class="btn_comm btn_delete" title="첨부파일 삭제">첨부파일 삭제</a></li>
+																	<li class="file_img"><span class="ico_comm2"></span><span class="txt_file_name" title="01. GOOD BOY.jpg">01. GOOD BOY.jpg</span><a href="#none" class="btn_comm btn_delete" title="첨부파일 삭제">첨부파일 삭제</a></li>
+																	<li class="file_img"><span class="ico_comm2"></span><span class="txt_file_name" title="01. GOOD BOY.jpg">01. GOOD BOY.jpg</span><a href="#none" class="btn_comm btn_delete" title="첨부파일 삭제">첨부파일 삭제</a></li>
+																	<li class="file_img"><span class="ico_comm2"></span><span class="txt_file_name" title="01. GOOD BOY.jpg">01. GOOD BOY.jpg</span><a href="#none" class="btn_comm btn_delete" title="첨부파일 삭제">첨부파일 삭제</a></li>
+																</ul>
+															</div>
+															<div class="inp_file_type1 inp_file_video">
+																<a href="#file" class="link_file link_file_video">
+																	<div class="inner">
+																		<span class="ico_comm2"></span>
+																		<span class="txt_add_file">동영상</span>
+																	</div>
+																</a>
+																<span class="answer_inp"></span>
+																<ul>
+																	<li class="file_video"><span class="ico_comm2"></span><span class="txt_file_name" title="01. GOOD BOY.jpg">01. GOOD BOY.jpg</span><a href="#none" class="btn_comm btn_delete" title="첨부파일 삭제">첨부파일 삭제</a></li>
+																</ul>
+															</div>
+														</div>
+														<!-- 2019-06-11 수정[e] -->
+														<p class="desc_file">- <em>이미지첨부</em> 첨부파일은 개당 5MB 이하로 최대 5개까지 첨부 가능합니다.</p>
+														<p class="desc_file">- <em>동영상첨부</em> 1건, 최대 500MB 이하로 업로드 가능합니다.</p>
+														<p class="desc_file">* 개인정보가 포함되었거나 기타 현행법률 및 미풍양속에 위배되는 첨부파일은  관련법률에 의해 제재를 받을 수 있으며 삭제될 수 있습니다.</p>
+													</td>
+												</tr>
+												<!--2019-05-27 수정[e]-->
+											</tbody>
+										</table>
+									</div>
+									<div class="public_set">
+										<strong>프로필 공개 설정</strong>
+										<input type="radio" name="publicSet" id="public_set_1"> <label for="public_set_1">공개</label>
+										<input type="radio" name="publicSet" id="public_set_2"> <label for="public_set_2">비공개</label>
+									</div>
+									<div class="btns">
+										<input type="submit" class="btn_type2 btn_reply" value="답변 등록">
+										<a href="#self" class="btn_type3 btn_del">답변 취소</a>
+										<a href="#self" class="btn_type4 btn_list">내 답변 목록</a><!-- 2019-02-11 추가 -->
+									</div>
+									<!-- // 수정시 버튼
+									<div class="btns">
+										<input type="submit" class="btn_type2 btn_reply" value="답변 수정">
+										<a href="#" class="btn_type3 btn_del">답변 삭제</a>
+									</div>
+									-->
+								</div>
+							</fieldset>
+						</form>
+						<div class="view_answer pro_view_answer">
+							<div class="clear_g answer_tit">
+								<h2 class="ico_comm ico_answer">답변</h2>
+								<strong class="tit_answer">Re: 제가 답변 합니다. 답변해요</strong>
+							</div>
+							<div class="hidoc_answer">
+								<div class="answer_head">
+									<!-- 2014-12-06 이미지 라운드 처리 시작 -->
+									<div class="thumb_img">
+										<span class="frame_thumb"></span>
+										<img src="http://www.hidoc.co.kr/Library/modules/portalconsult/DoctorImages/%EC%9D%B4%EC%9A%A9%EC%9E%AC(100_100).jpg" width="60" height="60" alt="의사이름">
+									</div>
+									<!-- 2014-12-06 이미지 라운드 처리 끝 -->
+									<div class="doctor_clinic">
+										<a href="#none" class="link_doctor">선수현 전문의</a>
+										<span class="txt_clinic">진성림 참좋은 내과</span>
+									</div>
+									<em class="fc_green txt_score">하이닥 스코어: <strong>750</strong></em>
+									<div class="recomm_count">
+										<dl>
+											<dt>이 답변에 동의한 의사</dt>
+											<dd class="fc_green">1,254명</dd>
+										</dl>
+										<dl>
+											<dt>이 답변을 추천한 사용자</dt>
+											<dd class="fc_green">4명</dd>
+										</dl>
+									</div>
+									<span class="txt_time">15분전</span>
+								</div>
+								<div class="answer_body">
+									<div class="cont">
+										<!--2019-05-27 영상 테스트[s]-->
+										<iframe width="660" height="371" src="https://www.youtube-nocookie.com/embed/_FIbCOmrh14?controls=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<!--2019-05-27 영상 테스트[e]-->
+										<p class="desc">흔히 제모라고 하면 여성들만 하는 것이라고 여겨져 왔지만, 현재의 제모는 남성들도 많이 접하고 있어 더 이상 여성들만의 관심사가 아닙니다. 오히려 남성에게 제모가 더 필요하다는 사실! 남성은 신체적으로 여성보다 털이 많고 쉽게 자라 매번 하는 면도도 일일뿐더러 덥수룩한 털 때문에 여름철에는 견딜 수 없는 불편함을 주기 때문에 털을 제모하려는 남성들이 늘어나고 있습니다.<br><br>
+										우리나라 젊은 남성의 절반 이상은 이미 제모를 하고 있다고 할 정도로 남성 제모의 필요성이 더 두드러지는데요. 하지만 아직까지는 제모시술을 현재 제모를 한다는 절반가량의 남성들 중에도 대부분이 셀프 제모를 하고 있다고  심리적인 현상인지 합니다.</p>
+										<div class="btns">
+											<a href="#none" class="btn_type4">추천하기</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+                    <!--  업로드 팝업 2019-05-27 추가[s] -->
+                    <div id="popUpload" class="pop_modal">
+                        <div class="popup_type1 popup_upload">
+                            <div class="inner">
+                                <strong class="fc_blue tit_popup">동영상 업로드 중...</strong>
+                                <p class="percent"><em>60</em>%</p>
+                                <span class="progress_bar">
+                                    <span></span>
+                                </span>
+								<p class="txt_info">(최대 3~4분 소요예정)</p><!-- 2019-06-20 문구추가 -->
+                                <div class="btns">
+                                    <a href="#" class="btn_type2">확인</a>
+                                    <button type="reset" class="btn_type3">취소</button>
+                                </div>
+                                <button type="button" class="btn_comm btn_close" title="닫기">닫기</button>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <!-- 업로드 팝업 2019-05-27 추가[e] -->
+
+					<script>
+						// 디자인형 파일박스 2019-01-18
+						var inputFile = document.querySelectorAll(".inp_file_type1");
+						hidocUI.fileBoxDesign({
+							"target": inputFile,
+							"type": "multi",
+							"maxLength": 6
+						});
+					</script>
+					<!-- // template 영역 끝 -->
+				</section>
+						<!-- user_info -->
+		<aside class="aside">
+			<h2 class="screen_out">사용자 정보</h2>
+			<div class="user_info">
+				<!-- 2014-12-06 이미지 라운드 처리 시작 -->
+				<div class="clear_g">
+					<div class="thumb_img">
+						<span class="frame_thumb"></span>
+						<img src="http://www.hidoc.co.kr/Library/modules/portalconsult/DoctorImages/%EC%9D%B4%EC%9A%A9%EC%9E%AC(100_100).jpg" width="60" height="60" alt="의사이름">
+					</div>
+					<strong class="name">김연아 교수</strong>
+				</div>
+				<!-- 2014-12-06 이미지 라운드 처리 끝 -->
+				<ul class="list_treatment">
+					<li>
+						<em class="emph">진료과목:</em>
+						<span class="desc">가정의학과</span>
+					</li>
+					<li>
+						<em class="emph">진료분야:</em>
+						<span class="desc"><span>성장장애</span>, <span>간염</span>, <span>갑상선 질환</span>, <span>갑상선 질환</span>, <span>갑상선 </span>, <span>갑상선 질환</span></span>
+					</li>
+				</ul>
+				<div class="user_count reply_count">
+					<h3 class="hd_tit">등록 답변 수</h3>
+					<ul class="list_ranking">
+						<li>
+							<div class="clear_g">
+								<em class="txt txt_hidoc">
+									하이<span class="txt_em">닥</span>
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,569</span></span>
+							</div>
+							<div class="clear_g">
+								<em class="txt txt_rank">
+									진료과 순위
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,000위</span>/2500명</span>
+							</div>
+						</li>
+						<li>
+							<div class="clear_g">
+								<em class="txt txt_naver">
+									네이버
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,569</span></span>
+							</div>
+							<div class="clear_g">
+								<em class="txt txt_rank">
+									진료과 순위
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,000위</span>/2500명</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="user_count hit_count">
+					<h3 class="hd_tit">누적 조회 수</h3>
+					<ul class="list_ranking">
+						<li>
+							<div class="clear_g">
+								<em class="txt txt_hidoc">
+									하이<span class="txt_em">닥</span>
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,569</span></span>
+							</div>
+							<div class="clear_g">
+								<em class="txt txt_rank">
+									진료과 순위
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,000위</span>/2500명</span>
+							</div>
+						</li>
+						<li>
+							<div class="clear_g">
+								<em class="txt txt_naver">
+									네이버
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,569</span></span>
+							</div>
+							<div class="clear_g">
+								<em class="txt txt_rank">
+									진료과 순위
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,000위</span>/2500명</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="user_count recom_count">
+					<h3 class="hd_tit">누적 추천 수</h3>
+					<ul class="list_ranking">
+						<li>
+							<div class="clear_g">
+								<em class="txt txt_hidoc">
+									하이<span class="txt_em">닥</span>
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,569</span></span>
+							</div>
+							<div class="clear_g">
+								<em class="txt txt_rank">
+									진료과 순위
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,000위</span>/2500명</span>
+							</div>
+						</li>
+						<li>
+							<div class="clear_g">
+								<em class="txt txt_naver">
+									네이버
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,569</span></span>
+							</div>
+							<div class="clear_g">
+								<em class="txt txt_rank">
+									진료과 순위
+								</em>
+								<span class="txt_colon">:</span>
+								<span class="count"><span class="emph1">2,000위</span>/2500명</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="etc_info">
+					<h3 class="screen_out">기타정보</h3>
+					<div class="naver_link"><span class="ico_comm3 ico_nhn"></span><a href="#">네이버 지식IN으로 <br>이동 <span class="ico_comm3 ico_arr"></span></a></div>
+					<div class="inquiry">
+						<strong>서비스 문의</strong>
+						<span class="tel">1588-0781</span>
+						<span class="time"> 9:00 - 18:00 (월~금)</span>
+					</div>
+				</div>
+				<!-- 2015-04-21 광고영역 추가 시작 -->
+				<div class="aside_bnr_pro">
+					<script type="text/javascript" src="http://realmedia.hidoc.co.kr/RealMedia/ads/adstream_jx.ads/www.hidoc.co.kr/pro_main_RB@x11"></script>
+				</div>
+				<!-- 2015-04-21 광고영역 추가 끝 -->
+			</div>
+		</aside>
+		<!-- //user_info -->
+			</div>
+			<!-- 2019-02-28 광고영역 추가 -->
+			<div class="etc_ad">
+				<div class="etc_ad_inner">
+					<script type="text/javascript" src="//white.contentsfeed.com/RealMedia/ads/adstream_jx.ads/www.hidoc.co.kr/pro_main_RB@x12"></script>
+				</div>
+			</div>
+			<!-- //2019-02-28 광고영역 추가 -->
+		</section>
+
+		<a href="https://www.hidoc.co.kr" id="link_hidoc" target="_blank">하이닥 사이트로 이동</a>
+<button type="button" id="btn_top">상단으로 이동</button>
+<!-- footer -->
+<footer class="footer">	
+	<div class="footer_top">
+		<div class="inner">
+			<div class="navi">
+				<h2 class="screen_out">하이닥PRO 메뉴</h2>
+				<ul class="list_menu">
+					<li><a href="#self">건강Q&A</a>
+						<ul>
+							<li><a href="#self">나에게 등록된 질문</a></li>
+							<li><a href="#self">답변 가능한 질문</a></li>
+							<li><a href="#self">내 답변 모음</a></li>
+						</ul>
+					</li>
+					<li><a href="#self">건강이야기</a>
+						<ul>
+							<li><a href="#self">내 글 모음</a></li>
+							<li><a href="#self">칼럼 작성</a></li>
+						</ul>
+					</li>
+					<li><a href="#self">마이페이지</a>
+						<ul>
+							<li><a href="#self">근무처 정보</a></li>
+							<li><a href="#self">프로필</a></li>
+							<li><a href="#self">하이닥포인트</a></li>
+						</ul>
+					</li>
+					<li><a href="#self">고객센터</a>
+						<ul>
+							<li><a href="#self">공지사항</a></li>
+							<li><a href="#self">자주 묻는 질문</a></li>
+							<li><a href="#self">내 문의 현황</a></li>
+							<li><a href="#self">1:1 문의</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="inner">
+		<div class="copyright">
+			<h1 class="tit_logo"><a href="#none"><img src="../../images/logo_hidoc_foot.png" alt="HiDoc" /></a></h1>
+			<address>
+				(주)엠서클 06170 <span class="txt_bar"> | </span>서울특별시 강남구 봉은사로 114길 12(삼성동) <span class="txt_bar"> | </span> 대표번호: 1577-0781 <br />
+				발행인: 김명석 <span class="txt_bar"> | </span> 편집인: 문현주 <span class="txt_bar"> | </span> 청소년 보호 관리 책임자: 문희탁 <span class="txt_bar"> | </span> 
+				사업자등록번호: 120-86-10499 <br />인터넷신문 제호: 하이닥 <span class="txt_bar"> | </span> 정기간행물 등록번호: 서울 아 01224 <span class="txt_bar"> | </span> 등록일자: 2010.04.28 <span class="txt_bar"> | </span> 발행일자: 2019.01.24<br />
+				하이닥의 모든 콘텐츠(기사)는 저작권법의 보호를 받는 바, 무단 전제, 복사, 배포등을 금합니다.<br/>
+				<span class="txt_copyright">Copyright &copy; </span><a href="http://www.mcircle.co.kr/" target="_blank" class="link_mcircle">Mcircle Corp.</a><span class="txt_copyright"> All rights reserved.</span>
+			</address>
+		</div>
+		<div class="family_site">
+			<h2>하이닥PRO와 함께합니다</h2>
+			<ul class="list_site">
+				<li>
+					<a href="https://www.hidoc.co.kr" target="_blank"><span class="pro_comm ico_hidoc"></span>하이닥</a>
+				</li>
+				<li>
+					<a href="https://www.doctorville.co.kr" target="_blank"><span class="pro_comm ico_doctorville"></span>닥터빌</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!-- //footer -->
+
+<script type="text/javascript">
+// 스크롤Top
+document.getElementById("btn_top").onclick = function(){	
+	function scrollToTop(scrollDuration) {
+		var scrollStep = -window.pageYOffset / (scrollDuration / 15);
+		var scrollInterval = setInterval(function(){
+			if ( window.pageYOffset != 0 ) {
+				window.scrollBy( 0, scrollStep );
+			}
+			else clearInterval(scrollInterval); 
+		},15);
+	};
+	scrollToTop(300);
+}
+</script>
+
+
+	</section>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+    <!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 -->
+				<div class="cont_head">
+					<h2 class="tit_cate">정기배송 관리</h2>
+				</div>
+				<div class="cont_my_v2 cont_subscription">
+					<div class="box_order box_type1">
+						<h3 class="tit_s">상품 정보</h3>
+						<div class="box_prod">
+							<a href="subscription_prod.html" class="cont_body">
+								<span class="link_item">
+									<img src="http://www.0shop.kr:80/zeroshop/data/lime/goods/middle/s_bullsonecom/nono55129experience_20190903170205.jpg" class="thumb_g" width="100" height="100" alt="">
+								</span>
+								<div class="prod_name">
+									<span class="lab_vote">[불스원] 멀티액션 플러스 차량용 공기청정기(필터 총 2개)</span>
+									<p class="prod_option">옵션 : 블랙</p>
+									<span class="txt_num txt_subscript_discount"><span class="ico_oshop">할인</span>3%</span>
+									<p class="prod_price">
+										<span class="txt_price"><strong class="txt_num">207,000</strong>원</span>
+										<span class="txt_bar">|</span>
+										수량 : 3개
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="box_type1">
+						<h3 class="tit_s">배송주기 정보</h3>
+						<div class="cont_my_tbl">
+							<table class="tbl_type1">
+								<caption>결제정보</caption>
+								<colgroup>
+									<col style="width:130px;">
+									<col style="width:auto;">
+								</colgroup>
+								<tr>
+									<th scope="row">배송주기</th>
+									<td class="fc_orange"><span class="txt_num">2</span>달에 한 번</td>
+								</tr>
+								<tr>
+									<th scope="row">다음 자동 신청일</th>
+									<td class="fc_orange"><span class="txt_num">03</span>월 <span class="txt_num">04</span>일</td>
+								</tr>
+							</table>
+							<ul class="list_type">
+								<li>배송주기 변경을 원하시는 분은 해당 상품의 정기배송을 <strong>해지 후 재신청</strong>바랍니다.</li>
+							</ul>
+							<!-- 버튼 활성화[s] -->
+							<div class="btn_wrap">
+								<button type="button" class="btn_type4 btn_skip">이번 배송 건너뛰기</button>
+								<button type="button" class="btn_type6">정기배송 해지하기</button>
+							</div>
+							<!-- 버튼 활성화[e] -->
+
+							<!-- 버튼 비활성화[s] -->
+							<div class="btn_wrap">
+								<button type="button" class="btn_type4" disabled>이번 배송 건너뛰기</button>
+								<button type="button" class="btn_type6" disabled>정기배송 해지하기</button>
+							</div>
+							<!-- 버튼 비활성화[e] -->
+						</div>
+					</div>
+				</div>
+				<div id="popSkip" style="display:none;">
+					<div class="popup_type1 popup_new">
+						<div class="inner">
+							<strong class="tit_popup">이번 배송 건너뛰기</strong>
+							<div class="page">
+								<div class="popup_body">
+									<p>건너뛰기 하시면<br><em class="fc_orange">다음 정기배송 자동 신청일</em>은<br><em class="fc_orange">4월 14일(금)</em>입니다.</p>
+								</div>
+								<div class="btns_full">
+									<button type="submit" class="btn_type2">건너뛰기</button>
+									<button type="reset" class="btn_type1">취소</button>
+								</div>
+								<a href="#none" class="btn_close"><span class="ico_oshop ico_close">닫기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					$(function(){
+						// 건너뛰기 팝업
+						oshopUI.popUp({
+							"clickBtn" : $(".btn_skip"),
+							"popupLayer" : $("#popSkip"),
+							"Contents" : $(".cont_subscription")
+						});
+					});
+				</script>
+				<!-- // template 영역 끝 -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a>
+		</section>
+		<!--#include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+</body>
+</html>

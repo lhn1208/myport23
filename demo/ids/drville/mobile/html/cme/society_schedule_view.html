@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=yes">
+	<title>닥터빌</title>
+	<!-- 2018-10-17 바로가기 아이콘 추가 [s] -->
+	<link rel="apple-touch-icon-precomposed" href="../../images/ico_ios.png" />
+	<link rel="shortcut icon" href="../../images/ico_android.png" />
+	<!-- 2018-10-17 바로가기 아이콘 추가 [e] -->
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<script src="../../js/jquery-1.11.1.min.js"></script>
+	<script src="../../js/ui.js"></script>
+
+</head>
+<body>
+<!-- 스킵내비게이션
+<div id="Index">
+	<a href="#container">본문 바로가기</a>
+</div> -->
+<!--전체 페이지를 감싸는 태그 id="app" [s]-->
+<div id="app">
+
+	<script type="text/javascript">
+		// 2017-12-12 TOP 버튼 스크립트 수정
+		$(window).load(function() {
+			var btnTop = $(".btn_top");
+			btnTop.hide();
+			if($(".wrap footer").length != 1){
+				btnTop.css("bottom","20px");
+			//}else {
+				//btnTop.css("bottom","75px");
+				//var fTop = $("footer").offset().top;
+			}
+			$("#container").scroll(function(){
+				btnTop.fadeIn(300);
+				if($("#container").scrollTop()==0 ) {
+					btnTop.fadeOut(300);
+				};
+				//if($("body").height() + $("#container").scrollTop() >= fTop + 50){
+				//	btnTop.css("bottom","80px");
+				//}else {
+				//	btnTop.css("bottom","20px");
+				//}
+			});
+			btnTop.click(function(){
+				$("#container").animate({ scrollTop: 0 }, 500);
+				return false;
+			});
+		})
+	</script>
+
+<div class="wrap">
+	<!-- header [s] -->
+	<header id="header" class="main_header">
+		<a href="#" class="link_home">
+			<h1 class="screen_out">닥터빌</h1>
+			<h2 class="h_tit">학회 컨시어지</h2>
+		</a>
+		<a href="#" class="ico_comm btn_menu">메뉴</a>
+	</header>
+	<!-- header [e] -->
+	<!-- container [s] -->
+	<section id="container">
+		<div class="cme">
+			<!--상세 [s]-->
+			<div class="content_box view">
+				<h3 class="screen_out">학회 컨시어지 상세</h3>
+				<div class="view_head">
+					<span class="category">내분비</span>
+					<strong class="tit">[IDF] World Diabetes Congress 2017</strong>
+					<span class="tail">아부다비, 아랍 에미레이트</span><span class="tail period">2017-12-04 ~ 2017-12-08</span>
+				</div>
+				<div class="edit_view">
+					<p>중년 여성의 성기능 장애는 외상 후 스트레스 장애(PTSD)에 의해 악화될 수 있다는 코호트 연구 결과가 나왔다.</p>
+					<p>미국 California Health Care System의 Carolyn Gibson 박사 연구팀은 PTSD의 임상 증상을 보인 사람이나 대인관계에서 폭력을 경험한 여성들에게 중년의 성기능 장애가 더 많았다고 밝혔다.</p>
+					<p>이번 코호트 연구에서는 40~80세의 여성 2,016명의 여성으로 구성된 다민족 그룹을 대상으로 신체적 정서적으로 친밀한 파트너의 	폭력, 성폭력, PTS 증상 등에 대한 설문을 진행했다.</p>
+					<p><img src="http://www.doctorville.co.kr/api/common/getImage/ZXlPVG5QYUJBRHJqTWpEdXVsb3pQU0RJaThOSmVsTkdRcFA4VmJ4SEh6OFBkbjNVNnNxMkQra2tlUDY0OUhaVTNYKzFjTDY4Qi9UdnlFZGlyTzEyVlNrRGg0bG1GNU1rZXBZVTZyK2VxbDAxNGhxWFdhSWJiVE5NaHZMOUFoMURLZERSakVKcDhtam43aTk4MFp2cS9BPT0=" alt=""></p>
+					<p>코호트 대상자의 1/4이 임상적으로 유의한 PTSD 증상을 가지고 있었으며, 그 중 16%는 친밀한 파트너에 의한 폭력 경험이 	있었고 19%는 성추행, 강간 등 성폭력을 경험했다.</p>
+					<p>폐경과 관련된 성기능 장애는 성교통, 질 자극증상, 질 통증 등 증상의 발생 빈도와 정도를 측정한 설문을 통해 평가되었다. 그 결과 32%는 질 자극증상을 경험했으며 13%는 성교통을, 7%는 질 통증을 호소했다.</p>
+					<p>Gibson 박사는 "PTSD는 중년 여성의 성기능 장애와 관련해 가장 강력하고 일관된 예측 인자”라고 밝혔다.</p>
+					<p>이 연구결과는 북미폐경기학회(The North American Menopause Society) 연례회의에서 발표됐으며,  Medpage today 등이 보도했다.</p>
+				</div>
+			</div>
+			<!--상세 [e]-->
+		</div>
+		<!-- footer [s] -->
+		<footer id="footer">
+	<div class="footer_menu">
+		<a href="../member/terms_policy.html" class="txt">이용약관</a>
+		<span class="txt_bar">|</span>
+		<!-- 2021-06-03 개인정보처리방침 볼드 처리 -->
+		<a href="../member/terms_userinfo.html" class="txt"><strong>개인정보처리방침</strong></a>
+		<span class="txt_bar">|</span>
+		<span class="txt">고객센터</span>
+		<a href="tel:02-1522-0209" class="txt link_num">1522-0209</a>
+	</div>
+	<address>Copyright &copy;Mcircle. All right reserved</address> <!--2017-12-14 수정-->
+</footer>
+		<!-- footer [e] -->
+	</section>
+	<!-- container [e] -->
+	<a href="#" class="ico_comm btn_top">상단으로 이동</a> <!--top 버튼-->
+</div>
+</div>
+<!--전체 페이지를 감싸는 태그 [e]-->
+</body>
+</html>

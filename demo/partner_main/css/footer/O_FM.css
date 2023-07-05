@@ -1,0 +1,33 @@
+﻿@charset "utf-8";
+#Footerwrap { clear:both; margin:10px auto 0; width:930px; }
+	#Footerwrap .svn { padding:10px; font-size:11px; line-height:11px; text-align:center; border:1px solid #c3c3c3; }
+	
+
+	#Footerwrap .svn a .menu{ padding:0 8px 0 4px; background:url("http://img.modetour.co.kr/mode2010/agent/bp/main/common/bg_footer_svn_partion.png") no-repeat right center; }
+	#Footerwrap .svn a:last-child { background:none;  }
+	#Footerwrap .svn a .menu img { vertical-align:top;  border:solid 1px red;}
+	
+	#Footerwrap .svn a .adminmenu {float:right; margin-bottom:25px;}
+		
+	#Footerwrap .svn a .adminmenu img { vertical-align:top; }
+	
+	#Footerwrap .cp_info { margin:20px 0 0; }
+	#Footerwrap .cp_info .logo { float:left; padding:20px 0 0; width:300px; }
+	#Footerwrap .cp_info .info { float:left; width:630px; }
+	#Footerwrap .cp_info .info .address { font-size:12px; line-height:18px; color:#464646; }
+	#Footerwrap .cp_info .info .copyright { margin:20px 0 0; }		
+	#Footerwrap #skybanner { position:absolute; left:50%; top:133px; margin-left:480px; }
+	#Footerwrap #skybanner p { margin:0 0 5px; text-align:center; }
+
+	#Footerwrap .quickleft { top:280px; }
+
+/*footer리뉴얼*/
+#main_footer{width: 100%; padding-bottom: 50px;}
+#main_footer .footer_section01{padding:10px 0 12px; margin-bottom: 18px; text-align: center; background-color:#000; }
+.footer_section01 .footer_menu a:first-child{margin-left: 0;}
+.footer_section01 .footer_menu a{display: inline-block; margin-left: 160px; color: #fff; font-size: 14px;}
+.footer_section02 .section_content{position: relative;}
+.footer_section02 .logo{position: absolute; top:0px; left: 0px;}
+.footer_section02 address{margin-left: 282px; padding-top: 10px; font-size: 14px;  font-style: normal; color: #000;}
+.footer_section02 address .foo_link{display: inline; color: #003ebc;}
+.footer_section02 address .point_green{color: #00930a;}

@@ -1,0 +1,102 @@
+<!--#include virtual="/publish/oshop/mobile/html/common/common.html" -->
+
+<body>
+	<section id="wrapper" class="layout_type1"><!-- 클래스 명은 페이지별로 동적이여야 합니다. ex) service_서비스이름 -->
+		<!--#include virtual="/publish/oshop/mobile/html/common/header_v2.html" --> <!-- 2017-03-21 수정 -->
+		<section class="container clear_g">
+			<section id="oshopBody" class="contents">
+				<!-- template 영역 시작 , 2017-03-21 수정[s] -->
+				<div class="category_wrap">
+					<h2>카테고리 전체보기</h2>
+					<a href="#brandZone" class="category_1depth category_brand category_on">브랜드존</a>
+					<ul id="brandZone" class="category_2depth">
+						<li class="depth_dw"><a href="#self">대웅그룹 <span class="ico_oshop ico_dw"></span><span class="ico_oshop ico_down">닫기</span></a>
+							<ul style="display:block;">
+								<li><a href="category_step2.html">대웅제약</a></li>
+								<li><a href="category_step2.html">DN 컴퍼니</a></li>
+								<li><a href="category_step2.html">시셀</a></li>
+								<li><a href="category_step2.html">대웅생명과학</a></li>
+								<li><a href="category_step2.html">엠디웰</a></li>
+								<li><a href="category_step2.html">힐리언스</a></li>
+								<li><a href="category_step2.html">RP코프</a></li>
+								<li><a href="category_step2.html">한올바이오파마</a></li>
+								<li><a href="category_step2.html">코어센터</a></li>
+							</ul>
+						</li>
+						<li><a href="category_step2.html">매일유업 <span class="ico_oshop ico_maeil"></span><span class="ico_oshop ico_arrow"></span></a></li>
+						<li><a href="category_step2.html">불스원 <span class="ico_oshop ico_bullsone"></span><span class="ico_oshop ico_arrow"></span></a></li>
+						<li><a href="category_step2.html">샘표 <span class="ico_oshop ico_sempio"></span><span class="ico_oshop ico_arrow"></span></a></li>
+						<li><a href="category_step2.html">애경 <span class="ico_oshop ico_aekyung"></span><span class="ico_oshop ico_arrow"></span></a></li>
+						<li><a href="category_step2.html">유닉스 <span class="ico_oshop ico_unix"></span><span class="ico_oshop ico_arrow"></span></a></li>
+						<li><a href="category_step2.html">풀무원 <span class="ico_oshop ico_pulmuone"></span><span class="ico_oshop ico_arrow"></span></a></li>
+						<li><a href="category_step2.html">네이버 <span class="ico_oshop ico_naver"></span><span class="ico_oshop ico_arrow"></span></a></li>
+						<li><a href="category_step2.html">라인프렌즈 <span class="ico_oshop ico_line"></span><span class="ico_oshop ico_arrow"></span></a></li><!-- 2017-08-18 추가 -->
+						<li><a href="#self">국순당 <span class="ico_oshop ico_ksdb"></span><span class="ico_oshop ico_up">열기</span></a>
+							<ul>
+								<li><a href="category_step2.html">국순당</a></li>
+								<li><a href="category_step2.html">백세주마을</a></li>
+							</ul>
+						</li>
+						<li><a href="#self">원앤원 주식회사 <span class="ico_oshop ico_wonandone"></span><span class="ico_oshop ico_up">열기</span></a>
+							<ul>
+								<li><a href="category_step2.html">원할머니 보쌈·족발</a></li>
+								<li><a href="category_step2.html">박가부대찌개</a></li>
+								<li><a href="category_step2.html">모리샤브</a></li>
+								<li><a href="category_step2.html">족발중심</a></li>
+							</ul>
+						</li>
+					</ul>
+					<a href="#shoppingZone" class="category_1depth category_shopping">제로쇼핑존</a>
+					<ul id="shoppingZone" class="category_2depth">
+						<li><a href="category_step2.html">식품<span class="ico_oshop ico_arrow"></span></a></li>
+						<li><a href="category_step2.html">유아동<span class="ico_oshop ico_arrow"></span></a></li>
+						<li><a href="category_step2.html">리빙/홈인테리어<span class="ico_oshop ico_arrow"></span></a></li>
+						<li><a href="category_step2.html">스포츠/레져/자동차<span class="ico_oshop ico_arrow"></span></a></li>
+						<li><a href="category_step2.html">가전/컴퓨터/디지털<span class="ico_oshop ico_arrow"></span></a></li>
+						<li><a href="category_step2.html">도서/문구<span class="ico_oshop ico_arrow"></span></a></li>
+						<li><a href="category_step2.html">패션/뷰티/잡화<span class="ico_oshop ico_arrow"></span></a></li>
+					</ul>
+					<a href="category_step2.html" class="category_1depth category_mro">사무용품·MRO</a>
+					<a href="category_step2.html" class="category_1depth category_salesman">영업사원</a>
+					<a href="../main/main_new.html" class="ico_oshop btn_close">닫기</a>
+				</div>
+				<script>
+					$(function() {
+                        // 탭
+                        $(".category_1depth").on("click",function(){
+                            if($(this).next().hasClass("category_2depth")){
+                                $(this).addClass("category_on").siblings().removeClass("category_on");
+                                return false;
+                            }
+                        });
+
+                        // 2depth
+						$(".category_2depth > li > a").on("click",function(){
+							$(this).next("ul").slideToggle(function(){
+								if($(this).is(':visible')){
+									$(this).prev().children(".ico_up").text("닫기");
+									$(this).prev().children(".ico_up").addClass("ico_down");
+									$(this).prev().children(".ico_up").removeClass("ico_up");
+								} else{
+									$(this).prev().children(".ico_down").text("열기");
+									$(this).prev().children(".ico_down").addClass("ico_up");
+									$(this).prev().children(".ico_down").removeClass("ico_down");
+								}
+							});
+						});
+
+                        // mro width (영업사원 off 일때 width 100%)
+                        if($(".category_1depth").length < 4){
+                            $(".category_1depth:eq(2)").addClass("w100");
+                        }
+					});
+				</script>
+                <!-- // template 영역 끝 , 2017-03-21 수정[s] -->
+			</section>
+			<a href="#oshopBody" class="link_top"><img src="../../images/m640/img_top.png" alt="위로"></a><!-- 2017-03-21 이미지 넓이,높이값 삭제 -->
+		</section>
+		<!-- 2017-03-21 삭제
+		#@include virtual="/publish/oshop/mobile/html/common/footer.html" -->
+	</section>
+</body>
+</html>

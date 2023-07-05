@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://www.shop.co.kr/resources/js/hos/jquery-1.7.2.min.js"></script>
+    <title>Document</title>
+    <style>
+        .pie-chart {
+        position: relative;
+        display:inline-block;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        transition: 0.3s;
+        }
+        span.center{
+        background: #fff;
+        display : block;
+        position: absolute;
+        top:50%; left:50%;
+        width:200px; height:200px;
+        border-radius: 50%;
+        text-align:center; line-height: 200px;
+        font-size:30px;
+        transform: translate(-50%, -50%);
+        }
+    </style>
+    <script>
+       $(window).ready(function(){
+            draw(100, '.pie-chart1', '#ccc');
+            draw(50, '.pie-chart2', '#8b22ff');
+            draw(30, '.pie-chart3','#ff0');
+        });
+
+        function draw(max, classname, colorname){
+            var i=1;
+            var func1 = setInterval(function(){
+            if(i<max){
+                color1(i,classname,colorname);
+                i++;
+            } else{
+                clearInterval(func1);
+            }
+            },10);
+        }
+        function color1(i, classname,colorname){
+            $(classname).css({
+                    "background":"conic-gradient("+colorname+" 0% "+i+"%, #ffffff "+i+"% 100%)"
+            });
+        }
+
+    </script>
+</head>
+<body>
+    <div class="pie-chart pie-chart1"><span class="center">80%</span></div>
+
+
+    <div class="pie-chart pie-chart2"><span class="center">50%</span></div>
+
+
+    <div class="pie-chart pie-chart3"><span class="center">30%</span></div>
+</body>
+</html>

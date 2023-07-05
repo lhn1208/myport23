@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,option,blockquote,th,td,input,select,textarea,button,figure,section,article,main,aside,nav,header,footer,figcaption {margin:0;padding:0}
+fieldset,img {border:0 none}
+img {vertical-align:top}
+dl,ul,ol,menu,li {list-style:none}
+blockquote,q {quotes:none}
+blockquote:before,blockquote:after,q:before,q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+input::-ms-clear {display:none}
+input[type="text"] {padding:5px 10px 4px;border:1px solid #e3e5e8;box-sizing:border-box;}
+input[type="radio"],
+input[type="checkbox"],
+label {cursor:pointer;}
+button {border:0 none;background-color:transparent;cursor:pointer}
+textarea {width:100%;padding:20px;border:0;border:1px solid #e3e5e8;box-sizing:border-box;resize:none;}
+table {table-layout:fixed;width:100%;border-collapse:collapse;border-spacing:0}
+caption, legend {font-size:0;line-height:0;visibility:hidden}
+body {position:relative;background-color:#fff}
+body,th,td,input,select,textarea,button {font-size:12px;line-height:1.5;font-family:dotum,"돋움",sans-serif;color:#666}
+a {color:#666;text-decoration:none}
+a:active,a:hover {text-decoration:none;}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+main {display:block}
+::-webkit-input-placeholder {color:#aaa;}
+::-moz-placeholder {color:#aaa;}
+:-ms-input-placeholder {color:#aaa;}
+:-moz-placeholder {color:#aaa;}
+
+.tbl_type1 {border-bottom:1px solid #e3e5e8;}
+.tbl_type1 td {padding:15px 10px;border-bottom:1px solid #e3e5e8;}
+.tbl_type1 thead th {padding:10px;font-weight:normal;color:#fff;background-color:#acb2b6;}
+.tbl_type1 .txt_left {padding-left:10px;text-align:left;}
+.tbl_type1 .cell_chk {padding:10px 5px;}
+.tbl_type1 .cell_group th {padding:10px 5px;color:#484b50;text-align:left;border-top:1px solid #e0e5ec;border-bottom:1px solid #e0e5ec;background-color:#f6f8f9;}
+.tbl_type1 .cell_group:first-child th {border-top:0;}
+.tbl_type1 .cell_group .cell_chk {width:17px;text-align:center;}
+.tbl_type1 .cell_group .group_info {display:inline-block;min-width:150px;margin-right:20px;vertical-align:middle;white-space:nowrap;}
+.tbl_type1 .cell_group .group_tit {width:250px;}
+.tbl_type1 .cell_group .group_tit strong {font-size:14px;vertical-align:middle;}
+.tbl_type1 .cell_group .group_txt {font-size:11px;}
+.tbl_type1 .cell_group .group_sum {width:145px;}
+.tbl_type1 .cell_group .txt_num {font-size:14px;}
+.tbl_type1 a:hover,
+.tbl_type1 a:focus,
+.tbl_type1 .link_prod:hover,
+.tbl_type1 .link_prod:focus {text-decoration:underline;}
+
+.paging_nav {display:block;padding-top:20px;text-align:center;}
+.paging_nav a,
+.paging_nav span {display:inline-block;width:26px;height:26px;font-family:Verdana;font-weight:bold;color:#2a303b;line-height:24px;}
+.paging_nav a:hover,
+.paging_nav a:focus {text-decoration:underline;}
+.paging_nav span {width:24px;height:24px;color:#ff2400;border:1px solid #e3e5e8;background-color:#fff;}
+.paging_nav .btn_prev,
+.paging_nav .btn_next {width:auto;font-family:inherit;font-weight:normal;color:#888;}
+.paging_nav .btn_prev:after,
+.paging_nav .btn_next:after {content:'';width:1px;height:11px;background-color:#e3e5e8;vertical-align:middle;}
+.paging_nav .btn_prev:after {float:right;margin:6px 5px 0 8px;}
+.paging_nav .btn_next:after {float:left;margin:6px 8px 0 5px;}
+
+
+/*
+#table_list_iframe{width:730px; padding-bottom:20px; }
+#reviewTable{width:730px; }
+*/
+/*
+#reviewTable tr.iframe_table_th{background:url(/shop/data/skin/godomarket_G/img/board/board_top_blueline_bg.gif);height:35px;}
+#reviewTable tr.iframe_table_th th{border-bottom:solid 1px #e3e3e3;}
+#reviewTable tr th{font-family:dotum,"돋움",sans-serif,tahoma; font-size:12px; color:#5b5b5b; font-weight:bold !important;}
+#reviewTable tr td{border-bottom:solid 1px #e3e3e3; height:35px;}
+#table_list_concierge_view img{max-width:700px;}
+
+
+#qnaTable{width:730px; }
+#qnaTable tr.iframe_table_th{background:url(/shop/data/skin/godomarket_G/img/board/board_top_blueline_bg.gif);height:35px; }
+#qnaTable tr.iframe_table_th th{border-bottom:solid 1px #e3e3e3;}
+#qnaTable tr th{font-family:dotum,"돋움",sans-serif,tahoma; font-size:12px; color:#5b5b5b; font-weight:bold !important;}
+#qnaTable tr td{border-bottom:solid 1px #e3e3e3; height:35px;}
+
+#board_pageing{width:730px; padding:15px 0 15px 0; text-align:center; letter-spacing:5px;}
+#board_pageing a{font-family:"돋움"; font-size:12px; color:#2f64c2; font-weight:bold; text-decoration:none  !important;}
+#board_pageing img{ border:none;  vertical-align:middle;}
+*/
+.epil_write{position:relative; vertical-align:bottom; padding:10px 0;line-height:27px;}
+.epil_write a{position:absolute; top:10; right:0;}
+.epil_write img{border:none;}
+
+.black12{font-family:"돋움"; font-size:12px; color:#666666; text-decoration:none !important;}
+.black12 strong {font-weight:bold;}
+.black12 a:hover{font-family:"돋움"; font-size:12px; color:#828282; text-decoration:underline;} 
+.black12_bold{font-family:dotum,"돋움",sans-serif,tahoma; font-size:12px; color:#5b5b5b; font-weight:bold !important;}
+.black11{font-family:"돋움"; font-size:11px; color:#878787; !important;}
+.blue12{font-family:"돋움"; font-size:12px; color:#2f64c2; text-decoration:none !important;}
+.blue12_bold{font-family:"돋움"; font-size:12px; color:#2f64c2; font-weight:bold !important;}
+.blue12_bold a{font-family:"돋움"; font-size:12px; color:#2f64c2; font-weight:bold !important;}
+.blue12_bold a:hover{font-family:dotum,"돋움",sans-serif,tahoma; font-size:12px; color:#2f64c2; text-decoration:underline; font-weight:bold !important;}
+
+
+/*#shopping_view_detail_title{width:730px;}*/
+#shopping_view_detail_title p.shopping_view_title_name{vertical-align:top;padding-bottom:10px; height:31px; border-bottom:2px solid #33363f;}
+.tbl_type1 .concierge_table_view {padding:20px;background-color:#f9fafb;}
+.tbl_type1 .concierge_table_view dd {margin-top:20px;margin-left:20px;}
+
+.p10 {padding:10 !important;}
+
+
+/*text*/
+.txt_center{text-align:center;}
+.txt_right{text-align:right;}
+.txt_left{text-align:left;}
