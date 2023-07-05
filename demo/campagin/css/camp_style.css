@@ -90,12 +90,12 @@ a, button{color: #222; font-family: 'Noto Sans KR', sans-serif; }
 .camp_header .member.login .alarm .ico:hover{border-radius: 50%; background-color: #f5f5f5;}
 .camp_header .member.login>li{position: relative; padding: 10px 6px;}
 .camp_header .member.login li:hover .info_box{display:block;}
-.camp_header .member.login .info_box{display:none; position: absolute; top: 60px; left:-67px; width:198px; padding:20px 0; background:#fff; box-shadow:0 2px 4px 0 rgba(0,0,0,.3); z-index: 102; box-sizing:border-box; border-top: 1px solid var(--border-color);} 
+.camp_header .member.login .info_box{display:none; position: absolute; top: 60px; left:-72px; width:198px; padding:20px 0; background:#fff; box-shadow:0 2px 4px 0 rgba(0,0,0,.3); z-index: 102; box-sizing:border-box; border-top: 1px solid var(--border-color);} 
 .camp_header .member.login .info_box::before{content: ""; position: absolute; top: -11px; left:50%; transform:translateX(-50%); width: 18px; height: 11px; background: url("../img/ic-arrow-gnb.svg") no-repeat;}
 .camp_header .member.login .info_box .box_title{display:block; font-size:18px; padding:0 20px; margin-bottom:10px;}
 .camp_header .member.login .info_box ul{ text-align:left}
 .camp_header .member.login .info_box li a{padding: 6px 20px;}
-.camp_header .member.login .alarm .info_box{width:300px; left:-148px;}
+.camp_header .member.login .alarm .info_box{width:300px; left:-152px;}
 .camp_header .member.login .alarm .info_box::before{transform:translateX(120%);}
 .camp_header .member.login .alarm .info_box .num{color:var(--primary-color);}
 .camp_header .member.login .alarm .info_box .mypage_link{position: relative; padding:0 20px; font-size:14px;}
