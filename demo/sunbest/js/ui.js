@@ -121,10 +121,15 @@ new Swiper(".visual .swiper",{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    }
+    a11y: {
+        prevSlideMessage: '이전 슬라이드',
+        nextSlideMessage: '다음 슬라이드',
+        slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+    },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // }
  });
  var prod_swiper = new Swiper(".product_type .swiper",{
     pagination: {

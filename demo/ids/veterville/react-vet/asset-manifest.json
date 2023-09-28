@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/myport/demo/ids/veterville/react-vet/static/css/main.e064ef5b.css",
+    "main.js": "/myport/demo/ids/veterville/react-vet/static/js/main.a3494cd6.js",
+    "static/js/787.65640138.chunk.js": "/myport/demo/ids/veterville/react-vet/static/js/787.65640138.chunk.js",
+    "static/media/visual_news.jpg": "/myport/demo/ids/veterville/react-vet/static/media/visual_news.497ea834f9ff12442b3f.jpg",
+    "static/media/visual_case.jpg": "/myport/demo/ids/veterville/react-vet/static/media/visual_case.5367a85345a4cdb6c402.jpg",
+    "static/media/visual_board.jpg": "/myport/demo/ids/veterville/react-vet/static/media/visual_board.9992edd839681d2b924d.jpg",
+    "static/media/visual_report.jpg": "/myport/demo/ids/veterville/react-vet/static/media/visual_report.785c13cbf711626dbe28.jpg",
+    "static/media/visual_tip.jpg": "/myport/demo/ids/veterville/react-vet/static/media/visual_tip.98924c1943fb8dc2d5d7.jpg",
+    "static/media/txt_journal.png": "/myport/demo/ids/veterville/react-vet/static/media/txt_journal.86dcdec16274334e2e3c.png",
+    "static/media/banner_right.jpg": "/myport/demo/ids/veterville/react-vet/static/media/banner_right.1c14be8aeaa7858c59f9.jpg",
+    "static/media/ev_sample2.jpg": "/myport/demo/ids/veterville/react-vet/static/media/ev_sample2.35e50920204682a75a14.jpg",
+    "static/media/thum_live_w277.jpg": "/myport/demo/ids/veterville/react-vet/static/media/thum_live_w277.fa9d66346b1585a8ae27.jpg",
+    "static/media/thum_w277.jpg": "/myport/demo/ids/veterville/react-vet/static/media/thum_w277.9b76b3445c4b019831f1.jpg",
+    "static/media/img_recomm.jpg": "/myport/demo/ids/veterville/react-vet/static/media/img_recomm.c0fe7c392ffdf8c0750f.jpg",
+    "static/media/profile_img.jpg": "/myport/demo/ids/veterville/react-vet/static/media/profile_img.2c93a73dc60be08f1c7d.jpg",
+    "static/media/main_banner.jpg": "/myport/demo/ids/veterville/react-vet/static/media/main_banner.2354d26716dc5b4d46c1.jpg",
+    "static/media/doctor_sample1.png": "/myport/demo/ids/veterville/react-vet/static/media/doctor_sample1.e8732f6362f284ff0f8c.png",
+    "static/media/banner_topic.jpg": "/myport/demo/ids/veterville/react-vet/static/media/banner_topic.37ec051a5969adf3adb2.jpg",
+    "static/media/dog_sample.jpg": "/myport/demo/ids/veterville/react-vet/static/media/dog_sample.6079cc025b15704fbef4.jpg",
+    "static/media/ico_common.png": "/myport/demo/ids/veterville/react-vet/static/media/ico_common.a9ade53b6a050cc1f61a.png",
+    "index.html": "/myport/demo/ids/veterville/react-vet/index.html",
+    "main.e064ef5b.css.map": "/myport/demo/ids/veterville/react-vet/static/css/main.e064ef5b.css.map",
+    "main.a3494cd6.js.map": "/myport/demo/ids/veterville/react-vet/static/js/main.a3494cd6.js.map",
+    "787.65640138.chunk.js.map": "/myport/demo/ids/veterville/react-vet/static/js/787.65640138.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e064ef5b.css",
+    "static/js/main.a3494cd6.js"
+  ]
+}
