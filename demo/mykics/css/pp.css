@@ -36,28 +36,30 @@
 
 .civil_sv_box{padding: 30px 0; display: grid; gap: 20px; grid-template-columns: repeat(2, 1fr);}
 .civil_sv_box li{background-color: #fff; padding: 20px; border-radius: 10px;position: relative;}
-.civil_sv_box .top{margin-bottom: 20px; display: flex;}
+.civil_sv_box .top{margin-bottom: 20px; display: flex; align-items: center;}
 .civil_sv_box .top .instit_logo{display: inline-block; font-size: 1.6rem; padding-right: 14px;}
 .civil_sv_box .top .instit_logo::before{content: ""; display: inline-block; width: 39px; height: 39px; background-image: url("../images/common/ico_police.png"); background-repeat: no-repeat; margin-right: 10px; vertical-align: middle;}
 .civil_sv_box .top .instit_logo.sea_police:before{width:50px; height: 44px; background-image: url("../images/common/ico_sea_police.png");}
 .civil_sv_box .top .instit_logo.pros:before{height: 31px; background-image: url("../images/common/ico_prose.png");}
-.civil_sv_box .top strong{display: -webkit-box; text-overflow:clip; white-space: normal; overflow: hidden; -webkit-box-orient:vertical; -webkit-line-clamp: 2; word-break: keep-all; font-size: 2.4rem; flex: 8; margin-top:3px}
+.civil_sv_box .top strong{display: -webkit-box; text-overflow:clip; white-space: normal; overflow: hidden; -webkit-box-orient:vertical; -webkit-line-clamp: 2; word-break: keep-all; font-size: 2.4rem; flex: 8;}
 .civil_sv_box p{margin-bottom: 20px; font-size: 1.8rem;}
 .civil_sv_box .btn_area{display: flex; justify-content: flex-end;}
 .civil_sv_box .ico_fav{position: absolute; top: 20px; right: 20px; width: 22px; height: 22px; background:url("../images/common/ico_fav.png") no-repeat;  text-indent: -9999em;}
 .civil_sv_box .ico_fav.on{background:url("../images/common/ico_fav_on.png") no-repeat;}
-.main_section .search {text-align:center;}
+.main_section .search {text-align:center; margin-bottom: 20px;}
 .main_section .search .sch_input{width:50rem; margin-right:2rem; line-height:5rem; padding:0 2rem; font-size:1.4rem; border:2px solid var(--primary-c); border-radius:30px; box-sizing:border-box}
 .main_section .search button{width:5.5rem; height:5.5rem; text-indent:-9999em; background:url('../images/common/ico_sch.png') no-repeat center var(--primary-c); background-size:50%; border-radius:50%;}
+.main_section .introduce{display: grid; gap: 10px; grid-template-columns: repeat(3, 1fr); margin-bottom: 4rem;}
+.main_section .introduce a{height: 30rem; padding:40px; font-size: 2.6rem; color: #1d76a8; border-radius: 10px; background-color: #c1dded; background-image: url("../images/pp/img_pp_intro1.png"); background-repeat: no-repeat; background-position: right 20px bottom; }
+.main_section .introduce a.intro{background-color: #ece4ab; background-image: url("../images/pp/img_pp_intro2.png"); color: #746001;}
+.main_section .introduce a.ebook{background-color: #bfe7ed;  background-image: url("../images/pp/img_pp_intro3.png");  color: #107c8c;}
 @media all and (max-width:1024px){
     .visual_slide .visual strong{width: 100%;}
 	.visual_slide .control_box{right: var(--pos-right) !important;}
     .visual_slide .visual strong{font-size: 3.4rem;}
     .visual_slide .visual a{height: 320px; background-position: 64% 0;}
 
-    .civil_sv_box{
-        grid-template-columns: repeat(1, 1fr);
-    }
+    .civil_sv_box{grid-template-columns: repeat(1, 1fr);}
 	
 }
 @media all and (max-width:768px){

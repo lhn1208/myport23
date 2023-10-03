@@ -60,7 +60,7 @@ body{font-family: 'NanumSquare', sans-serif; color: #111;}
 h2,h3,h4,strong{font-weight: bold;}
 /*말줄임*/
 .ellipsis{text-overflow:ellipsis; white-space: nowrap; overflow: hidden;}
-.ellipsis_2line{display: -webkit-box; text-overflow:ellipsis; white-space: normal; word-wrap: break-word; white-space: normal; overflow: hidden; -webkit-box-orient:vertical; -webkit-line-clamp: 2;}
+.ellipsis_2line{display: -webkit-box; text-overflow:ellipsis; word-wrap: break-word; white-space: normal; overflow: hidden; -webkit-box-orient:vertical; -webkit-line-clamp: 2;}
 /*텍스트 숨김*/
 .offscreen{clip:rect(1px 1px 1px 1px); display: inline-block; position: absolute; width: 1px; height: 1px; line-height: 0;font-size: 1px; overflow: hidden;}
 .blind{position: absolute; top:0; left: 0; width: 0; height: 0; line-height: 0; visibility: hidden; overflow: hidden; text-indent: -9999px;}

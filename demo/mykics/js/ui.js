@@ -2,16 +2,16 @@ $(function(){
     let maxSubHeight = 0;
     let $subMenu=$('.header .sub_menu');
     function handleMenuHover() {
-        $(this).parents('.menu_area').addClass('active');
+        $(this).parents('.navi_area').addClass('active');
     }
     
     $('.header .depth1>li>a').on('mouseenter focus', handleMenuHover);
     
-    $('.menu_area').mouseleave(function(){
+    $('.navi_area').mouseleave(function(){
         $(this).removeClass('active');
     })
-    $('.menu .depth1 li:last-child .sub_menu ul li:last-child a').focusout(function(){
-        $('.menu_area').removeClass('active');
+    $('.navi .depth1 li:last-child .sub_menu ul li:last-child a').focusout(function(){
+        $('.navi_area').removeClass('active');
     });
     $subMenu.children('ul').each(function() {
         let height = $(this).outerHeight();
@@ -19,15 +19,14 @@ $(function(){
             maxSubHeight = height;
         }
     });
-    $('.header .menu_area .sub_cover').css('min-height',maxSubHeight);
+    $('.header .navi_area .sub_cover').css('min-height',maxSubHeight);
 
     $('.gnb_all_btn').on('keydown', function(e) {
         // Tab 키와 Shift 키를 함께 눌렀을 때 처리
         if (e.which === 9 && e.shiftKey) {
          
           e.preventDefault();  // 기본 Tab 이동 동작 방지
-          $('menu .depth1>li:last-child>a').addClass('ababab');
-          $('menu .depth1>li:last-child>a').focus();
+          $('.navi menu .depth1>li:last-child>a').focus();
         }
       });
 
