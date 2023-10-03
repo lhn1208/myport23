@@ -1,0 +1,68 @@
+@import url("./base.css");
+@import url("./common.css");
+.visual_slide{--size:40px; --pos_right:126px; --margin:20px; position: relative;}
+.visual_slide .visual{position: relative;}
+.visual_slide .visual a{width:100%; height: 550px; background-repeat: no-repeat; background-position: center 0; background-size: cover;}
+.visual_slide .visual .contents_w{display: flex; justify-content: center; flex-direction: column; height: 100%; color: #fff;}
+.visual_slide .visual strong{display: block; width: 50%; max-height: 168px; overflow: hidden; word-break: keep-all; margin-bottom: 10px; font-size: 4rem;}
+.visual_slide .visual .btn_ly{display: inline-block; background-color: transparent; border:2px solid #fff; font-size: 1.8rem;}
+.visual_slide .control_box{display: flex; align-items: center; justify-content: center; gap: 10px; position: absolute; bottom: 40px; right: 126px; width: 220px; height: 40px;}
+.visual_slide .control_box .slider-count{width: 68px; line-height:var(--size); text-align: center; background-color: #000; border-radius: 30px; font-size: 1.8rem; color: #fff; letter-spacing: -.06em;}
+.visual_slide :where(.controler, .slick-arrow){width:var(--size); height:var(--size); border-radius: 50%; z-index: 10; background-color: #000; color: #fff; }
+.visual_slide .control_box button{display: flex; align-items: center; justify-content: center;}
+.visual_slide .control_box button::before {content: ""; display: inline-block; width: 10px; height: 10px; border-left: 3px solid #fff; border-bottom: 3px solid #fff;}
+.visual_slide .control_box button.prev::before{transform: rotate(40deg); margin-left: 6px}
+.visual_slide .control_box button.next::before{transform: rotate(-135deg);  margin-right: 6px}
+.visual_slide .control_box .controler button{display: none;width:var(--size); height:var(--size);border:none;background-position: center; background-repeat: no-repeat;}
+.visual_slide .control_box .controler button::before{ border: none; }
+.visual_slide .controler .play{background-image: url("../images/pp/ico_vs_play.png");}
+.visual_slide .controler .stop{background-image: url("../images/pp/ico_vs_pause.png");}
+.visual_slide .controler button.active{display: block;}
+.service_slide{--pd:6rem; width: calc(100% - (var(--pd) * 2));  padding:0 var(--pd) !important; margin: 0 auto;}
+.service_slide .item>div{margin: 0 14%;}
+.service_slide a{display: inline-block;  width: 100%; font-size: 2rem; text-align: center; word-break:keep-all}
+.service_slide a:hover .ico_box{border:2px solid var(--primary-c); background-color: #fff; box-shadow: 0px 5px 18px 1px rgba(0, 0, 0, 0.3);}
+.service_slide .ico_box{width: 100%; height: 140px; margin-bottom: 20px; padding:30px 0; background-color: #f0f0f0; border-radius: 10px; box-sizing: border-box;}
+.service_slide a img{display: inline-block;}
+.service_slide .slick-arrow{position: absolute; top: 50%; transform: translateY(-155%); left: 0; width: 50px; height: 50px; background-color: #000; border-radius: 50%; text-indent: -9999em; display: flex; align-items: center; justify-content: center;}
+.service_slide .slick-arrow::before{content: ""; display: block; width: 12px; height: 12px; border-left: 2px solid #fff; border-bottom: 2px solid #fff;}
+.service_slide .slick-prev::before{transform: rotate(40deg); margin-left: 6px;}
+.service_slide .slick-next::before{transform: rotate(-135deg); margin-right: 6px;}
+.service_slide .slick-next{left: auto; right: 0;}
+.service_slide .slick-dots{display: flex; align-items: center; justify-content: center; margin-top: 40px;}  
+.service_slide .slick-dots li button{text-indent: -9999em; font-size: 0;}
+.service_slide .slick-dots li.slick-active button::before{width: 40px; border-radius: 30px; background-color: var(--primary-c);}
+.service_slide .slick-dots li button:before{content: ""; display: block; width: 16px; height: 16px; border-radius: 50%; background-color: #f0f0f0;}
+
+.civil_sv_box{padding: 30px 0; display: grid; gap: 20px; grid-template-columns: repeat(2, 1fr);}
+.civil_sv_box li{background-color: #fff; padding: 20px; border-radius: 10px;position: relative;}
+.civil_sv_box .top{margin-bottom: 20px; display: flex;}
+.civil_sv_box .top .instit_logo{display: inline-block; font-size: 1.6rem; padding-right: 14px;}
+.civil_sv_box .top .instit_logo::before{content: ""; display: inline-block; width: 39px; height: 39px; background-image: url("../images/common/ico_police.png"); background-repeat: no-repeat; margin-right: 10px; vertical-align: middle;}
+.civil_sv_box .top .instit_logo.sea_police:before{width:50px; height: 44px; background-image: url("../images/common/ico_sea_police.png");}
+.civil_sv_box .top .instit_logo.pros:before{height: 31px; background-image: url("../images/common/ico_prose.png");}
+.civil_sv_box .top strong{display: -webkit-box; text-overflow:clip; white-space: normal; overflow: hidden; -webkit-box-orient:vertical; -webkit-line-clamp: 2; word-break: keep-all; font-size: 2.4rem; flex: 8; margin-top:3px}
+.civil_sv_box p{margin-bottom: 20px; font-size: 1.8rem;}
+.civil_sv_box .btn_area{display: flex; justify-content: flex-end;}
+.civil_sv_box .ico_fav{position: absolute; top: 20px; right: 20px; width: 22px; height: 22px; background:url("../images/common/ico_fav.png") no-repeat;  text-indent: -9999em;}
+.civil_sv_box .ico_fav.on{background:url("../images/common/ico_fav_on.png") no-repeat;}
+.main_section .search {text-align:center;}
+.main_section .search .sch_input{width:50rem; margin-right:2rem; line-height:5rem; padding:0 2rem; font-size:1.4rem; border:2px solid var(--primary-c); border-radius:30px; box-sizing:border-box}
+.main_section .search button{width:5.5rem; height:5.5rem; text-indent:-9999em; background:url('../images/common/ico_sch.png') no-repeat center var(--primary-c); background-size:50%; border-radius:50%;}
+@media all and (max-width:1024px){
+    .visual_slide .visual strong{width: 100%;}
+	.visual_slide .control_box{right: var(--pos-right) !important;}
+    .visual_slide .visual strong{font-size: 3.4rem;}
+    .visual_slide .visual a{height: 320px; background-position: 64% 0;}
+
+    .civil_sv_box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+	
+}
+@media all and (max-width:768px){
+	.visual_slide .control_box{display: none !important;}
+    .service_slide{--pd:0}
+    .service_slide .slick-arrow{display:none !important;}
+
+}
